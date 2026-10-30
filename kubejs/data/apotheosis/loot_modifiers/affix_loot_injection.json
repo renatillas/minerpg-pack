@@ -7,13 +7,15 @@
             "pattern": {
                 "domain": "minecraft",
                 "path_regex": "chests.*"
-            }
+            },
+            "rarities": [ "apotheosis:common", "apotheosis:uncommon", "apotheosis:rare", "apotheosis:epic" ]
         },
         {
             "chance": 0.15,
             "pattern": {
                 "path_regex": "chests.*"
-            }
+            },
+            "rarities": [ "apotheosis:common", "apotheosis:uncommon", "apotheosis:rare", "apotheosis:epic" ]
         }
     ]
 }

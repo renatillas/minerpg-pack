@@ -1,0 +1,36 @@
+{
+    "type": "apotheosis:affix_loot",
+    "conditions": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "apotheosis:is_monster"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "type": "#minerpg:boss"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:killed_by_player"
+        }
+    ],
+    "entries": [
+        {
+            "chance": 0.04,
+            "pattern": {
+                "path_regex": "entities/.*"
+            },
+            "rarities": [ "apotheosis:common", "apotheosis:uncommon", "apotheosis:rare", "apotheosis:epic" ]
+        }
+    ]
+}

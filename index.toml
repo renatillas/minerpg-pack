@@ -582,15 +582,35 @@ hash = "48ba36e6920ecd2cb9bbebf4a994741cb3075186209fb7f4ea4ebd7f79af25fe"
 
 [[files]]
 file = "kubejs/data/apotheosis/data_maps/item/loot_category_overrides.json"
-hash = "4996d33d02b22b3edb9b73450163ae76829a90c5706db212bfa644522ddff208"
+hash = "d82b80f987c8f0ccc0c1053c42070985792aee531633c08552768893828dc683"
 
 [[files]]
 file = "kubejs/data/apotheosis/loot_modifiers/affix_conversion.json"
-hash = "fb0591ba299f9bd52cc675e3131aad9e3375d25c9b96c859b08fdad548dfe015"
+hash = "4463f06539bf2b46f7c93b2c1177fe1cc6209080616511858ff1e9452490efcd"
 
 [[files]]
 file = "kubejs/data/apotheosis/loot_modifiers/affix_loot_injection.json"
-hash = "1577039ab9d749eda5e84a6b921d1cdc09bc3186e68dc3541f8c48ebbe277520"
+hash = "865c4e548b7ea20a7b809c93a24e67c36b4346d41a83d2a0990dc42c9abc5eb8"
+
+[[files]]
+file = "kubejs/data/apotheosis/rarities/common.json"
+hash = "a2bc9393fd917df26cd534559dca7e710f17813c6c5b832bf1ab59458e78d2ed"
+
+[[files]]
+file = "kubejs/data/apotheosis/rarities/epic.json"
+hash = "4423c77d57369cb5a518ca23ad5789a8bee8c4da7c61b730290e2ec562d3dd59"
+
+[[files]]
+file = "kubejs/data/apotheosis/rarities/mythic.json"
+hash = "c8b16c3afa33a10674c796111442499b697b8e5f15454fcc44de7b926de272b5"
+
+[[files]]
+file = "kubejs/data/apotheosis/rarities/rare.json"
+hash = "871cc4a0bae47767eee8ecb9ceb9f80dc33a869bc23ca9922ce60211e4ff5328"
+
+[[files]]
+file = "kubejs/data/apotheosis/rarities/uncommon.json"
+hash = "4c4d0ab9cd08b2111f46b0c4742df369b4974f1f9c3fbeb269cc8bae35e49f09"
 
 [[files]]
 file = "kubejs/data/apotheosis/rarity_override/apotheosis/shears.json"
@@ -2129,6 +2149,10 @@ file = "kubejs/data/minerpg/gems/caster/arcanist.json"
 hash = "8e41e7f632f3b9733a7552aa4fdd1ec860d7243598af472f6af07be0e465cc0b"
 
 [[files]]
+file = "kubejs/data/minerpg/loot_modifiers/affix_mob_drops.json"
+hash = "acfcdcb46384b82f3ddf63b75f10a0d90700234b42c6ef3d5dcf91b6a4783f23"
+
+[[files]]
 file = "kubejs/data/minerpg/loot_table/map/amethyst_nest.json"
 hash = "853c2ab10d758aade2b447764c78d2e4cfc1c9660a99ff25b71a047778ec708c"
 
@@ -2287,6 +2311,10 @@ hash = "08d4afbf8c60ec5253afa3bfe6f4001e3f02f96d5079926d2e7e213281d24b35"
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/wildlands_dungeons.json"
 hash = "9826f513cb9557b3349bf32fa137b92ec8eafc90fdf050e9b007960ef67da776"
+
+[[files]]
+file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
+hash = "dca4c9de9bdf9b6ec5dce522852dc7d8c16c690fab05ed8c0c9eed023cf71b96"
 
 [[files]]
 file = "kubejs/data/nova_structures/tags/worldgen/biome/illager_hideout.json"

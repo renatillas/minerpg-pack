@@ -9,17 +9,22 @@
         {
             "chance": 1.0,
             "pattern": { "domain": "cataclysm", "path_regex": "entities/(the_harbinger|netherite_monstrosity|ignis|ender_guardian)" },
-            "rarities": [ "apotheosis:rare", "apotheosis:epic", "apotheosis:mythic" ]
+            "rarities": [ "apotheosis:epic", "apotheosis:mythic" ]
         },
         {
             "chance": 1.0,
             "pattern": { "domain": "minecraft", "path_regex": "entities/(ender_dragon|wither)" },
-            "rarities": [ "apotheosis:rare", "apotheosis:epic", "apotheosis:mythic" ]
+            "rarities": [ "apotheosis:epic", "apotheosis:mythic" ]
         },
         {
             "chance": 1.0,
             "pattern": { "domain": "cataclysm", "path_regex": "entities/(amethyst_crab|ancient_remnant|maledictus|the_leviathan|scylla)" },
-            "rarities": [ "apotheosis:rare", "apotheosis:epic" ]
+            "rarities": [ "apotheosis:rare", "apotheosis:epic", "apotheosis:mythic" ]
+        },
+        {
+            "chance": 1.0,
+            "pattern": { "domain": "mowziesmobs", "path_regex": "entities/(ferrous_wroughtnaut|frostmaw|umvuthi|sculptor)" },
+            "rarities": [ "apotheosis:rare", "apotheosis:epic", "apotheosis:mythic" ]
         },
         {
             "chance": 0.6,
@@ -28,7 +33,8 @@
         },
         {
             "chance": 0.35,
-            "pattern": { "path_regex": ".*" }
+            "pattern": { "path_regex": ".*" },
+            "rarities": [ "apotheosis:common", "apotheosis:uncommon", "apotheosis:rare", "apotheosis:epic" ]
         }
     ]
 }
