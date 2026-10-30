@@ -1,0 +1,16 @@
+{
+  "name": "House Rules",
+  "icon": "minecraft:red_bed",
+  "category": "patchouli:getting_started",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A few rules make life easier for a small group:$(li)One sleeper is enough to skip the night.$(li)No phantoms.$(li)Creepers, ghast fireballs and wither skulls do not break blocks. Endermen do not pick blocks up.$(li)Villagers still farm, sheep still eat grass."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)You drop your things when you die. If friends are online you fall $(item)downed$() first, and they can pick you up (see Party).$(li)Dungeon chests are personal: everyone finds their own loot in the same chest.$(li)Mining is blocked inside many surface dungeons (see World & Danger)."
+    }
+  ]
+}

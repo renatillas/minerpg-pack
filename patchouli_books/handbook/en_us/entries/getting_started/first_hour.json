@@ -1,0 +1,16 @@
+{
+  "name": "Your First Hour",
+  "icon": "minecraft:clock",
+  "category": "patchouli:getting_started",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Choose your folk when you first join (see Races).$(li)Open the quest book ($(k:key.ftbquests.quests)) and claim $(item)Choose Your Calling$() for your class kit.$(li)Put the tome in its spell book slot, hold the weapon and cast.$(li)Join two jobs ($(k:key.jobsplus.open_menu)).$(li)Form a party ($(k:key.partyhud.open_screen))."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "You start in a plains village. Its $(item)gazebo$() holds a Spell Binding Table, its class buildings sell gear for your calling, and a waystone there lets you come back from anywhere.$(br2)Then head out: the Hearthlands around you are the gentlest land in the world."
+    }
+  ]
+}

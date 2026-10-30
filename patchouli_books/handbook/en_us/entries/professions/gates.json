@@ -1,0 +1,16 @@
+{
+  "name": "Crafting Gates",
+  "icon": "minecraft:anvil",
+  "category": "patchouli:professions",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Class gear by tier:$(li)Tier 1 at job level 10$(li)Diamond tier 2 at 20$(li)Netherite tier 3 at 25$(li)Armory sets at 30$(br2)$(l)Smith$(): plate armor and melee weapons. $(l)Hunter$(): leather armor, bows, crossbows, spears, quivers. $(l)Enchanter$(): robes, staves, wands, instruments."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Enchanter$() shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30.$(br)$(l)Alchemist$(): Strong and Long potions at 10, Splash at 15, Lingering at 20.$(br)$(l)Smith$() reforging: Rare at 10, Epic at 20, Mythic at 30.$(br2)Hover over an item to see who makes it."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Rimeborn",
+  "icon": "minecraft:packed_ice",
+  "category": "patchouli:races",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Kin of the ice spikes.$()$(br2)$(l)Gifts$()$(li)Immune to freezing; walk through powder snow at full speed.$(li)Frost spell power.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Frost Nova (90 s): slows every creature within 7 blocks for 6 seconds.$(br2)$(l)Drawback$()$(br)Weakened in the Nether."
+    }
+  ]
+}

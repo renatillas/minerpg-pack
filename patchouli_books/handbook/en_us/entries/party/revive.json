@@ -1,0 +1,12 @@
+{
+  "name": "Downed, Not Dead",
+  "icon": "minecraft:golden_apple",
+  "category": "patchouli:party",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "With other players online, a killing blow leaves you $(item)downed$() for 60 seconds. A friend revives you by holding the use key on you for 3 seconds; you get up with a few hearts and some weakness.$(br2)Heal spells cannot reach a downed player. Lava and the void still kill at once."
+    }
+  ]
+}

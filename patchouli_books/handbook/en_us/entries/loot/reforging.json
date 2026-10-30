@@ -1,0 +1,12 @@
+{
+  "name": "Salvage and Reforge",
+  "icon": "apotheosis:mysterious_scrap_metal",
+  "category": "patchouli:loot",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Break gear you do not need at a $(item)Salvaging Table$() for rarity materials.$(br2)At a $(item)Reforging Table$(), spend a rarity material and gem dust to reroll an item's affixes at that rarity. Reforging to Rare, Epic or Mythic needs Smith level 10, 20 or 30."
+    }
+  ]
+}

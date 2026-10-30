@@ -1,0 +1,16 @@
+{
+  "name": "How Classes Work",
+  "icon": "spell_engine:spell_book",
+  "category": "patchouli:classes",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Your class is the $(item)tome$() you carry and the $(item)weapon$() you hold.$(br2)Put the tome in the spell book slot of your inventory and hold a weapon of the same class. The weapon's own spell works right away. Everything else comes from binding new spells into the tome."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Your first kit comes from the quest $(item)Choose Your Calling$(): tome, starter weapon, one armor piece, and runes or arrows.$(br2)You can learn a second class later by making its tome at a Spell Binding Table. Talents follow one class tree at a time."
+    }
+  ]
+}

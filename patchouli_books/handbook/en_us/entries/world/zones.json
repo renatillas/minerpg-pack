@@ -1,0 +1,16 @@
+{
+  "name": "Zones",
+  "icon": "minecraft:grass_block",
+  "category": "patchouli:world",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The land itself has a danger level. Each level makes monsters hit about 10% harder and have 15% more health. The name and level show on screen when you cross into a new zone.$(li)$(l)Hearthlands$() 1: plains, forests, meadows$(li)$(l)Wildlands$() 2: deserts, jungles, swamps, taigas, oceans$(li)$(l)Frontier$() 4: peaks, ice spikes, the deep dark"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(l)Ashen Depths$() 5: the Nether$(li)$(l)Starless Reach$() 7: the End$(br2)Go further from the gentle lands only when your gear is ready for it."
+    }
+  ]
+}

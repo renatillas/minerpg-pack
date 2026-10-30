@@ -1,0 +1,13 @@
+{
+  "name": "Changing Your Folk",
+  "icon": "neoorigins:orb_of_origin",
+  "category": "patchouli:races",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "neoorigins:orb_of_origin",
+      "text": "An $(item)Orb of Origin$() lets you choose again. It cannot be crafted: The Harbinger, Ignis and the Ender Guardian drop one.$(br2)Your first change is free; each later change costs 10 experience levels for every change before it."
+    }
+  ]
+}

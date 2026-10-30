@@ -1,0 +1,12 @@
+{
+  "name": "Grovekin",
+  "icon": "minecraft:azalea",
+  "category": "patchouli:races",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Elves of the lush forests.$()$(br2)$(l)Gifts$()$(li)More ranged damage.$(li)A little Nature and Healing power.$(li)Faster in forests.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Entangle (90 s): creatures within 6 blocks are rooted for 4 seconds.$(br2)$(l)Drawback$()$(br)One heart less."
+    }
+  ]
+}

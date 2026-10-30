@@ -1,0 +1,16 @@
+{
+  "name": "Casting",
+  "icon": "runes:arcane_stone",
+  "category": "patchouli:classes",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Right-click casts your weapon's first spell. While you hold a spell weapon, the hotbar keys cast the spells shown on the spell bar above it. Hold $(k:keybindings.spell_engine.bypass_spell_hotbar) to use your normal hotbar instead."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Many spells burn $(item)runes$(). Make them at a $(item)Rune Crafting Altar$(): it gives more runes for the same materials than a crafting table.$(br2)Defeating Ignis earns a book of $(item)Spell Infinity$(): on your weapon, spells stop using runes."
+    }
+  ]
+}

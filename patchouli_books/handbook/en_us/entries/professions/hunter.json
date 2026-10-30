@@ -1,0 +1,16 @@
+{
+  "name": "Hunter: Skinning",
+  "icon": "minecraft:leather",
+  "category": "patchouli:professions",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A Hunter skins what they kill: leather, hides, bones, string and monster parts give Hunter experience. Plain monster kills give little or none, animals give a bit.$(br2)Every level adds a 1% chance of an extra material (up to 40%), and a small chance of rarer parts."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Hunters also level from leatherworking: leather, leather armor, saddles, bundles, item frames and small quivers."
+    }
+  ]
+}

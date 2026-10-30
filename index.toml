@@ -25,6 +25,10 @@ file = "config/defaultoptions/extra/config/dungeon_difficulty/client_settings.js
 hash = "9aadd59bd32715e85f7c79b8a484fdde1fe45f91abc8ad2eba195d77a3c1d709"
 
 [[files]]
+file = "config/defaultoptions/extra/config/enchdesc.json"
+hash = "650f05dcb6db5a42acffde5fb9a5716e7943d3b6975525e4707748db7c512df7"
+
+[[files]]
 file = "config/defaultoptions/extra/config/jade/jade.json"
 hash = "209093b92398669adba9df98264a0d957ed10b7ba0f5849d19423c52fb47284b"
 
@@ -38,7 +42,7 @@ hash = "a4538151ed765e64b8b77ec1ae9c58b712514b458db5b41eebde682c6807b3f0"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "97907540cb387433baaf5343b06bff965eeae14ef9617263e00a68086124146e"
+hash = "40f06acd45d7fe7405cbae1ddd36adaa9a6f384c3e46bd5d9f31369d9712f6f0"
 
 [[files]]
 file = "config/dungeon_difficulty/difficulty_v2.json"
@@ -62,7 +66,7 @@ hash = "2f688e70f658547f31bc6d3480d6ea1ec6e05e778dd108ac766443a73235598e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
-hash = "c421604cfd15769d268335ab4b4e6782b32780af74735a47d2b6699dcbf45fb7"
+hash = "e614b68d4c06d0771230fd0fd43b0ed64819bfcc718403a746708c3343575d5c"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -70,7 +74,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "0921c0e0e9a04c1188c6e4c36a459d055b0245e94d5a4e1c7c169e361a58d45c"
+hash = "47e3f61355ac378f800e74154a2768d121a25a9721eb422096cda6b2004854d0"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -102,7 +106,7 @@ hash = "ad6492bfed6bf35525e57ae0804756246a1683c426f9f0f1a53e013b05cd4fbf"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "fe6595df14a788af4067dc33222c7391c68ee9e3ed8d58a8f687fd4bddbdbbbc"
+hash = "2caa8eedcf3d41a9a9b67ec6c7d4fc8c76aaf5ce8e031a9eebd13b97d0fde5d2"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/hunter/kill_mob.json"
@@ -781,6 +785,10 @@ file = "config/originpacks/minerpg_races/data/neoorigins/origins/origin_layers/o
 hash = "f67b28a72db1bf6be1c54fa36e9108e57b2faa1cb3ec0a14ba79966328d4ab3c"
 
 [[files]]
+file = "config/originpacks/minerpg_races/data/neoorigins/recipe/orb_of_class.json"
+hash = "3f8ffc9a3c4dbce9804f9d85dc85e97c19891b1c417c77527e74b307c15a3150"
+
+[[files]]
 file = "config/originpacks/minerpg_races/data/neoorigins/recipe/orb_of_origin.json"
 hash = "87372dc5fc916da3e94b078e906aebe433e20e5e5bb9001028e326b8792d7c27"
 
@@ -811,6 +819,10 @@ hash = "2fb20fdc920cf6496ab9d3c61c15b96c3d5937cc51d91917a65b8b0ba45c467e"
 [[files]]
 file = "config/spell_engine/server.json5"
 hash = "244a3bb3ab39286f423f4bee607856dbb3b58e0892ced3f434be2e964d023167"
+
+[[files]]
+file = "config/waystones-common.toml"
+hash = "922df6fc2add0f1ad9da42c86d2f97a1407904c4139b0864b2f613263ad5a87f"
 
 [[files]]
 file = "kubejs/assets/apotheosis/lang/en_us.json"
@@ -886,7 +898,7 @@ hash = "10ac2bb285ab7e4af7b01c502c2eb31e46d561d009a031e644f822a6b83a117a"
 
 [[files]]
 file = "kubejs/client_scripts/minerpg_tooltips.js"
-hash = "639d2c9d4496de7527d55528cc7155ee15a43c2650bb3a4f4837b4d0d53cb680"
+hash = "78887a90fa3e8b6872e0f5fa64395db2f948d2dc5aed0768370a6f0008cb1b77"
 
 [[files]]
 file = "kubejs/data/apotheosis/advancement/progression/ascent.json"
@@ -1069,12 +1081,28 @@ file = "kubejs/data/apotheosis/rarity_override/apotheosis/shears.json"
 hash = "c62480cdb49835104fb189a14bc519a4d16b73e35d0cd9970cb4a10a3c170726"
 
 [[files]]
+file = "kubejs/data/cataclysm/tags/block/needs_black_steel_tool.json"
+hash = "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31"
+
+[[files]]
+file = "kubejs/data/cataclysm/tags/block/needs_monstrosity_tool.json"
+hash = "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31"
+
+[[files]]
 file = "kubejs/data/dungeon_difficulty/tags/block/no_mining_exempt.json"
 hash = "ec44faefb9041c6db1ad11c24e9cdfda5969e06fb477f56c30d264997fe1c01a"
 
 [[files]]
 file = "kubejs/data/dungeon_difficulty/tags/worldgen/structure/no_mining.json"
 hash = "c2e8eab0df6cc5c365fd3fabdd2cdbad6f3971d7f3e879e3b07138ae7507cc4a"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/advancement/find_fishing_hut.json"
+hash = "c23ca8ecc9e2cb545c1f960ea5fb7d774212424c728d24786a8efdb7d5177aba"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/advancement/find_thornborn_towers.json"
+hash = "ee862a3818693d1420555ec6389294f1a17743535c3e3811e2f58e937c671084"
 
 [[files]]
 file = "kubejs/data/dungeons_arise/loot_table/archeology/kisegi_sanctuary/kisegi_sanctuary_archeology.json"
@@ -1111,6 +1139,30 @@ hash = "7cb003a3446c2725e888df611df862af3839b050f37d3f5862f4448d4803ea44"
 [[files]]
 file = "kubejs/data/gazebo/lithostitched/worldgen_modifier/village/plains.json"
 hash = "74156b32d5e36c7fc0e3a27178320cf180a9eede87c6d3c8fabcca09e3d447cf"
+
+[[files]]
+file = "kubejs/data/lne_wizards/recipe/elder_guardian_staff_aqua_smithing.json"
+hash = "57538cea461dbee6159c285456667714ed28d4a81ceff3220f8727e62763e3c1"
+
+[[files]]
+file = "kubejs/data/lne_wizards/recipe/ender_dragon_staff_wind_smithing.json"
+hash = "dd47988cb4a74f212db316df60809e88568dd48073b78707d32e4f085d82b46a"
+
+[[files]]
+file = "kubejs/data/lne_wizards/recipe/wither_staff_terra_smithing.json"
+hash = "95d35f10373bee9629157d19d5f565b831b881c40501c42fc1f9ea7b62d8f8b2"
+
+[[files]]
+file = "kubejs/data/minecraft/advancement/give_quest_trader_trade.json"
+hash = "9ca0da91d1d3b4a9099d1d4ae8c7ceeaf6c871b101cc26125150179f62f500b1"
+
+[[files]]
+file = "kubejs/data/minecraft/advancement/wander_add_map.json"
+hash = "498416550f8ce9b927b62b89c915dd11f9cdd936c1fc82df74089ba7828d529f"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/block/enderman_holdable.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/jobs/alchemist.json"
@@ -2802,7 +2854,15 @@ hash = "ea4be89cfb7b6b5570f23bc061950e5ea02dc5085cbaea7ff3d972a4746390b3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "c2cfe3fb7711d3e48aa739443268d251b43fc5b4d39385bcd16e774737b8b4cd"
+hash = "3deaad0256712e0ac8fdeb553798f1e213cf99414360e6f9d0403ac4e38fa06b"
+
+[[files]]
+file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
+hash = "6e4bc65d4548a88a2cd61e99210fbb1c5facb6539f8b6108fb58651fec4c4c2d"
+
+[[files]]
+file = "kubejs/server_scripts/minerpg_server_rules.js"
+hash = "4c7ea8c3b163357498103b5ef6963b5ef184da69cae9d2a8261058f3061835ef"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_soft_locks.js"
@@ -3415,6 +3475,202 @@ metafile = true
 file = "mods/yungs-better-witch-huts.pw.toml"
 hash = "9854b699d5a067c46ac99b1dedeeb529bff3fc18dd079e29b438c4cbf9725f68"
 metafile = true
+
+[[files]]
+file = "patchouli_books/handbook/book.json"
+hash = "45917ef4edef7f7c21a97665acb0df9e7f2d56cfa5af8a083b17e57d4d91670b"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/categories/bosses.json"
+hash = "cfcb69c849076b016ba5192005c0184d06f56e5f9576a60697e75fe3b497261b"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/categories/classes.json"
+hash = "5e2ab97f9040cb28e607f031af4840378d258127668d420b30d8a88a8a20c21c"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/categories/getting_started.json"
+hash = "9ba6d6597301542880d13a52691493334369155d4a21921715d55d9ebb75b051"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/categories/keys.json"
+hash = "c2017037b247ce27459dad37fbae5e7c90493c2e406f655fe9b5c0417bd69b0b"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/categories/loot.json"
+hash = "9753c063bf8252d29865f6420e21ff7eef827a7c8fa4e9493a812e096e2624d6"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/categories/party.json"
+hash = "1f72da3edfa16c3065a1895e2b7786a012e6642bfa3d567f8f27663250b983ed"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/categories/professions.json"
+hash = "c97d007217a1f3afc7094105aadd6ccdb1061e812472f54295f21844666673ad"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/categories/races.json"
+hash = "decf172a1c00ac578fc86ecc2ca0b9871dbe12bec0e4449a760a787bc0740e14"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/categories/world.json"
+hash = "ac67a4fa7243355247504509314fb7aa2a4232a21502a64c0d00179fcc0a8c7a"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/bosses/chapters.json"
+hash = "877ae1f53e2a7bc187c52b21027ae79d54bd3517cad9a8f79cdfec05872be121"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/bosses/shard.json"
+hash = "b339776d15e482a6c52e512252648f4926a4f991eefb7b613f8161531c1e7a95"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/bosses/sigil.json"
+hash = "2f689984cceb90eebd139781f225dd2fcd812f449b50c28ea558ad16fa78566c"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/bosses/tips.json"
+hash = "76211a52b247d021d132b620c1edc11ee595f8abdee3fe0a7e2376d84f486930"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/bosses/trophies.json"
+hash = "000c8011c5ac2e80ac577931ebfb3b91e7c5183c60b442a42613522f06413ce5"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/classes/binding.json"
+hash = "c803ae6e3fa84608a68a1901c6fa785d98bf6f5c3c023044ac4692e499866515"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/classes/callings.json"
+hash = "26da8dbe8be07e2def15188b205d5b9efa28f945b38d8aa0bc5bed924c4230a6"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/classes/casting.json"
+hash = "b383c657898cc3bc97c74f240fdaf63afc011a871fc87f41b464e9e3492d8089"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/classes/how.json"
+hash = "0db8edbf76df2d905ee5da404a50f6add8fb2f8120d6edfb533303bc417facf3"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/classes/merchants.json"
+hash = "9809486974b2caa908fe822bf3d4397127cb078dba6fb01a22fc778905163187"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/classes/talents.json"
+hash = "893f2cb625a640ee09fdfad2b62f6b2e29014c2e37cacba8ec8c126925db058e"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/getting_started/first_hour.json"
+hash = "d7debe9f25553d4cade482e3945a1d63d1f2946cde9e13c222e146ce44db2a10"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/getting_started/house_rules.json"
+hash = "7ece35eef35b38f680760de1f6edc5609ed41ad406ca9d867a7f5346f44ef0b4"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/getting_started/welcome.json"
+hash = "eaf0db6bf61f0a663277aad22a19913a52aafb9dcae3f69517aec068ae80b626"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/keys/keys.json"
+hash = "524506047bb6ed1f3a770d66464914a2c7606d4a4ecac1330e045b7d2662e748"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/loot/rarity.json"
+hash = "8f3cf2df76c7caa86893e12f1a68b46b1040d028968169a6de55629f05a83284"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/loot/reforging.json"
+hash = "768311d19e420576c68c57bc39f5e95d059d834d1ca514966685e24303e017a1"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/loot/sockets.json"
+hash = "65f9b2cec9937e3a9f179c26724bf8ae0da34faba8f13cad0c4ca6858877fe60"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/party/party_hud.json"
+hash = "df3df5b3e84a7a4b912f8667bed6b1e5b2187a4ef719b563e2dc0781e25c2fae"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/party/revive.json"
+hash = "9c52c4e7c7ca3ed0f6c5599c6f7caa686692faf238e7f1a3761249228d14e61f"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/professions/anyone.json"
+hash = "0bed74f2be4cfe0e81b1e2b1f6e4ca85510a3d7d52aad813b39d99f5f7908818"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/professions/gates.json"
+hash = "70f64c1b649854bdec01a720c7bc8ffe4ed11d1348a8b39a35f2a5d0ce2934e2"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/professions/hunter.json"
+hash = "11d546b7da1de23f0b9d67001c6bb73cd7b7239a86e1a50bd6b442238653227b"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/professions/jobs.json"
+hash = "362a98c5d5f48ef49afe389ef43ba55926e81745bb0783c3bb17855a4ea8ff83"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/professions/xp.json"
+hash = "06c04fc26a6989a0f1e91cf0781cb76bfd28e721671cba72149660cd79009670"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/races/change.json"
+hash = "8b7fc312695e05115c3b700b3528667c1077caa0837b117e3c6716108e62cfad"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/races/deepkin.json"
+hash = "0db58fa1f45af0b7301de2874e3c67ad448aa699bee6f462f779f6e6f48d35d7"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/races/emberkin.json"
+hash = "0bc6ddfc725cdb67fcfe18976ca09086aac71b5b23c6476b2254854eb2b72a18"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/races/folk.json"
+hash = "186fb9e10727f8d413659825db60e70e304257f20f89e05c9dcbd7ddd4d1840e"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/races/gravebound.json"
+hash = "247c81502a7ede04ba29cc5794d5924ea63705253c4ce3cf38207fbad2931252"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/races/grovekin.json"
+hash = "629db074f8ffe591399bfe938686de8b38e941b9e91416704f1fbb5946807867"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/races/hearthfolk.json"
+hash = "a68c51085bc8a032b121b514345772bb69b39882c2de678dd953d83094eb9481"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/races/rimeborn.json"
+hash = "ea50d2a231b5c35e2e1c1ad37155ec931045983f344e7ffb0c9c3032bace0abe"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/races/tuskborn.json"
+hash = "387c7b815866f086c19570a36730496ca12d00b396f9ec9a8767c314e1003b3c"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/races/voidborn.json"
+hash = "75b6ee0af8db58fe2335cd9dd12d9a51496a7accabe7548baa39697e276d5909"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/world/dungeons.json"
+hash = "77447a10d01d0e003d3c80b9706e63945c47889d193ca16d16854f36265cc042"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/world/elites.json"
+hash = "9419eebfdac54b9e8249dfb448f660fcba6946c48e0a7bb017787ba3cb62bfd7"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/world/tiers.json"
+hash = "d82d765b55a204bec960eef89030736f650fae7b91232d26a388fb65e95f63fb"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/world/zones.json"
+hash = "c309ed640725c1082a8bae4c24d0d0d394587b3da8a66b0107cfeb8a10b7677e"
 
 [[files]]
 file = "resourcepacks/attribute-icons-rpg-series.pw.toml"

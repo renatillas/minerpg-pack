@@ -1,0 +1,16 @@
+{
+  "name": "Dungeon Levels",
+  "icon": "minecraft:mossy_cobblestone",
+  "category": "patchouli:world",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Dungeons have their own level, shown when you step in: small ones 2, temples and forts 3, great dungeons 4, strongholds and ancient cities 5, Nether dungeons 6, End cities 7 and the Ruined Citadel 8.$(br2)Higher levels mean more spawners and better loot."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)No mining.$() The walls of many surface dungeons cannot be broken, so you have to go in through the door. Spawners, cobwebs, torches, leaves and plants still break, and chests open normally. Blocks you place inside cannot be broken again, so build carefully."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Voidborn",
+  "icon": "minecraft:ender_pearl",
+  "category": "patchouli:races",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Enderman-kin from the End.$()$(br2)$(l)Gifts$()$(li)Arcane spell power.$(li)Endermen do not mind your gaze.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Blink (1 min): teleport to the block you look at, up to 10 blocks away.$(br2)$(l)Drawback$()$(br)Water hurts you (rain does not)."
+    }
+  ]
+}

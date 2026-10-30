@@ -29,6 +29,18 @@
 					silent: true
 					type: "command"
 				}
+				{
+					count: 1
+					id: "4D05A7B53218A975"
+					item: {
+						components: {
+							"patchouli:book": "patchouli:handbook"
+						}
+						count: 1
+						id: "patchouli:guide_book"
+					}
+					type: "item"
+				}
 			]
 			tasks: [
 				{

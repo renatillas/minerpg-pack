@@ -1,0 +1,17 @@
+{
+  "name": "Welcome, Traveler",
+  "icon": "minecraft:compass",
+  "category": "patchouli:getting_started",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This is a world for a small group of friends. Pick a folk, pick a calling, learn a trade, and push from the Overworld into the Nether and finally the End.$(br2)The quest book ($(k:key.ftbquests.quests)) tells you what to try next and pays you for it. This handbook explains how things work."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minerpg:handbook",
+      "text": "Lost your handbook? A book and a feather make a new one."
+    }
+  ]
+}

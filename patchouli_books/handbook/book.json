@@ -1,0 +1,14 @@
+{
+  "name": "Adventurer's Handbook",
+  "landing_text": "Everything this world does differently, in short pages. Start with $(l)Getting Started$().",
+  "subtitle": "minerpg",
+  "version": 1,
+  "model": "patchouli:book_brown",
+  "book_texture": "patchouli:textures/gui/book_brown.png",
+  "show_progress": false,
+  "show_toasts": false,
+  "i18n": false,
+  "pause_game": false,
+  "text_overflow_mode": "resize",
+  "creative_tab": "minecraft:tools_and_utilities"
+}

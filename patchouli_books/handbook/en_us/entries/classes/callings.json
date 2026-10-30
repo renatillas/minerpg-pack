@@ -1,0 +1,16 @@
+{
+  "name": "The Callings",
+  "icon": "minecraft:book",
+  "category": "patchouli:classes",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(l)Wizards$(): Arcane, Fire, Frost.$(li)$(l)Elemental mages$(): Water, Earth, Wind.$(li)$(l)Paladin$(): holy plate, maces, shields.$(li)$(l)Priest$(): healer with holy wands.$(li)$(l)Rogue$(): daggers and stealth.$(li)$(l)Warrior$(): double axes and glaives."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(l)Berserker$(): heavy axes and fury.$(li)$(l)Forcemaster$(): fists and force.$(li)$(l)Archers$(): Archer, Deadeye, Tundra Hunter, War Archer.$(li)$(l)Witcher$(): sword fighting (Blade) or signs (Signs).$(li)$(l)Bard$(): songs that help the group, lutes and rapiers."
+    }
+  ]
+}

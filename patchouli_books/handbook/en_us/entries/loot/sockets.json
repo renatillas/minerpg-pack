@@ -1,0 +1,16 @@
+{
+  "name": "Sockets and Gems",
+  "icon": "apotheosis:gem",
+  "category": "patchouli:loot",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Weapons, staves and wands can roll $(item)sockets$(). Put a gem in at a smithing table; a Sigil of Socketing adds a socket. Armor has no sockets: for defensive gems, wear Jewelry rings and necklaces."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(item)Arcanist's Prism$() is a gem for staves and wands only: it adds spell power. Look for it in boss and dungeon loot."
+    }
+  ]
+}

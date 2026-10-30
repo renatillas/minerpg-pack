@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "loot_n_explore:elder_guardian_eye"
+  },
+  "base": {
+    "item": "elemental_wizards_rpg:staff_netherite_aqua"
+  },
+  "result": {
+    "count": 1,
+    "id": "lne_wizards:elder_guardian_staff_aqua"
+  },
+  "template": {
+    "item": "loot_n_explore:guardian_upgrade_smithing_template"
+  }
+}

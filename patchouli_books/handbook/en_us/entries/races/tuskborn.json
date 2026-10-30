@@ -1,0 +1,12 @@
+{
+  "name": "Tuskborn",
+  "icon": "minecraft:gold_ingot",
+  "category": "patchouli:races",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Tusked folk of the bastions.$()$(br2)$(l)Gifts$()$(li)More critical damage.$(li)Harder to knock back.$(li)Piglins leave you alone (brutes do not).$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Battle Fury (2 min): swing and dig much faster for 15 seconds.$(br2)$(l)Drawback$()$(br)Villagers charge you more."
+    }
+  ]
+}

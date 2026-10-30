@@ -1,0 +1,12 @@
+{
+  "name": "Hearthfolk",
+  "icon": "minecraft:bread",
+  "category": "patchouli:races",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Village people, at home anywhere with a hearth.$()$(br2)$(l)Gifts$()$(li)One extra combat roll charge.$(li)Villagers give you better prices.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Rally (2 min): you and players within 8 blocks gain Speed and Resistance for 10 seconds.$(br2)$(l)Drawback$()$(br)None."
+    }
+  ]
+}

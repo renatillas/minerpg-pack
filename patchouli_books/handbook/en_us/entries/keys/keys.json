@@ -1,0 +1,20 @@
+{
+  "name": "Keys",
+  "icon": "minecraft:tripwire_hook",
+  "category": "patchouli:keys",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Quest book: $(k:key.ftbquests.quests)$(li)Talents: $(k:key.puffish_skills.open)$(li)Jobs: $(k:key.jobsplus.open_menu)$(li)Party: $(k:key.partyhud.open_screen)$(li)Racial power: $(k:key.neoorigins.skill_1)$(li)Your folk: $(k:key.neoorigins.view_info)$(li)Combat roll: $(k:keybinds.combat_roll.roll)$(li)Accessories: $(k:key.curios.open.desc)$(li)World tier: $(k:key.apotheosis.open_world_tier_select)$(li)Advancements: $(k:key.advancements)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Backpack: $(k:key.travelersbackpack.inventory)$(li)Backpack tool swap: $(k:key.travelersbackpack.cycle_tool)$(li)Storage terminal: $(k:key.toms_storage.open_terminal)$(li)Land claims: $(k:gui.xaero_pac_key_open_menu)$(li)Normal hotbar: $(k:keybindings.spell_engine.bypass_spell_hotbar)$(li)Weapon ability: $(k:key.cataclysm.ability)$(li)Helmet ability: $(k:key.cataclysm.helmet_ability)$(li)Chestplate ability: $(k:key.cataclysm.chestplate_ability)$(li)Boots ability: $(k:key.cataclysm.boots_ability)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Right-click a downed friend (hold) to revive.$(li)Hotbar keys cast spells while you hold a spell weapon.$(li)Shift over gear: compare with what you wear; Shift over an enchantment: what it does.$(br2)Rebind anything in Options > Controls. This page follows your changes."
+    }
+  ]
+}

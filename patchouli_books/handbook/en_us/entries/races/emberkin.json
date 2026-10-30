@@ -1,0 +1,12 @@
+{
+  "name": "Emberkin",
+  "icon": "minecraft:blaze_powder",
+  "category": "patchouli:races",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Blaze-touched and fire-proof.$()$(br2)$(l)Gifts$()$(li)Immune to fire and lava.$(li)Fire spell power.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Ember Burst (90 s): burns and pushes back creatures within 5 blocks.$(br2)$(l)Drawback$()$(br)Water and rain hurt you."
+    }
+  ]
+}

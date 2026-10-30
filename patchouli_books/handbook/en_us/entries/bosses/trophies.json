@@ -1,0 +1,20 @@
+{
+  "name": "Trophies",
+  "icon": "minerpg:trophy_amethyst_crab",
+  "category": "patchouli:bosses",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Every boss gives each player nearby (64 blocks) their own $(item)trophy$() when it falls. Quests check for trophies, so the whole group gets credit, not only whoever landed the last hit.$(br2)Keep them: some raise your world tier."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Amethyst Crab: Geode Claw$(li)Ancient Remnant: Sun-Bleached Fang$(li)Maledictus: Frostbound Crown$(li)Leviathan: Abyssal Scale$(li)Netherite Monstrosity: Molten Heart$(li)Ender Guardian: Citadel Keystone$(li)Ender Dragon: Dragonscale$(li)Wither: Ashen Skull Shard"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Optional Overworld bosses:$(li)Ferrous Wroughtnaut: Wrought Rivet$(li)Frostmaw: Rimefang Tusk$(li)Umvuthi: Sunbird Plume"
+    }
+  ]
+}

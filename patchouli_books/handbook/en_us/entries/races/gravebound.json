@@ -1,0 +1,12 @@
+{
+  "name": "Gravebound",
+  "icon": "minecraft:soul_sand",
+  "category": "patchouli:races",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Undead of the soul sand valleys.$()$(br2)$(l)Gifts$()$(li)Soul and Shadow spell power.$(li)Monsters notice you later.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Soul Siphon (90 s): drain 6 health from the creature in your sights.$(br2)$(l)Drawback$()$(br)All healing you receive is a little weaker."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "The Nether Sigil",
+  "icon": "minerpg:nether_sigil",
+  "category": "patchouli:bosses",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minerpg:nether_sigil",
+      "text": "Fire alone never opens a Nether portal here. Use the $(item)Nether Sigil$() on a finished, empty obsidian frame instead. It is never used up.$(br2)Dropped by The Harbinger to everyone nearby. Inside the Nether, normal fire works, so you can always build a way home."
+    }
+  ]
+}

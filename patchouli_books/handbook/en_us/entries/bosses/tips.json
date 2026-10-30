@@ -1,0 +1,12 @@
+{
+  "name": "Boss Tips",
+  "icon": "minecraft:totem_of_undying",
+  "category": "patchouli:bosses",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Enter boss arenas together: a boss sizes itself to the group around it when its arena wakes.$(li)Quests hand out maps to the next lair.$(li)Bosses drop the best gear of each world tier."
+    }
+  ]
+}

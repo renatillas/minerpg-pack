@@ -1,0 +1,12 @@
+{
+  "name": "No Job? No Problem",
+  "icon": "minecraft:chest",
+  "category": "patchouli:professions",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Gates only stop $(o)making$() things. Anyone can use, wear, repair and enchant them.$(br2)Class gear also drops from dungeons, monsters and bosses, class merchants sell it, plain bookshelves work for everyone, and a friend with the job can make it for you."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "loot_n_explore:ender_dragon_scales"
+  },
+  "base": {
+    "item": "elemental_wizards_rpg:staff_netherite_wind"
+  },
+  "result": {
+    "count": 1,
+    "id": "lne_wizards:ender_dragon_staff_wind"
+  },
+  "template": {
+    "item": "loot_n_explore:dragon_upgrade_smithing_template"
+  }
+}

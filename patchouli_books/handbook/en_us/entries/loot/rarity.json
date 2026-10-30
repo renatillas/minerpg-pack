@@ -1,0 +1,16 @@
+{
+  "name": "Rarity",
+  "icon": "minecraft:golden_sword",
+  "category": "patchouli:loot",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Gear comes in five rarities, each with its own name color: $(l)Common, Uncommon, Rare, Epic, Mythic$(). Higher rarity means more bonus stats, called $(item)affixes$().$(br2)Chests and monsters drop up to Epic. Bosses drop Rare and better, and only bosses drop Mythic."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Your world tier decides how good drops are. Monsters sometimes drop class gear of your tier, too.$(br2)Hold Shift over a piece of gear to compare it with what you wear."
+    }
+  ]
+}

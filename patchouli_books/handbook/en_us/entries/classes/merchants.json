@@ -1,0 +1,12 @@
+{
+  "name": "Class Merchants",
+  "icon": "minecraft:emerald",
+  "category": "patchouli:classes",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Villages have buildings for some callings, each with a merchant who sells class gear:$(li)Wizard Tower: wizards and mages$(li)Sanctuary: paladins and priests$(li)Barracks: rogues and warriors$(li)Archery Range: archers$(li)Pub: bards$(br2)Not every village has every building. Merchants also buy crafted goods."
+    }
+  ]
+}

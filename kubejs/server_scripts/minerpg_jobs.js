@@ -29,6 +29,11 @@ const $ReforgingMenu = Java.loadClass('dev.shadowsoffire.apotheosis.affix.reforg
 const $SalvagingMenu = Java.loadClass('dev.shadowsoffire.apotheosis.affix.salvaging.SalvagingMenu')
 const $GemCuttingMenu = Java.loadClass('net.jewelry.gems.GemCuttingScreenHandler')
 const $CookingPotMenu = Java.loadClass('vectorwing.farmersdelight.common.block.entity.container.CookingPotMenu')
+// Note: loading CookingPotMenu on a dedicated server logs one harmless "invalid dist" error for
+// net/minecraft/client/RecipeBookCategories (it is a recipe-book menu). Any script that reads a
+// player's open menu makes Rhino inspect such a class (the player inventory is one too), so the
+// line would appear at the first login otherwise. Class names can't be read instead: KubeJS
+// blocks getClass(). Left as is on purpose.
 
 // ---------------------------------------------------------------------------------------
 // Numbers (see the design doc's pacing table before changing them)

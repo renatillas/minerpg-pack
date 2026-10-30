@@ -1,0 +1,12 @@
+{
+  "name": "Spell Binding Table",
+  "icon": "spell_engine:spell_binding",
+  "category": "patchouli:classes",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Every plains village has a gazebo with a Spell Binding Table. You can also build one and ring it with bookshelves.$(br2)Put your tome in and bind a new spell with experience levels. Stronger spells ask for more levels, so they open up as you grow."
+    }
+  ]
+}

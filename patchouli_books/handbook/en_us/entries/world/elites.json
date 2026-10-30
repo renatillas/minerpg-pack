@@ -1,0 +1,12 @@
+{
+  "name": "Elites and Invaders",
+  "icon": "minecraft:wither_skeleton_skull",
+  "category": "patchouli:world",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Elites$() are monsters with a colored title and extra powers: tougher, but they drop more. The deadliest kinds only appear in dangerous zones. Animals, villagers and bosses are never elites.$(br2)$(l)Invaders$() are rare named champions that roam the world. They hit hard and carry good gear."
+    }
+  ]
+}

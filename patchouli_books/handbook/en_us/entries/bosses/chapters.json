@@ -1,0 +1,16 @@
+{
+  "name": "Three Chapters",
+  "icon": "minecraft:map",
+  "category": "patchouli:bosses",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Chapter 1, the Overworld$(): the Amethyst Crab, then the Wildlands bosses (Ancient Remnant, Maledictus, the Leviathan), then $(l)The Harbinger$() in the Frontier.$(br2)$(l)Chapter 2, the Nether$(): the Netherite Monstrosity, then $(l)Ignis$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Chapter 3, the End$(): the Ender Dragon and the $(l)Ender Guardian$(). The Wither is an optional group raid.$(br2)Optional Overworld bosses: the Ferrous Wroughtnaut, the Frostmaw and Umvuthi."
+    }
+  ]
+}

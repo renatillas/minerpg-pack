@@ -1,0 +1,12 @@
+{
+  "name": "World Tiers",
+  "icon": "minecraft:nether_star",
+  "category": "patchouli:world",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Your $(item)world tier$() ($(k:key.apotheosis.open_world_tier_select) to look) makes monsters tougher and gear better. It rises by itself and never goes down:$(li)$(l)Haven$(): from the start$(li)$(l)Venture$(): Geode Claw$(li)$(l)Ascent$(): Nether Sigil$(li)$(l)Summit$(): Void Shard$(li)$(l)Pinnacle$(): Citadel Keystone and Dragonscale"
+    }
+  ]
+}

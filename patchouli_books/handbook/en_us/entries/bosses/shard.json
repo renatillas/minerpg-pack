@@ -1,0 +1,13 @@
+{
+  "name": "The Void Shard",
+  "icon": "minerpg:void_shard",
+  "category": "patchouli:bosses",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minerpg:void_shard",
+      "text": "Eyes of Ender need a $(item)Void Shard$(): ender pearl, blaze powder and the shard. The shard stays in the grid, so one makes every eye you need.$(br2)Dropped by Ignis to everyone nearby."
+    }
+  ]
+}

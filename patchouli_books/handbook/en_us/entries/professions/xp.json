@@ -1,0 +1,12 @@
+{
+  "name": "Other Ways to Level",
+  "icon": "minecraft:experience_bottle",
+  "category": "patchouli:professions",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(l)Smith$(): reforging, salvaging, socketing gems, smelting.$(li)$(l)Enchanter$(): enchanting, binding spells, cutting gems.$(li)$(l)Alchemist$(): brewing, runes, potion charms.$(li)$(l)Farmer$(): harvesting and cooking-pot meals.$(li)Miner, Digger, Lumberjack, Builder and Fisherman level from exactly what their name says."
+    }
+  ]
+}
