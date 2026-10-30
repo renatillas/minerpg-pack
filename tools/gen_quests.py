@@ -323,6 +323,10 @@ STRUCTURE_TAGS = {
     'nether_dungeons': ['nova_structures:nether_keep', 'nova_structures:piglin_donjon', 'nova_structures:nether_port',
                         'nova_structures:piglin_outstation'],
     'end_dungeons': ['nova_structures:end_castle', 'nova_structures:end_lighthouse', 'nova_structures:end_ship'],
+    # YUNG's Better Nether Fortresses / Better Strongholds replace (and turn off) the vanilla
+    # structures, so "find a fortress / the stronghold" accepts both ids.
+    'nether_fortresses': ['minecraft:fortress', 'betterfortresses:fortress'],
+    'strongholds': ['minecraft:stronghold', 'betterstrongholds:stronghold'],
 }
 
 
@@ -422,6 +426,20 @@ GETTING_STARTED = [
         'Press J to open the Jobs menu and join two jobs. Each job levels up from its own work and pays coins and perks.',
         'The quests below show one way each job earns experience.'],
         [t_check('Join two jobs')], [r_xp(30)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
+    # v0.4 additions. Item rewards only, so Getting Started quest points stay as tuned.
+    Q('gs_revive', 'Pick Them Up', 4, -3, [
+        'When you would die with other players online, you fall &cdowned&r instead. You have 60 seconds.',
+        'A friend revives you by holding the use key (right-click) on you for 3 seconds. Heal spells cannot reach a downed player: someone has to pick you up.',
+        'You get up with 3 hearts and a short Weakness. Fall again soon after and the same timer keeps running.',
+        'Alone on the server there is nobody to help, so you simply die. Lava and the void still kill at once.'],
+        [t_check('Understood')], [r_item('minecraft:golden_apple', 1)], deps=['gs_party'], subtitle='Downed and revived', shape='diamond'),
+    Q('gs_cooking', 'A Feast for the Party', -4, -3, [
+        'Build a &6Cooking Pot&r and set it on a campfire or stove. Pot meals feed more and give the whole group buffs:',
+        '- &aNourishment&r: your hunger stops dropping for a while.',
+        '- &aComfort&r: you keep healing however hungry you are.',
+        'Wild cabbages, tomatoes, onions and rice grow out in the world: break them for seeds. Hover over any food to see how much it restores.'],
+        [t_item('farmersdelight:cooking_pot', title='Craft a Cooking Pot')], [r_item('farmersdelight:tomato_seeds', 4), r_item('farmersdelight:cabbage_seeds', 4)],
+        deps=['gs_welcome'], subtitle='Cooking (Farmer\'s Delight)'),
 ]
 
 JOB_STARTERS = [
@@ -469,6 +487,12 @@ CHAPTER_1 = [
     Q('c1_waystone', 'A Stone of Your Own', 0, 2.5, [
         'Craft a waystone and place it at your home. Then you can always travel back.'],
         [t_item('waystones:waystone')], [r_item('waystones:warp_stone')], deps=['c1_village'], subtitle='Side task'),
+    Q('c1_wroughtnaut', 'The Iron Sentinel', 4.5, 2.5, [
+        'Deep under the Hearthlands, a sealed chamber holds a suit of armor that is not empty: the &7Ferrous Wroughtnaut&r.',
+        'Its armor turns most blows. Dodge the axe, then strike its back while it recovers.',
+        'Optional. Everyone nearby at the kill earns a Wrought Rivet.'],
+        [t_item('minerpg:trophy_ferrous_wroughtnaut', title='Wrought Rivet')], [r_item('minecraft:iron_block', 2), r_xp(75)],
+        deps=['c1_cellar'], subtitle='Optional boss', shape='gear', optional=True),
     # Wildlands
     Q('c1_wild', 'Into the Wildlands', 6.5, 0, [
         'The &6Wildlands&r are the harsh lands: deserts, jungles, swamps, taigas, dark forests and open sea. Big dungeons and ruins hide there, and monsters hit harder.',
@@ -505,6 +529,16 @@ CHAPTER_1 = [
         'Defeat &9The Leviathan&r in its flooded hall. It is untouchable out of the water, so fight it in its element.'],
         [t_item('minerpg:trophy_leviathan', title='Abyssal Scale')], [r_item('minecraft:diamond', 4), r_xp(150)],
         deps=['c1_sunken'], subtitle='Boss', shape='gear', size=Double(1.5)),
+    Q('c1_umvuthi', 'The Sunbird\'s Court', 6.5, -2.5, [
+        'Masked Umvuthana guard a grove in the savanna. Their chief, &6Umvuthi, the Sunbird&r, calls down sunfire and heals behind his followers.',
+        'Optional. Everyone nearby at the kill earns a Sunbird Plume.'],
+        [t_item('minerpg:trophy_umvuthi', title='Sunbird Plume')], [r_item('minecraft:gold_block', 2), r_xp(100)],
+        deps=['c1_wild'], subtitle='Optional boss', shape='gear', optional=True),
+    Q('c1_frostmaw', 'Rimefang', 8, 3, [
+        'Something huge sleeps in the snowfields and on the ice spikes: the &bFrostmaw&r. Wake it and it breathes ice.',
+        'Optional. Everyone nearby at the kill earns a Rimefang Tusk.'],
+        [t_item('minerpg:trophy_frostmaw', title='Rimefang Tusk')], [r_item('minecraft:diamond', 3), r_xp(100)],
+        deps=['c1_wild'], subtitle='Optional boss', shape='gear', optional=True),
     Q('c1_diamonds', 'Glittering Hoard', 6.5, 2.5, [
         'Diamond gear is the next step. Bring back a handful.'],
         [t_item('minecraft:diamond', 8)], [r_item('runes:medium_rune_pouch'), r_xp(100)], deps=['c1_wild'], subtitle='Side task'),
@@ -540,7 +574,7 @@ CHAPTER_2 = [
         subtitle='Chapter start'),
     Q('c2_fortress', 'Fortress of Flame', 1.5, -1.5, [
         'Dark brick bridges cross the lava seas. Find a fortress.'],
-        [t_struct('minecraft:fortress', 'Find a Nether fortress')], [r_xp(200)], deps=['c2_arrive']),
+        [t_struct('#minerpg:nether_fortresses', 'Find a Nether fortress')], [r_xp(200)], deps=['c2_arrive']),
     Q('c2_blaze', 'Burning Wardens', 3, -2.5, [
         'Blazes guard the fortress. Their rods feed brewing stands and Eyes of Ender alike.'],
         [t_kill('minecraft:blaze', 6), t_item('minecraft:blaze_rod', 6)], [r_item('minecraft:blaze_rod', 4), r_xp(200)], deps=['c2_fortress']),
@@ -598,7 +632,7 @@ CHAPTER_3 = [
         [t_item('minecraft:ender_eye', 12)], [r_item('minecraft:ender_pearl', 4), r_xp(200)], subtitle='Chapter start'),
     Q('c3_stronghold', 'The Stronghold', 1.5, 0, [
         'Throw an eye and follow it underground to the stronghold and its portal room.'],
-        [t_struct('minecraft:stronghold', 'Find the stronghold')], [r_xp(300)], deps=['c3_eyes']),
+        [t_struct('#minerpg:strongholds', 'Find the stronghold')], [r_xp(300)], deps=['c3_eyes']),
     Q('c3_end', 'Into the End', 3, 0, [
         'Fill the frame and jump in. There is no coming back until the dragon falls, or you die.'],
         [t_dim('minecraft:the_end', 'Enter the End')], [r_item('minecraft:golden_apple', 3)], deps=['c3_stronghold']),

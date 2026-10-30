@@ -22,3 +22,6 @@ key_key.shouldersurfing.free_look:key.keyboard.unknown
 key_key.shouldersurfing.swap_shoulder:key.keyboard.unknown
 key_keybindings.spell_engine.bypass_spell_hotbar:key.keyboard.left.alt
 key_gui.xaero_pac_key_open_menu:key.keyboard.apostrophe
+key_key.travelersbackpack.inventory:key.keyboard.b
+key_key.travelersbackpack.cycle_tool:key.keyboard.z
+key_key.toms_storage.open_terminal:key.keyboard.m

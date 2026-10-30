@@ -38,11 +38,11 @@ hash = "a4538151ed765e64b8b77ec1ae9c58b712514b458db5b41eebde682c6807b3f0"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "bcf7b7c32781d768cb496cdee997be619b2b0005f9d46c5406a81c4413902e73"
+hash = "97907540cb387433baaf5343b06bff965eeae14ef9617263e00a68086124146e"
 
 [[files]]
 file = "config/dungeon_difficulty/difficulty_v2.json"
-hash = "80be7aa1cedcdba1be68f339d4b39c882e08cae5aadcd4a90cf7caba4a4a76e8"
+hash = "8cddd7d133f5da06b90b478360267bec97c9eabe89ededa6bf85d914e5bc2d44"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -50,19 +50,19 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_overworld.snbt"
-hash = "3c31147459d3fac5a812bd14aaf44070eb259ac111e6f7f9ec4161f4bcc251df"
+hash = "2d86717cd4aa25dd41117d80bcfc7c0bd5ddbd0247956a04c00f295631f6ada8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_nether.snbt"
-hash = "b94ee85ac13161cb84766f3403f5df712f306560617eb62906e9d77ea3f3176e"
+hash = "71660741bf916beaa857b5bfff20780744860f420c85eed84067352fb7568121"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_end.snbt"
-hash = "a8eab67be14c67ddb522106e4e202ac361ce50b50c19fcd419395745055243e3"
+hash = "bb65ff9ff2b7a85dd13703190224e752d72eab44c0b756bb048d1640c10fdc2f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
-hash = "4b1589cfd5d1a647f6abe74e984feb6c6e03eb15d368b8708401bc11e8c0d829"
+hash = "c0df46bf55bb2cd1901be9fd0415ab703df6cfd7261b37dd201bdc27defc82cf"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -70,7 +70,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "fbe2f8cb5efca3ec58f0158609981313876f3d7d354be5d27ab1e9e48b3eef85"
+hash = "eb6461cc261f59ffc310f70a8b6c1b69490712b7d3c873cdb2754ee82e25edc4"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -79,6 +79,10 @@ hash = "e773901d9a53b3c38973e5bbd1e8c4c6abd19edd692733fbd3619929e6fbb655"
 [[files]]
 file = "config/ftbteams-server.snbt"
 hash = "b363301b3243d56fc32dbb3ee498abe1bd1b1a20e74cdbe5c8a3581e956f742d"
+
+[[files]]
+file = "config/hardcorerevival-common.toml"
+hash = "dbad3c65facc183b43af94ed6434226b8bcd6f241ab648b553f77f8e405be0ed"
 
 [[files]]
 file = "config/jobsplus-common.yaml"
@@ -99,6 +103,14 @@ hash = "fe6595df14a788af4067dc33222c7391c68ee9e3ed8d58a8f687fd4bddbdbbbc"
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/enchanter/enchant_apothic_table.json"
 hash = "cb18467869d53ffbbde8d1e63df6fb9d5a8b7bb964785f4f2450dc2397e4ef87"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/farmer/harvest_fd_mushroom_colonies.json"
+hash = "61871ae1e380efb832429af08fe1878eed0e2ca57cbaa9a9fead46b0e6d3417c"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/farmer/pick_fd_tomatoes.json"
+hash = "ce4cdb3751d1d8522703137eef204d70df101768cee7de53d70799fc16f2ec91"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/smith/craft_rpg_gear.json"
@@ -354,7 +366,7 @@ hash = "01b0277b6eaac75d738b5c60e53317ed09311b2e29292423a9023d9b13fbc0b3"
 
 [[files]]
 file = "kubejs/assets/minerpg/lang/en_us.json"
-hash = "5e646bc7a62fcf8243c1217e4350fd4d66942e70b5d6af287c0b9fce32e20141"
+hash = "2915079fa97b3f936d9d86f673bcbc1c9f7e151583a85901bb0c76e60a43e5f4"
 
 [[files]]
 file = "kubejs/assets/minerpg/textures/item/nether_sigil.png"
@@ -377,6 +389,14 @@ file = "kubejs/assets/minerpg/textures/item/trophy_ender_guardian.png"
 hash = "c80d211e833136fa46e3e7b04b5ca14b6028397964b4b947071a443a4762369b"
 
 [[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_ferrous_wroughtnaut.png"
+hash = "f65bc227dd63dd2c583ea73edb5a287eafc77c2226381f66753400da6de9e8a3"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_frostmaw.png"
+hash = "7a2b0ee97a9c4f3f786bc6182842b25897afe229ba2f3c70a3a7c6eb96db6802"
+
+[[files]]
 file = "kubejs/assets/minerpg/textures/item/trophy_leviathan.png"
 hash = "a5499a15d454ba7087a6e88c86df37ad8369d7435a81908cb58a37a540d6b726"
 
@@ -389,6 +409,10 @@ file = "kubejs/assets/minerpg/textures/item/trophy_netherite_monstrosity.png"
 hash = "eb69a2d633656c9388dd445afaa8de6fbece13313f17be045edd73b5da59f7ce"
 
 [[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_umvuthi.png"
+hash = "76d59123b16bdac61665d22d2c599205279c19f7aabfbf704e9ce1744852d166"
+
+[[files]]
 file = "kubejs/assets/minerpg/textures/item/trophy_wither.png"
 hash = "1abce378d3bfc24ca0020ebff5efda6eed01f32de9e14c840c9f72cb869ea782"
 
@@ -398,7 +422,7 @@ hash = "10ac2bb285ab7e4af7b01c502c2eb31e46d561d009a031e644f822a6b83a117a"
 
 [[files]]
 file = "kubejs/client_scripts/minerpg_tooltips.js"
-hash = "ffa8ac7c07a794bc38b5e072b225771eee81044038d3d64669569ed0b138eb16"
+hash = "639d2c9d4496de7527d55528cc7155ee15a43c2650bb3a4f4837b4d0d53cb680"
 
 [[files]]
 file = "kubejs/data/apotheosis/advancement/progression/ascent.json"
@@ -2066,7 +2090,7 @@ hash = "52bc1c272c440d95d0dcbc510dd347ba97a528eaa2c821f25322e1527e0d9172"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/entity_type/boss.json"
-hash = "7fa012010904d180ce2e24cd37cc0a8a895f219a0e5254c0068aec6c208f5fa7"
+hash = "83f5bdd1b5c84bffe62cd4bd5007753567b6599397cfca3d3e46c8fa739d633d"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/biome/zone/frontier.json"
@@ -2089,8 +2113,16 @@ file = "kubejs/data/minerpg/tags/worldgen/structure/nether_dungeons.json"
 hash = "25aa8de5e6543ca5f0605097e1857552feed386b449ce517268a3264f316ed35"
 
 [[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/nether_fortresses.json"
+hash = "d0d493b2be089d9d1f149973d027e7382beded6eafdd586c137271cfdefdb2db"
+
+[[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/small_dungeons.json"
 hash = "ac83dffffccc6dcb5e10c8896eb9f4b607f8944d689e6f2270c82c2369955346"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/strongholds.json"
+hash = "e9aae0e263b802400c913c129def070ff054f37aaac3dc8d2f79ad97e560d4df"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/taverns.json"
@@ -2114,7 +2146,7 @@ hash = "ea4be89cfb7b6b5570f23bc061950e5ea02dc5085cbaea7ff3d972a4746390b3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_soft_locks.js"
-hash = "7c615cd4272cf1c836d619c74e1f7df783afc92ff4a01b5fa744d633f619422a"
+hash = "4294af65e087ec534600562d53733f745dbedd4047f71abb6cb11db106d85bfa"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_champions.js"
@@ -2122,7 +2154,7 @@ hash = "cd36c2d6d8870a21c88477d1f952e73ca73583591440c6692bfef7c1acc91708"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_items.js"
-hash = "ebd2f3a1f2172b9d4528b3ad1605d5cac15278d4454c641e957fa157d759f02d"
+hash = "d472c8174eacb429cd9847449394b0b08e40b46bf02039231f3a2f85b73226cd"
 
 [[files]]
 file = "mods/additional-rpg-jewelry.pw.toml"
@@ -2147,6 +2179,11 @@ metafile = true
 [[files]]
 file = "mods/apothic-spawners.pw.toml"
 hash = "e3cf8a1207e85580723e384bf59688be26b80373b49c1d64972528cdc0dcac6d"
+metafile = true
+
+[[files]]
+file = "mods/appleskin.pw.toml"
+hash = "716d930feff599bf9ce732e05979fbae8025dc8a3c13ccf4f1cb207a70883bc6"
 metafile = true
 
 [[files]]
@@ -2270,6 +2307,21 @@ hash = "e4ed9a397189b6d0da17c18aa54adf49ad86327e7a3ded75a62b9cf6e9dfee4e"
 metafile = true
 
 [[files]]
+file = "mods/enchantment-descriptions.pw.toml"
+hash = "889b8b58391e2e6652dd4e8f2c24b3119026a02a30bb3b9de264890f747581cf"
+metafile = true
+
+[[files]]
+file = "mods/entityculling.pw.toml"
+hash = "426238488c9ffd843f661f8bc74aa8e585fa6b4d342c43c4ba4cb8451298b725"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "97347efd9e808841d72fe3599da8a11add8422e97f89ae1c85cdfc0acfa18f96"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
 metafile = true
@@ -2300,6 +2352,16 @@ hash = "0bb3914b7acbcd3f25714ac0d0e2c1926cf990d00a628bfcc8d61379df3fb6d8"
 metafile = true
 
 [[files]]
+file = "mods/geckolib.pw.toml"
+hash = "35779b39ddc06059ec483b33de2ecfdc3adb95c0a49e69b6701fb0024827e2f5"
+metafile = true
+
+[[files]]
+file = "mods/hardcore-revival.pw.toml"
+hash = "b40bf18d55e384abd8799b611c84a264518e4fc6aed6f49aa568a49578bae083"
+metafile = true
+
+[[files]]
 file = "mods/hunger-tweaks.pw.toml"
 hash = "468554b572064b4bb325946d279c772252b98a9ddb900117be628ccc97cf1a5c"
 metafile = true
@@ -2307,6 +2369,16 @@ metafile = true
 [[files]]
 file = "mods/iceberg.pw.toml"
 hash = "a2fbecad69fcbff54919864ea8b95e54d140a1a2c637d73307fb366e76066fe6"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "4601b9be31b6e131dca8a148c974d015444bcac7c82fcb66fbd8751a67933a5d"
+metafile = true
+
+[[files]]
+file = "mods/item-borders.pw.toml"
+hash = "709a01e949975ef624c4fbeabb1d8a2339eb50709d2b3e1e84732ca31f341c4d"
 metafile = true
 
 [[files]]
@@ -2390,8 +2462,18 @@ hash = "8691a6080607f512d7adbbc1c17911ba83db273a5b5f113711fd8408b8d6a9df"
 metafile = true
 
 [[files]]
+file = "mods/mmmmmmmmmmmm.pw.toml"
+hash = "616a78e83977651454abca863e6ec9766ea4ce8d559269cd4a7d9aa8bf0223aa"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "ef65836e005bd42a0f40df30a94eba1ad7ee5ed3194b11eafbeadc64edb44252"
+metafile = true
+
+[[files]]
+file = "mods/moonlight.pw.toml"
+hash = "709bfedec583aee1370ad11210b75a454b1e3f10c0a1da7fe25abd1c28a8681d"
 metafile = true
 
 [[files]]
@@ -2407,6 +2489,16 @@ metafile = true
 [[files]]
 file = "mods/more-rpg-library.pw.toml"
 hash = "fd56e3f353fbb657c3642c1b39601f2cb6a982da77e6ce92605b05046fb56844"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "6bc414cc0f2d4c078fe83f384d786343f701f371d657c5279b5b0df1595804bd"
+metafile = true
+
+[[files]]
+file = "mods/mowzies-mobs.pw.toml"
+hash = "02aa4dcb8fa24cffcd2182c66683c2a476a95abf53002373f953a49737a587e3"
 metafile = true
 
 [[files]]
@@ -2447,6 +2539,11 @@ metafile = true
 [[files]]
 file = "mods/playeranimator.pw.toml"
 hash = "93284ca7f2f23f0bb76d42b797cabf2aea1914ee9825bec82bf6ffe4c60dda0d"
+metafile = true
+
+[[files]]
+file = "mods/polymorph.pw.toml"
+hash = "d935e4ce118d15c88b10809df85e801f0e9577855f870f3c28e5a0bd5e7fecf6"
 metafile = true
 
 [[files]]
@@ -2545,8 +2642,18 @@ hash = "be98f35a27ed18827b70b4aa3fce92067d7a3d00f4d39d1ada5797cfb90fa470"
 metafile = true
 
 [[files]]
+file = "mods/toms-storage.pw.toml"
+hash = "a303683e4c74640f419c31db329e9afc3ee8f388abc5c6a536dc6169c274b5c6"
+metafile = true
+
+[[files]]
 file = "mods/travelers-titles.pw.toml"
 hash = "01cab903b1a7f77aa4f28c7fab24e7fa09b376b18c77b487b7ba34e0afc57813"
+metafile = true
+
+[[files]]
+file = "mods/travelersbackpack.pw.toml"
+hash = "f59458b90f50d00d42d73f726e310322c9922dd75f935747564047bfed03143c"
 metafile = true
 
 [[files]]
@@ -2590,8 +2697,48 @@ hash = "dde31f05114c72cb2f58e522417487730b872e456f77fdd02c032c9235791f6c"
 metafile = true
 
 [[files]]
+file = "mods/yungs-better-desert-temples.pw.toml"
+hash = "c2cb28859e7bcc0eb4ce59c5792f90fa5f8ab8865f5867ba26a5a345ec60b498"
+metafile = true
+
+[[files]]
 file = "mods/yungs-better-dungeons.pw.toml"
 hash = "1496ffa30020676979e65921b91e583a2fdc77e50001e2ed55f99edf1a0ae880"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-end-island.pw.toml"
+hash = "03d964cba45be30fbcbef52f89f3953185737f55c8934d12e199b67194c2b368"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-jungle-temples.pw.toml"
+hash = "c2dc09f214e7c1cecca6cf434776c2616f6d36bd27c06a6b39f985da0453a4f5"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-mineshafts.pw.toml"
+hash = "e839608ebc974e9e7819adc7bf29132ea86fc41b46af540fe0fa39b2007b2439"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-nether-fortresses.pw.toml"
+hash = "50c1731148d91a4ef05cfc47f759ca8fb3dad254e15ce4ecc5732d6fbfa68637"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-ocean-monuments.pw.toml"
+hash = "a2d7176026abf4a68a663b375811a603c508f36062cc7fb5b45416e1462682a8"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-strongholds.pw.toml"
+hash = "03084966c05070b5c4b17cd89234f3c0d813940a2d76b405a6699deac10a0ab8"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-witch-huts.pw.toml"
+hash = "9854b699d5a067c46ac99b1dedeeb529bff3fc18dd079e29b438c4cbf9725f68"
 metafile = true
 
 [[files]]

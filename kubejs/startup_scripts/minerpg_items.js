@@ -21,6 +21,10 @@ StartupEvents.registry('item', event => {
     'ender_guardian',
     'ender_dragon',
     'wither',
+    // Mowzie's Mobs zone bosses (optional Chapter 1 side quests, v0.4).
+    'ferrous_wroughtnaut',
+    'frostmaw',
+    'umvuthi',
   ]
   trophies.forEach(name => {
     event.create(`minerpg:trophy_${name}`).rarity('rare').maxStackSize(16)

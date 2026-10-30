@@ -170,6 +170,14 @@
 	]
 	"quest.2C9281C642E70027.quest_subtitle": "Hearthlands"
 	"quest.2C9281C642E70027.title": "The Hearth Road"
+	"quest.2D964BD77219E2CA.quest_desc": [
+		"When you would die with other players online, you fall &cdowned&r instead. You have 60 seconds."
+		"A friend revives you by holding the use key (right-click) on you for 3 seconds. Heal spells cannot reach a downed player: someone has to pick you up."
+		"You get up with 3 hearts and a short Weakness. Fall again soon after and the same timer keeps running."
+		"Alone on the server there is nobody to help, so you simply die. Lava and the void still kill at once."
+	]
+	"quest.2D964BD77219E2CA.quest_subtitle": "Downed and revived"
+	"quest.2D964BD77219E2CA.title": "Pick Them Up"
 	"quest.2E75B2448D173567.quest_desc": [
 		"Fill the frame and jump in. There is no coming back until the dragon falls, or you die."
 	]
@@ -193,6 +201,13 @@
 	]
 	"quest.320B32FBD74A9EAF.quest_subtitle": "The Nether Sigil and the Void Shard"
 	"quest.320B32FBD74A9EAF.title": "Locked Doors"
+	"quest.34BEFE9F912CD9C5.quest_desc": [
+		"Deep under the Hearthlands, a sealed chamber holds a suit of armor that is not empty: the &7Ferrous Wroughtnaut&r."
+		"Its armor turns most blows. Dodge the axe, then strike its back while it recovers."
+		"Optional. Everyone nearby at the kill earns a Wrought Rivet."
+	]
+	"quest.34BEFE9F912CD9C5.quest_subtitle": "Optional boss"
+	"quest.34BEFE9F912CD9C5.title": "The Iron Sentinel"
 	"quest.3666625E717DFC13.quest_desc": [
 		"Summon and destroy &8the Wither&r with your whole group. Everyone nearby earns an Ashen Skull Shard."
 	]
@@ -219,6 +234,12 @@
 	]
 	"quest.3F043D30988BC476.quest_subtitle": "Party HUD (H)"
 	"quest.3F043D30988BC476.title": "Better Together"
+	"quest.4002DA8DFCA3AC1A.quest_desc": [
+		"Masked Umvuthana guard a grove in the savanna. Their chief, &6Umvuthi, the Sunbird&r, calls down sunfire and heals behind his followers."
+		"Optional. Everyone nearby at the kill earns a Sunbird Plume."
+	]
+	"quest.4002DA8DFCA3AC1A.quest_subtitle": "Optional boss"
+	"quest.4002DA8DFCA3AC1A.title": "The Sunbird's Court"
 	"quest.4006A822FCE741F9.quest_desc": [
 		"A fortress of black ice where something was locked away on purpose."
 	]
@@ -390,6 +411,12 @@
 	]
 	"quest.74B908B7033E7344.quest_subtitle": "Side task"
 	"quest.74B908B7033E7344.title": "Eye of the Frost"
+	"quest.76FFB30A032160C1.quest_desc": [
+		"Something huge sleeps in the snowfields and on the ice spikes: the &bFrostmaw&r. Wake it and it breathes ice."
+		"Optional. Everyone nearby at the kill earns a Rimefang Tusk."
+	]
+	"quest.76FFB30A032160C1.quest_subtitle": "Optional boss"
+	"quest.76FFB30A032160C1.title": "Rimefang"
 	"quest.7920CBCE701DE238.quest_desc": [
 		"An Eye of Flame shows the way to the burning arena. Craft one."
 	]
@@ -425,6 +452,14 @@
 		"Piglin brutes do not care about your gold. Show them what you learned up top."
 	]
 	"quest.7EC7FF658A0626F1.title": "Brute Force"
+	"quest.7F3ACDC21971B67E.quest_desc": [
+		"Build a &6Cooking Pot&r and set it on a campfire or stove. Pot meals feed more and give the whole group buffs:"
+		"- &aNourishment&r: your hunger stops dropping for a while."
+		"- &aComfort&r: you keep healing however hungry you are."
+		"Wild cabbages, tomatoes, onions and rice grow out in the world: break them for seeds. Hover over any food to see how much it restores."
+	]
+	"quest.7F3ACDC21971B67E.quest_subtitle": "Cooking (Farmer's Delight)"
+	"quest.7F3ACDC21971B67E.title": "A Feast for the Party"
 	"reward.101C0F1F77A34A36.title": "Berserker"
 	"reward.121F3AC8B68AF412.title": "+1 talent point"
 	"reward.1283E905E288BBDD.title": "Earth Mage"
@@ -473,15 +508,19 @@
 	"task.3811AA5D0322C05E.title": "Gather 16 logs"
 	"task.3C1EE764482629CD.title": "Craft an iron pickaxe"
 	"task.3C9FFDADD7459B25.title": "Open a dungeon chest"
+	"task.40D2EFBCEA4F1121.title": "Rimefang Tusk"
 	"task.42B71E3EB6C49F2A.title": "Join or form a party"
+	"task.454585A7B8F63BE1.title": "Sunbird Plume"
 	"task.45792096E156E094.title": "Explore a Nether keep"
 	"task.462EF832FEFAD119.title": "Sun-Bleached Fang"
 	"task.47A5DCB513B389C1.title": "Gather 32 dirt, sand, gravel or clay"
 	"task.48D711FD6A2A126F.title": "Place a block"
 	"task.4A63160D953DD699.title": "Use your racial power"
 	"task.4A922A57DA24E513.title": "Frostbound Crown"
+	"task.4D29AF731F304F2C.title": "Understood"
 	"task.4DABEFEF63961B92.title": "Dragonscale"
 	"task.4E54A909613B1160.title": "Find the Amethyst Nest"
+	"task.4FA2E8445AFFB9F0.title": "Wrought Rivet"
 	"task.55690ED8CFB47271.title": "Understood"
 	"task.57FE63978AC454DA.title": "Find a bastion"
 	"task.583A2578AA83D3DF.title": "Find a small dungeon"
@@ -494,6 +533,7 @@
 	"task.6B7FB8F75E0ABD9D.title": "Find an ancient city"
 	"task.6C9EF992B5F2CAF0.title": "Abyssal Scale"
 	"task.6DF33D11FB4F9596.title": "Ashen Skull Shard"
+	"task.6E240CDBEB03285A.title": "Craft a Cooking Pot"
 	"task.7040411BA905E17E.title": "Geode Claw"
 	"task.7094D33006BAD032.title": "Open the book"
 	"task.7174399ADFE35BE8.title": "Visit a tavern"

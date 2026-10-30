@@ -19,6 +19,9 @@ ItemEvents.modifyTooltips(event => {
     ender_guardian: 'the Ender Guardian',
     ender_dragon: 'the Ender Dragon',
     wither: 'the Wither',
+    ferrous_wroughtnaut: 'the Ferrous Wroughtnaut',
+    frostmaw: 'the Frostmaw',
+    umvuthi: 'Umvuthi, the Sunbird',
   }
   Object.keys(trophies).forEach(key => {
     event.add(`minerpg:trophy_${key}`, [

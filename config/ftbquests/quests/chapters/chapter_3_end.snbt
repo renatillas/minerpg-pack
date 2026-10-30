@@ -57,7 +57,7 @@
 			tasks: [
 				{
 					id: "1ABC863AE9CC3E2D"
-					structure: "minecraft:stronghold"
+					structure: "#minerpg:strongholds"
 					type: "structure"
 				}
 			]

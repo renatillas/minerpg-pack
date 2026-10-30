@@ -112,6 +112,11 @@ const BOSS_DROPS = {
   'cataclysm:ender_guardian': { item: 'minerpg:trophy_ender_guardian', text: 'The Ender Guardian is silent. You earned the Citadel Keystone.' },
   'minecraft:ender_dragon': { item: 'minerpg:trophy_ender_dragon', text: 'The dragon is slain. You earned a Dragonscale.' },
   'minecraft:wither': { item: 'minerpg:trophy_wither', text: 'The Wither is undone. You earned an Ashen Skull Shard.' },
+  // Mowzie's Mobs zone bosses (optional Chapter 1 side quests). Tongbi, the Sculptor is a
+  // climbing challenge, not a fight, so it has no trophy.
+  'mowziesmobs:ferrous_wroughtnaut': { item: 'minerpg:trophy_ferrous_wroughtnaut', text: 'The Ferrous Wroughtnaut topples. You earned a Wrought Rivet.' },
+  'mowziesmobs:frostmaw': { item: 'minerpg:trophy_frostmaw', text: 'The Frostmaw falls silent. You earned a Rimefang Tusk.' },
+  'mowziesmobs:umvuthi': { item: 'minerpg:trophy_umvuthi', text: 'Umvuthi\'s fire dies down. You earned a Sunbird Plume.' },
 }
 const BOSS_CREDIT_RADIUS = 64
 

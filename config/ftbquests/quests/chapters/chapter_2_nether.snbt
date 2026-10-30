@@ -58,7 +58,7 @@
 			tasks: [
 				{
 					id: "645F29DBB2048238"
-					structure: "minecraft:fortress"
+					structure: "#minerpg:nether_fortresses"
 					type: "structure"
 				}
 			]

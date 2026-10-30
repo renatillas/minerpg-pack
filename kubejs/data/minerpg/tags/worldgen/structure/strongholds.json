@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "minecraft:stronghold",
+      "required": false
+    },
+    {
+      "id": "betterstrongholds:stronghold",
+      "required": false
+    }
+  ]
+}

@@ -285,6 +285,96 @@
         },
         {
           "zone_matches": {
+            "structure": "mowziesmobs:wrought_chamber"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 2
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "mowziesmobs:umvuthana_grove"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 3
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "mowziesmobs:frostmaw_spawn"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 4
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "mowziesmobs:monastery"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 4
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "betterstrongholds:stronghold"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 5
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "betteroceanmonuments:ocean_monument"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 4
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "betterdeserttemples:desert_temple"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 3
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "betterjungletemples:jungle_temple"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 3
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "betterwitchhuts:witch_hut"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 2
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "betterwitchhuts:witch_circle"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 2
+          }
+        },
+        {
+          "zone_matches": {
             "structure": "#dungeon_difficulty:level_3"
           },
           "difficulty": {
@@ -380,6 +470,15 @@
         {
           "zone_matches": {
             "structure": "minecraft:fortress"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 6
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "betterfortresses:fortress"
           },
           "difficulty": {
             "name": "dungeon",

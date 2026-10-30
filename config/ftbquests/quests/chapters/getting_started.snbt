@@ -379,6 +379,70 @@
 		}
 		{
 			dependencies: [
+				"3F043D30988BC476"
+			]
+			id: "2D964BD77219E2CA"
+			rewards: [
+				{
+					count: 1
+					id: "1D57E118CC70E0B0"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "4D29AF731F304F2C"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"15511B0F8DB55CDA"
+			]
+			id: "7F3ACDC21971B67E"
+			rewards: [
+				{
+					count: 4
+					id: "22ADF57AF0078A49"
+					item: {
+						count: 1
+						id: "farmersdelight:tomato_seeds"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6558BED303D44539"
+					item: {
+						count: 1
+						id: "farmersdelight:cabbage_seeds"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6E240CDBEB03285A"
+					item: {
+						count: 1
+						id: "farmersdelight:cooking_pot"
+					}
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
 				"5D0D3E3C2B3C0A65"
 			]
 			id: "1870DB9E3B1A8057"
