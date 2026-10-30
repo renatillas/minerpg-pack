@@ -110,7 +110,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "47ae856c4fa94f32f6886049c5f17f22b98a4856f109196ea99282621d6b8cf7"
+hash = "76a849b8707e7ef0a9999eb5f52cc614f58d18096b4020295f77d036bf5ab95e"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"

@@ -561,7 +561,7 @@ GETTING_STARTED = [
         '- &aArchery Range&r: Archery Artisan (archers)',
         '- &6Pub&r: Luthier (bards)',
         'A Jeweler sells rings and necklaces. Not every village has every building: if yours lacks one, the next village may have it.',
-        'Berserkers and forcemasters have no building of their own; the Arms Dealer and Jeweler serve everyone.',
+        'Berserkers, forcemasters and artillerists have no building of their own; the Arms Dealer and Jeweler serve everyone.',
         '',
         'Trade once with any of these merchants. Use the emeralds from your calling.'],
         [t_adv('trade_any', 'Trade with a class merchant')], [r_item('minecraft:emerald', 4)],

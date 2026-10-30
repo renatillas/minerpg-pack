@@ -46,7 +46,7 @@ PACK = os.path.join(ROOT, 'config', 'originpacks', 'minerpg_jobs', 'data', 'mine
 # caster, "archery" armor and ranged weapons = leather, the rest = plate), then GEAR_GROUP_OVERRIDES.
 # To move a group to another job, change GEAR_GROUP_JOB and re-run (the crafting XP bonus follows).
 GEAR_GROUP_JOB = {'plate': 'smith', 'leather': 'hunter', 'caster': 'enchanter'}
-GEAR_GROUP_TITLE = {'plate': 'plate armor and melee weapons', 'leather': 'leather armor, bows and quivers',
+GEAR_GROUP_TITLE = {'plate': 'plate armor and melee weapons', 'leather': 'leather armor, bows, crossbows, flintlocks and quivers',
                     'caster': 'caster robes, staves and wands'}
 # (substring of the item id, group): first match wins, checked before the type tags.
 GEAR_GROUP_OVERRIDES = [
