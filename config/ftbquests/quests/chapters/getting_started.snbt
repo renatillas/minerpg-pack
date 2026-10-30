@@ -1,0 +1,711 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	icon: {
+		id: "minecraft:writable_book"
+	}
+	id: "558871694C755BB8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "15511B0F8DB55CDA"
+			rewards: [
+				{
+					count: 8
+					id: "64140ECAF2B108B6"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7094D33006BAD032"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"15511B0F8DB55CDA"
+			]
+			id: "1BC9B50E8EB7C872"
+			rewards: [
+				{
+					id: "1B1AB47425611BE3"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "4A63160D953DD699"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"15511B0F8DB55CDA"
+			]
+			id: "303494E14ED1C03B"
+			rewards: [
+				{
+					id: "57E26E287C2C7014"
+					table_id: 2158090423038289848L
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "163DD1B46441069F"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"303494E14ED1C03B"
+			]
+			id: "1A456EDA90491257"
+			rewards: [
+				{
+					id: "3B4707D3DD109F07"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:tutorial/cast_spell"
+					criterion: ""
+					id: "5A17672205BBB06F"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1A456EDA90491257"
+			]
+			id: "139971D90D5C61AB"
+			rewards: [
+				{
+					count: 1
+					id: "40D71F4F09B7F928"
+					item: {
+						count: 1
+						id: "runes:small_rune_pouch"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:tutorial/craft_runes"
+					criterion: ""
+					id: "2E599EC5D14B66A9"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1A456EDA90491257"
+			]
+			id: "208546346D7B1A57"
+			rewards: [
+				{
+					count: 16
+					id: "28095BF6B6D98D09"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+				{
+					id: "1C1C8CD5946ACC72"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:tutorial/bind_spell"
+					criterion: ""
+					id: "1B238D6515501D30"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"303494E14ED1C03B"
+			]
+			id: "409FB0BE8F2205F1"
+			rewards: [
+				{
+					id: "15C1AAAE6B3139EF"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:tutorial/unlock_talent"
+					criterion: ""
+					id: "27DC3743B94D70AE"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"15511B0F8DB55CDA"
+			]
+			id: "11F4C25FDB99D364"
+			rewards: [
+				{
+					count: 8
+					id: "118AB324BF50FB0B"
+					item: {
+						count: 1
+						id: "minecraft:cooked_beef"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "31C8DF173A175089"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"11F4C25FDB99D364"
+			]
+			id: "140588183FBEF823"
+			rewards: [
+				{
+					id: "1E38FEA986389B3F"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "1B8AB9E29A00271C"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"15511B0F8DB55CDA"
+			]
+			id: "588CB70442A544B0"
+			rewards: [
+				{
+					count: 3
+					id: "53098CC0BFF496F0"
+					item: {
+						count: 1
+						id: "waystones:warp_scroll"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:tutorial/use_waystone"
+					criterion: ""
+					id: "76C0A5A98518E865"
+					type: "advancement"
+				}
+			]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"15511B0F8DB55CDA"
+			]
+			id: "16E53725EC3775DC"
+			rewards: [
+				{
+					id: "491AE5BE4557E97A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "lootr:1chest"
+					criterion: ""
+					id: "3C9FFDADD7459B25"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"16E53725EC3775DC"
+			]
+			id: "1D4EBCBCFF715BE5"
+			rewards: [
+				{
+					count: 8
+					id: "67142D123B802475"
+					item: {
+						count: 1
+						id: "apotheosis:gem_dust"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7B512AAA79226288"
+					item: {
+						count: 1
+						id: "apotheosis:mysterious_scrap_metal"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"15511B0F8DB55CDA"
+			]
+			id: "320B32FBD74A9EAF"
+			rewards: [
+				{
+					id: "212BF53FC752B081"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "55690ED8CFB47271"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"15511B0F8DB55CDA"
+			]
+			id: "3F043D30988BC476"
+			rewards: [
+				{
+					id: "139A45592566A3BB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "42B71E3EB6C49F2A"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"15511B0F8DB55CDA"
+			]
+			id: "5D0D3E3C2B3C0A65"
+			rewards: [
+				{
+					id: "74270842B1E47E9A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "255650F195F11137"
+					type: "checkmark"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "1870DB9E3B1A8057"
+			rewards: [
+				{
+					count: 6
+					id: "44F29D278429C4AA"
+					item: {
+						count: 1
+						id: "minecraft:glass_bottle"
+					}
+					type: "item"
+				}
+				{
+					id: "20A46672ECF0BD41"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:jobs/alchemist"
+					criterion: ""
+					id: "78A118B13A8C6536"
+					type: "advancement"
+				}
+			]
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "7107848BAFC6BF09"
+			rewards: [
+				{
+					count: 32
+					id: "131C52740391548A"
+					item: {
+						count: 1
+						id: "minecraft:stone_bricks"
+					}
+					type: "item"
+				}
+				{
+					id: "198AE49AFB70C85E"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:jobs/builder"
+					criterion: ""
+					id: "48D711FD6A2A126F"
+					type: "advancement"
+				}
+			]
+			x: -10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "4C685D602A4CCFA3"
+			rewards: [
+				{
+					count: 1
+					id: "41A709191989248E"
+					item: {
+						count: 1
+						id: "minecraft:iron_shovel"
+					}
+					type: "item"
+				}
+				{
+					id: "6D6924F657CE56C8"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:jobs/digger"
+					criterion: ""
+					id: "47A5DCB513B389C1"
+					type: "advancement"
+				}
+			]
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "6C811E0AFCFDD19B"
+			rewards: [
+				{
+					count: 12
+					id: "68B7556D90B6D1DC"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+				{
+					id: "195329EB5666F9F9"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minecraft:story/enchant_item"
+					criterion: ""
+					id: "60353EFCB45D1EFE"
+					type: "advancement"
+				}
+			]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "1FF45754B3ADE445"
+			rewards: [
+				{
+					count: 16
+					id: "4F0EB19A09F477D0"
+					item: {
+						count: 1
+						id: "minecraft:bone_meal"
+					}
+					type: "item"
+				}
+				{
+					id: "614125DD08534671"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					count: 16L
+					id: "4D47455BD03A96BB"
+					item: {
+						count: 1
+						id: "minecraft:wheat"
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "7921983A422C6876"
+			rewards: [
+				{
+					count: 8
+					id: "3A59908AB929DC55"
+					item: {
+						count: 1
+						id: "minecraft:cooked_cod"
+					}
+					type: "item"
+				}
+				{
+					id: "66E12A4783D5CF3A"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minecraft:husbandry/fishy_business"
+					criterion: ""
+					id: "317DA35032DCB837"
+					type: "advancement"
+				}
+			]
+			x: -12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "7990F5145F92D1AA"
+			rewards: [
+				{
+					count: 32
+					id: "7C01BD68AD9F8989"
+					item: {
+						count: 1
+						id: "minecraft:arrow"
+					}
+					type: "item"
+				}
+				{
+					id: "2D6734E18C4A3E38"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					entityTypeTag: "minecraft:undead"
+					id: "36F755FA263EE71C"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: -10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "73292E754A800B8D"
+			rewards: [
+				{
+					count: 1
+					id: "219671AB3DFDD617"
+					item: {
+						count: 1
+						id: "minecraft:iron_axe"
+					}
+					type: "item"
+				}
+				{
+					id: "3549C1BAFAB7AC13"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:jobs/lumberjack"
+					criterion: ""
+					id: "3811AA5D0322C05E"
+					type: "advancement"
+				}
+			]
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "5912FE33E4E2C70E"
+			rewards: [
+				{
+					count: 32
+					id: "779BFE863FA9A3AC"
+					item: {
+						count: 1
+						id: "minecraft:torch"
+					}
+					type: "item"
+				}
+				{
+					id: "35EC6BC0B9671D84"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					count: 16L
+					id: "395DB75C48D50885"
+					item: {
+						count: 1
+						id: "minecraft:coal"
+					}
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "267B5D48DAF1CC15"
+			rewards: [
+				{
+					count: 6
+					id: "15AED468200CC978"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "1284D9F7A103C140"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minecraft:story/iron_tools"
+					criterion: ""
+					id: "3C1EE764482629CD"
+					type: "advancement"
+				}
+			]
+			x: -6.0d
+			y: 1.5d
+		}
+	]
+}

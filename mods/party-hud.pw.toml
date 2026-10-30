@@ -1,0 +1,13 @@
+name = "Epic RPG: Party Hud"
+filename = "partyhud-neo-1.21.1-2.0.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9Wifu3BA/versions/cxX9zgjU/partyhud-neo-1.21.1-2.0.5.jar"
+hash-format = "sha512"
+hash = "3d0ea55190f69bfafb59143b0d784df532a72b4829c23dbba77e98d8711a6d1eb37daf552427a090e419b1b2b1d58de5926b849e169a92d34af0724c4d186ed4"
+
+[update]
+[update.modrinth]
+mod-id = "9Wifu3BA"
+version = "cxX9zgjU"

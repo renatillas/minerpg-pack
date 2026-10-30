@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "place": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {}
+    }
+  }
+}

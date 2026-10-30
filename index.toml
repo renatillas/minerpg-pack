@@ -1,6 +1,46 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/dungeon_difficulty/difficulty_v2.json"
+hash = "e06827c058515fd8c47d4a73062e4bb2050e897c7cf8d069665812a0baae7cd5"
+
+[[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_1_overworld.snbt"
+hash = "b4c53c30a48b5e05f1464834d17e1ef2f25d1ccfd7cb0bdbe52c701c127e91f9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_2_nether.snbt"
+hash = "01e25252b37ddb2cc47717f8da0881f1174fcd1248b55758fa2d40a64a2024ab"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_3_end.snbt"
+hash = "ea506cd3ac702e34f626ae05efaf5cecb0d305d1dcc8737ac5edb077c86bcc0c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/getting_started.snbt"
+hash = "4f2a5ae34afd116d41e0ddd1074550a89c90dbf58e45e85a47373bbbc35c58c0"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us.snbt"
+hash = "91f1933b16351264e8eab50587929f048258e0c233bd0347d1441da430ea7a6c"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
+hash = "e773901d9a53b3c38973e5bbd1e8c4c6abd19edd692733fbd3619929e6fbb655"
+
+[[files]]
+file = "config/ftbteams-server.snbt"
+hash = "b368674efb1e4724363e602c1d7101e74192a97acd1331ee6ee3906327680f73"
+
+[[files]]
 file = "config/neoorigins/content.toml"
 hash = "1097fa8ef5dcd636b38c6b676d45fe97c67115d4efc533415903714546219337"
 
@@ -241,6 +281,234 @@ file = "config/originpacks/minerpg_races/pack.mcmeta"
 hash = "68fe89c3a6dd6601c203371d369573501cbefd81f8c242d75401feeedfc5d1af"
 
 [[files]]
+file = "config/partyhud-common.toml"
+hash = "696c8213c5315500457b886f25318ef953e270796f1f835494b1641cbc9a9280"
+
+[[files]]
+file = "kubejs/assets/minerpg/lang/en_us.json"
+hash = "10fbac641edcf407002920a285aab385d4c575ca725fd0ad1b9f1089908cdd14"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/nether_sigil.png"
+hash = "1f31089b2f721c96099d06eceb1917650260832d48b5e89754f9be253ca24bfa"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_amethyst_crab.png"
+hash = "f88659671d96f194feb6a1138707ad902ae19cdbb67529ccc1ee0da9b5b69f2f"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_ancient_remnant.png"
+hash = "7381efacde57de1c6a7c845ca84977606b32e23829c06e24ec042c0b7fb60ad1"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_ender_dragon.png"
+hash = "0d7264a01d4e69096eef0cf909858850ca6898b85cc503dc90ec867c0d3760eb"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_ender_guardian.png"
+hash = "c80d211e833136fa46e3e7b04b5ca14b6028397964b4b947071a443a4762369b"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_leviathan.png"
+hash = "a5499a15d454ba7087a6e88c86df37ad8369d7435a81908cb58a37a540d6b726"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_maledictus.png"
+hash = "bdf73ed7948e3728829c9b35125e802cfda946aaf1d8544f7e3ea6d8d19aca77"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_netherite_monstrosity.png"
+hash = "eb69a2d633656c9388dd445afaa8de6fbece13313f17be045edd73b5da59f7ce"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_wither.png"
+hash = "1abce378d3bfc24ca0020ebff5efda6eed01f32de9e14c840c9f72cb869ea782"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/void_shard.png"
+hash = "10ac2bb285ab7e4af7b01c502c2eb31e46d561d009a031e644f822a6b83a117a"
+
+[[files]]
+file = "kubejs/client_scripts/minerpg_tooltips.js"
+hash = "ffa8ac7c07a794bc38b5e072b225771eee81044038d3d64669569ed0b138eb16"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/archeology/kisegi_sanctuary/kisegi_sanctuary_archeology.json"
+hash = "2f6f5c24929484d4beaa8994103d767f4fd93fbbefa4b524a9ef0a068b82a4c9"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/jungle_tree_house/jungle_tree_house_treasure.json"
+hash = "24779b51f15d1dc6772135ecfb9c46c75fa138737206f7462d1597c65437c273"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mushroom_house/mushroom_house_treasure.json"
+hash = "0c251115df454276e1b009840027d26da5d930e449c44042c49960631dbd9859"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/plague_asylum/plague_asylum_cells.json"
+hash = "a3ff304355dd26ed801bc7bf4f38b5c63d0fbed04584c500b7c3a5615d3c70b9"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_barrels.json"
+hash = "f39924283becfb5747fbacb6f03e699ee576f8955618360c7f204af8da908386"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/undead_pirate_ship/undead_pirate_ship_enchants.json"
+hash = "ea17ca8a87a8cf1d6b5d405dc87fc7747b795f2b2faa81fb3036aa5d5d515d32"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/jobs/alchemist.json"
+hash = "e93b413d44eb8e3a38f1da017daf3c60f1fd80bc6b6db85952d491d8dbc17d9c"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/jobs/builder.json"
+hash = "13de4f4f2b6b8672b92f68c3105c0a26d82eb01d060b717cbc2d83ad9378db5c"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/jobs/digger.json"
+hash = "6a8739b34072b758ff654ba727f6814ff4aba0a0f4da1c3c33cc293d463b5fea"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/jobs/lumberjack.json"
+hash = "ce667c229c9d48276562d1c9a82e5ab343f199085dde25d15dac1a26ecf1205b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tutorial/bind_spell.json"
+hash = "519e3b9393a70f8d8363e17238fe679769f9f25fee4a4dbd0dd6cbdd401c52f8"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tutorial/cast_spell.json"
+hash = "58eeff7ab9115ae943d1930401d71067eb2b6e03293940f5e1eb6bdc47b5618a"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tutorial/craft_runes.json"
+hash = "bda97b4df6e82ad9a4de68863ea52e2a39e6d1e8c65cbda6a5e7375a5f351a7d"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tutorial/unlock_talent.json"
+hash = "30320d690e36071db44cad1ddcec5914bcfe6b2a74d323efe7c38b4ca17d0e57"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tutorial/use_waystone.json"
+hash = "bba9529e55460563b2c533100214996a824add49654ad8811f81968ffd6c07ae"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/arcane_wizard.mcfunction"
+hash = "475006e3382e204b435ad5c0245e2846bb3f6eddcfd2ec2128fb3052dfd4f931"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/archer.mcfunction"
+hash = "c1d28bc597fd14261a2829da7058d6b1192587ca1782b2517bbb9c65fb147c73"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/bard.mcfunction"
+hash = "3488ef8d8d654bf22aec7b0ce6ad1b312a6fca6597c09c775fc8527a2c6d8366"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/berserker.mcfunction"
+hash = "b7d832ce7833bba46a6b0c73728e66b4bf8cd77fb0b678d3a7d3ead02b2405fb"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/deadeye.mcfunction"
+hash = "2f4d3e3d01e554a12c472170fc044eb50092bb49f48ffe84bc5a7a681b83f14d"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/earth_mage.mcfunction"
+hash = "1bebb996c9787a0dd1cb06f6fc87123e994d4f1105e66dd5fc3d3c92d33f2a8c"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/fire_wizard.mcfunction"
+hash = "ad825abab9edaad0662016ec517a2850cce16b38d69019c7c9a1c06418a0316e"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/forcemaster.mcfunction"
+hash = "087dc12c9bd1955309c365dd228e26b3334f62e2a6f7fc76a28c713b31cd78c1"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/frost_wizard.mcfunction"
+hash = "a987dbbcae18e86e5df8a8104a94e35a4ce68e9630ae9fed4070b9b051e5f1c4"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/paladin.mcfunction"
+hash = "11fc973a4a1c661c7a3d5a42f4f62b3c1848431c871230f3e9c68dba02f8fc4a"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/priest.mcfunction"
+hash = "eff424c62a9eea6b18c8e09d364cd85684cf6acb971a7ab280daa4b5518e37bc"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/rogue.mcfunction"
+hash = "696681d848b368ed5a3550934477f367016e6003df95ec9afb1bf2c0258b0361"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/tundra_hunter.mcfunction"
+hash = "1d2cfd1410fe025f72fc34c8808098efe55a28a0f9784ec9690e35df8ed6036a"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/war_archer.mcfunction"
+hash = "569d12c2888502f0b2738e7b5ae509d0e1b2b0c59a69b1a5f1264bb255102bc5"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/warrior.mcfunction"
+hash = "b0866ede340b08bbb1d1afa348b456261155c73b5febcbb785ea45e924e7be4f"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/water_mage.mcfunction"
+hash = "1f7ef91d2346429d72f5f1dee85070bffc5d623c918fa14c2364ac7a842e4b92"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/wind_mage.mcfunction"
+hash = "44bdcbb302fed83376910c98ba228e2071ff1e8faa6f12a770d835502d21a906"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/witcher_blade.mcfunction"
+hash = "ed1c0cc659ff44d037311029f65e83b073cc1aef834764c7272959b1c2965865"
+
+[[files]]
+file = "kubejs/data/minerpg/function/kit/witcher_signs.mcfunction"
+hash = "943fb6fe933dfea6776514fdaba3eb25e434722055690d40501d4704b01bc0c8"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/biome/zone/frontier.json"
+hash = "71af4ed5e6ac28ed8a6bcbecbcd57f10d35337c24a17338ad0ac3a4656cd12c5"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/biome/zone/hearthlands.json"
+hash = "d823bc726faf4a901bd678d92d05ce48360a0cace625844d72d9287bce813b5a"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/biome/zone/wildlands.json"
+hash = "7ab8086e2101129cf3ed4a7b5d592ecc1ee2488dc1619c5b544ca534c7a0da3f"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/end_dungeons.json"
+hash = "1ada4d11959d902f5def579f8968c801d5359d20b4e8eb6174759c0928745c5f"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/nether_dungeons.json"
+hash = "25aa8de5e6543ca5f0605097e1857552feed386b449ce517268a3264f316ed35"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/small_dungeons.json"
+hash = "ac83dffffccc6dcb5e10c8896eb9f4b607f8944d689e6f2270c82c2369955346"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/taverns.json"
+hash = "08d4afbf8c60ec5253afa3bfe6f4001e3f02f96d5079926d2e7e213281d24b35"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/wildlands_dungeons.json"
+hash = "9826f513cb9557b3349bf32fa137b92ec8eafc90fdf050e9b007960ef67da776"
+
+[[files]]
+file = "kubejs/server_scripts/minerpg_soft_locks.js"
+hash = "7c615cd4272cf1c836d619c74e1f7df783afc92ff4a01b5fa744d633f619422a"
+
+[[files]]
+file = "kubejs/startup_scripts/minerpg_items.js"
+hash = "ebd2f3a1f2172b9d4528b3ad1605d5cac15278d4454c641e957fa157d759f02d"
+
+[[files]]
 file = "mods/additional-rpg-jewelry.pw.toml"
 hash = "716f2e257d9509f8e4f800d661e861c34de86bd9d5b81e8862f3a741c0d64d50"
 metafile = true
@@ -318,6 +586,11 @@ metafile = true
 [[files]]
 file = "mods/berserker-rpg-class.pw.toml"
 hash = "f1a4017b0d3ef1af4fb9051180fee92f3936cc364186aa3e17bbc78ecfac1a2a"
+metafile = true
+
+[[files]]
+file = "mods/better-advanced-tooltips.pw.toml"
+hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
 
 [[files]]
@@ -446,6 +719,11 @@ hash = "9b7a34f513a4227c72c89e725d38c59df923a756ba89cc04695b3e31fc2e527e"
 metafile = true
 
 [[files]]
+file = "mods/kubejs.pw.toml"
+hash = "7e0eca275f27b6543f06c36dec433851a956960cbedd2be57d19e159d636bfc1"
+metafile = true
+
+[[files]]
 file = "mods/l_enders-cataclysm.pw.toml"
 hash = "f262b49b1038ef9f67704e0629da6aafa84cf4f760273589f5d73530ca5d74b5"
 metafile = true
@@ -536,6 +814,11 @@ hash = "a9c1ecdef94c1e535f7c5ea05e9b720778b8fd9bf0211d7d52a69bb4b6044ad1"
 metafile = true
 
 [[files]]
+file = "mods/party-hud.pw.toml"
+hash = "d3dcebabec2abb94b30857edd7c0efd23a6f3d80492529b4ea061f20f05c4e33"
+metafile = true
+
+[[files]]
 file = "mods/patchouli.pw.toml"
 hash = "d7f360ebb9f009d6dc0b368cd8fa399bdff70c0f6ef931687b2a35137f72715d"
 metafile = true
@@ -571,6 +854,11 @@ hash = "bee98f0db61db79ee173e45c940a58d1fc09f754797bdb2aee4e10e4884ebd04"
 metafile = true
 
 [[files]]
+file = "mods/rhino.pw.toml"
+hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
+metafile = true
+
+[[files]]
 file = "mods/rogues-and-warriors.pw.toml"
 hash = "0ca4e4a6dc001eb5fb81d1817cb8b209e86cb8541a77f6e1de23d92a0e20f45c"
 metafile = true
@@ -593,11 +881,6 @@ metafile = true
 [[files]]
 file = "mods/scalingmobs.pw.toml"
 hash = "4616600feba02efb8b13828fd895c9c6a3507c1cf45f7139dde107642b2ea9fc"
-metafile = true
-
-[[files]]
-file = "mods/sensible-survival.pw.toml"
-hash = "fc3081dc85aefd3245d55424afa81024e230841aed82711c2b505e19254e0a1d"
 metafile = true
 
 [[files]]

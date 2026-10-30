@@ -1,0 +1,5 @@
+[partyhud]
+	#true = party teleport button only for OPs/creatives. false = everyone can use it.
+	tpOnlyOps = true
+	#true = if FTB Teams is installed, PartyHud syncs parties with FTB Teams. false = PartyHud uses only vanilla scoreboard teams.
+	enableFtbTeamsCompat = false

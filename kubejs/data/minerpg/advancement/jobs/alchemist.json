@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "brew": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {}
+    }
+  }
+}

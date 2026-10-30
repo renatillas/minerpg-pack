@@ -1,0 +1,492 @@
+{
+	"chapter.1B0465E0293D763F.chapter_subtitle": [
+		"Fortresses, bastions and fire. Ends with Ignis."
+	]
+	"chapter.1B0465E0293D763F.title": "Chapter 2: The Nether"
+	"chapter.558871694C755BB8.chapter_subtitle": [
+		"How everything works, one quest at a time."
+	]
+	"chapter.558871694C755BB8.title": "Getting Started"
+	"chapter.764B89D8B2026F83.chapter_subtitle": [
+		"Hearthlands, Wildlands and the Frontier. Ends with The Harbinger."
+	]
+	"chapter.764B89D8B2026F83.title": "Chapter 1: The Overworld"
+	"chapter.7F4F1DAF0F1ED786.chapter_subtitle": [
+		"The dragon, the cities and the citadel."
+	]
+	"chapter.7F4F1DAF0F1ED786.title": "Chapter 3: The End"
+	"file.0000000000000001.title": "minerpg"
+	"quest.11F4C25FDB99D364.quest_desc": [
+		"Roll out of danger with the combat roll key (R by default, check Controls). Rolls recharge over time."
+	]
+	"quest.11F4C25FDB99D364.quest_subtitle": "Dodge roll"
+	"quest.11F4C25FDB99D364.title": "Light on Your Feet"
+	"quest.139971D90D5C61AB.quest_desc": [
+		"Many spells burn runes. Craft them at a Rune Crafting Altar: it makes more runes from the same materials than a crafting table."
+	]
+	"quest.139971D90D5C61AB.quest_subtitle": "Craft runes"
+	"quest.139971D90D5C61AB.title": "Stones That Remember"
+	"quest.140588183FBEF823.quest_desc": [
+		"Open your inventory and press the sword button to see your stats: spell power, crit, armor and more."
+	]
+	"quest.140588183FBEF823.quest_subtitle": "Your stats screen"
+	"quest.140588183FBEF823.title": "Know Thyself"
+	"quest.14102C2355F637DA.quest_desc": [
+		"Defeat &9The Leviathan&r in its flooded hall. It is untouchable out of the water, so fight it in its element."
+	]
+	"quest.14102C2355F637DA.quest_subtitle": "Boss"
+	"quest.14102C2355F637DA.title": "Teeth of the Tide"
+	"quest.15511B0F8DB55CDA.quest_desc": [
+		"This book follows you from your first night to the edge of the world."
+		"Each tab is a chapter. Quests show what to try next and pay you for it."
+		""
+		"Tick the box to begin."
+	]
+	"quest.15511B0F8DB55CDA.quest_subtitle": "Start here"
+	"quest.15511B0F8DB55CDA.title": "Welcome, Traveler"
+	"quest.160ED3FACCC66FD9.quest_desc": [
+		"Shulkers guard the cities. Their shells make portable chests."
+	]
+	"quest.160ED3FACCC66FD9.quest_subtitle": "Side task"
+	"quest.160ED3FACCC66FD9.title": "Shell Collector"
+	"quest.1683BAA7EE6A9D08.quest_desc": [
+		"Craft Eyes of Ender from an ender pearl, blaze powder and your Void Shard. The shard stays in the grid."
+		"You need a dozen to wake an End portal (some frames already hold eyes)."
+	]
+	"quest.1683BAA7EE6A9D08.quest_subtitle": "Chapter start"
+	"quest.1683BAA7EE6A9D08.title": "Eyes of the Void"
+	"quest.16E53725EC3775DC.quest_desc": [
+		"Dungeon chests are personal: every player finds their own loot in the same chest. No need to race your friends."
+	]
+	"quest.16E53725EC3775DC.quest_subtitle": "Personal dungeon chests"
+	"quest.16E53725EC3775DC.title": "Yours Alone"
+	"quest.18165E933705A224.quest_desc": [
+		"Rusted halls under the mountains, still humming. Something there is still awake."
+	]
+	"quest.18165E933705A224.quest_subtitle": "Frontier"
+	"quest.18165E933705A224.title": "The Ancient Factory"
+	"quest.1870DB9E3B1A8057.quest_desc": [
+		"Alchemists earn experience brewing. Brew any potion."
+	]
+	"quest.1870DB9E3B1A8057.quest_subtitle": "Job starter"
+	"quest.1870DB9E3B1A8057.title": "Alchemist"
+	"quest.1912871E23D2757E.quest_desc": [
+		"Wither skeletons roam the fortress halls. Their skulls are needed if you ever dare summon the Wither."
+	]
+	"quest.1912871E23D2757E.quest_subtitle": "Side task"
+	"quest.1912871E23D2757E.title": "Grim Trophies"
+	"quest.1957E4BC9E79A53A.quest_desc": [
+		"Defeat &bMaledictus&r, the prisoner who became the prison."
+	]
+	"quest.1957E4BC9E79A53A.quest_subtitle": "Boss"
+	"quest.1957E4BC9E79A53A.title": "The Cursed Warden"
+	"quest.1A456EDA90491257.quest_desc": [
+		"Open your inventory and put the tome in its spell book slot."
+		"Hold a weapon of the same class and cast a spell with the spell keys shown on your hotbar."
+	]
+	"quest.1A456EDA90491257.quest_subtitle": "Equip your tome, cast a spell"
+	"quest.1A456EDA90491257.title": "Bound to the Book"
+	"quest.1A5DB36593187D79.quest_desc": [
+		"Smelt the debris, mix it with gold and forge your first netherite ingot."
+	]
+	"quest.1A5DB36593187D79.title": "Netherite in Hand"
+	"quest.1BACA375DF555AD6.quest_desc": [
+		"A forge built of blackstone and lava, guarded by its own creation."
+	]
+	"quest.1BACA375DF555AD6.title": "The Soul Blacksmith"
+	"quest.1BC9B50E8EB7C872.quest_desc": [
+		"When you first joined, you chose your folk. Each one has two small gifts, one drawback and one racial power."
+		""
+		"Use your racial power once: it is the NeoOrigins \"Skill 1\" key (see Controls)."
+	]
+	"quest.1BC9B50E8EB7C872.quest_subtitle": "Your race and its power"
+	"quest.1BC9B50E8EB7C872.title": "Who Are You?"
+	"quest.1BD38E61C99DC272.quest_desc": [
+		"Past the outer islands stand purple cities. Take a gateway and find one."
+	]
+	"quest.1BD38E61C99DC272.title": "Cities Among the Stars"
+	"quest.1C1A258BBB1C69E5.quest_desc": [
+		"An Eye of Void finds the ruined citadel. Craft one."
+	]
+	"quest.1C1A258BBB1C69E5.quest_subtitle": "Side task"
+	"quest.1C1A258BBB1C69E5.title": "Eye of the Void"
+	"quest.1D4EBCBCFF715BE5.quest_desc": [
+		"Gear drops in rarities, each with its own name color: Common, Uncommon, Rare, Epic, Mythic. Higher rarity, more bonus stats."
+		"Break gear you do not need at a Salvaging Table to get rarity materials for reforging."
+	]
+	"quest.1D4EBCBCFF715BE5.quest_subtitle": "Gear rarity and salvaging"
+	"quest.1D4EBCBCFF715BE5.title": "Not All Blades Are Equal"
+	"quest.1E4A5E0883A15E45.quest_desc": [
+		"Something has nested under the fields. Find a small dungeon and clear out what lives there."
+	]
+	"quest.1E4A5E0883A15E45.quest_subtitle": "Hearthlands"
+	"quest.1E4A5E0883A15E45.title": "Cellar Dwellers"
+	"quest.1EFEBF71C0647595.quest_desc": [
+		"Defeat the &6Ancient Remnant&r in the depths of the pyramid."
+	]
+	"quest.1EFEBF71C0647595.quest_subtitle": "Boss"
+	"quest.1EFEBF71C0647595.title": "Bones of the Sun King"
+	"quest.1FAA931726326BFC.quest_desc": [
+		"Towers of blue stone under the waves. Bring water breathing."
+	]
+	"quest.1FAA931726326BFC.quest_subtitle": "Wildlands"
+	"quest.1FAA931726326BFC.title": "The Sunken City"
+	"quest.1FF45754B3ADE445.quest_desc": [
+		"Farmers earn experience harvesting grown crops. Bring in 16 wheat."
+	]
+	"quest.1FF45754B3ADE445.quest_subtitle": "Job starter"
+	"quest.1FF45754B3ADE445.title": "Farmer"
+	"quest.20827BF57F7546BE.quest_desc": [
+		"Old keeps and piglin donjons dot the wastes. Explore one."
+	]
+	"quest.20827BF57F7546BE.quest_subtitle": "Side task"
+	"quest.20827BF57F7546BE.title": "Keep of Ash"
+	"quest.208546346D7B1A57.quest_desc": [
+		"Stronger spells come from a Spell Binding Table. Village gazebos often have one, or build your own and ring it with bookshelves."
+		"Put your tome in and bind a new spell with your experience levels."
+	]
+	"quest.208546346D7B1A57.quest_subtitle": "Learn new spells"
+	"quest.208546346D7B1A57.title": "The Binding Table"
+	"quest.21324AB76EF33990.quest_desc": [
+		"A broken fortress drifting at the edge of the void."
+	]
+	"quest.21324AB76EF33990.title": "The Ruined Citadel"
+	"quest.267B5D48DAF1CC15.quest_desc": [
+		"Smiths earn experience smelting ingots and crafting tools, weapons and armor. Craft an iron pickaxe."
+	]
+	"quest.267B5D48DAF1CC15.quest_subtitle": "Job starter"
+	"quest.267B5D48DAF1CC15.title": "Smith"
+	"quest.29E79544ED9ADE2F.quest_desc": [
+		"Throw an eye and follow it underground to the stronghold and its portal room."
+	]
+	"quest.29E79544ED9ADE2F.title": "The Stronghold"
+	"quest.2C9281C642E70027.quest_desc": [
+		"The &aHearthlands&r are the gentle lands: plains, forests, meadows and rivers, with villages, taverns and small dungeons. A good place to learn your class."
+		"Find a village."
+	]
+	"quest.2C9281C642E70027.quest_subtitle": "Hearthlands"
+	"quest.2C9281C642E70027.title": "The Hearth Road"
+	"quest.2E75B2448D173567.quest_desc": [
+		"Fill the frame and jump in. There is no coming back until the dragon falls, or you die."
+	]
+	"quest.2E75B2448D173567.title": "Into the End"
+	"quest.303494E14ED1C03B.quest_desc": [
+		"Pick the class you want to start as. You get its spell book (tome), a starter weapon, one armor piece and the runes its spells need."
+		""
+		"You can learn a second class later by making its tome at a Spell Binding Table."
+	]
+	"quest.303494E14ED1C03B.quest_subtitle": "Your class starter kit"
+	"quest.303494E14ED1C03B.title": "Choose Your Calling"
+	"quest.311B8E5CCB0CEAB9.quest_desc": [
+		"Dark brick bridges cross the lava seas. Find a fortress."
+	]
+	"quest.311B8E5CCB0CEAB9.title": "Fortress of Flame"
+	"quest.320B32FBD74A9EAF.quest_desc": [
+		"You can walk anywhere, but two doors need keys:"
+		"- &6Nether Sigil&r: dropped by The Harbinger at the end of the Overworld chapter. Fire alone will not open a Nether portal; the sigil does."
+		"- &dVoid Shard&r: dropped by Ignis at the end of the Nether chapter. Eyes of Ender need one."
+		"Everyone near a boss when it falls gets their own key."
+	]
+	"quest.320B32FBD74A9EAF.quest_subtitle": "The Nether Sigil and the Void Shard"
+	"quest.320B32FBD74A9EAF.title": "Locked Doors"
+	"quest.3666625E717DFC13.quest_desc": [
+		"Summon and destroy &8the Wither&r with your whole group. Everyone nearby earns an Ashen Skull Shard."
+	]
+	"quest.3666625E717DFC13.quest_subtitle": "Optional raid"
+	"quest.3666625E717DFC13.title": "The Wither"
+	"quest.3DFB025E3BBA5CDC.quest_desc": [
+		"Defeat &4The Harbinger&r, the factory's iron herald."
+		"Everyone nearby at the kill receives a &6Nether Sigil&r: use it on an obsidian frame to open the way to the Nether."
+		"Your reward includes netherite upgrade templates for the next tier."
+	]
+	"quest.3DFB025E3BBA5CDC.quest_subtitle": "Chapter boss"
+	"quest.3DFB025E3BBA5CDC.title": "The Harbinger"
+	"quest.3E7B599CAC455CBF.quest_desc": [
+		"A pyramid half-buried in desert sand, its door sealed with old curses."
+	]
+	"quest.3E7B599CAC455CBF.quest_subtitle": "Wildlands"
+	"quest.3E7B599CAC455CBF.title": "The Cursed Pyramid"
+	"quest.3F043D30988BC476.quest_desc": [
+		"Press H to open the Party HUD: invite your friends and see their health on screen."
+		"Party members near a kill share talent experience. Heals and buffs reach every player, party or not."
+		"Your quest book stays your own. When a boss falls, everyone nearby gets their own trophy or key."
+	]
+	"quest.3F043D30988BC476.quest_subtitle": "Party HUD (H)"
+	"quest.3F043D30988BC476.title": "Better Together"
+	"quest.4006A822FCE741F9.quest_desc": [
+		"A fortress of black ice where something was locked away on purpose."
+	]
+	"quest.4006A822FCE741F9.quest_subtitle": "Wildlands"
+	"quest.4006A822FCE741F9.title": "The Frosted Prison"
+	"quest.404575A89AD631AE.quest_desc": [
+		"An Eye of Monstrous leads to the soul blacksmith's forge. Craft one."
+	]
+	"quest.404575A89AD631AE.quest_subtitle": "Side task"
+	"quest.404575A89AD631AE.title": "Eye of Fury"
+	"quest.409FB0BE8F2205F1.quest_desc": [
+		"Kills earn talent experience. Press K to open your talent tree and spend your first point."
+		"Party members within 200 blocks share talent experience from kills."
+	]
+	"quest.409FB0BE8F2205F1.quest_subtitle": "Spend a talent point"
+	"quest.409FB0BE8F2205F1.title": "A Point to Spend"
+	"quest.42582C31630D2A7E.quest_desc": [
+		"An Eye of Desert points the way to the cursed pyramid. Craft one and throw it."
+	]
+	"quest.42582C31630D2A7E.quest_subtitle": "Side task"
+	"quest.42582C31630D2A7E.title": "Eye of the Dunes"
+	"quest.4278AAA096D6AA74.quest_desc": [
+		"An Eye of Abyss finds the sunken city. Craft one and throw it from a boat."
+	]
+	"quest.4278AAA096D6AA74.quest_subtitle": "Side task"
+	"quest.4278AAA096D6AA74.title": "Eye of the Deep"
+	"quest.44A9402B363085DF.quest_desc": [
+		"Destroy the crystals and slay the &5Ender Dragon&r. Everyone nearby earns a Dragonscale."
+	]
+	"quest.44A9402B363085DF.quest_subtitle": "Boss"
+	"quest.44A9402B363085DF.title": "The Last Dragon"
+	"quest.47192179145EF3AD.quest_desc": [
+		"Piglins hoard gold in huge black fortresses. Find a bastion."
+	]
+	"quest.47192179145EF3AD.title": "Bastion of Gold"
+	"quest.4C685D602A4CCFA3.quest_desc": [
+		"Diggers earn experience digging dirt, sand, gravel and clay. Carry 32 of one."
+	]
+	"quest.4C685D602A4CCFA3.quest_subtitle": "Job starter"
+	"quest.4C685D602A4CCFA3.title": "Digger"
+	"quest.4C6920214DBED4FE.quest_desc": [
+		"Light a portal with your Nether Sigil and step through. The Nether is hotter and meaner than anything above."
+		"Lost your portal? Inside the Nether, normal fire still lights one, so you can always get home."
+	]
+	"quest.4C6920214DBED4FE.quest_subtitle": "Chapter start"
+	"quest.4C6920214DBED4FE.title": "Through the Veil"
+	"quest.50C778B21D914B33.quest_desc": [
+		"The deep dark keeps its secrets in echo shards. Bring some back, quietly."
+	]
+	"quest.50C778B21D914B33.quest_subtitle": "Side task"
+	"quest.50C778B21D914B33.title": "Echoes Below"
+	"quest.54854E6D0A86E2C6.quest_desc": [
+		"The &cFrontier&r is the extreme: frozen peaks, ice spikes, the deep dark and the deep ocean. The hardest lands of this world."
+		"Beat at least one Wildlands boss, then find an ancient city in the deep dark."
+	]
+	"quest.54854E6D0A86E2C6.quest_subtitle": "Frontier"
+	"quest.54854E6D0A86E2C6.title": "The Frontier"
+	"quest.551B4EC7917C7B74.quest_desc": [
+		"Defeat the &6Netherite Monstrosity&r."
+	]
+	"quest.551B4EC7917C7B74.quest_subtitle": "Boss"
+	"quest.551B4EC7917C7B74.title": "Forged in Fury"
+	"quest.558D7ACBE84CC796.quest_desc": [
+		"Blazes guard the fortress. Their rods feed brewing stands and Eyes of Ender alike."
+	]
+	"quest.558D7ACBE84CC796.title": "Burning Wardens"
+	"quest.588CB70442A544B0.quest_desc": [
+		"Waystones stand in villages and along the roads. Activate one and you can travel back to it from any other waystone."
+	]
+	"quest.588CB70442A544B0.quest_subtitle": "Fast travel"
+	"quest.588CB70442A544B0.title": "Stones of Passage"
+	"quest.5912FE33E4E2C70E.quest_desc": [
+		"Miners earn experience breaking stone and ores. Mine 16 coal."
+	]
+	"quest.5912FE33E4E2C70E.quest_subtitle": "Job starter"
+	"quest.5912FE33E4E2C70E.title": "Miner"
+	"quest.5A29FB8E07307813.quest_desc": [
+		"A ring of fire where a fallen knight still waits for challengers."
+	]
+	"quest.5A29FB8E07307813.title": "The Burning Arena"
+	"quest.5A678F41280A7521.quest_desc": [
+		"Deep in the Nether, ancient debris resists even lava. Dig some up."
+	]
+	"quest.5A678F41280A7521.title": "Ancient Debris"
+	"quest.5D0D3E3C2B3C0A65.quest_desc": [
+		"Press J to open the Jobs menu and join two jobs. Each job levels up from its own work and pays coins and perks."
+		"The quests below show one way each job earns experience."
+	]
+	"quest.5D0D3E3C2B3C0A65.quest_subtitle": "Jobs menu (J)"
+	"quest.5D0D3E3C2B3C0A65.title": "Pick Your Trades"
+	"quest.5DDDF61746F073A3.quest_desc": [
+		"Nether wart grows in fortress gardens. Every real potion starts with it."
+	]
+	"quest.5DDDF61746F073A3.quest_subtitle": "Side task"
+	"quest.5DDDF61746F073A3.title": "Wart and All"
+	"quest.5E38F20E3A481EE5.quest_desc": [
+		"Deep in the lush caves, an amethyst nest glows. Its keeper does not like visitors."
+	]
+	"quest.5E38F20E3A481EE5.quest_subtitle": "Hearthlands"
+	"quest.5E38F20E3A481EE5.title": "Glitter in the Deep"
+	"quest.5F0FA75876070FF6.quest_desc": [
+		"End ships carry a pair of wings. Claim them."
+	]
+	"quest.5F0FA75876070FF6.quest_subtitle": "Side task"
+	"quest.5F0FA75876070FF6.title": "Wings of the End"
+	"quest.608F4956BDD8B0F1.quest_desc": [
+		"Some outer islands hold great castles and lighthouses. Explore one."
+	]
+	"quest.608F4956BDD8B0F1.quest_subtitle": "Side task"
+	"quest.608F4956BDD8B0F1.title": "The Castle at the Edge"
+	"quest.654D4488C8A8FA77.quest_desc": [
+		"Taverns sit along the roads of the Hearthlands. Travelers trade, rest and swap stories there."
+	]
+	"quest.654D4488C8A8FA77.quest_subtitle": "Hearthlands"
+	"quest.654D4488C8A8FA77.title": "A Warm Hearth"
+	"quest.6555936DF8BED6FB.quest_desc": [
+		"Craft a waystone and place it at your home. Then you can always travel back."
+	]
+	"quest.6555936DF8BED6FB.quest_subtitle": "Side task"
+	"quest.6555936DF8BED6FB.title": "A Stone of Your Own"
+	"quest.68ADD28694A0A17E.quest_desc": [
+		"An Eye of Mech points to the ancient factory. Craft one and follow it."
+	]
+	"quest.68ADD28694A0A17E.quest_subtitle": "Side task"
+	"quest.68ADD28694A0A17E.title": "Eye of Iron"
+	"quest.691EA646A3AD516D.quest_desc": [
+		"Good iron makes good gear. Stock up for your first upgrades."
+	]
+	"quest.691EA646A3AD516D.quest_subtitle": "Side task"
+	"quest.691EA646A3AD516D.title": "Ironclad"
+	"quest.6B54BC29B3B37827.quest_desc": [
+		"Defeat the &5Ender Guardian&r, last warden of the citadel."
+	]
+	"quest.6B54BC29B3B37827.quest_subtitle": "Chapter boss"
+	"quest.6B54BC29B3B37827.title": "Guardian of the Void"
+	"quest.6C811E0AFCFDD19B.quest_desc": [
+		"Enchanters earn experience at the enchanting table. Enchant any item."
+	]
+	"quest.6C811E0AFCFDD19B.quest_subtitle": "Job starter"
+	"quest.6C811E0AFCFDD19B.title": "Enchanter"
+	"quest.7107848BAFC6BF09.quest_desc": [
+		"Builders earn experience for every block they place. Place one to start."
+	]
+	"quest.7107848BAFC6BF09.quest_subtitle": "Job starter"
+	"quest.7107848BAFC6BF09.title": "Builder"
+	"quest.710AD64B960DC726.quest_desc": [
+		"The &6Wildlands&r are the harsh lands: deserts, jungles, swamps, taigas, dark forests and open sea. Big dungeons and ruins hide there, and monsters hit harder."
+		"Explore one of the great dungeons of the wild."
+	]
+	"quest.710AD64B960DC726.quest_subtitle": "Wildlands"
+	"quest.710AD64B960DC726.title": "Into the Wildlands"
+	"quest.71ED147E96C3CDB4.quest_desc": [
+		"Defeat &cIgnis&r, the burning champion."
+		"Everyone nearby at the kill receives a &dVoid Shard&r. Eyes of Ender need it, and it is never used up."
+	]
+	"quest.71ED147E96C3CDB4.quest_subtitle": "Chapter boss"
+	"quest.71ED147E96C3CDB4.title": "Ignis"
+	"quest.73292E754A800B8D.quest_desc": [
+		"Lumberjacks earn experience chopping logs. Carry 16 logs."
+	]
+	"quest.73292E754A800B8D.quest_subtitle": "Job starter"
+	"quest.73292E754A800B8D.title": "Lumberjack"
+	"quest.74B908B7033E7344.quest_desc": [
+		"An Eye of Curse leads to a prison buried in snow. Craft one and throw it."
+	]
+	"quest.74B908B7033E7344.quest_subtitle": "Side task"
+	"quest.74B908B7033E7344.title": "Eye of the Frost"
+	"quest.7920CBCE701DE238.quest_desc": [
+		"An Eye of Flame shows the way to the burning arena. Craft one."
+	]
+	"quest.7920CBCE701DE238.quest_subtitle": "Side task"
+	"quest.7920CBCE701DE238.title": "Eye of Flame"
+	"quest.7921983A422C6876.quest_desc": [
+		"Fishermen earn experience for every catch. Catch a fish."
+	]
+	"quest.7921983A422C6876.quest_subtitle": "Job starter"
+	"quest.7921983A422C6876.title": "Fisherman"
+	"quest.7990F5145F92D1AA.quest_desc": [
+		"Hunters earn experience for every kill. Put down 10 undead."
+	]
+	"quest.7990F5145F92D1AA.quest_subtitle": "Job starter"
+	"quest.7990F5145F92D1AA.title": "Hunter"
+	"quest.7AD6EC34B35830B0.quest_desc": [
+		"Defeat the &dAmethyst Crab&r. Everyone nearby at the kill earns a Geode Claw for this quest."
+	]
+	"quest.7AD6EC34B35830B0.quest_subtitle": "Boss"
+	"quest.7AD6EC34B35830B0.title": "Shell Shock"
+	"quest.7ADADD9D86E83E50.quest_desc": [
+		"Diamond gear is the next step. Bring back a handful."
+	]
+	"quest.7ADADD9D86E83E50.quest_subtitle": "Side task"
+	"quest.7ADADD9D86E83E50.title": "Glittering Hoard"
+	"quest.7DC8CDF63FD9011E.quest_desc": [
+		"Optional raid. Bring three wither skeleton skulls and soul sand, and pick a place you do not mind losing."
+	]
+	"quest.7DC8CDF63FD9011E.quest_subtitle": "Optional raid"
+	"quest.7DC8CDF63FD9011E.title": "Call of the Wither"
+	"quest.7EC7FF658A0626F1.quest_desc": [
+		"Piglin brutes do not care about your gold. Show them what you learned up top."
+	]
+	"quest.7EC7FF658A0626F1.title": "Brute Force"
+	"reward.101C0F1F77A34A36.title": "Berserker"
+	"reward.1283E905E288BBDD.title": "Earth Mage"
+	"reward.145975B3287423F6.title": "Rogue"
+	"reward.1B56AF9B35492A83.title": "Deadeye"
+	"reward.24538A39D1C08953.title": "Bard"
+	"reward.2ED37D3123F7FE03.title": "Tundra Hunter"
+	"reward.31C569972EEB20B8.title": "Wind Mage"
+	"reward.32E8BE12F1C33A56.title": "Arcane Wizard"
+	"reward.3A213B34E654B328.title": "Frost Wizard"
+	"reward.47638B6BFE884E36.title": "Priest"
+	"reward.485028E3448A852B.title": "Witcher (Blade)"
+	"reward.4D1BE821DDD5FA70.title": "War Archer"
+	"reward.4E79CFDAE25B9A8D.title": "Warrior"
+	"reward.4F6851F81574E735.title": "Fire Wizard"
+	"reward.5640AEE2A26C7EE3.title": "Forcemaster"
+	"reward.564563EC1D693729.title": "Paladin"
+	"reward.5ECDDBA48C71A7D6.title": "Archer"
+	"reward.6055BF0FF9C8EE1F.title": "Witcher (Signs)"
+	"reward.7ABB09364EF09AFD.title": "Water Mage"
+	"reward_table.1DF313CE425EA7B8.title": "Class starter kits"
+	"task.11B5C5B357764DF0.title": "Explore an End castle or lighthouse"
+	"task.163DD1B46441069F.title": "I am ready to choose"
+	"task.17F83656E7E25EF4.title": "Find the Sunken City"
+	"task.17F947AABE42C745.title": "Find the Cursed Pyramid"
+	"task.18AE9273ADA2A094.title": "Find the Soul Blacksmith"
+	"task.18AF28D6B5F16691.title": "Find the Frosted Prison"
+	"task.19B7A34DEDBD1C89.title": "Find the Burning Arena"
+	"task.1ABC863AE9CC3E2D.title": "Find the stronghold"
+	"task.1B238D6515501D30.title": "Bind a spell"
+	"task.1B8AB9E29A00271C.title": "Open the stats screen"
+	"task.1D70722A7FF6C39A.title": "Enter the End"
+	"task.21C6EC0D4872DB43.title": "Find the Ancient Factory"
+	"task.247A9EA8A774C6D2.title": "Enter the Nether"
+	"task.255650F195F11137.title": "Join two jobs"
+	"task.27DC3743B94D70AE.title": "Unlock a talent"
+	"task.29C18C0DB954D588.title": "Citadel Keystone"
+	"task.2E599EC5D14B66A9.title": "Craft any rune"
+	"task.302BF4C11E97D7CB.title": "Nether Sigil"
+	"task.317DA35032DCB837.title": "Catch a fish"
+	"task.31C8DF173A175089.title": "Do a combat roll"
+	"task.36F755FA263EE71C.title": "Kill 10 undead"
+	"task.3811AA5D0322C05E.title": "Gather 16 logs"
+	"task.3C1EE764482629CD.title": "Craft an iron pickaxe"
+	"task.3C9FFDADD7459B25.title": "Open a dungeon chest"
+	"task.42B71E3EB6C49F2A.title": "Join or form a party"
+	"task.45792096E156E094.title": "Explore a Nether keep"
+	"task.462EF832FEFAD119.title": "Sun-Bleached Fang"
+	"task.47A5DCB513B389C1.title": "Gather 32 dirt, sand, gravel or clay"
+	"task.48D711FD6A2A126F.title": "Place a block"
+	"task.4A63160D953DD699.title": "Use your racial power"
+	"task.4A922A57DA24E513.title": "Frostbound Crown"
+	"task.4DABEFEF63961B92.title": "Dragonscale"
+	"task.4E54A909613B1160.title": "Find the Amethyst Nest"
+	"task.55690ED8CFB47271.title": "Understood"
+	"task.57FE63978AC454DA.title": "Find a bastion"
+	"task.583A2578AA83D3DF.title": "Find a small dungeon"
+	"task.5A17672205BBB06F.title": "Cast any spell"
+	"task.5D71108002945D0A.title": "Find an End city"
+	"task.5E7654375954BFB2.title": "Molten Heart"
+	"task.5FD54099D5C15F75.title": "Find the Ruined Citadel"
+	"task.60353EFCB45D1EFE.title": "Enchant an item"
+	"task.645F29DBB2048238.title": "Find a Nether fortress"
+	"task.6B7FB8F75E0ABD9D.title": "Find an ancient city"
+	"task.6C9EF992B5F2CAF0.title": "Abyssal Scale"
+	"task.6DF33D11FB4F9596.title": "Ashen Skull Shard"
+	"task.7040411BA905E17E.title": "Geode Claw"
+	"task.7094D33006BAD032.title": "Open the book"
+	"task.7174399ADFE35BE8.title": "Visit a tavern"
+	"task.7215B11B3E0BA590.title": "Void Shard"
+	"task.72968790A3198598.title": "Visit a village"
+	"task.76C0A5A98518E865.title": "Activate a waystone"
+	"task.77C4004A4EC01217.title": "Explore a great dungeon"
+	"task.78A118B13A8C6536.title": "Brew a potion"
+	"task.7B512AAA79226288.title": "Salvage a piece of gear"
+	"task.7DD06313148AB4BC.title": "Kill 15 undead"
+}

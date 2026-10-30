@@ -1,0 +1,560 @@
+{
+  "criteria": {
+    "weapon_skills_hdp8z71mlgffw17t": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "hdp8z71mlgffw17t"
+      }
+    },
+    "weapon_skills_o5e8ipv2xtpeksec": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "o5e8ipv2xtpeksec"
+      }
+    },
+    "weapon_skills_43fud5gyn1kww7k3": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "43fud5gyn1kww7k3"
+      }
+    },
+    "weapon_skills_fa5tmn9q8n2ujruy": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "fa5tmn9q8n2ujruy"
+      }
+    },
+    "weapon_skills_paab7o9iixjwuqdj": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "paab7o9iixjwuqdj"
+      }
+    },
+    "weapon_skills_ywy3uz6mt474uxcu": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "ywy3uz6mt474uxcu"
+      }
+    },
+    "weapon_skills_etdoq234nbbk9jmb": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "etdoq234nbbk9jmb"
+      }
+    },
+    "weapon_skills_9a4ajj9s55z980hm": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "9a4ajj9s55z980hm"
+      }
+    },
+    "weapon_skills_8jeweqbszxdkjec1": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "8jeweqbszxdkjec1"
+      }
+    },
+    "weapon_skills_ilkpz2udlubebc6r": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "ilkpz2udlubebc6r"
+      }
+    },
+    "weapon_skills_9pokx13bowgou220": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "9pokx13bowgou220"
+      }
+    },
+    "weapon_skills_6taxz5gbljn3xfku": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "6taxz5gbljn3xfku"
+      }
+    },
+    "weapon_skills_pkne4ano08eqcy4s": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "pkne4ano08eqcy4s"
+      }
+    },
+    "weapon_skills_y1a66xz5i124mfmx": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "y1a66xz5i124mfmx"
+      }
+    },
+    "weapon_skills_3oqwa67ju4z15ibv": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "3oqwa67ju4z15ibv"
+      }
+    },
+    "weapon_skills_2fmdz7g1n58lv5tc": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "2fmdz7g1n58lv5tc"
+      }
+    },
+    "weapon_skills_4hcdz3kjdgfthpe9": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "4hcdz3kjdgfthpe9"
+      }
+    },
+    "weapon_skills_kjhwog5cvu0fd423": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "kjhwog5cvu0fd423"
+      }
+    },
+    "weapon_skills_t99odhklai0v0udr": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "t99odhklai0v0udr"
+      }
+    },
+    "weapon_skills_rvwkoplyotazu3n5": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "rvwkoplyotazu3n5"
+      }
+    },
+    "weapon_skills_8pfkxajvoxi9hm11": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "8pfkxajvoxi9hm11"
+      }
+    },
+    "weapon_skills_jg4rdekpojjpqgzp": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "jg4rdekpojjpqgzp"
+      }
+    },
+    "weapon_skills_3gd4z8ipv6dd762q": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "3gd4z8ipv6dd762q"
+      }
+    },
+    "weapon_skills_eg55qphw7cctd24u": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "eg55qphw7cctd24u"
+      }
+    },
+    "weapon_skills_9mnmk2j2h4vgb2go": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "9mnmk2j2h4vgb2go"
+      }
+    },
+    "weapon_skills_oix3o2x7dfazvtzd": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "oix3o2x7dfazvtzd"
+      }
+    },
+    "weapon_skills_j0u80h45ydvy095x": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "j0u80h45ydvy095x"
+      }
+    },
+    "weapon_skills_w7y0zhqc44m1s3jh": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "w7y0zhqc44m1s3jh"
+      }
+    },
+    "weapon_skills_7v4350xjc6abuhzf": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "7v4350xjc6abuhzf"
+      }
+    },
+    "weapon_skills_s3ctqevzq5b784e6": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "s3ctqevzq5b784e6"
+      }
+    },
+    "weapon_skills_187m2j16rk4qjyn9": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "187m2j16rk4qjyn9"
+      }
+    },
+    "weapon_skills_9dseezauf4am1g09": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "9dseezauf4am1g09"
+      }
+    },
+    "weapon_skills_soavniyhqv88lhk6": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "soavniyhqv88lhk6"
+      }
+    },
+    "weapon_skills_u4lc6n44j2s94i63": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "u4lc6n44j2s94i63"
+      }
+    },
+    "weapon_skills_74lv63m06glo2z4i": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "74lv63m06glo2z4i"
+      }
+    },
+    "weapon_skills_gijhckxjzq2o74dr": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "gijhckxjzq2o74dr"
+      }
+    },
+    "weapon_skills_8isy9vsrob80930a": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "8isy9vsrob80930a"
+      }
+    },
+    "weapon_skills_i1ysm27ti2hox23u": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "i1ysm27ti2hox23u"
+      }
+    },
+    "weapon_skills_p5msloq46sdpdjki": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "p5msloq46sdpdjki"
+      }
+    },
+    "weapon_skills_gcmqzfk0v41xdf5u": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "gcmqzfk0v41xdf5u"
+      }
+    },
+    "weapon_skills_fu5xkfmn8ip0bpiu": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "fu5xkfmn8ip0bpiu"
+      }
+    },
+    "weapon_skills_lky31jjducya2sbe": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:weapon_skills",
+        "skill": "lky31jjducya2sbe"
+      }
+    },
+    "class_skills_rinftzrm9ta3baw4": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "rinftzrm9ta3baw4"
+      }
+    },
+    "class_skills_vlk9z73h53bx2if3": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "vlk9z73h53bx2if3"
+      }
+    },
+    "class_skills_859rwa4j1tbw2qs7": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "859rwa4j1tbw2qs7"
+      }
+    },
+    "class_skills_apwqaumpk4dhakie": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "apwqaumpk4dhakie"
+      }
+    },
+    "class_skills_7fs13k83hcuhzjkk": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "7fs13k83hcuhzjkk"
+      }
+    },
+    "class_skills_lk37egonho34cey2": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "lk37egonho34cey2"
+      }
+    },
+    "class_skills_5qc3hkud5vtm6xaw": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "5qc3hkud5vtm6xaw"
+      }
+    },
+    "class_skills_ysh5ghgnzszqbi39": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "ysh5ghgnzszqbi39"
+      }
+    },
+    "class_skills_8aixa7er1htsbd9a": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "8aixa7er1htsbd9a"
+      }
+    },
+    "class_skills_vlxhkx7zsfqwqx66": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "vlxhkx7zsfqwqx66"
+      }
+    },
+    "class_skills_cqray6yfemf8au4q": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "cqray6yfemf8au4q"
+      }
+    },
+    "class_skills_nbd4thedgpfpztaj": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "nbd4thedgpfpztaj"
+      }
+    },
+    "class_skills_r7vtgvr1ujnnv2od": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "r7vtgvr1ujnnv2od"
+      }
+    },
+    "class_skills_5zb4m5r2slga9c7e": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "5zb4m5r2slga9c7e"
+      }
+    },
+    "class_skills_cmrh2mlkna5uqfog": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "cmrh2mlkna5uqfog"
+      }
+    },
+    "class_skills_5ubm74e5m5vhz773": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "5ubm74e5m5vhz773"
+      }
+    },
+    "class_skills_b7p70wd9hp5bh4ae": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "b7p70wd9hp5bh4ae"
+      }
+    },
+    "class_skills_tvtz23s3v64ynpny": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "tvtz23s3v64ynpny"
+      }
+    },
+    "class_skills_k2id91ozlf7q3tob": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "k2id91ozlf7q3tob"
+      }
+    },
+    "class_skills_qr4fdarqqqm5ifoa": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "qr4fdarqqqm5ifoa"
+      }
+    },
+    "class_skills_m1pc5vz73nx4b28c": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "m1pc5vz73nx4b28c"
+      }
+    },
+    "class_skills_akyr8k2dv9xsy70c": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "akyr8k2dv9xsy70c"
+      }
+    },
+    "class_skills_418rsvnd17egwkse": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "418rsvnd17egwkse"
+      }
+    },
+    "class_skills_tdimeso8ajcwiygp": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "tdimeso8ajcwiygp"
+      }
+    },
+    "class_skills_ov6ag9tjdhsmldil": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "ov6ag9tjdhsmldil"
+      }
+    },
+    "class_skills_63gwys64onqg00ry": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "63gwys64onqg00ry"
+      }
+    },
+    "class_skills_e5ljj7jx6pmdjatf": {
+      "trigger": "puffish_skills:skill_unlocked",
+      "conditions": {
+        "category": "skill_tree_rpgs:class_skills",
+        "skill": "e5ljj7jx6pmdjatf"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "class_skills_418rsvnd17egwkse",
+      "class_skills_5qc3hkud5vtm6xaw",
+      "class_skills_5ubm74e5m5vhz773",
+      "class_skills_5zb4m5r2slga9c7e",
+      "class_skills_63gwys64onqg00ry",
+      "class_skills_7fs13k83hcuhzjkk",
+      "class_skills_859rwa4j1tbw2qs7",
+      "class_skills_8aixa7er1htsbd9a",
+      "class_skills_akyr8k2dv9xsy70c",
+      "class_skills_apwqaumpk4dhakie",
+      "class_skills_b7p70wd9hp5bh4ae",
+      "class_skills_cmrh2mlkna5uqfog",
+      "class_skills_cqray6yfemf8au4q",
+      "class_skills_e5ljj7jx6pmdjatf",
+      "class_skills_k2id91ozlf7q3tob",
+      "class_skills_lk37egonho34cey2",
+      "class_skills_m1pc5vz73nx4b28c",
+      "class_skills_nbd4thedgpfpztaj",
+      "class_skills_ov6ag9tjdhsmldil",
+      "class_skills_qr4fdarqqqm5ifoa",
+      "class_skills_r7vtgvr1ujnnv2od",
+      "class_skills_rinftzrm9ta3baw4",
+      "class_skills_tdimeso8ajcwiygp",
+      "class_skills_tvtz23s3v64ynpny",
+      "class_skills_vlk9z73h53bx2if3",
+      "class_skills_vlxhkx7zsfqwqx66",
+      "class_skills_ysh5ghgnzszqbi39",
+      "weapon_skills_187m2j16rk4qjyn9",
+      "weapon_skills_2fmdz7g1n58lv5tc",
+      "weapon_skills_3gd4z8ipv6dd762q",
+      "weapon_skills_3oqwa67ju4z15ibv",
+      "weapon_skills_43fud5gyn1kww7k3",
+      "weapon_skills_4hcdz3kjdgfthpe9",
+      "weapon_skills_6taxz5gbljn3xfku",
+      "weapon_skills_74lv63m06glo2z4i",
+      "weapon_skills_7v4350xjc6abuhzf",
+      "weapon_skills_8isy9vsrob80930a",
+      "weapon_skills_8jeweqbszxdkjec1",
+      "weapon_skills_8pfkxajvoxi9hm11",
+      "weapon_skills_9a4ajj9s55z980hm",
+      "weapon_skills_9dseezauf4am1g09",
+      "weapon_skills_9mnmk2j2h4vgb2go",
+      "weapon_skills_9pokx13bowgou220",
+      "weapon_skills_eg55qphw7cctd24u",
+      "weapon_skills_etdoq234nbbk9jmb",
+      "weapon_skills_fa5tmn9q8n2ujruy",
+      "weapon_skills_fu5xkfmn8ip0bpiu",
+      "weapon_skills_gcmqzfk0v41xdf5u",
+      "weapon_skills_gijhckxjzq2o74dr",
+      "weapon_skills_hdp8z71mlgffw17t",
+      "weapon_skills_i1ysm27ti2hox23u",
+      "weapon_skills_ilkpz2udlubebc6r",
+      "weapon_skills_j0u80h45ydvy095x",
+      "weapon_skills_jg4rdekpojjpqgzp",
+      "weapon_skills_kjhwog5cvu0fd423",
+      "weapon_skills_lky31jjducya2sbe",
+      "weapon_skills_o5e8ipv2xtpeksec",
+      "weapon_skills_oix3o2x7dfazvtzd",
+      "weapon_skills_p5msloq46sdpdjki",
+      "weapon_skills_paab7o9iixjwuqdj",
+      "weapon_skills_pkne4ano08eqcy4s",
+      "weapon_skills_rvwkoplyotazu3n5",
+      "weapon_skills_s3ctqevzq5b784e6",
+      "weapon_skills_soavniyhqv88lhk6",
+      "weapon_skills_t99odhklai0v0udr",
+      "weapon_skills_u4lc6n44j2s94i63",
+      "weapon_skills_w7y0zhqc44m1s3jh",
+      "weapon_skills_y1a66xz5i124mfmx",
+      "weapon_skills_ywy3uz6mt474uxcu"
+    ]
+  ]
+}

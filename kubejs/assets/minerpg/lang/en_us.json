@@ -1,0 +1,18 @@
+{
+  "item.minerpg.nether_sigil": "Nether Sigil",
+  "item.minerpg.void_shard": "Void Shard",
+  "item.minerpg.trophy_amethyst_crab": "Geode Claw",
+  "item.minerpg.trophy_ancient_remnant": "Sun-Bleached Fang",
+  "item.minerpg.trophy_maledictus": "Frostbound Crown",
+  "item.minerpg.trophy_leviathan": "Abyssal Scale",
+  "item.minerpg.trophy_netherite_monstrosity": "Molten Heart",
+  "item.minerpg.trophy_ender_guardian": "Citadel Keystone",
+  "item.minerpg.trophy_ender_dragon": "Dragonscale",
+  "item.minerpg.trophy_wither": "Ashen Skull Shard",
+  "difficulty.type.hearthlands": "Hearthlands - Level %s",
+  "difficulty.type.wildlands": "Wildlands - Level %s",
+  "difficulty.type.frontier": "Frontier - Level %s",
+  "difficulty.type.ashen_depths": "Ashen Depths - Level %s",
+  "difficulty.type.starless_reach": "Starless Reach - Level %s",
+  "difficulty.type.lair": "Boss Lair - Level %s"
+}

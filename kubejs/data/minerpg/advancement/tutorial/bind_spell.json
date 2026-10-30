@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "bind": {
+      "trigger": "spell_engine:spell_binding",
+      "conditions": {}
+    }
+  }
+}

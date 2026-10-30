@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "dig": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:dirt",
+              "minecraft:gravel",
+              "minecraft:sand",
+              "minecraft:red_sand",
+              "minecraft:clay_ball"
+            ],
+            "count": {
+              "min": 32
+            }
+          }
+        ]
+      }
+    }
+  }
+}

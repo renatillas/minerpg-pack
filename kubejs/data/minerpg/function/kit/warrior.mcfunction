@@ -1,0 +1,5 @@
+# minerpg class kit: Warrior. Run by the "Choose your calling" quest reward (as the player).
+give @s spell_engine:spell_book[minecraft:item_name='{"translate": "item.rogues.spell_book/warrior"}',spell_engine:item_model="rogues:item/spell_book/warrior",spell_engine:spell_container={pool:"rogues:spell_book/warrior"}] 1
+give @s rogues:iron_double_axe 1
+give @s rogues:warrior_armor_chest 1
+tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}

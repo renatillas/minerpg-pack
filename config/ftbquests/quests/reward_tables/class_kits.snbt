@@ -1,0 +1,331 @@
+{
+	id: "1DF313CE425EA7B8"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			command: "/function minerpg:kit/arcane_wizard"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.wizards.spell_book/arcane\"}"
+					"spell_engine:item_model": "wizards:item/spell_book/arcane"
+					"spell_engine:spell_container": {
+						pool: "wizards:spell_book/arcane"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "32E8BE12F1C33A56"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/fire_wizard"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.wizards.spell_book/fire\"}"
+					"spell_engine:item_model": "wizards:item/spell_book/fire"
+					"spell_engine:spell_container": {
+						pool: "wizards:spell_book/fire"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "4F6851F81574E735"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/frost_wizard"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.wizards.spell_book/frost\"}"
+					"spell_engine:item_model": "wizards:item/spell_book/frost"
+					"spell_engine:spell_container": {
+						pool: "wizards:spell_book/frost"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "3A213B34E654B328"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/water_mage"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.elemental_wizards_rpg.spell_book/aqua\"}"
+					"spell_engine:item_model": "elemental_wizards_rpg:item/spell_book/aqua"
+					"spell_engine:spell_container": {
+						pool: "elemental_wizards_rpg:spell_book/aqua"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "7ABB09364EF09AFD"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/earth_mage"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.elemental_wizards_rpg.spell_book/terra\"}"
+					"spell_engine:item_model": "elemental_wizards_rpg:item/spell_book/terra"
+					"spell_engine:spell_container": {
+						pool: "elemental_wizards_rpg:spell_book/terra"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "1283E905E288BBDD"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/wind_mage"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.elemental_wizards_rpg.spell_book/wind\"}"
+					"spell_engine:item_model": "elemental_wizards_rpg:item/spell_book/wind"
+					"spell_engine:spell_container": {
+						pool: "elemental_wizards_rpg:spell_book/wind"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "31C569972EEB20B8"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/paladin"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.paladins.spell_book/paladin\"}"
+					"spell_engine:item_model": "paladins:item/spell_book/paladin"
+					"spell_engine:spell_container": {
+						pool: "paladins:spell_book/paladin"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "564563EC1D693729"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/priest"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.paladins.spell_book/priest\"}"
+					"spell_engine:item_model": "paladins:item/spell_book/priest"
+					"spell_engine:spell_container": {
+						pool: "paladins:spell_book/priest"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "47638B6BFE884E36"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/rogue"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.rogues.spell_book/rogue\"}"
+					"spell_engine:item_model": "rogues:item/spell_book/rogue"
+					"spell_engine:spell_container": {
+						pool: "rogues:spell_book/rogue"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "145975B3287423F6"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/warrior"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.rogues.spell_book/warrior\"}"
+					"spell_engine:item_model": "rogues:item/spell_book/warrior"
+					"spell_engine:spell_container": {
+						pool: "rogues:spell_book/warrior"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "4E79CFDAE25B9A8D"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/berserker"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.berserker_rpg.spell_book/berserker\"}"
+					"spell_engine:item_model": "berserker_rpg:item/spell_book/berserker"
+					"spell_engine:spell_container": {
+						pool: "berserker_rpg:spell_book/berserker"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "101C0F1F77A34A36"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/forcemaster"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.forcemaster_rpg.spell_book/forcemaster\"}"
+					"spell_engine:item_model": "forcemaster_rpg:item/spell_book/forcemaster"
+					"spell_engine:spell_container": {
+						pool: "forcemaster_rpg:spell_book/forcemaster"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "5640AEE2A26C7EE3"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/archer"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.archers.spell_book/archer\"}"
+					"spell_engine:item_model": "archers:item/spell_book/archer"
+					"spell_engine:spell_container": {
+						pool: "archers:spell_book/archer"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "5ECDDBA48C71A7D6"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/deadeye"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.archers_expansion.spell_book/deadeye\"}"
+					"spell_engine:item_model": "archers_expansion:item/spell_book/deadeye"
+					"spell_engine:spell_container": {
+						pool: "archers_expansion:spell_book/deadeye"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "1B56AF9B35492A83"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/tundra_hunter"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.archers_expansion.spell_book/tundra_hunter\"}"
+					"spell_engine:item_model": "archers_expansion:item/spell_book/tundra_hunter"
+					"spell_engine:spell_container": {
+						pool: "archers_expansion:spell_book/tundra_hunter"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "2ED37D3123F7FE03"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/war_archer"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.archers_expansion.spell_book/war_archer\"}"
+					"spell_engine:item_model": "archers_expansion:item/spell_book/war_archer"
+					"spell_engine:spell_container": {
+						pool: "archers_expansion:spell_book/war_archer"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "4D1BE821DDD5FA70"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/witcher_blade"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.witcher_rpg.spell_book/fencing\"}"
+					"spell_engine:item_model": "witcher_rpg:item/spell_book/fencing"
+					"spell_engine:spell_container": {
+						pool: "witcher_rpg:spell_book/fencing"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "485028E3448A852B"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/witcher_signs"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.witcher_rpg.spell_book/signs\"}"
+					"spell_engine:item_model": "witcher_rpg:item/spell_book/signs"
+					"spell_engine:spell_container": {
+						pool: "witcher_rpg:spell_book/signs"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "6055BF0FF9C8EE1F"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/bard"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.bards_rpg.spell_book/bard\"}"
+					"spell_engine:item_model": "bards_rpg:item/spell_book/bard"
+					"spell_engine:spell_container": {
+						pool: "bards_rpg:spell_book/bard"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "24538A39D1C08953"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+	]
+	use_title: true
+}

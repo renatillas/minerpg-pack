@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "runes": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "runes:arcane_stone",
+              "runes:fire_stone",
+              "runes:frost_stone",
+              "runes:healing_stone",
+              "runes:lightning_stone",
+              "runes:soul_stone",
+              "mrpg_lib:aqua_stone",
+              "mrpg_lib:terra_stone",
+              "mrpg_lib:storm_stone"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

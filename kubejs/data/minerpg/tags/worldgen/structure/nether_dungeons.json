@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "nova_structures:nether_keep",
+      "required": false
+    },
+    {
+      "id": "nova_structures:piglin_donjon",
+      "required": false
+    },
+    {
+      "id": "nova_structures:nether_port",
+      "required": false
+    },
+    {
+      "id": "nova_structures:piglin_outstation",
+      "required": false
+    }
+  ]
+}

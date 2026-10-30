@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "cast": {
+      "trigger": "spell_engine:spell_cast",
+      "conditions": {}
+    }
+  }
+}

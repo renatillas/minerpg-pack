@@ -1,0 +1,416 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_3_end"
+	group: ""
+	icon: {
+		id: "minecraft:end_stone"
+	}
+	id: "7F4F1DAF0F1ED786"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1683BAA7EE6A9D08"
+			rewards: [
+				{
+					count: 4
+					id: "10CF8E33540F5D61"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+				{
+					id: "434517AD7DC6AC7D"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					count: 12L
+					id: "1659ED78D5703E09"
+					item: {
+						count: 1
+						id: "minecraft:ender_eye"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1683BAA7EE6A9D08"
+			]
+			id: "29E79544ED9ADE2F"
+			rewards: [
+				{
+					id: "69B527504BE2B533"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "1ABC863AE9CC3E2D"
+					structure: "minecraft:stronghold"
+					type: "structure"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"29E79544ED9ADE2F"
+			]
+			id: "2E75B2448D173567"
+			rewards: [
+				{
+					count: 3
+					id: "1C2286CC471F83AE"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "1D70722A7FF6C39A"
+					type: "dimension"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2E75B2448D173567"
+			]
+			id: "44A9402B363085DF"
+			rewards: [
+				{
+					count: 2
+					id: "61FE955D4FBCF50E"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "7187023BCED0A77C"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "4DABEFEF63961B92"
+					item: {
+						count: 1
+						id: "minerpg:trophy_ender_dragon"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"44A9402B363085DF"
+			]
+			id: "1BD38E61C99DC272"
+			rewards: [
+				{
+					id: "414CFEFB065C62B8"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "5D71108002945D0A"
+					structure: "minecraft:end_city"
+					type: "structure"
+				}
+			]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1BD38E61C99DC272"
+			]
+			id: "160ED3FACCC66FD9"
+			rewards: [
+				{
+					count: 1
+					id: "1BCCB217C9703026"
+					item: {
+						count: 1
+						id: "minecraft:ender_chest"
+					}
+					type: "item"
+				}
+				{
+					id: "2A24E6210DE632E6"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6D2CD86FFB4D41E4"
+					item: {
+						count: 1
+						id: "minecraft:shulker_shell"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1BD38E61C99DC272"
+			]
+			id: "5F0FA75876070FF6"
+			rewards: [
+				{
+					count: 32
+					id: "28E5E4B53A187D30"
+					item: {
+						count: 1
+						id: "minecraft:firework_rocket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "28AE8EF40424CBA4"
+					item: {
+						count: 1
+						id: "minecraft:elytra"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"44A9402B363085DF"
+			]
+			id: "608F4956BDD8B0F1"
+			rewards: [
+				{
+					count: 6
+					id: "150BC1A124FCE2DE"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					id: "472FA257958CA1C3"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "11B5C5B357764DF0"
+					structure: "#minerpg:end_dungeons"
+					type: "structure"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"44A9402B363085DF"
+			]
+			id: "1C1A258BBB1C69E5"
+			rewards: [
+				{
+					id: "1FF8A85D06531CE7"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "467EA0D16574CC8B"
+					item: {
+						count: 1
+						id: "cataclysm:void_eye"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"44A9402B363085DF"
+			]
+			id: "21324AB76EF33990"
+			rewards: [
+				{
+					id: "5A0022338326FF39"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "5FD54099D5C15F75"
+					structure: "cataclysm:ruined_citadel"
+					type: "structure"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"21324AB76EF33990"
+			]
+			id: "6B54BC29B3B37827"
+			rewards: [
+				{
+					count: 2
+					id: "67A3166524E85E69"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "6A53FEAE520B6B44"
+					item: {
+						count: 1
+						id: "minecraft:enchanted_golden_apple"
+					}
+					type: "item"
+				}
+				{
+					id: "13673E0721F2A945"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "29C18C0DB954D588"
+					item: {
+						count: 1
+						id: "minerpg:trophy_ender_guardian"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"44A9402B363085DF"
+			]
+			id: "7DC8CDF63FD9011E"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "2948545EBA1DCE36"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "1B2AD203D3731F61"
+					item: {
+						count: 1
+						id: "minecraft:wither_skeleton_skull"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1C6E81DE827BFCE2"
+					item: {
+						count: 1
+						id: "minecraft:soul_sand"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7DC8CDF63FD9011E"
+			]
+			id: "3666625E717DFC13"
+			optional: true
+			rewards: [
+				{
+					count: 1
+					id: "6DE8076B8068F294"
+					item: {
+						count: 1
+						id: "minecraft:beacon"
+					}
+					type: "item"
+				}
+				{
+					id: "52DC43F573CA60D1"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6DF33D11FB4F9596"
+					item: {
+						count: 1
+						id: "minerpg:trophy_wither"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 3.0d
+		}
+	]
+}
