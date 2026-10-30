@@ -1,0 +1,51 @@
+{
+  "parent": "apotheosis:progression/summit",
+  "criteria": {
+    "citadel_keystone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minerpg:trophy_ender_guardian"
+          }
+        ]
+      }
+    },
+    "dragonscale": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minerpg:trophy_ender_dragon"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "citadel_keystone"
+    ],
+    [
+      "dragonscale"
+    ]
+  ],
+  "rewards": {
+    "function": "minerpg:tier/sync"
+  },
+  "display": {
+    "background": "apotheosis:textures/advancements/bg/apoth.png",
+    "title": {
+      "translate": "advancements.apotheosis.progression.pinnacle.title"
+    },
+    "description": {
+      "translate": "advancements.apotheosis.progression.pinnacle.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minerpg:trophy_ender_guardian"
+    },
+    "frame": "challenge"
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,19 @@
+{
+    "type": "apotheosis:affix_loot",
+    "conditions": [],
+    "entries": [
+        {
+            "chance": 0.2,
+            "pattern": {
+                "domain": "minecraft",
+                "path_regex": "chests.*"
+            }
+        },
+        {
+            "chance": 0.15,
+            "pattern": {
+                "path_regex": "chests.*"
+            }
+        }
+    ]
+}

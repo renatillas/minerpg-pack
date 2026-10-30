@@ -1,0 +1,34 @@
+{
+    "type": "apotheosis:affix_conversion",
+    "conditions": [],
+    "entries": [
+        {
+            "chance": 0.0,
+            "pattern": { "path_regex": ".*blocks.*" }
+        },
+        {
+            "chance": 1.0,
+            "pattern": { "domain": "cataclysm", "path_regex": "entities/(the_harbinger|netherite_monstrosity|ignis|ender_guardian)" },
+            "rarities": [ "apotheosis:rare", "apotheosis:epic", "apotheosis:mythic" ]
+        },
+        {
+            "chance": 1.0,
+            "pattern": { "domain": "minecraft", "path_regex": "entities/(ender_dragon|wither)" },
+            "rarities": [ "apotheosis:rare", "apotheosis:epic", "apotheosis:mythic" ]
+        },
+        {
+            "chance": 1.0,
+            "pattern": { "domain": "cataclysm", "path_regex": "entities/(amethyst_crab|ancient_remnant|maledictus|the_leviathan|scylla)" },
+            "rarities": [ "apotheosis:rare", "apotheosis:epic" ]
+        },
+        {
+            "chance": 0.6,
+            "pattern": { "domain": "cataclysm", "path_regex": "entities/.*" },
+            "rarities": [ "apotheosis:uncommon", "apotheosis:rare", "apotheosis:epic" ]
+        },
+        {
+            "chance": 0.35,
+            "pattern": { "path_regex": ".*" }
+        }
+    ]
+}

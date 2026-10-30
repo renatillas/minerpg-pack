@@ -6,9 +6,11 @@
 #
 # minerpg: quest progress belongs to the FTB team, so an FTB party would share every quest
 # (story steps, gathering, key-item quests) between its members. The pack's design keeps quest
-# progress personal, so FTB parties are capped at one player. Group play uses Open Parties
-# and Claims parties (claims, shared map) and the automatic minerpg_party scoreboard team
-# (shared talent XP); boss credit is shared through trophies and key items.
+# progress personal, so FTB parties are capped at one player. Group play uses Party Hud
+# (H): its party is a vanilla scoreboard team, which drives shared talent XP, spell and
+# melee ally rules (no friendly fire), TEAM waystones and map markers. Open Parties and
+# Claims parties are only for shared, protected bases. Boss credit is shared through
+# trophies and key items.
 # Raise max_party_size to allow shared quest books.
 
 {

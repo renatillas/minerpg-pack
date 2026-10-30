@@ -1,0 +1,18 @@
+{
+  "type": "apotheosis:affix_loot_entry",
+  "stack": {
+    "count": 1,
+    "id": "elemental_wizards_rpg:elemental_chest"
+  },
+  "weights": {
+    "haven": {
+      "weight": 10
+    },
+    "frontier": {
+      "weight": 25
+    },
+    "ascent": {
+      "weight": 10
+    }
+  }
+}

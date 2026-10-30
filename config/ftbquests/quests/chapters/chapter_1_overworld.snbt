@@ -51,7 +51,7 @@
 				{
 					id: "4960763DB37022AC"
 					type: "xp"
-					xp: 100
+					xp: 50
 				}
 			]
 			tasks: [
@@ -72,8 +72,8 @@
 			rewards: [
 				{
 					id: "4B64288A53F55467"
-					type: "xp_levels"
-					xp_levels: 3
+					type: "xp"
+					xp: 75
 				}
 				{
 					count: 8
@@ -111,7 +111,7 @@
 				{
 					id: "1002B4301F0FE2DB"
 					type: "xp"
-					xp: 150
+					xp: 75
 				}
 			]
 			tasks: [
@@ -141,8 +141,8 @@
 				}
 				{
 					id: "234015FF0FF9D33E"
-					type: "xp_levels"
-					xp_levels: 5
+					type: "xp"
+					xp: 150
 				}
 			]
 			shape: "gear"
@@ -178,7 +178,7 @@
 				{
 					id: "65A838EEAD8955A9"
 					type: "xp"
-					xp: 100
+					xp: 50
 				}
 			]
 			tasks: [
@@ -232,8 +232,8 @@
 			rewards: [
 				{
 					id: "48C2F1ECFBA21196"
-					type: "xp_levels"
-					xp_levels: 5
+					type: "xp"
+					xp: 75
 				}
 			]
 			tasks: [
@@ -255,7 +255,7 @@
 				{
 					id: "54D9F77E72264BA3"
 					type: "xp"
-					xp: 100
+					xp: 50
 				}
 			]
 			tasks: [
@@ -280,7 +280,7 @@
 				{
 					id: "70526CF3C9281DD7"
 					type: "xp"
-					xp: 200
+					xp: 100
 				}
 			]
 			tasks: [
@@ -310,8 +310,8 @@
 				}
 				{
 					id: "3BB9B8D83241CEE7"
-					type: "xp_levels"
-					xp_levels: 8
+					type: "xp"
+					xp: 150
 				}
 			]
 			shape: "gear"
@@ -338,7 +338,7 @@
 				{
 					id: "2BF8CDC64B138FBF"
 					type: "xp"
-					xp: 100
+					xp: 50
 				}
 			]
 			tasks: [
@@ -363,7 +363,7 @@
 				{
 					id: "3D3628F9C01FC132"
 					type: "xp"
-					xp: 200
+					xp: 100
 				}
 			]
 			tasks: [
@@ -393,8 +393,8 @@
 				}
 				{
 					id: "433BDB3E55FDC963"
-					type: "xp_levels"
-					xp_levels: 8
+					type: "xp"
+					xp: 150
 				}
 			]
 			shape: "gear"
@@ -421,7 +421,7 @@
 				{
 					id: "454EC941AFD7716E"
 					type: "xp"
-					xp: 100
+					xp: 50
 				}
 			]
 			tasks: [
@@ -460,7 +460,7 @@
 				{
 					id: "1D4D6568910B6616"
 					type: "xp"
-					xp: 200
+					xp: 100
 				}
 			]
 			tasks: [
@@ -490,8 +490,8 @@
 				}
 				{
 					id: "147BA1D55B4C3AE4"
-					type: "xp_levels"
-					xp_levels: 8
+					type: "xp"
+					xp: 150
 				}
 			]
 			shape: "gear"
@@ -527,7 +527,7 @@
 				{
 					id: "4BE2302E082AF06F"
 					type: "xp"
-					xp: 200
+					xp: 100
 				}
 			]
 			tasks: [
@@ -555,8 +555,8 @@
 			rewards: [
 				{
 					id: "69BDFB8A53AF84F9"
-					type: "xp_levels"
-					xp_levels: 5
+					type: "xp"
+					xp: 100
 				}
 			]
 			tasks: [
@@ -608,7 +608,7 @@
 				{
 					id: "2502ED5374843A00"
 					type: "xp"
-					xp: 150
+					xp: 75
 				}
 			]
 			tasks: [
@@ -633,7 +633,7 @@
 				{
 					id: "65D164EC34084C78"
 					type: "xp"
-					xp: 300
+					xp: 150
 				}
 			]
 			tasks: [
@@ -672,8 +672,15 @@
 				}
 				{
 					id: "78C9051854DEA4E7"
-					type: "xp_levels"
-					xp_levels: 10
+					type: "xp"
+					xp: 500
+				}
+				{
+					command: "/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses"
+					id: "35BE7033ECA14120"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "gear"

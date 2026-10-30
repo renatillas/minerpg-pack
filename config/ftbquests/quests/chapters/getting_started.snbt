@@ -22,6 +22,13 @@
 					}
 					type: "item"
 				}
+				{
+					command: "/function minerpg:tier/sync"
+					id: "1017F46B21B310ED"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			tasks: [
 				{
@@ -41,7 +48,7 @@
 				{
 					id: "1B1AB47425611BE3"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 			]
 			tasks: [
@@ -85,7 +92,7 @@
 				{
 					id: "3B4707D3DD109F07"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 			]
 			tasks: [
@@ -143,8 +150,8 @@
 				}
 				{
 					id: "1C1C8CD5946ACC72"
-					type: "xp_levels"
-					xp_levels: 3
+					type: "xp"
+					xp: 40
 				}
 			]
 			tasks: [
@@ -167,7 +174,7 @@
 				{
 					id: "15C1AAAE6B3139EF"
 					type: "xp"
-					xp: 150
+					xp: 30
 				}
 			]
 			tasks: [
@@ -215,7 +222,7 @@
 				{
 					id: "1E38FEA986389B3F"
 					type: "xp"
-					xp: 50
+					xp: 20
 				}
 			]
 			tasks: [
@@ -263,7 +270,7 @@
 				{
 					id: "491AE5BE4557E97A"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 			]
 			tasks: [
@@ -315,7 +322,7 @@
 				{
 					id: "212BF53FC752B081"
 					type: "xp"
-					xp: 50
+					xp: 20
 				}
 			]
 			shape: "diamond"
@@ -337,7 +344,7 @@
 				{
 					id: "139A45592566A3BB"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 			]
 			tasks: [
@@ -358,7 +365,7 @@
 				{
 					id: "74270842B1E47E9A"
 					type: "xp"
-					xp: 100
+					xp: 30
 				}
 			]
 			tasks: [
@@ -388,7 +395,7 @@
 				{
 					id: "20A46672ECF0BD41"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "circle"
@@ -421,7 +428,7 @@
 				{
 					id: "198AE49AFB70C85E"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "circle"
@@ -454,7 +461,7 @@
 				{
 					id: "6D6924F657CE56C8"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "circle"
@@ -487,7 +494,7 @@
 				{
 					id: "195329EB5666F9F9"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "circle"
@@ -520,7 +527,7 @@
 				{
 					id: "614125DD08534671"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "circle"
@@ -556,7 +563,7 @@
 				{
 					id: "66E12A4783D5CF3A"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "circle"
@@ -589,7 +596,7 @@
 				{
 					id: "2D6734E18C4A3E38"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "circle"
@@ -623,7 +630,7 @@
 				{
 					id: "3549C1BAFAB7AC13"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "circle"
@@ -656,7 +663,7 @@
 				{
 					id: "35EC6BC0B9671D84"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "circle"
@@ -692,7 +699,7 @@
 				{
 					id: "1284D9F7A103C140"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "circle"

@@ -1,0 +1,38 @@
+{
+  "parent": "apotheosis:progression/ascent",
+  "criteria": {
+    "void_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minerpg:void_shard"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "void_shard"
+    ]
+  ],
+  "rewards": {
+    "function": "minerpg:tier/sync"
+  },
+  "display": {
+    "background": "apotheosis:textures/advancements/bg/apoth.png",
+    "title": {
+      "translate": "advancements.apotheosis.progression.summit.title"
+    },
+    "description": {
+      "translate": "advancements.apotheosis.progression.summit.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minerpg:void_shard"
+    },
+    "frame": "goal"
+  },
+  "sends_telemetry_event": true
+}

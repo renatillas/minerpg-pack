@@ -40,6 +40,8 @@
 		"This book follows you from your first night to the edge of the world."
 		"Each tab is a chapter. Quests show what to try next and pay you for it."
 		""
+		"Press L to open this book any time."
+		""
 		"Tick the box to begin."
 	]
 	"quest.15511B0F8DB55CDA.quest_subtitle": "Start here"
@@ -97,7 +99,7 @@
 	"quest.1BC9B50E8EB7C872.quest_desc": [
 		"When you first joined, you chose your folk. Each one has two small gifts, one drawback and one racial power."
 		""
-		"Use your racial power once: it is the NeoOrigins \"Skill 1\" key (see Controls)."
+		"Use your racial power once: press V (see Controls)."
 	]
 	"quest.1BC9B50E8EB7C872.quest_subtitle": "Your race and its power"
 	"quest.1BC9B50E8EB7C872.title": "Who Are You?"
@@ -113,6 +115,8 @@
 	"quest.1D4EBCBCFF715BE5.quest_desc": [
 		"Gear drops in rarities, each with its own name color: Common, Uncommon, Rare, Epic, Mythic. Higher rarity, more bonus stats."
 		"Break gear you do not need at a Salvaging Table to get rarity materials for reforging."
+		""
+		"Your &eworld tier&r (Ctrl+T to look) sets how tough monsters are and how good gear drops. It starts at Haven and rises by itself when you beat chapter bosses: Venture, Ascent, Summit, Pinnacle. It never goes down."
 	]
 	"quest.1D4EBCBCFF715BE5.quest_subtitle": "Gear rarity and salvaging"
 	"quest.1D4EBCBCFF715BE5.title": "Not All Blades Are Equal"
@@ -197,7 +201,7 @@
 	"quest.3DFB025E3BBA5CDC.quest_desc": [
 		"Defeat &4The Harbinger&r, the factory's iron herald."
 		"Everyone nearby at the kill receives a &6Nether Sigil&r: use it on an obsidian frame to open the way to the Nether."
-		"Your reward includes netherite upgrade templates for the next tier."
+		"The sigil raises your world tier to &eAscent&r. Your reward includes netherite upgrade templates for the next tier and a talent point."
 	]
 	"quest.3DFB025E3BBA5CDC.quest_subtitle": "Chapter boss"
 	"quest.3DFB025E3BBA5CDC.title": "The Harbinger"
@@ -208,7 +212,9 @@
 	"quest.3E7B599CAC455CBF.title": "The Cursed Pyramid"
 	"quest.3F043D30988BC476.quest_desc": [
 		"Press H to open the Party HUD: invite your friends and see their health on screen."
-		"Party members near a kill share talent experience. Heals and buffs reach every player, party or not."
+		"Party members near a kill share talent experience, and your spells and swings never hurt each other. Heals and buffs reach every player, party or not."
+		"In the Members tab, right-click each friend and add them to favorites to see their health frames."
+		"Enter boss arenas together: a boss sizes itself to the group around it when its arena wakes."
 		"Your quest book stays your own. When a boss falls, everyone nearby gets their own trophy or key."
 	]
 	"quest.3F043D30988BC476.quest_subtitle": "Party HUD (H)"
@@ -224,8 +230,9 @@
 	"quest.404575A89AD631AE.quest_subtitle": "Side task"
 	"quest.404575A89AD631AE.title": "Eye of Fury"
 	"quest.409FB0BE8F2205F1.quest_desc": [
-		"Kills earn talent experience. Press K to open your talent tree and spend your first point."
+		"Kills earn talent experience. Press N to open your talent tree and spend your first point."
 		"Party members within 200 blocks share talent experience from kills."
+		"Kills can earn up to 9 points. The last 4 come from the great chapter bosses."
 	]
 	"quest.409FB0BE8F2205F1.quest_subtitle": "Spend a talent point"
 	"quest.409FB0BE8F2205F1.title": "A Point to Spend"
@@ -241,6 +248,7 @@
 	"quest.4278AAA096D6AA74.title": "Eye of the Deep"
 	"quest.44A9402B363085DF.quest_desc": [
 		"Destroy the crystals and slay the &5Ender Dragon&r. Everyone nearby earns a Dragonscale."
+		"With both the Dragonscale and the Citadel Keystone, your world tier rises to &ePinnacle&r."
 	]
 	"quest.44A9402B363085DF.quest_subtitle": "Boss"
 	"quest.44A9402B363085DF.title": "The Last Dragon"
@@ -271,7 +279,7 @@
 	"quest.54854E6D0A86E2C6.quest_subtitle": "Frontier"
 	"quest.54854E6D0A86E2C6.title": "The Frontier"
 	"quest.551B4EC7917C7B74.quest_desc": [
-		"Defeat the &6Netherite Monstrosity&r."
+		"Defeat the &6Netherite Monstrosity&r. Beating it earns you a talent point."
 	]
 	"quest.551B4EC7917C7B74.quest_subtitle": "Boss"
 	"quest.551B4EC7917C7B74.title": "Forged in Fury"
@@ -344,7 +352,8 @@
 	"quest.691EA646A3AD516D.quest_subtitle": "Side task"
 	"quest.691EA646A3AD516D.title": "Ironclad"
 	"quest.6B54BC29B3B37827.quest_desc": [
-		"Defeat the &5Ender Guardian&r, last warden of the citadel."
+		"Defeat the &5Ender Guardian&r, last warden of the citadel. Beating it earns you your last talent point."
+		"With both the Citadel Keystone and the Dragonscale, your world tier rises to &ePinnacle&r."
 	]
 	"quest.6B54BC29B3B37827.quest_subtitle": "Chapter boss"
 	"quest.6B54BC29B3B37827.title": "Guardian of the Void"
@@ -367,6 +376,7 @@
 	"quest.71ED147E96C3CDB4.quest_desc": [
 		"Defeat &cIgnis&r, the burning champion."
 		"Everyone nearby at the kill receives a &dVoid Shard&r. Eyes of Ender need it, and it is never used up."
+		"The shard raises your world tier to &eSummit&r. Your reward includes a talent point and a book of &bSpell Infinity&r: put it on your weapon at an anvil and your spells stop using runes."
 	]
 	"quest.71ED147E96C3CDB4.quest_subtitle": "Chapter boss"
 	"quest.71ED147E96C3CDB4.title": "Ignis"
@@ -397,6 +407,7 @@
 	"quest.7990F5145F92D1AA.title": "Hunter"
 	"quest.7AD6EC34B35830B0.quest_desc": [
 		"Defeat the &dAmethyst Crab&r. Everyone nearby at the kill earns a Geode Claw for this quest."
+		"The claw raises your world tier to &eVenture&r: monsters wear more armor, rare monsters start to roam, and gear drops in iron and better rarities."
 	]
 	"quest.7AD6EC34B35830B0.quest_subtitle": "Boss"
 	"quest.7AD6EC34B35830B0.title": "Shell Shock"
@@ -415,13 +426,16 @@
 	]
 	"quest.7EC7FF658A0626F1.title": "Brute Force"
 	"reward.101C0F1F77A34A36.title": "Berserker"
+	"reward.121F3AC8B68AF412.title": "+1 talent point"
 	"reward.1283E905E288BBDD.title": "Earth Mage"
 	"reward.145975B3287423F6.title": "Rogue"
+	"reward.1A9543EB3DAAEE9A.title": "+1 talent point"
 	"reward.1B56AF9B35492A83.title": "Deadeye"
 	"reward.24538A39D1C08953.title": "Bard"
 	"reward.2ED37D3123F7FE03.title": "Tundra Hunter"
 	"reward.31C569972EEB20B8.title": "Wind Mage"
 	"reward.32E8BE12F1C33A56.title": "Arcane Wizard"
+	"reward.35BE7033ECA14120.title": "+1 talent point"
 	"reward.3A213B34E654B328.title": "Frost Wizard"
 	"reward.47638B6BFE884E36.title": "Priest"
 	"reward.485028E3448A852B.title": "Witcher (Blade)"
@@ -431,6 +445,7 @@
 	"reward.5640AEE2A26C7EE3.title": "Forcemaster"
 	"reward.564563EC1D693729.title": "Paladin"
 	"reward.5ECDDBA48C71A7D6.title": "Archer"
+	"reward.5EE93922FA92E40E.title": "+1 talent point"
 	"reward.6055BF0FF9C8EE1F.title": "Witcher (Signs)"
 	"reward.7ABB09364EF09AFD.title": "Water Mage"
 	"reward_table.1DF313CE425EA7B8.title": "Class starter kits"

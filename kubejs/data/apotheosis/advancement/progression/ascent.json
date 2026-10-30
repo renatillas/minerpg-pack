@@ -1,0 +1,38 @@
+{
+  "parent": "apotheosis:progression/frontier",
+  "criteria": {
+    "nether_sigil": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minerpg:nether_sigil"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "nether_sigil"
+    ]
+  ],
+  "rewards": {
+    "function": "minerpg:tier/sync"
+  },
+  "display": {
+    "background": "apotheosis:textures/advancements/bg/apoth.png",
+    "title": {
+      "translate": "advancements.apotheosis.progression.ascent.title"
+    },
+    "description": {
+      "translate": "advancements.apotheosis.progression.ascent.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minerpg:nether_sigil"
+    },
+    "frame": "goal"
+  },
+  "sends_telemetry_event": true
+}

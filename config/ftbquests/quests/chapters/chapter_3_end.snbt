@@ -107,8 +107,8 @@
 				}
 				{
 					id: "7187023BCED0A77C"
-					type: "xp_levels"
-					xp_levels: 20
+					type: "xp"
+					xp: 1500
 				}
 			]
 			shape: "gear"
@@ -316,8 +316,15 @@
 				}
 				{
 					id: "13673E0721F2A945"
-					type: "xp_levels"
-					xp_levels: 20
+					type: "xp"
+					xp: 1800
+				}
+				{
+					command: "/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses"
+					id: "5EE93922FA92E40E"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "gear"
@@ -393,8 +400,8 @@
 				}
 				{
 					id: "52DC43F573CA60D1"
-					type: "xp_levels"
-					xp_levels: 15
+					type: "xp"
+					xp: 800
 				}
 			]
 			shape: "gear"

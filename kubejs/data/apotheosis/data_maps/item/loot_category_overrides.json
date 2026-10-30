@@ -1,0 +1,9 @@
+{
+  "values": {
+    "#rpg_series:weapon_type/damage_staff": "apotheosis:shears",
+    "#rpg_series:weapon_type/damage_wand": "apotheosis:shears",
+    "#rpg_series:weapon_type/healing_staff": "apotheosis:shears",
+    "#rpg_series:weapon_type/healing_wand": "apotheosis:shears",
+    "minecraft:shears": "apotheosis:none"
+  }
+}

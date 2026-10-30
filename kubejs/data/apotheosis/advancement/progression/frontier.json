@@ -1,0 +1,37 @@
+{
+  "parent": "apotheosis:progression/haven",
+  "criteria": {
+    "geode_claw": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minerpg:trophy_amethyst_crab"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "geode_claw"
+    ]
+  ],
+  "rewards": {
+    "function": "minerpg:tier/sync"
+  },
+  "display": {
+    "background": "apotheosis:textures/advancements/bg/apoth.png",
+    "title": {
+      "translate": "advancements.apotheosis.progression.frontier.title"
+    },
+    "description": {
+      "translate": "advancements.apotheosis.progression.frontier.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minerpg:trophy_amethyst_crab"
+    }
+  },
+  "sends_telemetry_event": true
+}

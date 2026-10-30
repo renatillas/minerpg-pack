@@ -1,0 +1,18 @@
+{
+  "type": "apotheosis:affix_loot_entry",
+  "stack": {
+    "count": 1,
+    "id": "witcher_rpg:iron_witcher_sword"
+  },
+  "weights": {
+    "haven": {
+      "weight": 10
+    },
+    "frontier": {
+      "weight": 25
+    },
+    "ascent": {
+      "weight": 10
+    }
+  }
+}

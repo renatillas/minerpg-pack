@@ -1,0 +1,23 @@
+{
+  "text.apotheosis.world_tier.frontier": "Venture",
+  "text.apotheosis.world_tier.frontier.desc": "Venture forth into the dangerous world",
+  "button.apotheosis.frontier": "Venture",
+  "item.apotheosis.frontier_spawner_upgrade_rune": "Venturer's Spawner Upgrade Rune",
+  "tutorial.apotheosis.world_tier.tier_difficulty.desc": "This is the difficulty of the selected World Tier. Higher difficulties mean stronger mobs, but also better rewards.\n\nAt World Tier: Venture and above, Apothic Invaders will begin to spawn in your world.",
+  "advancements.apotheosis.progression.root.desc": "Milestones for unlocking World Tiers. Your tier rises by itself as you beat chapter bosses.\nPress CTRL+T to see the details",
+  "advancements.apotheosis.progression.haven.title": "World Tier: Haven",
+  "advancements.apotheosis.progression.haven.desc": "Where every journey starts",
+  "advancements.apotheosis.progression.haven.criteria.start": "Begin your journey",
+  "advancements.apotheosis.progression.frontier.title": "World Tier: Venture",
+  "advancements.apotheosis.progression.frontier.desc": "Defeat the Amethyst Crab and earn a Geode Claw",
+  "advancements.apotheosis.progression.frontier.criteria.geode_claw": "Carry a Geode Claw",
+  "advancements.apotheosis.progression.ascent.desc": "Defeat The Harbinger and earn the Nether Sigil",
+  "advancements.apotheosis.progression.ascent.criteria.nether_sigil": "Carry the Nether Sigil",
+  "advancements.apotheosis.progression.summit.desc": "Defeat Ignis and earn the Void Shard",
+  "advancements.apotheosis.progression.summit.criteria.void_shard": "Carry the Void Shard",
+  "advancements.apotheosis.progression.pinnacle.desc": "Defeat the Ender Guardian and the Ender Dragon",
+  "advancements.apotheosis.progression.pinnacle.criteria.citadel_keystone": "Carry the Citadel Keystone",
+  "advancements.apotheosis.progression.pinnacle.criteria.dragonscale": "Carry a Dragonscale",
+  "loot_category.apotheosis.shears": "Staff or Wand",
+  "loot_category.apotheosis.shears.plural": "Staves and Wands"
+}

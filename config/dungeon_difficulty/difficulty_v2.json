@@ -34,7 +34,7 @@
     ]
   },
   "per_player_difficulty": {
-    "enabled": true,
+    "enabled": false,
     "counting": "EVERYWHERE",
     "cap": 10,
     "entities": [
@@ -69,7 +69,7 @@
       "entities": [
         {
           "entity_matches": {
-            "attitude": "ANY",
+            "attitude": "HOSTILE",
             "type": ""
           },
           "attributes": [
@@ -175,14 +175,14 @@
             "attribute": "minecraft:generic.armor",
             "operation": "MULTIPLY_BASE",
             "randomness": 0.0,
-            "value": 0.1,
+            "value": 0.05,
             "offset": 0.0
           },
           {
             "attribute": "minecraft:generic.max_health",
             "operation": "ADDITION",
             "randomness": 0.0,
-            "value": 1.0,
+            "value": 0.5,
             "offset": 0.0
           }
         ]
@@ -199,15 +199,15 @@
           {
             "attribute": "damage",
             "operation": "MULTIPLY_BASE",
-            "randomness": 0.05,
-            "value": 0.1,
+            "randomness": 0.025,
+            "value": 0.05,
             "offset": 0.0
           },
           {
             "attribute": "power",
             "operation": "MULTIPLY_BASE",
-            "randomness": 0.05,
-            "value": 0.1,
+            "randomness": 0.025,
+            "value": 0.05,
             "offset": 0.0
           }
         ]

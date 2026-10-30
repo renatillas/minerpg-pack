@@ -1,0 +1,15 @@
+{
+  "type": "apotheosis:affix_loot_entry",
+  "stack": {
+    "count": 1,
+    "id": "bards_rpg:unique_lyre_1"
+  },
+  "weights": {
+    "summit": {
+      "weight": 2
+    },
+    "pinnacle": {
+      "weight": 5
+    }
+  }
+}

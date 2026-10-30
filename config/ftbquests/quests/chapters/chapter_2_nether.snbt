@@ -82,8 +82,8 @@
 				}
 				{
 					id: "54F25FF1DC064910"
-					type: "xp_levels"
-					xp_levels: 4
+					type: "xp"
+					xp: 200
 				}
 			]
 			tasks: [
@@ -149,8 +149,8 @@
 			rewards: [
 				{
 					id: "634FE6633A19779F"
-					type: "xp_levels"
-					xp_levels: 5
+					type: "xp"
+					xp: 200
 				}
 			]
 			tasks: [
@@ -205,8 +205,8 @@
 				}
 				{
 					id: "247C54F561462560"
-					type: "xp_levels"
-					xp_levels: 4
+					type: "xp"
+					xp: 200
 				}
 			]
 			tasks: [
@@ -263,8 +263,8 @@
 			rewards: [
 				{
 					id: "12522EB630D7BB9B"
-					type: "xp_levels"
-					xp_levels: 5
+					type: "xp"
+					xp: 250
 				}
 			]
 			tasks: [
@@ -379,8 +379,15 @@
 				}
 				{
 					id: "15845B7DDABAD3CD"
-					type: "xp_levels"
-					xp_levels: 10
+					type: "xp"
+					xp: 500
+				}
+				{
+					command: "/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses"
+					id: "1A9543EB3DAAEE9A"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "gear"
@@ -471,8 +478,31 @@
 				}
 				{
 					id: "66460318B5F7564B"
-					type: "xp_levels"
-					xp_levels: 15
+					type: "xp"
+					xp: 700
+				}
+				{
+					command: "/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses"
+					id: "121F3AC8B68AF412"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "35C34611E2A01A7B"
+					item: {
+						components: {
+							"minecraft:stored_enchantments": {
+								levels: {
+									"spell_engine:spell_infinity": 1
+								}
+							}
+						}
+						count: 1
+						id: "minecraft:enchanted_book"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"

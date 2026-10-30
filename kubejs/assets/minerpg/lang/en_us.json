@@ -14,5 +14,14 @@
   "difficulty.type.frontier": "Frontier - Level %s",
   "difficulty.type.ashen_depths": "Ashen Depths - Level %s",
   "difficulty.type.starless_reach": "Starless Reach - Level %s",
-  "difficulty.type.lair": "Boss Lair - Level %s"
+  "difficulty.type.lair": "Boss Lair - Level %s",
+  "affix.minerpg:caster/spell_power": "Empowered",
+  "affix.minerpg:caster/spell_power.suffix": "of the Arcane",
+  "affix.minerpg:caster/haste": "Quickened",
+  "affix.minerpg:caster/haste.suffix": "of Swift Casting",
+  "affix.minerpg:caster/spell_crit_chance": "Focused",
+  "affix.minerpg:caster/spell_crit_chance.suffix": "of Precision",
+  "affix.minerpg:caster/spell_crit_damage": "Searing",
+  "affix.minerpg:caster/spell_crit_damage.suffix": "of Ruin",
+  "item.apotheosis.gem.minerpg:caster/arcanist": "Arcanist's Prism"
 }

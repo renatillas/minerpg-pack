@@ -1,0 +1,34 @@
+{
+    "values": {
+        "minecraft:overworld": {
+            "spawn_chances": {
+                "haven": 0.0,
+                "frontier": 0.009,
+                "ascent": 0.01,
+                "summit": 0.0125,
+                "pinnacle": 0.015
+            },
+            "surface_type": "needs_sky_or_same_vertical_slice"
+        },
+        "minecraft:the_end": {
+            "spawn_chances": {
+                "haven": 0.0,
+                "frontier": 0.009,
+                "ascent": 0.01,
+                "summit": 0.0125,
+                "pinnacle": 0.015
+            },
+            "surface_type": "surface_outer_end"
+        },
+        "minecraft:the_nether": {
+            "spawn_chances": {
+                "haven": 0.0,
+                "frontier": 0.0125,
+                "ascent": 0.0135,
+                "summit": 0.015,
+                "pinnacle": 0.0175
+            },
+            "surface_type": "any"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "values": [
+    { "id": "#c:bosses", "required": false },
+    { "id": "cataclysm:the_harbinger", "required": false },
+    { "id": "cataclysm:netherite_monstrosity", "required": false },
+    { "id": "cataclysm:ignis", "required": false },
+    { "id": "cataclysm:ender_guardian", "required": false },
+    { "id": "cataclysm:ancient_remnant", "required": false },
+    { "id": "cataclysm:maledictus", "required": false },
+    { "id": "cataclysm:the_leviathan", "required": false },
+    { "id": "cataclysm:scylla", "required": false },
+    { "id": "cataclysm:amethyst_crab", "required": false },
+    { "id": "cataclysm:ender_golem", "required": false },
+    { "id": "cataclysm:ignited_revenant", "required": false },
+    "minecraft:wither",
+    "minecraft:ender_dragon",
+    "minecraft:warden",
+    "minecraft:elder_guardian"
+  ]
+}

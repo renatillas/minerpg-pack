@@ -1,0 +1,15 @@
+{
+  "type": "apotheosis:affix_loot_entry",
+  "stack": {
+    "count": 1,
+    "id": "wizards:staff_netherite_frost"
+  },
+  "weights": {
+    "summit": {
+      "weight": 25
+    },
+    "pinnacle": {
+      "weight": 15
+    }
+  }
+}

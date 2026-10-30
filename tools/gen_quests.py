@@ -171,6 +171,26 @@ def r_levels(levels):
     return {'type': 'xp_levels', 'xp_levels': levels}
 
 
+def r_cmd(command, title=None):
+    """Command reward, run as the player (so @s works) with op permission, silently."""
+    r = {'type': 'command', 'command': command, 'permission_level': 2, 'silent': True}
+    if title:
+        r['_title'] = title
+    return r
+
+
+# +1 Class Skills talent point. Kills stop giving class points at 9 (level_limit in
+# kubejs/data/skill_tree_rpgs/puffish_skills/categories/class_skills/experience.json); the last
+# four come from the chapter bosses (Harbinger, Netherite Monstrosity, Ignis, Ender Guardian).
+def r_talent_point():
+    return r_cmd('/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses', '+1 talent point')
+
+
+# One Spell Infinity book (spells stop using runes). It is not on the enchanting table or in
+# random loot (kubejs/server_scripts/minerpg_enchanting.js).
+SPELL_INFINITY_BOOK = {'minecraft:stored_enchantments': {'levels': {'spell_engine:spell_infinity': 1}}}
+
+
 # --------------------------------------------------------------------------------------
 # Class kits ("Choose your calling" choice reward)
 # --------------------------------------------------------------------------------------
@@ -332,13 +352,18 @@ GETTING_STARTED = [
         'This book follows you from your first night to the edge of the world.',
         'Each tab is a chapter. Quests show what to try next and pay you for it.',
         '',
+        'Press L to open this book any time.',
+        '',
         'Tick the box to begin.'],
-        [t_check('Open the book')], [r_item('minecraft:bread', 8)], subtitle='Start here'),
+        [t_check('Open the book')],
+        # Sets the Apotheosis world tier to Haven (or higher, if already unlocked), which also
+        # ends the "unknown power" tutorial on affix items.
+        [r_item('minecraft:bread', 8), r_cmd('/function minerpg:tier/sync')], subtitle='Start here'),
     Q('gs_race', 'Who Are You?', -2, -1.5, [
         'When you first joined, you chose your folk. Each one has two small gifts, one drawback and one racial power.',
         '',
-        'Use your racial power once: it is the NeoOrigins "Skill 1" key (see Controls).'],
-        [t_check('Use your racial power')], [r_xp(100)], deps=['gs_welcome'], subtitle='Your race and its power'),
+        'Use your racial power once: press V (see Controls).'],
+        [t_check('Use your racial power')], [r_xp(30)], deps=['gs_welcome'], subtitle='Your race and its power'),
     Q('gs_calling', 'Choose Your Calling', 2, 0, [
         'Pick the class you want to start as. You get its spell book (tome), a starter weapon, one armor piece and the runes its spells need.',
         '',
@@ -348,33 +373,36 @@ GETTING_STARTED = [
     Q('gs_cast', 'Bound to the Book', 4, -1.5, [
         'Open your inventory and put the tome in its spell book slot.',
         'Hold a weapon of the same class and cast a spell with the spell keys shown on your hotbar.'],
-        [t_adv('cast', 'Cast any spell')], [r_xp(100)], deps=['gs_calling'], subtitle='Equip your tome, cast a spell'),
+        [t_adv('cast', 'Cast any spell')], [r_xp(30)], deps=['gs_calling'], subtitle='Equip your tome, cast a spell'),
     Q('gs_runes', 'Stones That Remember', 6, -3, [
         'Many spells burn runes. Craft them at a Rune Crafting Altar: it makes more runes from the same materials than a crafting table.'],
         [t_adv('runes', 'Craft any rune')], [r_item('runes:small_rune_pouch')], deps=['gs_cast'], subtitle='Craft runes'),
     Q('gs_binding', 'The Binding Table', 6, 0, [
         'Stronger spells come from a Spell Binding Table. Village gazebos often have one, or build your own and ring it with bookshelves.',
         'Put your tome in and bind a new spell with your experience levels.'],
-        [t_adv('bind', 'Bind a spell')], [r_item('minecraft:lapis_lazuli', 16), r_levels(3)], deps=['gs_cast'], subtitle='Learn new spells'),
+        [t_adv('bind', 'Bind a spell')], [r_item('minecraft:lapis_lazuli', 16), r_xp(40)], deps=['gs_cast'], subtitle='Learn new spells'),
     Q('gs_talent', 'A Point to Spend', 4, 1.5, [
-        'Kills earn talent experience. Press K to open your talent tree and spend your first point.',
-        'Party members within 200 blocks share talent experience from kills.'],
-        [t_adv('talent', 'Unlock a talent')], [r_xp(150)], deps=['gs_calling'], subtitle='Spend a talent point'),
+        'Kills earn talent experience. Press N to open your talent tree and spend your first point.',
+        'Party members within 200 blocks share talent experience from kills.',
+        'Kills can earn up to 9 points. The last 4 come from the great chapter bosses.'],
+        [t_adv('talent', 'Unlock a talent')], [r_xp(30)], deps=['gs_calling'], subtitle='Spend a talent point'),
     Q('gs_roll', 'Light on Your Feet', -2, 1.5, [
         'Roll out of danger with the combat roll key (R by default, check Controls). Rolls recharge over time.'],
         [t_check('Do a combat roll')], [r_item('minecraft:cooked_beef', 8)], deps=['gs_welcome'], subtitle='Dodge roll'),
     Q('gs_stats', 'Know Thyself', -4, 1.5, [
         'Open your inventory and press the sword button to see your stats: spell power, crit, armor and more.'],
-        [t_check('Open the stats screen')], [r_xp(50)], deps=['gs_roll'], subtitle='Your stats screen'),
+        [t_check('Open the stats screen')], [r_xp(20)], deps=['gs_roll'], subtitle='Your stats screen'),
     Q('gs_waystone', 'Stones of Passage', -2, 3, [
         'Waystones stand in villages and along the roads. Activate one and you can travel back to it from any other waystone.'],
         [t_adv('waystone', 'Activate a waystone')], [r_item('waystones:warp_scroll', 3)], deps=['gs_welcome'], subtitle='Fast travel'),
     Q('gs_lootr', 'Yours Alone', 0, 3, [
         'Dungeon chests are personal: every player finds their own loot in the same chest. No need to race your friends.'],
-        [t_adv('lootr:1chest', 'Open a dungeon chest')], [r_xp(100)], deps=['gs_welcome'], subtitle='Personal dungeon chests'),
+        [t_adv('lootr:1chest', 'Open a dungeon chest')], [r_xp(30)], deps=['gs_welcome'], subtitle='Personal dungeon chests'),
     Q('gs_rarity', 'Not All Blades Are Equal', 2, 3, [
         'Gear drops in rarities, each with its own name color: Common, Uncommon, Rare, Epic, Mythic. Higher rarity, more bonus stats.',
-        'Break gear you do not need at a Salvaging Table to get rarity materials for reforging.'],
+        'Break gear you do not need at a Salvaging Table to get rarity materials for reforging.',
+        '',
+        'Your &eworld tier&r (Ctrl+T to look) sets how tough monsters are and how good gear drops. It starts at Haven and rises by itself when you beat chapter bosses: Venture, Ascent, Summit, Pinnacle. It never goes down.'],
         [t_item('apotheosis:mysterious_scrap_metal', title='Salvage a piece of gear')], [r_item('apotheosis:gem_dust', 8)],
         deps=['gs_lootr'], subtitle='Gear rarity and salvaging'),
     Q('gs_locks', 'Locked Doors', 0, -3, [
@@ -382,16 +410,18 @@ GETTING_STARTED = [
         '- &6Nether Sigil&r: dropped by The Harbinger at the end of the Overworld chapter. Fire alone will not open a Nether portal; the sigil does.',
         '- &dVoid Shard&r: dropped by Ignis at the end of the Nether chapter. Eyes of Ender need one.',
         'Everyone near a boss when it falls gets their own key.'],
-        [t_check('Understood')], [r_xp(50)], deps=['gs_welcome'], subtitle='The Nether Sigil and the Void Shard', shape='diamond'),
+        [t_check('Understood')], [r_xp(20)], deps=['gs_welcome'], subtitle='The Nether Sigil and the Void Shard', shape='diamond'),
     Q('gs_party', 'Better Together', 2, -3, [
         'Press H to open the Party HUD: invite your friends and see their health on screen.',
-        'Party members near a kill share talent experience. Heals and buffs reach every player, party or not.',
+        'Party members near a kill share talent experience, and your spells and swings never hurt each other. Heals and buffs reach every player, party or not.',
+        'In the Members tab, right-click each friend and add them to favorites to see their health frames.',
+        'Enter boss arenas together: a boss sizes itself to the group around it when its arena wakes.',
         'Your quest book stays your own. When a boss falls, everyone nearby gets their own trophy or key.'],
-        [t_check('Join or form a party')], [r_xp(100)], deps=['gs_welcome'], subtitle='Party HUD (H)'),
+        [t_check('Join or form a party')], [r_xp(30)], deps=['gs_welcome'], subtitle='Party HUD (H)'),
     Q('gs_jobs', 'Pick Your Trades', -6, 0, [
         'Press J to open the Jobs menu and join two jobs. Each job levels up from its own work and pays coins and perks.',
         'The quests below show one way each job earns experience.'],
-        [t_check('Join two jobs')], [r_xp(100)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
+        [t_check('Join two jobs')], [r_xp(30)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
 ]
 
 JOB_STARTERS = [
@@ -408,7 +438,7 @@ JOB_STARTERS = [
 ]
 for i, (key, title, text, task, reward) in enumerate(JOB_STARTERS):
     col, row = i % 5, i // 5
-    GETTING_STARTED.append(Q(f'gs_job_{key}', title, -12 + col * 1.5, -1.5 + row * 3, [text], [task], [reward, r_xp(50)],
+    GETTING_STARTED.append(Q(f'gs_job_{key}', title, -12 + col * 1.5, -1.5 + row * 3, [text], [task], [reward, r_xp(10)],
                              deps=['gs_jobs'], subtitle='Job starter', shape='circle'))
 
 
@@ -420,21 +450,22 @@ CHAPTER_1 = [
         [t_struct('#minecraft:village', 'Visit a village')], [r_item('minecraft:emerald', 6)], subtitle='Hearthlands'),
     Q('c1_tavern', 'A Warm Hearth', 1.5, -1.5, [
         'Taverns sit along the roads of the Hearthlands. Travelers trade, rest and swap stories there.'],
-        [t_struct('#minerpg:taverns', 'Visit a tavern')], [r_item('minecraft:cooked_porkchop', 8), r_xp(100)], deps=['c1_village'], subtitle='Hearthlands'),
+        [t_struct('#minerpg:taverns', 'Visit a tavern')], [r_item('minecraft:cooked_porkchop', 8), r_xp(50)], deps=['c1_village'], subtitle='Hearthlands'),
     Q('c1_cellar', 'Cellar Dwellers', 1.5, 1.5, [
         'Something has nested under the fields. Find a small dungeon and clear out what lives there.'],
         [t_struct('#minerpg:small_dungeons', 'Find a small dungeon'), t_kill(count=15, tag='minecraft:undead', title='Kill 15 undead')],
-        [r_levels(3), r_item('minecraft:iron_ingot', 8)], deps=['c1_village'], subtitle='Hearthlands'),
+        [r_xp(75), r_item('minecraft:iron_ingot', 8)], deps=['c1_village'], subtitle='Hearthlands'),
     Q('c1_nest', 'Glitter in the Deep', 3, 0, [
         'Deep in the lush caves, an amethyst nest glows. Its keeper does not like visitors.'],
-        [t_struct('cataclysm:amethyst_nest', 'Find the Amethyst Nest')], [r_xp(150)], deps=['c1_cellar'], subtitle='Hearthlands'),
+        [t_struct('cataclysm:amethyst_nest', 'Find the Amethyst Nest')], [r_xp(75)], deps=['c1_cellar'], subtitle='Hearthlands'),
     Q('c1_crab', 'Shell Shock', 4.5, 0, [
-        'Defeat the &dAmethyst Crab&r. Everyone nearby at the kill earns a Geode Claw for this quest.'],
-        [t_item('minerpg:trophy_amethyst_crab', title='Geode Claw')], [r_item('minecraft:diamond', 3), r_levels(5)],
+        'Defeat the &dAmethyst Crab&r. Everyone nearby at the kill earns a Geode Claw for this quest.',
+        'The claw raises your world tier to &eVenture&r: monsters wear more armor, rare monsters start to roam, and gear drops in iron and better rarities.'],
+        [t_item('minerpg:trophy_amethyst_crab', title='Geode Claw')], [r_item('minecraft:diamond', 3), r_xp(150)],
         deps=['c1_nest'], subtitle='Boss', shape='gear', size=Double(1.5)),
     Q('c1_iron', 'Ironclad', 3, 2.5, [
         'Good iron makes good gear. Stock up for your first upgrades.'],
-        [t_item('minecraft:iron_ingot', 24)], [r_item('minecraft:chainmail_chestplate'), r_xp(100)], deps=['c1_village'], subtitle='Side task'),
+        [t_item('minecraft:iron_ingot', 24)], [r_item('minecraft:chainmail_chestplate'), r_xp(50)], deps=['c1_village'], subtitle='Side task'),
     Q('c1_waystone', 'A Stone of Your Own', 0, 2.5, [
         'Craft a waystone and place it at your home. Then you can always travel back.'],
         [t_item('waystones:waystone')], [r_item('waystones:warp_stone')], deps=['c1_village'], subtitle='Side task'),
@@ -442,62 +473,62 @@ CHAPTER_1 = [
     Q('c1_wild', 'Into the Wildlands', 6.5, 0, [
         'The &6Wildlands&r are the harsh lands: deserts, jungles, swamps, taigas, dark forests and open sea. Big dungeons and ruins hide there, and monsters hit harder.',
         'Explore one of the great dungeons of the wild.'],
-        [t_struct('#minerpg:wildlands_dungeons', 'Explore a great dungeon')], [r_levels(5)], deps=['c1_crab'], subtitle='Wildlands'),
+        [t_struct('#minerpg:wildlands_dungeons', 'Explore a great dungeon')], [r_xp(75)], deps=['c1_crab'], subtitle='Wildlands'),
     Q('c1_desert_eye', 'Eye of the Dunes', 8, -3, [
         'An Eye of Desert points the way to the cursed pyramid. Craft one and throw it.'],
-        [t_item('cataclysm:desert_eye')], [r_xp(100)], deps=['c1_wild'], subtitle='Side task'),
+        [t_item('cataclysm:desert_eye')], [r_xp(50)], deps=['c1_wild'], subtitle='Side task'),
     Q('c1_pyramid', 'The Cursed Pyramid', 9.5, -3, [
         'A pyramid half-buried in desert sand, its door sealed with old curses.'],
-        [t_struct('cataclysm:cursed_pyramid', 'Find the Cursed Pyramid')], [r_xp(200)], deps=['c1_wild'], subtitle='Wildlands'),
+        [t_struct('cataclysm:cursed_pyramid', 'Find the Cursed Pyramid')], [r_xp(100)], deps=['c1_wild'], subtitle='Wildlands'),
     Q('c1_remnant', 'Bones of the Sun King', 11, -3, [
         'Defeat the &6Ancient Remnant&r in the depths of the pyramid.'],
-        [t_item('minerpg:trophy_ancient_remnant', title='Sun-Bleached Fang')], [r_item('minecraft:diamond', 4), r_levels(8)],
+        [t_item('minerpg:trophy_ancient_remnant', title='Sun-Bleached Fang')], [r_item('minecraft:diamond', 4), r_xp(150)],
         deps=['c1_pyramid'], subtitle='Boss', shape='gear', size=Double(1.5)),
     Q('c1_cursed_eye', 'Eye of the Frost', 8, -1, [
         'An Eye of Curse leads to a prison buried in snow. Craft one and throw it.'],
-        [t_item('cataclysm:cursed_eye')], [r_xp(100)], deps=['c1_wild'], subtitle='Side task'),
+        [t_item('cataclysm:cursed_eye')], [r_xp(50)], deps=['c1_wild'], subtitle='Side task'),
     Q('c1_prison', 'The Frosted Prison', 9.5, -1, [
         'A fortress of black ice where something was locked away on purpose.'],
-        [t_struct('cataclysm:frosted_prison', 'Find the Frosted Prison')], [r_xp(200)], deps=['c1_wild'], subtitle='Wildlands'),
+        [t_struct('cataclysm:frosted_prison', 'Find the Frosted Prison')], [r_xp(100)], deps=['c1_wild'], subtitle='Wildlands'),
     Q('c1_maledictus', 'The Cursed Warden', 11, -1, [
         'Defeat &bMaledictus&r, the prisoner who became the prison.'],
-        [t_item('minerpg:trophy_maledictus', title='Frostbound Crown')], [r_item('minecraft:diamond', 4), r_levels(8)],
+        [t_item('minerpg:trophy_maledictus', title='Frostbound Crown')], [r_item('minecraft:diamond', 4), r_xp(150)],
         deps=['c1_prison'], subtitle='Boss', shape='gear', size=Double(1.5)),
     Q('c1_abyss_eye', 'Eye of the Deep', 8, 1, [
         'An Eye of Abyss finds the sunken city. Craft one and throw it from a boat.'],
-        [t_item('cataclysm:abyss_eye')], [r_xp(100)], deps=['c1_wild'], subtitle='Side task'),
+        [t_item('cataclysm:abyss_eye')], [r_xp(50)], deps=['c1_wild'], subtitle='Side task'),
     Q('c1_sunken', 'The Sunken City', 9.5, 1, [
         'Towers of blue stone under the waves. Bring water breathing.'],
-        [t_struct('cataclysm:sunken_city', 'Find the Sunken City')], [r_item('minecraft:potion', 2, {'minecraft:potion_contents': {'potion': 'minecraft:long_water_breathing'}}), r_xp(200)],
+        [t_struct('cataclysm:sunken_city', 'Find the Sunken City')], [r_item('minecraft:potion', 2, {'minecraft:potion_contents': {'potion': 'minecraft:long_water_breathing'}}), r_xp(100)],
         deps=['c1_wild'], subtitle='Wildlands'),
     Q('c1_leviathan', 'Teeth of the Tide', 11, 1, [
         'Defeat &9The Leviathan&r in its flooded hall. It is untouchable out of the water, so fight it in its element.'],
-        [t_item('minerpg:trophy_leviathan', title='Abyssal Scale')], [r_item('minecraft:diamond', 4), r_levels(8)],
+        [t_item('minerpg:trophy_leviathan', title='Abyssal Scale')], [r_item('minecraft:diamond', 4), r_xp(150)],
         deps=['c1_sunken'], subtitle='Boss', shape='gear', size=Double(1.5)),
     Q('c1_diamonds', 'Glittering Hoard', 6.5, 2.5, [
         'Diamond gear is the next step. Bring back a handful.'],
-        [t_item('minecraft:diamond', 8)], [r_item('runes:medium_rune_pouch'), r_xp(200)], deps=['c1_wild'], subtitle='Side task'),
+        [t_item('minecraft:diamond', 8)], [r_item('runes:medium_rune_pouch'), r_xp(100)], deps=['c1_wild'], subtitle='Side task'),
     # Frontier
     Q('c1_frontier', 'The Frontier', 13, 0, [
         'The &cFrontier&r is the extreme: frozen peaks, ice spikes, the deep dark and the deep ocean. The hardest lands of this world.',
         'Beat at least one Wildlands boss, then find an ancient city in the deep dark.'],
-        [t_struct('minecraft:ancient_city', 'Find an ancient city')], [r_levels(5)],
+        [t_struct('minecraft:ancient_city', 'Find an ancient city')], [r_xp(100)],
         deps=['c1_remnant', 'c1_maledictus', 'c1_leviathan'], subtitle='Frontier', dependency_requirement='one_completed'),
     Q('c1_echo', 'Echoes Below', 13, 2, [
         'The deep dark keeps its secrets in echo shards. Bring some back, quietly.'],
         [t_item('minecraft:echo_shard', 4)], [r_item('minecraft:experience_bottle', 16)], deps=['c1_frontier'], subtitle='Side task'),
     Q('c1_mech_eye', 'Eye of Iron', 14.5, -2, [
         'An Eye of Mech points to the ancient factory. Craft one and follow it.'],
-        [t_item('cataclysm:mech_eye')], [r_xp(150)], deps=['c1_frontier'], subtitle='Side task'),
+        [t_item('cataclysm:mech_eye')], [r_xp(75)], deps=['c1_frontier'], subtitle='Side task'),
     Q('c1_factory', 'The Ancient Factory', 14.5, 0, [
         'Rusted halls under the mountains, still humming. Something there is still awake.'],
-        [t_struct('cataclysm:ancient_factory', 'Find the Ancient Factory')], [r_xp(300)], deps=['c1_frontier'], subtitle='Frontier'),
+        [t_struct('cataclysm:ancient_factory', 'Find the Ancient Factory')], [r_xp(150)], deps=['c1_frontier'], subtitle='Frontier'),
     Q('c1_harbinger', 'The Harbinger', 16.5, 0, [
         'Defeat &4The Harbinger&r, the factory\'s iron herald.',
         'Everyone nearby at the kill receives a &6Nether Sigil&r: use it on an obsidian frame to open the way to the Nether.',
-        'Your reward includes netherite upgrade templates for the next tier.'],
+        'The sigil raises your world tier to &eAscent&r. Your reward includes netherite upgrade templates for the next tier and a talent point.'],
         [t_item('minerpg:nether_sigil', title='Nether Sigil')],
-        [r_item('minecraft:netherite_upgrade_smithing_template', 2), r_item('minecraft:diamond', 6), r_levels(10)],
+        [r_item('minecraft:netherite_upgrade_smithing_template', 2), r_item('minecraft:diamond', 6), r_xp(500), r_talent_point()],
         deps=['c1_factory'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
 ]
 
@@ -512,25 +543,25 @@ CHAPTER_2 = [
         [t_struct('minecraft:fortress', 'Find a Nether fortress')], [r_xp(200)], deps=['c2_arrive']),
     Q('c2_blaze', 'Burning Wardens', 3, -2.5, [
         'Blazes guard the fortress. Their rods feed brewing stands and Eyes of Ender alike.'],
-        [t_kill('minecraft:blaze', 6), t_item('minecraft:blaze_rod', 6)], [r_item('minecraft:blaze_rod', 4), r_levels(4)], deps=['c2_fortress']),
+        [t_kill('minecraft:blaze', 6), t_item('minecraft:blaze_rod', 6)], [r_item('minecraft:blaze_rod', 4), r_xp(200)], deps=['c2_fortress']),
     Q('c2_wart', 'Wart and All', 3, -0.5, [
         'Nether wart grows in fortress gardens. Every real potion starts with it.'],
         [t_item('minecraft:nether_wart', 16)], [r_item('minecraft:brewing_stand'), r_xp(150)], deps=['c2_fortress'], subtitle='Side task'),
     Q('c2_skulls', 'Grim Trophies', 4.5, -2.5, [
         'Wither skeletons roam the fortress halls. Their skulls are needed if you ever dare summon the Wither.'],
-        [t_item('minecraft:wither_skeleton_skull', 1)], [r_levels(5)], deps=['c2_blaze'], subtitle='Side task'),
+        [t_item('minecraft:wither_skeleton_skull', 1)], [r_xp(200)], deps=['c2_blaze'], subtitle='Side task'),
     Q('c2_bastion', 'Bastion of Gold', 1.5, 1.5, [
         'Piglins hoard gold in huge black fortresses. Find a bastion.'],
         [t_struct('minecraft:bastion_remnant', 'Find a bastion')], [r_xp(200)], deps=['c2_arrive']),
     Q('c2_brutes', 'Brute Force', 3, 1.5, [
         'Piglin brutes do not care about your gold. Show them what you learned up top.'],
-        [t_kill('minecraft:piglin_brute', 3)], [r_item('minecraft:gold_block', 2), r_levels(4)], deps=['c2_bastion']),
+        [t_kill('minecraft:piglin_brute', 3)], [r_item('minecraft:gold_block', 2), r_xp(200)], deps=['c2_bastion']),
     Q('c2_debris', 'Ancient Debris', 4.5, 1.5, [
         'Deep in the Nether, ancient debris resists even lava. Dig some up.'],
         [t_item('minecraft:ancient_debris', 4)], [r_item('minecraft:netherite_upgrade_smithing_template', 1), r_xp(300)], deps=['c2_bastion']),
     Q('c2_netherite', 'Netherite in Hand', 6, 1.5, [
         'Smelt the debris, mix it with gold and forge your first netherite ingot.'],
-        [t_item('minecraft:netherite_ingot')], [r_levels(5)], deps=['c2_debris']),
+        [t_item('minecraft:netherite_ingot')], [r_xp(250)], deps=['c2_debris']),
     Q('c2_keep', 'Keep of Ash', 4.5, 3, [
         'Old keeps and piglin donjons dot the wastes. Explore one.'],
         [t_struct('#minerpg:nether_dungeons', 'Explore a Nether keep')], [r_item('minecraft:golden_apple', 2), r_xp(200)], deps=['c2_bastion'], subtitle='Side task'),
@@ -541,8 +572,8 @@ CHAPTER_2 = [
         'A forge built of blackstone and lava, guarded by its own creation.'],
         [t_struct('cataclysm:soul_black_smith', 'Find the Soul Blacksmith')], [r_xp(300)], deps=['c2_fortress', 'c2_bastion'], dependency_requirement='one_completed'),
     Q('c2_monstrosity', 'Forged in Fury', 9, 0, [
-        'Defeat the &6Netherite Monstrosity&r.'],
-        [t_item('minerpg:trophy_netherite_monstrosity', title='Molten Heart')], [r_item('minecraft:netherite_scrap', 4), r_levels(10)],
+        'Defeat the &6Netherite Monstrosity&r. Beating it earns you a talent point.'],
+        [t_item('minerpg:trophy_netherite_monstrosity', title='Molten Heart')], [r_item('minecraft:netherite_scrap', 4), r_xp(500), r_talent_point()],
         deps=['c2_smith'], subtitle='Boss', shape='gear', size=Double(1.5)),
     Q('c2_flame_eye', 'Eye of Flame', 10.5, -1.5, [
         'An Eye of Flame shows the way to the burning arena. Craft one.'],
@@ -552,8 +583,11 @@ CHAPTER_2 = [
         [t_struct('cataclysm:burning_arena', 'Find the Burning Arena')], [r_xp(300)], deps=['c2_monstrosity']),
     Q('c2_ignis', 'Ignis', 12.5, 0, [
         'Defeat &cIgnis&r, the burning champion.',
-        'Everyone nearby at the kill receives a &dVoid Shard&r. Eyes of Ender need it, and it is never used up.'],
-        [t_item('minerpg:void_shard', title='Void Shard')], [r_item('minecraft:diamond_block', 1), r_item('minecraft:netherite_ingot', 1), r_levels(15)],
+        'Everyone nearby at the kill receives a &dVoid Shard&r. Eyes of Ender need it, and it is never used up.',
+        'The shard raises your world tier to &eSummit&r. Your reward includes a talent point and a book of &bSpell Infinity&r: put it on your weapon at an anvil and your spells stop using runes.'],
+        [t_item('minerpg:void_shard', title='Void Shard')],
+        [r_item('minecraft:diamond_block', 1), r_item('minecraft:netherite_ingot', 1), r_xp(700), r_talent_point(),
+         r_item('minecraft:enchanted_book', 1, SPELL_INFINITY_BOOK)],
         deps=['c2_arena'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
 ]
 
@@ -569,8 +603,9 @@ CHAPTER_3 = [
         'Fill the frame and jump in. There is no coming back until the dragon falls, or you die.'],
         [t_dim('minecraft:the_end', 'Enter the End')], [r_item('minecraft:golden_apple', 3)], deps=['c3_stronghold']),
     Q('c3_dragon', 'The Last Dragon', 4.5, 0, [
-        'Destroy the crystals and slay the &5Ender Dragon&r. Everyone nearby earns a Dragonscale.'],
-        [t_item('minerpg:trophy_ender_dragon', title='Dragonscale')], [r_item('minecraft:netherite_ingot', 2), r_levels(20)],
+        'Destroy the crystals and slay the &5Ender Dragon&r. Everyone nearby earns a Dragonscale.',
+        'With both the Dragonscale and the Citadel Keystone, your world tier rises to &ePinnacle&r.'],
+        [t_item('minerpg:trophy_ender_dragon', title='Dragonscale')], [r_item('minecraft:netherite_ingot', 2), r_xp(1500)],
         deps=['c3_end'], subtitle='Boss', shape='gear', size=Double(2.0)),
     Q('c3_city', 'Cities Among the Stars', 6, -1.5, [
         'Past the outer islands stand purple cities. Take a gateway and find one.'],
@@ -591,8 +626,9 @@ CHAPTER_3 = [
         'A broken fortress drifting at the edge of the void.'],
         [t_struct('cataclysm:ruined_citadel', 'Find the Ruined Citadel')], [r_xp(400)], deps=['c3_dragon']),
     Q('c3_guardian', 'Guardian of the Void', 10.5, 0, [
-        'Defeat the &5Ender Guardian&r, last warden of the citadel.'],
-        [t_item('minerpg:trophy_ender_guardian', title='Citadel Keystone')], [r_item('minecraft:netherite_ingot', 2), r_item('minecraft:enchanted_golden_apple'), r_levels(20)],
+        'Defeat the &5Ender Guardian&r, last warden of the citadel. Beating it earns you your last talent point.',
+        'With both the Citadel Keystone and the Dragonscale, your world tier rises to &ePinnacle&r.'],
+        [t_item('minerpg:trophy_ender_guardian', title='Citadel Keystone')], [r_item('minecraft:netherite_ingot', 2), r_item('minecraft:enchanted_golden_apple'), r_xp(1800), r_talent_point()],
         deps=['c3_citadel'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
     Q('c3_wither_call', 'Call of the Wither', 9, 3, [
         'Optional raid. Bring three wither skeleton skulls and soul sand, and pick a place you do not mind losing.'],
@@ -600,7 +636,7 @@ CHAPTER_3 = [
         deps=['c3_dragon'], subtitle='Optional raid', optional=True),
     Q('c3_wither', 'The Wither', 10.5, 3, [
         'Summon and destroy &8the Wither&r with your whole group. Everyone nearby earns an Ashen Skull Shard.'],
-        [t_item('minerpg:trophy_wither', title='Ashen Skull Shard')], [r_item('minecraft:beacon'), r_levels(15)],
+        [t_item('minerpg:trophy_wither', title='Ashen Skull Shard')], [r_item('minecraft:beacon'), r_xp(800)],
         deps=['c3_wither_call'], subtitle='Optional raid', shape='gear', size=Double(1.5), optional=True),
 ]
 
@@ -680,6 +716,9 @@ def build():
             for i, reward in enumerate(qd['rewards']):
                 reward = dict(reward)
                 reward['id'] = oid(f'reward:{qd["key"]}:{i}')
+                reward_title = reward.pop('_title', None)
+                if reward_title:
+                    lang('reward', reward['id'], 'title', reward_title)
                 if reward.get('_table'):
                     reward['table_id'] = Long(int(oid('table:' + reward.pop('_table')), 16))
                 rewards.append(reward)

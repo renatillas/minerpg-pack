@@ -1,0 +1,146 @@
+{
+  "type": "apotheosis:rarity_override",
+  "category": "apotheosis:helmet",
+  "overrides": {
+    "apotheosis:common": [
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:chanced",
+        "chance": 0.25,
+        "rule": {
+          "type": "apotheosis:affix",
+          "affix_type": "stat"
+        }
+      }
+    ],
+    "apotheosis:uncommon": [
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:chanced",
+        "chance": 0.5,
+        "rule": {
+          "type": "apotheosis:affix",
+          "affix_type": "basic_effect"
+        }
+      }
+    ],
+    "apotheosis:rare": [
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "basic_effect"
+      },
+      {
+        "type": "apotheosis:chanced",
+        "chance": 0.35,
+        "rule": {
+          "type": "apotheosis:affix",
+          "affix_type": "basic_effect"
+        }
+      },
+      {
+        "type": "apotheosis:durability",
+        "min": 0.1,
+        "max": 0.25
+      }
+    ],
+    "apotheosis:epic": [
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "basic_effect"
+      },
+      {
+        "type": "apotheosis:chanced",
+        "chance": 0.25,
+        "rule": {
+          "type": "apotheosis:affix",
+          "affix_type": "basic_effect"
+        }
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "ability"
+      },
+      {
+        "type": "apotheosis:durability",
+        "min": 0.25,
+        "max": 0.55
+      }
+    ],
+    "apotheosis:mythic": [
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "stat"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "basic_effect"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "basic_effect"
+      },
+      {
+        "type": "apotheosis:affix",
+        "affix_type": "ability"
+      },
+      {
+        "type": "apotheosis:select",
+        "chance": 0.99,
+        "if_false": {
+          "type": "apotheosis:component",
+          "components": {
+            "!apotheosis:durability_bonus": {},
+            "minecraft:unbreakable": {}
+          }
+        },
+        "if_true": {
+          "type": "apotheosis:durability",
+          "min": 0.45,
+          "max": 0.75
+        }
+      }
+    ]
+  }
+}
