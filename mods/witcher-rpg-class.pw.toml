@@ -1,0 +1,13 @@
+name = "Witcher (RPG Series Plus)"
+filename = "witcher-class-mod-neoforge-3.2.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4eW1c7Gj/versions/FcCltY07/witcher-class-mod-neoforge-3.2.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "a86141165289dd0410ca6dcd0116972db5aef2e7c7953e068323e196651c62d19acb903be591ad7c94e3539e7d70238baec11af033479d93a5adcb819f45f826"
+
+[update]
+[update.modrinth]
+mod-id = "4eW1c7Gj"
+version = "FcCltY07"

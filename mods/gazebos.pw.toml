@@ -1,0 +1,13 @@
+name = "Gazebos (RPG Series)"
+filename = "gazebo-neoforge-2.2.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XIpMGI6r/versions/ktRCCPX3/gazebo-neoforge-2.2.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "2346b1400e8f44567a6c0d939ce3ce1b2886ddef958915992c0cbc7886642a1991fcae1c8df01cfe84560cc9d412c8206edceb575b01131db4e927beb8ca4358"
+
+[update]
+[update.modrinth]
+mod-id = "XIpMGI6r"
+version = "ktRCCPX3"

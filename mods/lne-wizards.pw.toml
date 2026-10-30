@@ -1,0 +1,13 @@
+name = "LNE Wizards Add-On"
+filename = "lne_wizards-neoforge-1.3.1+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/vukREL4F/versions/mhd7PeON/lne_wizards-neoforge-1.3.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "5d916ad045c2f6e9eda5cbd6a4eaaac7938386a11d4c44e973f46cc94585a2bc9c7bd62ffe0d72bc6bcf918554f93d4c453d2ba5a3023ee68024742157a7b412"
+
+[update]
+[update.modrinth]
+mod-id = "vukREL4F"
+version = "mhd7PeON"

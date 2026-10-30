@@ -1,0 +1,13 @@
+name = "RPG Series Compat"
+filename = "rpgseriescompat1.21.1-1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/AbUwaVLF/versions/6oKpTubm/rpgseriescompat1.21.1-1.0.jar"
+hash-format = "sha512"
+hash = "bcf3a70d47571d0283ae1667db7681130de0b79e84b2c6252d62ce2664c816addf6c3b2fb1da5c496a9fee277f9b9b6a1eb4282d8d8e95be4790def8d54f41d3"
+
+[update]
+[update.modrinth]
+mod-id = "AbUwaVLF"
+version = "6oKpTubm"

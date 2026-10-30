@@ -1,0 +1,13 @@
+name = "Attribute Icons (RPG Series)"
+filename = "RPG_Series_Icons-1.4.0+1.21.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/73QpzsIN/versions/it8xKo5G/RPG_Series_Icons-1.4.0%2B1.21.1.zip"
+hash-format = "sha512"
+hash = "4fffebb0f95698fdd04df72adb9fa0b0d19cfb6fc19142ec2d0699601b8346f4ee1637b540c2482ebbcaedbc768e35557333d82d113c8f44faa99527674654cf"
+
+[update]
+[update.modrinth]
+mod-id = "73QpzsIN"
+version = "it8xKo5G"

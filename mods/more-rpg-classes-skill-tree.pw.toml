@@ -1,0 +1,13 @@
+name = "More RPG Classes - Skill Tree (RPG Series Plus)"
+filename = "mrpgc_skill_tree-neoforge-1.3.1+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3OYmNUDq/versions/bhovvpkS/mrpgc_skill_tree-neoforge-1.3.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "d9eacb532b4defae372deec892dec7a9f0d32533aaa000ac5b27aff8fb2fa31bf24f0b8109101651768ce6b50bc3474fe5c3f2cc0a31a41aee9c7229998331b8"
+
+[update]
+[update.modrinth]
+mod-id = "3OYmNUDq"
+version = "bhovvpkS"

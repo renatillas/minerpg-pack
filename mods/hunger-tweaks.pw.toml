@@ -1,0 +1,13 @@
+name = "Hunger Tweaks (RPG Tweaks)"
+filename = "hunger_tweaks-neoforge-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2ygSk5sW/versions/1fs4FiOW/hunger_tweaks-neoforge-1.0.1.jar"
+hash-format = "sha512"
+hash = "48f9e614dea5995e651a19027a207c8efb06aa7d1ead1774dad15d31d6c1aff32dfd8ee8403d1f9e6028f203ee391e94cfb99fccf64144e9df09b2316a61a167"
+
+[update]
+[update.modrinth]
+mod-id = "2ygSk5sW"
+version = "1fs4FiOW"

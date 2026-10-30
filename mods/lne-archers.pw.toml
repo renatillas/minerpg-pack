@@ -1,0 +1,13 @@
+name = "LNE Archers Add-On"
+filename = "lne_archers-neoforge-1.3.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Zl6rTul9/versions/ZRmE8tjd/lne_archers-neoforge-1.3.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "9185b5e53a37d2d396d3d49d57cd14d7d09f1c644f43758ca8753f9703e69819168f255414f719c5e58efc08109befc08dc899987c888b9d2c3180f89415c24d"
+
+[update]
+[update.modrinth]
+mod-id = "Zl6rTul9"
+version = "ZRmE8tjd"

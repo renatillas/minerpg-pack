@@ -1,0 +1,13 @@
+name = "Tiny Config"
+filename = "tiny_config-neoforge-3.1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EivZOK5a/versions/ykk5Ifcd/tiny_config-neoforge-3.1.1.jar"
+hash-format = "sha512"
+hash = "5bc9fae6612f12faeaa54d1b7e4314a211c1676683efd5e94884eccfea369fce3c3281288e65cfe9e7b4992ac44cc0737960dacda1671a35fe90812d46f36ca4"
+
+[update]
+[update.modrinth]
+mod-id = "EivZOK5a"
+version = "ykk5Ifcd"

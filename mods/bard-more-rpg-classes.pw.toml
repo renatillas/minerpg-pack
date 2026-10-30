@@ -1,0 +1,13 @@
+name = "Bard (RPG Series Plus)"
+filename = "bards_rpg-neoforge-1.2.0-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/kL7Bjgmw/versions/lbRjIthS/bards_rpg-neoforge-1.2.0-1.21.1.jar"
+hash-format = "sha512"
+hash = "500e7fc00c234e3ad4aa80828294ec03609253f7588e15f5eca5701877fed389f502c688694edfcd075ac9524f2ca14b25682fc23c763e8d38866bfc0a524e22"
+
+[update]
+[update.modrinth]
+mod-id = "kL7Bjgmw"
+version = "lbRjIthS"

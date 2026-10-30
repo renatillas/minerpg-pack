@@ -1,0 +1,13 @@
+name = "Archers Expansion (RPG Series Plus)"
+filename = "archers_expansion-neoforge-2.2.1+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1BHIIm4m/versions/LJ5oq1qi/archers_expansion-neoforge-2.2.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "10b316e77b924175056290521d025cd158f3e950f7dc36c968cf06d2f9ed866e948619acb81bb70d9f874e48af0a098238346da4a76a5d0934082c5172e49647"
+
+[update]
+[update.modrinth]
+mod-id = "1BHIIm4m"
+version = "LJ5oq1qi"

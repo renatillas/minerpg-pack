@@ -1,0 +1,13 @@
+name = "Relics (RPG Series)"
+filename = "relics-neoforge-1.4.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/BDQucwF0/versions/O6zfkTwx/relics-neoforge-1.4.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "025308d0c11bd546c005a05a62f4f2eb973cc3c849423828b3c18a630e7f63d83909d52411a30cd118a80bdcae46f5adb704f3f3d8a7058e7292b128363faa1e"
+
+[update]
+[update.modrinth]
+mod-id = "BDQucwF0"
+version = "O6zfkTwx"
