@@ -1,0 +1,302 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:alchemist"
+  },
+  "type": "arc:on_brew_potion",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 3,
+      "max": 4
+    },
+    {
+      "type": "arc:command",
+      "command": "minerpg_jobs grant %player% minerpg:jobs/gated_craft"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:or",
+      "conditions": [
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strong_harming"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strong_healing"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strong_leaping"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strong_poison"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strong_regeneration"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strong_slowness"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strong_strength"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strong_swiftness"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strong_turtle_master"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_fire_resistance"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_invisibility"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_leaping"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_night_vision"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_poison"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_regeneration"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_slow_falling"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_slowness"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_strength"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_swiftness"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_turtle_master"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_water_breathing"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_weakness"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:items",
+          "items": [
+            "minecraft:splash_potion"
+          ]
+        },
+        {
+          "type": "arc:items",
+          "items": [
+            "minecraft:lingering_potion"
+          ]
+        }
+      ]
+    }
+  ]
+}

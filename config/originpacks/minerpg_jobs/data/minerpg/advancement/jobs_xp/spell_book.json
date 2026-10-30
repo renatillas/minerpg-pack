@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "book": {
+      "trigger": "spell_engine:spell_book_creation",
+      "conditions": {}
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "paladins:iron_claymore",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/gear_plate_tier_1"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:smith",
+      "level": 10,
+      "inverted": true
+    }
+  ]
+}

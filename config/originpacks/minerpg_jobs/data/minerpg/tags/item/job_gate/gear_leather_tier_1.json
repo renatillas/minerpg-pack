@@ -1,0 +1,61 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "archers:medium_quiver",
+      "required": false
+    },
+    {
+      "id": "archers:archer_armor_chest",
+      "required": false
+    },
+    {
+      "id": "archers:archer_armor_feet",
+      "required": false
+    },
+    {
+      "id": "archers:archer_armor_head",
+      "required": false
+    },
+    {
+      "id": "archers:archer_armor_legs",
+      "required": false
+    },
+    {
+      "id": "archers:composite_longbow",
+      "required": false
+    },
+    {
+      "id": "archers:iron_spear",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:harp_crossbow",
+      "required": false
+    },
+    {
+      "id": "rogues:iron_dagger",
+      "required": false
+    },
+    {
+      "id": "rogues:iron_sickle",
+      "required": false
+    },
+    {
+      "id": "rogues:rogue_armor_chest",
+      "required": false
+    },
+    {
+      "id": "rogues:rogue_armor_feet",
+      "required": false
+    },
+    {
+      "id": "rogues:rogue_armor_head",
+      "required": false
+    },
+    {
+      "id": "rogues:rogue_armor_legs",
+      "required": false
+    }
+  ]
+}

@@ -186,6 +186,12 @@ def r_talent_point():
     return r_cmd('/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses', '+1 talent point')
 
 
+# Jobs+ coins (spent on new jobs and power-ups in the Jobs menu). Jobs+'s own /job command can
+# only set coins, so this uses the pack's /minerpg_jobs command (kubejs/server_scripts/minerpg_jobs.js).
+def r_coins(amount):
+    return r_cmd(f'/minerpg_jobs coins @s {amount}', f'+{amount} job coins')
+
+
 # One Spell Infinity book (spells stop using runes). It is not on the enchanting table or in
 # random loot (kubejs/server_scripts/minerpg_enchanting.js).
 SPELL_INFINITY_BOOK = {'minecraft:stored_enchantments': {'levels': {'spell_engine:spell_infinity': 1}}}
@@ -301,6 +307,11 @@ def write_advancements():
         'items': '#minecraft:logs', 'count': {'min': 16}}]}}})
     ADV['builder'] = adv('jobs/builder', {'place': {'trigger': 'minecraft:placed_block', 'conditions': {}}})
     ADV['alchemist'] = adv('jobs/alchemist', {'brew': {'trigger': 'minecraft:brewed_potion', 'conditions': {}}})
+    # Job milestones and "made a job-gated item": granted by the Arc actions that
+    # pack/tools/gen_jobs.py writes (via /minerpg_jobs grant), never by a criterion.
+    for level in (10, 20, 30):
+        ADV[f'job_level_{level}'] = adv(f'jobs/level_{level}', {'granted': {'trigger': 'minecraft:impossible'}})
+    ADV['job_gated_craft'] = adv('jobs/gated_craft', {'granted': {'trigger': 'minecraft:impossible'}})
     # Village tour: trade with a class merchant (matched by the villager's profession).
     def trade(profession):
         return {'trigger': 'minecraft:villager_trade', 'conditions': {'villager': {
@@ -492,8 +503,22 @@ GETTING_STARTED = [
         [t_check('Join or form a party')], [r_xp(30)], deps=['gs_welcome'], subtitle='Party HUD (H)'),
     Q('gs_jobs', 'Pick Your Trades', -6, 0, [
         'Press J to open the Jobs menu and join two jobs. Each job levels up from its own work and pays coins and perks.',
+        'Spend &6job coins&r in the Jobs menu on power-ups or a third job. Every level-up pays a coin, and many quests pay more.',
         'The quests below show one way each job earns experience.'],
-        [t_check('Join two jobs')], [r_xp(30)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
+        [t_check('Join two jobs')], [r_xp(30), r_coins(3)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
+    Q('gs_job_gates', 'Masters of a Trade', -13.5, 0, [
+        'Some things only a trained hand can &omake&r:',
+        'Class gear is made by three trades, by tier: tier 1 at level 10, diamond tier 2 at 20, netherite tier 3 at 25, Armory sets at 30.',
+        '- &cSmith&r: plate armor and melee weapons (Warrior, Paladin, Berserker, Forcemaster, Witcher). Reforging to Rare needs Smith 10, Epic 20, Mythic 30.',
+        '- &2Hunter&r: leather armor, bows, crossbows, spears and quivers (Archer, Rogue).',
+        '- &dEnchanter&r: robes, staves, wands and instruments (Wizard, mages, Priest, Bard), and the stronger enchanting shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30.',
+        '- &5Alchemist&r: Strong and Long potions at 10, Splash at 15, Lingering at 20.',
+        '',
+        'Anyone can &ouse&r these things. Class gear still drops from dungeons and bosses, class merchants sell it, plain bookshelves work for everyone, and a friend with the job can make it for you.',
+        'Hover over an item to see the job and level that make it.',
+        'Job experience also comes from the adventure: Smiths from reforging, salvaging and socketing, Enchanters from binding spells and cutting gems, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Farmers from the cooking pot.',
+        'Class merchants buy crafted goods for emeralds: runes, diamond-tier class weapons and pot meals.'],
+        [t_check('Understood')], [r_coins(1)], deps=['gs_jobs'], subtitle='Crafting gates and job experience', shape='diamond', optional=True),
     # v0.4 additions. Item rewards only, so Getting Started quest points stay as tuned.
     Q('gs_revive', 'Pick Them Up', 4, -3, [
         'When you would die with other players online, you fall &cdowned&r instead. You have 60 seconds.',
@@ -538,20 +563,20 @@ for i, (key, title, text, icon) in enumerate(TOUR):
                              deps=['gs_tour'], subtitle='Class building', shape='circle', optional=True, icon={'id': icon}))
 
 JOB_STARTERS = [
-    ('alchemist', 'Alchemist', 'Alchemists earn experience brewing. Brew any potion.', t_adv('alchemist', 'Brew a potion'), r_item('minecraft:glass_bottle', 6)),
+    ('alchemist', 'Alchemist', 'Alchemists earn experience brewing, crafting runes and potion charms. Brew any potion.', t_adv('alchemist', 'Brew a potion'), r_item('minecraft:glass_bottle', 6)),
     ('builder', 'Builder', 'Builders earn experience for every block they place. Place one to start.', t_adv('builder', 'Place a block'), r_item('minecraft:stone_bricks', 32)),
     ('digger', 'Digger', 'Diggers earn experience digging dirt, sand, gravel and clay. Carry 32 of one.', t_adv('digger', 'Gather 32 dirt, sand, gravel or clay'), r_item('minecraft:iron_shovel')),
-    ('enchanter', 'Enchanter', 'Enchanters earn experience at the enchanting table. Enchant any item.', t_adv('minecraft:story/enchant_item', 'Enchant an item'), r_item('minecraft:lapis_lazuli', 12)),
-    ('farmer', 'Farmer', 'Farmers earn experience harvesting grown crops. Bring in 16 wheat.', t_item('minecraft:wheat', 16), r_item('minecraft:bone_meal', 16)),
+    ('enchanter', 'Enchanter', 'Enchanters earn experience at the enchanting table, the Spell Binding Table and the gem cutting table. Enchant any item.', t_adv('minecraft:story/enchant_item', 'Enchant an item'), r_item('minecraft:lapis_lazuli', 12)),
+    ('farmer', 'Farmer', 'Farmers earn experience harvesting grown crops and cooking pot meals. Bring in 16 wheat.', t_item('minecraft:wheat', 16), r_item('minecraft:bone_meal', 16)),
     ('fisherman', 'Fisherman', 'Fishermen earn experience for every catch. Catch a fish.', t_adv('minecraft:husbandry/fishy_business', 'Catch a fish'), r_item('minecraft:cooked_cod', 8)),
-    ('hunter', 'Hunter', 'Hunters earn experience for every kill. Put down 10 undead.', t_kill(count=10, tag='minecraft:undead', title='Kill 10 undead'), r_item('minecraft:arrow', 32)),
+    ('hunter', 'Hunter', 'Hunters are skinners and leatherworkers. They earn experience for every hide, bone and monster part their kills drop (and find more of them as they level), for hunting animals and for crafting leather goods. Bring in 8 leather.', t_item('minecraft:leather', 8), r_item('minecraft:arrow', 32)),
     ('lumberjack', 'Lumberjack', 'Lumberjacks earn experience chopping logs. Carry 16 logs.', t_adv('lumberjack', 'Gather 16 logs'), r_item('minecraft:iron_axe')),
     ('miner', 'Miner', 'Miners earn experience breaking stone and ores. Mine 16 coal.', t_item('minecraft:coal', 16), r_item('minecraft:torch', 32)),
-    ('smith', 'Smith', 'Smiths earn experience smelting ingots and crafting tools, weapons and armor. Craft an iron pickaxe.', t_adv('minecraft:story/iron_tools', 'Craft an iron pickaxe'), r_item('minecraft:iron_ingot', 6)),
+    ('smith', 'Smith', 'Smiths earn experience smelting ingots, crafting tools, weapons and armor, and reforging, salvaging and socketing gear. Craft an iron pickaxe.', t_adv('minecraft:story/iron_tools', 'Craft an iron pickaxe'), r_item('minecraft:iron_ingot', 6)),
 ]
 for i, (key, title, text, task, reward) in enumerate(JOB_STARTERS):
     col, row = i % 5, i // 5
-    GETTING_STARTED.append(Q(f'gs_job_{key}', title, -12 + col * 1.5, -1.5 + row * 3, [text], [task], [reward, r_xp(10)],
+    GETTING_STARTED.append(Q(f'gs_job_{key}', title, -12 + col * 1.5, -1.5 + row * 3, [text], [task], [reward, r_xp(10), r_coins(1)],
                              deps=['gs_jobs'], subtitle='Job starter', shape='circle'))
 
 
@@ -686,8 +711,20 @@ CHAPTER_1 = [
         'Everyone nearby at the kill receives a &6Nether Sigil&r: use it on an obsidian frame to open the way to the Nether.',
         'The sigil raises your world tier to &eAscent&r. Your reward includes netherite upgrade templates for the next tier and a talent point.'],
         [t_item('minerpg:nether_sigil', title='Nether Sigil')],
-        [r_item('minecraft:netherite_upgrade_smithing_template', 2), r_item('minecraft:diamond', 6), r_xp(500), r_talent_point()],
+        [r_item('minecraft:netherite_upgrade_smithing_template', 2), r_item('minecraft:diamond', 6), r_xp(500), r_talent_point(), r_coins(5)],
         deps=['c1_factory'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
+    # Jobs (optional).
+    Q('c1_job_10', 'Journeyman', 0, 4.5, [
+        'Reach &6level 10&r in any of your jobs.',
+        'At level 10, Smiths, Hunters and Enchanters make tier 1 class gear of their kind, Enchanters also the Hellshelf and Seashelf, and Alchemists brew Strong and Long potions.',
+        '&7Checked when the job levels up.&r'],
+        [t_adv('job_level_10', 'Reach level 10 in a job')], [r_coins(5), r_item('minecraft:emerald', 4)],
+        deps=['c1_village'], subtitle='Job milestone', shape='circle', optional=True),
+    Q('c1_job_craft', 'Made for a Friend', 1.5, 4.5, [
+        'Make something only a trained hand can make: class gear as a Smith, Hunter or Enchanter, an enchanting shelf as an Enchanter, or a Strong, Long, Splash or Lingering potion as an Alchemist.',
+        'Then hand it to a party member who could not make it. That is what trades are for.'],
+        [t_adv('job_gated_craft', 'Make a job-gated item')], [r_coins(5), r_item('minecraft:emerald', 6)],
+        deps=['c1_job_10'], subtitle='Job milestone', shape='circle', optional=True),
 ]
 
 CHAPTER_2 = [
@@ -745,8 +782,14 @@ CHAPTER_2 = [
         'The shard raises your world tier to &eSummit&r. Your reward includes a talent point and a book of &bSpell Infinity&r: put it on your weapon at an anvil and your spells stop using runes.'],
         [t_item('minerpg:void_shard', title='Void Shard')],
         [r_item('minecraft:diamond_block', 1), r_item('minecraft:netherite_ingot', 1), r_xp(700), r_talent_point(),
-         r_item('minecraft:enchanted_book', 1, SPELL_INFINITY_BOOK)],
+         r_item('minecraft:enchanted_book', 1, SPELL_INFINITY_BOOK), r_coins(5)],
         deps=['c2_arena'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
+    Q('c2_job_20', 'Expert', 0, 3, [
+        'Reach &6level 20&r in any of your jobs.',
+        'At level 20, Smiths, Hunters and Enchanters make diamond class gear; Smiths reforge to Epic, Enchanters make the upgraded hell and sea shelves, and Alchemists brew Lingering potions.',
+        '&7Checked when the job levels up.&r'],
+        [t_adv('job_level_20', 'Reach level 20 in a job')], [r_coins(8), r_item('minecraft:emerald', 8)],
+        deps=['c2_arrive'], subtitle='Job milestone', shape='circle', optional=True),
 ]
 
 CHAPTER_3 = [
@@ -788,8 +831,14 @@ CHAPTER_3 = [
     Q('c3_guardian', 'Guardian of the Void', 10.5, 0, [
         'Defeat the &5Ender Guardian&r, last warden of the citadel. Beating it earns you your last talent point.',
         'With both the Citadel Keystone and the Dragonscale, your world tier rises to &ePinnacle&r.'],
-        [t_item('minerpg:trophy_ender_guardian', title='Citadel Keystone')], [r_item('minecraft:netherite_ingot', 2), r_item('minecraft:enchanted_golden_apple'), r_xp(1800), r_talent_point()],
+        [t_item('minerpg:trophy_ender_guardian', title='Citadel Keystone')], [r_item('minecraft:netherite_ingot', 2), r_item('minecraft:enchanted_golden_apple'), r_xp(1800), r_talent_point(), r_coins(5)],
         deps=['c3_citadel'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
+    Q('c3_job_30', 'Master', 0, 2, [
+        'Reach &6level 30&r in any of your jobs.',
+        'At level 30, Smiths, Hunters and Enchanters make the Armory sets from Ignis\'s upgrade crystals; Smiths reforge to Mythic and Enchanters make endshelves.',
+        '&7Checked when the job levels up.&r'],
+        [t_adv('job_level_30', 'Reach level 30 in a job')], [r_coins(12), r_item('minecraft:emerald_block', 2)],
+        deps=['c3_eyes'], subtitle='Job milestone', shape='circle', optional=True),
     Q('c3_wither_call', 'Call of the Wither', 9, 3, [
         'Optional raid. Bring three wither skeleton skulls and soul sand, and pick a place you do not mind losing.'],
         [t_item('minecraft:wither_skeleton_skull', 3), t_item('minecraft:soul_sand', 4)], [r_item('minecraft:golden_apple', 4)],

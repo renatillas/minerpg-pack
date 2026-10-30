@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "apothic_enchanting:endshelf",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:pearl_endshelf",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:draconic_endshelf",
+      "required": false
+    }
+  ]
+}

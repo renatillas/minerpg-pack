@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "archers:netherite_longbow",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/gear_leather_tier_3"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:hunter",
+      "level": 25,
+      "inverted": true
+    }
+  ]
+}

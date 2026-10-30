@@ -1,0 +1,117 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bards_rpg:netherite_rapier",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:netherite_berserker_axe",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:netherite_northling_chest",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:netherite_northling_feet",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:netherite_northling_head",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:netherite_northling_legs",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:aken_chest",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:aken_feet",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:aken_head",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:aken_legs",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:netherite_knuckle",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_claymore",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_crusader_armor_chest",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_crusader_armor_feet",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_crusader_armor_head",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_crusader_armor_legs",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_great_hammer",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_kite_shield",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_mace",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_berserker_armor_chest",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_berserker_armor_feet",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_berserker_armor_head",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_berserker_armor_legs",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_double_axe",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_glaive",
+      "required": false
+    },
+    {
+      "id": "witcher_rpg:dark_steel_witcher_sword",
+      "required": false
+    },
+    {
+      "id": "witcher_rpg:meteorite_silver_witcher_sword",
+      "required": false
+    },
+    {
+      "id": "witcher_rpg:netherite_witcher_sword",
+      "required": false
+    }
+  ]
+}

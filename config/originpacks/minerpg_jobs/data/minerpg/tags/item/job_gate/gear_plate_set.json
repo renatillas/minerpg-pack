@@ -1,0 +1,117 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "armory_rpgs:destroyer_armor_chest",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:destroyer_armor_feet",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:destroyer_armor_head",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:destroyer_armor_legs",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:justicar_armor_chest",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:justicar_armor_feet",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:justicar_armor_head",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:justicar_armor_legs",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:lightbringer_armor_chest",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:lightbringer_armor_feet",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:lightbringer_armor_head",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:lightbringer_armor_legs",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:onslaught_armor_chest",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:onslaught_armor_feet",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:onslaught_armor_head",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:onslaught_armor_legs",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:slayer_armor_chest",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:slayer_armor_feet",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:slayer_armor_head",
+      "required": false
+    },
+    {
+      "id": "armory_rpgs:slayer_armor_legs",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:warlord_chest",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:warlord_feet",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:warlord_head",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:warlord_legs",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:billporon_chest",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:billporon_feet",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:billporon_head",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:billporon_legs",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "archers_expansion:bounty_hunter_chest",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/gear_leather_set"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:hunter",
+      "level": 30,
+      "inverted": true
+    }
+  ]
+}

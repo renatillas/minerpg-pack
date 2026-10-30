@@ -1,0 +1,40 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:hunter"
+  },
+  "type": "arc:on_kill_entity",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 3,
+      "max": 5
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:entity_types",
+      "entity_types": [
+        "minecraft:cow",
+        "minecraft:mooshroom",
+        "minecraft:pig",
+        "minecraft:sheep",
+        "minecraft:chicken",
+        "minecraft:rabbit",
+        "minecraft:horse",
+        "minecraft:donkey",
+        "minecraft:mule",
+        "minecraft:llama",
+        "minecraft:trader_llama",
+        "minecraft:goat",
+        "minecraft:hoglin",
+        "minecraft:polar_bear",
+        "minecraft:fox",
+        "minecraft:camel",
+        "minecraft:armadillo",
+        "minecraft:turtle"
+      ]
+    }
+  ]
+}

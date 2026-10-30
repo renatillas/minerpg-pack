@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "wizards:staff_netherite_arcane",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/gear_caster_tier_3"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:enchanter",
+      "level": 25,
+      "inverted": true
+    }
+  ]
+}

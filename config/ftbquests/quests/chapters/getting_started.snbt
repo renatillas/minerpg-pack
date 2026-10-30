@@ -376,6 +376,13 @@
 					type: "xp"
 					xp: 30
 				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "6AE0BA86B1748339"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			tasks: [
 				{
@@ -384,6 +391,31 @@
 				}
 			]
 			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "23438309D3EE7ED9"
+			optional: true
+			rewards: [
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "27DC7FDA56B7E3F4"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "20881C86CEDC168C"
+					type: "checkmark"
+				}
+			]
+			x: -13.5d
 			y: 0.0d
 		}
 		{
@@ -658,6 +690,13 @@
 					type: "xp"
 					xp: 10
 				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "3B932ECCA3AF6364"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "circle"
 			tasks: [
@@ -690,6 +729,13 @@
 					id: "198AE49AFB70C85E"
 					type: "xp"
 					xp: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "33FB333E8927E6D3"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "circle"
@@ -724,6 +770,13 @@
 					type: "xp"
 					xp: 10
 				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "49356BB66F0DD4F5"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "circle"
 			tasks: [
@@ -757,6 +810,13 @@
 					type: "xp"
 					xp: 10
 				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "7DF88BDFC271E356"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "circle"
 			tasks: [
@@ -789,6 +849,13 @@
 					id: "614125DD08534671"
 					type: "xp"
 					xp: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "26E86235C37FDA29"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "circle"
@@ -826,6 +893,13 @@
 					type: "xp"
 					xp: 10
 				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "781A21659CF60D37"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "circle"
 			tasks: [
@@ -859,15 +933,24 @@
 					type: "xp"
 					xp: 10
 				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "7894D021D2B9F7DE"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "circle"
 			tasks: [
 				{
-					entity: "minecraft:zombie"
-					entityTypeTag: "minecraft:undead"
+					count: 8L
 					id: "36F755FA263EE71C"
-					type: "kill"
-					value: 10L
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
 				}
 			]
 			x: -10.5d
@@ -892,6 +975,13 @@
 					id: "3549C1BAFAB7AC13"
 					type: "xp"
 					xp: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "6CE206584960C6CF"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "circle"
@@ -925,6 +1015,13 @@
 					id: "35EC6BC0B9671D84"
 					type: "xp"
 					xp: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "2CF12E85EEA9B179"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "circle"
@@ -961,6 +1058,13 @@
 					id: "1284D9F7A103C140"
 					type: "xp"
 					xp: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "45C3170CD8AA82F6"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "circle"

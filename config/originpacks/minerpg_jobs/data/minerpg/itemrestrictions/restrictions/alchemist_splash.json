@@ -1,0 +1,28 @@
+{
+  "icon": {
+    "id": "minecraft:splash_potion",
+    "count": 1,
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:healing"
+      }
+    }
+  },
+  "types": [
+    "brew"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "minecraft:splash_potion"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:alchemist",
+      "level": 15,
+      "inverted": true
+    }
+  ]
+}

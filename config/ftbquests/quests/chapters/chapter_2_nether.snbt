@@ -504,6 +504,13 @@
 					}
 					type: "item"
 				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "2602F1DEEEB8717D"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "gear"
 			size: 2.0d
@@ -519,6 +526,42 @@
 			]
 			x: 12.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4C6920214DBED4FE"
+			]
+			id: "40678BD3902A909A"
+			optional: true
+			rewards: [
+				{
+					command: "/minerpg_jobs coins @s 8"
+					id: "209434EA11D17CA5"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 8
+					id: "242207501C8FCA55"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:jobs/level_20"
+					criterion: ""
+					id: "12F778CE68AE5841"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 }

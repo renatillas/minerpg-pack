@@ -1,0 +1,34 @@
+{
+  "icon": {
+    "id": "minecraft:potion",
+    "count": 1,
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:strong_harming"
+      }
+    }
+  },
+  "types": [
+    "brew"
+  ],
+  "conditions": [
+    {
+      "type": "arc:item",
+      "item": {
+        "id": "minecraft:potion",
+        "count": 1,
+        "components": {
+          "minecraft:potion_contents": {
+            "potion": "minecraft:strong_harming"
+          }
+        }
+      }
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:alchemist",
+      "level": 10,
+      "inverted": true
+    }
+  ]
+}

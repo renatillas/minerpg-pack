@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "apothic_enchanting:draconic_endshelf",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/enchanter_shelf_4"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:enchanter",
+      "level": 30,
+      "inverted": true
+    }
+  ]
+}

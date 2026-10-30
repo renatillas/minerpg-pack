@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "apothic_enchanting:dormant_deepshelf",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:echoing_deepshelf",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:soul_touched_deepshelf",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:echoing_sculkshelf",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:soul_touched_sculkshelf",
+      "required": false
+    }
+  ]
+}

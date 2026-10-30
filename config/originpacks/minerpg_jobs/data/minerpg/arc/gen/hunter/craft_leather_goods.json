@@ -1,0 +1,32 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:hunter"
+  },
+  "type": "arc:on_craft_item",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 3,
+      "max": 5
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "minecraft:leather",
+        "minecraft:leather_helmet",
+        "minecraft:leather_chestplate",
+        "minecraft:leather_leggings",
+        "minecraft:leather_boots",
+        "minecraft:leather_horse_armor",
+        "minecraft:saddle",
+        "minecraft:bundle",
+        "minecraft:item_frame",
+        "archers:small_quiver"
+      ]
+    }
+  ]
+}

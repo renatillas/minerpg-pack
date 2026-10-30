@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "apothic_enchanting:blazing_hellshelf",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/enchanter_shelf_2"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:enchanter",
+      "level": 20,
+      "inverted": true
+    }
+  ]
+}

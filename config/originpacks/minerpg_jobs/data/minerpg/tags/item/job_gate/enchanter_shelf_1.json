@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "apothic_enchanting:hellshelf",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:seashelf",
+      "required": false
+    }
+  ]
+}

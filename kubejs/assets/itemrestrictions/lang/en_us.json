@@ -1,0 +1,4 @@
+{
+  "itemrestrictions.inventory.cant_craft": "Your job level is too low to craft this. Its tooltip names the job and level (Jobs: J).",
+  "itemrestrictions.inventory.cant_brew": "Your Alchemist level is too low: Strong and Long potions need 10, Splash 15, Lingering 20."
+}

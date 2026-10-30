@@ -1,0 +1,197 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bards_rpg:diamond_lute",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:diamond_lyre",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:troubadour_garb_chest",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:troubadour_garb_feet",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:troubadour_garb_head",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:troubadour_garb_legs",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:dripstone_chest",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:dripstone_feet",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:dripstone_head",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:dripstone_legs",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:kelp_chest",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:kelp_feet",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:kelp_head",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:kelp_legs",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:staff_aqua",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:staff_terra",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:staff_wind",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:wand_aqua",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:wand_terra",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:wand_wind",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:wind_chest",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:wind_feet",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:wind_head",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:wind_legs",
+      "required": false
+    },
+    {
+      "id": "paladins:diamond_holy_staff",
+      "required": false
+    },
+    {
+      "id": "paladins:diamond_holy_wand",
+      "required": false
+    },
+    {
+      "id": "paladins:prior_robe_chest",
+      "required": false
+    },
+    {
+      "id": "paladins:prior_robe_feet",
+      "required": false
+    },
+    {
+      "id": "paladins:prior_robe_head",
+      "required": false
+    },
+    {
+      "id": "paladins:prior_robe_legs",
+      "required": false
+    },
+    {
+      "id": "wizards:arcane_robe_chest",
+      "required": false
+    },
+    {
+      "id": "wizards:arcane_robe_feet",
+      "required": false
+    },
+    {
+      "id": "wizards:arcane_robe_head",
+      "required": false
+    },
+    {
+      "id": "wizards:arcane_robe_legs",
+      "required": false
+    },
+    {
+      "id": "wizards:fire_robe_chest",
+      "required": false
+    },
+    {
+      "id": "wizards:fire_robe_feet",
+      "required": false
+    },
+    {
+      "id": "wizards:fire_robe_head",
+      "required": false
+    },
+    {
+      "id": "wizards:fire_robe_legs",
+      "required": false
+    },
+    {
+      "id": "wizards:frost_robe_chest",
+      "required": false
+    },
+    {
+      "id": "wizards:frost_robe_feet",
+      "required": false
+    },
+    {
+      "id": "wizards:frost_robe_head",
+      "required": false
+    },
+    {
+      "id": "wizards:frost_robe_legs",
+      "required": false
+    },
+    {
+      "id": "wizards:staff_arcane",
+      "required": false
+    },
+    {
+      "id": "wizards:staff_fire",
+      "required": false
+    },
+    {
+      "id": "wizards:staff_frost",
+      "required": false
+    },
+    {
+      "id": "wizards:wand_arcane",
+      "required": false
+    },
+    {
+      "id": "wizards:wand_fire",
+      "required": false
+    },
+    {
+      "id": "wizards:wand_frost",
+      "required": false
+    }
+  ]
+}

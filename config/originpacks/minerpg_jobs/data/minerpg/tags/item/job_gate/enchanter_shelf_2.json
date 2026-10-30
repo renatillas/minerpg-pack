@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "apothic_enchanting:glowing_hellshelf",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:blazing_hellshelf",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:crystal_seashelf",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:heart_seashelf",
+      "required": false
+    }
+  ]
+}

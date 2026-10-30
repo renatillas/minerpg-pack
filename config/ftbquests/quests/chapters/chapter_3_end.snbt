@@ -333,6 +333,13 @@
 					silent: true
 					type: "command"
 				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "694C8A642DE11306"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "gear"
 			size: 2.0d
@@ -348,6 +355,42 @@
 			]
 			x: 10.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1683BAA7EE6A9D08"
+			]
+			id: "13C628F8E97EDFB1"
+			optional: true
+			rewards: [
+				{
+					command: "/minerpg_jobs coins @s 12"
+					id: "1CD8BCE7F0290F9F"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 2
+					id: "1A5525E763C712C2"
+					item: {
+						count: 1
+						id: "minecraft:emerald_block"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:jobs/level_30"
+					criterion: ""
+					id: "1F25DFD103C77F08"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [

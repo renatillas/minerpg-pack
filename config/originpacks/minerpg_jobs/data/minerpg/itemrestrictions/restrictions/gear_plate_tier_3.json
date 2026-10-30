@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "paladins:netherite_claymore",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/gear_plate_tier_3"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:smith",
+      "level": 25,
+      "inverted": true
+    }
+  ]
+}

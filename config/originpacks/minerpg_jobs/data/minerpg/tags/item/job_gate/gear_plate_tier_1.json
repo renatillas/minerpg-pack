@@ -1,0 +1,133 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bards_rpg:iron_rapier",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:iron_berserker_axe",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:wildling_chest",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:wildling_feet",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:wildling_head",
+      "required": false
+    },
+    {
+      "id": "berserker_rpg:wildling_legs",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:iron_knuckle",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:oriene_chest",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:oriene_feet",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:oriene_head",
+      "required": false
+    },
+    {
+      "id": "forcemaster_rpg:oriene_legs",
+      "required": false
+    },
+    {
+      "id": "paladins:iron_claymore",
+      "required": false
+    },
+    {
+      "id": "paladins:iron_great_hammer",
+      "required": false
+    },
+    {
+      "id": "paladins:iron_kite_shield",
+      "required": false
+    },
+    {
+      "id": "paladins:iron_mace",
+      "required": false
+    },
+    {
+      "id": "paladins:paladin_armor_chest",
+      "required": false
+    },
+    {
+      "id": "paladins:paladin_armor_feet",
+      "required": false
+    },
+    {
+      "id": "paladins:paladin_armor_head",
+      "required": false
+    },
+    {
+      "id": "paladins:paladin_armor_legs",
+      "required": false
+    },
+    {
+      "id": "rogues:iron_double_axe",
+      "required": false
+    },
+    {
+      "id": "rogues:iron_glaive",
+      "required": false
+    },
+    {
+      "id": "rogues:warrior_armor_chest",
+      "required": false
+    },
+    {
+      "id": "rogues:warrior_armor_feet",
+      "required": false
+    },
+    {
+      "id": "rogues:warrior_armor_head",
+      "required": false
+    },
+    {
+      "id": "rogues:warrior_armor_legs",
+      "required": false
+    },
+    {
+      "id": "witcher_rpg:iron_witcher_sword",
+      "required": false
+    },
+    {
+      "id": "witcher_rpg:silver_witcher_sword",
+      "required": false
+    },
+    {
+      "id": "witcher_rpg:steel_witcher_sword",
+      "required": false
+    },
+    {
+      "id": "witcher_rpg:witcher_chest",
+      "required": false
+    },
+    {
+      "id": "witcher_rpg:witcher_feet",
+      "required": false
+    },
+    {
+      "id": "witcher_rpg:witcher_head",
+      "required": false
+    },
+    {
+      "id": "witcher_rpg:witcher_legs",
+      "required": false
+    }
+  ]
+}

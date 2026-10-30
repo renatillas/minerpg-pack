@@ -1,0 +1,197 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bards_rpg:netherite_lute",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:netherite_lyre",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:netherite_troubadour_garb_chest",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:netherite_troubadour_garb_feet",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:netherite_troubadour_garb_head",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:netherite_troubadour_garb_legs",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_dripstone_chest",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_dripstone_feet",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_dripstone_head",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_dripstone_legs",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_kelp_chest",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_kelp_feet",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_kelp_head",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_kelp_legs",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_wind_chest",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_wind_feet",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_wind_head",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:netherite_wind_legs",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:staff_netherite_aqua",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:staff_netherite_terra",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:staff_netherite_wind",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:wand_netherite_aqua",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:wand_netherite_terra",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:wand_netherite_wind",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_holy_staff",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_holy_wand",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_prior_robe_chest",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_prior_robe_feet",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_prior_robe_head",
+      "required": false
+    },
+    {
+      "id": "paladins:netherite_prior_robe_legs",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_arcane_robe_chest",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_arcane_robe_feet",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_arcane_robe_head",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_arcane_robe_legs",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_fire_robe_chest",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_fire_robe_feet",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_fire_robe_head",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_fire_robe_legs",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_frost_robe_chest",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_frost_robe_feet",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_frost_robe_head",
+      "required": false
+    },
+    {
+      "id": "wizards:netherite_frost_robe_legs",
+      "required": false
+    },
+    {
+      "id": "wizards:staff_netherite_arcane",
+      "required": false
+    },
+    {
+      "id": "wizards:staff_netherite_fire",
+      "required": false
+    },
+    {
+      "id": "wizards:staff_netherite_frost",
+      "required": false
+    },
+    {
+      "id": "wizards:wand_netherite_arcane",
+      "required": false
+    },
+    {
+      "id": "wizards:wand_netherite_fire",
+      "required": false
+    },
+    {
+      "id": "wizards:wand_netherite_frost",
+      "required": false
+    }
+  ]
+}

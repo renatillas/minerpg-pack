@@ -914,6 +914,13 @@
 					silent: true
 					type: "command"
 				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "170282E5A35F0C0B"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "gear"
 			size: 2.0d
@@ -929,6 +936,78 @@
 			]
 			x: 16.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2C9281C642E70027"
+			]
+			id: "50D978A09E750B13"
+			optional: true
+			rewards: [
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "71FBA5F1320A99C6"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 4
+					id: "27BA824E43CD2484"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:jobs/level_10"
+					criterion: ""
+					id: "4BA51549706FBE25"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"50D978A09E750B13"
+			]
+			id: "540E7EDF83A1ADBE"
+			optional: true
+			rewards: [
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "689BE609850AD506"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 6
+					id: "72643293F92CC264"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:jobs/gated_craft"
+					criterion: ""
+					id: "112DB2912AA700A4"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 4.5d
 		}
 	]
 }

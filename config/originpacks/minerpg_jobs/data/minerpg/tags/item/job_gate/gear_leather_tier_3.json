@@ -1,0 +1,117 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "archers:netherite_heavy_crossbow",
+      "required": false
+    },
+    {
+      "id": "archers:netherite_longbow",
+      "required": false
+    },
+    {
+      "id": "archers:netherite_ranger_armor_chest",
+      "required": false
+    },
+    {
+      "id": "archers:netherite_ranger_armor_feet",
+      "required": false
+    },
+    {
+      "id": "archers:netherite_ranger_armor_head",
+      "required": false
+    },
+    {
+      "id": "archers:netherite_ranger_armor_legs",
+      "required": false
+    },
+    {
+      "id": "archers:netherite_rapid_crossbow",
+      "required": false
+    },
+    {
+      "id": "archers:netherite_shortbow",
+      "required": false
+    },
+    {
+      "id": "archers:netherite_spear",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_deadeye_chest",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_deadeye_feet",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_deadeye_head",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_deadeye_legs",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_tundra_hunter_chest",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_tundra_hunter_feet",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_tundra_hunter_head",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_tundra_hunter_legs",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_war_archer_chest",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_war_archer_feet",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_war_archer_head",
+      "required": false
+    },
+    {
+      "id": "archers_expansion:netherite_war_archer_legs",
+      "required": false
+    },
+    {
+      "id": "bards_rpg:netherite_harp_crossbow",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_assassin_armor_chest",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_assassin_armor_feet",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_assassin_armor_head",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_assassin_armor_legs",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_dagger",
+      "required": false
+    },
+    {
+      "id": "rogues:netherite_sickle",
+      "required": false
+    }
+  ]
+}

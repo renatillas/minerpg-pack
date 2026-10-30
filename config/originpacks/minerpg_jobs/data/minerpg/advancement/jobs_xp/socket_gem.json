@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "socket": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "apotheosis:socketing"
+      }
+    }
+  }
+}

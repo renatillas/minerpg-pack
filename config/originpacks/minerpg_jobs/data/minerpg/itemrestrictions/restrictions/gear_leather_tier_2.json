@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "archers:royal_longbow",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/gear_leather_tier_2"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:hunter",
+      "level": 20,
+      "inverted": true
+    }
+  ]
+}

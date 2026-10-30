@@ -1,0 +1,27 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:hunter"
+  },
+  "type": "arc:on_craft_item",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 40,
+      "max": 50
+    },
+    {
+      "type": "arc:command",
+      "command": "minerpg_jobs grant %player% minerpg:jobs/gated_craft"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/gear_leather_set"
+      ]
+    }
+  ]
+}

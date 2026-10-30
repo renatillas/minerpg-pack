@@ -1,0 +1,28 @@
+{
+  "icon": {
+    "id": "minecraft:lingering_potion",
+    "count": 1,
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:healing"
+      }
+    }
+  },
+  "types": [
+    "brew"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "minecraft:lingering_potion"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:alchemist",
+      "level": 20,
+      "inverted": true
+    }
+  ]
+}
