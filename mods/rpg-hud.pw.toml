@@ -1,0 +1,13 @@
+name = "RPG-HUD"
+filename = "[1.21.1][NeoForge] RPG-HUD 3.13.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/EC41AOIq/versions/rColiNyN/%5B1.21.1%5D%5BNeoForge%5D%20RPG-HUD%203.13.jar"
+hash-format = "sha512"
+hash = "12fc59d5080a4d859c6cec06f3877dab72c2846ae1e44d67e19722352abbba679fbc0aacc304794d88060dc847995d9954ae45512e7d30fd6d372beba0e4b591"
+
+[update]
+[update.modrinth]
+mod-id = "EC41AOIq"
+version = "rColiNyN"

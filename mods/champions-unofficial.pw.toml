@@ -1,0 +1,13 @@
+name = "Champions Unofficial"
+filename = "champions-neoforge-21.1.1.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "eb7a917f0b50481ece21ec49b3640c0494546bc0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8809363
+project-id = 1074990
