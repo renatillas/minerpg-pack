@@ -3,11 +3,6 @@ key_key.ftbquests.quests:key.keyboard.l
 key_key.advancements:key.keyboard.y
 key_key.jobsplus.open_menu:key.keyboard.j
 key_key.partyhud.open_screen:key.keyboard.h
-key_gui.xaero_open_map:key.keyboard.m
-key_gui.xaero_enlarge_map:key.keyboard.z
-key_gui.xaero_minimap_settings:key.keyboard.unknown
-key_gui.xaero_waypoints_key:key.keyboard.u
-key_gui.xaero_new_waypoint:key.keyboard.b
 key_keybinds.combat_roll.roll:key.keyboard.r
 key_key.neoorigins.skill_1:key.keyboard.v
 key_key.neoorigins.skill_2:key.keyboard.unknown

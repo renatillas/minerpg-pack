@@ -33,12 +33,8 @@ file = "config/defaultoptions/extra/config/travelerstitles-neoforge-1_21.toml"
 hash = "a4538151ed765e64b8b77ec1ae9c58b712514b458db5b41eebde682c6807b3f0"
 
 [[files]]
-file = "config/defaultoptions/extra/config/xaerohud.txt"
-hash = "8d13c5f398016036aa4fdefb366ef3926d89f96ca104155bc9f6e5a7ec682ecd"
-
-[[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "54126aaf96af5ecea73cdb9d28ff65b6f916acb05fe3e6625a3b6b5d6d184245"
+hash = "bcf7b7c32781d768cb496cdee997be619b2b0005f9d46c5406a81c4413902e73"
 
 [[files]]
 file = "config/dungeon_difficulty/difficulty_v2.json"
@@ -2577,16 +2573,6 @@ metafile = true
 [[files]]
 file = "mods/wizards.pw.toml"
 hash = "e6e7bdb68b3a0a824b3c6a19c7f4ec880555f912d6f354d67bbd4c8250922591"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-minimap.pw.toml"
-hash = "e97cb865d7a8c8310905d9140899fa55ea23c3fff2e23a17255ce2c162322ad7"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-world-map.pw.toml"
-hash = "3a8e91aecdb602039ba1f7445bbf6b64cc5a46344339a3ffaf3b2e3eb2f5bcbc"
 metafile = true
 
 [[files]]
