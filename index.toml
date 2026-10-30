@@ -18,7 +18,7 @@ hash = "21069c1acb2333c10a043e9c52f81e65fb4e3f959868849b6b5b230af59f3adf"
 
 [[files]]
 file = "config/defaultoptions/extra/config/RPG-HUD"
-hash = "e9b040d9f24ab05cbcc230c52f9af0b5174655977aec3d355a7df017ebb55335"
+hash = "f4eb9b694127f47c8111e8221b8c9c7b71e86b58c1fe685fcb65b1f928e6346f"
 
 [[files]]
 file = "config/defaultoptions/extra/config/dungeon_difficulty/client_settings.json"
