@@ -71,7 +71,8 @@ NativeEvents.onEvent($BTHeal, event => {
 
 // Damage dealt by the boss (direct melee, or a projectile/breath cloud it owns).
 NativeEvents.onEvent($BTIncomingDamage, event => {
-  const attacker = event.getSource().getEntity()
+  // KubeJS remaps DamageSource#getEntity to getActual()
+  const attacker = event.getSource().getActual()
   const tune = BT_VANILLA_BOSSES[btTypeId(attacker)]
   if (!tune || tune.damage == 1.0) return
   event.setAmount(event.getAmount() * tune.damage)

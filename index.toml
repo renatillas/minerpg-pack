@@ -2882,7 +2882,7 @@ hash = "15c57a36748157e593c4024d86b22a203f2ac777bd5927ff0602de76c3b85ffc"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_boss_tuning.js"
-hash = "37714f3a3a4e2237977e65058302c95d16fde08349b5ea66d1e52fe8f1601f2c"
+hash = "31ccf4edc16032e39094dbb66e5cc6fdc7a575570fa68f1428defcb33efd2ac4"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_enchanting.js"
