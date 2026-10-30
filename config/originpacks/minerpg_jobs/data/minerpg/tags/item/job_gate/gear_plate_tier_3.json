@@ -2,22 +2,6 @@
   "replace": false,
   "values": [
     {
-      "id": "artificers:artillerist_netherite_chest",
-      "required": false
-    },
-    {
-      "id": "artificers:artillerist_netherite_feet",
-      "required": false
-    },
-    {
-      "id": "artificers:artillerist_netherite_head",
-      "required": false
-    },
-    {
-      "id": "artificers:artillerist_netherite_legs",
-      "required": false
-    },
-    {
       "id": "bards_rpg:netherite_rapier",
       "required": false
     },

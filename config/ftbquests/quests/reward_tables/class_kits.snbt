@@ -292,23 +292,6 @@
 			silent: true
 			type: "command"
 		}
-		{
-			command: "/function minerpg:kit/artillerist"
-			icon: {
-				components: {
-					"minecraft:item_name": "{\"translate\": \"item.artificers.spell_book/artillerist\"}"
-					"spell_engine:item_model": "artificers:item/spell_book/artillerist"
-					"spell_engine:spell_container": {
-						pool: "artificers:spell_book/artillerist"
-					}
-				}
-				id: "spell_engine:spell_book"
-			}
-			id: "1182E34C763ED1EB"
-			permission_level: 2
-			silent: true
-			type: "command"
-		}
 	]
 	use_title: true
 }

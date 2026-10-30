@@ -232,17 +232,7 @@ KITS = [
     ('tundra_hunter', 'Tundra Hunter', 'archers_expansion:spell_book/tundra_hunter', 'minecraft:bow', 'archers_expansion:tundra_hunter_chest', [('minecraft:arrow', 64)]),
     ('war_archer', 'War Archer', 'archers_expansion:spell_book/war_archer', 'archers:rapid_crossbow', 'archers_expansion:war_archer_chest', [('minecraft:arrow', 64)]),
     ('bard', 'Bard', 'bards_rpg:spell_book/bard', 'bards_rpg:wooden_lute', 'bards_rpg:entertainer_garb_chest', []),
-    # Mercenaries and Artificers. Its NeoForge build ships one spell book (the Siege Manual); the
-    # Flintlock's own spell (Full Metal Jacket) burns a fire rune per shot, so the kit carries 64.
-    ('artillerist', 'Artillerist', 'artificers:spell_book/artillerist', 'artificers:flintlock', 'artificers:peasant_chest',
-     [('runes:fire_stone', 64), ('minecraft:arrow', 64)]),
 ]
-
-# One in-world line per kit, shown in chat when the kit is handed out (before the generic line).
-# Kits without an entry show only the generic line.
-KIT_FLAVOR = {
-    'artillerist': 'Mortars, mines and a steady flintlock. Pick the ground, and let the fight come to you.',
-}
 
 
 def components_arg(components):
@@ -271,8 +261,6 @@ def write_kit_functions():
         ]
         for item, count in extras:
             lines.append(f'give @s {item} {count}')
-        if key in KIT_FLAVOR:
-            lines.append('tellraw @s ' + json.dumps({'text': KIT_FLAVOR[key], 'color': 'gray', 'italic': True}))
         lines.append('tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}')
         write(os.path.join(folder, f'{key}.mcfunction'), '\n'.join(lines))
 
@@ -528,8 +516,8 @@ GETTING_STARTED = [
     Q('gs_job_gates', 'Masters of a Trade', -13.5, 0, [
         'Some things only a trained hand can &omake&r:',
         'Class gear is made by three trades, by tier: tier 1 at level 10, diamond tier 2 at 20, netherite tier 3 at 25, Armory sets at 30.',
-        '- &cSmith&r: plate armor and melee weapons (Warrior, Paladin, Berserker, Forcemaster, the Artillerist\'s Commissioned plate). Reforging to Rare needs Smith 10, Epic 20, Mythic 30.',
-        '- &2Hunter&r: leather armor, bows, crossbows, flintlocks, spears, pikes and quivers (Archer, Rogue, Artillerist).',
+        '- &cSmith&r: plate armor and melee weapons (Warrior, Paladin, Berserker, Forcemaster). Reforging to Rare needs Smith 10, Epic 20, Mythic 30.',
+        '- &2Hunter&r: leather armor, bows, crossbows, spears and quivers (Archer, Rogue).',
         '- &dEnchanter&r: robes, staves, wands and instruments (Wizard, mages, Priest, Bard), and the stronger enchanting shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30.',
         '- &5Alchemist&r: Strong and Long potions at 10, Splash at 15, Lingering at 20.',
         '',
@@ -561,7 +549,7 @@ GETTING_STARTED = [
         '- &aArchery Range&r: Archery Artisan (archers)',
         '- &6Pub&r: Luthier (bards)',
         'A Jeweler sells rings and necklaces. Not every village has every building: if yours lacks one, the next village may have it.',
-        'Berserkers, forcemasters and artillerists have no building of their own; the Arms Dealer and Jeweler serve everyone.',
+        'Berserkers and forcemasters have no building of their own; the Arms Dealer and Jeweler serve everyone.',
         '',
         'Trade once with any of these merchants. Use the emeralds from your calling.'],
         [t_adv('trade_any', 'Trade with a class merchant')], [r_item('minecraft:emerald', 4)],

@@ -46,17 +46,13 @@ PACK = os.path.join(ROOT, 'config', 'originpacks', 'minerpg_jobs', 'data', 'mine
 # caster, "archery" armor and ranged weapons = leather, the rest = plate), then GEAR_GROUP_OVERRIDES.
 # To move a group to another job, change GEAR_GROUP_JOB and re-run (the crafting XP bonus follows).
 GEAR_GROUP_JOB = {'plate': 'smith', 'leather': 'hunter', 'caster': 'enchanter'}
-GEAR_GROUP_TITLE = {'plate': 'plate armor and melee weapons', 'leather': 'leather armor, bows, crossbows, flintlocks and quivers',
+GEAR_GROUP_TITLE = {'plate': 'plate armor and melee weapons', 'leather': 'leather armor, bows and quivers',
                     'caster': 'caster robes, staves and wands'}
 # (substring of the item id, group): first match wins, checked before the type tags.
 GEAR_GROUP_OVERRIDES = [
     ('forcemaster_rpg:', 'plate'),      # Forcemaster knuckles and armor: melee class
     ('_lute', 'caster'), ('_lyre', 'caster'), ('bards_rpg:wooden_lute', 'caster'),  # Bard instruments
     ('_harp_crossbow', 'leather'),
-    # Mercenaries and Artificers: ranged weapons follow their archetype (Hunter); pikes are spears
-    # (Hunter, like the Archers spears); the Frontier set is chain + leather (Hunter); the
-    # Commissioned set is iron plate (Smith, the default). Its explosives are spells, not items.
-    ('_pike', 'leather'), ('artificers:peasant_', 'leather'),
     ('_rapier', 'plate'),
     ('rogues:rogue_armor', 'leather'), ('rogues:assassin_armor', 'leather'),
     ('rogues:netherite_assassin_armor', 'leather'), ('armory_rpgs:deathmantle', 'leather'),

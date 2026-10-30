@@ -110,11 +110,11 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "76a849b8707e7ef0a9999eb5f52cc614f58d18096b4020295f77d036bf5ab95e"
+hash = "d227e67be8ac609e285e9f9cffd126991c43eac05d18ee27c7d12495ca3dbbca"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
-hash = "fa3db17ca928af60e35b5d59ee6d2865c284f660af624a6eb2d1203f9e4377ff"
+hash = "ce086336da5877f18b9b92ac36edc2ae232c9dde9e0a0abe92b60fdb70fe7f7c"
 
 [[files]]
 file = "config/ftbteams-server.snbt"
@@ -582,15 +582,15 @@ hash = "c63e9372490c3c60977cfb8c26595e826566353e7ecb35833cddb1d92c0ac148"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_leather_tier_1.json"
-hash = "7de398a41b6a5c73abac243d587daa07d07bfa58527e54d93b3a502bbebe1008"
+hash = "24f8973d921b0c7ce5fef30e6338df53ccb0ecdd932b15241170c7f3b3b40475"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_leather_tier_2.json"
-hash = "eee4b7ad037c3e029e382aa927b586c07f33a28f5097416db52c64aff5454169"
+hash = "931ff3ce2e97cbf8ab3b84b5d75c6578b6d222fb4335c250cc94953ad5e89a28"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_leather_tier_3.json"
-hash = "02cc84b1a6b584478ccbc2de2b179d2301ee98dfec44a4ac34b28f0d4293d9e5"
+hash = "08718a783ccc845f7d1936d484942938ad7150d1bcc96b7aab9c9c32c4ca307b"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_plate_set.json"
@@ -602,11 +602,11 @@ hash = "6ff45a79e2b53de46fb7b4da80874ebf326b0f23a78a5602b14482dd047ff0c2"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_plate_tier_2.json"
-hash = "cee19412d68b2da1ca41a9feef394a4322f1dc240cca07ca1344b3f293020749"
+hash = "8666069ee64ed88091c8bfd9f3eaf7bba5be68807daa2a971e5bab1bb075036b"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_plate_tier_3.json"
-hash = "d7eccb007a932a9d7a1b98bb236dedae01e4e1c6974fb0cc9f043e60631de478"
+hash = "cffc9ee4043d85dad7f2ff9e6398a20b6eae02628754befb41ce71e5e8aa0684"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/pack.mcmeta"
@@ -858,7 +858,7 @@ hash = "2fb20fdc920cf6496ab9d3c61c15b96c3d5937cc51d91917a65b8b0ba45c467e"
 
 [[files]]
 file = "config/spell_engine/server.json5"
-hash = "33a2272942b5f01867d920e04ebabaabe23e6adeeb699b07d9b968c3786201ed"
+hash = "244a3bb3ab39286f423f4bee607856dbb3b58e0892ced3f434be2e964d023167"
 
 [[files]]
 file = "config/waystones-common.toml"
@@ -1171,46 +1171,6 @@ hash = "4e5f327c389a0a437180fb732f47398a52bd8015e5d72d433ca42919df7c26db"
 [[files]]
 file = "kubejs/data/apotheosis/tier_augments/summit/armor_pierce.json"
 hash = "9b92dd9e70e61c0d30b9191595d14bb5ebceb1c8a3f0400fd9bfd57f6c7b0cb8"
-
-[[files]]
-file = "kubejs/data/artificers/recipe/blueprint.json"
-hash = "22d4f3884d5a34942962c0d776a01778cf40a69626ff0d5e0e0701defc47d630"
-
-[[files]]
-file = "kubejs/data/artificers/recipe/bomb.json"
-hash = "8b97d3d1dfd47e3b235f310f93610857da66d233d4423af9e99ba94ae7c4cab1"
-
-[[files]]
-file = "kubejs/data/artificers/recipe/flaming_metal_jacket.json"
-hash = "3bcc86763c63fee431b176d11a13f682f0c0983ebcf6764fb478ca2f0811582e"
-
-[[files]]
-file = "kubejs/data/artificers/recipe/golden_rifle.json"
-hash = "4a98558053f1c3bbfceea6a6db2591a4c05beb075f6f9408ea51a1daffee52e8"
-
-[[files]]
-file = "kubejs/data/artificers/recipe/iron_rifle.json"
-hash = "09a74588bf732f436ea289c7d0b6cdfd79dbc3ca4ce0359f12e712b301e0d9f0"
-
-[[files]]
-file = "kubejs/data/artificers/recipe/mine.json"
-hash = "d791018763dc14ec5eaf8854c461b337c19da4ed3ed0a9264971ec0b9967933d"
-
-[[files]]
-file = "kubejs/data/artificers/recipe/mortar.json"
-hash = "e0a3b223996689ca641828b76dc6d435a1ed372b16e7d83e51245da63d43ea41"
-
-[[files]]
-file = "kubejs/data/artificers/recipe/remote_detonator.json"
-hash = "2a1c4341bf6041735f889e1d643dfcb640a6f5f5c1a39e5bbad17e2ac6d854a6"
-
-[[files]]
-file = "kubejs/data/artificers/recipe/trap.json"
-hash = "30e9eb45e75368728ce5724bc513773378342ef13a376adf0cfeba39f3c92679"
-
-[[files]]
-file = "kubejs/data/artificers/tags/item/ammo.json"
-hash = "7bd0e6e0052db59652770fe1c95bff739afb23376b98851b23e03cda73b02dda"
 
 [[files]]
 file = "kubejs/data/cataclysm/tags/block/needs_black_steel_tool.json"
@@ -1739,94 +1699,6 @@ hash = "4c16195bf9887dbac19680b25362b9ba0ed78983d71a243f8d5669357bcc78ad"
 [[files]]
 file = "kubejs/data/minerpg/affix_loot_entries/rpg/arsenal__unique_staff_heal_sw.json"
 hash = "8500196831db0016132cd02e41b77187607ba6ae44e2ad24457102930293cd7c"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__artillerist_chest.json"
-hash = "67ed83933e14c30e54eeb1a31ff5bd5629fc6d5c29873bfa3ebf6b6f809eb436"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__artillerist_feet.json"
-hash = "e162eec50f386a6f6d402fbfd61e6969b1d65355ed90bbaba2a56d2b125e9064"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__artillerist_head.json"
-hash = "95e8fd75806d14fbfdd0ac354b68d5f4abe0b20e0f2485bfc5ab9bdcbed96082"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__artillerist_legs.json"
-hash = "bc3a158526e4870f3f940e688fdde60972394f38c615f49beb2e3a75a7b369b9"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__artillerist_netherite_chest.json"
-hash = "4bea3f2f3cbacacd4509c848f4be14d3860239d57b86dd55dce46485428347b5"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__artillerist_netherite_feet.json"
-hash = "b2fa6830a3aacb708898701000f1bb17d2843d2812e6d0021ab076119d5a2e8a"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__artillerist_netherite_head.json"
-hash = "8469106207efe5795c8b060ba0c5fca6e677be4cf40f432d1f348e5965f389f8"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__artillerist_netherite_legs.json"
-hash = "6b34b6fb77385eec45f0cac75a545d8176f58cf103784a8d15f69337306352e1"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__diamond_flintlock.json"
-hash = "b75d7e7b769f6676e48a91b981d8f0078371b46001abfddad4e5c315bcb07d16"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__diamond_pike.json"
-hash = "71af6a73180f288f638abaadb1a0f1827d2ae3de56ae5ecf94fc73c5845a709d"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__firecannon.json"
-hash = "e8c88b4226d82f5f21e092344b467311d643e5d21fc01658c70faf4857737e0a"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__flintlock.json"
-hash = "55eac7905660a3882f8bf81360b0a2dfc5288a137c23fa1ef62d5df71f73b4fb"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__iron_pike.json"
-hash = "c40ff2e6d582bdbab6595ef0611bb92560d279ea14846674df7a5ff2be16fe88"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__netherite_firecannon.json"
-hash = "d7ec115a0a76125e8e83760e2dae36452683b328fefa773c7fd73a809b77c6bc"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__netherite_flintlock.json"
-hash = "aa6ed60d023445cd6f565f910b11044e9658ba61c135b406713182127a8f91ad"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__netherite_pike.json"
-hash = "a21688df4f3365cb617fe6c160a4928420f1c20f063ce1b859be09c118c1fbcd"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__netherite_repeating_crossbow.json"
-hash = "349c99555febfcb6f3a501d312aaaf646df5a8381599e836fa06c3f9bf146d85"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__peasant_chest.json"
-hash = "aa7e5a6d0f98b0242a9d4d66843b7eb2c787225cee43a1f7d6ad60d55680b48b"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__peasant_feet.json"
-hash = "f61bcf2e664e92ac07fa9e1fbf704b14fcdd6e8d59bee5caace35a7898c08ce9"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__peasant_head.json"
-hash = "80a7bca9c109754b7bd7717b3d8ac0f6e50a45d45c79e7ef4def030688bd6996"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__peasant_legs.json"
-hash = "424ecbeb64943118c509853718fc61fce6dbe38a25f1bf79f9fc4b614ead44fc"
-
-[[files]]
-file = "kubejs/data/minerpg/affix_loot_entries/rpg/artificers__repeating_crossbow.json"
-hash = "5848379b8362778743ed18ad4e29d2c4866654793771656f7fb5090475818c33"
 
 [[files]]
 file = "kubejs/data/minerpg/affix_loot_entries/rpg/bards_rpg__diamond_harp_crossbow.json"
@@ -2761,10 +2633,6 @@ file = "kubejs/data/minerpg/function/kit/archer.mcfunction"
 hash = "c1d28bc597fd14261a2829da7058d6b1192587ca1782b2517bbb9c65fb147c73"
 
 [[files]]
-file = "kubejs/data/minerpg/function/kit/artillerist.mcfunction"
-hash = "924ff19600261639aa4b9eac191e8645412f0c6ed07f0a3abceba2e1352ccada"
-
-[[files]]
 file = "kubejs/data/minerpg/function/kit/bard.mcfunction"
 hash = "3488ef8d8d654bf22aec7b0ce6ad1b312a6fca6597c09c775fc8527a2c6d8366"
 
@@ -3115,11 +2983,6 @@ hash = "f0edb6932d0c3f97338cf660763ff43bc5febdf0eb5edeca3a1927c20f14e296"
 metafile = true
 
 [[files]]
-file = "mods/azurelib.pw.toml"
-hash = "0ff3d654e1621eab0a51da1a5337ed4cf7229e824cc16b5bd051571130ccfcef"
-metafile = true
-
-[[files]]
 file = "mods/balm.pw.toml"
 hash = "603cdc47142b5aa5729cbbf265a473574c9e2b55561de4318e9842d3d4b3b995"
 metafile = true
@@ -3227,11 +3090,6 @@ metafile = true
 [[files]]
 file = "mods/forcemaster-rpg-class.pw.toml"
 hash = "4d6877e5d059dbf1aee6aec78c69893239f1d3d19461813a511bb833e62870a3"
-metafile = true
-
-[[files]]
-file = "mods/forgified-fabric-api.pw.toml"
-hash = "981e52e1c4a97465921342f556cced335c6c75cdb050e9fc528d52cf4ff88b79"
 metafile = true
 
 [[files]]
@@ -3362,11 +3220,6 @@ metafile = true
 [[files]]
 file = "mods/lootr.pw.toml"
 hash = "0d3683a8c533e1fb67bf0b1668089a322fc5f594f9610d441657378ab4f64383"
-metafile = true
-
-[[files]]
-file = "mods/mercenaries-and-artificers.pw.toml"
-hash = "2096944ec14ec482d894f948959f670476ee7e89d08fa8044d0d5463495862f4"
 metafile = true
 
 [[files]]
@@ -3715,7 +3568,7 @@ hash = "c803ae6e3fa84608a68a1901c6fa785d98bf6f5c3c023044ac4692e499866515"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/callings.json"
-hash = "4e244121f4a6f8068aa0cbbd2a37cd0d702cb78a4a0a7ecda1259dc07c3d0b66"
+hash = "f8d7cdd92f1985f280fceb790b92313f71c4d8f980ebc9acfa6d7633d885b0e5"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/casting.json"
@@ -3775,7 +3628,7 @@ hash = "0bed74f2be4cfe0e81b1e2b1f6e4ca85510a3d7d52aad813b39d99f5f7908818"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/gates.json"
-hash = "9a78d8acc1f090d1a6e8ac54641bc19dabbae767a652b4c88a572edfb36b4fbf"
+hash = "70f64c1b649854bdec01a720c7bc8ffe4ed11d1348a8b39a35f2a5d0ce2934e2"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/hunter.json"

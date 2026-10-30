@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)$(l)Berserker$(): heavy axes and fury.$(li)$(l)Forcemaster$(): fists and force.$(li)$(l)Archers$(): Archer, Deadeye, Tundra Hunter, War Archer.$(li)$(l)Bard$(): songs that help the group, lutes and rapiers.$(li)$(l)Artillerist$(): mortars, mines, traps and bombs from the Siege Manual; flintlocks and repeating crossbows. Flintlock shots burn fire runes."
+      "text": "$(li)$(l)Berserker$(): heavy axes and fury.$(li)$(l)Forcemaster$(): fists and force.$(li)$(l)Archers$(): Archer, Deadeye, Tundra Hunter, War Archer.$(li)$(l)Bard$(): songs that help the group, lutes and rapiers."
     }
   ]
 }

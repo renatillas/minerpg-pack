@@ -30,30 +30,6 @@
       "required": false
     },
     {
-      "id": "artificers:flintlock",
-      "required": false
-    },
-    {
-      "id": "artificers:iron_pike",
-      "required": false
-    },
-    {
-      "id": "artificers:peasant_chest",
-      "required": false
-    },
-    {
-      "id": "artificers:peasant_feet",
-      "required": false
-    },
-    {
-      "id": "artificers:peasant_head",
-      "required": false
-    },
-    {
-      "id": "artificers:peasant_legs",
-      "required": false
-    },
-    {
       "id": "bards_rpg:harp_crossbow",
       "required": false
     },

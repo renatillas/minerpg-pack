@@ -190,8 +190,8 @@
 	"quest.23438309D3EE7ED9.quest_desc": [
 		"Some things only a trained hand can &omake&r:"
 		"Class gear is made by three trades, by tier: tier 1 at level 10, diamond tier 2 at 20, netherite tier 3 at 25, Armory sets at 30."
-		"- &cSmith&r: plate armor and melee weapons (Warrior, Paladin, Berserker, Forcemaster, the Artillerist's Commissioned plate). Reforging to Rare needs Smith 10, Epic 20, Mythic 30."
-		"- &2Hunter&r: leather armor, bows, crossbows, flintlocks, spears, pikes and quivers (Archer, Rogue, Artillerist)."
+		"- &cSmith&r: plate armor and melee weapons (Warrior, Paladin, Berserker, Forcemaster). Reforging to Rare needs Smith 10, Epic 20, Mythic 30."
+		"- &2Hunter&r: leather armor, bows, crossbows, spears and quivers (Archer, Rogue)."
 		"- &dEnchanter&r: robes, staves, wands and instruments (Wizard, mages, Priest, Bard), and the stronger enchanting shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30."
 		"- &5Alchemist&r: Strong and Long potions at 10, Splash at 15, Lingering at 20."
 		""
@@ -348,7 +348,7 @@
 		"- &aArchery Range&r: Archery Artisan (archers)"
 		"- &6Pub&r: Luthier (bards)"
 		"A Jeweler sells rings and necklaces. Not every village has every building: if yours lacks one, the next village may have it."
-		"Berserkers, forcemasters and artillerists have no building of their own; the Arms Dealer and Jeweler serve everyone."
+		"Berserkers and forcemasters have no building of their own; the Arms Dealer and Jeweler serve everyone."
 		""
 		"Trade once with any of these merchants. Use the emeralds from your calling."
 	]
@@ -592,7 +592,6 @@
 	"quest.7F3ACDC21971B67E.title": "A Feast for the Party"
 	"reward.101C0F1F77A34A36.title": "Berserker"
 	"reward.113FC9A4C49E6433.title": "Map to a Small Dungeon"
-	"reward.1182E34C763ED1EB.title": "Artillerist"
 	"reward.121F3AC8B68AF412.title": "+1 talent point"
 	"reward.1283E905E288BBDD.title": "Earth Mage"
 	"reward.1432181C873ED062.title": "Map to an Ancient City"

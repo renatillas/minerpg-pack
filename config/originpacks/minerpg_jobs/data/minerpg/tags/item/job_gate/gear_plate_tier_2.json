@@ -2,22 +2,6 @@
   "replace": false,
   "values": [
     {
-      "id": "artificers:artillerist_chest",
-      "required": false
-    },
-    {
-      "id": "artificers:artillerist_feet",
-      "required": false
-    },
-    {
-      "id": "artificers:artillerist_head",
-      "required": false
-    },
-    {
-      "id": "artificers:artillerist_legs",
-      "required": false
-    },
-    {
       "id": "bards_rpg:diamond_rapier",
       "required": false
     },

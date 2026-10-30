@@ -90,22 +90,6 @@
       "required": false
     },
     {
-      "id": "artificers:diamond_flintlock",
-      "required": false
-    },
-    {
-      "id": "artificers:diamond_pike",
-      "required": false
-    },
-    {
-      "id": "artificers:firecannon",
-      "required": false
-    },
-    {
-      "id": "artificers:repeating_crossbow",
-      "required": false
-    },
-    {
       "id": "bards_rpg:diamond_harp_crossbow",
       "required": false
     },
