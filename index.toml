@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/neoorigins/content.toml"
+hash = "df2124478e28b5b6b84a18ea61172ec68b702232e0dbfdace0ed370ce9f7738a"
+
+[[files]]
 file = "mods/additional-rpg-jewelry.pw.toml"
 hash = "716f2e257d9509f8e4f800d661e861c34de86bd9d5b81e8862f3a741c0d64d50"
 metafile = true
