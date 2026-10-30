@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "wizard_merchant": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"wizards:wizard_merchant\"}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wizard_merchant"
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "betterdungeons:small_nether_dungeon",
+      "required": false
+    },
+    {
+      "id": "nova_structures:nether_keep",
+      "required": false
+    },
+    {
+      "id": "nova_structures:piglin_donjon",
+      "required": false
+    },
+    {
+      "id": "nova_structures:nether_port",
+      "required": false
+    },
+    {
+      "id": "nova_structures:piglin_outstation",
+      "required": false
+    },
+    {
+      "id": "nova_structures:nether_skeleton_tower_crimson",
+      "required": false
+    },
+    {
+      "id": "nova_structures:nether_skeleton_tower_soul",
+      "required": false
+    },
+    {
+      "id": "nova_structures:nether_skeleton_tower_warped",
+      "required": false
+    },
+    {
+      "id": "nova_structures:nether_skeleton_tower_waste",
+      "required": false
+    }
+  ]
+}

@@ -301,6 +301,12 @@ def write_advancements():
         'items': '#minecraft:logs', 'count': {'min': 16}}]}}})
     ADV['builder'] = adv('jobs/builder', {'place': {'trigger': 'minecraft:placed_block', 'conditions': {}}})
     ADV['alchemist'] = adv('jobs/alchemist', {'brew': {'trigger': 'minecraft:brewed_potion', 'conditions': {}}})
+    # Village tour: trade with a class merchant (matched by the villager's profession).
+    def trade(profession):
+        return {'trigger': 'minecraft:villager_trade', 'conditions': {'villager': {
+            'nbt': '{VillagerData:{profession:"%s"}}' % profession}}}
+    for key, professions in MERCHANTS.items():
+        ADV['trade_' + key] = adv('tour/' + key, {p.split(':')[1]: trade(p) for p in professions}, any_of=True)
 
 
 # --------------------------------------------------------------------------------------
@@ -330,11 +336,73 @@ STRUCTURE_TAGS = {
 }
 
 
-def write_structure_tags():
-    folder = os.path.join(DATA, 'minerpg', 'tags', 'worldgen', 'structure')
+# Class buildings and their merchants in villages (each class mod's config/<mod>/villages.json
+# adds the building to the vanilla village house pools; the merchant works there).
+MERCHANTS = {
+    'wizard': ['wizards:wizard_merchant'],        # Wizard Tower
+    'sanctuary': ['paladins:monk'],               # Sanctuary
+    'barracks': ['rogues:arms_merchant'],         # Barracks
+    'range': ['archers:archery_artisan'],         # Archery Range
+    'pub': ['bards_rpg:luthier'],                 # Bard's pub
+}
+MERCHANTS['any'] = [p for ps in MERCHANTS.values() for p in ps] + ['jewelry:jeweler']
+
+# Explorer maps given by quest rewards (loot tables kubejs/data/minerpg/loot_table/map/<key>.json,
+# run with /loot give, which searches from the player's position). Overworld targets only.
+# key: (map name, structure tag the map searches for, extra tag contents or None if the tag exists)
+MAPS = {
+    'small_dungeon': ('Map to a Small Dungeon', 'minerpg:small_dungeons', None),
+    'amethyst_nest': ('Map to the Amethyst Nest', 'minerpg:map/amethyst_nest', ['cataclysm:amethyst_nest']),
+    'great_dungeon': ('Map to a Great Dungeon', 'minerpg:map/great_dungeon', ['dungeons_arise:' + n for n in [
+        'abandoned_temple', 'bandit_towers', 'ceryneian_hind', 'coliseum', 'foundry', 'illager_fort', 'infested_temple',
+        'jungle_tree_house', 'keep_kayra', 'kisegi_sanctuary', 'mechanical_nest', 'mining_complex', 'monastery',
+        'mushroom_mines', 'plague_asylum', 'scorched_mines', 'shiraz_palace', 'thornborn_towers']] + [
+        'nova_structures:illager_manor', 'nova_structures:lone_citadel', 'nova_structures:stray_fort',
+        'nova_structures:toxic_lair', 'nova_structures:witch_villa']),
+    'cursed_pyramid': ('Map to the Cursed Pyramid', 'minerpg:map/cursed_pyramid', ['cataclysm:cursed_pyramid']),
+    'frosted_prison': ('Map to the Frosted Prison', 'minerpg:map/frosted_prison', ['cataclysm:frosted_prison']),
+    'sunken_city': ('Map to the Sunken City', 'minerpg:map/sunken_city', ['cataclysm:sunken_city']),
+    'ancient_city': ('Map to an Ancient City', 'minerpg:map/ancient_city', ['minecraft:ancient_city']),
+    'ancient_factory': ('Map to the Ancient Factory', 'minerpg:map/ancient_factory', ['cataclysm:ancient_factory']),
+    'stronghold': ('Map to the Stronghold', 'minerpg:strongholds', None),
+}
+
+
+def r_map(key):
+    return r_cmd(f'/loot give @s loot minerpg:map/{key}', MAPS[key][0])
+
+
+def write_maps():
+    folder = os.path.join(DATA, 'minerpg', 'loot_table', 'map')
     if os.path.isdir(folder):
         shutil.rmtree(folder)
-    for name, ids in STRUCTURE_TAGS.items():
+    for key, (name, tag, _ids) in MAPS.items():
+        write(os.path.join(folder, key + '.json'), json.dumps({
+            'type': 'minecraft:chest',
+            'pools': [{'rolls': 1, 'entries': [{'type': 'minecraft:item', 'name': 'minecraft:map', 'functions': [
+                # skip_existing_chunks false: also find a dungeon in chunks someone already loaded.
+                {'function': 'minecraft:exploration_map', 'destination': tag, 'decoration': 'minecraft:red_x',
+                 'zoom': 2, 'search_radius': 50, 'skip_existing_chunks': False},
+                {'function': 'minecraft:set_name', 'target': 'item_name', 'name': {'text': name}},
+            ]}]}],
+        }, indent=2))
+
+
+def write_structure_tags():
+    folder = os.path.join(DATA, 'minerpg', 'tags', 'worldgen', 'structure')
+    # Only this folder's top-level files are generated. Subfolders (dungeon_tier/: the Dungeon
+    # Difficulty tier tags read by config/dungeon_difficulty/difficulty_v2.json) are hand-written.
+    if os.path.isdir(folder):
+        for name in os.listdir(folder):
+            if name.endswith('.json'):
+                os.remove(os.path.join(folder, name))
+    if os.path.isdir(os.path.join(folder, 'map')):
+        shutil.rmtree(os.path.join(folder, 'map'))
+    tags = dict(STRUCTURE_TAGS)
+    for key, (_name, tag, ids) in MAPS.items():
+        if ids:
+            tags[tag.split(':', 1)[1]] = ids
+    for name, ids in tags.items():
         # required: false so a missing mod never breaks the tag.
         write(os.path.join(folder, name + '.json'),
               json.dumps({'values': [{'id': i, 'required': False} for i in ids]}, indent=2))
@@ -372,7 +440,7 @@ GETTING_STARTED = [
         'Pick the class you want to start as. You get its spell book (tome), a starter weapon, one armor piece and the runes its spells need.',
         '',
         'You can learn a second class later by making its tome at a Spell Binding Table.'],
-        [t_check('I am ready to choose')], [{'type': 'choice', '_table': KIT_TABLE}],
+        [t_check('I am ready to choose')], [{'type': 'choice', '_table': KIT_TABLE}, r_item('minecraft:emerald', 6)],
         deps=['gs_welcome'], subtitle='Your class starter kit', size=Double(1.5), shape='hexagon'),
     Q('gs_cast', 'Bound to the Book', 4, -1.5, [
         'Open your inventory and put the tome in its spell book slot.',
@@ -382,7 +450,7 @@ GETTING_STARTED = [
         'Many spells burn runes. Craft them at a Rune Crafting Altar: it makes more runes from the same materials than a crafting table.'],
         [t_adv('runes', 'Craft any rune')], [r_item('runes:small_rune_pouch')], deps=['gs_cast'], subtitle='Craft runes'),
     Q('gs_binding', 'The Binding Table', 6, 0, [
-        'Stronger spells come from a Spell Binding Table. Village gazebos often have one, or build your own and ring it with bookshelves.',
+        'Stronger spells come from a Spell Binding Table. Every plains village, including the one you started in, has a gazebo with one. You can also build your own and ring it with bookshelves.',
         'Put your tome in and bind a new spell with your experience levels.'],
         [t_adv('bind', 'Bind a spell')], [r_item('minecraft:lapis_lazuli', 16), r_xp(40)], deps=['gs_cast'], subtitle='Learn new spells'),
     Q('gs_talent', 'A Point to Spend', 4, 1.5, [
@@ -440,7 +508,34 @@ GETTING_STARTED = [
         'Wild cabbages, tomatoes, onions and rice grow out in the world: break them for seeds. Hover over any food to see how much it restores.'],
         [t_item('farmersdelight:cooking_pot', title='Craft a Cooking Pot')], [r_item('farmersdelight:tomato_seeds', 4), r_item('farmersdelight:cabbage_seeds', 4)],
         deps=['gs_welcome'], subtitle='Cooking (Farmer\'s Delight)'),
+    # v0.5 village tour: the class buildings and merchants of your starting village.
+    Q('gs_tour', 'Merchants of Every Calling', 4, 3, [
+        'You start in a plains village. Besides its gazebo, villages can have buildings for the classes, each with its own merchant:',
+        '- &dWizard Tower&r: Wizard Merchant (wizards and mages)',
+        '- &eSanctuary&r: Monk (paladins and priests)',
+        '- &cBarracks&r: Arms Dealer (rogues and warriors)',
+        '- &aArchery Range&r: Archery Artisan (archers)',
+        '- &6Pub&r: Luthier (bards)',
+        'A Jeweler sells rings and necklaces. Not every village has every building: if yours lacks one, the next village may have it.',
+        'Berserkers, forcemasters and witchers have no building of their own; the Arms Dealer and Jeweler serve everyone.',
+        '',
+        'Trade once with any of these merchants. Use the emeralds from your calling.'],
+        [t_adv('trade_any', 'Trade with a class merchant')], [r_item('minecraft:emerald', 4)],
+        deps=['gs_calling'], subtitle='Visit the village', optional=True),
 ]
+
+# One optional quest per class building (personal books: do the one for your class).
+TOUR = [
+    ('wizard', 'The Wizard Tower', 'A tall tower of stone and purple glass. The Wizard Merchant sells staves, wands, robes and runes for Arcane, Fire and Frost Wizards (and mages can buy runes there too).', 'wizards:wand_arcane'),
+    ('sanctuary', 'The Sanctuary', 'A small white chapel. The Monk sells holy weapons, armor and healing runes for Paladins and Priests.', 'paladins:holy_wand'),
+    ('barracks', 'The Barracks', 'A guard house with weapon racks. The Arms Dealer sells daggers, sickles, axes and armor for Rogues and Warriors.', 'rogues:iron_dagger'),
+    ('range', 'The Archery Range', 'Targets in a fenced yard. The Archery Artisan sells bows, crossbows, arrows and archer armor.', 'archers:composite_longbow'),
+    ('pub', 'The Bard\'s Pub', 'A lively pub. The Luthier sells lutes and other instruments for Bards.', 'bards_rpg:wooden_lute'),
+]
+for i, (key, title, text, icon) in enumerate(TOUR):
+    GETTING_STARTED.append(Q(f'gs_tour_{key}', title, 1 + i * 1.5, 4.5, [text, '', 'Find the building in a village and trade once with its merchant.'],
+                             [t_adv(f'trade_{key}', 'Trade with the merchant')], [r_item('minecraft:emerald', 3)],
+                             deps=['gs_tour'], subtitle='Class building', shape='circle', optional=True, icon={'id': icon}))
 
 JOB_STARTERS = [
     ('alchemist', 'Alchemist', 'Alchemists earn experience brewing. Brew any potion.', t_adv('alchemist', 'Brew a potion'), r_item('minecraft:glass_bottle', 6)),
@@ -464,22 +559,28 @@ CHAPTER_1 = [
     # Hearthlands
     Q('c1_village', 'The Hearth Road', 0, 0, [
         'The &aHearthlands&r are the gentle lands: plains, forests, meadows and rivers, with villages, taverns and small dungeons. A good place to learn your class.',
-        'Find a village.'],
-        [t_struct('#minecraft:village', 'Visit a village')], [r_item('minecraft:emerald', 6)], subtitle='Hearthlands'),
+        'Your journey starts in a plains village. Walk its streets to begin.',
+        '',
+        '&7Reward: a map marking the nearest small dungeon.&r'],
+        [t_struct('#minecraft:village', 'Visit a village')], [r_item('minecraft:emerald', 6), r_map('small_dungeon')], subtitle='Hearthlands'),
     Q('c1_tavern', 'A Warm Hearth', 1.5, -1.5, [
         'Taverns sit along the roads of the Hearthlands. Travelers trade, rest and swap stories there.'],
         [t_struct('#minerpg:taverns', 'Visit a tavern')], [r_item('minecraft:cooked_porkchop', 8), r_xp(50)], deps=['c1_village'], subtitle='Hearthlands'),
     Q('c1_cellar', 'Cellar Dwellers', 1.5, 1.5, [
-        'Something has nested under the fields. Find a small dungeon and clear out what lives there.'],
+        'Something has nested under the fields. Find a small dungeon and clear out what lives there.',
+        '',
+        '&7Reward: a map marking the Amethyst Nest.&r'],
         [t_struct('#minerpg:small_dungeons', 'Find a small dungeon'), t_kill(count=15, tag='minecraft:undead', title='Kill 15 undead')],
-        [r_xp(75), r_item('minecraft:iron_ingot', 8)], deps=['c1_village'], subtitle='Hearthlands'),
+        [r_xp(75), r_item('minecraft:iron_ingot', 8), r_map('amethyst_nest')], deps=['c1_village'], subtitle='Hearthlands'),
     Q('c1_nest', 'Glitter in the Deep', 3, 0, [
         'Deep in the lush caves, an amethyst nest glows. Its keeper does not like visitors.'],
         [t_struct('cataclysm:amethyst_nest', 'Find the Amethyst Nest')], [r_xp(75)], deps=['c1_cellar'], subtitle='Hearthlands'),
     Q('c1_crab', 'Shell Shock', 4.5, 0, [
         'Defeat the &dAmethyst Crab&r. Everyone nearby at the kill earns a Geode Claw for this quest.',
-        'The claw raises your world tier to &eVenture&r: monsters wear more armor, rare monsters start to roam, and gear drops in iron and better rarities.'],
-        [t_item('minerpg:trophy_amethyst_crab', title='Geode Claw')], [r_item('minecraft:diamond', 3), r_xp(150)],
+        'The claw raises your world tier to &eVenture&r: monsters wear more armor, rare monsters start to roam, and gear drops in iron and better rarities.',
+        '',
+        '&7Reward: a map marking a great dungeon of the Wildlands.&r'],
+        [t_item('minerpg:trophy_amethyst_crab', title='Geode Claw')], [r_item('minecraft:diamond', 3), r_xp(150), r_map('great_dungeon')],
         deps=['c1_nest'], subtitle='Boss', shape='gear', size=Double(1.5)),
     Q('c1_iron', 'Ironclad', 3, 2.5, [
         'Good iron makes good gear. Stock up for your first upgrades.'],
@@ -498,27 +599,46 @@ CHAPTER_1 = [
         'The &6Wildlands&r are the harsh lands: deserts, jungles, swamps, taigas, dark forests and open sea. Big dungeons and ruins hide there, and monsters hit harder.',
         'Explore one of the great dungeons of the wild.'],
         [t_struct('#minerpg:wildlands_dungeons', 'Explore a great dungeon')], [r_xp(75)], deps=['c1_crab'], subtitle='Wildlands'),
-    Q('c1_desert_eye', 'Eye of the Dunes', 8, -3, [
+    Q('c1_desert_eye', 'Eye of the Dunes', 8, -2.45, [
         'An Eye of Desert points the way to the cursed pyramid. Craft one and throw it.'],
         [t_item('cataclysm:desert_eye')], [r_xp(50)], deps=['c1_wild'], subtitle='Side task'),
+    Q('c1_rumor_pyramid', 'Whispers of Sand', 8, -3.55, [
+        'Caravan guards tell of a pyramid that swallows the sun. Ask around, and someone sketches you a map.',
+        '',
+        '&7Reward: a map marking the Cursed Pyramid.&r'],
+        [t_check('Ask for directions')], [r_map('cursed_pyramid')], deps=['c1_wild'], subtitle='Map', shape='diamond', size=Double(0.75)),
+    Q('c1_rumor_prison', 'Whispers of Ice', 8, -1.55, [
+        'Trappers speak of black ice where nothing grows. One of them still has a map.',
+        '',
+        '&7Reward: a map marking the Frosted Prison.&r'],
+        [t_check('Ask for directions')], [r_map('frosted_prison')], deps=['c1_wild'], subtitle='Map', shape='diamond', size=Double(0.75)),
+    Q('c1_rumor_sunken', 'Whispers of the Tide', 8, 0.45, [
+        'Fishermen avoid one stretch of sea: towers stand under the water there. They marked it for you.',
+        '',
+        '&7Reward: a map marking the Sunken City.&r'],
+        [t_check('Ask for directions')], [r_map('sunken_city')], deps=['c1_wild'], subtitle='Map', shape='diamond', size=Double(0.75)),
     Q('c1_pyramid', 'The Cursed Pyramid', 9.5, -3, [
         'A pyramid half-buried in desert sand, its door sealed with old curses.'],
         [t_struct('cataclysm:cursed_pyramid', 'Find the Cursed Pyramid')], [r_xp(100)], deps=['c1_wild'], subtitle='Wildlands'),
     Q('c1_remnant', 'Bones of the Sun King', 11, -3, [
-        'Defeat the &6Ancient Remnant&r in the depths of the pyramid.'],
-        [t_item('minerpg:trophy_ancient_remnant', title='Sun-Bleached Fang')], [r_item('minecraft:diamond', 4), r_xp(150)],
+        'Defeat the &6Ancient Remnant&r in the depths of the pyramid.',
+        '',
+        '&7Reward: a map marking an ancient city of the Frontier.&r'],
+        [t_item('minerpg:trophy_ancient_remnant', title='Sun-Bleached Fang')], [r_item('minecraft:diamond', 4), r_xp(150), r_map('ancient_city')],
         deps=['c1_pyramid'], subtitle='Boss', shape='gear', size=Double(1.5)),
-    Q('c1_cursed_eye', 'Eye of the Frost', 8, -1, [
+    Q('c1_cursed_eye', 'Eye of the Frost', 8, -0.45, [
         'An Eye of Curse leads to a prison buried in snow. Craft one and throw it.'],
         [t_item('cataclysm:cursed_eye')], [r_xp(50)], deps=['c1_wild'], subtitle='Side task'),
     Q('c1_prison', 'The Frosted Prison', 9.5, -1, [
         'A fortress of black ice where something was locked away on purpose.'],
         [t_struct('cataclysm:frosted_prison', 'Find the Frosted Prison')], [r_xp(100)], deps=['c1_wild'], subtitle='Wildlands'),
     Q('c1_maledictus', 'The Cursed Warden', 11, -1, [
-        'Defeat &bMaledictus&r, the prisoner who became the prison.'],
-        [t_item('minerpg:trophy_maledictus', title='Frostbound Crown')], [r_item('minecraft:diamond', 4), r_xp(150)],
+        'Defeat &bMaledictus&r, the prisoner who became the prison.',
+        '',
+        '&7Reward: a map marking an ancient city of the Frontier.&r'],
+        [t_item('minerpg:trophy_maledictus', title='Frostbound Crown')], [r_item('minecraft:diamond', 4), r_xp(150), r_map('ancient_city')],
         deps=['c1_prison'], subtitle='Boss', shape='gear', size=Double(1.5)),
-    Q('c1_abyss_eye', 'Eye of the Deep', 8, 1, [
+    Q('c1_abyss_eye', 'Eye of the Deep', 8, 1.55, [
         'An Eye of Abyss finds the sunken city. Craft one and throw it from a boat.'],
         [t_item('cataclysm:abyss_eye')], [r_xp(50)], deps=['c1_wild'], subtitle='Side task'),
     Q('c1_sunken', 'The Sunken City', 9.5, 1, [
@@ -526,8 +646,10 @@ CHAPTER_1 = [
         [t_struct('cataclysm:sunken_city', 'Find the Sunken City')], [r_item('minecraft:potion', 2, {'minecraft:potion_contents': {'potion': 'minecraft:long_water_breathing'}}), r_xp(100)],
         deps=['c1_wild'], subtitle='Wildlands'),
     Q('c1_leviathan', 'Teeth of the Tide', 11, 1, [
-        'Defeat &9The Leviathan&r in its flooded hall. It is untouchable out of the water, so fight it in its element.'],
-        [t_item('minerpg:trophy_leviathan', title='Abyssal Scale')], [r_item('minecraft:diamond', 4), r_xp(150)],
+        'Defeat &9The Leviathan&r in its flooded hall. It is untouchable out of the water, so fight it in its element.',
+        '',
+        '&7Reward: a map marking an ancient city of the Frontier.&r'],
+        [t_item('minerpg:trophy_leviathan', title='Abyssal Scale')], [r_item('minecraft:diamond', 4), r_xp(150), r_map('ancient_city')],
         deps=['c1_sunken'], subtitle='Boss', shape='gear', size=Double(1.5)),
     Q('c1_umvuthi', 'The Sunbird\'s Court', 6.5, -2.5, [
         'Masked Umvuthana guard a grove in the savanna. Their chief, &6Umvuthi, the Sunbird&r, calls down sunfire and heals behind his followers.',
@@ -545,8 +667,10 @@ CHAPTER_1 = [
     # Frontier
     Q('c1_frontier', 'The Frontier', 13, 0, [
         'The &cFrontier&r is the extreme: frozen peaks, ice spikes, the deep dark and the deep ocean. The hardest lands of this world.',
-        'Beat at least one Wildlands boss, then find an ancient city in the deep dark.'],
-        [t_struct('minecraft:ancient_city', 'Find an ancient city')], [r_xp(100)],
+        'Beat at least one Wildlands boss, then find an ancient city in the deep dark.',
+        '',
+        '&7Reward: a map marking the Ancient Factory.&r'],
+        [t_struct('minecraft:ancient_city', 'Find an ancient city')], [r_xp(100), r_map('ancient_factory')],
         deps=['c1_remnant', 'c1_maledictus', 'c1_leviathan'], subtitle='Frontier', dependency_requirement='one_completed'),
     Q('c1_echo', 'Echoes Below', 13, 2, [
         'The deep dark keeps its secrets in echo shards. Bring some back, quietly.'],
@@ -628,8 +752,10 @@ CHAPTER_2 = [
 CHAPTER_3 = [
     Q('c3_eyes', 'Eyes of the Void', 0, 0, [
         'Craft Eyes of Ender from an ender pearl, blaze powder and your Void Shard. The shard stays in the grid.',
-        'You need a dozen to wake an End portal (some frames already hold eyes).'],
-        [t_item('minecraft:ender_eye', 12)], [r_item('minecraft:ender_pearl', 4), r_xp(200)], subtitle='Chapter start'),
+        'You need a dozen to wake an End portal (some frames already hold eyes).',
+        '',
+        '&7Reward: a map marking the nearest stronghold.&r'],
+        [t_item('minecraft:ender_eye', 12)], [r_item('minecraft:ender_pearl', 4), r_xp(200), r_map('stronghold')], subtitle='Chapter start'),
     Q('c3_stronghold', 'The Stronghold', 1.5, 0, [
         'Throw an eye and follow it underground to the stronghold and its portal room.'],
         [t_struct('#minerpg:strongholds', 'Find the stronghold')], [r_xp(300)], deps=['c3_eyes']),
@@ -695,6 +821,7 @@ def build():
     write_kit_functions()
     write_advancements()
     write_structure_tags()
+    write_maps()
 
     if os.path.isdir(QUESTS):
         shutil.rmtree(QUESTS)

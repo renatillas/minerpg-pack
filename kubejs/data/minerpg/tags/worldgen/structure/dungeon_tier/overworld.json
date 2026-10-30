@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "#minerpg:dungeon_tier/level_2",
+      "required": false
+    },
+    {
+      "id": "#minerpg:dungeon_tier/level_3",
+      "required": false
+    },
+    {
+      "id": "#minerpg:dungeon_tier/level_4",
+      "required": false
+    }
+  ]
+}

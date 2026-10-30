@@ -71,6 +71,15 @@
 					table_id: 2158090423038289848L
 					type: "choice"
 				}
+				{
+					count: 6
+					id: "42254325C367D9CB"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
 			]
 			shape: "hexagon"
 			size: 1.5d
@@ -440,6 +449,194 @@
 			]
 			x: -4.0d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"303494E14ED1C03B"
+			]
+			id: "498B6C57012F8D8C"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "1C592D63743FDAC9"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:tour/any"
+					criterion: ""
+					id: "4AB911E09D2D62A3"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"498B6C57012F8D8C"
+			]
+			icon: {
+				id: "wizards:wand_arcane"
+			}
+			id: "5E8BD5E5357754FB"
+			optional: true
+			rewards: [
+				{
+					count: 3
+					id: "6A7C064B2F51E122"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:tour/wizard"
+					criterion: ""
+					id: "1FD1DBDA560D1085"
+					type: "advancement"
+				}
+			]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"498B6C57012F8D8C"
+			]
+			icon: {
+				id: "paladins:holy_wand"
+			}
+			id: "516F384D63226205"
+			optional: true
+			rewards: [
+				{
+					count: 3
+					id: "5DAA90073DDAF9CB"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:tour/sanctuary"
+					criterion: ""
+					id: "54761F8D3820AA01"
+					type: "advancement"
+				}
+			]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"498B6C57012F8D8C"
+			]
+			icon: {
+				id: "rogues:iron_dagger"
+			}
+			id: "3F2D9F92D902836B"
+			optional: true
+			rewards: [
+				{
+					count: 3
+					id: "6A25D95AD3EA8C2C"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:tour/barracks"
+					criterion: ""
+					id: "24BA2AB8D1004409"
+					type: "advancement"
+				}
+			]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"498B6C57012F8D8C"
+			]
+			icon: {
+				id: "archers:composite_longbow"
+			}
+			id: "16410072A73C2220"
+			optional: true
+			rewards: [
+				{
+					count: 3
+					id: "39F394A73714BCE7"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:tour/range"
+					criterion: ""
+					id: "18728C590A91F64B"
+					type: "advancement"
+				}
+			]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"498B6C57012F8D8C"
+			]
+			icon: {
+				id: "bards_rpg:wooden_lute"
+			}
+			id: "5542D87C1BF085E8"
+			optional: true
+			rewards: [
+				{
+					count: 3
+					id: "4D78847562806D7D"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:tour/pub"
+					criterion: ""
+					id: "63B7D85A9DD9382D"
+					type: "advancement"
+				}
+			]
+			x: 7.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [

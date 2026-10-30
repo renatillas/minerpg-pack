@@ -1,0 +1,15 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> Village Spawn Point -> Config",
+	"Enable Village Spawn Point": {
+		"//": "Whether Village Spawn Point is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart.",
+		"value": true
+	},
+	"locateVillageTag": {
+		"//": "The tag used to locate the village structure. Can be changed for improved modded village compatibility. It's the same tag used in the '/locate structure <tag>' command.",
+		"value": "minecraft:village_plains"
+	},
+	"keepDefaultVillageTagBackup": {
+		"//": "If a custom value was entered in 'locateVillageTag' and no spawn point can be found, use '#minecraft:village' as a fallback value.",
+		"value": true
+	}
+}

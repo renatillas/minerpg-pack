@@ -1,0 +1,22 @@
+{
+  "type": "lithostitched:add_template_pool_elements",
+  "template_pools": [
+    "minecraft:village/plains/houses"
+  ],
+  "elements": [
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "lithostitched:guaranteed",
+        "delegate": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "processors": "minecraft:empty",
+          "location": "gazebo:village/plains/gazebo"
+        },
+        "count": 1,
+        "min_depth": 2
+      }
+    }
+  ]
+}

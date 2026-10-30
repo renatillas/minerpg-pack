@@ -70,7 +70,7 @@
         {
           "entity_matches": {
             "attitude": "HOSTILE",
-            "type": ""
+            "type": "!#minerpg:group_scaled_boss"
           },
           "attributes": [
             {
@@ -321,7 +321,16 @@
         },
         {
           "zone_matches": {
-            "structure": "betterstrongholds:stronghold"
+            "structure": "#minecraft:village"
+          },
+          "difficulty": {
+            "name": "settlement",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_tier/level_5"
           },
           "difficulty": {
             "name": "dungeon",
@@ -330,7 +339,8 @@
         },
         {
           "zone_matches": {
-            "structure": "betteroceanmonuments:ocean_monument"
+            "structure": "#minerpg:dungeon_tier/overworld",
+            "biome": "#minerpg:zone/frontier"
           },
           "difficulty": {
             "name": "dungeon",
@@ -339,7 +349,16 @@
         },
         {
           "zone_matches": {
-            "structure": "betterdeserttemples:desert_temple"
+            "structure": "#minerpg:dungeon_tier/level_4"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 4
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_tier/level_3"
           },
           "difficulty": {
             "name": "dungeon",
@@ -348,65 +367,11 @@
         },
         {
           "zone_matches": {
-            "structure": "betterjungletemples:jungle_temple"
-          },
-          "difficulty": {
-            "name": "dungeon",
-            "level": 3
-          }
-        },
-        {
-          "zone_matches": {
-            "structure": "betterwitchhuts:witch_hut"
+            "structure": "#minerpg:dungeon_tier/level_2"
           },
           "difficulty": {
             "name": "dungeon",
             "level": 2
-          }
-        },
-        {
-          "zone_matches": {
-            "structure": "betterwitchhuts:witch_circle"
-          },
-          "difficulty": {
-            "name": "dungeon",
-            "level": 2
-          }
-        },
-        {
-          "zone_matches": {
-            "structure": "#dungeon_difficulty:level_3"
-          },
-          "difficulty": {
-            "name": "dungeon",
-            "level": 3
-          }
-        },
-        {
-          "zone_matches": {
-            "structure": "#dungeon_difficulty:level_2"
-          },
-          "difficulty": {
-            "name": "dungeon",
-            "level": 2
-          }
-        },
-        {
-          "zone_matches": {
-            "structure": "#dungeon_difficulty:level_1"
-          },
-          "difficulty": {
-            "name": "dungeon",
-            "level": 1
-          }
-        },
-        {
-          "zone_matches": {
-            "structure": "#minecraft:village"
-          },
-          "difficulty": {
-            "name": "settlement",
-            "level": 1
           }
         },
         {
@@ -469,6 +434,15 @@
         },
         {
           "zone_matches": {
+            "structure": "#minerpg:dungeon_tier/nether"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 6
+          }
+        },
+        {
+          "zone_matches": {
             "structure": "minecraft:fortress"
           },
           "difficulty": {
@@ -523,6 +497,24 @@
           "difficulty": {
             "name": "lair",
             "level": 8
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_tier/end_great"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 8
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_tier/end"
+          },
+          "difficulty": {
+            "name": "dungeon",
+            "level": 7
           }
         },
         {

@@ -22,6 +22,13 @@
 					}
 					type: "item"
 				}
+				{
+					command: "/loot give @s loot minerpg:map/small_dungeon"
+					id: "113FC9A4C49E6433"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			tasks: [
 				{
@@ -84,6 +91,13 @@
 					}
 					type: "item"
 				}
+				{
+					command: "/loot give @s loot minerpg:map/amethyst_nest"
+					id: "67A4AA648230E254"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			tasks: [
 				{
@@ -143,6 +157,13 @@
 					id: "234015FF0FF9D33E"
 					type: "xp"
 					xp: 150
+				}
+				{
+					command: "/loot give @s loot minerpg:map/great_dungeon"
+					id: "20F460CCC42134B7"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "gear"
@@ -305,7 +326,82 @@
 				}
 			]
 			x: 8.0d
-			y: -3.0d
+			y: -2.45d
+		}
+		{
+			dependencies: [
+				"710AD64B960DC726"
+			]
+			id: "785E70544950B7A5"
+			rewards: [
+				{
+					command: "/loot give @s loot minerpg:map/cursed_pyramid"
+					id: "797292397D0CD70A"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			size: 0.75d
+			tasks: [
+				{
+					id: "1284ABB32E41FD5A"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: -3.55d
+		}
+		{
+			dependencies: [
+				"710AD64B960DC726"
+			]
+			id: "1BCB2048A44AC85E"
+			rewards: [
+				{
+					command: "/loot give @s loot minerpg:map/frosted_prison"
+					id: "19AC4242A24009D8"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			size: 0.75d
+			tasks: [
+				{
+					id: "15386B424EFBFD1F"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: -1.55d
+		}
+		{
+			dependencies: [
+				"710AD64B960DC726"
+			]
+			id: "5342B109738F0034"
+			rewards: [
+				{
+					command: "/loot give @s loot minerpg:map/sunken_city"
+					id: "160FB3F4CEC75B27"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			size: 0.75d
+			tasks: [
+				{
+					id: "77BACE939F14E365"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 0.45d
 		}
 		{
 			dependencies: [
@@ -349,6 +445,13 @@
 					type: "xp"
 					xp: 150
 				}
+				{
+					command: "/loot give @s loot minerpg:map/ancient_city"
+					id: "1432181C873ED062"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "gear"
 			size: 1.5d
@@ -388,7 +491,7 @@
 				}
 			]
 			x: 8.0d
-			y: -1.0d
+			y: -0.45d
 		}
 		{
 			dependencies: [
@@ -432,6 +535,13 @@
 					type: "xp"
 					xp: 150
 				}
+				{
+					command: "/loot give @s loot minerpg:map/ancient_city"
+					id: "5E06483D725045B2"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "gear"
 			size: 1.5d
@@ -471,7 +581,7 @@
 				}
 			]
 			x: 8.0d
-			y: 1.0d
+			y: 1.55d
 		}
 		{
 			dependencies: [
@@ -528,6 +638,13 @@
 					id: "147BA1D55B4C3AE4"
 					type: "xp"
 					xp: 150
+				}
+				{
+					command: "/loot give @s loot minerpg:map/ancient_city"
+					id: "4D34157362C8FDFC"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "gear"
@@ -665,6 +782,13 @@
 					id: "69BDFB8A53AF84F9"
 					type: "xp"
 					xp: 100
+				}
+				{
+					command: "/loot give @s loot minerpg:map/ancient_factory"
+					id: "32855D8B687FD180"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			tasks: [

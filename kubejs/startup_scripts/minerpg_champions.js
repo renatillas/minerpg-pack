@@ -37,7 +37,8 @@ const CHAMPION_DEBUG = false
 
 // Highest champion tier (1-5) allowed at a Dungeon Difficulty zone level.
 // Zone levels in config/dungeon_difficulty/difficulty_v2.json: Hearthlands 1, Wildlands 2,
-// small dungeons 1-3, Frontier zone and big lairs 4-5, Nether 5-7, End 7-8.
+// Overworld dungeons 2-5 (tier tags in kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/,
+// at least 4 in the Frontier), Frontier zone and big lairs 4-5, Nether 5-7, End 7-8.
 function maxTierForZoneLevel(level) {
   if (level <= 1) return 2
   if (level <= 3) return 3

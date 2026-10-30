@@ -42,7 +42,7 @@ hash = "97907540cb387433baaf5343b06bff965eeae14ef9617263e00a68086124146e"
 
 [[files]]
 file = "config/dungeon_difficulty/difficulty_v2.json"
-hash = "8cddd7d133f5da06b90b478360267bec97c9eabe89ededa6bf85d914e5bc2d44"
+hash = "12da21cbf53d82b9364beb9f14e6521ab9e99aab63341dd375db26a61026deee"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -50,7 +50,7 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_overworld.snbt"
-hash = "2d86717cd4aa25dd41117d80bcfc7c0bd5ddbd0247956a04c00f295631f6ada8"
+hash = "44c130e7b28f7c7f5a3b7c484522da365e937244917c21486409e6b1580f0671"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_nether.snbt"
@@ -58,11 +58,11 @@ hash = "71660741bf916beaa857b5bfff20780744860f420c85eed84067352fb7568121"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_end.snbt"
-hash = "bb65ff9ff2b7a85dd13703190224e752d72eab44c0b756bb048d1640c10fdc2f"
+hash = "9e6bda2f22e71abce4dbe0daacf56a3c292c1ac53923bad876ee60719a24746f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
-hash = "c0df46bf55bb2cd1901be9fd0415ab703df6cfd7261b37dd201bdc27defc82cf"
+hash = "3bb2be2572e3fcdc00538d11aa5a17cd8393a5f34ae65bb3c5db841bb482d90d"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -70,7 +70,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "eb6461cc261f59ffc310f70a8b6c1b69490712b7d3c873cdb2754ee82e25edc4"
+hash = "0c0387a21b12fd21db6dc51394597f4d6d407eb1071d1129a22d1696e57cb704"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -79,6 +79,10 @@ hash = "e773901d9a53b3c38973e5bbd1e8c4c6abd19edd692733fbd3619929e6fbb655"
 [[files]]
 file = "config/ftbteams-server.snbt"
 hash = "b363301b3243d56fc32dbb3ee498abe1bd1b1a20e74cdbe5c8a3581e956f742d"
+
+[[files]]
+file = "config/gazebo/villages.json"
+hash = "2488d0fbb03859c43940f6e3939f09c9570bfdccb6fb49101bb2ad5c9a2fc11f"
 
 [[files]]
 file = "config/hardcorerevival-common.toml"
@@ -349,8 +353,16 @@ file = "config/rpg_series/loot_equipment_v2.json"
 hash = "f863abbe994f65d7f7d178fc5ff03a017648722a7f8429e80a61a400363ceeca"
 
 [[files]]
+file = "config/rpg_series/loot_scrolls_v2.json"
+hash = "707adf77913c1be71539ba149fc6077a23498e3fab72757fd42b387c711ca12f"
+
+[[files]]
 file = "config/scalingmobs-common.toml"
 hash = "eb80ef84c2f931d9185b019fa059406b6248ee4fc404c2bb6b141d4cdb935e54"
+
+[[files]]
+file = "config/serilum/villagespawnpoint.json"
+hash = "2fb20fdc920cf6496ab9d3c61c15b96c3d5937cc51d91917a65b8b0ba45c467e"
 
 [[files]]
 file = "config/spell_engine/server.json5"
@@ -585,6 +597,14 @@ file = "kubejs/data/apotheosis/rarity_override/apotheosis/shears.json"
 hash = "c62480cdb49835104fb189a14bc519a4d16b73e35d0cd9970cb4a10a3c170726"
 
 [[files]]
+file = "kubejs/data/dungeon_difficulty/tags/block/no_mining_exempt.json"
+hash = "ec44faefb9041c6db1ad11c24e9cdfda5969e06fb477f56c30d264997fe1c01a"
+
+[[files]]
+file = "kubejs/data/dungeon_difficulty/tags/worldgen/structure/no_mining.json"
+hash = "c2e8eab0df6cc5c365fd3fabdd2cdbad6f3971d7f3e879e3b07138ae7507cc4a"
+
+[[files]]
 file = "kubejs/data/dungeons_arise/loot_table/archeology/kisegi_sanctuary/kisegi_sanctuary_archeology.json"
 hash = "2f6f5c24929484d4beaa8994103d767f4fd93fbbefa4b524a9ef0a068b82a4c9"
 
@@ -609,6 +629,18 @@ file = "kubejs/data/dungeons_arise/loot_table/chests/undead_pirate_ship/undead_p
 hash = "ea17ca8a87a8cf1d6b5d405dc87fc7747b795f2b2faa81fb3036aa5d5d515d32"
 
 [[files]]
+file = "kubejs/data/dungeons_arise/tags/worldgen/biome/has_structure/illager_campsite_biomes.json"
+hash = "12567b209bec1c3b92357ee0fe511c45ff952bcf3e19899f376e2bfb4147cb02"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/tags/worldgen/biome/has_structure/illager_windmill_biomes.json"
+hash = "7cb003a3446c2725e888df611df862af3839b050f37d3f5862f4448d4803ea44"
+
+[[files]]
+file = "kubejs/data/gazebo/lithostitched/worldgen_modifier/village/plains.json"
+hash = "74156b32d5e36c7fc0e3a27178320cf180a9eede87c6d3c8fabcca09e3d447cf"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/jobs/alchemist.json"
 hash = "e93b413d44eb8e3a38f1da017daf3c60f1fd80bc6b6db85952d491d8dbc17d9c"
 
@@ -623,6 +655,30 @@ hash = "6a8739b34072b758ff654ba727f6814ff4aba0a0f4da1c3c33cc293d463b5fea"
 [[files]]
 file = "kubejs/data/minerpg/advancement/jobs/lumberjack.json"
 hash = "ce667c229c9d48276562d1c9a82e5ab343f199085dde25d15dac1a26ecf1205b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tour/any.json"
+hash = "7d3dc0e7bf97b6ed130bb8cd82ac3fcbfa8191fad6b799cfdd5145d226454a1c"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tour/barracks.json"
+hash = "884acd000ddcba9afe35e606d01907b2479ccc69448278d1764447f23121ed5f"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tour/pub.json"
+hash = "ac67005c74b7ef56b71317b6597ef4cc83f25d3fdc9c3f391864965acea43cdd"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tour/range.json"
+hash = "d9f186ef1485324b200fe625a0cc79137db05e1eb90f6bcb0c8b2e2fa8f799ae"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tour/sanctuary.json"
+hash = "e995adb2d6018497b6e4a9405caf6192c86ea91497d1bcaf83c87095b30cf01b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tour/wizard.json"
+hash = "e9e387c03579a4fe1c7dcc74d2b0403cff458c8cb4e570506a55bc66f441bbab"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/tutorial/bind_spell.json"
@@ -2073,6 +2129,42 @@ file = "kubejs/data/minerpg/gems/caster/arcanist.json"
 hash = "8e41e7f632f3b9733a7552aa4fdd1ec860d7243598af472f6af07be0e465cc0b"
 
 [[files]]
+file = "kubejs/data/minerpg/loot_table/map/amethyst_nest.json"
+hash = "853c2ab10d758aade2b447764c78d2e4cfc1c9660a99ff25b71a047778ec708c"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/ancient_city.json"
+hash = "cc533187fcfe5a9e7594e21e787470bb063e02c019766eafd56537b6965975c4"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/ancient_factory.json"
+hash = "e2636f4588e606725a32b200e3833b03c97d4033e8cfd6ed5be572fc36172484"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/cursed_pyramid.json"
+hash = "21cada782d894578598eca3e19f0d8263bfccc35b7d7b48bf12a0d59d496168c"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/frosted_prison.json"
+hash = "0bb33c35b010277918449f337fe7531250560e28dea6e7f70a57e1b68e10f70e"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/great_dungeon.json"
+hash = "0ff11eea9ec80fb90c78a067747b28c5ca2cad43a4b7a9b462f4bf91bc99df6d"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/small_dungeon.json"
+hash = "698b76a83a19a11f188f34720c323614488be403ab30cc3db04133cf29c40f94"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/stronghold.json"
+hash = "853c6fe717774a7be91b36d6f38ce338cdacdb66a2c5a7c91a123d343dacc701"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/sunken_city.json"
+hash = "78a9ef784969c93c33d6b56465bed0e35f06886a5b2ab03dca25f18fdb51bd38"
+
+[[files]]
 file = "kubejs/data/minerpg/rarity_override/apotheosis/boots.json"
 hash = "fd4ee4368811efa168def98b5e0cb27824e6660de6a8571563f135826dc17b5d"
 
@@ -2093,6 +2185,10 @@ file = "kubejs/data/minerpg/tags/entity_type/boss.json"
 hash = "83f5bdd1b5c84bffe62cd4bd5007753567b6599397cfca3d3e46c8fa739d633d"
 
 [[files]]
+file = "kubejs/data/minerpg/tags/entity_type/group_scaled_boss.json"
+hash = "19043382cbb7c2190cc703d57171554ecf3e58cca22be8eb40f7c2ddcc2237cc"
+
+[[files]]
 file = "kubejs/data/minerpg/tags/worldgen/biome/zone/frontier.json"
 hash = "71af4ed5e6ac28ed8a6bcbecbcd57f10d35337c24a17338ad0ac3a4656cd12c5"
 
@@ -2105,8 +2201,68 @@ file = "kubejs/data/minerpg/tags/worldgen/biome/zone/wildlands.json"
 hash = "7ab8086e2101129cf3ed4a7b5d592ecc1ee2488dc1619c5b544ca534c7a0da3f"
 
 [[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/end.json"
+hash = "9ceed88580ef345cbcd330c44c91cf4f615d017633bc136605414a90ff1250cc"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/end_great.json"
+hash = "d0792c357353e2fdc0c261dd2fc494d633d3ca67849206afa3419c6f33a7c7dd"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_2.json"
+hash = "41e99477bdfb6a0b87c8798dbe7f7fe1c39b5a600214fe182905e70506a6e41b"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_3.json"
+hash = "e4c3b849954cd4ff9cf918ba4871ed1effb7f48f5f4b25433e29de8a99fe48a8"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_4.json"
+hash = "4a7267c0e0eb273dc1ca90d95b12bf65a4d01b1869891f4d81053f168485fe06"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_5.json"
+hash = "36b5c8d6d4f2474da98c2d947f495ba65fefd857be5682a98e1d837a644c71f9"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/nether.json"
+hash = "bcb47eb0509f55d2155106b51646b34ef07efdaa1f28c349372eceba63c7e613"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/overworld.json"
+hash = "8e3bda4803f8d9ea8b9a52328c1cc5fee3a404cecb68109f69df7e3f108a5b99"
+
+[[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/end_dungeons.json"
 hash = "1ada4d11959d902f5def579f8968c801d5359d20b4e8eb6174759c0928745c5f"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/map/amethyst_nest.json"
+hash = "00a1cd8831004c06fc05f0f0b593bbb18a7eb14fa6479ecaead2100a0548cfbf"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/map/ancient_city.json"
+hash = "9d26c06ba9fc689ba0e73ecfe42fbfc9a8011888c4d3b6e6e8684dafd9d7fa5a"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/map/ancient_factory.json"
+hash = "84af63d10e57bb8c8c8e2e72efd5098195ed20a7b279f712425c56df00d34886"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/map/cursed_pyramid.json"
+hash = "12fa4742a19f6b74c3e237ac450a1af9f6a3ded2aa26a21d740247567e44fdba"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/map/frosted_prison.json"
+hash = "898d73ea5ceb11a93035765ba2e013e853bc5c358611654afbe3ec8cf0f89068"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/map/great_dungeon.json"
+hash = "4ac36454618bc7a19f8e7761244f9dd7f23c8f62ad25da4b1b43af49df9672e2"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/map/sunken_city.json"
+hash = "1d1f8d166828c76867900cbc438cbe7364e9da0fa4e4a2a96c1ae416b9ce5d8b"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/nether_dungeons.json"
@@ -2133,6 +2289,10 @@ file = "kubejs/data/minerpg/tags/worldgen/structure/wildlands_dungeons.json"
 hash = "9826f513cb9557b3349bf32fa137b92ec8eafc90fdf050e9b007960ef67da776"
 
 [[files]]
+file = "kubejs/data/nova_structures/tags/worldgen/biome/illager_hideout.json"
+hash = "0f0e33e5d9cba92cb9c90faa91cd0730237b7d0a7a58b92975324d7aa7a67675"
+
+[[files]]
 file = "kubejs/data/skill_tree_rpgs/puffish_skills/categories/class_skills/experience.json"
 hash = "dd15236469415557bd98283ad09378df547639d6623cfcda91d9328a85848dd5"
 
@@ -2150,7 +2310,7 @@ hash = "4294af65e087ec534600562d53733f745dbedd4047f71abb6cb11db106d85bfa"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_champions.js"
-hash = "cd36c2d6d8870a21c88477d1f952e73ca73583591440c6692bfef7c1acc91708"
+hash = "520891bfab3f2e3451c945e9aae70f931be8d3598357cb778c1eafd2f3cea8b7"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_items.js"
@@ -2269,6 +2429,11 @@ metafile = true
 [[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
+metafile = true
+
+[[files]]
+file = "mods/collective.pw.toml"
+hash = "0e583a7964c9634f73ce4b28c014efce2da9259c9bf0dde8c978638a2fa34a44"
 metafile = true
 
 [[files]]
@@ -2429,6 +2594,11 @@ metafile = true
 [[files]]
 file = "mods/lithium.pw.toml"
 hash = "51e129832b04acd57da470fc41725bad5e101b6a6b1d4901fd8ea7a92b14e13d"
+metafile = true
+
+[[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "c0611d8448bc043f372a008a435e14aa238ba8fca52fd1d79634424576ea9e12"
 metafile = true
 
 [[files]]
@@ -2659,6 +2829,11 @@ metafile = true
 [[files]]
 file = "mods/ui-lib.pw.toml"
 hash = "4aecbee62e1c5c4ad4cca91839f1645b92e164e6420d97b2f0088d02e5a57be2"
+metafile = true
+
+[[files]]
+file = "mods/village-spawn-point.pw.toml"
+hash = "8db8eb77a8914404cfb2cbc7ad0e225ee6d563e7fa332423f954e9b1623e7bf6"
 metafile = true
 
 [[files]]

@@ -33,6 +33,8 @@
 	"quest.140588183FBEF823.title": "Know Thyself"
 	"quest.14102C2355F637DA.quest_desc": [
 		"Defeat &9The Leviathan&r in its flooded hall. It is untouchable out of the water, so fight it in its element."
+		""
+		"&7Reward: a map marking an ancient city of the Frontier.&r"
 	]
 	"quest.14102C2355F637DA.quest_subtitle": "Boss"
 	"quest.14102C2355F637DA.title": "Teeth of the Tide"
@@ -51,9 +53,18 @@
 	]
 	"quest.160ED3FACCC66FD9.quest_subtitle": "Side task"
 	"quest.160ED3FACCC66FD9.title": "Shell Collector"
+	"quest.16410072A73C2220.quest_desc": [
+		"Targets in a fenced yard. The Archery Artisan sells bows, crossbows, arrows and archer armor."
+		""
+		"Find the building in a village and trade once with its merchant."
+	]
+	"quest.16410072A73C2220.quest_subtitle": "Class building"
+	"quest.16410072A73C2220.title": "The Archery Range"
 	"quest.1683BAA7EE6A9D08.quest_desc": [
 		"Craft Eyes of Ender from an ender pearl, blaze powder and your Void Shard. The shard stays in the grid."
 		"You need a dozen to wake an End portal (some frames already hold eyes)."
+		""
+		"&7Reward: a map marking the nearest stronghold.&r"
 	]
 	"quest.1683BAA7EE6A9D08.quest_subtitle": "Chapter start"
 	"quest.1683BAA7EE6A9D08.title": "Eyes of the Void"
@@ -79,6 +90,8 @@
 	"quest.1912871E23D2757E.title": "Grim Trophies"
 	"quest.1957E4BC9E79A53A.quest_desc": [
 		"Defeat &bMaledictus&r, the prisoner who became the prison."
+		""
+		"&7Reward: a map marking an ancient city of the Frontier.&r"
 	]
 	"quest.1957E4BC9E79A53A.quest_subtitle": "Boss"
 	"quest.1957E4BC9E79A53A.title": "The Cursed Warden"
@@ -103,6 +116,13 @@
 	]
 	"quest.1BC9B50E8EB7C872.quest_subtitle": "Your race and its power"
 	"quest.1BC9B50E8EB7C872.title": "Who Are You?"
+	"quest.1BCB2048A44AC85E.quest_desc": [
+		"Trappers speak of black ice where nothing grows. One of them still has a map."
+		""
+		"&7Reward: a map marking the Frosted Prison.&r"
+	]
+	"quest.1BCB2048A44AC85E.quest_subtitle": "Map"
+	"quest.1BCB2048A44AC85E.title": "Whispers of Ice"
 	"quest.1BD38E61C99DC272.quest_desc": [
 		"Past the outer islands stand purple cities. Take a gateway and find one."
 	]
@@ -122,11 +142,15 @@
 	"quest.1D4EBCBCFF715BE5.title": "Not All Blades Are Equal"
 	"quest.1E4A5E0883A15E45.quest_desc": [
 		"Something has nested under the fields. Find a small dungeon and clear out what lives there."
+		""
+		"&7Reward: a map marking the Amethyst Nest.&r"
 	]
 	"quest.1E4A5E0883A15E45.quest_subtitle": "Hearthlands"
 	"quest.1E4A5E0883A15E45.title": "Cellar Dwellers"
 	"quest.1EFEBF71C0647595.quest_desc": [
 		"Defeat the &6Ancient Remnant&r in the depths of the pyramid."
+		""
+		"&7Reward: a map marking an ancient city of the Frontier.&r"
 	]
 	"quest.1EFEBF71C0647595.quest_subtitle": "Boss"
 	"quest.1EFEBF71C0647595.title": "Bones of the Sun King"
@@ -146,7 +170,7 @@
 	"quest.20827BF57F7546BE.quest_subtitle": "Side task"
 	"quest.20827BF57F7546BE.title": "Keep of Ash"
 	"quest.208546346D7B1A57.quest_desc": [
-		"Stronger spells come from a Spell Binding Table. Village gazebos often have one, or build your own and ring it with bookshelves."
+		"Stronger spells come from a Spell Binding Table. Every plains village, including the one you started in, has a gazebo with one. You can also build your own and ring it with bookshelves."
 		"Put your tome in and bind a new spell with your experience levels."
 	]
 	"quest.208546346D7B1A57.quest_subtitle": "Learn new spells"
@@ -166,7 +190,9 @@
 	"quest.29E79544ED9ADE2F.title": "The Stronghold"
 	"quest.2C9281C642E70027.quest_desc": [
 		"The &aHearthlands&r are the gentle lands: plains, forests, meadows and rivers, with villages, taverns and small dungeons. A good place to learn your class."
-		"Find a village."
+		"Your journey starts in a plains village. Walk its streets to begin."
+		""
+		"&7Reward: a map marking the nearest small dungeon.&r"
 	]
 	"quest.2C9281C642E70027.quest_subtitle": "Hearthlands"
 	"quest.2C9281C642E70027.title": "The Hearth Road"
@@ -234,6 +260,13 @@
 	]
 	"quest.3F043D30988BC476.quest_subtitle": "Party HUD (H)"
 	"quest.3F043D30988BC476.title": "Better Together"
+	"quest.3F2D9F92D902836B.quest_desc": [
+		"A guard house with weapon racks. The Arms Dealer sells daggers, sickles, axes and armor for Rogues and Warriors."
+		""
+		"Find the building in a village and trade once with its merchant."
+	]
+	"quest.3F2D9F92D902836B.quest_subtitle": "Class building"
+	"quest.3F2D9F92D902836B.title": "The Barracks"
 	"quest.4002DA8DFCA3AC1A.quest_desc": [
 		"Masked Umvuthana guard a grove in the savanna. Their chief, &6Umvuthi, the Sunbird&r, calls down sunfire and heals behind his followers."
 		"Optional. Everyone nearby at the kill earns a Sunbird Plume."
@@ -277,6 +310,20 @@
 		"Piglins hoard gold in huge black fortresses. Find a bastion."
 	]
 	"quest.47192179145EF3AD.title": "Bastion of Gold"
+	"quest.498B6C57012F8D8C.quest_desc": [
+		"You start in a plains village. Besides its gazebo, villages can have buildings for the classes, each with its own merchant:"
+		"- &dWizard Tower&r: Wizard Merchant (wizards and mages)"
+		"- &eSanctuary&r: Monk (paladins and priests)"
+		"- &cBarracks&r: Arms Dealer (rogues and warriors)"
+		"- &aArchery Range&r: Archery Artisan (archers)"
+		"- &6Pub&r: Luthier (bards)"
+		"A Jeweler sells rings and necklaces. Not every village has every building: if yours lacks one, the next village may have it."
+		"Berserkers, forcemasters and witchers have no building of their own; the Arms Dealer and Jeweler serve everyone."
+		""
+		"Trade once with any of these merchants. Use the emeralds from your calling."
+	]
+	"quest.498B6C57012F8D8C.quest_subtitle": "Visit the village"
+	"quest.498B6C57012F8D8C.title": "Merchants of Every Calling"
 	"quest.4C685D602A4CCFA3.quest_desc": [
 		"Diggers earn experience digging dirt, sand, gravel and clay. Carry 32 of one."
 	]
@@ -293,9 +340,25 @@
 	]
 	"quest.50C778B21D914B33.quest_subtitle": "Side task"
 	"quest.50C778B21D914B33.title": "Echoes Below"
+	"quest.516F384D63226205.quest_desc": [
+		"A small white chapel. The Monk sells holy weapons, armor and healing runes for Paladins and Priests."
+		""
+		"Find the building in a village and trade once with its merchant."
+	]
+	"quest.516F384D63226205.quest_subtitle": "Class building"
+	"quest.516F384D63226205.title": "The Sanctuary"
+	"quest.5342B109738F0034.quest_desc": [
+		"Fishermen avoid one stretch of sea: towers stand under the water there. They marked it for you."
+		""
+		"&7Reward: a map marking the Sunken City.&r"
+	]
+	"quest.5342B109738F0034.quest_subtitle": "Map"
+	"quest.5342B109738F0034.title": "Whispers of the Tide"
 	"quest.54854E6D0A86E2C6.quest_desc": [
 		"The &cFrontier&r is the extreme: frozen peaks, ice spikes, the deep dark and the deep ocean. The hardest lands of this world."
 		"Beat at least one Wildlands boss, then find an ancient city in the deep dark."
+		""
+		"&7Reward: a map marking the Ancient Factory.&r"
 	]
 	"quest.54854E6D0A86E2C6.quest_subtitle": "Frontier"
 	"quest.54854E6D0A86E2C6.title": "The Frontier"
@@ -304,6 +367,13 @@
 	]
 	"quest.551B4EC7917C7B74.quest_subtitle": "Boss"
 	"quest.551B4EC7917C7B74.title": "Forged in Fury"
+	"quest.5542D87C1BF085E8.quest_desc": [
+		"A lively pub. The Luthier sells lutes and other instruments for Bards."
+		""
+		"Find the building in a village and trade once with its merchant."
+	]
+	"quest.5542D87C1BF085E8.quest_subtitle": "Class building"
+	"quest.5542D87C1BF085E8.title": "The Bard's Pub"
 	"quest.558D7ACBE84CC796.quest_desc": [
 		"Blazes guard the fortress. Their rods feed brewing stands and Eyes of Ender alike."
 	]
@@ -342,6 +412,13 @@
 	]
 	"quest.5E38F20E3A481EE5.quest_subtitle": "Hearthlands"
 	"quest.5E38F20E3A481EE5.title": "Glitter in the Deep"
+	"quest.5E8BD5E5357754FB.quest_desc": [
+		"A tall tower of stone and purple glass. The Wizard Merchant sells staves, wands, robes and runes for Arcane, Fire and Frost Wizards (and mages can buy runes there too)."
+		""
+		"Find the building in a village and trade once with its merchant."
+	]
+	"quest.5E8BD5E5357754FB.quest_subtitle": "Class building"
+	"quest.5E8BD5E5357754FB.title": "The Wizard Tower"
 	"quest.5F0FA75876070FF6.quest_desc": [
 		"End ships carry a pair of wings. Claim them."
 	]
@@ -417,6 +494,13 @@
 	]
 	"quest.76FFB30A032160C1.quest_subtitle": "Optional boss"
 	"quest.76FFB30A032160C1.title": "Rimefang"
+	"quest.785E70544950B7A5.quest_desc": [
+		"Caravan guards tell of a pyramid that swallows the sun. Ask around, and someone sketches you a map."
+		""
+		"&7Reward: a map marking the Cursed Pyramid.&r"
+	]
+	"quest.785E70544950B7A5.quest_subtitle": "Map"
+	"quest.785E70544950B7A5.title": "Whispers of Sand"
 	"quest.7920CBCE701DE238.quest_desc": [
 		"An Eye of Flame shows the way to the burning arena. Craft one."
 	]
@@ -435,6 +519,8 @@
 	"quest.7AD6EC34B35830B0.quest_desc": [
 		"Defeat the &dAmethyst Crab&r. Everyone nearby at the kill earns a Geode Claw for this quest."
 		"The claw raises your world tier to &eVenture&r: monsters wear more armor, rare monsters start to roam, and gear drops in iron and better rarities."
+		""
+		"&7Reward: a map marking a great dungeon of the Wildlands.&r"
 	]
 	"quest.7AD6EC34B35830B0.quest_subtitle": "Boss"
 	"quest.7AD6EC34B35830B0.title": "Shell Shock"
@@ -461,33 +547,47 @@
 	"quest.7F3ACDC21971B67E.quest_subtitle": "Cooking (Farmer's Delight)"
 	"quest.7F3ACDC21971B67E.title": "A Feast for the Party"
 	"reward.101C0F1F77A34A36.title": "Berserker"
+	"reward.113FC9A4C49E6433.title": "Map to a Small Dungeon"
 	"reward.121F3AC8B68AF412.title": "+1 talent point"
 	"reward.1283E905E288BBDD.title": "Earth Mage"
+	"reward.1432181C873ED062.title": "Map to an Ancient City"
 	"reward.145975B3287423F6.title": "Rogue"
+	"reward.160FB3F4CEC75B27.title": "Map to the Sunken City"
+	"reward.19AC4242A24009D8.title": "Map to the Frosted Prison"
 	"reward.1A9543EB3DAAEE9A.title": "+1 talent point"
 	"reward.1B56AF9B35492A83.title": "Deadeye"
+	"reward.20F460CCC42134B7.title": "Map to a Great Dungeon"
 	"reward.24538A39D1C08953.title": "Bard"
 	"reward.2ED37D3123F7FE03.title": "Tundra Hunter"
 	"reward.31C569972EEB20B8.title": "Wind Mage"
+	"reward.32855D8B687FD180.title": "Map to the Ancient Factory"
 	"reward.32E8BE12F1C33A56.title": "Arcane Wizard"
 	"reward.35BE7033ECA14120.title": "+1 talent point"
 	"reward.3A213B34E654B328.title": "Frost Wizard"
 	"reward.47638B6BFE884E36.title": "Priest"
 	"reward.485028E3448A852B.title": "Witcher (Blade)"
 	"reward.4D1BE821DDD5FA70.title": "War Archer"
+	"reward.4D34157362C8FDFC.title": "Map to an Ancient City"
 	"reward.4E79CFDAE25B9A8D.title": "Warrior"
 	"reward.4F6851F81574E735.title": "Fire Wizard"
 	"reward.5640AEE2A26C7EE3.title": "Forcemaster"
 	"reward.564563EC1D693729.title": "Paladin"
+	"reward.5E06483D725045B2.title": "Map to an Ancient City"
 	"reward.5ECDDBA48C71A7D6.title": "Archer"
 	"reward.5EE93922FA92E40E.title": "+1 talent point"
 	"reward.6055BF0FF9C8EE1F.title": "Witcher (Signs)"
+	"reward.67A4AA648230E254.title": "Map to the Amethyst Nest"
+	"reward.71EA04589D7BCA18.title": "Map to the Stronghold"
+	"reward.797292397D0CD70A.title": "Map to the Cursed Pyramid"
 	"reward.7ABB09364EF09AFD.title": "Water Mage"
 	"reward_table.1DF313CE425EA7B8.title": "Class starter kits"
 	"task.11B5C5B357764DF0.title": "Explore an End castle or lighthouse"
+	"task.1284ABB32E41FD5A.title": "Ask for directions"
+	"task.15386B424EFBFD1F.title": "Ask for directions"
 	"task.163DD1B46441069F.title": "I am ready to choose"
 	"task.17F83656E7E25EF4.title": "Find the Sunken City"
 	"task.17F947AABE42C745.title": "Find the Cursed Pyramid"
+	"task.18728C590A91F64B.title": "Trade with the merchant"
 	"task.18AE9273ADA2A094.title": "Find the Soul Blacksmith"
 	"task.18AF28D6B5F16691.title": "Find the Frosted Prison"
 	"task.19B7A34DEDBD1C89.title": "Find the Burning Arena"
@@ -495,8 +595,10 @@
 	"task.1B238D6515501D30.title": "Bind a spell"
 	"task.1B8AB9E29A00271C.title": "Open the stats screen"
 	"task.1D70722A7FF6C39A.title": "Enter the End"
+	"task.1FD1DBDA560D1085.title": "Trade with the merchant"
 	"task.21C6EC0D4872DB43.title": "Find the Ancient Factory"
 	"task.247A9EA8A774C6D2.title": "Enter the Nether"
+	"task.24BA2AB8D1004409.title": "Trade with the merchant"
 	"task.255650F195F11137.title": "Join two jobs"
 	"task.27DC3743B94D70AE.title": "Unlock a talent"
 	"task.29C18C0DB954D588.title": "Citadel Keystone"
@@ -517,10 +619,12 @@
 	"task.48D711FD6A2A126F.title": "Place a block"
 	"task.4A63160D953DD699.title": "Use your racial power"
 	"task.4A922A57DA24E513.title": "Frostbound Crown"
+	"task.4AB911E09D2D62A3.title": "Trade with a class merchant"
 	"task.4D29AF731F304F2C.title": "Understood"
 	"task.4DABEFEF63961B92.title": "Dragonscale"
 	"task.4E54A909613B1160.title": "Find the Amethyst Nest"
 	"task.4FA2E8445AFFB9F0.title": "Wrought Rivet"
+	"task.54761F8D3820AA01.title": "Trade with the merchant"
 	"task.55690ED8CFB47271.title": "Understood"
 	"task.57FE63978AC454DA.title": "Find a bastion"
 	"task.583A2578AA83D3DF.title": "Find a small dungeon"
@@ -529,6 +633,7 @@
 	"task.5E7654375954BFB2.title": "Molten Heart"
 	"task.5FD54099D5C15F75.title": "Find the Ruined Citadel"
 	"task.60353EFCB45D1EFE.title": "Enchant an item"
+	"task.63B7D85A9DD9382D.title": "Trade with the merchant"
 	"task.645F29DBB2048238.title": "Find a Nether fortress"
 	"task.6B7FB8F75E0ABD9D.title": "Find an ancient city"
 	"task.6C9EF992B5F2CAF0.title": "Abyssal Scale"
@@ -540,6 +645,7 @@
 	"task.7215B11B3E0BA590.title": "Void Shard"
 	"task.72968790A3198598.title": "Visit a village"
 	"task.76C0A5A98518E865.title": "Activate a waystone"
+	"task.77BACE939F14E365.title": "Ask for directions"
 	"task.77C4004A4EC01217.title": "Explore a great dungeon"
 	"task.78A118B13A8C6536.title": "Brew a potion"
 	"task.7B512AAA79226288.title": "Salvage a piece of gear"

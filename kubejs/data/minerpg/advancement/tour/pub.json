@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "luthier": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"bards_rpg:luthier\"}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "luthier"
+    ]
+  ]
+}

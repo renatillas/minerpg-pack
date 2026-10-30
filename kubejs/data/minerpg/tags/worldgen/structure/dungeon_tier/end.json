@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "nova_structures:end_lighthouse",
+      "required": false
+    },
+    {
+      "id": "nova_structures:end_ship",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise:aviary",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise:heavenly_challenger",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise:heavenly_conqueror",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise:heavenly_rider",
+      "required": false
+    }
+  ]
+}

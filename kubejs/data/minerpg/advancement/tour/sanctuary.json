@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "monk": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"paladins:monk\"}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "monk"
+    ]
+  ]
+}

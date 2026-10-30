@@ -1,0 +1,19 @@
+{
+  "values": [
+    { "id": "#minecraft:leaves", "required": false },
+    { "id": "#minecraft:replaceable", "required": false },
+    { "id": "#minecraft:candles", "required": false },
+    { "id": "minecraft:vine", "required": false },
+    { "id": "minecraft:glow_lichen", "required": false },
+    { "id": "minecraft:soul_torch", "required": false },
+    { "id": "minecraft:soul_wall_torch", "required": false },
+    { "id": "minecraft:redstone_torch", "required": false },
+    { "id": "minecraft:redstone_wall_torch", "required": false },
+    { "id": "minecraft:lantern", "required": false },
+    { "id": "minecraft:soul_lantern", "required": false },
+    { "id": "minecraft:ladder", "required": false },
+    { "id": "minecraft:scaffolding", "required": false },
+    { "id": "minecraft:decorated_pot", "required": false },
+    { "id": "minecraft:sweet_berry_bush", "required": false }
+  ]
+}

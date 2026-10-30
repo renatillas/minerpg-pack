@@ -1,0 +1,62 @@
+{
+  "criteria": {
+    "wizard_merchant": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"wizards:wizard_merchant\"}}"
+        }
+      }
+    },
+    "monk": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"paladins:monk\"}}"
+        }
+      }
+    },
+    "arms_merchant": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"rogues:arms_merchant\"}}"
+        }
+      }
+    },
+    "archery_artisan": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"archers:archery_artisan\"}}"
+        }
+      }
+    },
+    "luthier": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"bards_rpg:luthier\"}}"
+        }
+      }
+    },
+    "jeweler": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"jewelry:jeweler\"}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "archery_artisan",
+      "arms_merchant",
+      "jeweler",
+      "luthier",
+      "monk",
+      "wizard_merchant"
+    ]
+  ]
+}

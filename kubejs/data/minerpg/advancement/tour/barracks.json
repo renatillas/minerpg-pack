@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "arms_merchant": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"rogues:arms_merchant\"}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "arms_merchant"
+    ]
+  ]
+}

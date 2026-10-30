@@ -27,6 +27,13 @@
 					type: "xp"
 					xp: 200
 				}
+				{
+					command: "/loot give @s loot minerpg:map/stronghold"
+					id: "71EA04589D7BCA18"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			tasks: [
 				{

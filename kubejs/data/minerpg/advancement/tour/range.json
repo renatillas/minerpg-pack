@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "archery_artisan": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"archers:archery_artisan\"}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "archery_artisan"
+    ]
+  ]
+}
