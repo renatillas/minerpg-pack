@@ -18,11 +18,15 @@ hash = "21069c1acb2333c10a043e9c52f81e65fb4e3f959868849b6b5b230af59f3adf"
 
 [[files]]
 file = "config/defaultoptions/extra/config/RPG-HUD"
-hash = "a1bd41a1768a8536f4ff5af4a8e2ee555a2d89ac9f4769e995d8707045e50aae"
+hash = "e9b040d9f24ab05cbcc230c52f9af0b5174655977aec3d355a7df017ebb55335"
 
 [[files]]
 file = "config/defaultoptions/extra/config/dungeon_difficulty/client_settings.json"
 hash = "9aadd59bd32715e85f7c79b8a484fdde1fe45f91abc8ad2eba195d77a3c1d709"
+
+[[files]]
+file = "config/defaultoptions/extra/config/jade/jade.json"
+hash = "209093b92398669adba9df98264a0d957ed10b7ba0f5849d19423c52fb47284b"
 
 [[files]]
 file = "config/defaultoptions/extra/config/jobsplus-client.yaml"
