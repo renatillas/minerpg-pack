@@ -266,6 +266,11 @@ hash = "ee3b820bf7350e4a48726ac7931e8e0e3fcd76688c7db0741a8d1d8d26adf69e"
 metafile = true
 
 [[files]]
+file = "mods/neoorigins.pw.toml"
+hash = "aed29385ddce87da786ebf7b073341074b4e1bec3a09ec9f2648a2cb7bdcaac2"
+metafile = true
+
+[[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 hash = "299ed58980f5c02afbaabcc52d5e573e8b8ab0c2c30fd688d6d7e86e7ac6bf6d"
 metafile = true

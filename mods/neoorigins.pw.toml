@@ -1,0 +1,15 @@
+name = "NeoOrigins"
+filename = "neoorigins-2.2.32+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/CyberDay1/NeoOrigins/releases/download/v2.2.32/neoorigins-2.2.32%2B1.21.1.jar"
+hash-format = "sha256"
+hash = "e5b390875e166372fe5cd79376f3d9dc8d42c37a0e1497d4f8aff083c8fe8acc"
+
+[update]
+[update.github]
+branch = "master"
+regex = "1\\.21\\.1\\.jar$"
+slug = "CyberDay1/NeoOrigins"
+tag = "v2.2.32"
