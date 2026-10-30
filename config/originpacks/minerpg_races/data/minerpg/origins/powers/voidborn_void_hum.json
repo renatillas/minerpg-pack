@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Void Hum"
+  },
+  "description": {
+    "text": "+1 Arcane Spell Power."
+  },
+  "attribute": "spell_power:arcane",
+  "amount": 1.0,
+  "operation": "add_value"
+}

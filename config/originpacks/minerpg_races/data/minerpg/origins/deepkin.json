@@ -1,0 +1,21 @@
+{
+  "name": {
+    "text": "Deepkin"
+  },
+  "description": {
+    "text": "Stout delvers raised in the deepslate dark. Their skin turns a blade like stone, their eyes drink the gloom, and the earth answers when they call."
+  },
+  "icon": "minecraft:deepslate",
+  "impact": "medium",
+  "order": 2,
+  "powers": [
+    "minerpg:deepkin_stone_hide",
+    "minerpg:deepkin_delver",
+    "minerpg:deepkin_gloomsight",
+    "minerpg:deepkin_earthbound",
+    "minerpg:deepkin_stoneskin",
+    "minerpg:deepkin_stocky",
+    "minerpg:deepkin_heavy_bones"
+  ],
+  "upgrades": []
+}

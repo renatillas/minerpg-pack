@@ -1,0 +1,57 @@
+{
+  "type": "neoorigins:active_ability",
+  "name": {
+    "text": "Entangle"
+  },
+  "description": {
+    "text": "Roots burst from the ground: non-player creatures within 6 blocks are held in place (Slowness VI) for 4 s. Cooldown 90 s."
+  },
+  "cooldown_ticks": 1800,
+  "cooldown_icon": "minecraft:hanging_roots",
+  "entity_action": {
+    "type": "neoorigins:and",
+    "actions": [
+      {
+        "type": "neoorigins:area_of_effect",
+        "radius": 6.0,
+        "include_source": false,
+        "entity_condition": {
+          "type": "neoorigins:not",
+          "condition": {
+            "type": "neoorigins:entity_type",
+            "entity_type": "minecraft:player"
+          }
+        },
+        "entity_action": {
+          "type": "neoorigins:and",
+          "actions": [
+            {
+              "type": "neoorigins:apply_effect",
+              "effect": "minecraft:slowness",
+              "duration": 80,
+              "amplifier": 5
+            },
+            {
+              "type": "neoorigins:spawn_particles",
+              "particle": "minecraft:composter",
+              "count": 15,
+              "speed": 0.05,
+              "offset_y": 0.3,
+              "spread": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.5
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "neoorigins:play_sound",
+        "sound": "minecraft:block.rooted_dirt.break",
+        "volume": 1.0,
+        "pitch": 0.6
+      }
+    ]
+  }
+}

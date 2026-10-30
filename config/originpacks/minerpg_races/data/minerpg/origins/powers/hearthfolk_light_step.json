@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Light Step"
+  },
+  "description": {
+    "text": "One extra combat roll charge."
+  },
+  "attribute": "combat_roll:count",
+  "amount": 1.0,
+  "operation": "add_value"
+}

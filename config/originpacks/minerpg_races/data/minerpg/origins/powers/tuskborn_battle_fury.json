@@ -1,0 +1,40 @@
+{
+  "type": "neoorigins:active_ability",
+  "name": {
+    "text": "Battle Fury"
+  },
+  "description": {
+    "text": "Blood up: Haste II for 15 s (faster swings and digging). Cooldown 120 s."
+  },
+  "cooldown_ticks": 2400,
+  "cooldown_icon": "minecraft:golden_axe",
+  "entity_action": {
+    "type": "neoorigins:and",
+    "actions": [
+      {
+        "type": "neoorigins:apply_effect",
+        "effect": "minecraft:haste",
+        "duration": 300,
+        "amplifier": 1
+      },
+      {
+        "type": "neoorigins:play_sound",
+        "sound": "minecraft:entity.piglin_brute.angry",
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "type": "neoorigins:spawn_particles",
+        "particle": "minecraft:angry_villager",
+        "count": 6,
+        "speed": 0.05,
+        "offset_y": 1.0,
+        "spread": {
+          "x": 1.5,
+          "y": 0.5,
+          "z": 1.5
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "type": "neoorigins:active_ability",
+  "name": {
+    "text": "Soul Siphon"
+  },
+  "description": {
+    "text": "Tear at the soul of the creature you are looking at (up to 12 blocks): it takes 6 damage and you heal 6. Cooldown 90 s."
+  },
+  "cooldown_ticks": 1800,
+  "cooldown_icon": "minecraft:soul_lantern",
+  "entity_action": {
+    "type": "neoorigins:raycast",
+    "distance": 12.0,
+    "entity": true,
+    "block": true,
+    "bientity_action": {
+      "type": "neoorigins:and",
+      "actions": [
+        {
+          "type": "neoorigins:target_action",
+          "action": {
+            "type": "neoorigins:and",
+            "actions": [
+              {
+                "type": "neoorigins:damage",
+                "amount": 6.0,
+                "source": {
+                  "name": "magic"
+                }
+              },
+              {
+                "type": "neoorigins:spawn_particles",
+                "particle": "minecraft:soul",
+                "count": 20,
+                "speed": 0.05,
+                "offset_y": 1.0,
+                "spread": {
+                  "x": 0.4,
+                  "y": 0.5,
+                  "z": 0.4
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "neoorigins:heal",
+          "amount": 6.0
+        },
+        {
+          "type": "neoorigins:play_sound",
+          "sound": "minecraft:particle.soul_escape",
+          "volume": 1.0,
+          "pitch": 0.8
+        }
+      ]
+    }
+  }
+}

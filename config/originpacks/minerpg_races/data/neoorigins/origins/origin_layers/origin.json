@@ -1,0 +1,16 @@
+{
+  "replace": true,
+  "order": 1,
+  "name": "origins.layer.origin",
+  "origins": [
+    "minerpg:hearthfolk",
+    "minerpg:deepkin",
+    "minerpg:grovekin",
+    "minerpg:tuskborn",
+    "minerpg:emberkin",
+    "minerpg:rimeborn",
+    "minerpg:voidborn",
+    "minerpg:gravebound"
+  ],
+  "allow_random": true
+}

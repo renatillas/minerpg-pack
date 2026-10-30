@@ -1,0 +1,10 @@
+{
+  "type": "neoorigins:prevent_action",
+  "name": {
+    "text": "Frostbound"
+  },
+  "description": {
+    "text": "Immune to freezing."
+  },
+  "action": "freeze"
+}

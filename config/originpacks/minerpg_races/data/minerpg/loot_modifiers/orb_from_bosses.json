@@ -1,0 +1,43 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ignis"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/netherite_monstrosity"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ender_guardian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/the_harbinger"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/the_leviathan"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ancient_remnant"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/maledictus"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/scylla"
+        }
+      ]
+    }
+  ],
+  "table": "minerpg:boss_orb"
+}

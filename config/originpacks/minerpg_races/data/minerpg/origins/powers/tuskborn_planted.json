@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Planted"
+  },
+  "description": {
+    "text": "+30% knockback resistance."
+  },
+  "attribute": "minecraft:knockback_resistance",
+  "amount": 0.3,
+  "operation": "add_value"
+}

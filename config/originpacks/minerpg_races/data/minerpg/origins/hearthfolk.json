@@ -1,0 +1,17 @@
+{
+  "name": {
+    "text": "Hearthfolk"
+  },
+  "description": {
+    "text": "Plain folk of the village lanes, quick on their feet and quicker with a deal. Where the Hearthfolk raise a shout, their friends stand a little taller."
+  },
+  "icon": "minecraft:bell",
+  "impact": "low",
+  "order": 1,
+  "powers": [
+    "minerpg:hearthfolk_light_step",
+    "minerpg:hearthfolk_haggler",
+    "minerpg:hearthfolk_rally"
+  ],
+  "upgrades": []
+}

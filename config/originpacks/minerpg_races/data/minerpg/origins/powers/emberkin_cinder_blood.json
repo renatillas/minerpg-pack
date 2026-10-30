@@ -1,0 +1,10 @@
+{
+  "type": "neoorigins:prevent_action",
+  "name": {
+    "text": "Cinder Blood"
+  },
+  "description": {
+    "text": "Immune to fire and lava."
+  },
+  "action": "fire"
+}

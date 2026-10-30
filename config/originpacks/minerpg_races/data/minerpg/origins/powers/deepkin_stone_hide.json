@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Stone Hide"
+  },
+  "description": {
+    "text": "+2 armor."
+  },
+  "attribute": "minecraft:armor",
+  "amount": 2.0,
+  "operation": "add_value"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "neoorigins:condition_passive",
+  "name": {
+    "text": "Water Bane"
+  },
+  "description": {
+    "text": "Takes 1 damage per second in water."
+  },
+  "interval": 20,
+  "condition": {
+    "type": "neoorigins:in_water"
+  },
+  "entity_action": {
+    "type": "neoorigins:damage",
+    "amount": 1.0,
+    "source": {
+      "name": "drown"
+    }
+  }
+}

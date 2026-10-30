@@ -1,0 +1,14 @@
+{
+  "type": "neoorigins:action_on_event",
+  "name": {
+    "text": "Hard Bargain"
+  },
+  "description": {
+    "text": "Villager and wandering trader prices are about 15% higher."
+  },
+  "event": "mod_trade_price",
+  "modifier": {
+    "operation": "multiplication",
+    "value": 1.15
+  }
+}

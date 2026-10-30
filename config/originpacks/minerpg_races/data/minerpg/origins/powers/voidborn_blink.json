@@ -1,0 +1,13 @@
+{
+  "type": "neoorigins:active_teleport",
+  "name": {
+    "text": "Blink"
+  },
+  "description": {
+    "text": "Step through space to the block you are looking at, up to 10 blocks away. Cooldown 60 s."
+  },
+  "range": 10.0,
+  "mode": "target",
+  "cooldown_ticks": 1200,
+  "cooldown_icon": "minecraft:ender_pearl"
+}

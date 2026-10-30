@@ -1,0 +1,68 @@
+{
+  "type": "neoorigins:active_ability",
+  "name": {
+    "text": "Ember Burst"
+  },
+  "description": {
+    "text": "Erupt in flame: non-player creatures within 5 blocks take 4 damage, burn for 5 s and are thrown back. Cooldown 90 s."
+  },
+  "cooldown_ticks": 1800,
+  "cooldown_icon": "minecraft:fire_charge",
+  "entity_action": {
+    "type": "neoorigins:and",
+    "actions": [
+      {
+        "type": "neoorigins:area_of_effect",
+        "radius": 5.0,
+        "include_source": false,
+        "entity_condition": {
+          "type": "neoorigins:not",
+          "condition": {
+            "type": "neoorigins:entity_type",
+            "entity_type": "minecraft:player"
+          }
+        },
+        "entity_action": {
+          "type": "neoorigins:and",
+          "actions": [
+            {
+              "type": "neoorigins:damage",
+              "amount": 4.0,
+              "source": {
+                "name": "fire"
+              }
+            },
+            {
+              "type": "neoorigins:set_on_fire",
+              "ticks": 100
+            }
+          ]
+        }
+      },
+      {
+        "type": "neoorigins:pull_entities",
+        "radius": 5.0,
+        "strength": -1.2,
+        "include_players": false
+      },
+      {
+        "type": "neoorigins:play_sound",
+        "sound": "minecraft:entity.blaze.shoot",
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "type": "neoorigins:spawn_particles",
+        "particle": "minecraft:flame",
+        "count": 60,
+        "speed": 0.05,
+        "offset_y": 1.0,
+        "spread": {
+          "x": 2.0,
+          "y": 0.5,
+          "z": 2.0
+        }
+      }
+    ]
+  }
+}

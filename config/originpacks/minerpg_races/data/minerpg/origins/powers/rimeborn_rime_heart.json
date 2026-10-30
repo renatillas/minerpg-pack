@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Rime Heart"
+  },
+  "description": {
+    "text": "+1 Frost Spell Power."
+  },
+  "attribute": "spell_power:frost",
+  "amount": 1.0,
+  "operation": "add_value"
+}

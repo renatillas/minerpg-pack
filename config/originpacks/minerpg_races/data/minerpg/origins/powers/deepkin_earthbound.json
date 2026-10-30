@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Earthbound"
+  },
+  "description": {
+    "text": "+0.5 Earth Spell Power."
+  },
+  "attribute": "spell_power:earth",
+  "amount": 0.5,
+  "operation": "add_value"
+}

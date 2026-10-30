@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Soulfire"
+  },
+  "description": {
+    "text": "+0.5 Soul Spell Power."
+  },
+  "attribute": "spell_power:soul",
+  "amount": 0.5,
+  "operation": "add_value"
+}

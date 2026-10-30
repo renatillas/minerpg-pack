@@ -1,0 +1,9 @@
+{
+  "type": "neoorigins:ender_gaze_immunity",
+  "name": {
+    "text": "Kindred Gaze"
+  },
+  "description": {
+    "text": "Endermen don't anger when you look at them."
+  }
+}

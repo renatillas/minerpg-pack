@@ -1,0 +1,19 @@
+{
+  "name": {
+    "text": "Rimeborn"
+  },
+  "description": {
+    "text": "Pale wanderers of the ice spikes, kin to the strays. Frost cannot bite them and deep snow cannot hold them; in the Nether's heat they wilt."
+  },
+  "icon": "minecraft:packed_ice",
+  "impact": "medium",
+  "order": 6,
+  "powers": [
+    "minerpg:rimeborn_frostbound",
+    "minerpg:rimeborn_snowstride",
+    "minerpg:rimeborn_rime_heart",
+    "minerpg:rimeborn_frost_nova",
+    "minerpg:rimeborn_heat_wilt"
+  ],
+  "upgrades": []
+}

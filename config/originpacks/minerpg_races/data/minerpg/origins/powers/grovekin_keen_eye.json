@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Keen Eye"
+  },
+  "description": {
+    "text": "+6% ranged damage."
+  },
+  "attribute": "ranged_weapon:damage",
+  "amount": 0.06,
+  "operation": "add_multiplied_base"
+}

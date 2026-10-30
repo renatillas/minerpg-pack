@@ -1,0 +1,20 @@
+{
+  "type": "neoorigins:persistent_effect",
+  "name": {
+    "text": "Heat Wilt"
+  },
+  "description": {
+    "text": "Weakness I while in the Nether."
+  },
+  "toggleable": false,
+  "condition": {
+    "type": "neoorigins:dimension",
+    "dimension": "minecraft:the_nether"
+  },
+  "effects": [
+    {
+      "effect": "minecraft:weakness",
+      "amplifier": 0
+    }
+  ]
+}

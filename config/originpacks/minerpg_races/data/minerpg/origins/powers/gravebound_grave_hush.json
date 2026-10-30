@@ -1,0 +1,10 @@
+{
+  "type": "neoorigins:sneaky",
+  "name": {
+    "text": "Grave Hush"
+  },
+  "description": {
+    "text": "Hostile creatures notice you from 30% closer than usual."
+  },
+  "detection_multiplier": 0.7
+}

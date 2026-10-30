@@ -1,0 +1,14 @@
+{
+  "type": "neoorigins:action_on_event",
+  "name": {
+    "text": "Haggler"
+  },
+  "description": {
+    "text": "Villager and wandering trader prices are about 15% lower."
+  },
+  "event": "mod_trade_price",
+  "modifier": {
+    "operation": "multiplication",
+    "value": 0.85
+  }
+}

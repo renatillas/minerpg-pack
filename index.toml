@@ -2,7 +2,227 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/neoorigins/content.toml"
-hash = "df2124478e28b5b6b84a18ea61172ec68b702232e0dbfdace0ed370ce9f7738a"
+hash = "1097fa8ef5dcd636b38c6b676d45fe97c67115d4efc533415903714546219337"
+
+[[files]]
+file = "config/neoorigins/gameplay.toml"
+hash = "ad6492bfed6bf35525e57ae0804756246a1683c426f9f0f1a53e013b05cd4fbf"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/loot_modifiers/orb_from_bosses.json"
+hash = "cca6221d0121f339150c8842d676bf7fc324cacd5c2404bd854192c922195ab3"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/loot_table/boss_orb.json"
+hash = "92d88118619c24c9e74bc36518f46033f55072159226d1685c734056ca3705d9"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/deepkin.json"
+hash = "08eda2e269df11457b34633493774f93a1ea19a974039429e5183476e184325e"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/emberkin.json"
+hash = "1c19bfca254a5e9ad01314a3e2e90fb275429f6eefd57772addfe31463941aea"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/gravebound.json"
+hash = "65b99253ca8de7b625845b2b991fe1fbc0ab0367ba974aac8c87c547a43a0b81"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/grovekin.json"
+hash = "be0d9b8eca297f57443debf359838c44b3b97a17e005e6d515ff4590481dc8a8"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/hearthfolk.json"
+hash = "d3095fde6e55dc1b265494aec7de602b4c5bf676700646443ad2718be7a0e83e"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/deepkin_delver.json"
+hash = "3b629c01d68cdd6a1544667d8f2751177e591e436b62319418666350029e2c4c"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/deepkin_earthbound.json"
+hash = "5eeefb28defbf61c9ad351aa5118c5702438a45e59cbaa4e2c260c6f18ce9766"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/deepkin_gloomsight.json"
+hash = "ebeb9a0d49f669354ffc53824ec9936adae551fc41472c6414e79969ed2532aa"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/deepkin_heavy_bones.json"
+hash = "a9cbf5a1874ba1359ac62c334baf0ebd174b3c396444ee20453ab65eebf6e5b3"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/deepkin_stocky.json"
+hash = "2eaaacff8a7fdece429d77d6886a78b312c3d3dabad679395415aa9d39142554"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/deepkin_stone_hide.json"
+hash = "15817eb45c0c67d285224aa8b2b49c3e6fbd193f6e1b204e524557e6b2d97219"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/deepkin_stoneskin.json"
+hash = "cca95fb3ce595f186d3359804d18dfa1da56664671e10061b4e66234eb92192d"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/emberkin_cinder_blood.json"
+hash = "8617785e962691b1d3fa115d1ffa62448303618d884c045ab16ab17cf5af3222"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/emberkin_doused.json"
+hash = "cd9056ae46cd1c5ad39a1f3cdfd0ee9e8d3d5b193f95ee13d5c1776ef6cab2d5"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/emberkin_ember_burst.json"
+hash = "7cd7b81bb2003f6a2bdba67af969bf7a7dbce0cc1249f790167d40ae5a213967"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/emberkin_kindled.json"
+hash = "0ae0ce4bd61ffc21173fe82496a420d92e04878bb76d76b9cefe3493de971000"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/gravebound_grave_hush.json"
+hash = "53be46f6bed171bbf9686d25e77bce2cccdf66c4397a0c80f290f4f970fe8447"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/gravebound_soul_siphon.json"
+hash = "2db3d6881978462274bbd24b6788713406110973f53ac60aec9e15ce793a5832"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/gravebound_soulfire.json"
+hash = "6e62895810d8e938d815ddc55d11cb955812f1fabd32265b7b65bfa02c27b325"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/gravebound_umbral_touch.json"
+hash = "1b4f84903abc3750cb518a8d42cabaa62dc6e8e563e52fdc2ac7d049296c12a9"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/gravebound_withered_vigor.json"
+hash = "eb570b8bfff1bdb387820c041e918419bacb74577b0f858f78750d219ac68bec"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/grovekin_entangle.json"
+hash = "a2fd90031c8d2adf644122385c0c5b952e9602084bf15a761395c9b90ab76a95"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/grovekin_forest_stride.json"
+hash = "f566b253cec705edae1b3ef61d55b556134119a535f90fc86b979e66005e4ec5"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/grovekin_keen_eye.json"
+hash = "32e5ea75226ecf5934bde3008183c87fe5161a77675812a1b2d83a67f2a4c0fe"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/grovekin_menders_touch.json"
+hash = "48a7ec560c7efedf254af54ef629f92f58f35aea5493320e6770b7454188d7de"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/grovekin_slight_frame.json"
+hash = "89703b1aa3e24c0a5bf798341a8b62c89387a8a09f026b4f10e96261292bb3ea"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/grovekin_wildsong.json"
+hash = "9b9b129dbe7009e28ef27247cdb92001e2797c762f58ce244f43b0f7b6a2477b"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/hearthfolk_haggler.json"
+hash = "a70a0c19039903ac74fb3205618aa7f12e71bd97f233d1ec2b56f13dd521a151"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/hearthfolk_light_step.json"
+hash = "d4981bdfb0454fea09ab376ec04a06abe6c2cd3c5b2ff67ee3baf153ccfa12a2"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/hearthfolk_rally.json"
+hash = "2114348c398f38451fe6e43b515343ded6dffcbab38427876b31bfb1a38cc771"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/rimeborn_frost_nova.json"
+hash = "21b7fb9cf0864a50c14da43ff8a3ded240954d2869523982154af58286b82e1c"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/rimeborn_frostbound.json"
+hash = "37bb79fac5377ee5c59ae59a9ab5ca7fb5cfe3aa48935e713bf4db139dd5dc1a"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/rimeborn_heat_wilt.json"
+hash = "54d72abe7bda7bb8deb47af2cf7f5e743473c096a0363e8365400f8771cb68c2"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/rimeborn_rime_heart.json"
+hash = "1446cb4bf0a154314fc32cd80aa93c758efd3da6c54480b08af51f464c4abeef"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/rimeborn_snowstride.json"
+hash = "07dc7aa1dcf452bdd326e1aa299981aa14777b819eba3d35c66674e956e61053"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/tuskborn_bastion_kin.json"
+hash = "5f70bcfdf24c3cbfc86b621666af36d04856f7d3e70fa2c774130fab1afa3a92"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/tuskborn_battle_fury.json"
+hash = "86e290ab41601e76523bebf47c5416a183b4fecf653cf7dc2ca11b3705a2069e"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/tuskborn_brutal_strikes.json"
+hash = "81871a132f68b6ac65b532ab589cf6296a984a590f181ec57beb20371676a9ee"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/tuskborn_hard_bargain.json"
+hash = "62b9d160844ea9aeb037940f3a8bbd31fb92751e01104324145299e65d1db6e9"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/tuskborn_planted.json"
+hash = "eb420ca143c04a37b47d2de772644cddc255c83afa160e9c098657e863988558"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/voidborn_blink.json"
+hash = "2bba5a9ed5baf5beedf502113c4a18abcd1199fa382a31b27a5e7483add1d7dd"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/voidborn_kindred_gaze.json"
+hash = "e8f1b7491b749b7414c8d721048921642c64f43d5fe0b45e915c9518101210e8"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/voidborn_void_hum.json"
+hash = "7d21709cea7e7223d5e6a6cf86a8a3723c1289ce2bce47ff66ccfb8ce16c607e"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/powers/voidborn_water_bane.json"
+hash = "a62998889ba97f6bc0f5fbf7ecb7f8df918fe52f9a24a220008522ca3961752a"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/rimeborn.json"
+hash = "e8166d1b8e5d0d8509b974daab7106b8fcd1f6c84801b864cda2b25e65a3e1f8"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/tuskborn.json"
+hash = "1bb8f277b53299b4be75f743bce6ea9f0b0b80336c6aed0d0af8b951bd220b70"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/origins/voidborn.json"
+hash = "55d16f832a7757419504e9e6c8b639fa4575d798d34f39bb4d3b37775a26f3c8"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/minerpg/tags/block/powder_snow.json"
+hash = "93b43d8cad60b06fa73d063d3ea374d696374ef5c9d8e5de03897172c23bccc1"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/neoforge/loot_modifiers/global_loot_modifiers.json"
+hash = "1509aa38316f8c2f9803bc597e7a6079f8234a300f5e66a8b9a5786d6479e614"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/neoorigins/origins/origin_layers/origin.json"
+hash = "f67b28a72db1bf6be1c54fa36e9108e57b2faa1cb3ec0a14ba79966328d4ab3c"
+
+[[files]]
+file = "config/originpacks/minerpg_races/data/neoorigins/recipe/orb_of_origin.json"
+hash = "87372dc5fc916da3e94b078e906aebe433e20e5e5bb9001028e326b8792d7c27"
+
+[[files]]
+file = "config/originpacks/minerpg_races/pack.mcmeta"
+hash = "68fe89c3a6dd6601c203371d369573501cbefd81f8c242d75401feeedfc5d1af"
 
 [[files]]
 file = "mods/additional-rpg-jewelry.pw.toml"

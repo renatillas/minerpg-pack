@@ -1,0 +1,19 @@
+{
+  "name": {
+    "text": "Tuskborn"
+  },
+  "description": {
+    "text": "Broad, tusked folk of the blackstone bastions. They hit hard, stand their ground, and the bastion's own guards still count them as kin. Villagers count their coins twice."
+  },
+  "icon": "minecraft:gilded_blackstone",
+  "impact": "medium",
+  "order": 4,
+  "powers": [
+    "minerpg:tuskborn_brutal_strikes",
+    "minerpg:tuskborn_planted",
+    "minerpg:tuskborn_bastion_kin",
+    "minerpg:tuskborn_battle_fury",
+    "minerpg:tuskborn_hard_bargain"
+  ],
+  "upgrades": []
+}

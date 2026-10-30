@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:mobs_ignore_player",
+  "name": {
+    "text": "Bastion Kin"
+  },
+  "description": {
+    "text": "Piglins leave you be unless you strike first (brutes still don't)."
+  },
+  "entity_types": [
+    "minecraft:piglin"
+  ]
+}

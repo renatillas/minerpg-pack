@@ -1,0 +1,10 @@
+{
+  "type": "neoorigins:no_slowdown",
+  "name": {
+    "text": "Snowstride"
+  },
+  "description": {
+    "text": "Moves freely through powder snow."
+  },
+  "block_tag": "minerpg:powder_snow"
+}

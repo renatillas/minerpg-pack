@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Brutal Strikes"
+  },
+  "description": {
+    "text": "+10% critical hit damage."
+  },
+  "attribute": "critical_strike:damage",
+  "amount": 0.1,
+  "operation": "add_multiplied_base"
+}

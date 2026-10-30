@@ -1,0 +1,15 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Forest Stride"
+  },
+  "description": {
+    "text": "Moves 8% faster in forest biomes."
+  },
+  "attribute": "minecraft:movement_speed",
+  "amount": 0.08,
+  "operation": "add_multiplied_base",
+  "location_condition": {
+    "biome_tag": "minecraft:is_forest"
+  }
+}

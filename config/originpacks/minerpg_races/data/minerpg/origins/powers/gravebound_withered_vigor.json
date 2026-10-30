@@ -1,0 +1,14 @@
+{
+  "type": "neoorigins:action_on_event",
+  "name": {
+    "text": "Withered Vigor"
+  },
+  "description": {
+    "text": "All healing you receive (food, potions, spells) is 20% weaker."
+  },
+  "event": "mod_natural_regen",
+  "modifier": {
+    "operation": "multiplication",
+    "value": 0.8
+  }
+}
