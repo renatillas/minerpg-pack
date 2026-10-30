@@ -1,0 +1,13 @@
+name = "Jobs+"
+filename = "jobsplus-9.0.2-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/hxGLlCnq/versions/HHK264G0/jobsplus-9.0.2-neoforge.jar"
+hash-format = "sha512"
+hash = "aa024ad9a887631188afec6757d478a78c09cc540ad0ed55fdb48035442ac5c90633ffdb4e3f20c740ffe3b8f4307b811b224c5f370c39103034f7e23b21905e"
+
+[update]
+[update.modrinth]
+mod-id = "hxGLlCnq"
+version = "HHK264G0"

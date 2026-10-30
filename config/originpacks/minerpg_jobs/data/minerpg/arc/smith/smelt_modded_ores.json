@@ -1,0 +1,25 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:smith"
+  },
+  "type": "arc:on_smelt_item",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 2,
+      "max": 4
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "witcher_rpg:silver_ingot",
+        "witcher_rpg:dark_iron_ingot",
+        "witcher_rpg:meteorite_ingot"
+      ]
+    }
+  ]
+}

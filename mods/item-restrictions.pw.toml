@@ -1,0 +1,13 @@
+name = "Item Restrictions"
+filename = "itemrestrictions-9.0.0-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/rU60qFq2/versions/8928VcTu/itemrestrictions-9.0.0-neoforge.jar"
+hash-format = "sha512"
+hash = "e5c7bd85091bfafd3b86653e20c5ca805f047723d5cbfe4becfcedf1966aa2372eb7ab12dfc5f9c10d3adf6b4848c673cb44a6b1461f63dd5bd1cef9edf28548"
+
+[update]
+[update.modrinth]
+mod-id = "rU60qFq2"
+version = "8928VcTu"

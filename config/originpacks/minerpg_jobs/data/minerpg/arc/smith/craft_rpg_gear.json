@@ -1,0 +1,48 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:smith"
+  },
+  "type": "arc:on_craft_item",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 2,
+      "max": 4
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#c:armors",
+        "#c:shields",
+        "#minecraft:enchantable/weapon",
+        "#minecraft:enchantable/bow",
+        "#minecraft:enchantable/crossbow",
+        "#rpg_series:archetype/melee_damage_weapon",
+        "#rpg_series:archetype/magic_damage_weapon",
+        "#rpg_series:archetype/ranged_damage_weapon",
+        "#rpg_series:archetype/healing_weapon",
+        "#rpg_series:archetype/defense_weapon",
+        "#bards_rpg:lutes",
+        "#bards_rpg:lyres",
+        "cataclysm:azure_sea_shield",
+        "cataclysm:black_steel_targe"
+      ]
+    },
+    {
+      "type": "arc:not",
+      "conditions": [
+        {
+          "type": "arc:items",
+          "items": [
+            "#c:tools",
+            "#c:armor"
+          ]
+        }
+      ]
+    }
+  ]
+}

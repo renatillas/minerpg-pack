@@ -9,6 +9,22 @@ file = "config/neoorigins/gameplay.toml"
 hash = "ad6492bfed6bf35525e57ae0804756246a1683c426f9f0f1a53e013b05cd4fbf"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/enchanter/enchant_apothic_table.json"
+hash = "cb18467869d53ffbbde8d1e63df6fb9d5a8b7bb964785f4f2450dc2397e4ef87"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/smith/craft_rpg_gear.json"
+hash = "245b363260e5f960980d539759374f58645ee86f0b12836623bce25c5d7930aa"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/smith/smelt_modded_ores.json"
+hash = "abf4d10ea725f3fc69965928cddb9b20595a4578646df6ec93280956fa9bd17a"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/pack.mcmeta"
+hash = "f490f9e1a20733896bffaf52275e6f97a53c577b33aba2f4a8267a1b5b0656c1"
+
+[[files]]
 file = "config/originpacks/minerpg_races/data/minerpg/loot_modifiers/orb_from_bosses.json"
 hash = "cca6221d0121f339150c8842d676bf7fc324cacd5c2404bd854192c922195ab3"
 
@@ -250,6 +266,11 @@ hash = "e3cf8a1207e85580723e384bf59688be26b80373b49c1d64972528cdc0dcac6d"
 metafile = true
 
 [[files]]
+file = "mods/arc.pw.toml"
+hash = "310733b9f1aeb291a02919db39d62e013780e66f5f23db2fea46ed986389c561"
+metafile = true
+
+[[files]]
 file = "mods/archers-expansion.pw.toml"
 hash = "76ae14b000662bb1fd6ff5e35a66bf5f98cec0d664c80cf4a2bdf0fea7c36347"
 metafile = true
@@ -400,6 +421,11 @@ hash = "a2fbecad69fcbff54919864ea8b95e54d140a1a2c637d73307fb366e76066fe6"
 metafile = true
 
 [[files]]
+file = "mods/item-restrictions.pw.toml"
+hash = "f51ea7096c93ba3b10b2a2463ffe8ba9157acd4a133b4b730d56e204265858e5"
+metafile = true
+
+[[files]]
 file = "mods/jade.pw.toml"
 hash = "4de3e4a1a49e332c1ad313283e0403c4273b628d634c17a9ff0c9da3d6b67f9a"
 metafile = true
@@ -412,6 +438,11 @@ metafile = true
 [[files]]
 file = "mods/jewelry.pw.toml"
 hash = "720e12b39f4689c6d05fd6bf4661b8e54f7b80f6316bf9db5f3c54f8faf58484"
+metafile = true
+
+[[files]]
+file = "mods/jobsplus.pw.toml"
+hash = "9b7a34f513a4227c72c89e725d38c59df923a756ba89cc04695b3e31fc2e527e"
 metafile = true
 
 [[files]]
@@ -620,6 +651,11 @@ hash = "01cab903b1a7f77aa4f28c7fab24e7fa09b376b18c77b487b7ba34e0afc57813"
 metafile = true
 
 [[files]]
+file = "mods/ui-lib.pw.toml"
+hash = "4aecbee62e1c5c4ad4cca91839f1645b92e164e6420d97b2f0088d02e5a57be2"
+metafile = true
+
+[[files]]
 file = "mods/village-taverns.pw.toml"
 hash = "ab97b4d7dc071fe3b414e00631750b8eabdb1ea8437c9565f2f2b15d331c7a25"
 metafile = true
@@ -652,6 +688,11 @@ metafile = true
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "3a8e91aecdb602039ba1f7445bbf6b64cc5a46344339a3ffaf3b2e3eb2f5bcbc"
+metafile = true
+
+[[files]]
+file = "mods/yaml-config.pw.toml"
+hash = "390fb4a5f6798752bf972089fb1da0cda9aa9b5d96a76ca48ebd608006c27e6e"
 metafile = true
 
 [[files]]
