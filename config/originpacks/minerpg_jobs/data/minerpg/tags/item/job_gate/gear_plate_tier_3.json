@@ -2,6 +2,22 @@
   "replace": false,
   "values": [
     {
+      "id": "artificers:artillerist_netherite_chest",
+      "required": false
+    },
+    {
+      "id": "artificers:artillerist_netherite_feet",
+      "required": false
+    },
+    {
+      "id": "artificers:artillerist_netherite_head",
+      "required": false
+    },
+    {
+      "id": "artificers:artillerist_netherite_legs",
+      "required": false
+    },
+    {
       "id": "bards_rpg:netherite_rapier",
       "required": false
     },
@@ -99,18 +115,6 @@
     },
     {
       "id": "rogues:netherite_glaive",
-      "required": false
-    },
-    {
-      "id": "witcher_rpg:dark_steel_witcher_sword",
-      "required": false
-    },
-    {
-      "id": "witcher_rpg:meteorite_silver_witcher_sword",
-      "required": false
-    },
-    {
-      "id": "witcher_rpg:netherite_witcher_sword",
       "required": false
     }
   ]

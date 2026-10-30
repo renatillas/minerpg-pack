@@ -87,7 +87,8 @@
 		"minecraft:iron_golem": "FRIENDLY",
 		"guardvillagers:guard": "FRIENDLY",
 		"minecraft:cat": "FRIENDLY",
-		"minecraft:minecart": "FRIENDLY"
+		"minecraft:minecart": "FRIENDLY",
+		"artificers:mortar": "FRIENDLY"
 	},
 	"player_relation_tags": { },
 	// Relation to self, and self owned pets (tamed entities), changing this to `FRIENDLY` will make it impossible to hit pets with weapons

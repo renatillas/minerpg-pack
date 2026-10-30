@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:copper_ingot"
+    },
+    "F": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "runes:fire_stone"
+    }
+  },
+  "pattern": [
+    " F ",
+    " R ",
+    "FAF"
+  ],
+  "result": {
+    "id": "artificers:mortar",
+    "count": 2
+  },
+  "category": "equipment",
+  "show_notification": true
+}

@@ -100,34 +100,6 @@
     {
       "id": "rogues:warrior_armor_legs",
       "required": false
-    },
-    {
-      "id": "witcher_rpg:iron_witcher_sword",
-      "required": false
-    },
-    {
-      "id": "witcher_rpg:silver_witcher_sword",
-      "required": false
-    },
-    {
-      "id": "witcher_rpg:steel_witcher_sword",
-      "required": false
-    },
-    {
-      "id": "witcher_rpg:witcher_chest",
-      "required": false
-    },
-    {
-      "id": "witcher_rpg:witcher_feet",
-      "required": false
-    },
-    {
-      "id": "witcher_rpg:witcher_head",
-      "required": false
-    },
-    {
-      "id": "witcher_rpg:witcher_legs",
-      "required": false
     }
   ]
 }

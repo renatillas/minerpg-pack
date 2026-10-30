@@ -209,8 +209,9 @@ E['classes'] = [
         text('$(li)$(l)Berserker$(): heavy axes and fury.'
              '$(li)$(l)Forcemaster$(): fists and force.'
              '$(li)$(l)Archers$(): Archer, Deadeye, Tundra Hunter, War Archer.'
-             '$(li)$(l)Witcher$(): sword fighting (Blade) or signs (Signs).'
-             '$(li)$(l)Bard$(): songs that help the group, lutes and rapiers.'),
+             '$(li)$(l)Bard$(): songs that help the group, lutes and rapiers.'
+             '$(li)$(l)Artillerist$(): mortars, mines, traps and bombs from the Siege Manual; flintlocks and '
+             'repeating crossbows. Flintlock shots burn fire runes.'),
     ]),
     ('merchants', 'Class Merchants', 'minecraft:emerald', [
         text('Villages have buildings for some callings, each with a merchant who sells class gear:'
@@ -234,7 +235,7 @@ E['professions'] = [
     ('gates', 'Crafting Gates', 'minecraft:anvil', [
         text('Class gear by tier:$(li)Tier 1 at job level 10$(li)Diamond tier 2 at 20$(li)Netherite tier 3 '
              'at 25$(li)Armory sets at 30$(br2)$(l)Smith$(): plate armor and melee weapons. '
-             '$(l)Hunter$(): leather armor, bows, crossbows, spears, quivers. $(l)Enchanter$(): robes, staves, '
+             '$(l)Hunter$(): leather armor, bows, crossbows, flintlocks, spears, pikes, quivers. $(l)Enchanter$(): robes, staves, '
              'wands, instruments.'),
         text('$(l)Enchanter$() shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk '
              'shelves at 25, endshelves at 30.$(br)$(l)Alchemist$(): Strong and Long potions at 10, Splash '

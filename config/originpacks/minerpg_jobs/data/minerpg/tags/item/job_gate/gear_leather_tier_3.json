@@ -86,6 +86,22 @@
       "required": false
     },
     {
+      "id": "artificers:netherite_firecannon",
+      "required": false
+    },
+    {
+      "id": "artificers:netherite_flintlock",
+      "required": false
+    },
+    {
+      "id": "artificers:netherite_pike",
+      "required": false
+    },
+    {
+      "id": "artificers:netherite_repeating_crossbow",
+      "required": false
+    },
+    {
       "id": "bards_rpg:netherite_harp_crossbow",
       "required": false
     },

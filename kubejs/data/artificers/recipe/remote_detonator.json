@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "  R",
+    "IR ",
+    "II "
+  ],
+  "result": {
+    "id": "artificers:remote_detonator"
+  },
+  "category": "equipment",
+  "show_notification": true
+}

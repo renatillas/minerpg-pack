@@ -231,10 +231,18 @@ KITS = [
     ('deadeye', 'Deadeye', 'archers_expansion:spell_book/deadeye', 'minecraft:bow', 'archers_expansion:deadeye_chest', [('minecraft:arrow', 64)]),
     ('tundra_hunter', 'Tundra Hunter', 'archers_expansion:spell_book/tundra_hunter', 'minecraft:bow', 'archers_expansion:tundra_hunter_chest', [('minecraft:arrow', 64)]),
     ('war_archer', 'War Archer', 'archers_expansion:spell_book/war_archer', 'archers:rapid_crossbow', 'archers_expansion:war_archer_chest', [('minecraft:arrow', 64)]),
-    ('witcher_blade', 'Witcher (Blade)', 'witcher_rpg:spell_book/fencing', 'witcher_rpg:iron_witcher_sword', 'witcher_rpg:witcher_chest', []),
-    ('witcher_signs', 'Witcher (Signs)', 'witcher_rpg:spell_book/signs', 'witcher_rpg:iron_witcher_sword', 'witcher_rpg:witcher_chest', []),
     ('bard', 'Bard', 'bards_rpg:spell_book/bard', 'bards_rpg:wooden_lute', 'bards_rpg:entertainer_garb_chest', []),
+    # Mercenaries and Artificers. Its NeoForge build ships one spell book (the Siege Manual); the
+    # Flintlock's own spell (Full Metal Jacket) burns a fire rune per shot, so the kit carries 64.
+    ('artillerist', 'Artillerist', 'artificers:spell_book/artillerist', 'artificers:flintlock', 'artificers:peasant_chest',
+     [('runes:fire_stone', 64), ('minecraft:arrow', 64)]),
 ]
+
+# One in-world line per kit, shown in chat when the kit is handed out (before the generic line).
+# Kits without an entry show only the generic line.
+KIT_FLAVOR = {
+    'artillerist': 'Mortars, mines and a steady flintlock. Pick the ground, and let the fight come to you.',
+}
 
 
 def components_arg(components):
@@ -263,6 +271,8 @@ def write_kit_functions():
         ]
         for item, count in extras:
             lines.append(f'give @s {item} {count}')
+        if key in KIT_FLAVOR:
+            lines.append('tellraw @s ' + json.dumps({'text': KIT_FLAVOR[key], 'color': 'gray', 'italic': True}))
         lines.append('tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}')
         write(os.path.join(folder, f'{key}.mcfunction'), '\n'.join(lines))
 
@@ -281,7 +291,7 @@ def adv(path, criteria, any_of=False):
 ADV = {}
 
 # Root skills of the Skill Tree categories (from skill_tree_rpgs and mrpgc_skill_tree data).
-TALENT_ROOTS = {"weapon_skills": ["hdp8z71mlgffw17t", "o5e8ipv2xtpeksec", "43fud5gyn1kww7k3", "fa5tmn9q8n2ujruy", "paab7o9iixjwuqdj", "ywy3uz6mt474uxcu", "etdoq234nbbk9jmb", "9a4ajj9s55z980hm", "8jeweqbszxdkjec1", "ilkpz2udlubebc6r", "9pokx13bowgou220", "6taxz5gbljn3xfku", "pkne4ano08eqcy4s", "y1a66xz5i124mfmx", "3oqwa67ju4z15ibv", "2fmdz7g1n58lv5tc", "4hcdz3kjdgfthpe9", "kjhwog5cvu0fd423", "t99odhklai0v0udr", "rvwkoplyotazu3n5", "8pfkxajvoxi9hm11", "jg4rdekpojjpqgzp", "3gd4z8ipv6dd762q", "eg55qphw7cctd24u", "9mnmk2j2h4vgb2go", "oix3o2x7dfazvtzd", "j0u80h45ydvy095x", "w7y0zhqc44m1s3jh", "7v4350xjc6abuhzf", "s3ctqevzq5b784e6", "187m2j16rk4qjyn9", "9dseezauf4am1g09", "soavniyhqv88lhk6", "u4lc6n44j2s94i63", "74lv63m06glo2z4i", "gijhckxjzq2o74dr", "8isy9vsrob80930a", "i1ysm27ti2hox23u", "p5msloq46sdpdjki", "gcmqzfk0v41xdf5u", "fu5xkfmn8ip0bpiu", "lky31jjducya2sbe"], "class_skills": ["rinftzrm9ta3baw4", "vlk9z73h53bx2if3", "859rwa4j1tbw2qs7", "apwqaumpk4dhakie", "7fs13k83hcuhzjkk", "lk37egonho34cey2", "5qc3hkud5vtm6xaw", "ysh5ghgnzszqbi39", "8aixa7er1htsbd9a", "vlxhkx7zsfqwqx66", "cqray6yfemf8au4q", "nbd4thedgpfpztaj", "r7vtgvr1ujnnv2od", "5zb4m5r2slga9c7e", "cmrh2mlkna5uqfog", "5ubm74e5m5vhz773", "b7p70wd9hp5bh4ae", "tvtz23s3v64ynpny", "k2id91ozlf7q3tob", "qr4fdarqqqm5ifoa", "m1pc5vz73nx4b28c", "akyr8k2dv9xsy70c", "418rsvnd17egwkse", "tdimeso8ajcwiygp", "ov6ag9tjdhsmldil", "63gwys64onqg00ry", "e5ljj7jx6pmdjatf"]}
+TALENT_ROOTS = {"weapon_skills": ["hdp8z71mlgffw17t", "o5e8ipv2xtpeksec", "43fud5gyn1kww7k3", "fa5tmn9q8n2ujruy", "paab7o9iixjwuqdj", "ywy3uz6mt474uxcu", "etdoq234nbbk9jmb", "9a4ajj9s55z980hm", "8jeweqbszxdkjec1", "ilkpz2udlubebc6r", "9pokx13bowgou220", "6taxz5gbljn3xfku", "pkne4ano08eqcy4s", "y1a66xz5i124mfmx", "3oqwa67ju4z15ibv", "2fmdz7g1n58lv5tc", "4hcdz3kjdgfthpe9", "kjhwog5cvu0fd423", "t99odhklai0v0udr", "rvwkoplyotazu3n5", "8pfkxajvoxi9hm11", "jg4rdekpojjpqgzp", "3gd4z8ipv6dd762q", "eg55qphw7cctd24u", "oix3o2x7dfazvtzd", "j0u80h45ydvy095x", "w7y0zhqc44m1s3jh", "7v4350xjc6abuhzf", "s3ctqevzq5b784e6", "187m2j16rk4qjyn9", "9dseezauf4am1g09", "soavniyhqv88lhk6", "u4lc6n44j2s94i63", "74lv63m06glo2z4i", "gijhckxjzq2o74dr", "8isy9vsrob80930a", "i1ysm27ti2hox23u", "p5msloq46sdpdjki", "gcmqzfk0v41xdf5u", "fu5xkfmn8ip0bpiu", "lky31jjducya2sbe"], "class_skills": ["rinftzrm9ta3baw4", "vlk9z73h53bx2if3", "859rwa4j1tbw2qs7", "apwqaumpk4dhakie", "7fs13k83hcuhzjkk", "lk37egonho34cey2", "5qc3hkud5vtm6xaw", "ysh5ghgnzszqbi39", "8aixa7er1htsbd9a", "vlxhkx7zsfqwqx66", "cqray6yfemf8au4q", "nbd4thedgpfpztaj", "r7vtgvr1ujnnv2od", "5zb4m5r2slga9c7e", "cmrh2mlkna5uqfog", "5ubm74e5m5vhz773", "b7p70wd9hp5bh4ae", "qr4fdarqqqm5ifoa", "m1pc5vz73nx4b28c", "akyr8k2dv9xsy70c", "418rsvnd17egwkse", "tdimeso8ajcwiygp", "ov6ag9tjdhsmldil", "63gwys64onqg00ry", "e5ljj7jx6pmdjatf"]}
 
 
 def write_advancements():
@@ -518,8 +528,8 @@ GETTING_STARTED = [
     Q('gs_job_gates', 'Masters of a Trade', -13.5, 0, [
         'Some things only a trained hand can &omake&r:',
         'Class gear is made by three trades, by tier: tier 1 at level 10, diamond tier 2 at 20, netherite tier 3 at 25, Armory sets at 30.',
-        '- &cSmith&r: plate armor and melee weapons (Warrior, Paladin, Berserker, Forcemaster, Witcher). Reforging to Rare needs Smith 10, Epic 20, Mythic 30.',
-        '- &2Hunter&r: leather armor, bows, crossbows, spears and quivers (Archer, Rogue).',
+        '- &cSmith&r: plate armor and melee weapons (Warrior, Paladin, Berserker, Forcemaster, the Artillerist\'s Commissioned plate). Reforging to Rare needs Smith 10, Epic 20, Mythic 30.',
+        '- &2Hunter&r: leather armor, bows, crossbows, flintlocks, spears, pikes and quivers (Archer, Rogue, Artillerist).',
         '- &dEnchanter&r: robes, staves, wands and instruments (Wizard, mages, Priest, Bard), and the stronger enchanting shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30.',
         '- &5Alchemist&r: Strong and Long potions at 10, Splash at 15, Lingering at 20.',
         '',
@@ -551,7 +561,7 @@ GETTING_STARTED = [
         '- &aArchery Range&r: Archery Artisan (archers)',
         '- &6Pub&r: Luthier (bards)',
         'A Jeweler sells rings and necklaces. Not every village has every building: if yours lacks one, the next village may have it.',
-        'Berserkers, forcemasters and witchers have no building of their own; the Arms Dealer and Jeweler serve everyone.',
+        'Berserkers and forcemasters have no building of their own; the Arms Dealer and Jeweler serve everyone.',
         '',
         'Trade once with any of these merchants. Use the emeralds from your calling.'],
         [t_adv('trade_any', 'Trade with a class merchant')], [r_item('minecraft:emerald', 4)],

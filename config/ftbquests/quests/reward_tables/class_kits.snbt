@@ -276,40 +276,6 @@
 			type: "command"
 		}
 		{
-			command: "/function minerpg:kit/witcher_blade"
-			icon: {
-				components: {
-					"minecraft:item_name": "{\"translate\": \"item.witcher_rpg.spell_book/fencing\"}"
-					"spell_engine:item_model": "witcher_rpg:item/spell_book/fencing"
-					"spell_engine:spell_container": {
-						pool: "witcher_rpg:spell_book/fencing"
-					}
-				}
-				id: "spell_engine:spell_book"
-			}
-			id: "485028E3448A852B"
-			permission_level: 2
-			silent: true
-			type: "command"
-		}
-		{
-			command: "/function minerpg:kit/witcher_signs"
-			icon: {
-				components: {
-					"minecraft:item_name": "{\"translate\": \"item.witcher_rpg.spell_book/signs\"}"
-					"spell_engine:item_model": "witcher_rpg:item/spell_book/signs"
-					"spell_engine:spell_container": {
-						pool: "witcher_rpg:spell_book/signs"
-					}
-				}
-				id: "spell_engine:spell_book"
-			}
-			id: "6055BF0FF9C8EE1F"
-			permission_level: 2
-			silent: true
-			type: "command"
-		}
-		{
 			command: "/function minerpg:kit/bard"
 			icon: {
 				components: {
@@ -322,6 +288,23 @@
 				id: "spell_engine:spell_book"
 			}
 			id: "24538A39D1C08953"
+			permission_level: 2
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/function minerpg:kit/artillerist"
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.artificers.spell_book/artillerist\"}"
+					"spell_engine:item_model": "artificers:item/spell_book/artillerist"
+					"spell_engine:spell_container": {
+						pool: "artificers:spell_book/artillerist"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
+			id: "1182E34C763ED1EB"
 			permission_level: 2
 			silent: true
 			type: "command"

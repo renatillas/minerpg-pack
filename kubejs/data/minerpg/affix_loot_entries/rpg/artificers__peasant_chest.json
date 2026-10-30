@@ -2,16 +2,16 @@
   "type": "apotheosis:affix_loot_entry",
   "stack": {
     "count": 1,
-    "id": "witcher_rpg:meteorite_witcher_sword"
+    "id": "artificers:peasant_chest"
   },
   "weights": {
-    "frontier": {
+    "haven": {
       "weight": 10
     },
-    "ascent": {
+    "frontier": {
       "weight": 25
     },
-    "summit": {
+    "ascent": {
       "weight": 10
     }
   }

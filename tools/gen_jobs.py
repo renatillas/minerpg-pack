@@ -37,7 +37,7 @@ PACK = os.path.join(ROOT, 'config', 'originpacks', 'minerpg_jobs', 'data', 'mine
 #
 # Designer revision (2026-10-30): class-gear crafting is split three ways.
 #   plate   -> Smith:     plate/melee armor and melee weapons (Warrior, Paladin, Berserker,
-#                         Forcemaster, Witcher blades, Bard rapiers)
+#                         Forcemaster, Bard rapiers)
 #   leather -> Hunter:    light/leather armor, bows, crossbows, spears, quivers (Archer, Archers
 #                         Expansion, Rogue armor/daggers/sickles, Bard harp crossbows)
 #   caster  -> Enchanter: robes, staves, wands, holy weapons, Bard instruments and garb (Wizard
@@ -50,10 +50,13 @@ GEAR_GROUP_TITLE = {'plate': 'plate armor and melee weapons', 'leather': 'leathe
                     'caster': 'caster robes, staves and wands'}
 # (substring of the item id, group): first match wins, checked before the type tags.
 GEAR_GROUP_OVERRIDES = [
-    ('witcher_rpg:', 'plate'),          # Witcher blades are tagged as spell weapons (signs); armor too
     ('forcemaster_rpg:', 'plate'),      # Forcemaster knuckles and armor: melee class
     ('_lute', 'caster'), ('_lyre', 'caster'), ('bards_rpg:wooden_lute', 'caster'),  # Bard instruments
     ('_harp_crossbow', 'leather'),
+    # Mercenaries and Artificers: ranged weapons follow their archetype (Hunter); pikes are spears
+    # (Hunter, like the Archers spears); the Frontier set is chain + leather (Hunter); the
+    # Commissioned set is iron plate (Smith, the default). Its explosives are spells, not items.
+    ('_pike', 'leather'), ('artificers:peasant_', 'leather'),
     ('_rapier', 'plate'),
     ('rogues:rogue_armor', 'leather'), ('rogues:assassin_armor', 'leather'),
     ('rogues:netherite_assassin_armor', 'leather'), ('armory_rpgs:deathmantle', 'leather'),

@@ -2,16 +2,16 @@
   "type": "apotheosis:affix_loot_entry",
   "stack": {
     "count": 1,
-    "id": "witcher_rpg:witcher_chest"
+    "id": "artificers:artillerist_chest"
   },
   "weights": {
-    "haven": {
+    "frontier": {
       "weight": 10
     },
-    "frontier": {
+    "ascent": {
       "weight": 25
     },
-    "ascent": {
+    "summit": {
       "weight": 10
     }
   }

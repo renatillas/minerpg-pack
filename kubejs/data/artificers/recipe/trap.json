@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": [
+      {
+        "tag": "minecraft:logs"
+      },
+      {
+        "item": "minecraft:oak_log"
+      }
+    ],
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "F": {
+      "item": "runes:arcane_stone"
+    }
+  },
+  "pattern": [
+    "IFI",
+    "FRF",
+    "IFI"
+  ],
+  "result": {
+    "id": "artificers:trap",
+    "count": 32
+  },
+  "category": "equipment",
+  "show_notification": true
+}

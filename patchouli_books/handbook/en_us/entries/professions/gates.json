@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Class gear by tier:$(li)Tier 1 at job level 10$(li)Diamond tier 2 at 20$(li)Netherite tier 3 at 25$(li)Armory sets at 30$(br2)$(l)Smith$(): plate armor and melee weapons. $(l)Hunter$(): leather armor, bows, crossbows, spears, quivers. $(l)Enchanter$(): robes, staves, wands, instruments."
+      "text": "Class gear by tier:$(li)Tier 1 at job level 10$(li)Diamond tier 2 at 20$(li)Netherite tier 3 at 25$(li)Armory sets at 30$(br2)$(l)Smith$(): plate armor and melee weapons. $(l)Hunter$(): leather armor, bows, crossbows, flintlocks, spears, pikes, quivers. $(l)Enchanter$(): robes, staves, wands, instruments."
     },
     {
       "type": "patchouli:text",
