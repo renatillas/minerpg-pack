@@ -331,8 +331,9 @@ E['bosses'] = [
              '$(li)Umvuthi: Sunbird Plume'),
     ]),
     ('tips', 'Boss Tips', 'minecraft:totem_of_undying', [
-        text('$(li)Enter boss arenas together: a boss sizes itself to the group around it when its arena '
-             'wakes.'
+        text('$(li)Bosses are built for a full party of four. Alone you will not win; bring your friends.'
+             '$(li)Fights are long. Learn the big attacks and get out of the way: roll (R) makes you briefly '
+             'untouchable.'
              '$(li)Quests hand out maps to the next lair.'
              '$(li)Bosses drop the best gear of each world tier.'),
     ]),

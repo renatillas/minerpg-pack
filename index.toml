@@ -9,12 +9,40 @@ file = "config/apotheosis/enchantments.cfg"
 hash = "ad2c16348a646f85289fa06950921fa72765bfe044ad00c580c0e113ef552e13"
 
 [[files]]
+file = "config/archers/equipment.json"
+hash = "371b7f5e65ad2eeb5e448c40efc0b83d988670333a9772a80c1127e4bc0c10fc"
+
+[[files]]
+file = "config/archers_expansion/equipment_v4.json"
+hash = "a47870a5c42b33616b059952e39acab178dde147b8b5f888cec595525b5a1c7a"
+
+[[files]]
+file = "config/armory_rpgs/equipment_v3.json"
+hash = "9aa75ba6ac335da483fe3847f6d7c9e6f2a28fefaf059e76e924e2d43f41c486"
+
+[[files]]
+file = "config/bards_rpg/equipment.json"
+hash = "b5478d7555b3c78aaa25b8ba2011fcc3718ac14922a834a5ece3e2b729862dd2"
+
+[[files]]
+file = "config/berserker_rpg/equipment_v2.json"
+hash = "fe9d5714d635a338f41d727889e7dadf6b66c29c60fe758ec5467950352f0c35"
+
+[[files]]
 file = "config/bettercombat/server.json5"
 hash = "3fb34cf72b4a39dbd7b4ff85d4672c528bad2c6b064773de5b2a27ecc06753b2"
 
 [[files]]
+file = "config/cataclysm-common.toml"
+hash = "5bd979c7cbbd47287756e3a46ed87ae11cac32fded862ebacaa43f9917b6432a"
+
+[[files]]
 file = "config/champions-server.toml"
 hash = "21069c1acb2333c10a043e9c52f81e65fb4e3f959868849b6b5b230af59f3adf"
+
+[[files]]
+file = "config/combat_roll/server.json5"
+hash = "756e0cac49364362b4751a33333d7ffd16348857d7a7fdb1680d03d918683497"
 
 [[files]]
 file = "config/defaultoptions/extra/config/RPG-HUD"
@@ -46,7 +74,15 @@ hash = "40f06acd45d7fe7405cbae1ddd36adaa9a6f384c3e46bd5d9f31369d9712f6f0"
 
 [[files]]
 file = "config/dungeon_difficulty/difficulty_v2.json"
-hash = "12da21cbf53d82b9364beb9f14e6521ab9e99aab63341dd375db26a61026deee"
+hash = "57f94b83f0d94ddc9e89ed1bdf4d75f60c5a9c229020a2b4230235a92767404b"
+
+[[files]]
+file = "config/elemental_wizards_rpg/equipment_v1.json"
+hash = "317c07a47335291f6bd5b8aece509ed1c16eb6ed9884e52aedc18b3f529c9d0d"
+
+[[files]]
+file = "config/forcemaster_rpg/equipment_v3.json"
+hash = "cb935b46721407a06dd8bd479577d29365ae000845c0f4d14d9152b4f255a2ae"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -74,7 +110,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "47e3f61355ac378f800e74154a2768d121a25a9721eb422096cda6b2004854d0"
+hash = "9c868a36258568167b18cdaa36e55c0e832415d35ce70074d441e1ffb8fd8951"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -95,6 +131,10 @@ hash = "dbad3c65facc183b43af94ed6434226b8bcd6f241ab648b553f77f8e405be0ed"
 [[files]]
 file = "config/jobsplus-common.yaml"
 hash = "792e2c4b4e40fb1d4a74916e1e0c777cac5c76e215d2b718dd838f596d0a1b90"
+
+[[files]]
+file = "config/mowziesmobs-common.toml"
+hash = "cdae19a55c0ad67c27750508dccf50d9883a43913caf61a364a6135a634f0e7f"
 
 [[files]]
 file = "config/neoorigins/content.toml"
@@ -797,8 +837,16 @@ file = "config/originpacks/minerpg_races/pack.mcmeta"
 hash = "68fe89c3a6dd6601c203371d369573501cbefd81f8c242d75401feeedfc5d1af"
 
 [[files]]
+file = "config/paladins/equipment_v2.json"
+hash = "888fbeb73c349fa93b2551a97b7d48c2b2d18cebd5558651f616de80bb1f3569"
+
+[[files]]
 file = "config/partyhud-common.toml"
 hash = "696c8213c5315500457b886f25318ef953e270796f1f835494b1641cbc9a9280"
+
+[[files]]
+file = "config/rogues/equipment_v3.json"
+hash = "38ec82e0f4cfb00aafd57c814683f3bd9ba4679f330de7c34d7e600a8dcec3c0"
 
 [[files]]
 file = "config/rpg_series/loot_equipment_v2.json"
@@ -807,10 +855,6 @@ hash = "f863abbe994f65d7f7d178fc5ff03a017648722a7f8429e80a61a400363ceeca"
 [[files]]
 file = "config/rpg_series/loot_scrolls_v2.json"
 hash = "707adf77913c1be71539ba149fc6077a23498e3fab72757fd42b387c711ca12f"
-
-[[files]]
-file = "config/scalingmobs-common.toml"
-hash = "eb80ef84c2f931d9185b019fa059406b6248ee4fc404c2bb6b141d4cdb935e54"
 
 [[files]]
 file = "config/serilum/villagespawnpoint.json"
@@ -823,6 +867,10 @@ hash = "244a3bb3ab39286f423f4bee607856dbb3b58e0892ced3f434be2e964d023167"
 [[files]]
 file = "config/waystones-common.toml"
 hash = "922df6fc2add0f1ad9da42c86d2f97a1407904c4139b0864b2f613263ad5a87f"
+
+[[files]]
+file = "config/wizards/equipment_v2.json"
+hash = "b4adde1909f9fbf788902b011d30435fe64bb63c0cc693222608bbb4f4705c2f"
 
 [[files]]
 file = "kubejs/assets/apotheosis/lang/en_us.json"
@@ -1079,6 +1127,22 @@ hash = "4c4d0ab9cd08b2111f46b0c4742df369b4974f1f9c3fbeb269cc8bae35e49f09"
 [[files]]
 file = "kubejs/data/apotheosis/rarity_override/apotheosis/shears.json"
 hash = "c62480cdb49835104fb189a14bc519a4d16b73e35d0cd9970cb4a10a3c170726"
+
+[[files]]
+file = "kubejs/data/apotheosis/tier_augments/pinnacle/armor.json"
+hash = "190aa7043ed223815ff0b893ebd6cc522a1356e7bb054fc11e0c8a32b6cfb6a4"
+
+[[files]]
+file = "kubejs/data/apotheosis/tier_augments/pinnacle/armor_pierce.json"
+hash = "a582ae0563070526677090faaafba74f60f8958c891ac1934e5e7a0066ee88fc"
+
+[[files]]
+file = "kubejs/data/apotheosis/tier_augments/summit/armor.json"
+hash = "4e5f327c389a0a437180fb732f47398a52bd8015e5d72d433ca42919df7c26db"
+
+[[files]]
+file = "kubejs/data/apotheosis/tier_augments/summit/armor_pierce.json"
+hash = "9b92dd9e70e61c0d30b9191595d14bb5ebceb1c8a3f0400fd9bfd57f6c7b0cb8"
 
 [[files]]
 file = "kubejs/data/cataclysm/tags/block/needs_black_steel_tool.json"
@@ -2729,7 +2793,7 @@ file = "kubejs/data/minerpg/tags/entity_type/boss.json"
 hash = "83f5bdd1b5c84bffe62cd4bd5007753567b6599397cfca3d3e46c8fa739d633d"
 
 [[files]]
-file = "kubejs/data/minerpg/tags/entity_type/group_scaled_boss.json"
+file = "kubejs/data/minerpg/tags/entity_type/tuned_boss.json"
 hash = "19043382cbb7c2190cc703d57171554ecf3e58cca22be8eb40f7c2ddcc2237cc"
 
 [[files]]
@@ -2849,6 +2913,10 @@ file = "kubejs/data/skill_tree_rpgs/puffish_skills/categories/weapon_skills/expe
 hash = "15c57a36748157e593c4024d86b22a203f2ac777bd5927ff0602de76c3b85ffc"
 
 [[files]]
+file = "kubejs/server_scripts/minerpg_boss_tuning.js"
+hash = "37714f3a3a4e2237977e65058302c95d16fde08349b5ea66d1e52fe8f1601f2c"
+
+[[files]]
 file = "kubejs/server_scripts/minerpg_enchanting.js"
 hash = "ea4be89cfb7b6b5570f23bc061950e5ea02dc5085cbaea7ff3d972a4746390b3"
 
@@ -2862,7 +2930,7 @@ hash = "6e4bc65d4548a88a2cd61e99210fbb1c5facb6539f8b6108fb58651fec4c4c2d"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_server_rules.js"
-hash = "4c7ea8c3b163357498103b5ef6963b5ef184da69cae9d2a8261058f3061835ef"
+hash = "7ec47b6f8748e6adf26f9dc511d977ed5d5260151ef39ed7f65691b09b07dd0c"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_soft_locks.js"
@@ -3322,11 +3390,6 @@ hash = "05c5359a4419b39c0e72c2693f0cda3bc5959520fe42b348d3bd701384491aef"
 metafile = true
 
 [[files]]
-file = "mods/scalingmobs.pw.toml"
-hash = "4616600feba02efb8b13828fd895c9c6a3507c1cf45f7139dde107642b2ea9fc"
-metafile = true
-
-[[files]]
 file = "mods/shield-api.pw.toml"
 hash = "08f35f067c7a764a894254a8e5c790a8de5e03f21fcff2875a14a31f16b6627a"
 metafile = true
@@ -3530,7 +3593,7 @@ hash = "2f689984cceb90eebd139781f225dd2fcd812f449b50c28ea558ad16fa78566c"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/bosses/tips.json"
-hash = "76211a52b247d021d132b620c1edc11ee595f8abdee3fe0a7e2376d84f486930"
+hash = "73d473f22133c381b95b9c23901f07abc5b0d10a66d29d21c299835f04edf0ef"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/bosses/trophies.json"

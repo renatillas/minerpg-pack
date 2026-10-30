@@ -507,7 +507,7 @@ GETTING_STARTED = [
         'Press H to open the Party HUD: invite your friends and see their health on screen.',
         'Party members near a kill share talent experience, and your spells and swings never hurt each other. Heals and buffs reach every player, party or not.',
         'In the Members tab, right-click each friend and add them to favorites to see their health frames.',
-        'Enter boss arenas together: a boss sizes itself to the group around it when its arena wakes.',
+        'Bosses are built for a full party of four: alone you will not win one. Bring your friends.',
         'Your quest book stays your own. When a boss falls, everyone nearby gets their own trophy or key.'],
         [t_check('Join or form a party')], [r_xp(30)], deps=['gs_welcome'], subtitle='Party HUD (H)'),
     Q('gs_jobs', 'Pick Your Trades', -6, 0, [

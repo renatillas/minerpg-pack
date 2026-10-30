@@ -32,6 +32,23 @@ ServerEvents.loaded(event => {
 })
 
 // ---------------------------------------------------------------------------------------
+// Difficulty Normal (pack 0.8.0). Boss and zone damage are tuned for Normal; Hard multiplies
+// every mob hit by 1.5 and turns most heavy boss hits into one-shots. Set once per world with
+// its own flag (worlds that already have minerpg_rules_v1 still get it), so an admin can pick
+// another difficulty afterwards and it sticks. docs/server-setup.md says the same.
+// ---------------------------------------------------------------------------------------
+const DIFFICULTY_FLAG = 'minerpg_difficulty_v1'
+
+ServerEvents.loaded(event => {
+  const server = event.server
+  const data = server.persistentData
+  if (data.getBoolean(DIFFICULTY_FLAG)) return
+  server.runCommandSilent('difficulty normal')
+  data.putBoolean(DIFFICULTY_FLAG, true)
+  console.info('[minerpg] difficulty set to normal for this world')
+})
+
+// ---------------------------------------------------------------------------------------
 // No block damage from creepers, ghast fireballs, wither skulls or the Wither's spawn blast. The
 // explosion still happens and still hurts and knocks back entities; only the list of blocks
 // it would break (and set on fire) is emptied. TNT, beds, respawn anchors, end crystals and
