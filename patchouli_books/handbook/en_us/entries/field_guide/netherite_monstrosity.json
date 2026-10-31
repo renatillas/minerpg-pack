@@ -1,0 +1,18 @@
+{
+  "name": "The Netherite Monstrosity",
+  "icon": "minerpg:trophy_netherite_monstrosity",
+  "category": "patchouli:field_guide",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A forge-born giant of netherite and lava that guards the Soul Blacksmith's forge in the Nether.$()$(br2)$(l)Counter:$() Its smash shakes the floor and leaves fire behind. Roll the smash, and never stand in its lava.$(br2)Bring fire resistance. Everything here burns."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Molten Heart$() counts for the quest book, and the kill earns a talent point.",
+      "advancement": "minerpg:field_guide/defeated/netherite_monstrosity"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/netherite_monstrosity"
+}

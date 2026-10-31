@@ -1,0 +1,18 @@
+{
+  "name": "The Amethyst Crab",
+  "icon": "minerpg:trophy_amethyst_crab",
+  "category": "patchouli:field_guide",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A crab the size of a cart, armored in living crystal. It keeps the $(l)Amethyst Nest$() deep in the lush caves of the Hearthlands.$()$(br2)$(l)Counter:$() It mends faster the healthier it is. Hit hard from the first second and never let up; a slow party never finishes it.$(br2)Light the cave before you wake it."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Geode Claw$() raises your world tier to Venture.",
+      "advancement": "minerpg:field_guide/defeated/amethyst_crab"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/amethyst_crab"
+}

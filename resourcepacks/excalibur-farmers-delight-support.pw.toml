@@ -1,0 +1,13 @@
+name = "Excalibur | Farmer's Delight Support"
+filename = "FarnersDelightExcaliburSupport_1.21.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/nvZcjWQN/versions/FldWrwyn/FarnersDelightExcaliburSupport_1.21.1.zip"
+hash-format = "sha512"
+hash = "b44dfce35499cbbbfa61b6a2904d21ceaade17b4ba998b79f180369e58da8ae35439cc6ba3012c50aca90593f1f34300af5b73d7c0a9950b9d5971ad01c8386d"
+
+[update]
+[update.modrinth]
+mod-id = "nvZcjWQN"
+version = "FldWrwyn"

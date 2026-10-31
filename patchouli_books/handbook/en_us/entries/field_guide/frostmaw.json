@@ -1,0 +1,18 @@
+{
+  "name": "The Frostmaw",
+  "icon": "minerpg:trophy_frostmaw",
+  "category": "patchouli:field_guide",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A great white beast asleep among the snowfields and ice spikes.$()$(br2)$(l)Counter:$() Its breath freezes everything in front of it, and it slams anyone who crowds it. Fight from its flanks and roll the slam.$(br2)It sleeps until disturbed. Wake it only when the whole party is ready."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Rimefang Tusk$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/frostmaw"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/frostmaw"
+}

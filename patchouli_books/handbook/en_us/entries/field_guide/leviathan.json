@@ -1,0 +1,18 @@
+{
+  "name": "The Leviathan",
+  "icon": "minerpg:trophy_leviathan",
+  "category": "patchouli:field_guide",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A serpent of the deep, coiled in a flooded hall of the $(l)Sunken City$().$()$(br2)$(l)Counter:$() Out of the water it cannot be touched. Fight it in its element, and bring water breathing for everyone.$(br2)Carry more air than you think you need."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Abyssal Scale$() counts for the quest book, and its quest marks the way to the Frontier.",
+      "advancement": "minerpg:field_guide/defeated/leviathan"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/leviathan"
+}

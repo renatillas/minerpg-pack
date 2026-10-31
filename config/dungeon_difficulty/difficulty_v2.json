@@ -148,6 +148,82 @@
       ]
     },
     {
+      "name": "armored",
+      "parent": "dungeon",
+      "allow_loot_scaling": true,
+      "entities": [
+        {
+          "entity_matches": {
+            "attitude": "HOSTILE",
+            "type": "!#minerpg:tuned_boss"
+          },
+          "attributes": [
+            {
+              "attribute": "minecraft:generic.armor",
+              "operation": "ADDITION",
+              "randomness": 0.0,
+              "value": 3.0,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.knockback_resistance",
+              "operation": "ADDITION",
+              "randomness": 0.0,
+              "value": 0.08,
+              "offset": 0.0
+            }
+          ],
+          "experience_multiplier": 0.05
+        }
+      ]
+    },
+    {
+      "name": "magebane",
+      "parent": "dungeon",
+      "allow_loot_scaling": true,
+      "entities": [
+        {
+          "entity_matches": {
+            "attitude": "HOSTILE",
+            "type": "!#minerpg:tuned_boss"
+          },
+          "attributes": [
+            {
+              "attribute": "spell_power:resistance.generic",
+              "operation": "ADDITION",
+              "randomness": 0.0,
+              "value": 1.25,
+              "offset": 0.0
+            }
+          ],
+          "experience_multiplier": 0.05
+        }
+      ]
+    },
+    {
+      "name": "bounty",
+      "parent": "dungeon",
+      "allow_loot_scaling": true,
+      "entities": [
+        {
+          "entity_matches": {
+            "attitude": "HOSTILE",
+            "type": "!#minerpg:tuned_boss"
+          },
+          "attributes": [
+            {
+              "attribute": "minecraft:generic.attack_damage",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 0.2,
+              "offset": 0.0
+            }
+          ],
+          "experience_multiplier": 0.2
+        }
+      ]
+    },
+    {
       "name": "lair",
       "parent": "dungeon",
       "entities": []
@@ -402,7 +478,26 @@
           }
         }
       ],
-      "zone_specifiers": [],
+      "zone_specifiers": [
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_variant/armored"
+          },
+          "difficulty_name": "armored"
+        },
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_variant/magebane"
+          },
+          "difficulty_name": "magebane"
+        },
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_variant/bounty"
+          },
+          "difficulty_name": "bounty"
+        }
+      ],
       "entities": []
     },
     {
@@ -469,7 +564,26 @@
           }
         }
       ],
-      "zone_specifiers": [],
+      "zone_specifiers": [
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_variant/armored"
+          },
+          "difficulty_name": "armored"
+        },
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_variant/magebane"
+          },
+          "difficulty_name": "magebane"
+        },
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_variant/bounty"
+          },
+          "difficulty_name": "bounty"
+        }
+      ],
       "entities": [
         {
           "entity_type": "minecraft:wither",
@@ -527,7 +641,26 @@
           }
         }
       ],
-      "zone_specifiers": [],
+      "zone_specifiers": [
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_variant/armored"
+          },
+          "difficulty_name": "armored"
+        },
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_variant/magebane"
+          },
+          "difficulty_name": "magebane"
+        },
+        {
+          "zone_matches": {
+            "structure": "#minerpg:dungeon_variant/bounty"
+          },
+          "difficulty_name": "bounty"
+        }
+      ],
       "entities": [
         {
           "entity_type": "minecraft:ender_dragon",

@@ -3,4 +3,5 @@ give @s spell_engine:spell_book[minecraft:item_name='{"translate": "item.archers
 give @s archers:composite_longbow 1
 give @s archers:archer_armor_chest 1
 give @s minecraft:arrow 64
+tellraw @s {"text": "One arrow, one answer. Find high ground and make every shot count.", "color": "gray", "italic": true}
 tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}

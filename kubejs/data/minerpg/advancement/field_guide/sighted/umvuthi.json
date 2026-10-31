@@ -1,0 +1,56 @@
+{
+  "parent": "minerpg:field_guide/root",
+  "display": {
+    "icon": {
+      "id": "minerpg:trophy_umvuthi"
+    },
+    "title": {
+      "text": "Sighted: Umvuthi, the Sunbird"
+    },
+    "description": {
+      "text": "A new page opens in your Field Guide."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "lair": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "mowziesmobs:umvuthana_grove"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "seen": {
+      "trigger": "minecraft:impossible"
+    },
+    "trophy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minerpg:trophy_umvuthi"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lair",
+      "seen",
+      "trophy"
+    ]
+  ]
+}

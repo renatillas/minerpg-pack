@@ -1,0 +1,16 @@
+{
+  "name": "Graves",
+  "icon": "minecraft:skeleton_skull",
+  "category": "patchouli:party",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Die for real and a $(item)grave$() rises where you fell. It holds everything you carried: your inventory, armor, accessories, backpack and experience. Nothing is lost.$(br2)Chat tells you where it is, and you respawn with a compass that points to it. Right-click the grave to take it all back."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Only you can open your grave at first. After 15 minutes a friend can collect it for you, and you are told who did.$(br2)Being $(item)downed$() makes no grave: a grave only comes with a real death."
+    }
+  ]
+}

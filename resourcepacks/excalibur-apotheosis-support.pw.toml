@@ -1,0 +1,13 @@
+name = "Excalibur | Apotheosis Support"
+filename = "Excalibur_Apotheosis Addon_v1.9.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ks2QAJT0/versions/5sB4ufq0/Excalibur_Apotheosis%20Addon_v1.9.zip"
+hash-format = "sha512"
+hash = "6ea3d96342141791c24d02a0782b54f7cca5ce5d8b03cba32477a94b3bc453f3580f95fee41729e87304064076c8aee0d5b597732fc43a8e3d21407de5d301c6"
+
+[update]
+[update.modrinth]
+mod-id = "ks2QAJT0"
+version = "5sB4ufq0"

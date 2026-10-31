@@ -1,0 +1,18 @@
+{
+  "name": "The Ender Dragon",
+  "icon": "minerpg:trophy_ender_dragon",
+  "category": "patchouli:field_guide",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)The last dragon, circling the island at the heart of the End.$()$(br2)$(l)Counter:$() The crystals on the pillars heal it. Break them first, then stay out of its purple breath: it eats through any armor.$(br2)It also heals slowly by itself. Once you start, do not stop."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Dragonscale$(), with the Citadel Keystone, raises your world tier to Pinnacle.",
+      "advancement": "minerpg:field_guide/defeated/ender_dragon"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/ender_dragon"
+}

@@ -1,0 +1,13 @@
+name = "Excalibur x AppleSkin addon"
+filename = "Excalibur AppleSkin Addon.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/9Z2lf0O0/versions/jwEGyl61/Excalibur%20AppleSkin%20Addon.zip"
+hash-format = "sha512"
+hash = "e7a9ebe6cb5601eb4725d5ed0695043e1fc544fd6a459b9ec5064c03e2d1a6fe24eadcbc4e71d7841660f952297a61a1db8d119fe2604dfca71845145f67cedc"
+
+[update]
+[update.modrinth]
+mod-id = "9Z2lf0O0"
+version = "jwEGyl61"

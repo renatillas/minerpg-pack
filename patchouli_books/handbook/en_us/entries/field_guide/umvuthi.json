@@ -1,0 +1,18 @@
+{
+  "name": "Umvuthi, the Sunbird",
+  "icon": "minerpg:trophy_umvuthi",
+  "category": "patchouli:field_guide",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Chief of the masked Umvuthana, holding court in a grove of the savanna.$()$(br2)$(l)Counter:$() He heals all fight long and hides behind his followers. Clear the masks around him, then keep every blade on him so the healing never catches up.$(br2)Sunfire lands where you stand. Keep moving."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Sunbird Plume$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/umvuthi"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/umvuthi"
+}

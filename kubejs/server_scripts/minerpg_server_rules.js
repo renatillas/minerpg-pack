@@ -73,21 +73,9 @@ NativeEvents.onEvent($Detonate, event => {
 })
 
 // ---------------------------------------------------------------------------------------
-// Adventurer's Handbook (Patchouli book patchouli:handbook, written by tools/gen_handbook.py
-// into patchouli_books/handbook/). Given once on a player's first join; the welcome quest
-// gives one too, and a book + a feather crafts another.
+// Adventurer's Handbook recipe (Patchouli book patchouli:handbook, written by tools/gen_handbook.py
+// into patchouli_books/handbook/). The first-join gift lives in minerpg_first_join.js.
 // ---------------------------------------------------------------------------------------
-const HANDBOOK = 'patchouli:guide_book[patchouli:book="patchouli:handbook"]'
-const HANDBOOK_FLAG = 'minerpg_handbook_given'
-
-PlayerEvents.loggedIn(event => {
-  const player = event.player
-  if (player.persistentData.getBoolean(HANDBOOK_FLAG)) return
-  player.persistentData.putBoolean(HANDBOOK_FLAG, true)
-  player.give(Item.of(HANDBOOK))
-  player.tell(Text.gold('You carry an Adventurer\'s Handbook. Right-click it any time you wonder how something works.'))
-})
-
 ServerEvents.recipes(event => {
-  event.shapeless(Item.of(HANDBOOK), ['minecraft:book', 'minecraft:feather']).id('minerpg:handbook')
+  event.shapeless(Item.of('patchouli:guide_book[patchouli:book="patchouli:handbook"]'), ['minecraft:book', 'minecraft:feather']).id('minerpg:handbook')
 })

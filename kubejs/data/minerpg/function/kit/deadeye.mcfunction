@@ -3,4 +3,5 @@ give @s spell_engine:spell_book[minecraft:item_name='{"translate": "item.archers
 give @s minecraft:bow 1
 give @s archers_expansion:deadeye_chest 1
 give @s minecraft:arrow 64
+tellraw @s {"text": "Patience kills. Wait for the opening, then end it from afar.", "color": "gray", "italic": true}
 tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}

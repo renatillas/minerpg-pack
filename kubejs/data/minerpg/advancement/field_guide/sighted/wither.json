@@ -1,0 +1,54 @@
+{
+  "parent": "minerpg:field_guide/root",
+  "display": {
+    "icon": {
+      "id": "minerpg:trophy_wither"
+    },
+    "title": {
+      "text": "Sighted: The Wither"
+    },
+    "description": {
+      "text": "A new page opens in your Field Guide."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "summoned": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:wither"
+            }
+          }
+        ]
+      }
+    },
+    "seen": {
+      "trigger": "minecraft:impossible"
+    },
+    "trophy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minerpg:trophy_wither"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "seen",
+      "summoned",
+      "trophy"
+    ]
+  ]
+}

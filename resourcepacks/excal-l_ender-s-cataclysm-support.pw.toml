@@ -1,0 +1,13 @@
+name = "Excalibur | L_Ender 's Cataclysm Support"
+filename = "Excalibur Cataclysm 1.0 (Neoforge).zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/X4sUmv4N/versions/yKadRO27/Excalibur%20Cataclysm%201.0%20%28Neoforge%29.zip"
+hash-format = "sha512"
+hash = "ecc8f18ca31038fb16f03a68af1eb344b257b1dabb89f08ddbe83331b00b5874446216855bc48d2ef0464ea7db65e6dd03a5fb1cb897e163fcaeba42a3578ffa"
+
+[update]
+[update.modrinth]
+mod-id = "X4sUmv4N"
+version = "yKadRO27"

@@ -1,0 +1,18 @@
+{
+  "name": "Maledictus",
+  "icon": "minerpg:trophy_maledictus",
+  "category": "patchouli:field_guide",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A prisoner who became the prison, held in the black ice of the $(l)Frosted Prison$().$()$(br2)$(l)Counter:$() Its smashes hit everything close by. Spread out, so one blow never finds the whole party.$(br2)Keep a way out behind you."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Frostbound Crown$() counts for the quest book, and its quest marks the way to the Frontier.",
+      "advancement": "minerpg:field_guide/defeated/maledictus"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/maledictus"
+}

@@ -1,0 +1,46 @@
+{
+  "parent": "minerpg:field_guide/root",
+  "display": {
+    "icon": {
+      "id": "minerpg:trophy_ender_dragon"
+    },
+    "title": {
+      "text": "Sighted: The Ender Dragon"
+    },
+    "description": {
+      "text": "A new page opens in your Field Guide."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "arrived": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_end"
+      }
+    },
+    "seen": {
+      "trigger": "minecraft:impossible"
+    },
+    "trophy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minerpg:trophy_ender_dragon"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "arrived",
+      "seen",
+      "trophy"
+    ]
+  ]
+}

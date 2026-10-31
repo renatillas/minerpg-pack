@@ -1,0 +1,13 @@
+name = "Excalibur | Just Enough Items (JEI) Support"
+filename = "Excalibur Jei Support 1.5.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZgAnWkVB/versions/YjfIbfaV/Excalibur%20Jei%20Support%201.5.zip"
+hash-format = "sha512"
+hash = "99cacff9af63676252e2d22208e59de184b0a486801a577d8b86fb95bfaf9a6acb2573a2aebc7c581a106ac2d6222b6cdb546af8c0959bd5dcd1054b87234735"
+
+[update]
+[update.modrinth]
+mod-id = "ZgAnWkVB"
+version = "YjfIbfaV"

@@ -1,0 +1,13 @@
+{
+  "name": "The Stronghold",
+  "icon": "minecraft:end_portal_frame",
+  "category": "patchouli:field_guide",
+  "sortnum": 18,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A maze of stone under the Overworld, built around the portal to the End. Dungeon level 5.$()$(br2)$(l)Counter:$() Follow a thrown Eye of Ender; the portal room is near the bottom.$(br2)Mark your way back. Every corridor looks the same."
+    }
+  ],
+  "advancement": "minerpg:field_guide/found/strongholds"
+}

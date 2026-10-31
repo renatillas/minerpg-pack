@@ -3,4 +3,5 @@ give @s spell_engine:spell_book[minecraft:item_name='{"translate": "item.element
 give @s elemental_wizards_rpg:wand_wind 1
 give @s elemental_wizards_rpg:elemental_chest 1
 give @s mrpg_lib:storm_stone 32
+tellraw @s {"text": "You are never where they swing. Strike on the gust, and be gone.", "color": "gray", "italic": true}
 tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}

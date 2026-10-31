@@ -1,0 +1,13 @@
+name = "Excalibur | Waystones Support"
+filename = "Excalibur Waystones 1.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/rivls4IB/versions/YR7uaB4J/Excalibur%20Waystones%201.1.zip"
+hash-format = "sha512"
+hash = "e4ceb9ddd58bfe8820fae360b45a66da27620ae5fd83c6297e2cd71770ad996bdc0a6fcc45e47e86874bc6e36077bd099bf3efaadc2dcfb21b5870087653ea5f"
+
+[update]
+[update.modrinth]
+mod-id = "rivls4IB"
+version = "YR7uaB4J"

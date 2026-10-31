@@ -1,0 +1,13 @@
+{
+  "name": "Bastions",
+  "icon": "minecraft:gilded_blackstone",
+  "category": "patchouli:field_guide",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Black fortresses where piglins hoard their gold. Armored dungeon, level 6.$()$(br2)$(l)Counter:$() Brutes ignore gold and wear heavy armor. Spells cut straight through it.$(br2)Wear one piece of gold, or every piglin turns on you."
+    }
+  ],
+  "advancement": "minerpg:field_guide/found/bastions"
+}

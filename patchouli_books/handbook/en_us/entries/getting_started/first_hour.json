@@ -6,11 +6,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(li)Choose your folk when you first join (see Races).$(li)Open the quest book ($(k:key.ftbquests.quests)) and claim $(item)Choose Your Calling$() for your class kit.$(li)Put the tome in its spell book slot, hold the weapon and cast.$(li)Join two jobs ($(k:key.jobsplus.open_menu)).$(li)Form a party ($(k:key.partyhud.open_screen))."
+      "text": "$(li)Choose your folk.$(li)Open the quest book ($(k:key.ftbquests.quests)) and claim $(item)Choose Your Calling$(): your class kit.$(li)Tome in its slot, weapon in hand, cast.$(li)Join two jobs ($(k:key.jobsplus.open_menu)).$(li)Find your friends ($(k:key.partyhud.open_screen))."
     },
     {
       "type": "patchouli:text",
-      "text": "You start in a plains village. Its $(item)gazebo$() holds a Spell Binding Table, its class buildings sell gear for your calling, and a waystone there lets you come back from anywhere.$(br2)Then head out: the Hearthlands around you are the gentlest land in the world."
+      "text": "You wake in a plains village with a map to the nearest tavern. For your first three minutes the world goes easy on you: take the time to look around.$(br2)The $(item)gazebo$() holds a Spell Binding Table, the class buildings sell gear for your calling, and the waystone brings you home from anywhere. The Hearthlands around you are the gentlest land there is."
     }
   ]
 }

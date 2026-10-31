@@ -1,0 +1,13 @@
+name = "Excalibur - Jewelry (RPG Series) Gem Veins"
+filename = "Excalibur - RPG Series.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/gviiYFfY/versions/Dzx2nK0o/Excalibur%20-%20RPG%20Series.zip"
+hash-format = "sha512"
+hash = "688c44d93b1f7c60340c0edc6bacf98b9b339c42630f632b98f23da9da210f4b67497838cf12fb1e2969fcd4966a23ee91950cf0911f7a975030fb9128264702"
+
+[update]
+[update.modrinth]
+mod-id = "gviiYFfY"
+version = "Dzx2nK0o"

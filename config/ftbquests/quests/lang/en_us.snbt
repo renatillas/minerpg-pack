@@ -17,12 +17,13 @@
 	"chapter.7F4F1DAF0F1ED786.title": "Chapter 3: The End"
 	"file.0000000000000001.title": "minerpg"
 	"quest.11F4C25FDB99D364.quest_desc": [
-		"Roll out of danger with the combat roll key (R by default, check Controls). Rolls recharge over time."
+		"Never take a blow you can roll away from. R, unless you changed it."
+		"Mid-roll, nothing can touch you. Rolls recharge over time."
 	]
 	"quest.11F4C25FDB99D364.quest_subtitle": "Dodge roll"
 	"quest.11F4C25FDB99D364.title": "Light on Your Feet"
 	"quest.139971D90D5C61AB.quest_desc": [
-		"Many spells burn runes. Craft them at a Rune Crafting Altar: it makes more runes from the same materials than a crafting table."
+		"Many spells burn runes. Make them at a Rune Crafting Altar: same materials, more runes than a crafting table."
 	]
 	"quest.139971D90D5C61AB.quest_subtitle": "Craft runes"
 	"quest.139971D90D5C61AB.title": "Stones That Remember"
@@ -34,7 +35,7 @@
 	"quest.13C628F8E97EDFB1.quest_subtitle": "Job milestone"
 	"quest.13C628F8E97EDFB1.title": "Master"
 	"quest.140588183FBEF823.quest_desc": [
-		"Open your inventory and press the sword button to see your stats: spell power, crit, armor and more."
+		"Open your inventory and press the sword button: spell power, crit, armor, all of it."
 	]
 	"quest.140588183FBEF823.quest_subtitle": "Your stats screen"
 	"quest.140588183FBEF823.title": "Know Thyself"
@@ -46,11 +47,11 @@
 	"quest.14102C2355F637DA.quest_subtitle": "Boss"
 	"quest.14102C2355F637DA.title": "Teeth of the Tide"
 	"quest.15511B0F8DB55CDA.quest_desc": [
-		"This book follows you from your first night to the edge of the world."
-		"Each tab is a chapter. Quests show what to try next and pay you for it."
+		"This book walks with you from your first night to the edge of the world."
+		"Each tab is a chapter. Each quest points at something worth trying, and pays you for it."
 		""
-		"Press L to open this book any time."
-		"Your &6Adventurer's Handbook&r explains how races, classes, jobs, zones, loot and parties work. Right-click it whenever you wonder. Lost it? A book and a feather make another."
+		"Press L whenever you are lost."
+		"Your &6Adventurer's Handbook&r knows how this world works: races, classes, jobs, zones, loot, parties, and a Field Guide that fills in as you explore. Lost it? A book and a feather make another."
 		""
 		"Tick the box to begin."
 	]
@@ -77,7 +78,7 @@
 	"quest.1683BAA7EE6A9D08.quest_subtitle": "Chapter start"
 	"quest.1683BAA7EE6A9D08.title": "Eyes of the Void"
 	"quest.16E53725EC3775DC.quest_desc": [
-		"Dungeon chests are personal: every player finds their own loot in the same chest. No need to race your friends."
+		"Dungeon chests keep a share for each of you. No need to race your friends to the loot."
 	]
 	"quest.16E53725EC3775DC.quest_subtitle": "Personal dungeon chests"
 	"quest.16E53725EC3775DC.title": "Yours Alone"
@@ -104,8 +105,8 @@
 	"quest.1957E4BC9E79A53A.quest_subtitle": "Boss"
 	"quest.1957E4BC9E79A53A.title": "The Cursed Warden"
 	"quest.1A456EDA90491257.quest_desc": [
-		"Open your inventory and put the tome in its spell book slot."
-		"Hold a weapon of the same class and cast a spell with the spell keys shown on your hotbar."
+		"Tome in its spell book slot. A weapon of the same class in hand."
+		"Now cast: the spell keys are shown on your hotbar."
 	]
 	"quest.1A456EDA90491257.quest_subtitle": "Equip your tome, cast a spell"
 	"quest.1A456EDA90491257.title": "Bound to the Book"
@@ -118,9 +119,9 @@
 	]
 	"quest.1BACA375DF555AD6.title": "The Soul Blacksmith"
 	"quest.1BC9B50E8EB7C872.quest_desc": [
-		"When you first joined, you chose your folk. Each one has two small gifts, one drawback and one racial power."
+		"Your folk gave you a few small gifts, one drawback and one power."
 		""
-		"Use your racial power once: press V (see Controls)."
+		"Use your racial power once. V, unless you changed it."
 	]
 	"quest.1BC9B50E8EB7C872.quest_subtitle": "Your race and its power"
 	"quest.1BC9B50E8EB7C872.title": "Who Are You?"
@@ -141,10 +142,10 @@
 	"quest.1C1A258BBB1C69E5.quest_subtitle": "Side task"
 	"quest.1C1A258BBB1C69E5.title": "Eye of the Void"
 	"quest.1D4EBCBCFF715BE5.quest_desc": [
-		"Gear drops in rarities, each with its own name color: Common, Uncommon, Rare, Epic, Mythic. Higher rarity, more bonus stats."
-		"Break gear you do not need at a Salvaging Table to get rarity materials for reforging."
+		"Gear comes in rarities, each with its own color: Common, Uncommon, Rare, Epic, Mythic. The rarer, the more bonus stats."
+		"Gear you do not need goes to a Salvaging Table. Its scraps pay for reforging."
 		""
-		"Your &eworld tier&r (Ctrl+T to look) sets how tough monsters are and how good gear drops. It starts at Haven and rises by itself when you beat chapter bosses: Venture, Ascent, Summit, Pinnacle. It never goes down."
+		"Your &eworld tier&r (Ctrl+T to look) sets how tough monsters are and how good the loot is. It starts at Haven and climbs on its own as chapter bosses fall: Venture, Ascent, Summit, Pinnacle. It never goes back."
 	]
 	"quest.1D4EBCBCFF715BE5.quest_subtitle": "Gear rarity and salvaging"
 	"quest.1D4EBCBCFF715BE5.title": "Not All Blades Are Equal"
@@ -178,8 +179,8 @@
 	"quest.20827BF57F7546BE.quest_subtitle": "Side task"
 	"quest.20827BF57F7546BE.title": "Keep of Ash"
 	"quest.208546346D7B1A57.quest_desc": [
-		"Stronger spells come from a Spell Binding Table. Every plains village, including the one you started in, has a gazebo with one. You can also build your own and ring it with bookshelves."
-		"Put your tome in and bind a new spell with your experience levels."
+		"Stronger spells are bound at a Spell Binding Table. Every plains village, yours included, keeps one in its gazebo. Or build your own and ring it with bookshelves."
+		"Put your tome in and pay in experience levels."
 	]
 	"quest.208546346D7B1A57.quest_subtitle": "Learn new spells"
 	"quest.208546346D7B1A57.title": "The Binding Table"
@@ -212,18 +213,19 @@
 	]
 	"quest.29E79544ED9ADE2F.title": "The Stronghold"
 	"quest.2C9281C642E70027.quest_desc": [
-		"The &aHearthlands&r are the gentle lands: plains, forests, meadows and rivers, with villages, taverns and small dungeons. A good place to learn your class."
-		"Your journey starts in a plains village. Walk its streets to begin."
+		"The &aHearthlands&r are the gentle lands: plains, forests, meadows and rivers, with villages, taverns and small dungeons. Learn your class here."
+		"Walk the streets of a village to begin."
 		""
 		"&7Reward: a map marking the nearest small dungeon.&r"
 	]
 	"quest.2C9281C642E70027.quest_subtitle": "Hearthlands"
 	"quest.2C9281C642E70027.title": "The Hearth Road"
 	"quest.2D964BD77219E2CA.quest_desc": [
-		"When you would die with other players online, you fall &cdowned&r instead. You have 60 seconds."
-		"A friend revives you by holding the use key (right-click) on you for 3 seconds. Heal spells cannot reach a downed player: someone has to pick you up."
-		"You get up with 3 hearts and a short Weakness. Fall again soon after and the same timer keeps running."
-		"Alone on the server there is nobody to help, so you simply die. Lava and the void still kill at once."
+		"With other players online, a killing blow leaves you &cdowned&r instead. You have 60 seconds."
+		"A friend holds use (right-click) on you for 3 seconds to pick you up. Heal spells cannot reach the downed: someone has to come to you."
+		"You get up with 3 hearts and a short Weakness. Fall again soon and the same timer keeps running."
+		"Alone on the server, nobody is coming: you simply die. Lava and the void kill at once."
+		"A real death costs you nothing: your things and experience wait in a &6grave&r where you fell. Chat tells you where."
 	]
 	"quest.2D964BD77219E2CA.quest_subtitle": "Downed and revived"
 	"quest.2D964BD77219E2CA.title": "Pick Them Up"
@@ -232,9 +234,9 @@
 	]
 	"quest.2E75B2448D173567.title": "Into the End"
 	"quest.303494E14ED1C03B.quest_desc": [
-		"Pick the class you want to start as. You get its spell book (tome), a starter weapon, one armor piece and the runes its spells need."
+		"Choose who you start as. You get the class tome, a starter weapon, one armor piece, and the runes or arrows it burns."
 		""
-		"You can learn a second class later by making its tome at a Spell Binding Table."
+		"Nothing is final: a second class waits at any Spell Binding Table."
 	]
 	"quest.303494E14ED1C03B.quest_subtitle": "Your class starter kit"
 	"quest.303494E14ED1C03B.title": "Choose Your Calling"
@@ -243,9 +245,9 @@
 	]
 	"quest.311B8E5CCB0CEAB9.title": "Fortress of Flame"
 	"quest.320B32FBD74A9EAF.quest_desc": [
-		"You can walk anywhere, but two doors need keys:"
-		"- &6Nether Sigil&r: dropped by The Harbinger at the end of the Overworld chapter. Fire alone will not open a Nether portal; the sigil does."
-		"- &dVoid Shard&r: dropped by Ignis at the end of the Nether chapter. Eyes of Ender need one."
+		"You can walk anywhere. Two doors need keys:"
+		"- &6Nether Sigil&r: from The Harbinger, at the end of the Overworld chapter. Fire will not wake a Nether portal; the sigil will."
+		"- &dVoid Shard&r: from Ignis, at the end of the Nether chapter. No Eye of Ender without one."
 		"Everyone near a boss when it falls gets their own key."
 	]
 	"quest.320B32FBD74A9EAF.quest_subtitle": "The Nether Sigil and the Void Shard"
@@ -275,10 +277,10 @@
 	"quest.3E7B599CAC455CBF.quest_subtitle": "Wildlands"
 	"quest.3E7B599CAC455CBF.title": "The Cursed Pyramid"
 	"quest.3F043D30988BC476.quest_desc": [
-		"Press H to open the Party HUD: invite your friends and see their health on screen."
-		"Party members near a kill share talent experience, and your spells and swings never hurt each other. Heals and buffs reach every player, party or not."
+		"Press H for the Party HUD: invite your friends and keep their health in sight."
+		"Your spells and swings never hurt each other, and kills near a friend teach you both. Heals and buffs reach every player, party or not."
 		"In the Members tab, right-click each friend and add them to favorites to see their health frames."
-		"Bosses are built for a full party of four: alone you will not win one. Bring your friends."
+		"Every boss is built for a full party of four. Alone, you will not win. Bring your friends."
 		"Your quest book stays your own. When a boss falls, everyone nearby gets their own trophy or key."
 	]
 	"quest.3F043D30988BC476.quest_subtitle": "Party HUD (H)"
@@ -314,9 +316,9 @@
 	"quest.40678BD3902A909A.quest_subtitle": "Job milestone"
 	"quest.40678BD3902A909A.title": "Expert"
 	"quest.409FB0BE8F2205F1.quest_desc": [
-		"Kills earn talent experience. Press N to open your talent tree and spend your first point."
-		"Party members within 200 blocks share talent experience from kills."
-		"Kills can earn up to 9 points. The last 4 come from the great chapter bosses."
+		"Every kill teaches you something. Press N and spend your first talent point."
+		"Friends within 200 blocks learn from your kills too."
+		"Kills earn up to 9 points. The last 4 come from the great chapter bosses."
 	]
 	"quest.409FB0BE8F2205F1.quest_subtitle": "Spend a talent point"
 	"quest.409FB0BE8F2205F1.title": "A Point to Spend"
@@ -422,7 +424,8 @@
 	]
 	"quest.558D7ACBE84CC796.title": "Burning Wardens"
 	"quest.588CB70442A544B0.quest_desc": [
-		"Waystones stand in villages and along the roads. Activate one and you can travel back to it from any other waystone."
+		"Waystones stand in villages and along the roads. Wake one, and any other waystone can bring you back to it."
+		"Each trip costs a little experience: farther costs more."
 	]
 	"quest.588CB70442A544B0.quest_subtitle": "Fast travel"
 	"quest.588CB70442A544B0.title": "Stones of Passage"
@@ -440,9 +443,9 @@
 	]
 	"quest.5A678F41280A7521.title": "Ancient Debris"
 	"quest.5D0D3E3C2B3C0A65.quest_desc": [
-		"Press J to open the Jobs menu and join two jobs. Each job levels up from its own work and pays coins and perks."
-		"Spend &6job coins&r in the Jobs menu on power-ups or a third job. Every level-up pays a coin, and many quests pay more."
-		"The quests below show one way each job earns experience."
+		"Press J and join two jobs. Each grows from its own work and pays in coins and perks."
+		"Spend &6job coins&r in the same menu on power-ups or a third job. Every level pays a coin; many quests pay more."
+		"The quests below show one way into each job."
 	]
 	"quest.5D0D3E3C2B3C0A65.quest_subtitle": "Jobs menu (J)"
 	"quest.5D0D3E3C2B3C0A65.title": "Pick Your Trades"
@@ -475,11 +478,13 @@
 	"quest.608F4956BDD8B0F1.title": "The Castle at the Edge"
 	"quest.654D4488C8A8FA77.quest_desc": [
 		"Taverns sit along the roads of the Hearthlands. Travelers trade, rest and swap stories there."
+		"The map you woke with leads to the nearest one."
 	]
 	"quest.654D4488C8A8FA77.quest_subtitle": "Hearthlands"
 	"quest.654D4488C8A8FA77.title": "A Warm Hearth"
 	"quest.6555936DF8BED6FB.quest_desc": [
-		"Craft a waystone and place it at your home. Then you can always travel back."
+		"Craft a waystone and set it at your home."
+		"The Warp Stone you earn here takes you to any waystone you know, from anywhere, for free. It needs 5 minutes to recover after each use."
 	]
 	"quest.6555936DF8BED6FB.quest_subtitle": "Side task"
 	"quest.6555936DF8BED6FB.title": "A Stone of Your Own"

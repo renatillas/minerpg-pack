@@ -1,0 +1,18 @@
+{
+  "name": "Scylla",
+  "icon": "minecraft:trident",
+  "category": "patchouli:field_guide",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A storm-crowned terror ruling the $(l)Acropolis$(), high above the warm seas.$()$(br2)$(l)Counter:$() She strikes in wide sweeping arcs and calls lightning. Step out of reach, then close in when the sweep ends.$(br2)No quest asks for her. Go for the loot and the story."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Fallen. The warm seas are a little quieter.",
+      "advancement": "minerpg:field_guide/defeated/scylla"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/scylla"
+}

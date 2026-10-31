@@ -1,0 +1,18 @@
+{
+  "name": "The Wither",
+  "icon": "minerpg:trophy_wither",
+  "category": "patchouli:field_guide",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A three-headed horror you build yourself, from soul sand and wither skeleton skulls.$()$(br2)$(l)Counter:$() Below half health it shrugs off arrows and bolts. Archers, bring a blade for the second half.$(br2)Summon it far from anything you love. It smashes blocks when it is hurt."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Ashen Skull Shard$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/wither"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/wither"
+}

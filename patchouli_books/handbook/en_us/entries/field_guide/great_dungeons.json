@@ -1,0 +1,13 @@
+{
+  "name": "Great Dungeons",
+  "icon": "minecraft:cracked_stone_bricks",
+  "category": "patchouli:field_guide",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Forts, temples, towers, ruins and wrecked ships across the Wildlands. Dungeon level 3 or 4, higher in the Frontier.$()$(br2)$(l)Counter:$() The walls will not break. Take the door and clear room by room.$(br2)Some are $(l)Armored$(), $(l)Magebane$() or $(l)Bounty$() dungeons. The zone line tells you which; see World & Danger."
+    }
+  ],
+  "advancement": "minerpg:field_guide/found/great_dungeons"
+}

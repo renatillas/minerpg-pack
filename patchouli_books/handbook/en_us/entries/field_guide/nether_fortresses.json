@@ -1,0 +1,13 @@
+{
+  "name": "Nether Fortresses",
+  "icon": "minecraft:nether_bricks",
+  "category": "patchouli:field_guide",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Dark brick bridges over the lava seas. Dungeon level 6.$()$(br2)$(l)Counter:$() Blazes fly out of reach: bring a bow or spells. Wither skeletons hit hard and wither you.$(br2)The fortress gardens grow nether wart."
+    }
+  ],
+  "advancement": "minerpg:field_guide/found/nether_fortresses"
+}

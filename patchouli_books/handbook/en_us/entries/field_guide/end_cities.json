@@ -1,0 +1,13 @@
+{
+  "name": "End Cities",
+  "icon": "minecraft:purpur_block",
+  "category": "patchouli:field_guide",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Purple towers on the outer islands of the End. Dungeon level 7.$()$(br2)$(l)Counter:$() Shulker bullets lift you into the air. Slow falling, or a block under your feet, saves a long drop.$(br2)Some cities have a ship moored alongside. Look aboard."
+    }
+  ],
+  "advancement": "minerpg:field_guide/found/end_cities"
+}

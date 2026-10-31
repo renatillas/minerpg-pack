@@ -2,7 +2,7 @@
   "name": "Elites and Invaders",
   "icon": "minecraft:wither_skeleton_skull",
   "category": "patchouli:world",
-  "sortnum": 3,
+  "sortnum": 4,
   "pages": [
     {
       "type": "patchouli:text",

@@ -1,0 +1,13 @@
+name = "Excalibur | Lootr Support"
+filename = "Excalibur_Lootr_v1.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/dzo7g60I/versions/KyYDwuXI/Excalibur_Lootr_v1.1.zip"
+hash-format = "sha512"
+hash = "1c5110a51426871d7cd5dff2fb2b6c78d6cb4183fb895f1c2a3bb5cb11e64b8b06ce3cf04e2fd798d782ee7311dd92cfaa14525dc7441c1c4b6906438efa948f"
+
+[update]
+[update.modrinth]
+mod-id = "dzo7g60I"
+version = "KyYDwuXI"

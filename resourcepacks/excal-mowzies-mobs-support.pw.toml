@@ -1,0 +1,13 @@
+name = "Excalibur | Mowzie's Mobs Support"
+filename = "Excalibur Mowzie's Mobs 1.2.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/lf81ACnW/versions/RsQVhzfi/Excalibur%20Mowzie%27s%20Mobs%201.2.zip"
+hash-format = "sha512"
+hash = "0825633404b3a8e440e61ff3f2eebe78e66505c09a4096fa4d429b607436bace4c58b340d660bb54c9452b53726c86c1f24d055b5dc0cf219f12804daa47215b"
+
+[update]
+[update.modrinth]
+mod-id = "lf81ACnW"
+version = "RsQVhzfi"

@@ -25,6 +25,9 @@ import shutil
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # .../pack
 BOOK = os.path.join(ROOT, 'patchouli_books', 'handbook')
+# Field Guide advancements (see FIELD_GUIDE below). tools/gen_quests.py owns the rest of
+# kubejs/data/minerpg/advancement/ and leaves this subfolder alone.
+GUIDE_ADV = os.path.join(ROOT, 'kubejs', 'data', 'minerpg', 'advancement', 'field_guide')
 NS = 'patchouli'  # external books always live in the patchouli namespace
 
 # The give/recipe/quest code refers to this item; keep in sync with
@@ -67,6 +70,7 @@ CATEGORIES = [
     ('professions', 'Professions', 'Jobs, what they make and how they level.', 'minecraft:smithing_table'),
     ('world', 'World & Danger', 'Zones, dungeon levels, world tiers and elites.', 'minecraft:zombie_head'),
     ('bosses', 'Bosses & Chapters', 'The road through three chapters and the keys that open it.', 'minerpg:nether_sigil'),
+    ('field_guide', 'Field Guide', 'Foes and places, written in as you find them.', 'minecraft:writable_book'),
     ('loot', 'Loot', 'Rarity, affixes, sockets, gems and reforging.', 'minecraft:diamond_sword'),
     ('party', 'Party', 'Playing together: the Party HUD, shared talents, reviving.', 'minecraft:shield'),
     ('keys', 'Keys', 'Every key the pack uses, as you have it bound right now.', 'minecraft:tripwire_hook'),
@@ -86,14 +90,15 @@ E['getting_started'] = [
         crafting('minerpg:handbook', 'Lost your handbook? A book and a feather make a new one.'),
     ]),
     ('first_hour', 'Your First Hour', 'minecraft:clock', [
-        text('$(li)Choose your folk when you first join (see Races).'
-             f'$(li)Open the quest book ({k("key.ftbquests.quests")}) and claim $(item)Choose Your Calling$() for your class kit.'
-             '$(li)Put the tome in its spell book slot, hold the weapon and cast.'
+        text('$(li)Choose your folk.'
+             f'$(li)Open the quest book ({k("key.ftbquests.quests")}) and claim $(item)Choose Your Calling$(): your class kit.'
+             '$(li)Tome in its slot, weapon in hand, cast.'
              f'$(li)Join two jobs ({k("key.jobsplus.open_menu")}).'
-             f'$(li)Form a party ({k("key.partyhud.open_screen")}).'),
-        text('You start in a plains village. Its $(item)gazebo$() holds a Spell Binding Table, its class '
-             'buildings sell gear for your calling, and a waystone there lets you come back from anywhere.$(br2)'
-             'Then head out: the Hearthlands around you are the gentlest land in the world.'),
+             f'$(li)Find your friends ({k("key.partyhud.open_screen")}).'),
+        text('You wake in a plains village with a map to the nearest tavern. For your first three minutes the '
+             'world goes easy on you: take the time to look around.$(br2)The $(item)gazebo$() holds a Spell '
+             'Binding Table, the class buildings sell gear for your calling, and the waystone brings you home '
+             'from anywhere. The Hearthlands around you are the gentlest land there is.'),
     ]),
     ('house_rules', 'House Rules', 'minecraft:red_bed', [
         text('A few rules make life easier for a small group:'
@@ -101,8 +106,8 @@ E['getting_started'] = [
              '$(li)No phantoms.'
              '$(li)Creepers, ghast fireballs and wither skulls do not break blocks. Endermen do not pick blocks up.'
              '$(li)Villagers still farm, sheep still eat grass.'),
-        text('$(li)You drop your things when you die. If friends are online you fall $(item)downed$() first, '
-             'and they can pick you up (see Party).'
+        text('$(li)Nothing is lost when you die: it waits in your $(item)grave$() (see Party). With friends online '
+             'you fall $(item)downed$() first, and they can pick you up.'
              '$(li)Dungeon chests are personal: everyone finds their own loot in the same chest.'
              '$(li)Mining is blocked inside many surface dungeons (see World & Danger).'),
     ]),
@@ -279,6 +284,20 @@ E['world'] = [
         text('$(l)No mining.$() The walls of many surface dungeons cannot be broken, so you have to go in '
              'through the door. Spawners, cobwebs, torches, leaves and plants still break, and chests open '
              'normally. Blocks you place inside cannot be broken again, so build carefully.'),
+        text('$(l)Dungeon kinds.$() Some dungeons have a temper, named on the zone line:'
+             '$(li)$(l)Armored$(): forts and garrisons. Defenders wear heavy armor; weapons and arrows bite less, '
+             'spells cut straight through.'
+             '$(li)$(l)Magebane$(): witch houses, sanctuaries, plague halls. Warded against spells; steel works.'
+             '$(li)$(l)Bounty$(): bandit and pirate haunts. A little meaner, and worth far more experience.'),
+    ]),
+    ('travel', 'Waystones and Travel', 'waystones:waystone', [
+        text('Activate every $(item)waystone$() you pass. From any waystone you can travel to any other you know.'
+             '$(br2)A trip costs a little experience: 1 point per 100 blocks, at most 27 points, a flat 27 to another '
+             'dimension. Warp plates, scrolls and global waystones are free.'),
+        spotlight('waystones:warp_stone',
+                  'The $(item)Warp Stone$() is your way home: hold it to travel to any waystone you know, from '
+                  'anywhere, for free. It never wears out, but it needs 5 minutes to recover after each use.'
+                  '$(br2)The quest $(item)A Stone of Your Own$() gives you one.'),
     ]),
     ('tiers', 'World Tiers', 'minecraft:nether_star', [
         text(f'Your $(item)world tier$() ({k("key.apotheosis.open_world_tier_select")} to look) makes '
@@ -333,7 +352,7 @@ E['bosses'] = [
         text('$(li)Bosses are built for a full party of four. Alone you will not win; bring your friends.'
              '$(li)Fights are long. Learn the big attacks and get out of the way: roll (R) makes you briefly '
              'untouchable.'
-             '$(li)Quests hand out maps to the next lair.'
+             '$(li)Quests hand out maps to the next lair, and the Field Guide fills in as you find them.'
              '$(li)Bosses drop the best gear of each world tier.'),
     ]),
 ]
@@ -373,6 +392,13 @@ E['party'] = [
              'revives you by holding the use key on you for 3 seconds; you get up with a few hearts and some '
              'weakness.$(br2)Heal spells cannot reach a downed player. Lava and the void still kill at once.'),
     ]),
+    ('graves', 'Graves', 'minecraft:skeleton_skull', [
+        text('Die for real and a $(item)grave$() rises where you fell. It holds everything you carried: your '
+             'inventory, armor, accessories, backpack and experience. Nothing is lost.$(br2)Chat tells you where '
+             'it is, and you respawn with a compass that points to it. Right-click the grave to take it all back.'),
+        text('Only you can open your grave at first. After 15 minutes a friend can collect it for you, and you are '
+             'told who did.$(br2)Being $(item)downed$() makes no grave: a grave only comes with a real death.'),
+    ]),
 ]
 
 KEYS = [
@@ -411,6 +437,237 @@ E['keys'] = [
 ]
 
 
+# --------------------------------------------------------------------------------------
+# Field Guide: one locked entry per boss and per kind of great place. An entry opens when you
+# first see the place or its master ("sighted"); its last page opens when the master falls
+# ("defeated"). Both are hidden advancements (minerpg:field_guide/...), so each unlock shows one
+# quiet vanilla advancement toast (task frame: no sound, nothing in chat). Patchouli only knows
+# advancements the client has been sent, and the game only sends ones with a display, which is
+# why these have one (hidden until earned) and the book's own toasts stay off.
+#
+# Sighted = stepping into the lair (location check, chunk-local, no structure search), OR the
+# boss in line of sight within 32 blocks (kubejs/server_scripts/minerpg_field_guide.js awards
+# the "seen" criterion), OR its trophy (late arrivals). Defeated = holding the trophy/key item
+# (everyone nearby at the kill gets one), or landing the killing blow yourself.
+#
+# Counter tips match the pack as built (pack 0.8.0 boss balance): bosses are built for a party
+# of four, hits are heavy, a combat roll is briefly untouchable, and the Ender Guardian, Umvuthi
+# and the Dragon regenerate during the fight.
+# --------------------------------------------------------------------------------------
+# (key, entity id, name, icon, sighted extra criteria, defeated item, lore, counter, advice, after)
+def in_structure(structure):
+    return {'trigger': 'minecraft:location', 'conditions': {'player': [{
+        'condition': 'minecraft:entity_properties', 'entity': 'this',
+        'predicate': {'location': {'structures': structure}}}]}}
+
+
+GUIDE_BOSSES = [
+    ('amethyst_crab', 'cataclysm:amethyst_crab', 'The Amethyst Crab', 'minerpg:trophy_amethyst_crab',
+     {'lair': in_structure('cataclysm:amethyst_nest')}, 'minerpg:trophy_amethyst_crab',
+     'A crab the size of a cart, armored in living crystal. It keeps the $(l)Amethyst Nest$() deep in the lush '
+     'caves of the Hearthlands.',
+     'It mends faster the healthier it is. Hit hard from the first second and never let up; a slow party '
+     'never finishes it.',
+     'Light the cave before you wake it.',
+     'Its $(item)Geode Claw$() raises your world tier to Venture.'),
+    ('ferrous_wroughtnaut', 'mowziesmobs:ferrous_wroughtnaut', 'The Ferrous Wroughtnaut', 'minerpg:trophy_ferrous_wroughtnaut',
+     {'lair': in_structure('mowziesmobs:wrought_chamber')}, 'minerpg:trophy_ferrous_wroughtnaut',
+     'An empty suit of armor that still swings its axe, sealed in a chamber under the Hearthlands.',
+     'Blows on its front plate do next to nothing. Let the axe miss, then strike its back while it hauls the '
+     'blade free.',
+     'This fight is about timing, not damage. Watch before you swing.',
+     'Its $(item)Wrought Rivet$() counts for the quest book.'),
+    ('umvuthi', 'mowziesmobs:umvuthi', 'Umvuthi, the Sunbird', 'minerpg:trophy_umvuthi',
+     {'lair': in_structure('mowziesmobs:umvuthana_grove')}, 'minerpg:trophy_umvuthi',
+     'Chief of the masked Umvuthana, holding court in a grove of the savanna.',
+     'He heals all fight long and hides behind his followers. Clear the masks around him, then keep every '
+     'blade on him so the healing never catches up.',
+     'Sunfire lands where you stand. Keep moving.',
+     'Its $(item)Sunbird Plume$() counts for the quest book.'),
+    ('frostmaw', 'mowziesmobs:frostmaw', 'The Frostmaw', 'minerpg:trophy_frostmaw',
+     {'lair': in_structure('mowziesmobs:frostmaw_spawn')}, 'minerpg:trophy_frostmaw',
+     'A great white beast asleep among the snowfields and ice spikes.',
+     'Its breath freezes everything in front of it, and it slams anyone who crowds it. Fight from its flanks '
+     'and roll the slam.',
+     'It sleeps until disturbed. Wake it only when the whole party is ready.',
+     'Its $(item)Rimefang Tusk$() counts for the quest book.'),
+    ('ancient_remnant', 'cataclysm:ancient_remnant', 'The Ancient Remnant', 'minerpg:trophy_ancient_remnant',
+     {'lair': in_structure('cataclysm:cursed_pyramid')}, 'minerpg:trophy_ancient_remnant',
+     'The bones of a sun-king, still crowned, at the bottom of the $(l)Cursed Pyramid$() in the deserts of the '
+     'Wildlands.',
+     'It charges in straight lines. Roll aside late and punish it while it turns.',
+     'Never fight it in a corridor. Give yourselves room to step aside.',
+     'Its $(item)Sun-Bleached Fang$() counts for the quest book, and its quest marks the way to the Frontier.'),
+    ('maledictus', 'cataclysm:maledictus', 'Maledictus', 'minerpg:trophy_maledictus',
+     {'lair': in_structure('cataclysm:frosted_prison')}, 'minerpg:trophy_maledictus',
+     'A prisoner who became the prison, held in the black ice of the $(l)Frosted Prison$().',
+     'Its smashes hit everything close by. Spread out, so one blow never finds the whole party.',
+     'Keep a way out behind you.',
+     'Its $(item)Frostbound Crown$() counts for the quest book, and its quest marks the way to the Frontier.'),
+    ('leviathan', 'cataclysm:the_leviathan', 'The Leviathan', 'minerpg:trophy_leviathan',
+     {'lair': in_structure('cataclysm:sunken_city')}, 'minerpg:trophy_leviathan',
+     'A serpent of the deep, coiled in a flooded hall of the $(l)Sunken City$().',
+     'Out of the water it cannot be touched. Fight it in its element, and bring water breathing for '
+     'everyone.',
+     'Carry more air than you think you need.',
+     'Its $(item)Abyssal Scale$() counts for the quest book, and its quest marks the way to the Frontier.'),
+    ('scylla', 'cataclysm:scylla', 'Scylla', 'minecraft:trident',
+     {'lair': in_structure('cataclysm:acropolis')}, None,
+     'A storm-crowned terror ruling the $(l)Acropolis$(), high above the warm seas.',
+     'She strikes in wide sweeping arcs and calls lightning. Step out of reach, then close in when the sweep '
+     'ends.',
+     'No quest asks for her. Go for the loot and the story.',
+     'Fallen. The warm seas are a little quieter.'),
+    ('harbinger', 'cataclysm:the_harbinger', 'The Harbinger', 'minerpg:nether_sigil',
+     {'lair': in_structure('cataclysm:ancient_factory')}, 'minerpg:nether_sigil',
+     'The iron herald of the $(l)Ancient Factory$(), deep under the mountains of the Frontier.',
+     'It repairs itself whenever you hesitate. Keep the pressure on, and break line of sight when its beams '
+     'sweep the hall.',
+     'Bring the whole party and your best gear. It holds the way to the Nether.',
+     'Everyone nearby earns a $(item)Nether Sigil$(): it opens Nether portals and raises your world tier to '
+     'Ascent.'),
+    ('netherite_monstrosity', 'cataclysm:netherite_monstrosity', 'The Netherite Monstrosity', 'minerpg:trophy_netherite_monstrosity',
+     {'lair': in_structure('cataclysm:soul_black_smith')}, 'minerpg:trophy_netherite_monstrosity',
+     'A forge-born giant of netherite and lava that guards the Soul Blacksmith\'s forge in the Nether.',
+     'Its smash shakes the floor and leaves fire behind. Roll the smash, and never stand in its lava.',
+     'Bring fire resistance. Everything here burns.',
+     'Its $(item)Molten Heart$() counts for the quest book, and the kill earns a talent point.'),
+    ('ignis', 'cataclysm:ignis', 'Ignis', 'minerpg:void_shard',
+     {'lair': in_structure('cataclysm:burning_arena')}, 'minerpg:void_shard',
+     'A fallen knight wrapped in fire, waiting in the $(l)Burning Arena$().',
+     'Its sword hits hard enough to drop a careless caster. Healers stay back; fighters roll through the big '
+     'swings.',
+     'It grows fiercer as it weakens. Save your strongest spells for the end.',
+     'Everyone nearby earns a $(item)Void Shard$(): Eyes of Ender need it, and it raises your world tier to '
+     'Summit.'),
+    ('ender_guardian', 'cataclysm:ender_guardian', 'The Ender Guardian', 'minerpg:trophy_ender_guardian',
+     {'lair': in_structure('cataclysm:ruined_citadel')}, 'minerpg:trophy_ender_guardian',
+     'The last warden of the $(l)Ruined Citadel$(), at the edge of the void.',
+     'It heals the whole fight. Keep your damage steady; a party that stops to regroup gives back everything '
+     'it took.',
+     'Its blows can throw you far. Fight away from the edges.',
+     'Its $(item)Citadel Keystone$(), with the Dragonscale, raises your world tier to Pinnacle.'),
+    ('wither', 'minecraft:wither', 'The Wither', 'minerpg:trophy_wither',
+     {'summoned': {'trigger': 'minecraft:summoned_entity', 'conditions': {'entity': [{
+         'condition': 'minecraft:entity_properties', 'entity': 'this', 'predicate': {'type': 'minecraft:wither'}}]}}},
+     'minerpg:trophy_wither',
+     'A three-headed horror you build yourself, from soul sand and wither skeleton skulls.',
+     'Below half health it shrugs off arrows and bolts. Archers, bring a blade for the second half.',
+     'Summon it far from anything you love. It smashes blocks when it is hurt.',
+     'Its $(item)Ashen Skull Shard$() counts for the quest book.'),
+    ('ender_dragon', 'minecraft:ender_dragon', 'The Ender Dragon', 'minerpg:trophy_ender_dragon',
+     {'arrived': {'trigger': 'minecraft:changed_dimension', 'conditions': {'to': 'minecraft:the_end'}}},
+     'minerpg:trophy_ender_dragon',
+     'The last dragon, circling the island at the heart of the End.',
+     'The crystals on the pillars heal it. Break them first, then stay out of its purple breath: it eats '
+     'through any armor.',
+     'It also heals slowly by itself. Once you start, do not stop.',
+     'Its $(item)Dragonscale$(), with the Citadel Keystone, raises your world tier to Pinnacle.'),
+]
+
+# (key, name, icon, structure or #tag, lore, counter, advice)
+GUIDE_PLACES = [
+    ('small_dungeons', 'Crypts and Cellars', 'minecraft:mossy_cobblestone', '#minerpg:small_dungeons',
+     'Small dungeons under the fields and forests: crypts, spider dens and old cellars. Dungeon level 2.',
+     'Break the spawner first. The room empties fast after that.',
+     'A good first trip for a new party.'),
+    ('great_dungeons', 'Great Dungeons', 'minecraft:cracked_stone_bricks', '#minerpg:wildlands_dungeons',
+     'Forts, temples, towers, ruins and wrecked ships across the Wildlands. Dungeon level 3 or 4, higher in '
+     'the Frontier.',
+     'The walls will not break. Take the door and clear room by room.',
+     'Some are $(l)Armored$(), $(l)Magebane$() or $(l)Bounty$() dungeons. The zone line tells you which; '
+     'see World & Danger.'),
+    ('ancient_cities', 'Ancient Cities', 'minecraft:sculk_shrieker', 'minecraft:ancient_city',
+     'Silent cities in the deep dark of the Frontier. Dungeon level 5.',
+     'Noise wakes the Warden. Sneak, and never fight it for nothing.',
+     'Wool muffles your steps. Bring some.'),
+    ('strongholds', 'The Stronghold', 'minecraft:end_portal_frame', '#minerpg:strongholds',
+     'A maze of stone under the Overworld, built around the portal to the End. Dungeon level 5.',
+     'Follow a thrown Eye of Ender; the portal room is near the bottom.',
+     'Mark your way back. Every corridor looks the same.'),
+    ('nether_fortresses', 'Nether Fortresses', 'minecraft:nether_bricks', '#minerpg:nether_fortresses',
+     'Dark brick bridges over the lava seas. Dungeon level 6.',
+     'Blazes fly out of reach: bring a bow or spells. Wither skeletons hit hard and wither you.',
+     'The fortress gardens grow nether wart.'),
+    ('bastions', 'Bastions', 'minecraft:gilded_blackstone', 'minecraft:bastion_remnant',
+     'Black fortresses where piglins hoard their gold. Armored dungeon, level 6.',
+     'Brutes ignore gold and wear heavy armor. Spells cut straight through it.',
+     'Wear one piece of gold, or every piglin turns on you.'),
+    ('nether_keeps', 'Nether Keeps', 'minecraft:polished_blackstone_bricks', '#minerpg:nether_dungeons',
+     'Keeps, donjons, ports and skeleton towers scattered through the wastes. Dungeon level 6.',
+     'Fight at the doors. The halls are narrow and crowded.',
+     'Fire resistance makes every trip here easier.'),
+    ('end_cities', 'End Cities', 'minecraft:purpur_block', 'minecraft:end_city',
+     'Purple towers on the outer islands of the End. Dungeon level 7.',
+     'Shulker bullets lift you into the air. Slow falling, or a block under your feet, saves a long drop.',
+     'Some cities have a ship moored alongside. Look aboard.'),
+    ('end_castles', 'End Castles', 'minecraft:end_stone_bricks', '#minerpg:end_dungeons',
+     'Castles, lighthouses and ships on the outer islands. Up to dungeon level 8, the deadliest places there are.',
+     'Clear the courtyard before you climb. Nothing here forgives a fall.',
+     'Go only with gear from the Summit tier or better.'),
+]
+
+
+def guide_advancement(path, title, desc, icon, criteria, parent='minerpg:field_guide/root'):
+    write(os.path.join(GUIDE_ADV, path + '.json'), {
+        'parent': parent,
+        'display': {
+            'icon': {'id': icon}, 'title': {'text': title}, 'description': {'text': desc},
+            'frame': 'task', 'show_toast': True, 'announce_to_chat': False, 'hidden': True},
+        'criteria': criteria,
+        'requirements': [sorted(criteria)],  # any one criterion is enough
+    })
+    return 'minerpg:field_guide/' + path
+
+
+def field_guide():
+    """Writes the advancements and returns the Field Guide's book entries."""
+    if os.path.isdir(GUIDE_ADV):
+        shutil.rmtree(GUIDE_ADV)
+    # The tab root: granted on join, never announced.
+    write(os.path.join(GUIDE_ADV, 'root.json'), {
+        'display': {
+            'icon': {'id': 'minecraft:writable_book'}, 'title': {'text': 'Field Guide'},
+            'description': {'text': 'Places found and foes faced. Read them in your handbook.'},
+            'background': 'minecraft:textures/block/spruce_planks.png',
+            'frame': 'task', 'show_toast': False, 'announce_to_chat': False, 'hidden': False},
+        'criteria': {'joined': {'trigger': 'minecraft:tick'}},
+    })
+    entries = [('how', 'How the Field Guide Works', 'minecraft:writable_book', None, [
+        text('Every great foe and every kind of dangerous place has a page here, locked until you earn it.'
+             '$(li)Step into a lair, or set eyes on its master, and the page opens.'
+             '$(li)Bring the master down and the last page fills in.$(br2)'
+             'Each page ends with a $(l)Counter$(): the one thing to remember when the fight starts.'),
+        text('Every master in this world is built for a full party of four. Its hits are heavy and its fights '
+             f'are long. A combat roll ({k("keybinds.combat_roll.roll")}) makes you untouchable for a moment: '
+             'learn the big blows and roll through them.$(br2)Pages you have not earned stay locked. Go and '
+             'look.'),
+    ])]
+    for key, entity, name, icon, sight, item, lore, counter, advice, after in GUIDE_BOSSES:
+        sighted_crit = dict(sight)
+        sighted_crit['seen'] = {'trigger': 'minecraft:impossible'}  # awarded by minerpg_field_guide.js
+        defeated_crit = {'killed': {'trigger': 'minecraft:player_killed_entity', 'conditions': {'entity': [{
+            'condition': 'minecraft:entity_properties', 'entity': 'this', 'predicate': {'type': entity}}]}}}
+        if item:
+            defeated_crit['trophy'] = {'trigger': 'minecraft:inventory_changed',
+                                       'conditions': {'items': [{'items': item}]}}
+            sighted_crit['trophy'] = defeated_crit['trophy']
+        sighted = guide_advancement(f'sighted/{key}', f'Sighted: {name}', 'A new page opens in your Field Guide.',
+                                    icon, sighted_crit)
+        defeated = guide_advancement(f'defeated/{key}', f'Defeated: {name}', 'The last page of its Field Guide entry is yours.',
+                                     icon, defeated_crit, parent=sighted)
+        last = text(f'$(l)Defeated.$()$(br2){after}')
+        last['advancement'] = defeated
+        entries.append((key, name, icon, sighted, [
+            text(f'$(o){lore}$()$(br2)$(l)Counter:$() {counter}$(br2){advice}'), last]))
+    for key, name, icon, structure, lore, counter, advice in GUIDE_PLACES:
+        found = guide_advancement(f'found/{key}', f'Found: {name}', 'A new page opens in your Field Guide.',
+                                  icon, {'entered': in_structure(structure)})
+        entries.append((key, name, icon, found, [
+            text(f'$(o){lore}$()$(br2)$(l)Counter:$() {counter}$(br2){advice}')]))
+    return entries
+
+
 def write(path, data):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w') as f:
@@ -446,7 +703,15 @@ def main():
             write(os.path.join(BOOK, 'en_us', 'entries', cid, eid + '.json'), {
                 'name': name, 'icon': icon, 'category': f'{NS}:{cid}', 'sortnum': sort, 'pages': pages})
             count += 1
-    print(f'{BOOK_ID}: {len(CATEGORIES)} categories, {count} entries')
+    guide = field_guide()
+    for sort, (eid, name, icon, lock, pages) in enumerate(guide):
+        entry = {'name': name, 'icon': icon, 'category': f'{NS}:field_guide', 'sortnum': sort, 'pages': pages}
+        if lock:
+            entry['advancement'] = lock
+        write(os.path.join(BOOK, 'en_us', 'entries', 'field_guide', eid + '.json'), entry)
+    count += len(guide)
+    print(f'{BOOK_ID}: {len(CATEGORIES)} categories, {count} entries ({len(guide)} in the Field Guide, '
+          f'{len(GUIDE_BOSSES) * 2 + len(GUIDE_PLACES) + 1} advancements)')
 
 
 if __name__ == '__main__':

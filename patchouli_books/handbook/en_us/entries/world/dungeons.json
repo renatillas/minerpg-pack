@@ -11,6 +11,10 @@
     {
       "type": "patchouli:text",
       "text": "$(l)No mining.$() The walls of many surface dungeons cannot be broken, so you have to go in through the door. Spawners, cobwebs, torches, leaves and plants still break, and chests open normally. Blocks you place inside cannot be broken again, so build carefully."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Dungeon kinds.$() Some dungeons have a temper, named on the zone line:$(li)$(l)Armored$(): forts and garrisons. Defenders wear heavy armor; weapons and arrows bite less, spells cut straight through.$(li)$(l)Magebane$(): witch houses, sanctuaries, plague halls. Warded against spells; steel works.$(li)$(l)Bounty$(): bandit and pirate haunts. A little meaner, and worth far more experience."
     }
   ]
 }

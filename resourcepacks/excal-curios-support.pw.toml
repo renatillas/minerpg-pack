@@ -1,0 +1,13 @@
+name = "Excalibur | Curios API & Accessories Support"
+filename = "Excalibur Curios  Accessories 1.3 Hotfix 1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/USa5LfFr/versions/dpksTNdl/Excalibur%20Curios%20%20Accessories%201.3%20Hotfix%201.zip"
+hash-format = "sha512"
+hash = "b79f147da28dc8d4ba8a349dbff313ae492b4a50ed863ac86fd54555c048da053e593f70d2873cd3184c36fd75f4d9b39b38a35c81d7775e12c8b24b6fca3a35"
+
+[update]
+[update.modrinth]
+mod-id = "USa5LfFr"
+version = "dpksTNdl"

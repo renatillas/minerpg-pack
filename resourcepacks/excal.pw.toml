@@ -1,0 +1,13 @@
+name = "Excalibur"
+filename = "Excalibur_V26.3_01.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/hJAzl1Bs/versions/lk2oxwrP/Excalibur_V26.3_01.zip"
+hash-format = "sha512"
+hash = "d69b094493c9a55f607c64293a8acccc3365bf5519601d37300359ac3053a39e5aad62bf33bff5412644703fa2b71e8aa667dee7793871eeeb3258ea171c062d"
+
+[update]
+[update.modrinth]
+mod-id = "hJAzl1Bs"
+version = "lk2oxwrP"

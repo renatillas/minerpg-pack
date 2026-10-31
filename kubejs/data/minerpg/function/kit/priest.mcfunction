@@ -3,4 +3,5 @@ give @s spell_engine:spell_book[minecraft:item_name='{"translate": "item.paladin
 give @s paladins:holy_wand 1
 give @s paladins:priest_robe_chest 1
 give @s runes:healing_stone 32
+tellraw @s {"text": "Your friends get back up because you are there. Stay behind them and keep them standing.", "color": "gray", "italic": true}
 tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}

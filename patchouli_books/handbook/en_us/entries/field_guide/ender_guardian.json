@@ -1,0 +1,18 @@
+{
+  "name": "The Ender Guardian",
+  "icon": "minerpg:trophy_ender_guardian",
+  "category": "patchouli:field_guide",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)The last warden of the $(l)Ruined Citadel$(), at the edge of the void.$()$(br2)$(l)Counter:$() It heals the whole fight. Keep your damage steady; a party that stops to regroup gives back everything it took.$(br2)Its blows can throw you far. Fight away from the edges."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Citadel Keystone$(), with the Dragonscale, raises your world tier to Pinnacle.",
+      "advancement": "minerpg:field_guide/defeated/ender_guardian"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/ender_guardian"
+}

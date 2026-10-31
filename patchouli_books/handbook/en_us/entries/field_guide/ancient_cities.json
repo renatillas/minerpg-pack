@@ -1,0 +1,13 @@
+{
+  "name": "Ancient Cities",
+  "icon": "minecraft:sculk_shrieker",
+  "category": "patchouli:field_guide",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Silent cities in the deep dark of the Frontier. Dungeon level 5.$()$(br2)$(l)Counter:$() Noise wakes the Warden. Sneak, and never fight it for nothing.$(br2)Wool muffles your steps. Bring some."
+    }
+  ],
+  "advancement": "minerpg:field_guide/found/ancient_cities"
+}

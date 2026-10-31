@@ -1,0 +1,18 @@
+{
+  "name": "The Ferrous Wroughtnaut",
+  "icon": "minerpg:trophy_ferrous_wroughtnaut",
+  "category": "patchouli:field_guide",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)An empty suit of armor that still swings its axe, sealed in a chamber under the Hearthlands.$()$(br2)$(l)Counter:$() Blows on its front plate do next to nothing. Let the axe miss, then strike its back while it hauls the blade free.$(br2)This fight is about timing, not damage. Watch before you swing."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Wrought Rivet$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/ferrous_wroughtnaut"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/ferrous_wroughtnaut"
+}

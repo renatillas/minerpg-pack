@@ -2,7 +2,7 @@
   "name": "World Tiers",
   "icon": "minecraft:nether_star",
   "category": "patchouli:world",
-  "sortnum": 2,
+  "sortnum": 3,
   "pages": [
     {
       "type": "patchouli:text",

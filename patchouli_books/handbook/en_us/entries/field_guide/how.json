@@ -1,0 +1,16 @@
+{
+  "name": "How the Field Guide Works",
+  "icon": "minecraft:writable_book",
+  "category": "patchouli:field_guide",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Every great foe and every kind of dangerous place has a page here, locked until you earn it.$(li)Step into a lair, or set eyes on its master, and the page opens.$(li)Bring the master down and the last page fills in.$(br2)Each page ends with a $(l)Counter$(): the one thing to remember when the fight starts."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Every master in this world is built for a full party of four. Its hits are heavy and its fights are long. A combat roll ($(k:keybinds.combat_roll.roll)) makes you untouchable for a moment: learn the big blows and roll through them.$(br2)Pages you have not earned stay locked. Go and look."
+    }
+  ]
+}

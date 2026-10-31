@@ -1,0 +1,13 @@
+name = "Excalibur | Tom's Simple Storage Support"
+filename = "Excalibur Tom's Simple Storage 1.3.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/IcQTjT2q/versions/CW3msKgG/Excalibur%20Tom%27s%20Simple%20Storage%201.3.zip"
+hash-format = "sha512"
+hash = "b17811b3933533fd9135985a7be488d0dfcdf848b6678cbef0261a20e4431c99c637239613497c31cf6956a1b55d90457364a1c6af911713416f62d6f5d64824"
+
+[update]
+[update.modrinth]
+mod-id = "IcQTjT2q"
+version = "CW3msKgG"

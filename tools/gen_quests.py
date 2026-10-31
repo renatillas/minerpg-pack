@@ -235,6 +235,30 @@ KITS = [
 ]
 
 
+# One flavour line per kit, shown in gray in chat when the kit is claimed (before the gold line).
+# Original text: second person, short, in-world.
+KIT_FLAVOR = {
+    'arcane_wizard': 'You bend raw magic into shape. Keep your distance and let the arcane do the talking.',
+    'fire_wizard': 'You are the reason the room is warm. Burn what charges you, then burn what is left.',
+    'frost_wizard': 'Slow them, then shatter them. Nothing reaches you through the ice.',
+    'water_mage': 'The tide answers to you. Push your foes back and wash your friends clean.',
+    'earth_mage': 'Stone listens when you speak. Stand your ground, and the ground stands with you.',
+    'wind_mage': 'You are never where they swing. Strike on the gust, and be gone.',
+    'paladin': 'You stand in front so the others do not have to. Hold the line; the light holds you.',
+    'priest': 'Your friends get back up because you are there. Stay behind them and keep them standing.',
+    'rogue': 'The first blow is the one that counts. Strike from the shadows and leave before they turn.',
+    'warrior': 'You go in first and come out last. Swing wide and let them come to you.',
+    'berserker': 'Every blow feeds your fury. Get close, stay close, and do not stop.',
+    'forcemaster': 'No blade, no bow, no need. Your fists carry the weight of a storm.',
+    'archer': 'One arrow, one answer. Find high ground and make every shot count.',
+    'deadeye': 'Patience kills. Wait for the opening, then end it from afar.',
+    'tundra_hunter': 'The cold is your hunting ground. Slow your prey, then bring it down.',
+    'war_archer': 'A crossbow, a steady hand and a hail of bolts. Hold the line from range.',
+    'bard': 'Your song carries the party. Play them stronger, and let the rhythm cut down the rest.',
+}
+assert set(KIT_FLAVOR) == {k[0] for k in KITS}, 'every kit needs exactly one flavour line'
+
+
 def components_arg(components):
     parts = []
     for k, v in components.items():
@@ -261,6 +285,7 @@ def write_kit_functions():
         ]
         for item, count in extras:
             lines.append(f'give @s {item} {count}')
+        lines.append('tellraw @s ' + json.dumps({'text': KIT_FLAVOR[key], 'color': 'gray', 'italic': True}))
         lines.append('tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}')
         write(os.path.join(folder, f'{key}.mcfunction'), '\n'.join(lines))
 
@@ -284,8 +309,10 @@ TALENT_ROOTS = {"weapon_skills": ["hdp8z71mlgffw17t", "o5e8ipv2xtpeksec", "43fud
 
 def write_advancements():
     folder = os.path.join(DATA, 'minerpg', 'advancement')
-    if os.path.isdir(folder):
-        shutil.rmtree(folder)
+    # Only our own subfolders: advancement/field_guide/ belongs to tools/gen_handbook.py.
+    for sub in ('tutorial', 'jobs', 'tour'):
+        if os.path.isdir(os.path.join(folder, sub)):
+            shutil.rmtree(os.path.join(folder, sub))
     ADV['cast'] = adv('tutorial/cast_spell', {'cast': {'trigger': 'spell_engine:spell_cast', 'conditions': {}}})
     ADV['bind'] = adv('tutorial/bind_spell', {'bind': {'trigger': 'spell_engine:spell_binding', 'conditions': {}}})
     # The skill_unlocked trigger needs an exact category and skill, so list every root (first)
@@ -365,6 +392,8 @@ MERCHANTS['any'] = [p for ps in MERCHANTS.values() for p in ps] + ['jewelry:jewe
 # key: (map name, structure tag the map searches for, extra tag contents or None if the tag exists)
 MAPS = {
     'small_dungeon': ('Map to a Small Dungeon', 'minerpg:small_dungeons', None),
+    # Given once on a player's first join (not by a quest).
+    'tavern': ('Map to the Nearest Tavern', 'minerpg:taverns', None),
     'amethyst_nest': ('Map to the Amethyst Nest', 'minerpg:map/amethyst_nest', ['cataclysm:amethyst_nest']),
     'great_dungeon': ('Map to a Great Dungeon', 'minerpg:map/great_dungeon', ['dungeons_arise:' + n for n in [
         'abandoned_temple', 'bandit_towers', 'ceryneian_hind', 'coliseum', 'foundry', 'illager_fort', 'infested_temple',
@@ -434,11 +463,11 @@ KIT_TABLE = 'class_kits'
 
 GETTING_STARTED = [
     Q('gs_welcome', 'Welcome, Traveler', 0, 0, [
-        'This book follows you from your first night to the edge of the world.',
-        'Each tab is a chapter. Quests show what to try next and pay you for it.',
+        'This book walks with you from your first night to the edge of the world.',
+        'Each tab is a chapter. Each quest points at something worth trying, and pays you for it.',
         '',
-        'Press L to open this book any time.',
-        'Your &6Adventurer\'s Handbook&r explains how races, classes, jobs, zones, loot and parties work. Right-click it whenever you wonder. Lost it? A book and a feather make another.',
+        'Press L whenever you are lost.',
+        'Your &6Adventurer\'s Handbook&r knows how this world works: races, classes, jobs, zones, loot, parties, and a Field Guide that fills in as you explore. Lost it? A book and a feather make another.',
         '',
         'Tick the box to begin.'],
         [t_check('Open the book')],
@@ -450,68 +479,70 @@ GETTING_STARTED = [
         [r_item('minecraft:bread', 8), r_cmd('/function minerpg:tier/sync'),
          r_item('patchouli:guide_book', 1, HANDBOOK)], subtitle='Start here'),
     Q('gs_race', 'Who Are You?', -2, -1.5, [
-        'When you first joined, you chose your folk. Each one has two small gifts, one drawback and one racial power.',
+        'Your folk gave you a few small gifts, one drawback and one power.',
         '',
-        'Use your racial power once: press V (see Controls).'],
+        'Use your racial power once. V, unless you changed it.'],
         [t_check('Use your racial power')], [r_xp(30)], deps=['gs_welcome'], subtitle='Your race and its power'),
     Q('gs_calling', 'Choose Your Calling', 2, 0, [
-        'Pick the class you want to start as. You get its spell book (tome), a starter weapon, one armor piece and the runes its spells need.',
+        'Choose who you start as. You get the class tome, a starter weapon, one armor piece, and the runes or arrows it burns.',
         '',
-        'You can learn a second class later by making its tome at a Spell Binding Table.'],
+        'Nothing is final: a second class waits at any Spell Binding Table.'],
         [t_check('I am ready to choose')], [{'type': 'choice', '_table': KIT_TABLE}, r_item('minecraft:emerald', 6)],
         deps=['gs_welcome'], subtitle='Your class starter kit', size=Double(1.5), shape='hexagon'),
     Q('gs_cast', 'Bound to the Book', 4, -1.5, [
-        'Open your inventory and put the tome in its spell book slot.',
-        'Hold a weapon of the same class and cast a spell with the spell keys shown on your hotbar.'],
+        'Tome in its spell book slot. A weapon of the same class in hand.',
+        'Now cast: the spell keys are shown on your hotbar.'],
         [t_adv('cast', 'Cast any spell')], [r_xp(30)], deps=['gs_calling'], subtitle='Equip your tome, cast a spell'),
     Q('gs_runes', 'Stones That Remember', 6, -3, [
-        'Many spells burn runes. Craft them at a Rune Crafting Altar: it makes more runes from the same materials than a crafting table.'],
+        'Many spells burn runes. Make them at a Rune Crafting Altar: same materials, more runes than a crafting table.'],
         [t_adv('runes', 'Craft any rune')], [r_item('runes:small_rune_pouch')], deps=['gs_cast'], subtitle='Craft runes'),
     Q('gs_binding', 'The Binding Table', 6, 0, [
-        'Stronger spells come from a Spell Binding Table. Every plains village, including the one you started in, has a gazebo with one. You can also build your own and ring it with bookshelves.',
-        'Put your tome in and bind a new spell with your experience levels.'],
+        'Stronger spells are bound at a Spell Binding Table. Every plains village, yours included, keeps one in its gazebo. Or build your own and ring it with bookshelves.',
+        'Put your tome in and pay in experience levels.'],
         [t_adv('bind', 'Bind a spell')], [r_item('minecraft:lapis_lazuli', 16), r_xp(40)], deps=['gs_cast'], subtitle='Learn new spells'),
     Q('gs_talent', 'A Point to Spend', 4, 1.5, [
-        'Kills earn talent experience. Press N to open your talent tree and spend your first point.',
-        'Party members within 200 blocks share talent experience from kills.',
-        'Kills can earn up to 9 points. The last 4 come from the great chapter bosses.'],
+        'Every kill teaches you something. Press N and spend your first talent point.',
+        'Friends within 200 blocks learn from your kills too.',
+        'Kills earn up to 9 points. The last 4 come from the great chapter bosses.'],
         [t_adv('talent', 'Unlock a talent')], [r_xp(30)], deps=['gs_calling'], subtitle='Spend a talent point'),
     Q('gs_roll', 'Light on Your Feet', -2, 1.5, [
-        'Roll out of danger with the combat roll key (R by default, check Controls). Rolls recharge over time.'],
+        'Never take a blow you can roll away from. R, unless you changed it.',
+        'Mid-roll, nothing can touch you. Rolls recharge over time.'],
         [t_check('Do a combat roll')], [r_item('minecraft:cooked_beef', 8)], deps=['gs_welcome'], subtitle='Dodge roll'),
     Q('gs_stats', 'Know Thyself', -4, 1.5, [
-        'Open your inventory and press the sword button to see your stats: spell power, crit, armor and more.'],
+        'Open your inventory and press the sword button: spell power, crit, armor, all of it.'],
         [t_check('Open the stats screen')], [r_xp(20)], deps=['gs_roll'], subtitle='Your stats screen'),
     Q('gs_waystone', 'Stones of Passage', -2, 3, [
-        'Waystones stand in villages and along the roads. Activate one and you can travel back to it from any other waystone.'],
+        'Waystones stand in villages and along the roads. Wake one, and any other waystone can bring you back to it.',
+        'Each trip costs a little experience: farther costs more.'],
         [t_adv('waystone', 'Activate a waystone')], [r_item('waystones:warp_scroll', 3)], deps=['gs_welcome'], subtitle='Fast travel'),
     Q('gs_lootr', 'Yours Alone', 0, 3, [
-        'Dungeon chests are personal: every player finds their own loot in the same chest. No need to race your friends.'],
+        'Dungeon chests keep a share for each of you. No need to race your friends to the loot.'],
         [t_adv('lootr:1chest', 'Open a dungeon chest')], [r_xp(30)], deps=['gs_welcome'], subtitle='Personal dungeon chests'),
     Q('gs_rarity', 'Not All Blades Are Equal', 2, 3, [
-        'Gear drops in rarities, each with its own name color: Common, Uncommon, Rare, Epic, Mythic. Higher rarity, more bonus stats.',
-        'Break gear you do not need at a Salvaging Table to get rarity materials for reforging.',
+        'Gear comes in rarities, each with its own color: Common, Uncommon, Rare, Epic, Mythic. The rarer, the more bonus stats.',
+        'Gear you do not need goes to a Salvaging Table. Its scraps pay for reforging.',
         '',
-        'Your &eworld tier&r (Ctrl+T to look) sets how tough monsters are and how good gear drops. It starts at Haven and rises by itself when you beat chapter bosses: Venture, Ascent, Summit, Pinnacle. It never goes down.'],
+        'Your &eworld tier&r (Ctrl+T to look) sets how tough monsters are and how good the loot is. It starts at Haven and climbs on its own as chapter bosses fall: Venture, Ascent, Summit, Pinnacle. It never goes back.'],
         [t_item('apotheosis:mysterious_scrap_metal', title='Salvage a piece of gear')], [r_item('apotheosis:gem_dust', 8)],
         deps=['gs_lootr'], subtitle='Gear rarity and salvaging'),
     Q('gs_locks', 'Locked Doors', 0, -3, [
-        'You can walk anywhere, but two doors need keys:',
-        '- &6Nether Sigil&r: dropped by The Harbinger at the end of the Overworld chapter. Fire alone will not open a Nether portal; the sigil does.',
-        '- &dVoid Shard&r: dropped by Ignis at the end of the Nether chapter. Eyes of Ender need one.',
+        'You can walk anywhere. Two doors need keys:',
+        '- &6Nether Sigil&r: from The Harbinger, at the end of the Overworld chapter. Fire will not wake a Nether portal; the sigil will.',
+        '- &dVoid Shard&r: from Ignis, at the end of the Nether chapter. No Eye of Ender without one.',
         'Everyone near a boss when it falls gets their own key.'],
         [t_check('Understood')], [r_xp(20)], deps=['gs_welcome'], subtitle='The Nether Sigil and the Void Shard', shape='diamond'),
     Q('gs_party', 'Better Together', 2, -3, [
-        'Press H to open the Party HUD: invite your friends and see their health on screen.',
-        'Party members near a kill share talent experience, and your spells and swings never hurt each other. Heals and buffs reach every player, party or not.',
+        'Press H for the Party HUD: invite your friends and keep their health in sight.',
+        'Your spells and swings never hurt each other, and kills near a friend teach you both. Heals and buffs reach every player, party or not.',
         'In the Members tab, right-click each friend and add them to favorites to see their health frames.',
-        'Bosses are built for a full party of four: alone you will not win one. Bring your friends.',
+        'Every boss is built for a full party of four. Alone, you will not win. Bring your friends.',
         'Your quest book stays your own. When a boss falls, everyone nearby gets their own trophy or key.'],
         [t_check('Join or form a party')], [r_xp(30)], deps=['gs_welcome'], subtitle='Party HUD (H)'),
     Q('gs_jobs', 'Pick Your Trades', -6, 0, [
-        'Press J to open the Jobs menu and join two jobs. Each job levels up from its own work and pays coins and perks.',
-        'Spend &6job coins&r in the Jobs menu on power-ups or a third job. Every level-up pays a coin, and many quests pay more.',
-        'The quests below show one way each job earns experience.'],
+        'Press J and join two jobs. Each grows from its own work and pays in coins and perks.',
+        'Spend &6job coins&r in the same menu on power-ups or a third job. Every level pays a coin; many quests pay more.',
+        'The quests below show one way into each job.'],
         [t_check('Join two jobs')], [r_xp(30), r_coins(3)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
     Q('gs_job_gates', 'Masters of a Trade', -13.5, 0, [
         'Some things only a trained hand can &omake&r:',
@@ -528,10 +559,11 @@ GETTING_STARTED = [
         [t_check('Understood')], [r_coins(1)], deps=['gs_jobs'], subtitle='Crafting gates and job experience', shape='diamond', optional=True),
     # v0.4 additions. Item rewards only, so Getting Started quest points stay as tuned.
     Q('gs_revive', 'Pick Them Up', 4, -3, [
-        'When you would die with other players online, you fall &cdowned&r instead. You have 60 seconds.',
-        'A friend revives you by holding the use key (right-click) on you for 3 seconds. Heal spells cannot reach a downed player: someone has to pick you up.',
-        'You get up with 3 hearts and a short Weakness. Fall again soon after and the same timer keeps running.',
-        'Alone on the server there is nobody to help, so you simply die. Lava and the void still kill at once.'],
+        'With other players online, a killing blow leaves you &cdowned&r instead. You have 60 seconds.',
+        'A friend holds use (right-click) on you for 3 seconds to pick you up. Heal spells cannot reach the downed: someone has to come to you.',
+        'You get up with 3 hearts and a short Weakness. Fall again soon and the same timer keeps running.',
+        'Alone on the server, nobody is coming: you simply die. Lava and the void kill at once.',
+        'A real death costs you nothing: your things and experience wait in a &6grave&r where you fell. Chat tells you where.'],
         [t_check('Understood')], [r_item('minecraft:golden_apple', 1)], deps=['gs_party'], subtitle='Downed and revived', shape='diamond'),
     Q('gs_cooking', 'A Feast for the Party', -4, -3, [
         'Build a &6Cooking Pot&r and set it on a campfire or stove. Pot meals feed more and give the whole group buffs:',
@@ -590,13 +622,14 @@ for i, (key, title, text, task, reward) in enumerate(JOB_STARTERS):
 CHAPTER_1 = [
     # Hearthlands
     Q('c1_village', 'The Hearth Road', 0, 0, [
-        'The &aHearthlands&r are the gentle lands: plains, forests, meadows and rivers, with villages, taverns and small dungeons. A good place to learn your class.',
-        'Your journey starts in a plains village. Walk its streets to begin.',
+        'The &aHearthlands&r are the gentle lands: plains, forests, meadows and rivers, with villages, taverns and small dungeons. Learn your class here.',
+        'Walk the streets of a village to begin.',
         '',
         '&7Reward: a map marking the nearest small dungeon.&r'],
         [t_struct('#minecraft:village', 'Visit a village')], [r_item('minecraft:emerald', 6), r_map('small_dungeon')], subtitle='Hearthlands'),
     Q('c1_tavern', 'A Warm Hearth', 1.5, -1.5, [
-        'Taverns sit along the roads of the Hearthlands. Travelers trade, rest and swap stories there.'],
+        'Taverns sit along the roads of the Hearthlands. Travelers trade, rest and swap stories there.',
+        'The map you woke with leads to the nearest one.'],
         [t_struct('#minerpg:taverns', 'Visit a tavern')], [r_item('minecraft:cooked_porkchop', 8), r_xp(50)], deps=['c1_village'], subtitle='Hearthlands'),
     Q('c1_cellar', 'Cellar Dwellers', 1.5, 1.5, [
         'Something has nested under the fields. Find a small dungeon and clear out what lives there.',
@@ -618,7 +651,8 @@ CHAPTER_1 = [
         'Good iron makes good gear. Stock up for your first upgrades.'],
         [t_item('minecraft:iron_ingot', 24)], [r_item('minecraft:chainmail_chestplate'), r_xp(50)], deps=['c1_village'], subtitle='Side task'),
     Q('c1_waystone', 'A Stone of Your Own', 0, 2.5, [
-        'Craft a waystone and place it at your home. Then you can always travel back.'],
+        'Craft a waystone and set it at your home.',
+        'The Warp Stone you earn here takes you to any waystone you know, from anywhere, for free. It needs 5 minutes to recover after each use.'],
         [t_item('waystones:waystone')], [r_item('waystones:warp_stone')], deps=['c1_village'], subtitle='Side task'),
     Q('c1_wroughtnaut', 'The Iron Sentinel', 4.5, 2.5, [
         'Deep under the Hearthlands, a sealed chamber holds a suit of armor that is not empty: the &7Ferrous Wroughtnaut&r.',

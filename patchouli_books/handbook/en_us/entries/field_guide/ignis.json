@@ -1,0 +1,18 @@
+{
+  "name": "Ignis",
+  "icon": "minerpg:void_shard",
+  "category": "patchouli:field_guide",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A fallen knight wrapped in fire, waiting in the $(l)Burning Arena$().$()$(br2)$(l)Counter:$() Its sword hits hard enough to drop a careless caster. Healers stay back; fighters roll through the big swings.$(br2)It grows fiercer as it weakens. Save your strongest spells for the end."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Everyone nearby earns a $(item)Void Shard$(): Eyes of Ender need it, and it raises your world tier to Summit.",
+      "advancement": "minerpg:field_guide/defeated/ignis"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/ignis"
+}

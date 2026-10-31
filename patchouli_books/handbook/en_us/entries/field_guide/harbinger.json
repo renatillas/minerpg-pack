@@ -1,0 +1,18 @@
+{
+  "name": "The Harbinger",
+  "icon": "minerpg:nether_sigil",
+  "category": "patchouli:field_guide",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)The iron herald of the $(l)Ancient Factory$(), deep under the mountains of the Frontier.$()$(br2)$(l)Counter:$() It repairs itself whenever you hesitate. Keep the pressure on, and break line of sight when its beams sweep the hall.$(br2)Bring the whole party and your best gear. It holds the way to the Nether."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Everyone nearby earns a $(item)Nether Sigil$(): it opens Nether portals and raises your world tier to Ascent.",
+      "advancement": "minerpg:field_guide/defeated/harbinger"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/harbinger"
+}

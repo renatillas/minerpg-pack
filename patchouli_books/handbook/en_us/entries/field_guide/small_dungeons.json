@@ -1,0 +1,13 @@
+{
+  "name": "Crypts and Cellars",
+  "icon": "minecraft:mossy_cobblestone",
+  "category": "patchouli:field_guide",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Small dungeons under the fields and forests: crypts, spider dens and old cellars. Dungeon level 2.$()$(br2)$(l)Counter:$() Break the spawner first. The room empties fast after that.$(br2)A good first trip for a new party."
+    }
+  ],
+  "advancement": "minerpg:field_guide/found/small_dungeons"
+}

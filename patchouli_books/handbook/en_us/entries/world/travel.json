@@ -1,0 +1,17 @@
+{
+  "name": "Waystones and Travel",
+  "icon": "waystones:waystone",
+  "category": "patchouli:world",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Activate every $(item)waystone$() you pass. From any waystone you can travel to any other you know.$(br2)A trip costs a little experience: 1 point per 100 blocks, at most 27 points, a flat 27 to another dimension. Warp plates, scrolls and global waystones are free."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "waystones:warp_stone",
+      "text": "The $(item)Warp Stone$() is your way home: hold it to travel to any waystone you know, from anywhere, for free. It never wears out, but it needs 5 minutes to recover after each use.$(br2)The quest $(item)A Stone of Your Own$() gives you one."
+    }
+  ]
+}

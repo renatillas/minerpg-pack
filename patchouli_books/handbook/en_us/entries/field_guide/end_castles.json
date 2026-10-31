@@ -1,0 +1,13 @@
+{
+  "name": "End Castles",
+  "icon": "minecraft:end_stone_bricks",
+  "category": "patchouli:field_guide",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Castles, lighthouses and ships on the outer islands. Up to dungeon level 8, the deadliest places there are.$()$(br2)$(l)Counter:$() Clear the courtyard before you climb. Nothing here forgives a fall.$(br2)Go only with gear from the Summit tier or better."
+    }
+  ],
+  "advancement": "minerpg:field_guide/found/end_castles"
+}
