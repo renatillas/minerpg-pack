@@ -1920,6 +1920,13 @@
 	]
 	"quest.71ED147E96C3CDB4.quest_subtitle": "Chapter boss"
 	"quest.71ED147E96C3CDB4.title": "Ignis"
+	"quest.7214FD69CAC0DE96.quest_desc": [
+		"Your class's road appears here once you have chosen it: a weapon, then a full set of armor, tier after tier, up to the armor of legends."
+		""
+		"No class yet? &6Choose Your Calling&r in Getting Started. Bound a second class at a Spell Binding Table? Its road appears here too, a moment after the tome is in your bag or its slot."
+	]
+	"quest.7214FD69CAC0DE96.quest_subtitle": "Start here"
+	"quest.7214FD69CAC0DE96.title": "Your Calling"
 	"quest.73292E754A800B8D.quest_desc": [
 		"Lumberjacks earn experience chopping logs. Carry 16 logs."
 	]
@@ -2374,6 +2381,7 @@
 	"task.5D71108002945D0A.title": "Find an End city"
 	"task.5DEA6926DB91341C.title": "A legendary claymore, hammer or mace"
 	"task.5E234E86D87CA2C7.title": "Have a diamond Double Axe or Glaive"
+	"task.5E5EA7FDE6112484.title": "Understood"
 	"task.5E7654375954BFB2.title": "Molten Heart"
 	"task.5FA87DC413C15E5B.title": "A legendary staff"
 	"task.5FD54099D5C15F75.title": "Find the Ruined Citadel"

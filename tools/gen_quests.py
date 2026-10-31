@@ -1151,7 +1151,7 @@ def calling_routes(c, tier, what, items):
 def calling_row(key, row):
     c = CALLING[key]
     title = next(k[1] for k in KITS if k[0] == key)
-    y = row * 1.5
+    y = row * 2.5
     p = f'calling/{key}'
     sub = dict(hide_until_deps_visible=True)
     weapon_mats = [r_item(item, n) for item, n in T1_MATS[c['mats']]]
@@ -1208,7 +1208,7 @@ def calling_row(key, row):
         'upgrade; anyone can wear it.'],
         [has_sets(f'{p}/armory', [pieces(chest) for _, chest, _ in armory], f'All four pieces: {title_text}')],
         [r_levels(10), r_coins(5)], deps=[prev], subtitle='Endgame armor', shape='gear', size=Double(1.5), **sub))
-    quests.append(Q(f'cl_{key}_legend', 'A Legend in Hand', 1.5 * 6, y + 0.9, [
+    quests.append(Q(f'cl_{key}_legend', 'A Legend in Hand', 8.25, y + 1.2, [
         f'No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind '
         f'weapons; one of them may be a {c["legend_words"]} made for you.',
         'Bring friends: these are the hardest fights in the world.'],
@@ -1217,7 +1217,15 @@ def calling_row(key, row):
     return quests
 
 
-CALLING_TAB = [q for row, key in enumerate(ROW_FAMILY_ORDER) for q in calling_row(key, row)]
+# Always visible, so the tab is not empty before a class is chosen.
+CALLING_INTRO = Q('cl_intro', 'Your Calling', -2.5, 0, [
+    'Your class\'s road appears here once you have chosen it: a weapon, then a full set of armor, tier after tier, '
+    'up to the armor of legends.',
+    '',
+    'No class yet? &6Choose Your Calling&r in Getting Started. Bound a second class at a Spell Binding Table? Its road '
+    'appears here too, a moment after the tome is in your bag or its slot.'],
+    [t_check('Understood')], [r_xp(20)], subtitle='Start here', shape='hexagon', size=Double(1.5))
+CALLING_TAB = [CALLING_INTRO] + [q for row, key in enumerate(ROW_FAMILY_ORDER) for q in calling_row(key, row)]
 assert set(ROW_FAMILY_ORDER) == set(CALLING) == {k[0] for k in KITS}, 'every kit needs exactly one Calling row'
 
 

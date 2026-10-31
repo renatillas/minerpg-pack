@@ -122,7 +122,7 @@ hash = "c421604cfd15769d268335ab4b4e6782b32780af74735a47d2b6699dcbf45fb7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_calling.snbt"
-hash = "e6773822f06aede1597ec6694f4532e574716a64e9b358371b3fefe0a41e4044"
+hash = "6dce24dd63db7173b9fde94a97c777181d08b6448c7cb69ae7148bf0f2bdb425"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -130,7 +130,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "6edb7a6fe2329e4294439434b224929741cb717d7634ca79135e498fee5e005d"
+hash = "f14f9d8ab0604d7081b6098e572570453671390005d87e7cfbaecceb7a5f249a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
