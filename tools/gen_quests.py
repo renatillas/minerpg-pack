@@ -576,7 +576,7 @@ GETTING_STARTED = [
         [t_check('Join or form a party')], [r_xp(30)], deps=['gs_welcome'], subtitle='Party HUD (H)'),
     Q('gs_jobs', 'Pick Your Trades', -6, 0, [
         'Press J and join two jobs. Each grows from its own work and pays in coins and perks.',
-        'Two jobs is the most anyone can hold, so choose with care. Spend &6job coins&r in the same menu on power-ups. Every level pays a coin; many quests pay more.',
+        'Two jobs is the most anyone can hold. To swap one, type &e/leavejob <job>&r: it deletes that job\'s level and power-ups for good. Spend &6job coins&r in the same menu on power-ups. Every level pays a coin; many quests pay more.',
         'The quests below show one way into each job.'],
         [t_check('Join two jobs')], [r_xp(30), r_coins(3)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
     Q('gs_job_gates', 'Masters of a Trade', -13.5, 0, [

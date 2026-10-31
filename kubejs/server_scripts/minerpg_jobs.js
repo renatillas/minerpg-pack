@@ -228,7 +228,55 @@ ServerEvents.commandRegistry(event => {
             })
             return n
           })))))
+
+  // /leavejob <job>: warns what the player loses; /leavejob <job> confirm (within a minute) drops the job, its
+  // level and its power-ups for good, freeing the slot for another (designer, 2026-10-31: two jobs at most).
+  let leave = Commands.literal('leavejob').requires(source => source.isPlayer())
+  Object.keys(JOB_NAMES).forEach(key => {
+    leave = leave.then(Commands.literal(key)
+      .executes(ctx => leaveJobWarn(ctx.source.player, key))
+      .then(Commands.literal('confirm').executes(ctx => leaveJobConfirm(ctx.source.player, key))))
+  })
+  event.register(leave)
 })
+
+// Player UUID -> {job, time} of the last /leavejob warning, so "confirm" only works right after it.
+const LEAVE_JOB_PENDING = {}
+const LEAVE_JOB_WINDOW_MS = 60000
+
+function leaveJobWarn(player, key) {
+  const job = jobOf(player, key)
+  if (job == null) {
+    player.tell(Text.of(`You don't have the ${JOB_NAMES[key]} job.`).red())
+    return 0
+  }
+  LEAVE_JOB_PENDING[String(player.uuid)] = { job: key, time: Date.now() }
+  player.tell(Text.of(`Leaving the ${JOB_NAMES[key]} job deletes it for good: level ${job.getLevel()}, its XP and `
+    + 'every power-up bought for it. Coins spent are not refunded. You can then join another job.').gold())
+  player.tell(Text.of(`[Leave ${JOB_NAMES[key]}]`).red().bold()
+    .clickRunCommand(`/leavejob ${key} confirm`)
+    .hover(Text.of(`Click to leave the ${JOB_NAMES[key]} job (within a minute)`))
+    .append(Text.of('  or type ').white().bold(false))
+    .append(Text.of(`/leavejob ${key} confirm`).yellow().bold(false)))
+  return 1
+}
+
+function leaveJobConfirm(player, key) {
+  const pending = LEAVE_JOB_PENDING[String(player.uuid)]
+  if (!pending || pending.job != key || Date.now() - pending.time > LEAVE_JOB_WINDOW_MS) {
+    player.tell(Text.of(`Type /leavejob ${key} first to see what you would lose.`).red())
+    return 0
+  }
+  delete LEAVE_JOB_PENDING[String(player.uuid)]
+  if (jobOf(player, key) == null) {
+    player.tell(Text.of(`You don't have the ${JOB_NAMES[key]} job.`).red())
+    return 0
+  }
+  player.jobsplus$removeJob($JobInstance.of($ResourceLocation.parse('jobsplus:' + key)))
+  player.tell(Text.of(`You left the ${JOB_NAMES[key]} job. Press J to join another.`).green())
+  console.info(`[minerpg] ${player.username} left the ${key} job`)
+  return 1
+}
 
 // ---------------------------------------------------------------------------------------
 // Spell binding, spell books, gem sockets: repeatable hidden advancements. Give the XP, then

@@ -130,7 +130,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "3f424dbdf4e86262ae8e3e2d37cccdb85c1216bb2c4713acaaeb21fa263a9081"
+hash = "00e00d2341e03a1d856a2a64537f037a5144e268df216ca56f7a32501ae85a1c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -4114,7 +4114,7 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "18ad52c5259f8499ce019a4ec1744fe30787fa654141b36f501165befa815104"
+hash = "fddeed9f95b50aed13fd951ef32e0167ad8032dc217f94da6b2bae9543910559"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
@@ -4982,7 +4982,7 @@ hash = "f9d3d8821bf87713ae2de5b41e1afa49e5a2447b5ad439e0aad09563a329ba1a"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/jobs.json"
-hash = "fc069ea5dad1e760ecaeceab31f742c88bc3e38c4262f1b4fba3711a301f98d9"
+hash = "c6641682f92cfb564b4378b8875e5a274ef2a2b3e19e291033393cc9e36c179d"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/xp.json"
