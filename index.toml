@@ -150,7 +150,7 @@ hash = "dbad3c65facc183b43af94ed6434226b8bcd6f241ab648b553f77f8e405be0ed"
 
 [[files]]
 file = "config/jobsplus-common.yaml"
-hash = "8d46e1951cf3c02840c9e0ca6302254483f4136264bf567dcc3e9098749d8a68"
+hash = "47561a4cc36b1faa8b6925b52d7836fb045c9770ccb981d6fe0b224a8a0fa541"
 
 [[files]]
 file = "config/mowziesmobs-common.toml"
