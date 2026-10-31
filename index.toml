@@ -881,6 +881,10 @@ file = "config/spell_engine/server.json5"
 hash = "244a3bb3ab39286f423f4bee607856dbb3b58e0892ced3f434be2e964d023167"
 
 [[files]]
+file = "config/voicechat/voicechat-server.properties"
+hash = "2d2f29efa471b7a010d7e4f9c6407ce87788e58910e86e8757385612663e4c06"
+
+[[files]]
 file = "config/waystones-common.toml"
 hash = "d371739074be351b4ad14787756165cb0be3acc1d3979cd7b9b4374374f11f6d"
 
