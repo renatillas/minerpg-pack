@@ -11,6 +11,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "minecraft:enchanting_table"
+			}
 			id: "3976D3F96227D68F"
 			rewards: [
 				{
@@ -38,6 +41,9 @@
 			dependencies: [
 				"3976D3F96227D68F"
 			]
+			icon: {
+				id: "apotheosis:salvaging_table"
+			}
 			id: "605EA1F5F566343D"
 			rewards: [
 				{
@@ -65,6 +71,9 @@
 			dependencies: [
 				"605EA1F5F566343D"
 			]
+			icon: {
+				id: "apotheosis:reforging_table"
+			}
 			id: "10E969E37FE81A40"
 			rewards: [
 				{
@@ -92,6 +101,9 @@
 			dependencies: [
 				"10E969E37FE81A40"
 			]
+			icon: {
+				id: "apotheosis:augmenting_table"
+			}
 			id: "16382999932D7891"
 			rewards: [
 				{
@@ -115,6 +127,9 @@
 			dependencies: [
 				"3976D3F96227D68F"
 			]
+			icon: {
+				id: "apotheosis:gem"
+			}
 			id: "130AD4B6ADB6DAEF"
 			rewards: [
 				{
@@ -142,6 +157,9 @@
 			dependencies: [
 				"130AD4B6ADB6DAEF"
 			]
+			icon: {
+				id: "apotheosis:sigil_of_socketing"
+			}
 			id: "631C3BDECD63BF8D"
 			rewards: [
 				{
@@ -169,6 +187,9 @@
 			dependencies: [
 				"631C3BDECD63BF8D"
 			]
+			icon: {
+				id: "apotheosis:sigil_of_withdrawal"
+			}
 			id: "1D039509704E59E4"
 			rewards: [
 				{
@@ -192,6 +213,9 @@
 			dependencies: [
 				"130AD4B6ADB6DAEF"
 			]
+			icon: {
+				id: "apotheosis:gem_cutting_table"
+			}
 			id: "3A6C127DAF675E05"
 			rewards: [
 				{
@@ -219,6 +243,9 @@
 			dependencies: [
 				"3976D3F96227D68F"
 			]
+			icon: {
+				id: "apotheosis:potion_charm"
+			}
 			id: "54311A9745EC4D9E"
 			rewards: [
 				{
@@ -246,6 +273,9 @@
 			dependencies: [
 				"3976D3F96227D68F"
 			]
+			icon: {
+				id: "minecraft:enchanted_book"
+			}
 			id: "49CA855A6EB004C9"
 			rewards: [
 				{
@@ -273,6 +303,9 @@
 			dependencies: [
 				"49CA855A6EB004C9"
 			]
+			icon: {
+				id: "minecraft:nether_bricks"
+			}
 			id: "7E34F5E08D7B282D"
 			rewards: [
 				{
@@ -302,6 +335,9 @@
 			dependencies: [
 				"7E34F5E08D7B282D"
 			]
+			icon: {
+				id: "minecraft:prismarine"
+			}
 			id: "1ADCB7997A7BB683"
 			rewards: [
 				{
@@ -325,6 +361,9 @@
 			dependencies: [
 				"1ADCB7997A7BB683"
 			]
+			icon: {
+				id: "minecraft:sculk"
+			}
 			id: "4EB55E1C1DEAA36C"
 			rewards: [
 				{
@@ -348,6 +387,9 @@
 			dependencies: [
 				"4EB55E1C1DEAA36C"
 			]
+			icon: {
+				id: "minecraft:end_stone_bricks"
+			}
 			id: "42C7A3AB42E6134D"
 			rewards: [
 				{
@@ -371,6 +413,9 @@
 			dependencies: [
 				"49CA855A6EB004C9"
 			]
+			icon: {
+				id: "apothic_enchanting:library"
+			}
 			id: "30AD317EAFFF4326"
 			rewards: [
 				{
@@ -398,6 +443,9 @@
 			dependencies: [
 				"3976D3F96227D68F"
 			]
+			icon: {
+				id: "minecraft:spawner"
+			}
 			id: "20081EFCB48D59A1"
 			optional: true
 			rewards: [

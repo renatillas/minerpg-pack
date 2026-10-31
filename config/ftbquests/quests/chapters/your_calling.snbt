@@ -11,6 +11,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "spell_engine:spell_book"
+			}
 			id: "7214FD69CAC0DE96"
 			rewards: [
 				{
@@ -31,6 +34,16 @@
 			y: 0.0d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.wizards.spell_book/arcane\"}"
+					"spell_engine:item_model": "wizards:item/spell_book/arcane"
+					"spell_engine:spell_container": {
+						pool: "wizards:spell_book/arcane"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "744C9A9A39A3F946"
 			invisible: true
 			invisible_until_tasks: 1
@@ -59,6 +72,9 @@
 				"744C9A9A39A3F946"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:staff_wizard"
+			}
 			id: "6E1A5C775EB148AF"
 			rewards: [
 				{
@@ -96,6 +112,9 @@
 				"6E1A5C775EB148AF"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:wizard_robe_chest"
+			}
 			id: "2ED6CFFFB9CFB608"
 			rewards: [
 				{
@@ -131,6 +150,9 @@
 				"2ED6CFFFB9CFB608"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:wand_arcane"
+			}
 			id: "1EAEF213F834998A"
 			rewards: [
 				{
@@ -159,6 +181,9 @@
 				"1EAEF213F834998A"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:arcane_robe_chest"
+			}
 			id: "2803A79AF0532E3A"
 			rewards: [
 				{
@@ -194,6 +219,9 @@
 				"2803A79AF0532E3A"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:wand_netherite_arcane"
+			}
 			id: "4BF5A1C09B254878"
 			rewards: [
 				{
@@ -222,6 +250,9 @@
 				"4BF5A1C09B254878"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:netherite_arcane_robe_chest"
+			}
 			id: "2241FB6771756DF2"
 			rewards: [
 				{
@@ -262,6 +293,9 @@
 				"2241FB6771756DF2"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "armory_rpgs:astral_robe_chest"
+			}
 			id: "1EFCB5B3F1DBD384"
 			rewards: [
 				{
@@ -295,6 +329,9 @@
 				"4BF5A1C09B254878"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_staff_damage_1"
+			}
 			id: "5020B4D3ABB2CDA3"
 			optional: true
 			rewards: [
@@ -317,6 +354,16 @@
 			y: 1.2d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.wizards.spell_book/fire\"}"
+					"spell_engine:item_model": "wizards:item/spell_book/fire"
+					"spell_engine:spell_container": {
+						pool: "wizards:spell_book/fire"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "10865476522F9C8E"
 			invisible: true
 			invisible_until_tasks: 1
@@ -345,6 +392,9 @@
 				"10865476522F9C8E"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:staff_wizard"
+			}
 			id: "42848C2DC0442303"
 			rewards: [
 				{
@@ -382,6 +432,9 @@
 				"42848C2DC0442303"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:wizard_robe_chest"
+			}
 			id: "5B1A567C94A344A2"
 			rewards: [
 				{
@@ -417,6 +470,9 @@
 				"5B1A567C94A344A2"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:wand_fire"
+			}
 			id: "6506B3C1E758C6DD"
 			rewards: [
 				{
@@ -445,6 +501,9 @@
 				"6506B3C1E758C6DD"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:fire_robe_chest"
+			}
 			id: "160DA70F74EDD430"
 			rewards: [
 				{
@@ -480,6 +539,9 @@
 				"160DA70F74EDD430"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:wand_netherite_fire"
+			}
 			id: "63B19A0EE3936240"
 			rewards: [
 				{
@@ -508,6 +570,9 @@
 				"63B19A0EE3936240"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:netherite_fire_robe_chest"
+			}
 			id: "135B76B18CB805D2"
 			rewards: [
 				{
@@ -548,6 +613,9 @@
 				"135B76B18CB805D2"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "armory_rpgs:scarlet_robe_chest"
+			}
 			id: "7E6A8B47D8CA49CC"
 			rewards: [
 				{
@@ -581,6 +649,9 @@
 				"63B19A0EE3936240"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_staff_damage_1"
+			}
 			id: "42BD9CB7ADE4FA0A"
 			optional: true
 			rewards: [
@@ -603,6 +674,16 @@
 			y: 3.7d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.wizards.spell_book/frost\"}"
+					"spell_engine:item_model": "wizards:item/spell_book/frost"
+					"spell_engine:spell_container": {
+						pool: "wizards:spell_book/frost"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "6381D7FB4BA49469"
 			invisible: true
 			invisible_until_tasks: 1
@@ -631,6 +712,9 @@
 				"6381D7FB4BA49469"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:staff_wizard"
+			}
 			id: "2A77503D5F21B68C"
 			rewards: [
 				{
@@ -668,6 +752,9 @@
 				"2A77503D5F21B68C"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:wizard_robe_chest"
+			}
 			id: "3B976CE5D73E5FC0"
 			rewards: [
 				{
@@ -703,6 +790,9 @@
 				"3B976CE5D73E5FC0"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:wand_frost"
+			}
 			id: "6C38F2193F5F97B4"
 			rewards: [
 				{
@@ -731,6 +821,9 @@
 				"6C38F2193F5F97B4"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:frost_robe_chest"
+			}
 			id: "63B99B329B96833B"
 			rewards: [
 				{
@@ -766,6 +859,9 @@
 				"63B99B329B96833B"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:wand_netherite_frost"
+			}
 			id: "71222F68234D4EB9"
 			rewards: [
 				{
@@ -794,6 +890,9 @@
 				"71222F68234D4EB9"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "wizards:netherite_frost_robe_chest"
+			}
 			id: "5DED557257C16AEE"
 			rewards: [
 				{
@@ -834,6 +933,9 @@
 				"5DED557257C16AEE"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "armory_rpgs:glacier_robe_chest"
+			}
 			id: "364D117B6870A5B2"
 			rewards: [
 				{
@@ -867,6 +969,9 @@
 				"71222F68234D4EB9"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_staff_damage_1"
+			}
 			id: "1E0AC8C18F325735"
 			optional: true
 			rewards: [
@@ -889,6 +994,16 @@
 			y: 6.2d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.elemental_wizards_rpg.spell_book/aqua\"}"
+					"spell_engine:item_model": "elemental_wizards_rpg:item/spell_book/aqua"
+					"spell_engine:spell_container": {
+						pool: "elemental_wizards_rpg:spell_book/aqua"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "1633486DD7D05BD1"
 			invisible: true
 			invisible_until_tasks: 1
@@ -917,6 +1032,9 @@
 				"1633486DD7D05BD1"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:staff_elemental"
+			}
 			id: "2912F0282CC64827"
 			rewards: [
 				{
@@ -954,6 +1072,9 @@
 				"2912F0282CC64827"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:elemental_chest"
+			}
 			id: "6AF27B410258165F"
 			rewards: [
 				{
@@ -989,6 +1110,9 @@
 				"6AF27B410258165F"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:wand_aqua"
+			}
 			id: "589173AB0C869B9F"
 			rewards: [
 				{
@@ -1017,6 +1141,9 @@
 				"589173AB0C869B9F"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:kelp_chest"
+			}
 			id: "258BC2864592F600"
 			rewards: [
 				{
@@ -1052,6 +1179,9 @@
 				"258BC2864592F600"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:wand_netherite_aqua"
+			}
 			id: "16B2F0A59B063880"
 			rewards: [
 				{
@@ -1080,6 +1210,9 @@
 				"16B2F0A59B063880"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:netherite_kelp_chest"
+			}
 			id: "136C0F86B7BE38A7"
 			rewards: [
 				{
@@ -1120,6 +1253,9 @@
 				"136C0F86B7BE38A7"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:ocean_robe_chest"
+			}
 			id: "5C9A512AF929AB58"
 			rewards: [
 				{
@@ -1153,6 +1289,9 @@
 				"16B2F0A59B063880"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:unique_staff_1"
+			}
 			id: "624B9A4DB75252BD"
 			optional: true
 			rewards: [
@@ -1175,6 +1314,16 @@
 			y: 8.7d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.elemental_wizards_rpg.spell_book/terra\"}"
+					"spell_engine:item_model": "elemental_wizards_rpg:item/spell_book/terra"
+					"spell_engine:spell_container": {
+						pool: "elemental_wizards_rpg:spell_book/terra"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "65B46437DDA1FF65"
 			invisible: true
 			invisible_until_tasks: 1
@@ -1203,6 +1352,9 @@
 				"65B46437DDA1FF65"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:staff_elemental"
+			}
 			id: "1F6DCBEFED7E0812"
 			rewards: [
 				{
@@ -1240,6 +1392,9 @@
 				"1F6DCBEFED7E0812"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:elemental_chest"
+			}
 			id: "391BEC2F41605019"
 			rewards: [
 				{
@@ -1275,6 +1430,9 @@
 				"391BEC2F41605019"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:wand_terra"
+			}
 			id: "199799F89DE093FE"
 			rewards: [
 				{
@@ -1303,6 +1461,9 @@
 				"199799F89DE093FE"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:dripstone_chest"
+			}
 			id: "25A6E69E62FA987F"
 			rewards: [
 				{
@@ -1338,6 +1499,9 @@
 				"25A6E69E62FA987F"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:wand_netherite_terra"
+			}
 			id: "14EFAE6064BD4190"
 			rewards: [
 				{
@@ -1366,6 +1530,9 @@
 				"14EFAE6064BD4190"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:netherite_dripstone_chest"
+			}
 			id: "20FE8A449EC1746B"
 			rewards: [
 				{
@@ -1406,6 +1573,9 @@
 				"20FE8A449EC1746B"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:mountain_robe_chest"
+			}
 			id: "67CB5231623A0129"
 			rewards: [
 				{
@@ -1439,6 +1609,9 @@
 				"14EFAE6064BD4190"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:unique_staff_1"
+			}
 			id: "417E01114649081A"
 			optional: true
 			rewards: [
@@ -1461,6 +1634,16 @@
 			y: 11.2d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.elemental_wizards_rpg.spell_book/wind\"}"
+					"spell_engine:item_model": "elemental_wizards_rpg:item/spell_book/wind"
+					"spell_engine:spell_container": {
+						pool: "elemental_wizards_rpg:spell_book/wind"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "29920E4F607C2A96"
 			invisible: true
 			invisible_until_tasks: 1
@@ -1489,6 +1672,9 @@
 				"29920E4F607C2A96"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:staff_elemental"
+			}
 			id: "1634EC6D9DC78D3A"
 			rewards: [
 				{
@@ -1526,6 +1712,9 @@
 				"1634EC6D9DC78D3A"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:elemental_chest"
+			}
 			id: "1E37A24026D2DD38"
 			rewards: [
 				{
@@ -1561,6 +1750,9 @@
 				"1E37A24026D2DD38"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:wand_wind"
+			}
 			id: "57F810F9EBD01932"
 			rewards: [
 				{
@@ -1589,6 +1781,9 @@
 				"57F810F9EBD01932"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:wind_chest"
+			}
 			id: "7117B5E8E653E9E8"
 			rewards: [
 				{
@@ -1624,6 +1819,9 @@
 				"7117B5E8E653E9E8"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:wand_netherite_wind"
+			}
 			id: "15BA62CCEF012E15"
 			rewards: [
 				{
@@ -1652,6 +1850,9 @@
 				"15BA62CCEF012E15"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:netherite_wind_chest"
+			}
 			id: "192A9BF9D510B1BC"
 			rewards: [
 				{
@@ -1692,6 +1893,9 @@
 				"192A9BF9D510B1BC"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:hurricane_robe_chest"
+			}
 			id: "68A41439B84F7D37"
 			rewards: [
 				{
@@ -1725,6 +1929,9 @@
 				"15BA62CCEF012E15"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "elemental_wizards_rpg:unique_staff_1"
+			}
 			id: "341E7D13B080731C"
 			optional: true
 			rewards: [
@@ -1747,6 +1954,16 @@
 			y: 13.7d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.paladins.spell_book/priest\"}"
+					"spell_engine:item_model": "paladins:item/spell_book/priest"
+					"spell_engine:spell_container": {
+						pool: "paladins:spell_book/priest"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "160E770304A9E71A"
 			invisible: true
 			invisible_until_tasks: 1
@@ -1775,6 +1992,9 @@
 				"160E770304A9E71A"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:holy_wand"
+			}
 			id: "1F669FE7EC5A7658"
 			rewards: [
 				{
@@ -1812,6 +2032,9 @@
 				"1F669FE7EC5A7658"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:priest_robe_chest"
+			}
 			id: "441338EFDCC99CEF"
 			rewards: [
 				{
@@ -1847,6 +2070,9 @@
 				"441338EFDCC99CEF"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:diamond_holy_wand"
+			}
 			id: "2862FA76D20232FE"
 			rewards: [
 				{
@@ -1875,6 +2101,9 @@
 				"2862FA76D20232FE"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:prior_robe_chest"
+			}
 			id: "36E9B005B8159543"
 			rewards: [
 				{
@@ -1910,6 +2139,9 @@
 				"36E9B005B8159543"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:netherite_holy_wand"
+			}
 			id: "3432529E4CA45247"
 			rewards: [
 				{
@@ -1938,6 +2170,9 @@
 				"3432529E4CA45247"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:netherite_prior_robe_chest"
+			}
 			id: "3F03244BAA9EF57E"
 			rewards: [
 				{
@@ -1978,6 +2213,9 @@
 				"3F03244BAA9EF57E"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "armory_rpgs:avatar_robe_chest"
+			}
 			id: "4B73FD0ECB5CA15E"
 			rewards: [
 				{
@@ -2011,6 +2249,9 @@
 				"3432529E4CA45247"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_staff_heal_1"
+			}
 			id: "5981EE879EE49344"
 			optional: true
 			rewards: [
@@ -2033,6 +2274,16 @@
 			y: 16.2d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.paladins.spell_book/paladin\"}"
+					"spell_engine:item_model": "paladins:item/spell_book/paladin"
+					"spell_engine:spell_container": {
+						pool: "paladins:spell_book/paladin"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "4888226F4A86AA88"
 			invisible: true
 			invisible_until_tasks: 1
@@ -2061,6 +2312,9 @@
 				"4888226F4A86AA88"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:iron_claymore"
+			}
 			id: "4C51D21C6BF384AB"
 			rewards: [
 				{
@@ -2098,6 +2352,9 @@
 				"4C51D21C6BF384AB"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:paladin_armor_chest"
+			}
 			id: "1917B6FC25356897"
 			rewards: [
 				{
@@ -2133,6 +2390,9 @@
 				"1917B6FC25356897"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:diamond_claymore"
+			}
 			id: "2822EF3B2E746D80"
 			rewards: [
 				{
@@ -2161,6 +2421,9 @@
 				"2822EF3B2E746D80"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:crusader_armor_chest"
+			}
 			id: "1093BA38C50D1EA8"
 			rewards: [
 				{
@@ -2196,6 +2459,9 @@
 				"1093BA38C50D1EA8"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:netherite_claymore"
+			}
 			id: "533BD5F53E1AE9FC"
 			rewards: [
 				{
@@ -2224,6 +2490,9 @@
 				"533BD5F53E1AE9FC"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "paladins:netherite_crusader_armor_chest"
+			}
 			id: "5F35D4CF3DAF6E1E"
 			rewards: [
 				{
@@ -2264,6 +2533,9 @@
 				"5F35D4CF3DAF6E1E"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "armory_rpgs:justicar_armor_chest"
+			}
 			id: "647FF63D4206EF38"
 			rewards: [
 				{
@@ -2297,6 +2569,9 @@
 				"533BD5F53E1AE9FC"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_claymore_1"
+			}
 			id: "1F106773840DE49E"
 			optional: true
 			rewards: [
@@ -2319,6 +2594,16 @@
 			y: 18.7d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.rogues.spell_book/warrior\"}"
+					"spell_engine:item_model": "rogues:item/spell_book/warrior"
+					"spell_engine:spell_container": {
+						pool: "rogues:spell_book/warrior"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "4656B3206F4BEC9E"
 			invisible: true
 			invisible_until_tasks: 1
@@ -2347,6 +2632,9 @@
 				"4656B3206F4BEC9E"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:iron_double_axe"
+			}
 			id: "49041290BFFAF015"
 			rewards: [
 				{
@@ -2384,6 +2672,9 @@
 				"49041290BFFAF015"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:warrior_armor_chest"
+			}
 			id: "4B5B8677B3751637"
 			rewards: [
 				{
@@ -2419,6 +2710,9 @@
 				"4B5B8677B3751637"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:diamond_double_axe"
+			}
 			id: "439736F4E5EFBE1D"
 			rewards: [
 				{
@@ -2447,6 +2741,9 @@
 				"439736F4E5EFBE1D"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:berserker_armor_chest"
+			}
 			id: "41299363454A86A6"
 			rewards: [
 				{
@@ -2482,6 +2779,9 @@
 				"41299363454A86A6"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:netherite_double_axe"
+			}
 			id: "62B2868F5BC9B0F1"
 			rewards: [
 				{
@@ -2510,6 +2810,9 @@
 				"62B2868F5BC9B0F1"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:netherite_berserker_armor_chest"
+			}
 			id: "56FD8D6AAF4752E8"
 			rewards: [
 				{
@@ -2550,6 +2853,9 @@
 				"56FD8D6AAF4752E8"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "armory_rpgs:destroyer_armor_chest"
+			}
 			id: "31E240F857E39A16"
 			rewards: [
 				{
@@ -2583,6 +2889,9 @@
 				"62B2868F5BC9B0F1"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_double_axe_1"
+			}
 			id: "6AF19D8A355966AA"
 			optional: true
 			rewards: [
@@ -2605,6 +2914,16 @@
 			y: 21.2d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.berserker_rpg.spell_book/berserker\"}"
+					"spell_engine:item_model": "berserker_rpg:item/spell_book/berserker"
+					"spell_engine:spell_container": {
+						pool: "berserker_rpg:spell_book/berserker"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "18CF3743171967AF"
 			invisible: true
 			invisible_until_tasks: 1
@@ -2633,6 +2952,9 @@
 				"18CF3743171967AF"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "berserker_rpg:iron_berserker_axe"
+			}
 			id: "39BC546692614563"
 			rewards: [
 				{
@@ -2670,6 +2992,9 @@
 				"39BC546692614563"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "berserker_rpg:wildling_chest"
+			}
 			id: "1545503C9E7552D8"
 			rewards: [
 				{
@@ -2705,6 +3030,9 @@
 				"1545503C9E7552D8"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "berserker_rpg:diamond_berserker_axe"
+			}
 			id: "10318286AE389F9C"
 			rewards: [
 				{
@@ -2733,6 +3061,9 @@
 				"10318286AE389F9C"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "berserker_rpg:northling_chest"
+			}
 			id: "632F93A87EA41C0E"
 			rewards: [
 				{
@@ -2768,6 +3099,9 @@
 				"632F93A87EA41C0E"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "berserker_rpg:netherite_berserker_axe"
+			}
 			id: "4C3C4D3A9CA28A02"
 			rewards: [
 				{
@@ -2796,6 +3130,9 @@
 				"4C3C4D3A9CA28A02"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "berserker_rpg:netherite_northling_chest"
+			}
 			id: "6223038B06217575"
 			rewards: [
 				{
@@ -2836,6 +3173,9 @@
 				"6223038B06217575"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "berserker_rpg:warlord_chest"
+			}
 			id: "476ABDE74108C527"
 			rewards: [
 				{
@@ -2869,6 +3209,9 @@
 				"4C3C4D3A9CA28A02"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "berserker_rpg:unique_berserker_axe_1"
+			}
 			id: "3611174B7DE1131E"
 			optional: true
 			rewards: [
@@ -2891,6 +3234,16 @@
 			y: 23.7d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.forcemaster_rpg.spell_book/forcemaster\"}"
+					"spell_engine:item_model": "forcemaster_rpg:item/spell_book/forcemaster"
+					"spell_engine:spell_container": {
+						pool: "forcemaster_rpg:spell_book/forcemaster"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "75611B5C933FAFE7"
 			invisible: true
 			invisible_until_tasks: 1
@@ -2919,6 +3272,9 @@
 				"75611B5C933FAFE7"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "forcemaster_rpg:iron_knuckle"
+			}
 			id: "5E16D4E8A85872F0"
 			rewards: [
 				{
@@ -2956,6 +3312,9 @@
 				"5E16D4E8A85872F0"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "forcemaster_rpg:oriene_chest"
+			}
 			id: "7B4169F3E37652A8"
 			rewards: [
 				{
@@ -2991,6 +3350,9 @@
 				"7B4169F3E37652A8"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "forcemaster_rpg:diamond_knuckle"
+			}
 			id: "7F12355C44326248"
 			rewards: [
 				{
@@ -3019,6 +3381,9 @@
 				"7F12355C44326248"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "forcemaster_rpg:phasleb_chest"
+			}
 			id: "6217905150642712"
 			rewards: [
 				{
@@ -3054,6 +3419,9 @@
 				"6217905150642712"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "forcemaster_rpg:netherite_knuckle"
+			}
 			id: "39026CB0D8738A17"
 			rewards: [
 				{
@@ -3082,6 +3450,9 @@
 				"39026CB0D8738A17"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "forcemaster_rpg:aken_chest"
+			}
 			id: "2B3AA7A8937E6500"
 			rewards: [
 				{
@@ -3122,6 +3493,9 @@
 				"2B3AA7A8937E6500"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "forcemaster_rpg:billporon_chest"
+			}
 			id: "1079047B48B1C2FE"
 			rewards: [
 				{
@@ -3155,6 +3529,9 @@
 				"39026CB0D8738A17"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "forcemaster_rpg:unique_knuckle_0"
+			}
 			id: "425435C54A40EF3D"
 			optional: true
 			rewards: [
@@ -3177,6 +3554,16 @@
 			y: 26.2d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.rogues.spell_book/rogue\"}"
+					"spell_engine:item_model": "rogues:item/spell_book/rogue"
+					"spell_engine:spell_container": {
+						pool: "rogues:spell_book/rogue"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "57ABBFDC4552D08D"
 			invisible: true
 			invisible_until_tasks: 1
@@ -3205,6 +3592,9 @@
 				"57ABBFDC4552D08D"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:iron_dagger"
+			}
 			id: "1E8FD874A1FF7D03"
 			rewards: [
 				{
@@ -3242,6 +3632,9 @@
 				"1E8FD874A1FF7D03"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:rogue_armor_chest"
+			}
 			id: "1AFAFEEA415040B0"
 			rewards: [
 				{
@@ -3277,6 +3670,9 @@
 				"1AFAFEEA415040B0"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:diamond_dagger"
+			}
 			id: "4F4BF32187D2040B"
 			rewards: [
 				{
@@ -3305,6 +3701,9 @@
 				"4F4BF32187D2040B"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:assassin_armor_chest"
+			}
 			id: "18A79782D6513961"
 			rewards: [
 				{
@@ -3340,6 +3739,9 @@
 				"18A79782D6513961"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:netherite_dagger"
+			}
 			id: "20B9A30B75154DF8"
 			rewards: [
 				{
@@ -3368,6 +3770,9 @@
 				"20B9A30B75154DF8"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "rogues:netherite_assassin_armor_chest"
+			}
 			id: "1DC10232987ECA09"
 			rewards: [
 				{
@@ -3408,6 +3813,9 @@
 				"1DC10232987ECA09"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "armory_rpgs:deathmantle_armor_chest"
+			}
 			id: "18630AE31317AF46"
 			rewards: [
 				{
@@ -3441,6 +3849,9 @@
 				"20B9A30B75154DF8"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_dagger_1"
+			}
 			id: "4C2EC0AB0BDBC6F9"
 			optional: true
 			rewards: [
@@ -3463,6 +3874,16 @@
 			y: 28.7d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.archers.spell_book/archer\"}"
+					"spell_engine:item_model": "archers:item/spell_book/archer"
+					"spell_engine:spell_container": {
+						pool: "archers:spell_book/archer"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "1B42EFBAB1CB5729"
 			invisible: true
 			invisible_until_tasks: 1
@@ -3491,6 +3912,9 @@
 				"1B42EFBAB1CB5729"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:composite_longbow"
+			}
 			id: "301A632C8984BC41"
 			rewards: [
 				{
@@ -3528,6 +3952,9 @@
 				"301A632C8984BC41"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:archer_armor_chest"
+			}
 			id: "1FF7572DD82363E8"
 			rewards: [
 				{
@@ -3563,6 +3990,9 @@
 				"1FF7572DD82363E8"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:royal_longbow"
+			}
 			id: "19A6506E90EAF78A"
 			rewards: [
 				{
@@ -3591,6 +4021,9 @@
 				"19A6506E90EAF78A"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:ranger_armor_chest"
+			}
 			id: "46E736ACF7965DCF"
 			rewards: [
 				{
@@ -3626,6 +4059,9 @@
 				"46E736ACF7965DCF"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:netherite_longbow"
+			}
 			id: "1B8CB1D0813C11BA"
 			rewards: [
 				{
@@ -3654,6 +4090,9 @@
 				"1B8CB1D0813C11BA"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:netherite_ranger_armor_chest"
+			}
 			id: "4E29AFB11C00708A"
 			rewards: [
 				{
@@ -3694,6 +4133,9 @@
 				"4E29AFB11C00708A"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "armory_rpgs:strider_armor_chest"
+			}
 			id: "18ADF425BBD7F047"
 			rewards: [
 				{
@@ -3727,6 +4169,9 @@
 				"1B8CB1D0813C11BA"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_longbow_1"
+			}
 			id: "7EEB99FFB405925A"
 			optional: true
 			rewards: [
@@ -3749,6 +4194,16 @@
 			y: 31.2d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.archers_expansion.spell_book/deadeye\"}"
+					"spell_engine:item_model": "archers_expansion:item/spell_book/deadeye"
+					"spell_engine:spell_container": {
+						pool: "archers_expansion:spell_book/deadeye"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "4123E323E910791A"
 			invisible: true
 			invisible_until_tasks: 1
@@ -3777,6 +4232,9 @@
 				"4123E323E910791A"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:composite_longbow"
+			}
 			id: "1C4C98EDF4A6A9A2"
 			rewards: [
 				{
@@ -3814,6 +4272,9 @@
 				"1C4C98EDF4A6A9A2"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:archer_armor_chest"
+			}
 			id: "653A4D930B08FA2E"
 			rewards: [
 				{
@@ -3849,6 +4310,9 @@
 				"653A4D930B08FA2E"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:royal_longbow"
+			}
 			id: "1E25DBC1DC9EEC04"
 			rewards: [
 				{
@@ -3877,6 +4341,9 @@
 				"1E25DBC1DC9EEC04"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers_expansion:deadeye_chest"
+			}
 			id: "7EC13CD969AF09D6"
 			rewards: [
 				{
@@ -3912,6 +4379,9 @@
 				"7EC13CD969AF09D6"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:netherite_longbow"
+			}
 			id: "1577601890C78DF9"
 			rewards: [
 				{
@@ -3940,6 +4410,9 @@
 				"1577601890C78DF9"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers_expansion:netherite_deadeye_chest"
+			}
 			id: "4A0B61034D97339F"
 			rewards: [
 				{
@@ -3980,6 +4453,9 @@
 				"4A0B61034D97339F"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers_expansion:bounty_hunter_chest"
+			}
 			id: "14A3168591A19450"
 			rewards: [
 				{
@@ -4013,6 +4489,9 @@
 				"1577601890C78DF9"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_longbow_1"
+			}
 			id: "411A2262ED7F5B5C"
 			optional: true
 			rewards: [
@@ -4035,6 +4514,16 @@
 			y: 33.7d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.archers_expansion.spell_book/tundra_hunter\"}"
+					"spell_engine:item_model": "archers_expansion:item/spell_book/tundra_hunter"
+					"spell_engine:spell_container": {
+						pool: "archers_expansion:spell_book/tundra_hunter"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "1ED644D0BF1D22B1"
 			invisible: true
 			invisible_until_tasks: 1
@@ -4063,6 +4552,9 @@
 				"1ED644D0BF1D22B1"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:composite_longbow"
+			}
 			id: "2B8C02ADA6749384"
 			rewards: [
 				{
@@ -4100,6 +4592,9 @@
 				"2B8C02ADA6749384"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:archer_armor_chest"
+			}
 			id: "159F042572E81979"
 			rewards: [
 				{
@@ -4135,6 +4630,9 @@
 				"159F042572E81979"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:royal_longbow"
+			}
 			id: "32C34EE2A68B3253"
 			rewards: [
 				{
@@ -4163,6 +4661,9 @@
 				"32C34EE2A68B3253"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers_expansion:tundra_hunter_chest"
+			}
 			id: "4A2642B509E8EC39"
 			rewards: [
 				{
@@ -4198,6 +4699,9 @@
 				"4A2642B509E8EC39"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:netherite_longbow"
+			}
 			id: "1DDA36D6C2E5B030"
 			rewards: [
 				{
@@ -4226,6 +4730,9 @@
 				"1DDA36D6C2E5B030"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers_expansion:netherite_tundra_hunter_chest"
+			}
 			id: "583F79DCD019CF60"
 			rewards: [
 				{
@@ -4266,6 +4773,9 @@
 				"583F79DCD019CF60"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers_expansion:polar_stalker_chest"
+			}
 			id: "1862B70199B7B41B"
 			rewards: [
 				{
@@ -4299,6 +4809,9 @@
 				"1DDA36D6C2E5B030"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_longbow_1"
+			}
 			id: "184EFCC08FF60DFA"
 			optional: true
 			rewards: [
@@ -4321,6 +4834,16 @@
 			y: 36.2d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.archers_expansion.spell_book/war_archer\"}"
+					"spell_engine:item_model": "archers_expansion:item/spell_book/war_archer"
+					"spell_engine:spell_container": {
+						pool: "archers_expansion:spell_book/war_archer"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "15B92936D987CD76"
 			invisible: true
 			invisible_until_tasks: 1
@@ -4349,6 +4872,9 @@
 				"15B92936D987CD76"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:crossbow"
+			}
 			id: "77275F9ADF8F5E43"
 			rewards: [
 				{
@@ -4386,6 +4912,9 @@
 				"77275F9ADF8F5E43"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:archer_armor_chest"
+			}
 			id: "48D3876FA6098A44"
 			rewards: [
 				{
@@ -4421,6 +4950,9 @@
 				"48D3876FA6098A44"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:rapid_crossbow"
+			}
 			id: "1BA3D489C4863B01"
 			rewards: [
 				{
@@ -4449,6 +4981,9 @@
 				"1BA3D489C4863B01"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers_expansion:war_archer_chest"
+			}
 			id: "608F868C692240A4"
 			rewards: [
 				{
@@ -4484,6 +5019,9 @@
 				"608F868C692240A4"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers:netherite_rapid_crossbow"
+			}
 			id: "55F345EDFB271EE0"
 			rewards: [
 				{
@@ -4512,6 +5050,9 @@
 				"55F345EDFB271EE0"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers_expansion:netherite_war_archer_chest"
+			}
 			id: "6D97E040B04E5B09"
 			rewards: [
 				{
@@ -4552,6 +5093,9 @@
 				"6D97E040B04E5B09"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "archers_expansion:sentinel_archer_chest"
+			}
 			id: "4366581CB1238872"
 			rewards: [
 				{
@@ -4585,6 +5129,9 @@
 				"55F345EDFB271EE0"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "arsenal:unique_heavy_crossbow_1"
+			}
 			id: "67BEF13204319F77"
 			optional: true
 			rewards: [
@@ -4607,6 +5154,16 @@
 			y: 38.7d
 		}
 		{
+			icon: {
+				components: {
+					"minecraft:item_name": "{\"translate\": \"item.bards_rpg.spell_book/bard\"}"
+					"spell_engine:item_model": "bards_rpg:item/spell_book/bard"
+					"spell_engine:spell_container": {
+						pool: "bards_rpg:spell_book/bard"
+					}
+				}
+				id: "spell_engine:spell_book"
+			}
 			id: "2C247588B7ACFE43"
 			invisible: true
 			invisible_until_tasks: 1
@@ -4635,6 +5192,9 @@
 				"2C247588B7ACFE43"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "bards_rpg:iron_rapier"
+			}
 			id: "4104BDA8E9E7FE69"
 			rewards: [
 				{
@@ -4681,6 +5241,9 @@
 				"4104BDA8E9E7FE69"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "bards_rpg:entertainer_garb_chest"
+			}
 			id: "5E559AF7114F6F26"
 			rewards: [
 				{
@@ -4716,6 +5279,9 @@
 				"5E559AF7114F6F26"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "bards_rpg:diamond_rapier"
+			}
 			id: "1A23F832A283CE90"
 			rewards: [
 				{
@@ -4744,6 +5310,9 @@
 				"1A23F832A283CE90"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "bards_rpg:troubadour_garb_chest"
+			}
 			id: "160B130DB069CAFF"
 			rewards: [
 				{
@@ -4779,6 +5348,9 @@
 				"160B130DB069CAFF"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "bards_rpg:netherite_rapier"
+			}
 			id: "271E268D7A3A594E"
 			rewards: [
 				{
@@ -4807,6 +5379,9 @@
 				"271E268D7A3A594E"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "bards_rpg:netherite_troubadour_garb_chest"
+			}
 			id: "17F753B33C2A16EF"
 			rewards: [
 				{
@@ -4847,6 +5422,9 @@
 				"17F753B33C2A16EF"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "bards_rpg:storyteller_garb_chest"
+			}
 			id: "1EE85DFC69D4B654"
 			rewards: [
 				{
@@ -4880,6 +5458,9 @@
 				"271E268D7A3A594E"
 			]
 			hide_until_deps_visible: true
+			icon: {
+				id: "bards_rpg:unique_rapier_0"
+			}
 			id: "39E4EF6895083D0C"
 			optional: true
 			rewards: [

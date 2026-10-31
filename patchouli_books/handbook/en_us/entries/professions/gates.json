@@ -15,6 +15,10 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Jeweler$(): gold and gem jewelry at 10, Socket Mounts at 15, diamond and emerald jewelry at 20, netherite jewelry at 25. Copper and iron rings are free.$(br2)The Jeweler villager sells rings and necklaces, and dungeons hide them."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Cook$(): plated meals at 10, feasts at 20. Cooking pot meals are free for everyone.$(br2)$(l)Explorer$(): scrolls and Crypt Survey Maps at 10, Warp Stones and Sharestones at 15, Waystones, Portstones and Great Dungeon maps at 20, Warp Plates at 25, Boss Lair maps at 30."
     }
   ]
 }

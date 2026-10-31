@@ -29,6 +29,22 @@ StartupEvents.registry('item', event => {
   trophies.forEach(name => {
     event.create(`minerpg:trophy_${name}`).rarity('rare').maxStackSize(16)
   })
+
+  // Explorer job: Survey Maps. Used up (right-click) into a map to the nearest place of their kind
+  // (server_scripts/minerpg_jobs.js). The vanilla filled-map picture, its markings tinted per kind.
+  const surveyMaps = {
+    settlement: 0x3f9b3f, // villages and taverns
+    crypt: 0x8a8a8a,      // small dungeons and crypts
+    dungeon: 0xd4a017,    // great dungeons
+    lair: 0xc0392b,       // boss lairs
+  }
+  Object.keys(surveyMaps).forEach(kind => {
+    event.create(`minerpg:survey_map_${kind}`)
+      .maxStackSize(16)
+      .rarity(kind == 'lair' ? 'rare' : kind == 'dungeon' ? 'uncommon' : 'common')
+      .textures({ layer0: 'minecraft:item/filled_map', layer1: 'minecraft:item/filled_map_markings' })
+      .color(1, surveyMaps[kind])
+  })
 })
 
 // Nether portal rule: in every dimension except the Nether, fire (flint and steel, fire

@@ -1,0 +1,109 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "waystones:black_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:blackstone_waystone",
+      "required": false
+    },
+    {
+      "id": "waystones:blue_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:brown_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:cyan_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:deepslate_waystone",
+      "required": false
+    },
+    {
+      "id": "waystones:end_stone_waystone",
+      "required": false
+    },
+    {
+      "id": "waystones:gray_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:green_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:light_blue_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:light_gray_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:lime_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:magenta_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:mossy_waystone",
+      "required": false
+    },
+    {
+      "id": "waystones:mud_bricks_waystone",
+      "required": false
+    },
+    {
+      "id": "waystones:orange_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:pink_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:prismarine_waystone",
+      "required": false
+    },
+    {
+      "id": "waystones:purple_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:purpur_waystone",
+      "required": false
+    },
+    {
+      "id": "waystones:red_nether_bricks_waystone",
+      "required": false
+    },
+    {
+      "id": "waystones:red_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:sandy_waystone",
+      "required": false
+    },
+    {
+      "id": "waystones:waystone",
+      "required": false
+    },
+    {
+      "id": "waystones:white_portstone",
+      "required": false
+    },
+    {
+      "id": "waystones:yellow_portstone",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "holder": {
+    "type": "jobsplus:powerup",
+    "id": "jobsplus:explorer/job_exp_iii"
+  },
+  "type": "jobsplus:on_job_exp",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp_multiplier",
+      "job": "jobsplus:explorer",
+      "multiplier": 3
+    }
+  ],
+  "conditions": []
+}

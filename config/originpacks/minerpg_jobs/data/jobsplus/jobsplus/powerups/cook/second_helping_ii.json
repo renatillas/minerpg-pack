@@ -1,0 +1,11 @@
+{
+  "job": "jobsplus:cook",
+  "name": "Second Helping II",
+  "description": "Grants a 20% chance of an extra serving for every meal you cook.",
+  "icon": {
+    "id": "farmersdelight:beef_stew"
+  },
+  "price": 10,
+  "required_level": 25,
+  "parent": "jobsplus:cook/second_helping_i"
+}

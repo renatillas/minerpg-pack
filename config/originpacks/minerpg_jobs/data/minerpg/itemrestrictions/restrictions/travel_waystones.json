@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "waystones:waystone",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/travel_waystones"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:explorer",
+      "level": 20,
+      "inverted": true
+    }
+  ]
+}

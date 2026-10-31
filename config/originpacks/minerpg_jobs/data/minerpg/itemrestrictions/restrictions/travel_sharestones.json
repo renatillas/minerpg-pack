@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "waystones:red_sharestone",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/travel_sharestones"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:explorer",
+      "level": 15,
+      "inverted": true
+    }
+  ]
+}

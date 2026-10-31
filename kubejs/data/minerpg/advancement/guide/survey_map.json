@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minerpg:survey_map_settlement",
+              "minerpg:survey_map_crypt",
+              "minerpg:survey_map_dungeon",
+              "minerpg:survey_map_lair"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

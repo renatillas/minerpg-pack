@@ -1,0 +1,12 @@
+{
+  "name": "Cook",
+  "price": 10,
+  "max_level": 100,
+  "color": "#E0803A",
+  "icon": {
+    "id": "farmersdelight:cooking_pot"
+  },
+  "description": "Cooks turn the harvest into meals that feed the whole party: stews and soups in the cooking pot, plated meals and feasts at the table. The higher the level, the grander the meal and the more servings it makes.",
+  "background": "minecraft:textures/block/bricks.png",
+  "is_default": false
+}

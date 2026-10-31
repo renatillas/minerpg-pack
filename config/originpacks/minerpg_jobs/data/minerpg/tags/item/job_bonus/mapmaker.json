@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minerpg:survey_map_settlement",
+      "required": false
+    },
+    {
+      "id": "minerpg:survey_map_crypt",
+      "required": false
+    },
+    {
+      "id": "minerpg:survey_map_dungeon",
+      "required": false
+    },
+    {
+      "id": "minerpg:survey_map_lair",
+      "required": false
+    }
+  ]
+}

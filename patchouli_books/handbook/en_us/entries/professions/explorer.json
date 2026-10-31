@@ -1,0 +1,16 @@
+{
+  "name": "Explorer: Survey Maps",
+  "icon": "minecraft:filled_map",
+  "category": "patchouli:professions",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A $(item)Survey Map$() becomes a map to the nearest place of its kind when you use it: a settlement, a crypt, a great dungeon or a boss lair. Anyone can draw a Settlement map (map and emerald); the others need an Explorer.$(br2)Copy the finished map at a cartography table for the whole party."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Explorers also build the travel network. $(item)Sharestones$() of one color all link to each other, $(item)Warp Plates$() pair up, and scrolls are one-use trips.$(br2)Waystones you find in the world stay free for everyone."
+    }
+  ]
+}

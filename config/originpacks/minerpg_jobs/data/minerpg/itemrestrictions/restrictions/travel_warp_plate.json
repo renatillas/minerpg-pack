@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "waystones:warp_plate",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/travel_warp_plate"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:explorer",
+      "level": 25,
+      "inverted": true
+    }
+  ]
+}

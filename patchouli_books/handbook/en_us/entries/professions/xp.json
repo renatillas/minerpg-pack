@@ -2,11 +2,11 @@
   "name": "Other Ways to Level",
   "icon": "minecraft:experience_bottle",
   "category": "patchouli:professions",
-  "sortnum": 4,
+  "sortnum": 5,
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(li)$(l)Smith$(): reforging, salvaging, smelting.$(li)$(l)Enchanter$(): enchanting, binding spells.$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.$(li)$(l)Alchemist$(): brewing, runes, potion charms.$(li)$(l)Farmer$(): harvesting and cooking-pot meals.$(li)Miners level from stone and ores."
+      "text": "$(li)$(l)Smith$(): reforging, salvaging, smelting.$(li)$(l)Enchanter$(): enchanting, binding spells.$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.$(li)$(l)Alchemist$(): brewing, runes, potion charms.$(li)$(l)Cook$(): every meal, pot or table.$(li)$(l)Explorer$(): Survey Maps, travel items, each new waystone.$(li)$(l)Farmer$(): harvesting, planting, breeding.$(li)Miners level from stone and ores."
     }
   ]
 }

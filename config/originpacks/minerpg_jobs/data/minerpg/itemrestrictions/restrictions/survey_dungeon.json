@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "minerpg:survey_map_dungeon",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/survey_dungeon"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:explorer",
+      "level": 20,
+      "inverted": true
+    }
+  ]
+}

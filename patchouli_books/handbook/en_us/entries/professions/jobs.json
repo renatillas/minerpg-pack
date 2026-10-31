@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The seven jobs: Alchemist, Enchanter, Farmer, Hunter, Jeweler, Miner and Smith.$(br2)Five of them also $(l)make$() things nobody else can: Smith, Hunter, Enchanter, Jeweler and Alchemist."
+      "text": "The nine jobs: Alchemist, Cook, Enchanter, Explorer, Farmer, Hunter, Jeweler, Miner and Smith.$(br2)Seven of them also $(l)make$() things nobody else can: Smith, Hunter, Enchanter, Jeweler, Alchemist, Cook and Explorer."
     }
   ]
 }

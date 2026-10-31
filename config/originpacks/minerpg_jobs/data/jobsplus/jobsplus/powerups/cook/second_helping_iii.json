@@ -1,0 +1,11 @@
+{
+  "job": "jobsplus:cook",
+  "name": "Second Helping III",
+  "description": "Grants a 30% chance of an extra serving for every meal you cook.",
+  "icon": {
+    "id": "farmersdelight:shepherds_pie_block"
+  },
+  "price": 15,
+  "required_level": 50,
+  "parent": "jobsplus:cook/second_helping_ii"
+}

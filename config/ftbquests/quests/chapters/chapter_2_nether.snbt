@@ -11,6 +11,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "minecraft:obsidian"
+			}
 			id: "4C6920214DBED4FE"
 			rewards: [
 				{
@@ -47,6 +50,9 @@
 			dependencies: [
 				"4C6920214DBED4FE"
 			]
+			icon: {
+				id: "minecraft:nether_bricks"
+			}
 			id: "311B8E5CCB0CEAB9"
 			rewards: [
 				{
@@ -69,6 +75,9 @@
 			dependencies: [
 				"311B8E5CCB0CEAB9"
 			]
+			icon: {
+				id: "minecraft:blaze_rod"
+			}
 			id: "558D7ACBE84CC796"
 			rewards: [
 				{
@@ -170,6 +179,9 @@
 			dependencies: [
 				"4C6920214DBED4FE"
 			]
+			icon: {
+				id: "minecraft:gilded_blackstone"
+			}
 			id: "47192179145EF3AD"
 			rewards: [
 				{
@@ -192,6 +204,9 @@
 			dependencies: [
 				"47192179145EF3AD"
 			]
+			icon: {
+				id: "minecraft:golden_axe"
+			}
 			id: "7EC7FF658A0626F1"
 			rewards: [
 				{
@@ -284,6 +299,9 @@
 			dependencies: [
 				"47192179145EF3AD"
 			]
+			icon: {
+				id: "minecraft:soul_lantern"
+			}
 			id: "20827BF57F7546BE"
 			rewards: [
 				{
@@ -344,6 +362,9 @@
 				"47192179145EF3AD"
 			]
 			dependency_requirement: "one_completed"
+			icon: {
+				id: "cataclysm:monstrous_eye"
+			}
 			id: "1BACA375DF555AD6"
 			rewards: [
 				{
@@ -434,6 +455,9 @@
 			dependencies: [
 				"551B4EC7917C7B74"
 			]
+			icon: {
+				id: "cataclysm:flame_eye"
+			}
 			id: "5A29FB8E07307813"
 			rewards: [
 				{
@@ -531,6 +555,9 @@
 			dependencies: [
 				"4C6920214DBED4FE"
 			]
+			icon: {
+				id: "minecraft:gold_ingot"
+			}
 			id: "40678BD3902A909A"
 			optional: true
 			rewards: [

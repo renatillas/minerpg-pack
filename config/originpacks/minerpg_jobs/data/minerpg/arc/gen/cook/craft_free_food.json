@@ -1,0 +1,41 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:cook"
+  },
+  "type": "arc:on_craft_item",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "farmersdelight:bacon_sandwich",
+        "farmersdelight:chicken_sandwich",
+        "farmersdelight:egg_sandwich",
+        "farmersdelight:hamburger",
+        "farmersdelight:mutton_wrap",
+        "farmersdelight:fruit_salad",
+        "farmersdelight:mixed_salad",
+        "farmersdelight:nether_salad",
+        "farmersdelight:barbecue_stick",
+        "farmersdelight:kelp_roll",
+        "farmersdelight:salmon_roll",
+        "farmersdelight:cod_roll",
+        "farmersdelight:apple_pie",
+        "farmersdelight:chocolate_pie",
+        "farmersdelight:sweet_berry_cheesecake",
+        "farmersdelight:honey_cookie",
+        "farmersdelight:sweet_berry_cookie",
+        "farmersdelight:melon_popsicle",
+        "farmersdelight:melon_juice"
+      ]
+    }
+  ]
+}

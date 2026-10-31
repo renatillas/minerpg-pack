@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:steak_and_potatoes",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:roasted_mutton_chops",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:grilled_salmon",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:bacon_and_eggs",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:stuffed_potato",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdelight:beef_stew",
+              "farmersdelight:chicken_soup",
+              "farmersdelight:vegetable_soup",
+              "farmersdelight:fish_stew",
+              "farmersdelight:pumpkin_soup",
+              "farmersdelight:baked_cod_stew",
+              "farmersdelight:noodle_soup",
+              "farmersdelight:bone_broth",
+              "farmersdelight:onion_soup",
+              "farmersdelight:mushroom_rice",
+              "farmersdelight:fried_rice",
+              "farmersdelight:cabbage_rolls",
+              "farmersdelight:pasta_with_meatballs",
+              "farmersdelight:pasta_with_mutton_chop",
+              "farmersdelight:vegetable_noodles",
+              "farmersdelight:ratatouille",
+              "farmersdelight:squid_ink_pasta",
+              "farmersdelight:dumplings",
+              "farmersdelight:tomato_sauce",
+              "farmersdelight:hot_cocoa",
+              "farmersdelight:apple_cider",
+              "farmersdelight:glow_berry_custard",
+              "farmersdelight:cooked_rice",
+              "farmersdelight:stuffed_pumpkin_block"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

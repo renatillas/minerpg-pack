@@ -1,0 +1,20 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:cook"
+  },
+  "type": "jobsplus:on_job_level_up",
+  "rewards": [
+    {
+      "type": "arc:command",
+      "command": "minerpg_jobs grant %player% minerpg:jobs/level_30"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:cook",
+      "level": 30
+    }
+  ]
+}

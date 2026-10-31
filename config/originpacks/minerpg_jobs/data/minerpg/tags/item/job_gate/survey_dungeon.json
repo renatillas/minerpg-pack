@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minerpg:survey_map_dungeon",
+      "required": false
+    }
+  ]
+}

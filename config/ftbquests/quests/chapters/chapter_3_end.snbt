@@ -53,6 +53,9 @@
 			dependencies: [
 				"1683BAA7EE6A9D08"
 			]
+			icon: {
+				id: "minecraft:ender_eye"
+			}
 			id: "29E79544ED9ADE2F"
 			rewards: [
 				{
@@ -75,6 +78,9 @@
 			dependencies: [
 				"29E79544ED9ADE2F"
 			]
+			icon: {
+				id: "minecraft:end_portal_frame"
+			}
 			id: "2E75B2448D173567"
 			rewards: [
 				{
@@ -137,6 +143,9 @@
 			dependencies: [
 				"44A9402B363085DF"
 			]
+			icon: {
+				id: "minecraft:shulker_shell"
+			}
 			id: "1BD38E61C99DC272"
 			rewards: [
 				{
@@ -223,6 +232,9 @@
 			dependencies: [
 				"44A9402B363085DF"
 			]
+			icon: {
+				id: "minecraft:purpur_block"
+			}
 			id: "608F4956BDD8B0F1"
 			rewards: [
 				{
@@ -279,6 +291,9 @@
 			dependencies: [
 				"44A9402B363085DF"
 			]
+			icon: {
+				id: "cataclysm:void_eye"
+			}
 			id: "21324AB76EF33990"
 			rewards: [
 				{
@@ -360,6 +375,9 @@
 			dependencies: [
 				"1683BAA7EE6A9D08"
 			]
+			icon: {
+				id: "minecraft:diamond"
+			}
 			id: "13C628F8E97EDFB1"
 			optional: true
 			rewards: [

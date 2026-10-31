@@ -1,0 +1,12 @@
+{
+  "name": "Explorer",
+  "price": 10,
+  "max_level": 100,
+  "color": "#5A8FD0",
+  "icon": {
+    "id": "minecraft:compass"
+  },
+  "description": "Explorers guide the party: they draw Survey Maps that lead to settlements, crypts, dungeons and boss lairs, and build the waystone network everyone travels by. The higher the level, the more dangerous the destination.",
+  "background": "minecraft:textures/block/cartography_table_top.png",
+  "is_default": false
+}

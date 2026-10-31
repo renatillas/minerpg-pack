@@ -1,0 +1,23 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:explorer"
+  },
+  "type": "arc:on_craft_item",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 3,
+      "max": 5
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "minerpg:survey_map_settlement"
+      ]
+    }
+  ]
+}

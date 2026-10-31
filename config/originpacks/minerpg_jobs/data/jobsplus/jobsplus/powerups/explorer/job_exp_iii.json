@@ -1,0 +1,11 @@
+{
+  "job": "jobsplus:explorer",
+  "name": "Job Experience III",
+  "description": "Multiply your job experience by 3x",
+  "icon": {
+    "id": "minecraft:experience_bottle"
+  },
+  "price": 12,
+  "required_level": 40,
+  "parent": "jobsplus:explorer/job_exp_ii"
+}

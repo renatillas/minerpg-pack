@@ -1,0 +1,11 @@
+{
+  "job": "jobsplus:explorer",
+  "name": "Mapmaker III",
+  "description": "Grants a 50% chance to draw two Survey Maps for the price of one.",
+  "icon": {
+    "id": "minecraft:filled_map"
+  },
+  "price": 15,
+  "required_level": 50,
+  "parent": "jobsplus:explorer/mapmaker_ii"
+}

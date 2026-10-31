@@ -410,6 +410,15 @@ MAPS = {
     'ancient_city': ('Map to an Ancient City', 'minerpg:map/ancient_city', ['minecraft:ancient_city']),
     'ancient_factory': ('Map to the Ancient Factory', 'minerpg:map/ancient_factory', ['cataclysm:ancient_factory']),
     'stronghold': ('Map to the Stronghold', 'minerpg:strongholds', None),
+    # Explorer Survey Maps (used up into these by kubejs/server_scripts/minerpg_jobs.js).
+    'survey_settlement': ('Survey Map: Nearest Settlement', 'minerpg:map/survey_settlement',
+                          ['#minecraft:village'] + [f'nova_structures:tavern_{w}' for w in TAVERN_WOODS]),
+    'survey_crypt': ('Survey Map: Nearest Crypt', 'minerpg:small_dungeons', None),
+    'survey_dungeon': ('Survey Map: Nearest Great Dungeon', 'minerpg:map/great_dungeon', None),
+    'survey_lair': ('Survey Map: Nearest Boss Lair', 'minerpg:map/survey_lair', [
+        'cataclysm:amethyst_nest', 'cataclysm:cursed_pyramid', 'cataclysm:frosted_prison', 'cataclysm:sunken_city',
+        'cataclysm:ancient_factory', 'mowziesmobs:wrought_chamber', 'mowziesmobs:umvuthana_grove',
+        'mowziesmobs:frostmaw_spawn']),
 }
 
 
@@ -451,6 +460,29 @@ def write_structure_tags():
         # required: false so a missing mod never breaks the tag.
         write(os.path.join(folder, name + '.json'),
               json.dumps({'values': [{'id': i, 'required': False} for i in ids]}, indent=2))
+
+
+# --------------------------------------------------------------------------------------
+# "Has an item" tasks (hidden helper advancements, written by write_advancements)
+# --------------------------------------------------------------------------------------
+# path -> criteria/requirements. Filled while the quest tables below are defined, written later
+# (write_advancements wipes and rewrites the folders first).
+HAS_ADV = {}
+
+
+def has_any(path, items, title):
+    """Task: the player has any one of `items` (ids, or a single '#tag') anywhere in the inventory."""
+    HAS_ADV[path] = ({'has': {'trigger': 'minecraft:inventory_changed', 'conditions': {'items': [{'items': items}]}}}, False)
+    return t_adv('minerpg:' + path, title)
+
+
+def has_sets(path, sets, title):
+    """Task: the player has all pieces of at least one of `sets` (lists of ids) at the same time.
+    Worn armor counts: the armor slots are part of the inventory."""
+    criteria = {f'set_{i}': {'trigger': 'minecraft:inventory_changed', 'conditions': {
+        'items': [{'items': [piece]} for piece in pieces]}} for i, pieces in enumerate(sets)}
+    HAS_ADV[path] = (criteria, len(sets) > 1)
+    return t_adv('minerpg:' + path, title)
 
 
 # --------------------------------------------------------------------------------------
@@ -555,10 +587,12 @@ GETTING_STARTED = [
         '- &dEnchanter&r: robes, staves, wands and instruments (Wizard, mages, Priest, Bard), and the stronger enchanting shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30.',
         '- &5Alchemist&r: Strong and Long potions at 10, Splash at 15, Lingering at 20.',
         '- &3Jeweler&r: gold and gem jewelry at 10, Socket Mounts at 15, diamond and emerald jewelry at 20, netherite jewelry at 25.',
+        '- &6Cook&r: plated meals at 10 (steak and potatoes, roasted mutton chops, grilled salmon, bacon and eggs, stuffed potato), feasts at 20. Cooking pot meals are free for everyone.',
+        '- &9Explorer&r: Return, Warp and Portal Scrolls and Crypt Survey Maps at 10, Warp Stones and Sharestones at 15, Waystones, Portstones and Great Dungeon Survey Maps at 20, Warp Plates at 25, Boss Lair Survey Maps at 30. Waystones you find stay free to use.',
         '',
         'Anyone can &ouse&r these things. Class gear still drops from dungeons and bosses, class merchants sell it, plain bookshelves work for everyone, the Jeweler villager sells rings and necklaces, and a friend with the job can make it for you.',
         'Hover over an item to see the job and level that make it.',
-        'Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Farmers from the cooking pot.',
+        'Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Cooks from every meal, Explorers from each new waystone they use.',
         'Class merchants buy crafted goods for emeralds: runes, diamond-tier class weapons and pot meals.'],
         [t_check('Understood')], [r_coins(1)], deps=['gs_jobs'], subtitle='Crafting gates and job experience', shape='diamond', optional=True),
     # v0.4 additions. Item rewards only, so Getting Started quest points stay as tuned.
@@ -573,7 +607,8 @@ GETTING_STARTED = [
         'Build a &6Cooking Pot&r and set it on a campfire or stove. Pot meals feed more and give the whole group buffs:',
         '- &aNourishment&r: your hunger stops dropping for a while.',
         '- &aComfort&r: you keep healing however hungry you are.',
-        'Wild cabbages, tomatoes, onions and rice grow out in the world: break them for seeds. Hover over any food to see how much it restores.'],
+        'Wild cabbages, tomatoes, onions and rice grow out in the world: break them for seeds. Hover over any food to see how much it restores.',
+        'Anyone can cook in the pot. A &6Cook&r (J) earns job experience for it, and sometimes gets a second helping.'],
         [t_item('farmersdelight:cooking_pot', title='Craft a Cooking Pot')], [r_item('farmersdelight:tomato_seeds', 4), r_item('farmersdelight:cabbage_seeds', 4)],
         deps=['gs_welcome'], subtitle='Cooking (Farmer\'s Delight)'),
     # v0.5 village tour: the class buildings and merchants of your starting village.
@@ -605,10 +640,21 @@ for i, (key, title, text, icon) in enumerate(TOUR):
                              [t_adv(f'trade_{key}', 'Trade with the merchant')], [r_item('minecraft:emerald', 3)],
                              deps=['gs_tour'], subtitle='Class building', shape='circle', optional=True, icon={'id': icon}))
 
+# Cooking pot meals (Farmer's Delight); any one completes the Cook starter.
+POT_MEALS = ['farmersdelight:' + m for m in [
+    'beef_stew', 'chicken_soup', 'vegetable_soup', 'fish_stew', 'pumpkin_soup', 'baked_cod_stew', 'noodle_soup',
+    'bone_broth', 'onion_soup', 'mushroom_rice', 'fried_rice', 'cabbage_rolls', 'pasta_with_meatballs',
+    'pasta_with_mutton_chop', 'vegetable_noodles', 'ratatouille', 'squid_ink_pasta', 'dumplings', 'tomato_sauce',
+    'hot_cocoa', 'apple_cider', 'glow_berry_custard', 'cooked_rice', 'stuffed_pumpkin_block']]
+
 JOB_STARTERS = [
     ('alchemist', 'Alchemist', 'Alchemists earn experience brewing, crafting runes and potion charms. Brew any potion.', t_adv('alchemist', 'Brew a potion'), r_item('minecraft:glass_bottle', 6)),
     ('enchanter', 'Enchanter', 'Enchanters earn experience at the enchanting table and the Spell Binding Table. Enchant any item.', t_adv('minecraft:story/enchant_item', 'Enchant an item'), r_item('minecraft:lapis_lazuli', 12)),
-    ('farmer', 'Farmer', 'Farmers earn experience harvesting grown crops and cooking pot meals. Bring in 16 wheat.', t_item('minecraft:wheat', 16), r_item('minecraft:bone_meal', 16)),
+    ('cook', 'Cook', 'Cooks earn experience for every meal: stews and soups from the cooking pot, plated meals and feasts at the table. Plated meals need Cook 10, feasts Cook 20. Cook any meal in a cooking pot.',
+     has_any('guide/pot_meal', POT_MEALS, 'Cook a pot meal'), r_item('minecraft:bowl', 8)),
+    ('explorer', 'Explorer', 'Explorers draw Survey Maps that lead the party to settlements, crypts, dungeons and boss lairs, and build the waystone network. They also earn experience the first time they use each waystone. Draw a Survey Map from a map and an emerald.',
+     t_item('minerpg:survey_map_settlement', title='Draw a Survey Map'), r_item('minecraft:map', 3)),
+    ('farmer', 'Farmer', 'Farmers earn experience harvesting grown crops and raising animals. Bring in 16 wheat.', t_item('minecraft:wheat', 16), r_item('minecraft:bone_meal', 16)),
     ('hunter', 'Hunter', 'Hunters are skinners and leatherworkers. They earn experience for every hide, bone and monster part their kills drop (and find more of them as they level), for hunting animals and for crafting leather goods. Bring in 8 leather.', t_item('minecraft:leather', 8), r_item('minecraft:arrow', 32)),
     ('jeweler', 'Jeweler', 'Jewelers craft rings and necklaces, cut gems at the Jeweler\'s Kit and the Gem Cutting Table, and set gems into gear. Gold and gem jewelry needs Jeweler 10. Craft a Jeweler\'s Kit.', t_item('jewelry:jewelers_kit', title='Craft a Jeweler\'s Kit'), r_item('minecraft:gold_ingot', 6)),
     ('miner', 'Miner', 'Miners earn experience breaking stone and ores. Mine 16 coal.', t_item('minecraft:coal', 16), r_item('minecraft:torch', 32)),
@@ -758,12 +804,12 @@ CHAPTER_1 = [
     # Jobs (optional).
     Q('c1_job_10', 'Journeyman', 0, 4.5, [
         'Reach &6level 10&r in any of your jobs.',
-        'At level 10, Smiths, Hunters and Enchanters make tier 1 class gear of their kind, Enchanters also the Hellshelf and Seashelf, Jewelers gold and gem jewelry, and Alchemists brew Strong and Long potions.',
+        'At level 10, Smiths, Hunters and Enchanters make tier 1 class gear of their kind, Enchanters also the Hellshelf and Seashelf, Jewelers gold and gem jewelry, Cooks plated meals, Explorers scrolls and Crypt Survey Maps, and Alchemists brew Strong and Long potions.',
         '&7Checked when the job levels up.&r'],
         [t_adv('job_level_10', 'Reach level 10 in a job')], [r_coins(5), r_item('minecraft:emerald', 4)],
         deps=['c1_village'], subtitle='Job milestone', shape='circle', optional=True),
     Q('c1_job_craft', 'Made for a Friend', 1.5, 4.5, [
-        'Make something only a trained hand can make: class gear as a Smith, Hunter or Enchanter, an enchanting shelf as an Enchanter, gem jewelry or a Socket Mount as a Jeweler, or a Strong, Long, Splash or Lingering potion as an Alchemist.',
+        'Make something only a trained hand can make: class gear as a Smith, Hunter or Enchanter, an enchanting shelf as an Enchanter, gem jewelry or a Socket Mount as a Jeweler, a plated meal or a feast as a Cook, a scroll or a Survey Map as an Explorer, or a Strong, Long, Splash or Lingering potion as an Alchemist.',
         'Then hand it to a party member who could not make it. That is what trades are for.'],
         [t_adv('job_gated_craft', 'Make a job-gated item')], [r_coins(5), r_item('minecraft:emerald', 6)],
         deps=['c1_job_10'], subtitle='Job milestone', shape='circle', optional=True),
@@ -828,7 +874,7 @@ CHAPTER_2 = [
         deps=['c2_arena'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
     Q('c2_job_20', 'Expert', 0, 3, [
         'Reach &6level 20&r in any of your jobs.',
-        'At level 20, Smiths, Hunters and Enchanters make diamond class gear; Smiths reforge to Epic, Enchanters make the upgraded hell and sea shelves, Jewelers diamond and emerald jewelry, and Alchemists brew Lingering potions.',
+        'At level 20, Smiths, Hunters and Enchanters make diamond class gear; Smiths reforge to Epic, Enchanters make the upgraded hell and sea shelves, Jewelers diamond and emerald jewelry, Cooks feasts, Explorers waystones and Great Dungeon Survey Maps, and Alchemists brew Lingering potions.',
         '&7Checked when the job levels up.&r'],
         [t_adv('job_level_20', 'Reach level 20 in a job')], [r_coins(8), r_item('minecraft:emerald', 8)],
         deps=['c2_arrive'], subtitle='Job milestone', shape='circle', optional=True),
@@ -877,7 +923,7 @@ CHAPTER_3 = [
         deps=['c3_citadel'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
     Q('c3_job_30', 'Master', 0, 2, [
         'Reach &6level 30&r in any of your jobs.',
-        'At level 30, Smiths, Hunters and Enchanters make the Armory sets from Ignis\'s upgrade crystals; Smiths reforge to Mythic and Enchanters make endshelves.',
+        'At level 30, Smiths, Hunters and Enchanters make the Armory sets from Ignis\'s upgrade crystals; Smiths reforge to Mythic, Enchanters make endshelves and Explorers draw Survey Maps to boss lairs.',
         '&7Checked when the job levels up.&r'],
         [t_adv('job_level_30', 'Reach level 30 in a job')], [r_coins(12), r_item('minecraft:emerald_block', 2)],
         deps=['c3_eyes'], subtitle='Job milestone', shape='circle', optional=True),
@@ -890,29 +936,6 @@ CHAPTER_3 = [
         [t_item('minerpg:trophy_wither', title='Ashen Skull Shard')], [r_item('minecraft:beacon'), r_xp(800)],
         deps=['c3_wither_call'], subtitle='Optional raid', shape='gear', size=Double(1.5), optional=True),
 ]
-
-# --------------------------------------------------------------------------------------
-# "Has an item" tasks (hidden helper advancements, written by write_advancements)
-# --------------------------------------------------------------------------------------
-# path -> criteria/requirements. Filled while the quest tables below are defined, written later
-# (write_advancements wipes and rewrites the folders first).
-HAS_ADV = {}
-
-
-def has_any(path, items, title):
-    """Task: the player has any one of `items` (ids, or a single '#tag') anywhere in the inventory."""
-    HAS_ADV[path] = ({'has': {'trigger': 'minecraft:inventory_changed', 'conditions': {'items': [{'items': items}]}}}, False)
-    return t_adv('minerpg:' + path, title)
-
-
-def has_sets(path, sets, title):
-    """Task: the player has all pieces of at least one of `sets` (lists of ids) at the same time.
-    Worn armor counts: the armor slots are part of the inventory."""
-    criteria = {f'set_{i}': {'trigger': 'minecraft:inventory_changed', 'conditions': {
-        'items': [{'items': [piece]} for piece in pieces]}} for i, pieces in enumerate(sets)}
-    HAS_ADV[path] = (criteria, len(sets) > 1)
-    return t_adv('minerpg:' + path, title)
-
 
 def pieces(chest):
     """The four pieces of an armor set, from its chest piece id (every class set names them *_head/_chest/_legs/_feet)."""
@@ -1156,7 +1179,8 @@ def calling_row(key, row):
             'as the step opens.'],
             [t_adv(f'minerpg:{p}/start', f'Carry the {title} tome')], [r_xp(50)],
             subtitle='Your class, step by step', shape='hexagon', size=Double(1.25), invisible=True,
-            invisible_until_tasks=1),
+            invisible_until_tasks=1,
+            icon={'id': 'spell_engine:spell_book', 'components': book(next(k[2] for k in KITS if k[0] == key))}),
     ]
     steps = [
         ('w1', 'First Steel', 1, 'weapon', 0, weapon_mats),
@@ -1396,11 +1420,20 @@ KIT_TAB = [
     Q('ak_kitchen', 'A Proper Kitchen', -2, -1.5, [
         'A &6Cutting Board&r slices with a knife; a &6Skillet&r cooks over heat. Together with the cooking pot they '
         'make every Farmer\'s Delight meal.',
-        'Farmers earn job experience for meals.'],
+        'Cooks earn job experience for every meal. Plated meals need a Cook of level 10, feasts a Cook of level 20.'],
         [has_any('guide/cutting_board', ['farmersdelight:cutting_board'], 'Have a Cutting Board'),
          has_any('guide/skillet', ['farmersdelight:skillet'], 'Have a Skillet')],
         [r_item('farmersdelight:rice', 8), r_item('farmersdelight:onion', 4)], deps=['ak_intro'], subtitle='Farmer\'s Delight'),
     # When things go wrong
+    Q('ak_survey', 'Charting the Unknown', -3.5, -1.5, [
+        'An &9Explorer&r (J) draws &6Survey Maps&r: use one and it becomes a map to the nearest place of its kind.',
+        '- Settlement (map + emerald): anyone can draw it. Villages and taverns.',
+        '- Crypt (Explorer 10), Great Dungeon (Explorer 20), Boss Lair (Explorer 30).',
+        'Copy the finished map at a &6cartography table&r so everyone in the party has one.',
+        'Explorers also craft the travel network: scrolls, Sharestones (every stone of one color links to the others), Waystones and Warp Plates.'],
+        [has_any('guide/survey_map', ['minerpg:survey_map_settlement', 'minerpg:survey_map_crypt',
+                                      'minerpg:survey_map_dungeon', 'minerpg:survey_map_lair'], 'Have a Survey Map')],
+        [r_item('minecraft:map', 2)], deps=['ak_intro'], subtitle='Explorer'),
     Q('ak_grave', 'If You Fall', -2, 1, [
         'If you are downed, a friend can pick you up. If you truly die, nothing is lost: your items, armor, trinkets, '
         'backpack and experience wait in a &6grave&r. The chat says where, and you respawn with a compass to it.',
@@ -1523,6 +1556,7 @@ def check_item_ids(mods_dir):
     # Ids in "has an item" tasks (trigger names are minecraft: ids and skipped) and in item rewards.
     for criteria, _ in HAS_ADV.values():
         walk(criteria)
+    walk(QUEST_ICONS)
     for _, _, _, _, quests in CHAPTERS:
         for qd in quests:
             for r in qd['rewards']:
@@ -1537,6 +1571,76 @@ def check_item_ids(mods_dir):
 # --------------------------------------------------------------------------------------
 # Build
 # --------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------
+# Quest icons. FTB shows a quest with the icon of its first task; our helper advancements have no
+# display, so without an explicit icon those quests fell back to a placeholder (wheat). Order:
+# an icon passed to Q(), then QUEST_ICONS, then the first item a "has an item" task looks for,
+# then ADV_ICONS for the named helper advancements.
+# --------------------------------------------------------------------------------------
+QUEST_ICONS = {
+    # Getting Started
+    'gs_welcome': 'minecraft:map', 'gs_race': 'minecraft:armor_stand', 'gs_calling': 'spell_engine:spell_book',
+    'gs_cast': 'minecraft:fire_charge', 'gs_runes': 'runes:arcane_stone', 'gs_binding': 'spell_engine:spell_binding',
+    'gs_talent': 'minecraft:experience_bottle', 'gs_roll': 'minecraft:feather', 'gs_stats': 'minecraft:iron_chestplate',
+    'gs_waystone': 'waystones:waystone', 'gs_lootr': 'lootr:lootr_chest', 'gs_locks': 'minecraft:trial_key',
+    'gs_party': 'minecraft:cake', 'gs_jobs': 'minecraft:iron_pickaxe', 'gs_job_gates': 'minecraft:crafting_table',
+    'gs_revive': 'minecraft:golden_apple', 'gs_tour': 'minecraft:emerald',
+    'gs_job_alchemist': 'minecraft:brewing_stand', 'gs_job_enchanter': 'minecraft:enchanting_table',
+    'gs_job_smith': 'minecraft:smithing_table',
+    'cl_intro': 'spell_engine:spell_book',
+    # Chapter 1: the Overworld (Cataclysm lairs show the eye that finds them)
+    'c1_village': 'minecraft:bell', 'c1_tavern': 'minecraft:barrel', 'c1_cellar': 'minecraft:mossy_cobblestone',
+    'c1_nest': 'cataclysm:altar_of_amethyst', 'c1_wild': 'minecraft:compass',
+    'c1_rumor_pyramid': 'minecraft:map', 'c1_rumor_prison': 'minecraft:map', 'c1_rumor_sunken': 'minecraft:map',
+    'c1_pyramid': 'cataclysm:desert_eye', 'c1_prison': 'cataclysm:cursed_eye', 'c1_sunken': 'cataclysm:abyss_eye',
+    'c1_frontier': 'minecraft:sculk_shrieker', 'c1_factory': 'cataclysm:mech_eye',
+    'c1_job_10': 'minecraft:iron_ingot', 'c1_job_craft': 'minecraft:crafting_table',
+    # Chapter 2: the Nether
+    'c2_arrive': 'minecraft:obsidian', 'c2_fortress': 'minecraft:nether_bricks', 'c2_blaze': 'minecraft:blaze_rod',
+    'c2_bastion': 'minecraft:gilded_blackstone', 'c2_brutes': 'minecraft:golden_axe', 'c2_keep': 'minecraft:soul_lantern',
+    'c2_smith': 'cataclysm:monstrous_eye', 'c2_arena': 'cataclysm:flame_eye', 'c2_job_20': 'minecraft:gold_ingot',
+    # Chapter 3: the End
+    'c3_stronghold': 'minecraft:ender_eye', 'c3_end': 'minecraft:end_portal_frame', 'c3_city': 'minecraft:shulker_shell',
+    'c3_castle': 'minecraft:purpur_block', 'c3_citadel': 'cataclysm:void_eye', 'c3_job_30': 'minecraft:diamond',
+    # The Forge & the Library
+    'fl_intro': 'minecraft:enchanting_table', 'fl_ench': 'minecraft:enchanted_book', 'fl_hell_sea': 'minecraft:nether_bricks',
+    'fl_60': 'minecraft:prismarine', 'fl_deep': 'minecraft:sculk', 'fl_end': 'minecraft:end_stone_bricks',
+    'fl_spawner': 'minecraft:spawner',
+    # The Adventurer's Kit
+    'ak_intro': 'travelersbackpack:standard', 'ak_jeweler': 'jewelry:jewelers_kit', 'ak_ring': 'jewelry:gold_ring',
+    'ak_necklace': 'jewelry:emerald_necklace', 'ak_relic': 'minecraft:heart_of_the_sea',
+    'ak_backpack': 'travelersbackpack:standard', 'ak_backpack_upgrade': 'travelersbackpack:gold_tier_upgrade',
+    'ak_sleeping_bag': 'travelersbackpack:red_sleeping_bag', 'ak_grave': 'minecraft:skeleton_skull',
+    'ak_claim': 'minecraft:white_banner', 'ak_elites': 'minecraft:zombie_head',
+}
+ADV_ICONS = {}
+
+
+def quest_icon(qd):
+    if qd['key'] in QUEST_ICONS:
+        return {'id': QUEST_ICONS[qd['key']]}
+    if not qd['tasks']:
+        return None
+    task = qd['tasks'][0]
+    if task['type'] != 'advancement':
+        return None
+    name = task['advancement']
+    if name in ADV_ICONS:
+        return {'id': ADV_ICONS[name]}
+    path = name[len('minerpg:'):] if name.startswith('minerpg:') else None
+    if path in HAS_ADV:
+        criteria = HAS_ADV[path][0]
+        if 'has' in criteria:
+            first = criteria['has']['conditions']['items'][0]['items'][0]
+        else:
+            # A set: show the chest piece (second of head/chest/legs/feet).
+            pieces = criteria['set_0']['conditions']['items']
+            first = pieces[1 if len(pieces) > 1 else 0]['items'][0]
+        if not first.startswith('#'):
+            return {'id': first}
+    return None
+
+
 def resolve_adv(task):
     if task['type'] == 'advancement' and task['advancement'] in ADV:
         task['advancement'] = ADV[task['advancement']]
@@ -1586,6 +1690,7 @@ def build(mods_dir=None):
             keys[qd['key']] = oid('quest:' + qd['key'])
 
     counts = {}
+    no_icon = []
     for order, (filename, title, subtitle, icon, quests) in enumerate(CHAPTERS):
         cid = oid('chapter:' + filename)
         lang('chapter', cid, 'title', title)
@@ -1631,6 +1736,12 @@ def build(mods_dir=None):
                 quest['dependencies'] = [keys[d] for d in qd['deps']]
             for k, v in qd['extra'].items():
                 quest[k] = v
+            if 'icon' not in quest:
+                derived = quest_icon(qd)
+                if derived:
+                    quest['icon'] = derived
+                elif tasks[0]['type'] not in ('item',):
+                    no_icon.append(f'{qd["key"]} ({tasks[0]["type"]})')
             out.append(quest)
         counts[title] = len(out)
         write(os.path.join(QUESTS, 'chapters', f'{filename}.snbt'), snbt({
@@ -1675,6 +1786,8 @@ def build(mods_dir=None):
         check_item_ids(mods_dir)
     for k, v in counts.items():
         print(f'{k}: {v} quests')
+    if no_icon:
+        print(f'{len(no_icon)} quests show their first task\'s icon: ' + ', '.join(no_icon))
     print(f'{len(KITS)} class kits')
 
 

@@ -1,0 +1,10 @@
+{
+  "job": "jobsplus:cook",
+  "name": "Second Helping I",
+  "description": "Grants a 10% chance of an extra serving for every meal you cook.",
+  "icon": {
+    "id": "farmersdelight:tomato_sauce"
+  },
+  "price": 5,
+  "required_level": 10
+}

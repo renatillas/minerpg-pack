@@ -11,6 +11,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "travelersbackpack:standard"
+			}
 			id: "1CCCDDC9CD24B811"
 			rewards: [
 				{
@@ -38,6 +41,9 @@
 			dependencies: [
 				"1CCCDDC9CD24B811"
 			]
+			icon: {
+				id: "jewelry:jewelers_kit"
+			}
 			id: "38D3B1761DE5579B"
 			rewards: [
 				{
@@ -65,6 +71,9 @@
 			dependencies: [
 				"38D3B1761DE5579B"
 			]
+			icon: {
+				id: "jewelry:gold_ring"
+			}
 			id: "318F3444CB533462"
 			rewards: [
 				{
@@ -92,6 +101,9 @@
 			dependencies: [
 				"38D3B1761DE5579B"
 			]
+			icon: {
+				id: "jewelry:emerald_necklace"
+			}
 			id: "14C07E14E60A6AAE"
 			rewards: [
 				{
@@ -119,6 +131,9 @@
 			dependencies: [
 				"38D3B1761DE5579B"
 			]
+			icon: {
+				id: "jewelry:jewelers_kit"
+			}
 			id: "7F77AC6E99CF3DA3"
 			rewards: [
 				{
@@ -146,6 +161,9 @@
 			dependencies: [
 				"7F77AC6E99CF3DA3"
 			]
+			icon: {
+				id: "jewelry:socket_mount"
+			}
 			id: "284B33294DEB1EE1"
 			rewards: [
 				{
@@ -174,6 +192,9 @@
 				"318F3444CB533462"
 				"14C07E14E60A6AAE"
 			]
+			icon: {
+				id: "minecraft:heart_of_the_sea"
+			}
 			id: "7C301FD6C811E316"
 			rewards: [
 				{
@@ -197,6 +218,9 @@
 			dependencies: [
 				"1CCCDDC9CD24B811"
 			]
+			icon: {
+				id: "travelersbackpack:standard"
+			}
 			id: "63AF791A1948A92A"
 			rewards: [
 				{
@@ -224,6 +248,9 @@
 			dependencies: [
 				"63AF791A1948A92A"
 			]
+			icon: {
+				id: "travelersbackpack:gold_tier_upgrade"
+			}
 			id: "47A7D524E4668C17"
 			rewards: [
 				{
@@ -251,6 +278,9 @@
 			dependencies: [
 				"63AF791A1948A92A"
 			]
+			icon: {
+				id: "travelersbackpack:red_sleeping_bag"
+			}
 			id: "47E3538B073BEA0C"
 			optional: true
 			rewards: [
@@ -279,6 +309,9 @@
 			dependencies: [
 				"1CCCDDC9CD24B811"
 			]
+			icon: {
+				id: "toms_storage:storage_terminal"
+			}
 			id: "484F1A15221E6BFE"
 			rewards: [
 				{
@@ -306,6 +339,9 @@
 			dependencies: [
 				"1CCCDDC9CD24B811"
 			]
+			icon: {
+				id: "farmersdelight:cutting_board"
+			}
 			id: "6C8A4B797B816007"
 			rewards: [
 				{
@@ -348,6 +384,39 @@
 			dependencies: [
 				"1CCCDDC9CD24B811"
 			]
+			icon: {
+				id: "minerpg:survey_map_settlement"
+			}
+			id: "2934A45F0ED4C1D4"
+			rewards: [
+				{
+					count: 2
+					id: "5526FE820E1D45D1"
+					item: {
+						count: 1
+						id: "minecraft:map"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:guide/survey_map"
+					criterion: ""
+					id: "4F23F356113FB0AD"
+					type: "advancement"
+				}
+			]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1CCCDDC9CD24B811"
+			]
+			icon: {
+				id: "minecraft:skeleton_skull"
+			}
 			id: "5263DB62DE2D45A9"
 			rewards: [
 				{
@@ -373,6 +442,9 @@
 			dependencies: [
 				"1CCCDDC9CD24B811"
 			]
+			icon: {
+				id: "minecraft:white_banner"
+			}
 			id: "1BA0A3C135C77EEB"
 			rewards: [
 				{
@@ -398,6 +470,9 @@
 			dependencies: [
 				"1CCCDDC9CD24B811"
 			]
+			icon: {
+				id: "minecraft:zombie_head"
+			}
 			id: "4BE568A5179E7FC1"
 			rewards: [
 				{

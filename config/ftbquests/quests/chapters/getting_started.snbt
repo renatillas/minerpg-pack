@@ -11,6 +11,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "minecraft:map"
+			}
 			id: "15511B0F8DB55CDA"
 			rewards: [
 				{
@@ -43,6 +46,9 @@
 			dependencies: [
 				"15511B0F8DB55CDA"
 			]
+			icon: {
+				id: "minecraft:armor_stand"
+			}
 			id: "1BC9B50E8EB7C872"
 			rewards: [
 				{
@@ -64,6 +70,9 @@
 			dependencies: [
 				"15511B0F8DB55CDA"
 			]
+			icon: {
+				id: "spell_engine:spell_book"
+			}
 			id: "303494E14ED1C03B"
 			rewards: [
 				{
@@ -96,6 +105,9 @@
 			dependencies: [
 				"303494E14ED1C03B"
 			]
+			icon: {
+				id: "minecraft:fire_charge"
+			}
 			id: "1A456EDA90491257"
 			rewards: [
 				{
@@ -119,6 +131,9 @@
 			dependencies: [
 				"1A456EDA90491257"
 			]
+			icon: {
+				id: "runes:arcane_stone"
+			}
 			id: "139971D90D5C61AB"
 			rewards: [
 				{
@@ -146,6 +161,9 @@
 			dependencies: [
 				"1A456EDA90491257"
 			]
+			icon: {
+				id: "spell_engine:spell_binding"
+			}
 			id: "208546346D7B1A57"
 			rewards: [
 				{
@@ -178,6 +196,9 @@
 			dependencies: [
 				"303494E14ED1C03B"
 			]
+			icon: {
+				id: "minecraft:experience_bottle"
+			}
 			id: "409FB0BE8F2205F1"
 			rewards: [
 				{
@@ -201,6 +222,9 @@
 			dependencies: [
 				"15511B0F8DB55CDA"
 			]
+			icon: {
+				id: "minecraft:feather"
+			}
 			id: "11F4C25FDB99D364"
 			rewards: [
 				{
@@ -226,6 +250,9 @@
 			dependencies: [
 				"11F4C25FDB99D364"
 			]
+			icon: {
+				id: "minecraft:iron_chestplate"
+			}
 			id: "140588183FBEF823"
 			rewards: [
 				{
@@ -247,6 +274,9 @@
 			dependencies: [
 				"15511B0F8DB55CDA"
 			]
+			icon: {
+				id: "waystones:waystone"
+			}
 			id: "588CB70442A544B0"
 			rewards: [
 				{
@@ -274,6 +304,9 @@
 			dependencies: [
 				"15511B0F8DB55CDA"
 			]
+			icon: {
+				id: "lootr:lootr_chest"
+			}
 			id: "16E53725EC3775DC"
 			rewards: [
 				{
@@ -326,6 +359,9 @@
 			dependencies: [
 				"15511B0F8DB55CDA"
 			]
+			icon: {
+				id: "minecraft:trial_key"
+			}
 			id: "320B32FBD74A9EAF"
 			rewards: [
 				{
@@ -348,6 +384,9 @@
 			dependencies: [
 				"15511B0F8DB55CDA"
 			]
+			icon: {
+				id: "minecraft:cake"
+			}
 			id: "3F043D30988BC476"
 			rewards: [
 				{
@@ -369,6 +408,9 @@
 			dependencies: [
 				"15511B0F8DB55CDA"
 			]
+			icon: {
+				id: "minecraft:iron_pickaxe"
+			}
 			id: "5D0D3E3C2B3C0A65"
 			rewards: [
 				{
@@ -397,6 +439,9 @@
 			dependencies: [
 				"5D0D3E3C2B3C0A65"
 			]
+			icon: {
+				id: "minecraft:crafting_table"
+			}
 			id: "23438309D3EE7ED9"
 			optional: true
 			rewards: [
@@ -422,6 +467,9 @@
 			dependencies: [
 				"3F043D30988BC476"
 			]
+			icon: {
+				id: "minecraft:golden_apple"
+			}
 			id: "2D964BD77219E2CA"
 			rewards: [
 				{
@@ -486,6 +534,9 @@
 			dependencies: [
 				"303494E14ED1C03B"
 			]
+			icon: {
+				id: "minecraft:emerald"
+			}
 			id: "498B6C57012F8D8C"
 			optional: true
 			rewards: [
@@ -674,6 +725,9 @@
 			dependencies: [
 				"5D0D3E3C2B3C0A65"
 			]
+			icon: {
+				id: "minecraft:brewing_stand"
+			}
 			id: "1870DB9E3B1A8057"
 			rewards: [
 				{
@@ -714,6 +768,9 @@
 			dependencies: [
 				"5D0D3E3C2B3C0A65"
 			]
+			icon: {
+				id: "minecraft:enchanting_table"
+			}
 			id: "6C811E0AFCFDD19B"
 			rewards: [
 				{
@@ -748,6 +805,91 @@
 				}
 			]
 			x: -10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			icon: {
+				id: "farmersdelight:beef_stew"
+			}
+			id: "6954E43EA41454B7"
+			rewards: [
+				{
+					count: 8
+					id: "73E8BA9FB279C087"
+					item: {
+						count: 1
+						id: "minecraft:bowl"
+					}
+					type: "item"
+				}
+				{
+					id: "168911902C4037DD"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "105232067F3DA1B3"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					advancement: "minerpg:guide/pot_meal"
+					criterion: ""
+					id: "14BF2FF48C24A42B"
+					type: "advancement"
+				}
+			]
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5D0D3E3C2B3C0A65"
+			]
+			id: "7DC0800E7F0DC167"
+			rewards: [
+				{
+					count: 3
+					id: "170FD29EEE6CC2AE"
+					item: {
+						count: 1
+						id: "minecraft:map"
+					}
+					type: "item"
+				}
+				{
+					id: "7D2546670170FB6E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "298707F0E2BB803D"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					id: "7AE72E6F6E687E17"
+					item: {
+						count: 1
+						id: "minerpg:survey_map_settlement"
+					}
+					type: "item"
+				}
+			]
+			x: -7.5d
 			y: -1.5d
 		}
 		{
@@ -790,7 +932,7 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
+			x: -6.0d
 			y: -1.5d
 		}
 		{
@@ -833,8 +975,8 @@
 					type: "item"
 				}
 			]
-			x: -7.5d
-			y: -1.5d
+			x: -12.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -875,8 +1017,8 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: -1.5d
+			x: -10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -918,13 +1060,16 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -9.0d
 			y: 1.5d
 		}
 		{
 			dependencies: [
 				"5D0D3E3C2B3C0A65"
 			]
+			icon: {
+				id: "minecraft:smithing_table"
+			}
 			id: "267B5D48DAF1CC15"
 			rewards: [
 				{
@@ -958,7 +1103,7 @@
 					type: "advancement"
 				}
 			]
-			x: -10.5d
+			x: -7.5d
 			y: 1.5d
 		}
 	]

@@ -10,7 +10,10 @@
 //   - job XP for RPG activities that have no Arc action: Apotheosis reforging and salvaging
 //     (Smith); Spell Binding Table binds and spell book creation (Enchanter); gem cutting at the
 //     Jeweler's Kit and the Apotheosis Gem Cutting Table, Apotheosis socketing and sigils, and
-//     Socket Mounts and cut gems set at the anvil (Jeweler); cooking pot meals (Farmer);
+//     Socket Mounts and cut gems set at the anvil (Jeweler); cooking pot meals (Cook); the first use of
+//     each waystone (Explorer);
+//   - Survey Maps (Explorer): used up into a map to the nearest place of their kind;
+//   - the "extra copy" power-ups: Second Helping (Cook), Mapmaker and Waywright (Explorer);
 //   - Hunter skinning: XP for hides, bones and monster parts a Hunter's kills drop, plus extra
 //     yield and rare parts by Hunter level;
 //   - the reforging gate: reforging to Rare / Epic / Mythic needs Smith 10 / 20 / 30;
@@ -59,7 +62,23 @@ const GEM_CUT_XP = 15 // Jeweler, per gem cut at the Jeweler's Kit
 const GEM_UPGRADE_XP = 20 // Jeweler, per gem raised a purity at the Apotheosis Gem Cutting Table
 const MOUNT_XP = 15 // Jeweler, per Socket Mount fixed to armor at the anvil
 const SET_GEM_XP = 20 // Jeweler, per cut gem set into a socket at the anvil
-const MEAL_XP = 3 // Farmer, per cooking pot meal
+const MEAL_XP = 5 // Cook, per cooking pot meal
+const WAYSTONE_XP = 10 // Explorer, the first time they use each waystone
+// "Extra copy" power-ups: [job, power-up family, item tag of what they apply to, chance by tier I/II/III].
+// Pot meals get Second Helping in the cooking pot watcher (the tag lists crafting-table results only).
+const EXTRA_COPY = [
+  ['cook', 'second_helping', 'minerpg:job_bonus/second_helping', [0.1, 0.2, 0.3]],
+  ['explorer', 'mapmaker', 'minerpg:job_bonus/mapmaker', [0.15, 0.3, 0.5]],
+  ['explorer', 'waywright', 'minerpg:job_bonus/waywright', [0.1, 0.2, 0.3]],
+]
+const SECOND_HELPING_CHANCE = [0.1, 0.2, 0.3]
+// Survey Maps: item -> loot table (written by tools/gen_quests.py, kubejs/data/minerpg/loot_table/map/).
+const SURVEY_MAPS = {
+  'minerpg:survey_map_settlement': 'minerpg:map/survey_settlement',
+  'minerpg:survey_map_crypt': 'minerpg:map/survey_crypt',
+  'minerpg:survey_map_dungeon': 'minerpg:map/survey_dungeon',
+  'minerpg:survey_map_lair': 'minerpg:map/survey_lair',
+}
 // Repeatable advancements (config/originpacks/minerpg_jobs/data/minerpg/advancement/jobs_xp/).
 const ADVANCEMENT_XP = {
   'minerpg:jobs_xp/spell_bind': ['enchanter', 30, 'spell bound'],
@@ -109,8 +128,8 @@ const MERCHANT_VILLAGER_XP = 10
 // Jobs+ helpers
 // ---------------------------------------------------------------------------------------
 const JOB_NAMES = {
-  alchemist: 'Alchemist', enchanter: 'Enchanter', farmer: 'Farmer', hunter: 'Hunter', jeweler: 'Jeweler',
-  miner: 'Miner', smith: 'Smith',
+  alchemist: 'Alchemist', cook: 'Cook', enchanter: 'Enchanter', explorer: 'Explorer', farmer: 'Farmer',
+  hunter: 'Hunter', jeweler: 'Jeweler', miner: 'Miner', smith: 'Smith',
 }
 
 // The player's Job object for a job id like 'smith', or null if they don't have that job.
@@ -118,6 +137,23 @@ function jobOf(player, job) {
   const instance = $JobInstance.of($ResourceLocation.parse('jobsplus:' + job))
   if (instance == null) return null
   return player.jobsplus$getJob(instance)
+}
+
+// The highest tier (1-3) of a power-up family ('second_helping' -> second_helping_i/ii/iii) the player has
+// bought and switched on in the Jobs menu, or 0.
+const $PowerupInstance = Java.loadClass('com.daqem.jobsplus.integration.arc.holder.holders.powerup.PowerupInstance')
+function powerupTier(player, job, family) {
+  const j = jobOf(player, job)
+  if (j == null) return 0
+  const manager = j.getPowerupManager()
+  const numerals = ['iii', 'ii', 'i']
+  for (let i = 0; i < numerals.length; i++) {
+    var inst = $PowerupInstance.of($ResourceLocation.parse(`jobsplus:${job}/${family}_${numerals[i]}`))
+    if (inst == null) continue
+    var owned = manager.getPowerup(inst)
+    if (owned.isPresent() && String(owned.get().getState()) == 'ACTIVE') return 3 - i
+  }
+  return 0
 }
 
 function jobLevel(player, job) {
@@ -145,6 +181,14 @@ function itemId(stack) {
 //   /minerpg_jobs xp <players> <job> <amount>     add job XP (only if they have the job)
 //   /minerpg_jobs grant <players> <advancement>   grant an advancement without chat feedback
 // ---------------------------------------------------------------------------------------
+// Survey Map recipes (the three higher maps are gated by Explorer level in the minerpg_jobs datapack).
+ServerEvents.recipes(event => {
+  event.shapeless('minerpg:survey_map_settlement', ['minecraft:map', 'minecraft:emerald']).id('minerpg:survey_map_settlement')
+  event.shapeless('minerpg:survey_map_crypt', ['minecraft:map', 'minecraft:bone', 'minecraft:emerald']).id('minerpg:survey_map_crypt')
+  event.shapeless('minerpg:survey_map_dungeon', ['minecraft:map', 'minecraft:gold_ingot', 'minecraft:ender_pearl']).id('minerpg:survey_map_dungeon')
+  event.shapeless('minerpg:survey_map_lair', ['minecraft:map', 'minecraft:diamond', 'minecraft:gold_ingot', 'minecraft:ender_pearl']).id('minerpg:survey_map_lair')
+})
+
 ServerEvents.commandRegistry(event => {
   const { commands: Commands, arguments: Arguments } = event
   event.register(Commands.literal('minerpg_jobs')
@@ -293,10 +337,19 @@ function countIfSame(stack, sample) {
   return !stack.isEmpty() && $ItemStack.isSameItemSameComponents(stack, sample) ? stack.getCount() : 0
 }
 
-function craftedTick(player, menu, state, outputSlot, job, xpEach, what) {
+function craftedTick(player, menu, state, outputSlot, job, xpEach, what, extraChance) {
   if (state.sample != null) {
     const made = holding(player, menu, state.sample) - state.have
-    if (made > 0) giveJobXp(player, job, xpEach * made, `${made} ${what}`)
+    if (made > 0) {
+      giveJobXp(player, job, xpEach * made, `${made} ${what}`)
+      // Extra servings go straight to the inventory, after the count is read, so they aren't counted as made.
+      let extra = 0
+      for (let i = 0; i < made; i++) if (extraChance > 0 && player.getRandom().nextFloat() < extraChance) extra++
+      if (extra > 0) {
+        player.getInventory().placeItemBackInInventory(state.sample.copyWithCount(extra))
+        player.tell(Text.of(`Second Helping: +${extra} serving${extra > 1 ? 's' : ''}`).gold())
+      }
+    }
   }
   const out = menu.getSlot(outputSlot).getItem()
   if (!out.isEmpty()) state.sample = out.copyWithCount(1)
@@ -326,9 +379,12 @@ PlayerEvents.tick(event => {
   try {
     if (kind == 'reforge') reforgeTick(player, menu, state)
     else if (kind == 'salvage') salvageTick(player, menu, state)
-    else if (kind == 'gem') craftedTick(player, menu, state, 1, 'jeweler', GEM_CUT_XP, 'gem(s) cut')
+    else if (kind == 'gem') craftedTick(player, menu, state, 1, 'jeweler', GEM_CUT_XP, 'gem(s) cut', 0)
     else if (kind == 'apo_gem') apoCutTick(player, menu, state)
-    else craftedTick(player, menu, state, 8, 'farmer', MEAL_XP, 'meal(s) cooked')
+    else {
+      const tier = powerupTier(player, 'cook', 'second_helping')
+      craftedTick(player, menu, state, 8, 'cook', MEAL_XP, 'meal(s) cooked', tier > 0 ? SECOND_HELPING_CHANCE[tier - 1] : 0)
+    }
   } catch (e) {
     console.error(`[minerpg] jobs watcher (${kind}) failed: ${e}`)
     delete watch[key]
@@ -348,6 +404,86 @@ NativeEvents.onEvent($AnvilRepairEvent, event => {
   } catch (e) {
     console.error(`[minerpg] jobs anvil socketing failed: ${e}`)
   }
+})
+
+// ---------------------------------------------------------------------------------------
+// "Extra copy" power-ups for crafting-table results: Second Helping (Cook meals and feasts), Mapmaker
+// (Survey Maps), Waywright (scrolls, Warp Stones, waystones, Sharestones, Portstones, Warp Plates).
+// ---------------------------------------------------------------------------------------
+ItemEvents.crafted(event => {
+  try {
+    const player = event.player
+    const result = event.item
+    if (player == null || result.isEmpty()) return
+    EXTRA_COPY.forEach(([job, family, tag, chances]) => {
+      if (!result.hasTag(tag)) return
+      const tier = powerupTier(player, job, family)
+      if (tier > 0 && player.getRandom().nextFloat() < chances[tier - 1]) {
+        player.getInventory().placeItemBackInInventory(result.copy())
+        player.tell(Text.of(`${family == 'second_helping' ? 'Second Helping' : family == 'mapmaker' ? 'Mapmaker' : 'Waywright'}: one more ${result.getHoverName().getString()}`).gold())
+      }
+    })
+  } catch (e) {
+    console.error(`[minerpg] jobs extra copy failed: ${e}`)
+  }
+})
+
+// ---------------------------------------------------------------------------------------
+// Survey Maps (Explorer): using one runs its loot table (an explorer map to the nearest place of that kind,
+// searched from the player). If nothing is in range the loot table hands back a blank map: take that away
+// and give the Survey Map back.
+// ---------------------------------------------------------------------------------------
+function countItem(player, id) {
+  let n = 0
+  const inv = player.getInventory()
+  for (let i = 0; i < inv.getContainerSize(); i++) {
+    var stack = inv.getItem(i)
+    if (!stack.isEmpty() && itemId(stack) == id) n += stack.getCount()
+  }
+  return n
+}
+
+ItemEvents.rightClicked(event => {
+  const stack = event.item
+  const id = itemId(stack)
+  const table = SURVEY_MAPS[id]
+  if (!table) return
+  event.cancel()
+  const player = event.player
+  if (player.level.isClientSide()) return
+  if (String(player.level.dimension) != 'minecraft:overworld') {
+    player.setStatusMessage(Text.of('Survey Maps only chart the Overworld.').red())
+    return
+  }
+  const name = player.getGameProfile().getName()
+  const blanks = countItem(player, 'minecraft:map')
+  stack.shrink(1)
+  player.server.runCommandSilent(`execute as ${name} at @s run loot give @s loot ${table}`)
+  if (countItem(player, 'minecraft:map') > blanks) {
+    player.server.runCommandSilent(`clear ${name} minecraft:map 1`)
+    player.getInventory().placeItemBackInInventory(Item.of(id))
+    player.setStatusMessage(Text.of('Nothing of that kind lies within reach of this map. Try again farther out.').red())
+  } else {
+    player.setStatusMessage(Text.of('The map fills in. Copy it at a cartography table to share it.').gold())
+  }
+})
+
+// ---------------------------------------------------------------------------------------
+// Explorer: XP the first time they use each waystone (remembered per player, by position).
+// ---------------------------------------------------------------------------------------
+BlockEvents.rightClicked(event => {
+  const block = event.block
+  if (!block.hasTag('waystones:waystones')) return
+  const player = event.player
+  if (player == null || jobOf(player, 'explorer') == null) return
+  // A waystone is two blocks tall: key it by its lower half.
+  const lower = block.down.hasTag('waystones:waystones') ? block.down : block
+  const key = `${block.level.dimension}|${lower.x}|${lower.y}|${lower.z}`
+  const data = player.persistentData
+  const seen = String(data.getString('minerpg_waystones') || '')
+  if (seen.split(';').indexOf(key) >= 0) return
+  data.putString('minerpg_waystones', seen ? seen + ';' + key : key)
+  giveJobXp(player, 'explorer', WAYSTONE_XP, 'new waystone')
 })
 
 // ---------------------------------------------------------------------------------------

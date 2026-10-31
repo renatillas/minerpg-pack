@@ -98,31 +98,31 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/adventurers_kit.snbt"
-hash = "4bb5abbf155e6b74bed287b7f53884606dc472d858a7768c5551cb86c7ca915c"
+hash = "efd648a49846de145fb0c968d9548104eee18886ec1221455375df0d788511b3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_overworld.snbt"
-hash = "c76509088b3a2399e106688997f32838de1c9c69d0ebca299791ef41f0c17898"
+hash = "e1a6482183011516a0e0b4ad19db0735f3f9bbd7d98d0793b3b54abe80f38a90"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_nether.snbt"
-hash = "741f3dcd6b87816f20dfce99c18bb5f86ee1f159c09311a03d8df7060dd979ee"
+hash = "1e0265c2d261df870d0bbab5f3e319fe4e5686e530628a68b78e1c94f82e9c40"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_end.snbt"
-hash = "b68f5de85667ffa22223b1acff9eb5408ce8e7aa14c38832dbffe728e1272f21"
+hash = "d69f2172ae690b7f6dd65472b761dce9dc53e6dc899e638a5522a15f2f0217af"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/forge_and_library.snbt"
-hash = "9bab201d3a598807493ab5f1b423a0bd04d1daa4c619fcfd75293dec5e07a931"
+hash = "1413efca2fe33dcdbec3b3fdfce16e095b6ede8eb905b80c4c61cd5ecd6efc60"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
-hash = "96a3e97c9cd13fdf0c9e262b5b6c55ea6146a3b3091e542aedd046dd45c3e40d"
+hash = "3ca667c51105fca49bccc84cb7786e32bd46a7fc5353caaf6e30eabefbe13d28"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_calling.snbt"
-hash = "6dce24dd63db7173b9fde94a97c777181d08b6448c7cb69ae7148bf0f2bdb425"
+hash = "232b8d9437f7b88828113d25d342b9be52ae9904024d6a6480adb004eb725ec2"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -130,7 +130,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "686ef3bde3b40d19ff5ca9940eaa5688d27facb68681589b1845406ef261a4d1"
+hash = "7ffc9e9a508c64af7d551cf89483285c18ae591c30bc07e57836b1a925566e1a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -169,6 +169,30 @@ file = "config/openpartiesandclaims-server.toml"
 hash = "2caa8eedcf3d41a9a9b67ec6c7d4fc8c76aaf5ce8e031a9eebd13b97d0fde5d2"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/cook/powerup/job_exp_i.json"
+hash = "c9922e91c250b357f7461ddf306c9a31636027ad69f3c48a308e5be71fdc4dcb"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/cook/powerup/job_exp_ii.json"
+hash = "cbbfc8af604ae256bd3883bf0debee942d2b2836e4d7fd33974694c51e04440a"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/cook/powerup/job_exp_iii.json"
+hash = "de62786bdf759e8ba9983285ddf3aa27a1d752ea1acfe1bb9a399f1609c42306"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/explorer/powerup/job_exp_i.json"
+hash = "4b4a3e7697b77b7d2fc772b8b63f22c2e8d2e937f769c2ba0342db6b3f15d10e"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/explorer/powerup/job_exp_ii.json"
+hash = "f733f3951efbc1d72e475daeccd6299c6a925c1a5eecb87d331bb431a56ac73c"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/explorer/powerup/job_exp_iii.json"
+hash = "705cebb92c443c03bdc8f2971dca85e88bfd203517757bff2f178f53e986f540"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/hunter/kill_mob.json"
 hash = "ced35d57ef58a60ea16bca5289913abd8fa77b3514d7c78b1c59642f6b0725ed"
 
@@ -197,8 +221,76 @@ file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/jeweler/powerup/job_ex
 hash = "d326a0961d864b6a03b06bd9311c14d171a382768e0944addced398bd893aa57"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/jobs/cook.json"
+hash = "7f7c4c9e66909aa62bd3f542a6b8509de23487f9638f0c98789307e0da6c6918"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/jobs/explorer.json"
+hash = "08f35ec763cbf65b6d540709c071ade8eec244dc3e0b62e79f7302dd9447dc22"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/jobs/jeweler.json"
 hash = "53e42472c8da790acd10721bb558fbae0b4bd00f0e04b79ee002f99dbf24d7a2"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/cook/job_exp_i.json"
+hash = "3011d737fe8e95807e7d0b86e2bf886caf0a101ec00b62df1b48b82f5e08b188"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/cook/job_exp_ii.json"
+hash = "3efc43afe394b9e40ce56d861e12e97fd0bbd37304925d51931bac2560804b6b"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/cook/job_exp_iii.json"
+hash = "6100b3eb718c0eff2a8130bc7b1353475faccc389cd6c403015bd9aa7993fde9"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/cook/second_helping_i.json"
+hash = "c35f56c408737b02d797a66bc7d438e5bdaf04ccacd35fccf991de5956872279"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/cook/second_helping_ii.json"
+hash = "73ad69e2023867de5ec7fd07a396e140cd94d5c0ca78706e756306f8ec3bad15"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/cook/second_helping_iii.json"
+hash = "57458c9273653bcf965f6502f678d9a060cfc200243df2f70ffed4f2235c7953"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/explorer/job_exp_i.json"
+hash = "f6a44c0763f9cddf454bb2063918984dd4e86392b4d43e0c324352f559902bfb"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/explorer/job_exp_ii.json"
+hash = "d761937b61fa0b5e23ff55534274ede625ecc334b6850aa23a7d8235b20ca273"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/explorer/job_exp_iii.json"
+hash = "af6b47ff14fe65d4e9ee36fda6aa04b1cf54413f8cf7ce662a074b5fe02c13fe"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/explorer/mapmaker_i.json"
+hash = "903233e50d24d7fd5a9b48b0fac3dc139348d5f27292b15ec12eea086b0c67c6"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/explorer/mapmaker_ii.json"
+hash = "2d533c0dd9c5f776e43183f67d35bd5362f81c9a4e11bc7e1734177e0522c7dd"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/explorer/mapmaker_iii.json"
+hash = "b3bdf29d199a1cbb7781edf3608e84fa6acb05c152cb4eda73d0a9d594000899"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/explorer/waywright_i.json"
+hash = "f83c34d61f28c8f3b5f7a55e77a46016421640af21d6957edc1c417d81cc6c1d"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/explorer/waywright_ii.json"
+hash = "cbc822187302e2cfaacc36cf080f80ddc25ff78bdc08772741f9dd7e70becc61"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/explorer/waywright_iii.json"
+hash = "89ac4b132b14a1329e811fe1779f13c9e3aa69ac48db7a8f25e30bfeedb5f6c5"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/jobsplus/jobsplus/powerups/jeweler/gem_finder_i.json"
@@ -265,6 +357,18 @@ file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/alchemist/craft_run
 hash = "b60187007deaec785ad004f241f53b8218c4e5d13df96a91a10bc21e618d105b"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/cook/craft_cook_feast.json"
+hash = "dce9b0bd8ef716ca649ee1637ddb57dabbbc1ba4762cac91804c15658a814753"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/cook/craft_cook_plate.json"
+hash = "2509a53ac7ce1e3fed33c58b3e0dad2c6d55051bd55a4806ecb7dd16da04a7e5"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/cook/craft_free_food.json"
+hash = "6455e25c28e337413fd7109bbf006bae888877af520eafaa64e52d2f454ec307"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/enchanter/craft_enchanter_shelf_1.json"
 hash = "c5c7c88ada637fa0ae00912120e5dcb1cecd76992c8312c46b904ce22ab02c5d"
 
@@ -295,6 +399,38 @@ hash = "886d0bb0da6e2456a9540c6653b7bec14d6c3d994da381b4c6f3cce8d03dd9dc"
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/enchanter/craft_gear_caster_tier_3.json"
 hash = "a1765488b2eb4fb26219a1668623f3f402c7600e8ce75fbd32fb0d2641ed9e12"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_free_survey_map.json"
+hash = "285137de6ce0b162f9b094bc9748f56f607511910635df9995fe657f6f7a04d9"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_survey_crypt.json"
+hash = "e7f8b647e6824d9b2bf892819f4cd542421e67af87acca4eea81b49e9a341ce8"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_survey_dungeon.json"
+hash = "13241521cf2935878d9142059d2edd5602528a9899380ab4f39e41a6966869a4"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_survey_lair.json"
+hash = "f938d3f63baf5d5af2244fc80349c78e968c1ac8373ef13902a94930da72d92f"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_travel_scrolls.json"
+hash = "e420f8c35b5c5b64a2cdb4977afc9568b50dc4939986948a42bc0df0819429b7"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_travel_sharestones.json"
+hash = "e8034b17132d1604b1357a080b5888dd1f61cc610918bc56708ee5c284f4573d"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_travel_warp_plate.json"
+hash = "3439028cd0935efae1648d29a1d303008b40bf14379a97c4e37985cb720140ec"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_travel_waystones.json"
+hash = "d8fe68ffcca5810198f1c56821025a5910db33e7a31a9fa32577c652482b1bee"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/hunter/craft_gear_leather_set.json"
@@ -349,6 +485,18 @@ file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/milestone/alchemist
 hash = "37d14e48724746371d4c7847af6590716aa4edc02b4b27f39b7ad596d1ea51c7"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/milestone/cook_10.json"
+hash = "0960ff04fd353231fd7885949fa049ed88a636520f8138931a1f9b05dca4b234"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/milestone/cook_20.json"
+hash = "e43053467ac2d4590a044bf1465ed6be9a3bcb2fa45cc457fe7682ac37ef3478"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/milestone/cook_30.json"
+hash = "0c5eccc15e1b62d1f9e276fad786c6d4b76a03a67ba0bef52d1b58e33f71e63c"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/milestone/enchanter_10.json"
 hash = "70b79b05b97e9bf5e36dc18c31b32099ff67df959f068dc9cef371a71b4f656b"
 
@@ -359,6 +507,18 @@ hash = "244c9008802ba22fa1e4bc21ff74524962e080cf0ed1f7acdfe226a8187ab82d"
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/milestone/enchanter_30.json"
 hash = "74a31e5ec819ccb9aec2cff3153e3271cc4e87483be8dcd3e3ee8e203a353f66"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/milestone/explorer_10.json"
+hash = "ad1234dddc279132808400ad70dfbeb5d1e7771f9193cc0cf56ba7a5ed9cd963"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/milestone/explorer_20.json"
+hash = "139a1269e5aa5bd104e8864a46a96b46eda49e79cdc9bc33ef5ada9efa8538bf"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/milestone/explorer_30.json"
+hash = "c95b8920eb5516b4f4e9d3874ec8b3ad0d628f3c85a8c46ee82e3f21a4d8fb10"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/milestone/farmer_10.json"
@@ -537,6 +697,14 @@ file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictio
 hash = "203723daba4f5c5120c48af3532c88d71300fdd82117e59fddf4d03d25d9a652"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/cook_feast.json"
+hash = "11f376aea8f53d22e561395132fad812945692662881a70ff6d2b5c66d7e7ad8"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/cook_plate.json"
+hash = "2d657f04ff74269b2e70dc074a1e2f927225dceb08a59134ce8450680d8964f0"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/enchanter_shelf_1.json"
 hash = "9e7c4a4ccba990023aa779aead747ecf776bef23214aed40dadac363532cafbf"
 
@@ -617,6 +785,54 @@ file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictio
 hash = "cecdbb8a1e084fbd9b6bc06346dec27aed67fcd4458d3480fb9e6af2ab30a1c8"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/survey_crypt.json"
+hash = "2d45253f0a18f8ed776dc19a2046ffcadf7727f98dcc5952ddb9cc50bae5a240"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/survey_dungeon.json"
+hash = "64a42e0c714daacb1986abee22f6ead8adc5f9d4153ee8310f74c32e5e37760a"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/survey_lair.json"
+hash = "bbd2ca5f55661021a61532578026fc89859e5211e6b2a84a805be522ce5d7a92"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/travel_scrolls.json"
+hash = "f8b2a141a6eccd0550c5ce1ee44789812380aa00b5272ab2d39b60878560e904"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/travel_sharestones.json"
+hash = "e12845c09af98dc221cc705c954d73dca92109658138badb95a058382fb54480"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/travel_warp_plate.json"
+hash = "ce12ca625e120e3e487decd2e9ff1f41526e99abc2526e6e647f5b3c50089289"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/travel_waystones.json"
+hash = "20334a234413afac36ff7320269111326b739aff2b6929849b94c70eb669d403"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_bonus/mapmaker.json"
+hash = "5fee2a52fc027da4606007bbb9c4c7318979980ee1f675964c115891086c154c"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_bonus/second_helping.json"
+hash = "591a8d32b28f7bb9bafa6b99c79ca3aeb06754cf2bf5e82edb1f4784af8618ad"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_bonus/waywright.json"
+hash = "4cfe69a6dde71650110be354be826646599fbc9d5e6d2230f170f109c01c8bf2"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/cook_feast.json"
+hash = "2c5ac8b70831d139eeb07afaf843136c85447bf90faf67f3e096a5da509febed"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/cook_plate.json"
+hash = "2dd80cf980615d335489c16527c6ab588e13c26806735abf037ad2c18ae20713"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/enchanter_shelf_1.json"
 hash = "ec9d621afac42fa06cff14d567b876ed51ad3c70651068fbc11e4dc86f90f715"
 
@@ -695,6 +911,34 @@ hash = "a264da8b11d8ff1d0bd8f79613f329a18db5554966cd14b2f77625cd22fb9c23"
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/jewel_socket_mount.json"
 hash = "d4ba4140e6f8567b596d53232ec1410c404ebe0c14844baa2d73110a2a386238"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/survey_crypt.json"
+hash = "24d4e9b039481a7d668d9b7bcbfb8d7bdddf975d7e8be56ee98450f0e4875cb3"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/survey_dungeon.json"
+hash = "fb33b6bd3fce2d68eadad0323bf73e0685d0bce9e71ff564b2854310fc467bcb"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/survey_lair.json"
+hash = "4ab198e69d3027eae0d90ced3d000f3ce6748c1c36003e085193094efd5eb171"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/travel_scrolls.json"
+hash = "dd613465cabe50cd3921003121b1328b95776b4aeac215fbbb58a63a7d307964"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/travel_sharestones.json"
+hash = "3a211851e34b90cfdde69f17d5a078ccd88904517bd371bf9233d5f93e68e97c"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/travel_warp_plate.json"
+hash = "ddb339280eb46bb154da5073def8625c91012b8b300f7e641fb7de8dbb2d4633"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/travel_waystones.json"
+hash = "981861cdda3933e4b8bc1ae0b3cbcc8feca5ae056924f3d77069788ab1c1d08e"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/pack.mcmeta"
@@ -982,7 +1226,7 @@ hash = "537e582640665ce5fee2e4121816c3332a99bc7b2d088eedcf30110045de29bf"
 
 [[files]]
 file = "kubejs/assets/minerpg/lang/en_us.json"
-hash = "ee9f233d7c7e110ddaedf72a3b1798e080646671e9cd40c358aa99a5ac7f0705"
+hash = "94cf59d92f3df0f4a0a363fae7f81cf2c0531113f08a7d52cf721f4a5b01f94e"
 
 [[files]]
 file = "kubejs/assets/minerpg/textures/item/nether_sigil.png"
@@ -1038,7 +1282,7 @@ hash = "10ac2bb285ab7e4af7b01c502c2eb31e46d561d009a031e644f822a6b83a117a"
 
 [[files]]
 file = "kubejs/client_scripts/minerpg_tooltips.js"
-hash = "ae940c67b90255e212f7eeca6812e7eac540033ad1f1d436bd120622e509cafb"
+hash = "4b9e68df1837ca119c4fc70a14ab9218f257ce90d527bf1e82207310038cf3e0"
 
 [[files]]
 file = "kubejs/data/additional_rpg_jewelry/recipe/gold_nugget_from_blasting_silver_sapphire_necklace.json"
@@ -2145,6 +2389,10 @@ file = "kubejs/data/minerpg/advancement/guide/necklace.json"
 hash = "61e97cc212479b4432fee658973d472282ccd0df0d30d4ad86ccfdc120afcb9b"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/guide/pot_meal.json"
+hash = "3fa98266eeb15282a018aa9d33257c113fd6804b1b40deba7e39ffa6d2764981"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/guide/potion_charm.json"
 hash = "485e90b6ced4e1a70551209b5139145fc7d0abe86ce968ce08394980ea0e7933"
 
@@ -2179,6 +2427,10 @@ hash = "cd6d42b241aefd5e975eeed65e78ec2add94b4d2c47b9b9a93fe3a748b572931"
 [[files]]
 file = "kubejs/data/minerpg/advancement/guide/storage_terminal.json"
 hash = "9539167fa5742d48673e3bfe7e0dccd14acded9926bb13dc7c0ee26ba20a1905"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/survey_map.json"
+hash = "f8c74845e19580d74e76792a931106496660d94a644367f14a2e0c205de92095"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/guide/withdrawal.json"
@@ -3661,6 +3913,22 @@ file = "kubejs/data/minerpg/loot_table/map/sunken_city.json"
 hash = "78a9ef784969c93c33d6b56465bed0e35f06886a5b2ab03dca25f18fdb51bd38"
 
 [[files]]
+file = "kubejs/data/minerpg/loot_table/map/survey_crypt.json"
+hash = "74f705db810d612f07002d0f2ac0bb4ddf83591ae3533216503000d06359ca10"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/survey_dungeon.json"
+hash = "57fa970f236d66e62e470e598428c7a2b9ca689bb8cd5221080b6bb722cf2e5b"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/survey_lair.json"
+hash = "04312b6d2726dae4182cea897526764c809618cfde64186a6c538e6f1bda212a"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/map/survey_settlement.json"
+hash = "bba968aba6ed5e56fdc8612e8a6c267a671a8536d0e83878babb78cbdcb12667"
+
+[[files]]
 file = "kubejs/data/minerpg/loot_table/map/tavern.json"
 hash = "607f9b4256465d927acdaf8b49509c05328847425af47e4ed05c49c0aad67233"
 
@@ -3777,6 +4045,14 @@ file = "kubejs/data/minerpg/tags/worldgen/structure/map/sunken_city.json"
 hash = "1d1f8d166828c76867900cbc438cbe7364e9da0fa4e4a2a96c1ae416b9ce5d8b"
 
 [[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/map/survey_lair.json"
+hash = "4f94e12c953befeb2ac1b213bf125439bc23d54129768075e1bfa597a3654993"
+
+[[files]]
+file = "kubejs/data/minerpg/tags/worldgen/structure/map/survey_settlement.json"
+hash = "b303c1ccc152273c6b0f48dcbedd9fac0d87e372953d2679ec354e3e0c4d144c"
+
+[[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/nether_dungeons.json"
 hash = "25aa8de5e6543ca5f0605097e1857552feed386b449ce517268a3264f316ed35"
 
@@ -3838,7 +4114,7 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "45e43022b40bdf263b50047d2f25059e7be97f7cfb9cfe2803105593bea46ac9"
+hash = "18ad52c5259f8499ce019a4ec1744fe30787fa654141b36f501165befa815104"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
@@ -3862,7 +4138,7 @@ hash = "520891bfab3f2e3451c945e9aae70f931be8d3598357cb778c1eafd2f3cea8b7"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_items.js"
-hash = "d472c8174eacb429cd9847449394b0b08e40b46bf02039231f3a2f85b73226cd"
+hash = "e10028c74b38583ffd23c80bd0bceffd4d9d7f920b6079818d0d7ae32d8aa708"
 
 [[files]]
 file = "mods/additional-rpg-jewelry.pw.toml"
@@ -4690,23 +4966,27 @@ hash = "9c52c4e7c7ca3ed0f6c5599c6f7caa686692faf238e7f1a3761249228d14e61f"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/anyone.json"
-hash = "0bed74f2be4cfe0e81b1e2b1f6e4ca85510a3d7d52aad813b39d99f5f7908818"
+hash = "e1978997e4683db09cb353a2c36f30631908abf0848959b5a36bddba00d7d8b3"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/professions/explorer.json"
+hash = "2a055d40e035cdc7cb355136f3b48ef05830c1f5f0fd95f7625a4f4abf17132c"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/gates.json"
-hash = "ffccd2aa278637d3a088355b549634df3daefa4c6efd7f89490314dbd4aa629e"
+hash = "24083f1d59b70fdd6b4b180165593de71dc8780b6cf43bd4f53b64306cd9837a"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/hunter.json"
-hash = "11d546b7da1de23f0b9d67001c6bb73cd7b7239a86e1a50bd6b442238653227b"
+hash = "f9d3d8821bf87713ae2de5b41e1afa49e5a2447b5ad439e0aad09563a329ba1a"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/jobs.json"
-hash = "13681e144f43b3413a9945902b47c7d93c23c9f3702f28a6cd9c2b7635b1a6c2"
+hash = "1cbfa19be428f4abcfc780acaba1e598be1df0ca9ea9cc06a0ff9c5c7864c9d5"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/xp.json"
-hash = "50b2c4a677935dcbf953c1b071b614b4759df864c4239653b5b4c525f01363dd"
+hash = "b238d0edfdb113ee99d2e57f421adcc4c17675f54cf814a9beaefdf37c6bbdcf"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/races/change.json"

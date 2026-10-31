@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "waystones:warp_scroll",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/travel_scrolls"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:explorer",
+      "level": 10,
+      "inverted": true
+    }
+  ]
+}

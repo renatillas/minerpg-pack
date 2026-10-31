@@ -168,16 +168,107 @@ JEWELER_POWERUPS = [
     ('gem_finder_i', None, 'Gem Finder I', 'Grants a 15% chance to get double gems from gem veins.', 'jewelry:ruby', 5, 10),
     ('gem_finder_ii', 'gem_finder_i', 'Gem Finder II', 'Grants a 30% chance to get double gems from gem veins.', 'jewelry:sapphire', 10, 25),
     ('gem_finder_iii', 'gem_finder_ii', 'Gem Finder III', 'Grants a 50% chance to get double gems from gem veins.', 'jewelry:tanzanite', 15, 50),
+]
+GEM_FINDER_CHANCE = {'gem_finder_i': 15, 'gem_finder_ii': 30, 'gem_finder_iii': 50}
+JOB_EXP_MULTIPLIER = {'job_exp_i': 1.5, 'job_exp_ii': 2, 'job_exp_iii': 3}
+# Job Experience I-III, the same three power-ups every job of ours offers (prices and levels of Jobs+'s own).
+JOB_EXP_POWERUPS = [
     ('job_exp_i', None, 'Job Experience I', 'Multiply your job experience by 1.5x', 'minecraft:experience_bottle', 5, 15),
     ('job_exp_ii', 'job_exp_i', 'Job Experience II', 'Multiply your job experience by 2x', 'minecraft:experience_bottle', 8, 25),
     ('job_exp_iii', 'job_exp_ii', 'Job Experience III', 'Multiply your job experience by 3x', 'minecraft:experience_bottle', 12, 40),
 ]
-GEM_FINDER_CHANCE = {'gem_finder_i': 15, 'gem_finder_ii': 30, 'gem_finder_iii': 50}
-JOB_EXP_MULTIPLIER = {'job_exp_i': 1.5, 'job_exp_ii': 2, 'job_exp_iii': 3}
+
+# Cook (designer, 2026-10-31): takes cooking from the Farmer (who keeps crops and animals). Item Restrictions can only
+# gate the crafting table, so the gates are the plated meals and feasts made there; cooking pot meals stay free for
+# everyone and are the Cook's main source of XP (minerpg_jobs.js). Second Helping (an extra serving) is applied by
+# minerpg_jobs.js for pot meals and table meals alike.
+FD = 'farmersdelight:'
+COOK_GATES = [
+    # key, level, title, items, icon
+    ('cook_plate', 10, 'plated meals', [FD + i for i in [
+        'steak_and_potatoes', 'roasted_mutton_chops', 'grilled_salmon', 'bacon_and_eggs', 'stuffed_potato']],
+     FD + 'steak_and_potatoes'),
+    ('cook_feast', 20, 'feasts', [FD + i for i in [
+        'roast_chicken_block', 'honey_glazed_ham_block', 'shepherds_pie_block', 'rice_roll_medley_block']],
+     FD + 'roast_chicken_block'),
+]
+# Table-made food anyone can make; pays a little Cook XP so a new Cook can start.
+COOK_FREE_FOOD = [FD + i for i in [
+    'bacon_sandwich', 'chicken_sandwich', 'egg_sandwich', 'hamburger', 'mutton_wrap', 'fruit_salad', 'mixed_salad',
+    'nether_salad', 'barbecue_stick', 'kelp_roll', 'salmon_roll', 'cod_roll', 'apple_pie', 'chocolate_pie',
+    'sweet_berry_cheesecake', 'honey_cookie', 'sweet_berry_cookie', 'melon_popsicle', 'melon_juice']]
+FREE_FOOD_XP = (2, 3)
+CRAFT_BONUS.update({'cook_plate': (8, 12), 'cook_feast': (20, 25)})
+COOK_JOB = {
+    'name': 'Cook',
+    'price': 10,
+    'max_level': 100,
+    'color': '#E0803A',
+    'icon': {'id': FD + 'cooking_pot'},
+    'description': 'Cooks turn the harvest into meals that feed the whole party: stews and soups in the cooking pot, '
+                   'plated meals and feasts at the table. The higher the level, the grander the meal and the more '
+                   'servings it makes.',
+    'background': 'minecraft:textures/block/bricks.png',
+    'is_default': False,
+}
+# KubeJS reads these: chance of one extra serving per meal made.
+COOK_POWERUPS = [
+    ('second_helping_i', None, 'Second Helping I', 'Grants a 10% chance of an extra serving for every meal you cook.', FD + 'tomato_sauce', 5, 10),
+    ('second_helping_ii', 'second_helping_i', 'Second Helping II', 'Grants a 20% chance of an extra serving for every meal you cook.', FD + 'beef_stew', 10, 25),
+    ('second_helping_iii', 'second_helping_ii', 'Second Helping III', 'Grants a 30% chance of an extra serving for every meal you cook.', FD + 'shepherds_pie_block', 15, 50),
+] + JOB_EXP_POWERUPS
+
+# Explorer (designer, 2026-10-31): the group's guide and travel maker. Crafts Survey Maps (our items, minerpg_items.js;
+# used up into a map to the nearest place of their kind by minerpg_jobs.js) and the Waystones travel network. Found
+# waystones stay free to use for everyone; the starting Warp Stone is unchanged.
+SURVEY_MAPS = [
+    # key, level (0 = free), item
+    ('survey_settlement', 0, 'minerpg:survey_map_settlement'),
+    ('survey_crypt', 10, 'minerpg:survey_map_crypt'),
+    ('survey_dungeon', 20, 'minerpg:survey_map_dungeon'),
+    ('survey_lair', 30, 'minerpg:survey_map_lair'),
+]
+# Waystones crafting gates, by item id pattern (checked against the jar's recipes, so new colors/styles follow).
+TRAVEL_GATES = [
+    # key, level, title, predicate on the item path, icon
+    ('travel_scrolls', 10, 'Return, Warp and Portal Scrolls',
+     lambda p: p in ('return_scroll', 'warp_scroll', 'portal_scroll'), 'waystones:warp_scroll'),
+    # The Warp Stone is an ingredient of every stone below, so it unlocks with the first of them.
+    ('travel_sharestones', 15, 'Warp Stones and Sharestones',
+     lambda p: p == 'warp_stone' or p.endswith('_sharestone'), 'waystones:red_sharestone'),
+    ('travel_waystones', 20, 'Waystones and Portstones',
+     lambda p: p.endswith('waystone') or p.endswith('_portstone'), 'waystones:waystone'),
+    ('travel_warp_plate', 25, 'Warp Plates', lambda p: p == 'warp_plate', 'waystones:warp_plate'),
+]
+CRAFT_BONUS.update({'survey_crypt': (8, 12), 'survey_dungeon': (15, 20), 'survey_lair': (25, 30),
+                    'travel_scrolls': (4, 6), 'travel_sharestones': (12, 15), 'travel_waystones': (15, 20),
+                    'travel_warp_plate': (20, 25)})
+FREE_SURVEY_XP = (3, 5)
+EXPLORER_JOB = {
+    'name': 'Explorer',
+    'price': 10,
+    'max_level': 100,
+    'color': '#5A8FD0',
+    'icon': {'id': 'minecraft:compass'},
+    'description': 'Explorers guide the party: they draw Survey Maps that lead to settlements, crypts, dungeons and '
+                   'boss lairs, and build the waystone network everyone travels by. The higher the level, the more '
+                   'dangerous the destination.',
+    'background': 'minecraft:textures/block/cartography_table_top.png',
+    'is_default': False,
+}
+# KubeJS reads these: chance of a second copy when crafting a Survey Map (Mapmaker) or a travel item (Waywright).
+EXPLORER_POWERUPS = [
+    ('mapmaker_i', None, 'Mapmaker I', 'Grants a 15% chance to draw two Survey Maps for the price of one.', 'minecraft:map', 5, 10),
+    ('mapmaker_ii', 'mapmaker_i', 'Mapmaker II', 'Grants a 30% chance to draw two Survey Maps for the price of one.', 'minecraft:map', 10, 25),
+    ('mapmaker_iii', 'mapmaker_ii', 'Mapmaker III', 'Grants a 50% chance to draw two Survey Maps for the price of one.', 'minecraft:filled_map', 15, 50),
+    ('waywright_i', None, 'Waywright I', 'Grants a 10% chance to make two scrolls, stones or plates for the price of one.', 'waystones:warp_scroll', 5, 15),
+    ('waywright_ii', 'waywright_i', 'Waywright II', 'Grants a 20% chance to make two scrolls, stones or plates for the price of one.', 'waystones:warp_stone', 10, 30),
+    ('waywright_iii', 'waywright_ii', 'Waywright III', 'Grants a 30% chance to make two scrolls, stones or plates for the price of one.', 'waystones:warp_plate', 15, 50),
+] + JOB_EXP_POWERUPS
 
 # Job level milestones for the quest book ("reach level N in any job").
 MILESTONES = [10, 20, 30]
-JOBS = ['alchemist', 'enchanter', 'farmer', 'hunter', 'jeweler', 'miner', 'smith']
+JOBS = ['alchemist', 'cook', 'enchanter', 'explorer', 'farmer', 'hunter', 'jeweler', 'miner', 'smith']
 
 # Repeatable advancements: KubeJS gives job XP and revokes them so they fire again.
 XP_ADVANCEMENTS = {
@@ -301,34 +392,56 @@ def jewelry_tiers(mods):
     return {k: sorted(v) for k, v in out.items()}
 
 
-def write_jeweler_job():
-    """The Jeweler job, its power-ups and their Arc actions (Jobs+ reads jobs from data/jobsplus/jobsplus/)."""
+def write_custom_job(key, job, powerups):
+    """One of our own jobs, its power-ups and their Arc actions (Jobs+ reads jobs from data/jobsplus/jobsplus/).
+    Power-ups without an Arc action here (Second Helping, Mapmaker, Waywright) are applied by minerpg_jobs.js."""
     base = os.path.join(ROOT, 'config', 'originpacks', 'minerpg_jobs', 'data', 'jobsplus')
-    reset(os.path.join(base, 'jobsplus', 'powerups', 'jeweler'))
-    reset(os.path.join(base, 'arc', 'jeweler'))
-    write(os.path.join(base, 'jobsplus', 'jobs', 'jeweler.json'), JEWELER_JOB)
-    for key, parent, name, description, icon, price, level in JEWELER_POWERUPS:
-        powerup = {'job': 'jobsplus:jeweler', 'name': name, 'description': description, 'icon': {'id': icon},
+    reset(os.path.join(base, 'jobsplus', 'powerups', key))
+    reset(os.path.join(base, 'arc', key))
+    write(os.path.join(base, 'jobsplus', 'jobs', key + '.json'), job)
+    for pkey, parent, name, description, icon, price, level in powerups:
+        powerup = {'job': f'jobsplus:{key}', 'name': name, 'description': description, 'icon': {'id': icon},
                    'price': price, 'required_level': level}
         if parent:
-            powerup['parent'] = f'jobsplus:jeweler/{parent}'
-        write(os.path.join(base, 'jobsplus', 'powerups', 'jeweler', key + '.json'), powerup)
+            powerup['parent'] = f'jobsplus:{key}/{parent}'
+        write(os.path.join(base, 'jobsplus', 'powerups', key, pkey + '.json'), powerup)
         # Only the highest tier bought applies (Jobs+'s own pattern).
-        family = key.rsplit('_', 1)[0]
-        higher = [k for k, *_ in JEWELER_POWERUPS if k.startswith(family) and len(k) > len(key)]
-        not_higher = [{'type': 'jobsplus:powerup_not_active', 'powerup': f'jobsplus:jeweler/{k}'} for k in higher]
+        family = pkey.rsplit('_', 1)[0]
+        higher = [k for k, *_ in powerups if k.startswith(family) and len(k) > len(pkey)]
+        not_higher = [{'type': 'jobsplus:powerup_not_active', 'powerup': f'jobsplus:{key}/{k}'} for k in higher]
         if family == 'gem_finder':
             action = {'type': 'arc:on_break_block',
-                      'rewards': [{'type': 'arc:block_drop_multiplier', 'chance': GEM_FINDER_CHANCE[key], 'multiplier': 2}],
+                      'rewards': [{'type': 'arc:block_drop_multiplier', 'chance': GEM_FINDER_CHANCE[pkey], 'multiplier': 2}],
                       'conditions': [{'type': 'arc:blocks', 'blocks': GEM_VEINS}, {'type': 'arc:not_in_block_pos_cache'}]}
-        else:
+        elif family == 'job_exp':
             action = {'type': 'jobsplus:on_job_exp',
-                      'rewards': [{'type': 'jobsplus:job_exp_multiplier', 'job': 'jobsplus:jeweler',
-                                   'multiplier': JOB_EXP_MULTIPLIER[key]}],
+                      'rewards': [{'type': 'jobsplus:job_exp_multiplier', 'job': f'jobsplus:{key}',
+                                   'multiplier': JOB_EXP_MULTIPLIER[pkey]}],
                       'conditions': []}
+        else:
+            continue
         action['conditions'] += not_higher
-        write(os.path.join(base, 'arc', 'jeweler', 'powerup', key + '.json'),
-              {'holder': {'type': 'jobsplus:powerup', 'id': f'jobsplus:jeweler/{key}'}, **action})
+        write(os.path.join(base, 'arc', key, 'powerup', pkey + '.json'),
+              {'holder': {'type': 'jobsplus:powerup', 'id': f'jobsplus:{key}/{pkey}'}, **action})
+
+
+def travel_items(mods):
+    """Waystones crafting results by travel gate key, from the jar's recipes."""
+    out = {}
+    for jar in glob.glob(os.path.join(mods, '*.jar')):
+        with zipfile.ZipFile(jar) as z:
+            for name in z.namelist():
+                if not (name.startswith('data/waystones/recipe/') and name.endswith('.json')):
+                    continue
+                result = json.loads(z.read(name)).get('result', {})
+                rid = result.get('id') if isinstance(result, dict) else None
+                if not rid or not rid.startswith('waystones:'):
+                    continue
+                path = rid.split(':', 1)[1]
+                key = next((k for k, _, _, pred, _ in TRAVEL_GATES if pred(path)), None)
+                if key:
+                    out.setdefault(key, set()).add(rid)
+    return {k: sorted(v) for k, v in out.items()}
 
 
 def restriction(job, level, types, item_condition, icon):
@@ -374,6 +487,16 @@ def build(server):
         gates.append(('jeweler', key, level, jewelry[key], icon, CRAFT_BONUS[key]))
     gates.append(('jeweler', 'jewel_socket_mount', SOCKET_MOUNT_LEVEL, ['jewelry:socket_mount'], 'jewelry:socket_mount',
                   CRAFT_BONUS['jewel_socket_mount']))
+    for key, level, title, items, icon in COOK_GATES:
+        gates.append(('cook', key, level, items, icon, CRAFT_BONUS[key]))
+    for key, level, item in SURVEY_MAPS:
+        if level:
+            gates.append(('explorer', key, level, [item], item, CRAFT_BONUS[key]))
+    travel = travel_items(os.path.join(server, 'mods'))
+    for key, level, title, pred, icon in TRAVEL_GATES:
+        if not travel.get(key):
+            raise SystemExit(f'no {title} found')
+        gates.append(('explorer', key, level, travel[key], icon, CRAFT_BONUS[key]))
     for job, key, level, values, icon, bonus in gates:
         write(os.path.join(tag_dir, key + '.json'), {
             'replace': False, 'values': [{'id': v, 'required': False} for v in values]})
@@ -439,13 +562,40 @@ def build(server):
     })
 
     # Jeweler: the job itself, and XP for ungated jewelry (so a new Jeweler can start).
-    write_jeweler_job()
+    write_custom_job('jeweler', JEWELER_JOB, JEWELER_POWERUPS + JOB_EXP_POWERUPS)
+    write_custom_job('cook', COOK_JOB, COOK_POWERUPS)
+    write_custom_job('explorer', EXPLORER_JOB, EXPLORER_POWERUPS)
+    write(os.path.join(arc, 'cook', 'craft_free_food.json'), {
+        'holder': holder('cook'),
+        'type': 'arc:on_craft_item',
+        'rewards': [job_exp(*FREE_FOOD_XP)],
+        'conditions': [{'type': 'arc:items', 'items': COOK_FREE_FOOD}],
+    })
+    write(os.path.join(arc, 'explorer', 'craft_free_survey_map.json'), {
+        'holder': holder('explorer'),
+        'type': 'arc:on_craft_item',
+        'rewards': [job_exp(*FREE_SURVEY_XP)],
+        'conditions': [{'type': 'arc:items', 'items': [i for _, lvl, i in SURVEY_MAPS if not lvl]}],
+    })
     write(os.path.join(arc, 'jeweler', 'craft_free_jewelry.json'), {
         'holder': holder('jeweler'),
         'type': 'arc:on_craft_item',
         'rewards': [job_exp(*FREE_JEWELRY_XP)],
         'conditions': [{'type': 'arc:items', 'items': jewelry.get('free', [])}],
     })
+
+    # Item tags minerpg_jobs.js reads for the "extra copy" power-ups (crafting-table results only; cooking pot
+    # meals get Second Helping in the pot watcher).
+    bonus_dir = os.path.join(PACK, 'tags', 'item', 'job_bonus')
+    reset(bonus_dir)
+    bonus = {
+        'second_helping': [i for _, _, _, items, _ in COOK_GATES for i in items] + COOK_FREE_FOOD,
+        'mapmaker': [i for _, _, i in SURVEY_MAPS],
+        'waywright': [i for k in travel for i in travel[k]],
+    }
+    for key, values in bonus.items():
+        write(os.path.join(bonus_dir, key + '.json'), {
+            'replace': False, 'values': [{'id': v, 'required': False} for v in values]})
 
     # Level milestones (quest book): any job reaching N grants minerpg:jobs/level_N.
     for job in JOBS:
@@ -462,6 +612,7 @@ def build(server):
 
     print(f'{count} item restrictions, ' + ', '.join(f'{k[1]} {k[0]}: {len(v)}' for k, v in sorted(gear.items())) + ', '
           + ', '.join(f'{k}: {len(v)}' for k, v in sorted(jewelry.items())) + ', '
+          + ', '.join(f'{k}: {len(v)}' for k, v in sorted(travel.items())) + ', '
           f'{len(JOBS) * len(MILESTONES)} milestone actions, {len(XP_ADVANCEMENTS)} XP advancements')
 
 

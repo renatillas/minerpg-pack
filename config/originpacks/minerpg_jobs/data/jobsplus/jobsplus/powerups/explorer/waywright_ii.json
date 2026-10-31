@@ -1,0 +1,11 @@
+{
+  "job": "jobsplus:explorer",
+  "name": "Waywright II",
+  "description": "Grants a 20% chance to make two scrolls, stones or plates for the price of one.",
+  "icon": {
+    "id": "waystones:warp_stone"
+  },
+  "price": 10,
+  "required_level": 30,
+  "parent": "jobsplus:explorer/waywright_i"
+}

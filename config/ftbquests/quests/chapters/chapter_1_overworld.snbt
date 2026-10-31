@@ -11,6 +11,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "minecraft:bell"
+			}
 			id: "2C9281C642E70027"
 			rewards: [
 				{
@@ -44,6 +47,9 @@
 			dependencies: [
 				"2C9281C642E70027"
 			]
+			icon: {
+				id: "minecraft:barrel"
+			}
 			id: "654D4488C8A8FA77"
 			rewards: [
 				{
@@ -75,6 +81,9 @@
 			dependencies: [
 				"2C9281C642E70027"
 			]
+			icon: {
+				id: "minecraft:mossy_cobblestone"
+			}
 			id: "1E4A5E0883A15E45"
 			rewards: [
 				{
@@ -120,6 +129,9 @@
 			dependencies: [
 				"1E4A5E0883A15E45"
 			]
+			icon: {
+				id: "cataclysm:altar_of_amethyst"
+			}
 			id: "5E38F20E3A481EE5"
 			rewards: [
 				{
@@ -285,6 +297,9 @@
 			dependencies: [
 				"7AD6EC34B35830B0"
 			]
+			icon: {
+				id: "minecraft:compass"
+			}
 			id: "710AD64B960DC726"
 			rewards: [
 				{
@@ -332,6 +347,9 @@
 			dependencies: [
 				"710AD64B960DC726"
 			]
+			icon: {
+				id: "minecraft:map"
+			}
 			id: "785E70544950B7A5"
 			rewards: [
 				{
@@ -357,6 +375,9 @@
 			dependencies: [
 				"710AD64B960DC726"
 			]
+			icon: {
+				id: "minecraft:map"
+			}
 			id: "1BCB2048A44AC85E"
 			rewards: [
 				{
@@ -382,6 +403,9 @@
 			dependencies: [
 				"710AD64B960DC726"
 			]
+			icon: {
+				id: "minecraft:map"
+			}
 			id: "5342B109738F0034"
 			rewards: [
 				{
@@ -407,6 +431,9 @@
 			dependencies: [
 				"710AD64B960DC726"
 			]
+			icon: {
+				id: "cataclysm:desert_eye"
+			}
 			id: "3E7B599CAC455CBF"
 			rewards: [
 				{
@@ -497,6 +524,9 @@
 			dependencies: [
 				"710AD64B960DC726"
 			]
+			icon: {
+				id: "cataclysm:cursed_eye"
+			}
 			id: "4006A822FCE741F9"
 			rewards: [
 				{
@@ -587,6 +617,9 @@
 			dependencies: [
 				"710AD64B960DC726"
 			]
+			icon: {
+				id: "cataclysm:abyss_eye"
+			}
 			id: "1FAA931726326BFC"
 			rewards: [
 				{
@@ -776,6 +809,9 @@
 				"14102C2355F637DA"
 			]
 			dependency_requirement: "one_completed"
+			icon: {
+				id: "minecraft:sculk_shrieker"
+			}
 			id: "54854E6D0A86E2C6"
 			rewards: [
 				{
@@ -860,6 +896,9 @@
 			dependencies: [
 				"54854E6D0A86E2C6"
 			]
+			icon: {
+				id: "cataclysm:mech_eye"
+			}
 			id: "18165E933705A224"
 			rewards: [
 				{
@@ -941,6 +980,9 @@
 			dependencies: [
 				"2C9281C642E70027"
 			]
+			icon: {
+				id: "minecraft:iron_ingot"
+			}
 			id: "50D978A09E750B13"
 			optional: true
 			rewards: [
@@ -977,6 +1019,9 @@
 			dependencies: [
 				"50D978A09E750B13"
 			]
+			icon: {
+				id: "minecraft:crafting_table"
+			}
 			id: "540E7EDF83A1ADBE"
 			optional: true
 			rewards: [

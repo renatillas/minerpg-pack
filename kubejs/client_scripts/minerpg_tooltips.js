@@ -7,6 +7,19 @@ ItemEvents.modifyTooltips(event => {
     Text.gold('Touch it to a finished obsidian frame and the Nether opens. Never spent.'),
     Text.gray('Taken from The Harbinger. Your world tier rises to Ascent.'),
   ])
+  // Survey Maps (Explorer job)
+  const survey = {
+    settlement: ['the nearest village or tavern', 'Anyone can draw one.'],
+    crypt: ['the nearest crypt or small dungeon', 'Drawn by an Explorer of level 10.'],
+    dungeon: ['the nearest great dungeon', 'Drawn by an Explorer of level 20.'],
+    lair: ['the nearest boss lair', 'Drawn by an Explorer of level 30.'],
+  }
+  Object.keys(survey).forEach(kind => {
+    event.add(`minerpg:survey_map_${kind}`, [
+      Text.gold(`Use it to reveal a map to ${survey[kind][0]}. Copy the map for your party at a cartography table.`),
+      Text.gray(survey[kind][1]),
+    ])
+  })
   event.add('minerpg:void_shard', [
     Text.lightPurple('No Eye of Ender without it. It stays in the grid.'),
     Text.gray('Taken from Ignis. Your world tier rises to Summit.'),

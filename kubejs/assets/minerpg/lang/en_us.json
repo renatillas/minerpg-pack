@@ -29,5 +29,9 @@
   "affix.minerpg:caster/spell_crit_chance.suffix": "of Precision",
   "affix.minerpg:caster/spell_crit_damage": "Searing",
   "affix.minerpg:caster/spell_crit_damage.suffix": "of Ruin",
-  "item.apotheosis.gem.minerpg:caster/arcanist": "Arcanist's Prism"
+  "item.apotheosis.gem.minerpg:caster/arcanist": "Arcanist's Prism",
+  "item.minerpg.survey_map_settlement": "Survey Map: Settlement",
+  "item.minerpg.survey_map_crypt": "Survey Map: Crypt",
+  "item.minerpg.survey_map_dungeon": "Survey Map: Great Dungeon",
+  "item.minerpg.survey_map_lair": "Survey Map: Boss Lair"
 }

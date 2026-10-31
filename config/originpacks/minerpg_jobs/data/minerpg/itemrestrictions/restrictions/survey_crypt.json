@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "minerpg:survey_map_crypt",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/survey_crypt"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:explorer",
+      "level": 10,
+      "inverted": true
+    }
+  ]
+}

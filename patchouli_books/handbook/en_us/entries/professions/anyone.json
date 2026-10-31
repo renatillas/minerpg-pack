@@ -2,7 +2,7 @@
   "name": "No Job? No Problem",
   "icon": "minecraft:chest",
   "category": "patchouli:professions",
-  "sortnum": 2,
+  "sortnum": 3,
   "pages": [
     {
       "type": "patchouli:text",

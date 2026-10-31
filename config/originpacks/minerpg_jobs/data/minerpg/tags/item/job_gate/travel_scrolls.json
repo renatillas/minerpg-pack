@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "waystones:portal_scroll",
+      "required": false
+    },
+    {
+      "id": "waystones:return_scroll",
+      "required": false
+    },
+    {
+      "id": "waystones:warp_scroll",
+      "required": false
+    }
+  ]
+}

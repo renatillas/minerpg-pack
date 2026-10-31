@@ -104,7 +104,7 @@
 	"quest.139971D90D5C61AB.title": "Stones That Remember"
 	"quest.13C628F8E97EDFB1.quest_desc": [
 		"Reach &6level 30&r in any of your jobs."
-		"At level 30, Smiths, Hunters and Enchanters make the Armory sets from Ignis's upgrade crystals; Smiths reforge to Mythic and Enchanters make endshelves."
+		"At level 30, Smiths, Hunters and Enchanters make the Armory sets from Ignis's upgrade crystals; Smiths reforge to Mythic, Enchanters make endshelves and Explorers draw Survey Maps to boss lairs."
 		"&7Checked when the job levels up.&r"
 	]
 	"quest.13C628F8E97EDFB1.quest_subtitle": "Job milestone"
@@ -650,7 +650,7 @@
 	"quest.1FAA931726326BFC.quest_subtitle": "Wildlands"
 	"quest.1FAA931726326BFC.title": "The Sunken City"
 	"quest.1FF45754B3ADE445.quest_desc": [
-		"Farmers earn experience harvesting grown crops and cooking pot meals. Bring in 16 wheat."
+		"Farmers earn experience harvesting grown crops and raising animals. Bring in 16 wheat."
 	]
 	"quest.1FF45754B3ADE445.quest_subtitle": "Job starter"
 	"quest.1FF45754B3ADE445.title": "Farmer"
@@ -721,10 +721,12 @@
 		"- &dEnchanter&r: robes, staves, wands and instruments (Wizard, mages, Priest, Bard), and the stronger enchanting shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30."
 		"- &5Alchemist&r: Strong and Long potions at 10, Splash at 15, Lingering at 20."
 		"- &3Jeweler&r: gold and gem jewelry at 10, Socket Mounts at 15, diamond and emerald jewelry at 20, netherite jewelry at 25."
+		"- &6Cook&r: plated meals at 10 (steak and potatoes, roasted mutton chops, grilled salmon, bacon and eggs, stuffed potato), feasts at 20. Cooking pot meals are free for everyone."
+		"- &9Explorer&r: Return, Warp and Portal Scrolls and Crypt Survey Maps at 10, Warp Stones and Sharestones at 15, Waystones, Portstones and Great Dungeon Survey Maps at 20, Warp Plates at 25, Boss Lair Survey Maps at 30. Waystones you find stay free to use."
 		""
 		"Anyone can &ouse&r these things. Class gear still drops from dungeons and bosses, class merchants sell it, plain bookshelves work for everyone, the Jeweler villager sells rings and necklaces, and a friend with the job can make it for you."
 		"Hover over an item to see the job and level that make it."
-		"Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Farmers from the cooking pot."
+		"Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Cooks from every meal, Explorers from each new waystone they use."
 		"Class merchants buy crafted goods for emeralds: runes, diamond-tier class weapons and pot meals."
 	]
 	"quest.23438309D3EE7ED9.quest_subtitle": "Crafting gates and job experience"
@@ -800,6 +802,15 @@
 	]
 	"quest.2912F0282CC64827.quest_subtitle": "Tier 1 weapon"
 	"quest.2912F0282CC64827.title": "First Steel"
+	"quest.2934A45F0ED4C1D4.quest_desc": [
+		"An &9Explorer&r (J) draws &6Survey Maps&r: use one and it becomes a map to the nearest place of its kind."
+		"- Settlement (map + emerald): anyone can draw it. Villages and taverns."
+		"- Crypt (Explorer 10), Great Dungeon (Explorer 20), Boss Lair (Explorer 30)."
+		"Copy the finished map at a &6cartography table&r so everyone in the party has one."
+		"Explorers also craft the travel network: scrolls, Sharestones (every stone of one color links to the others), Waystones and Warp Plates."
+	]
+	"quest.2934A45F0ED4C1D4.quest_subtitle": "Explorer"
+	"quest.2934A45F0ED4C1D4.title": "Charting the Unknown"
 	"quest.29920E4F607C2A96.quest_desc": [
 		"Every Wind Mage walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
 		"This row follows it from your first steel to the armor of legends."
@@ -1105,7 +1116,7 @@
 	"quest.404575A89AD631AE.title": "Eye of Fury"
 	"quest.40678BD3902A909A.quest_desc": [
 		"Reach &6level 20&r in any of your jobs."
-		"At level 20, Smiths, Hunters and Enchanters make diamond class gear; Smiths reforge to Epic, Enchanters make the upgraded hell and sea shelves, Jewelers diamond and emerald jewelry, and Alchemists brew Lingering potions."
+		"At level 20, Smiths, Hunters and Enchanters make diamond class gear; Smiths reforge to Epic, Enchanters make the upgraded hell and sea shelves, Jewelers diamond and emerald jewelry, Cooks feasts, Explorers waystones and Great Dungeon Survey Maps, and Alchemists brew Lingering potions."
 		"&7Checked when the job levels up.&r"
 	]
 	"quest.40678BD3902A909A.quest_subtitle": "Job milestone"
@@ -1434,7 +1445,7 @@
 	"quest.50C778B21D914B33.title": "Echoes Below"
 	"quest.50D978A09E750B13.quest_desc": [
 		"Reach &6level 10&r in any of your jobs."
-		"At level 10, Smiths, Hunters and Enchanters make tier 1 class gear of their kind, Enchanters also the Hellshelf and Seashelf, Jewelers gold and gem jewelry, and Alchemists brew Strong and Long potions."
+		"At level 10, Smiths, Hunters and Enchanters make tier 1 class gear of their kind, Enchanters also the Hellshelf and Seashelf, Jewelers gold and gem jewelry, Cooks plated meals, Explorers scrolls and Crypt Survey Maps, and Alchemists brew Strong and Long potions."
 		"&7Checked when the job levels up.&r"
 	]
 	"quest.50D978A09E750B13.quest_subtitle": "Job milestone"
@@ -1468,7 +1479,7 @@
 	"quest.5342B109738F0034.quest_subtitle": "Map"
 	"quest.5342B109738F0034.title": "Whispers of the Tide"
 	"quest.540E7EDF83A1ADBE.quest_desc": [
-		"Make something only a trained hand can make: class gear as a Smith, Hunter or Enchanter, an enchanting shelf as an Enchanter, gem jewelry or a Socket Mount as a Jeweler, or a Strong, Long, Splash or Lingering potion as an Alchemist."
+		"Make something only a trained hand can make: class gear as a Smith, Hunter or Enchanter, an enchanting shelf as an Enchanter, gem jewelry or a Socket Mount as a Jeweler, a plated meal or a feast as a Cook, a scroll or a Survey Map as an Explorer, or a Strong, Long, Splash or Lingering potion as an Alchemist."
 		"Then hand it to a party member who could not make it. That is what trades are for."
 	]
 	"quest.540E7EDF83A1ADBE.quest_subtitle": "Job milestone"
@@ -1838,6 +1849,11 @@
 	]
 	"quest.691EA646A3AD516D.quest_subtitle": "Side task"
 	"quest.691EA646A3AD516D.title": "Ironclad"
+	"quest.6954E43EA41454B7.quest_desc": [
+		"Cooks earn experience for every meal: stews and soups from the cooking pot, plated meals and feasts at the table. Plated meals need Cook 10, feasts Cook 20. Cook any meal in a cooking pot."
+	]
+	"quest.6954E43EA41454B7.quest_subtitle": "Job starter"
+	"quest.6954E43EA41454B7.title": "Cook"
 	"quest.6AF19D8A355966AA.quest_desc": [
 		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a axe, glaive or longsword made for you."
 		"Bring friends: these are the hardest fights in the world."
@@ -1874,7 +1890,7 @@
 	"quest.6C811E0AFCFDD19B.title": "Enchanter"
 	"quest.6C8A4B797B816007.quest_desc": [
 		"A &6Cutting Board&r slices with a knife; a &6Skillet&r cooks over heat. Together with the cooking pot they make every Farmer's Delight meal."
-		"Farmers earn job experience for meals."
+		"Cooks earn job experience for every meal. Plated meals need a Cook of level 10, feasts a Cook of level 20."
 	]
 	"quest.6C8A4B797B816007.quest_subtitle": "Farmer's Delight"
 	"quest.6C8A4B797B816007.title": "A Proper Kitchen"
@@ -2011,6 +2027,11 @@
 	]
 	"quest.7C301FD6C811E316.quest_subtitle": "Trinket slot"
 	"quest.7C301FD6C811E316.title": "Relics"
+	"quest.7DC0800E7F0DC167.quest_desc": [
+		"Explorers draw Survey Maps that lead the party to settlements, crypts, dungeons and boss lairs, and build the waystone network. They also earn experience the first time they use each waystone. Draw a Survey Map from a map and an emerald."
+	]
+	"quest.7DC0800E7F0DC167.quest_subtitle": "Job starter"
+	"quest.7DC0800E7F0DC167.title": "Explorer"
 	"quest.7DC8CDF63FD9011E.quest_desc": [
 		"Optional raid. Bring three wither skeleton skulls and soul sand, and pick a place you do not mind losing."
 	]
@@ -2066,6 +2087,7 @@
 		"- &aNourishment&r: your hunger stops dropping for a while."
 		"- &aComfort&r: you keep healing however hungry you are."
 		"Wild cabbages, tomatoes, onions and rice grow out in the world: break them for seeds. Hover over any food to see how much it restores."
+		"Anyone can cook in the pot. A &6Cook&r (J) earns job experience for it, and sometimes gets a second helping."
 	]
 	"quest.7F3ACDC21971B67E.quest_subtitle": "Cooking (Farmer's Delight)"
 	"quest.7F3ACDC21971B67E.title": "A Feast for the Party"
@@ -2078,6 +2100,7 @@
 	"quest.7F77AC6E99CF3DA3.title": "Cut to Fit"
 	"reward.101C0F1F77A34A36.title": "Berserker"
 	"reward.1046789CADDED251.title": "+1 job coins"
+	"reward.105232067F3DA1B3.title": "+1 job coins"
 	"reward.10566F0FB096D43E.title": "+5 job coins"
 	"reward.1133ED752222A5EE.title": "+3 job coins"
 	"reward.113FC9A4C49E6433.title": "Map to a Small Dungeon"
@@ -2120,6 +2143,7 @@
 	"reward.2812C3F771DC9914.title": "+5 job coins"
 	"reward.288DDC7E003FAE79.title": "+1 job coins"
 	"reward.289A812D58BB93AB.title": "+5 job coins"
+	"reward.298707F0E2BB803D.title": "+1 job coins"
 	"reward.2AB88E299BF824AD.title": "+3 job coins"
 	"reward.2C5AC2CE0F37B5A9.title": "+1 job coins"
 	"reward.2CF12E85EEA9B179.title": "+1 job coins"
@@ -2213,6 +2237,7 @@
 	"task.14504806165E58A7.title": "Carry the Earth Mage tome"
 	"task.14510D81104F0BBF.title": "Have a Gem Cutting Table"
 	"task.146D8E73784052E8.title": "All four pieces of the Paladin Armor"
+	"task.14BF2FF48C24A42B.title": "Cook a pot meal"
 	"task.15307F55FDD94069.title": "Carry the Water Mage tome"
 	"task.15386B424EFBFD1F.title": "Ask for directions"
 	"task.153FE21CDD5A02FB.title": "All four pieces: Polar Stalker Armor"
@@ -2346,6 +2371,7 @@
 	"task.4D29AF731F304F2C.title": "Understood"
 	"task.4DABEFEF63961B92.title": "Dragonscale"
 	"task.4E54A909613B1160.title": "Find the Amethyst Nest"
+	"task.4F23F356113FB0AD.title": "Have a Survey Map"
 	"task.4FA2E8445AFFB9F0.title": "Wrought Rivet"
 	"task.5034241239C26419.title": "Have a Salvaging Table"
 	"task.50863D2F0595B8EF.title": "All four pieces: Astral Robes or Tempest Robes"
@@ -2441,6 +2467,7 @@
 	"task.79BF0BBCB30F374A.title": "Carry the Archer tome"
 	"task.79FA04000FE1E1C8.title": "Have a netherite Terra Wand or Staff"
 	"task.7A8161436F760911.title": "Craft a backpack"
+	"task.7AE72E6F6E687E17.title": "Draw a Survey Map"
 	"task.7AE77857D97A67C2.title": "All four pieces of the Netherite Wind Robes"
 	"task.7B512AAA79226288.title": "Salvage a piece of gear"
 	"task.7B7C1D609A967064.title": "Carry the Paladin tome"

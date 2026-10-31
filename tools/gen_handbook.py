@@ -231,8 +231,9 @@ E['professions'] = [
         text(f'Press {k("key.jobsplus.open_menu")} to open the Jobs menu and join two jobs. A job levels up '
              'from its own work and pays one $(item)job coin$() per level.$(br2)Spend coins in the same menu '
              'on power-ups, or on a third job.'),
-        text('The seven jobs: Alchemist, Enchanter, Farmer, Hunter, Jeweler, Miner and Smith.$(br2)Five of them '
-             'also $(l)make$() things nobody else can: Smith, Hunter, Enchanter, Jeweler and Alchemist.'),
+        text('The nine jobs: Alchemist, Cook, Enchanter, Explorer, Farmer, Hunter, Jeweler, Miner and Smith.'
+             '$(br2)Seven of them also $(l)make$() things nobody else can: Smith, Hunter, Enchanter, Jeweler, '
+             'Alchemist, Cook and Explorer.'),
     ]),
     ('gates', 'Crafting Gates', 'minecraft:anvil', [
         text('Class gear by tier:$(li)Tier 1 at job level 10$(li)Diamond tier 2 at 20$(li)Netherite tier 3 '
@@ -246,6 +247,18 @@ E['professions'] = [
         text('$(l)Jeweler$(): gold and gem jewelry at 10, Socket Mounts at 15, diamond and emerald jewelry at '
              '20, netherite jewelry at 25. Copper and iron rings are free.$(br2)The Jeweler villager sells rings '
              'and necklaces, and dungeons hide them.'),
+        text('$(l)Cook$(): plated meals at 10, feasts at 20. Cooking pot meals are free for everyone.'
+             '$(br2)$(l)Explorer$(): scrolls and Crypt Survey Maps at 10, Warp Stones and Sharestones at 15, '
+             'Waystones, Portstones and Great Dungeon maps at 20, Warp Plates at 25, Boss Lair maps at 30.'),
+    ]),
+    ('explorer', 'Explorer: Survey Maps', 'minecraft:filled_map', [
+        text('A $(item)Survey Map$() becomes a map to the nearest place of its kind when you use it: a '
+             'settlement, a crypt, a great dungeon or a boss lair. Anyone can draw a Settlement map (map and '
+             'emerald); the others need an Explorer.$(br2)Copy the finished map at a cartography table for the '
+             'whole party.'),
+        text('Explorers also build the travel network. $(item)Sharestones$() of one color all link to each '
+             'other, $(item)Warp Plates$() pair up, and scrolls are one-use trips.$(br2)Waystones you find in '
+             'the world stay free for everyone.'),
     ]),
     ('anyone', 'No Job? No Problem', 'minecraft:chest', [
         text('Gates only stop $(o)making$() things. Anyone can use, wear, repair and enchant them.$(br2)'
@@ -264,7 +277,9 @@ E['professions'] = [
              '$(li)$(l)Enchanter$(): enchanting, binding spells.'
              '$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.'
              '$(li)$(l)Alchemist$(): brewing, runes, potion charms.'
-             '$(li)$(l)Farmer$(): harvesting and cooking-pot meals.'
+             '$(li)$(l)Cook$(): every meal, pot or table.'
+             '$(li)$(l)Explorer$(): Survey Maps, travel items, each new waystone.'
+             '$(li)$(l)Farmer$(): harvesting, planting, breeding.'
              '$(li)Miners level from stone and ores.'),
     ]),
 ]

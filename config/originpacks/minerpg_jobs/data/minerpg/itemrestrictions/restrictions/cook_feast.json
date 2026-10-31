@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "farmersdelight:roast_chicken_block",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/cook_feast"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:cook",
+      "level": 20,
+      "inverted": true
+    }
+  ]
+}
