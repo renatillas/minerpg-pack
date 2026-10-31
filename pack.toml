@@ -1,12 +1,12 @@
 name = "minerpg"
 author = "renatillas"
-version = "1.1.0"
+version = "1.2.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "dbedb80d47bcd50feaab254b9fe401c272cb36f1e0fe809d9efcee466366d5c0"
+hash = "bf9686a68dc41ee1f7d51d8b874982155e138a951acb5309fe59a70200ca4453"
 
 [versions]
 minecraft = "1.21.1"
