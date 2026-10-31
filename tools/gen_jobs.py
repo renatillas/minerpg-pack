@@ -392,6 +392,12 @@ def jewelry_tiers(mods):
     return {k: sorted(v) for k, v in out.items()}
 
 
+# Jobs+ shows names and descriptions from translation keys, never from the job and power-up files, so every job of
+# ours also gets its keys in kubejs/assets/jobsplus/lang/en_us.json (merged with the hand-written keys there).
+JOBS_LANG = os.path.join(ROOT, 'kubejs', 'assets', 'jobsplus', 'lang', 'en_us.json')
+LANG = {}
+
+
 def write_custom_job(key, job, powerups):
     """One of our own jobs, its power-ups and their Arc actions (Jobs+ reads jobs from data/jobsplus/jobsplus/).
     Power-ups without an Arc action here (Second Helping, Mapmaker, Waywright) are applied by minerpg_jobs.js."""
@@ -399,7 +405,13 @@ def write_custom_job(key, job, powerups):
     reset(os.path.join(base, 'jobsplus', 'powerups', key))
     reset(os.path.join(base, 'arc', key))
     write(os.path.join(base, 'jobsplus', 'jobs', key + '.json'), job)
+    LANG[f'jobsplus.job.jobsplus.{key}.name'] = job['name']
+    LANG[f'jobsplus.job.jobsplus.{key}.description'] = job['description']
+    LANG[f'jobsplus.powerup.jobsplus.{key}.root.name'] = job['name']
+    LANG[f'jobsplus.powerup.jobsplus.{key}.root.description'] = job['description']
     for pkey, parent, name, description, icon, price, level in powerups:
+        LANG[f'jobsplus.powerup.jobsplus.{key}.{pkey}.name'] = name
+        LANG[f'jobsplus.powerup.jobsplus.{key}.{pkey}.description'] = description
         powerup = {'job': f'jobsplus:{key}', 'name': name, 'description': description, 'icon': {'id': icon},
                    'price': price, 'required_level': level}
         if parent:
@@ -583,6 +595,11 @@ def build(server):
         'rewards': [job_exp(*FREE_JEWELRY_XP)],
         'conditions': [{'type': 'arc:items', 'items': jewelry.get('free', [])}],
     })
+
+    lang = json.load(open(JOBS_LANG, encoding='utf-8'))
+    lang = {k: v for k, v in lang.items() if not k.startswith(('jobsplus.job.', 'jobsplus.powerup.'))}
+    lang.update(LANG)
+    write(JOBS_LANG, lang)
 
     # Item tags minerpg_jobs.js reads for the "extra copy" power-ups (crafting-table results only; cooking pot
     # meals get Second Helping in the pot watcher).
