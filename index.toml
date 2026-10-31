@@ -77,6 +77,10 @@ file = "config/defaultoptions/keybindings.txt"
 hash = "40f06acd45d7fe7405cbae1ddd36adaa9a6f384c3e46bd5d9f31369d9712f6f0"
 
 [[files]]
+file = "config/defaultoptions/options.txt"
+hash = "58679ee9c6c2c44c00cd29804dfa112c9fe8936c62b43f4c720600ea0619f39f"
+
+[[files]]
 file = "config/dungeon_difficulty/difficulty_v2.json"
 hash = "e706958ff1472815044ef89438395b053476cd4bf5f8ad4d91fb3f229f2539cf"
 
