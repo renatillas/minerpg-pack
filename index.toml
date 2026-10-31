@@ -130,7 +130,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "7ffc9e9a508c64af7d551cf89483285c18ae591c30bc07e57836b1a925566e1a"
+hash = "3f424dbdf4e86262ae8e3e2d37cccdb85c1216bb2c4713acaaeb21fa263a9081"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -4982,7 +4982,7 @@ hash = "f9d3d8821bf87713ae2de5b41e1afa49e5a2447b5ad439e0aad09563a329ba1a"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/jobs.json"
-hash = "1cbfa19be428f4abcfc780acaba1e598be1df0ca9ea9cc06a0ff9c5c7864c9d5"
+hash = "fc069ea5dad1e760ecaeceab31f742c88bc3e38c4262f1b4fba3711a301f98d9"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/xp.json"

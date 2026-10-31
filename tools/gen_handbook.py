@@ -230,7 +230,7 @@ E['professions'] = [
     ('jobs', 'Jobs', 'minecraft:iron_pickaxe', [
         text(f'Press {k("key.jobsplus.open_menu")} to open the Jobs menu and join two jobs. A job levels up '
              'from its own work and pays one $(item)job coin$() per level.$(br2)Spend coins in the same menu '
-             'on power-ups, or on a third job.'),
+             'on power-ups. Two jobs is the most anyone can hold, so choose them with care.'),
         text('The nine jobs: Alchemist, Cook, Enchanter, Explorer, Farmer, Hunter, Jeweler, Miner and Smith.'
              '$(br2)Seven of them also $(l)make$() things nobody else can: Smith, Hunter, Enchanter, Jeweler, '
              'Alchemist, Cook and Explorer.'),
