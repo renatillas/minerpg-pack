@@ -192,10 +192,6 @@ def r_coins(amount):
     return r_cmd(f'/minerpg_jobs coins @s {amount}', f'+{amount} job coins')
 
 
-# The Adventurer's Handbook (Patchouli external book patchouli:handbook, tools/gen_handbook.py).
-HANDBOOK = {'patchouli:book': 'patchouli:handbook'}
-
-
 # One Spell Infinity book (spells stop using runes). It is not on the enchanting table or in
 # random loot (kubejs/server_scripts/minerpg_enchanting.js).
 SPELL_INFINITY_BOOK = {'minecraft:stored_enchantments': {'levels': {'spell_engine:spell_infinity': 1}}}
@@ -472,12 +468,10 @@ GETTING_STARTED = [
         'Tick the box to begin.'],
         [t_check('Open the book')],
         # Sets the Apotheosis world tier to Haven (or higher, if already unlocked), which also
-        # ends the "unknown power" tutorial on affix items. The handbook is the Patchouli book
-        # written by tools/gen_handbook.py (players also get one on first join, see
-        # kubejs/server_scripts/minerpg_server_rules.js).
-        # (Handbook last: reward ids follow their position, so existing rewards keep their ids.)
-        [r_item('minecraft:bread', 8), r_cmd('/function minerpg:tier/sync'),
-         r_item('patchouli:guide_book', 1, HANDBOOK)], subtitle='Start here'),
+        # ends the "unknown power" tutorial on affix items. No handbook here: every player gets one on first join
+        # (kubejs/server_scripts/minerpg_first_join.js), and a book and a feather craft another. (Rewards keep their
+        # ids by position, so dropping the last one leaves the others intact.)
+        [r_item('minecraft:bread', 8), r_cmd('/function minerpg:tier/sync')], subtitle='Start here'),
     Q('gs_race', 'Who Are You?', -2, -1.5, [
         'Your folk gave you a few small gifts, one drawback and one power.',
         '',
