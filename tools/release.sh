@@ -10,7 +10,9 @@
 # Before running: bump `version` in pack/pack.toml, `packwiz refresh`, commit on main.
 set -euo pipefail
 
-REPO_SSH="git@github.com:renatillas/minerpg-pack.git"
+REPO_URL="https://github.com/renatillas/minerpg-pack.git"
+# Authenticate the push with the GitHub CLI login (no SSH key or global git config needed).
+GIT_PUSH=(git -c credential.helper= -c "credential.helper=!gh auth git-credential" push)
 ROOT="$(git -C "$(dirname "$0")" rev-parse --show-toplevel)"
 cd "$ROOT"
 
@@ -27,7 +29,7 @@ if [ -n "$(git status --porcelain pack)" ]; then
 fi
 
 VERSION="$(sed -n 's/^version = "\(.*\)"/\1/p' pack/pack.toml)"
-SPLIT="$(git subtree split --prefix pack HEAD)"
-git push "$REPO_SSH" "$SPLIT:refs/heads/main"
-git push "$REPO_SSH" "$SPLIT:refs/tags/v$VERSION"
+SPLIT="$(git subtree split --prefix pack HEAD 2>/dev/null)"
+"${GIT_PUSH[@]}" "$REPO_URL" "$SPLIT:refs/heads/main"
+"${GIT_PUSH[@]}" "$REPO_URL" "$SPLIT:refs/tags/v$VERSION"
 echo "Published minerpg $VERSION ($SPLIT). Now update the server: pack/tools/build_server.sh"
