@@ -52,7 +52,9 @@ def main():
         # Runs in the instance's .minecraft folder, where the bootstrap jar lives. $INST_JAVA is the Java Prism
         # picked for 1.21.1 (it downloads Java 21 itself if the player has none).
         'OverrideCommands=true',
-        f'PreLaunchCommand="$INST_JAVA" -jar packwiz-installer-bootstrap.jar {PACK_URL}',
+        # instance.cfg is a Qt INI file: a value starting with a quote is read as a quoted string, so the quotes
+        # around $INST_JAVA (needed: the path has spaces) must be escaped inside an outer pair, as Prism writes it.
+        f'PreLaunchCommand="\\"$INST_JAVA\\" -jar packwiz-installer-bootstrap.jar {PACK_URL}"',
         'OverrideMemory=true',
         f'MinMemAlloc={MIN_MEM_MB}',
         f'MaxMemAlloc={MAX_MEM_MB}',
