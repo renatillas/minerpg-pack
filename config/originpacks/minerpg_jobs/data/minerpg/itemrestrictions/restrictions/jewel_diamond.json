@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "jewelry:diamond_necklace",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/jewel_diamond"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:jeweler",
+      "level": 20,
+      "inverted": true
+    }
+  ]
+}

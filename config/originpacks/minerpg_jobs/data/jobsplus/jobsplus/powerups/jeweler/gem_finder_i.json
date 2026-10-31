@@ -1,0 +1,10 @@
+{
+  "job": "jobsplus:jeweler",
+  "name": "Gem Finder I",
+  "description": "Grants a 15% chance to get double gems from gem veins.",
+  "icon": {
+    "id": "jewelry:ruby"
+  },
+  "price": 5,
+  "required_level": 10
+}

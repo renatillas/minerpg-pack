@@ -331,12 +331,6 @@ def write_advancements():
     ADV['waystone'] = adv('tutorial/use_waystone', {'use': {'trigger': 'minecraft:any_block_use', 'conditions': {
         'location': [{'condition': 'minecraft:location_check', 'predicate': {'block': {'blocks': '#waystones:waystones'}}}]}}})
     # Job starters.
-    ADV['digger'] = adv('jobs/digger', {'dig': {'trigger': 'minecraft:inventory_changed', 'conditions': {'items': [{
-        'items': ['minecraft:dirt', 'minecraft:gravel', 'minecraft:sand', 'minecraft:red_sand', 'minecraft:clay_ball'],
-        'count': {'min': 32}}]}}})
-    ADV['lumberjack'] = adv('jobs/lumberjack', {'logs': {'trigger': 'minecraft:inventory_changed', 'conditions': {'items': [{
-        'items': '#minecraft:logs', 'count': {'min': 16}}]}}})
-    ADV['builder'] = adv('jobs/builder', {'place': {'trigger': 'minecraft:placed_block', 'conditions': {}}})
     ADV['alchemist'] = adv('jobs/alchemist', {'brew': {'trigger': 'minecraft:brewed_potion', 'conditions': {}}})
     # Job milestones and "made a job-gated item": granted by the Arc actions that
     # pack/tools/gen_jobs.py writes (via /minerpg_jobs grant), never by a criterion.
@@ -560,10 +554,11 @@ GETTING_STARTED = [
         '- &2Hunter&r: leather armor, bows, crossbows, spears and quivers (Archer, Rogue).',
         '- &dEnchanter&r: robes, staves, wands and instruments (Wizard, mages, Priest, Bard), and the stronger enchanting shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30.',
         '- &5Alchemist&r: Strong and Long potions at 10, Splash at 15, Lingering at 20.',
+        '- &3Jeweler&r: gold and gem jewelry at 10, Socket Mounts at 15, diamond and emerald jewelry at 20, netherite jewelry at 25.',
         '',
-        'Anyone can &ouse&r these things. Class gear still drops from dungeons and bosses, class merchants sell it, plain bookshelves work for everyone, and a friend with the job can make it for you.',
+        'Anyone can &ouse&r these things. Class gear still drops from dungeons and bosses, class merchants sell it, plain bookshelves work for everyone, the Jeweler villager sells rings and necklaces, and a friend with the job can make it for you.',
         'Hover over an item to see the job and level that make it.',
-        'Job experience also comes from the adventure: Smiths from reforging, salvaging and socketing, Enchanters from binding spells and cutting gems, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Farmers from the cooking pot.',
+        'Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Farmers from the cooking pot.',
         'Class merchants buy crafted goods for emeralds: runes, diamond-tier class weapons and pot meals.'],
         [t_check('Understood')], [r_coins(1)], deps=['gs_jobs'], subtitle='Crafting gates and job experience', shape='diamond', optional=True),
     # v0.4 additions. Item rewards only, so Getting Started quest points stay as tuned.
@@ -612,15 +607,12 @@ for i, (key, title, text, icon) in enumerate(TOUR):
 
 JOB_STARTERS = [
     ('alchemist', 'Alchemist', 'Alchemists earn experience brewing, crafting runes and potion charms. Brew any potion.', t_adv('alchemist', 'Brew a potion'), r_item('minecraft:glass_bottle', 6)),
-    ('builder', 'Builder', 'Builders earn experience for every block they place. Place one to start.', t_adv('builder', 'Place a block'), r_item('minecraft:stone_bricks', 32)),
-    ('digger', 'Digger', 'Diggers earn experience digging dirt, sand, gravel and clay. Carry 32 of one.', t_adv('digger', 'Gather 32 dirt, sand, gravel or clay'), r_item('minecraft:iron_shovel')),
-    ('enchanter', 'Enchanter', 'Enchanters earn experience at the enchanting table, the Spell Binding Table and the gem cutting table. Enchant any item.', t_adv('minecraft:story/enchant_item', 'Enchant an item'), r_item('minecraft:lapis_lazuli', 12)),
+    ('enchanter', 'Enchanter', 'Enchanters earn experience at the enchanting table and the Spell Binding Table. Enchant any item.', t_adv('minecraft:story/enchant_item', 'Enchant an item'), r_item('minecraft:lapis_lazuli', 12)),
     ('farmer', 'Farmer', 'Farmers earn experience harvesting grown crops and cooking pot meals. Bring in 16 wheat.', t_item('minecraft:wheat', 16), r_item('minecraft:bone_meal', 16)),
-    ('fisherman', 'Fisherman', 'Fishermen earn experience for every catch. Catch a fish.', t_adv('minecraft:husbandry/fishy_business', 'Catch a fish'), r_item('minecraft:cooked_cod', 8)),
     ('hunter', 'Hunter', 'Hunters are skinners and leatherworkers. They earn experience for every hide, bone and monster part their kills drop (and find more of them as they level), for hunting animals and for crafting leather goods. Bring in 8 leather.', t_item('minecraft:leather', 8), r_item('minecraft:arrow', 32)),
-    ('lumberjack', 'Lumberjack', 'Lumberjacks earn experience chopping logs. Carry 16 logs.', t_adv('lumberjack', 'Gather 16 logs'), r_item('minecraft:iron_axe')),
+    ('jeweler', 'Jeweler', 'Jewelers craft rings and necklaces, cut gems at the Jeweler\'s Kit and the Gem Cutting Table, and set gems into gear. Gold and gem jewelry needs Jeweler 10. Craft a Jeweler\'s Kit.', t_item('jewelry:jewelers_kit', title='Craft a Jeweler\'s Kit'), r_item('minecraft:gold_ingot', 6)),
     ('miner', 'Miner', 'Miners earn experience breaking stone and ores. Mine 16 coal.', t_item('minecraft:coal', 16), r_item('minecraft:torch', 32)),
-    ('smith', 'Smith', 'Smiths earn experience smelting ingots, crafting tools, weapons and armor, and reforging, salvaging and socketing gear. Craft an iron pickaxe.', t_adv('minecraft:story/iron_tools', 'Craft an iron pickaxe'), r_item('minecraft:iron_ingot', 6)),
+    ('smith', 'Smith', 'Smiths earn experience smelting ingots, crafting tools, weapons and armor, and reforging and salvaging gear. Craft an iron pickaxe.', t_adv('minecraft:story/iron_tools', 'Craft an iron pickaxe'), r_item('minecraft:iron_ingot', 6)),
 ]
 for i, (key, title, text, task, reward) in enumerate(JOB_STARTERS):
     col, row = i % 5, i // 5
@@ -766,12 +758,12 @@ CHAPTER_1 = [
     # Jobs (optional).
     Q('c1_job_10', 'Journeyman', 0, 4.5, [
         'Reach &6level 10&r in any of your jobs.',
-        'At level 10, Smiths, Hunters and Enchanters make tier 1 class gear of their kind, Enchanters also the Hellshelf and Seashelf, and Alchemists brew Strong and Long potions.',
+        'At level 10, Smiths, Hunters and Enchanters make tier 1 class gear of their kind, Enchanters also the Hellshelf and Seashelf, Jewelers gold and gem jewelry, and Alchemists brew Strong and Long potions.',
         '&7Checked when the job levels up.&r'],
         [t_adv('job_level_10', 'Reach level 10 in a job')], [r_coins(5), r_item('minecraft:emerald', 4)],
         deps=['c1_village'], subtitle='Job milestone', shape='circle', optional=True),
     Q('c1_job_craft', 'Made for a Friend', 1.5, 4.5, [
-        'Make something only a trained hand can make: class gear as a Smith, Hunter or Enchanter, an enchanting shelf as an Enchanter, or a Strong, Long, Splash or Lingering potion as an Alchemist.',
+        'Make something only a trained hand can make: class gear as a Smith, Hunter or Enchanter, an enchanting shelf as an Enchanter, gem jewelry or a Socket Mount as a Jeweler, or a Strong, Long, Splash or Lingering potion as an Alchemist.',
         'Then hand it to a party member who could not make it. That is what trades are for.'],
         [t_adv('job_gated_craft', 'Make a job-gated item')], [r_coins(5), r_item('minecraft:emerald', 6)],
         deps=['c1_job_10'], subtitle='Job milestone', shape='circle', optional=True),
@@ -836,7 +828,7 @@ CHAPTER_2 = [
         deps=['c2_arena'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
     Q('c2_job_20', 'Expert', 0, 3, [
         'Reach &6level 20&r in any of your jobs.',
-        'At level 20, Smiths, Hunters and Enchanters make diamond class gear; Smiths reforge to Epic, Enchanters make the upgraded hell and sea shelves, and Alchemists brew Lingering potions.',
+        'At level 20, Smiths, Hunters and Enchanters make diamond class gear; Smiths reforge to Epic, Enchanters make the upgraded hell and sea shelves, Jewelers diamond and emerald jewelry, and Alchemists brew Lingering potions.',
         '&7Checked when the job levels up.&r'],
         [t_adv('job_level_20', 'Reach level 20 in a job')], [r_coins(8), r_item('minecraft:emerald', 8)],
         deps=['c2_arrive'], subtitle='Job milestone', shape='circle', optional=True),
@@ -1270,7 +1262,7 @@ FORGE_TAB = [
     Q('fl_socket', 'Set in Stone', 3.5, 1.5, [
         'Gems go into &osockets&r. Some gear rolls with sockets already; a &6Sigil of Socketing&r adds one at a '
         'smithing table.',
-        'Then put the gem in at the smithing table too: gear + gem.'],
+        'Then put the gem in at the smithing table too: gear + gem. Jewelers earn job experience for both.'],
         [has_any('guide/socketing', [f'{APO}:sigil_of_socketing'], 'Have a Sigil of Socketing')],
         [r_item(f'{APO}:gem_dust', 6)], deps=['fl_gem'], subtitle='Add sockets'),
     Q('fl_withdraw', 'Second Thoughts', 5, 1.5, [
@@ -1281,7 +1273,7 @@ FORGE_TAB = [
     Q('fl_cut', 'The Gem Cutter', 3.5, 3, [
         'A &6Gem Cutting Table&r combines gems (and gem dust) into a gem of higher purity. Higher purity, bigger '
         'bonuses.',
-        'Enchanters earn job experience cutting gems.'],
+        'Jewelers earn job experience cutting gems.'],
         [has_any('guide/gem_cutting_table', [f'{APO}:gem_cutting_table'], 'Have a Gem Cutting Table')],
         [r_item(f'{APO}:gem_dust', 8)], deps=['fl_gem'], subtitle='Raise gem purity'),
     Q('fl_charm', 'Bottled Luck', 5, 3, [
@@ -1342,18 +1334,35 @@ KIT_TAB = [
         size=Double(1.5)),
     # Jewelry and relics
     Q('ak_jeweler', 'The Jeweler', 2, -1.5, [
-        'Villages with a &6Jeweler&r trade gems, rings and necklaces. Gem veins hide underground too.'],
+        'Villages with a &6Jeweler&r trade gems, rings and necklaces. Gem veins hide underground too.',
+        'Or take up the &3Jeweler&r job (J) and make them yourself.'],
         [t_adv('trade_jeweler', 'Trade with a Jeweler')], [r_item('minecraft:gold_ingot', 4)], deps=['ak_intro'],
         subtitle='Rings and necklaces'),
     Q('ak_ring', 'A Ring for Each Hand', 3.5, -2, [
         'Rings and necklaces go in their own slots (G opens them) and add spell power, health or speed.',
-        'Craft one with a gem and gold, or find one in a dungeon.'],
+        'Copper and iron rings anyone can craft. Gem and gold jewelry takes a Jeweler of level 10; or buy one, or find one in a dungeon.'],
         [has_any('guide/ring', '#curios:ring', 'Have a ring')], [r_item('minecraft:gold_ingot', 3)], deps=['ak_jeweler'],
         subtitle='Ring slot'),
     Q('ak_necklace', 'Close to the Heart', 3.5, -1, [
         'One necklace at a time. Pick the one that matches your class\'s power.'],
         [has_any('guide/necklace', '#curios:necklace', 'Have a necklace')], [r_item('minecraft:string', 4)],
         deps=['ak_jeweler'], subtitle='Necklace slot'),
+    Q('ak_gem_cut', 'Cut to Fit', 3.5, -3.5, [
+        'The &6Jeweler\'s Kit&r cuts the jeweler\'s gems (ruby, sapphire, jade, topaz, citrine, tanzanite) to fit into '
+        'armor. Put a gem in and pick one of its four cuts: the cut decides the bonus.',
+        'Shadowy Tanzanite adds soul spell power, Fierce Ruby critical damage, the sapphires health and armor. Hover '
+        'over each cut to compare.',
+        'Jewelers earn job experience for every gem they cut.'],
+        [has_any('guide/jewelers_kit', ['jewelry:jewelers_kit'], 'Have a Jeweler\'s Kit')], [r_item('jewelry:ruby', 2)],
+        deps=['ak_jeweler'], subtitle='Gem cutting'),
+    Q('ak_socket_mount', 'Set in Gold', 5, -3.5, [
+        'Armor has no sockets of its own. A &6Socket Mount&r adds one: put the armor and the mount in an &6anvil&r. '
+        'Each piece takes one.',
+        'Then put the armor and a cut gem in the anvil to set the gem. A full set holds four. The Jeweler\'s Kit can '
+        'take a gem back out.',
+        'Socket Mounts are crafted by a Jeweler of level 15.'],
+        [has_any('guide/socket_mount', ['jewelry:socket_mount'], 'Have a Socket Mount')], [r_item('minecraft:diamond', 1)],
+        deps=['ak_gem_cut'], subtitle='Sockets for armor'),
     Q('ak_relic', 'Relics', 5, -1.5, [
         '&dRelics&r are trinkets with a single strong effect: heal on a kill, a burst of speed, a ward against death.',
         'Most drop from bosses and deep dungeons.'],

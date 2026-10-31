@@ -1,0 +1,11 @@
+{
+  "job": "jobsplus:jeweler",
+  "name": "Gem Finder III",
+  "description": "Grants a 50% chance to get double gems from gem veins.",
+  "icon": {
+    "id": "jewelry:tanzanite"
+  },
+  "price": 15,
+  "required_level": 50,
+  "parent": "jobsplus:jeweler/gem_finder_ii"
+}

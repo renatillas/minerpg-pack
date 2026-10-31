@@ -708,6 +708,11 @@
 	]
 	"quest.2241FB6771756DF2.quest_subtitle": "Tier 3 armor"
 	"quest.2241FB6771756DF2.title": "Netherite Arcane Robes"
+	"quest.2260673C6A9418B8.quest_desc": [
+		"Jewelers craft rings and necklaces, cut gems at the Jeweler's Kit and the Gem Cutting Table, and set gems into gear. Gold and gem jewelry needs Jeweler 10. Craft a Jeweler's Kit."
+	]
+	"quest.2260673C6A9418B8.quest_subtitle": "Job starter"
+	"quest.2260673C6A9418B8.title": "Jeweler"
 	"quest.23438309D3EE7ED9.quest_desc": [
 		"Some things only a trained hand can &omake&r:"
 		"Class gear is made by three trades, by tier: tier 1 at level 10, diamond tier 2 at 20, netherite tier 3 at 25, Armory sets at 30."
@@ -715,10 +720,11 @@
 		"- &2Hunter&r: leather armor, bows, crossbows, spears and quivers (Archer, Rogue)."
 		"- &dEnchanter&r: robes, staves, wands and instruments (Wizard, mages, Priest, Bard), and the stronger enchanting shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30."
 		"- &5Alchemist&r: Strong and Long potions at 10, Splash at 15, Lingering at 20."
+		"- &3Jeweler&r: gold and gem jewelry at 10, Socket Mounts at 15, diamond and emerald jewelry at 20, netherite jewelry at 25."
 		""
-		"Anyone can &ouse&r these things. Class gear still drops from dungeons and bosses, class merchants sell it, plain bookshelves work for everyone, and a friend with the job can make it for you."
+		"Anyone can &ouse&r these things. Class gear still drops from dungeons and bosses, class merchants sell it, plain bookshelves work for everyone, the Jeweler villager sells rings and necklaces, and a friend with the job can make it for you."
 		"Hover over an item to see the job and level that make it."
-		"Job experience also comes from the adventure: Smiths from reforging, salvaging and socketing, Enchanters from binding spells and cutting gems, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Farmers from the cooking pot."
+		"Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Farmers from the cooking pot."
 		"Class merchants buy crafted goods for emeralds: runes, diamond-tier class weapons and pot meals."
 	]
 	"quest.23438309D3EE7ED9.quest_subtitle": "Crafting gates and job experience"
@@ -740,7 +746,7 @@
 	"quest.25A6E69E62FA987F.quest_subtitle": "Tier 2 armor"
 	"quest.25A6E69E62FA987F.title": "Terra Robes"
 	"quest.267B5D48DAF1CC15.quest_desc": [
-		"Smiths earn experience smelting ingots, crafting tools, weapons and armor, and reforging, salvaging and socketing gear. Craft an iron pickaxe."
+		"Smiths earn experience smelting ingots, crafting tools, weapons and armor, and reforging and salvaging gear. Craft an iron pickaxe."
 	]
 	"quest.267B5D48DAF1CC15.quest_subtitle": "Job starter"
 	"quest.267B5D48DAF1CC15.title": "Smith"
@@ -770,6 +776,13 @@
 	]
 	"quest.2822EF3B2E746D80.quest_subtitle": "Tier 2 weapon"
 	"quest.2822EF3B2E746D80.title": "A Diamond Edge"
+	"quest.284B33294DEB1EE1.quest_desc": [
+		"Armor has no sockets of its own. A &6Socket Mount&r adds one: put the armor and the mount in an &6anvil&r. Each piece takes one."
+		"Then put the armor and a cut gem in the anvil to set the gem. A full set holds four. The Jeweler's Kit can take a gem back out."
+		"Socket Mounts are crafted by a Jeweler of level 15."
+	]
+	"quest.284B33294DEB1EE1.quest_subtitle": "Sockets for armor"
+	"quest.284B33294DEB1EE1.title": "Set in Gold"
 	"quest.2862FA76D20232FE.quest_desc": [
 		"Get a diamond Holy Wand or Staff."
 		""
@@ -893,7 +906,7 @@
 	"quest.311B8E5CCB0CEAB9.title": "Fortress of Flame"
 	"quest.318F3444CB533462.quest_desc": [
 		"Rings and necklaces go in their own slots (G opens them) and add spell power, health or speed."
-		"Craft one with a gem and gold, or find one in a dungeon."
+		"Copper and iron rings anyone can craft. Gem and gold jewelry takes a Jeweler of level 10; or buy one, or find one in a dungeon."
 	]
 	"quest.318F3444CB533462.quest_subtitle": "Ring slot"
 	"quest.318F3444CB533462.title": "A Ring for Each Hand"
@@ -981,6 +994,7 @@
 	"quest.36E9B005B8159543.title": "Prior Vestments"
 	"quest.38D3B1761DE5579B.quest_desc": [
 		"Villages with a &6Jeweler&r trade gems, rings and necklaces. Gem veins hide underground too."
+		"Or take up the &3Jeweler&r job (J) and make them yourself."
 	]
 	"quest.38D3B1761DE5579B.quest_subtitle": "Rings and necklaces"
 	"quest.38D3B1761DE5579B.title": "The Jeweler"
@@ -1024,7 +1038,7 @@
 	"quest.39E4EF6895083D0C.title": "A Legend in Hand"
 	"quest.3A6C127DAF675E05.quest_desc": [
 		"A &6Gem Cutting Table&r combines gems (and gem dust) into a gem of higher purity. Higher purity, bigger bonuses."
-		"Enchanters earn job experience cutting gems."
+		"Jewelers earn job experience cutting gems."
 	]
 	"quest.3A6C127DAF675E05.quest_subtitle": "Raise gem purity"
 	"quest.3A6C127DAF675E05.title": "The Gem Cutter"
@@ -1091,7 +1105,7 @@
 	"quest.404575A89AD631AE.title": "Eye of Fury"
 	"quest.40678BD3902A909A.quest_desc": [
 		"Reach &6level 20&r in any of your jobs."
-		"At level 20, Smiths, Hunters and Enchanters make diamond class gear; Smiths reforge to Epic, Enchanters make the upgraded hell and sea shelves, and Alchemists brew Lingering potions."
+		"At level 20, Smiths, Hunters and Enchanters make diamond class gear; Smiths reforge to Epic, Enchanters make the upgraded hell and sea shelves, Jewelers diamond and emerald jewelry, and Alchemists brew Lingering potions."
 		"&7Checked when the job levels up.&r"
 	]
 	"quest.40678BD3902A909A.quest_subtitle": "Job milestone"
@@ -1379,11 +1393,6 @@
 	]
 	"quest.4C51D21C6BF384AB.quest_subtitle": "Tier 1 weapon"
 	"quest.4C51D21C6BF384AB.title": "First Steel"
-	"quest.4C685D602A4CCFA3.quest_desc": [
-		"Diggers earn experience digging dirt, sand, gravel and clay. Carry 32 of one."
-	]
-	"quest.4C685D602A4CCFA3.quest_subtitle": "Job starter"
-	"quest.4C685D602A4CCFA3.title": "Digger"
 	"quest.4C6920214DBED4FE.quest_desc": [
 		"Light a portal with your Nether Sigil and step through. The Nether is hotter and meaner than anything above."
 		"Lost your portal? Inside the Nether, normal fire still lights one, so you can always get home."
@@ -1425,7 +1434,7 @@
 	"quest.50C778B21D914B33.title": "Echoes Below"
 	"quest.50D978A09E750B13.quest_desc": [
 		"Reach &6level 10&r in any of your jobs."
-		"At level 10, Smiths, Hunters and Enchanters make tier 1 class gear of their kind, Enchanters also the Hellshelf and Seashelf, and Alchemists brew Strong and Long potions."
+		"At level 10, Smiths, Hunters and Enchanters make tier 1 class gear of their kind, Enchanters also the Hellshelf and Seashelf, Jewelers gold and gem jewelry, and Alchemists brew Strong and Long potions."
 		"&7Checked when the job levels up.&r"
 	]
 	"quest.50D978A09E750B13.quest_subtitle": "Job milestone"
@@ -1459,7 +1468,7 @@
 	"quest.5342B109738F0034.quest_subtitle": "Map"
 	"quest.5342B109738F0034.title": "Whispers of the Tide"
 	"quest.540E7EDF83A1ADBE.quest_desc": [
-		"Make something only a trained hand can make: class gear as a Smith, Hunter or Enchanter, an enchanting shelf as an Enchanter, or a Strong, Long, Splash or Lingering potion as an Alchemist."
+		"Make something only a trained hand can make: class gear as a Smith, Hunter or Enchanter, an enchanting shelf as an Enchanter, gem jewelry or a Socket Mount as a Jeweler, or a Strong, Long, Splash or Lingering potion as an Alchemist."
 		"Then hand it to a party member who could not make it. That is what trades are for."
 	]
 	"quest.540E7EDF83A1ADBE.quest_subtitle": "Job milestone"
@@ -1700,7 +1709,7 @@
 	"quest.62B2868F5BC9B0F1.title": "Forged in Netherite"
 	"quest.631C3BDECD63BF8D.quest_desc": [
 		"Gems go into &osockets&r. Some gear rolls with sockets already; a &6Sigil of Socketing&r adds one at a smithing table."
-		"Then put the gem in at the smithing table too: gear + gem."
+		"Then put the gem in at the smithing table too: gear + gem. Jewelers earn job experience for both."
 	]
 	"quest.631C3BDECD63BF8D.quest_subtitle": "Add sockets"
 	"quest.631C3BDECD63BF8D.title": "Set in Stone"
@@ -1859,7 +1868,7 @@
 	"quest.6C38F2193F5F97B4.quest_subtitle": "Tier 2 weapon"
 	"quest.6C38F2193F5F97B4.title": "A Diamond Edge"
 	"quest.6C811E0AFCFDD19B.quest_desc": [
-		"Enchanters earn experience at the enchanting table, the Spell Binding Table and the gem cutting table. Enchant any item."
+		"Enchanters earn experience at the enchanting table and the Spell Binding Table. Enchant any item."
 	]
 	"quest.6C811E0AFCFDD19B.quest_subtitle": "Job starter"
 	"quest.6C811E0AFCFDD19B.title": "Enchanter"
@@ -1886,11 +1895,6 @@
 	]
 	"quest.6E1A5C775EB148AF.quest_subtitle": "Tier 1 weapon"
 	"quest.6E1A5C775EB148AF.title": "First Steel"
-	"quest.7107848BAFC6BF09.quest_desc": [
-		"Builders earn experience for every block they place. Place one to start."
-	]
-	"quest.7107848BAFC6BF09.quest_subtitle": "Job starter"
-	"quest.7107848BAFC6BF09.title": "Builder"
 	"quest.710AD64B960DC726.quest_desc": [
 		"The &6Wildlands&r are the harsh lands: deserts, jungles, swamps, taigas, dark forests and open sea. Big dungeons and ruins hide there, and monsters hit harder."
 		"Explore one of the great dungeons of the wild."
@@ -1927,11 +1931,6 @@
 	]
 	"quest.7214FD69CAC0DE96.quest_subtitle": "Start here"
 	"quest.7214FD69CAC0DE96.title": "Your Calling"
-	"quest.73292E754A800B8D.quest_desc": [
-		"Lumberjacks earn experience chopping logs. Carry 16 logs."
-	]
-	"quest.73292E754A800B8D.quest_subtitle": "Job starter"
-	"quest.73292E754A800B8D.title": "Lumberjack"
 	"quest.744C9A9A39A3F946.quest_desc": [
 		"Every Arcane Wizard walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
 		"This row follows it from your first steel to the armor of legends."
@@ -1980,11 +1979,6 @@
 	]
 	"quest.7920CBCE701DE238.quest_subtitle": "Side task"
 	"quest.7920CBCE701DE238.title": "Eye of Flame"
-	"quest.7921983A422C6876.quest_desc": [
-		"Fishermen earn experience for every catch. Catch a fish."
-	]
-	"quest.7921983A422C6876.quest_subtitle": "Job starter"
-	"quest.7921983A422C6876.title": "Fisherman"
 	"quest.7990F5145F92D1AA.quest_desc": [
 		"Hunters are skinners and leatherworkers. They earn experience for every hide, bone and monster part their kills drop (and find more of them as they level), for hunting animals and for crafting leather goods. Bring in 8 leather."
 	]
@@ -2075,6 +2069,13 @@
 	]
 	"quest.7F3ACDC21971B67E.quest_subtitle": "Cooking (Farmer's Delight)"
 	"quest.7F3ACDC21971B67E.title": "A Feast for the Party"
+	"quest.7F77AC6E99CF3DA3.quest_desc": [
+		"The &6Jeweler's Kit&r cuts the jeweler's gems (ruby, sapphire, jade, topaz, citrine, tanzanite) to fit into armor. Put a gem in and pick one of its four cuts: the cut decides the bonus."
+		"Shadowy Tanzanite adds soul spell power, Fierce Ruby critical damage, the sapphires health and armor. Hover over each cut to compare."
+		"Jewelers earn job experience for every gem they cut."
+	]
+	"quest.7F77AC6E99CF3DA3.quest_subtitle": "Gem cutting"
+	"quest.7F77AC6E99CF3DA3.title": "Cut to Fit"
 	"reward.101C0F1F77A34A36.title": "Berserker"
 	"reward.1046789CADDED251.title": "+1 job coins"
 	"reward.10566F0FB096D43E.title": "+5 job coins"
@@ -2129,7 +2130,6 @@
 	"reward.31C569972EEB20B8.title": "Wind Mage"
 	"reward.32855D8B687FD180.title": "Map to the Ancient Factory"
 	"reward.32E8BE12F1C33A56.title": "Arcane Wizard"
-	"reward.33FB333E8927E6D3.title": "+1 job coins"
 	"reward.3423B0611283429D.title": "+1 job coins"
 	"reward.35BE7033ECA14120.title": "+1 talent point"
 	"reward.397FBD0459B79A65.title": "+3 job coins"
@@ -2143,8 +2143,8 @@
 	"reward.45C3170CD8AA82F6.title": "+1 job coins"
 	"reward.47638B6BFE884E36.title": "Priest"
 	"reward.48710DC85D5C2258.title": "+5 job coins"
+	"reward.48E7B9FE10C30A65.title": "+1 job coins"
 	"reward.4907B8F7410B3BD5.title": "+5 job coins"
-	"reward.49356BB66F0DD4F5.title": "+1 job coins"
 	"reward.4C291A3658BE356B.title": "+2 job coins"
 	"reward.4D1BE821DDD5FA70.title": "War Archer"
 	"reward.4D34157362C8FDFC.title": "Map to an Ancient City"
@@ -2173,7 +2173,6 @@
 	"reward.6AF2CCA9F185F59C.title": "+5 job coins"
 	"reward.6BE3BCF699137F2B.title": "+1 job coins"
 	"reward.6C2EF079C3954A2E.title": "+1 job coins"
-	"reward.6CE206584960C6CF.title": "+1 job coins"
 	"reward.6D498238814E7508.title": "+5 job coins"
 	"reward.7078B480113718D6.title": "+3 job coins"
 	"reward.7169EF4F9ABE34DC.title": "+2 job coins"
@@ -2185,7 +2184,6 @@
 	"reward.7530F1FA996A9F33.title": "+3 job coins"
 	"reward.761B3140F71A2BBD.title": "+2 job coins"
 	"reward.76ED979245435924.title": "+3 job coins"
-	"reward.781A21659CF60D37.title": "+1 job coins"
 	"reward.7894D021D2B9F7DE.title": "+1 job coins"
 	"reward.797292397D0CD70A.title": "Map to the Cursed Pyramid"
 	"reward.7ABB09364EF09AFD.title": "Water Mage"
@@ -2303,7 +2301,6 @@
 	"task.3072E97C39896123.title": "All four pieces of the Elemental Apprentice Robes"
 	"task.30CC574835FEC519.title": "All four pieces of the Netherite Ranger Armor"
 	"task.30E4CA0DF720077A.title": "All four pieces of the Tundra Armor"
-	"task.317DA35032DCB837.title": "Catch a fish"
 	"task.3192298D58C0B42A.title": "Have a Wizard Staff"
 	"task.31C8DF173A175089.title": "Do a combat roll"
 	"task.31D729E66FE32162.title": "Have a netherite Longbow or Shortbow"
@@ -2314,7 +2311,6 @@
 	"task.36A0F23428E13AC6.title": "Carry the Tundra Hunter tome"
 	"task.3721A8AD4BA749DF.title": "Have a netherite Rapier, Lute, Lyre or Harp Crossbow"
 	"task.378147618BBEEB8D.title": "Have a Royal Longbow or Mechanic Shortbow"
-	"task.3811AA5D0322C05E.title": "Gather 16 logs"
 	"task.383F39505E3A5A45.title": "Find a gem"
 	"task.3867C18299088BFC.title": "Have an iron Dagger or Sickle"
 	"task.3A2B31BED000788D.title": "I have claimed my home"
@@ -2338,10 +2334,8 @@
 	"task.462EF832FEFAD119.title": "Sun-Bleached Fang"
 	"task.46305A026274E9EC.title": "All four pieces of the Troubadour Garb"
 	"task.46A1822EE521092D.title": "All four pieces of the Netherite Tundra Armor"
-	"task.47A5DCB513B389C1.title": "Gather 32 dirt, sand, gravel or clay"
 	"task.47A84C2BFE825D3F.title": "Have a diamond Claymore, Great Hammer or Mace"
 	"task.48B54F313535D127.title": "All four pieces of the Assassin Armor"
-	"task.48D711FD6A2A126F.title": "Place a block"
 	"task.4979EB310F07D364.title": "All four pieces of the Netherite Frost Robes"
 	"task.4A63160D953DD699.title": "Use your racial power"
 	"task.4A922A57DA24E513.title": "Frostbound Crown"
@@ -2375,6 +2369,7 @@
 	"task.57FE63978AC454DA.title": "Find a bastion"
 	"task.583A2578AA83D3DF.title": "Find a small dungeon"
 	"task.587B0F16545B5589.title": "Sleep in a sleeping bag"
+	"task.58DD5EA285B0F658.title": "Craft a Jeweler's Kit"
 	"task.596DC54F8E8B4C28.title": "Carry the Frost Wizard tome"
 	"task.5A17672205BBB06F.title": "Cast any spell"
 	"task.5A9E4EB6DE763568.title": "All four pieces of the Aken Suit"
@@ -2384,6 +2379,7 @@
 	"task.5E5EA7FDE6112484.title": "Understood"
 	"task.5E7654375954BFB2.title": "Molten Heart"
 	"task.5FA87DC413C15E5B.title": "A legendary staff"
+	"task.5FCF6BA89B491997.title": "Have a Jeweler's Kit"
 	"task.5FD54099D5C15F75.title": "Find the Ruined Citadel"
 	"task.5FFB5CBEFE738732.title": "A legendary dagger or sickle"
 	"task.60353EFCB45D1EFE.title": "Enchant an item"
@@ -2391,6 +2387,7 @@
 	"task.6081A7051871246F.title": "Trade with a Jeweler"
 	"task.6121AE8F22D1ACB8.title": "All four pieces: Sentinel Archer Armor"
 	"task.61A2C6518D25F7B5.title": "All four pieces of the Wizard Robes"
+	"task.61AE23793EEF0A40.title": "Have a Socket Mount"
 	"task.625C6FE1226A036E.title": "A legendary heavy crossbow"
 	"task.634658D77B4E3B21.title": "A legendary staff"
 	"task.63ACE87DDCCF40F3.title": "Have a Sigil of Socketing"

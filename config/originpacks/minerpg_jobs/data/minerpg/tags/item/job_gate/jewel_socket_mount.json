@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "jewelry:socket_mount",
+      "required": false
+    }
+  ]
+}

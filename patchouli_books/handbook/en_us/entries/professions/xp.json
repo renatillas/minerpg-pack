@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(li)$(l)Smith$(): reforging, salvaging, socketing gems, smelting.$(li)$(l)Enchanter$(): enchanting, binding spells, cutting gems.$(li)$(l)Alchemist$(): brewing, runes, potion charms.$(li)$(l)Farmer$(): harvesting and cooking-pot meals.$(li)Miner, Digger, Lumberjack, Builder and Fisherman level from exactly what their name says."
+      "text": "$(li)$(l)Smith$(): reforging, salvaging, smelting.$(li)$(l)Enchanter$(): enchanting, binding spells.$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.$(li)$(l)Alchemist$(): brewing, runes, potion charms.$(li)$(l)Farmer$(): harvesting and cooking-pot meals.$(li)Miners level from stone and ores."
     }
   ]
 }

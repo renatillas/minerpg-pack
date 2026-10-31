@@ -1,0 +1,11 @@
+{
+  "job": "jobsplus:jeweler",
+  "name": "Job Experience II",
+  "description": "Multiply your job experience by 2x",
+  "icon": {
+    "id": "minecraft:experience_bottle"
+  },
+  "price": 8,
+  "required_level": 25,
+  "parent": "jobsplus:jeweler/job_exp_i"
+}

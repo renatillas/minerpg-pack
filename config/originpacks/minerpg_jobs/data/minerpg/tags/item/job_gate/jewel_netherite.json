@@ -1,0 +1,77 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "additional_rpg_jewelry:netherite_aquamarine_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_aquamarine_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_malachite_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_malachite_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_rage_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_rage_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_citrine_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_citrine_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_jade_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_jade_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_ruby_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_ruby_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_sapphire_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_sapphire_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_tanzanite_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_tanzanite_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_topaz_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:netherite_topaz_ring",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "additional_rpg_jewelry:aquamarine_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:aquamarine_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:malachite_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:malachite_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:citrine_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:citrine_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:gold_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:jade_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:jade_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:ruby_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:ruby_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:sapphire_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:sapphire_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:tanzanite_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:tanzanite_ring",
+      "required": false
+    },
+    {
+      "id": "jewelry:topaz_necklace",
+      "required": false
+    },
+    {
+      "id": "jewelry:topaz_ring",
+      "required": false
+    }
+  ]
+}

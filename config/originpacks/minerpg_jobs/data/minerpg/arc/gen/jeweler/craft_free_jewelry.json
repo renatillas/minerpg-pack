@@ -1,0 +1,28 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:jeweler"
+  },
+  "type": "arc:on_craft_item",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 3,
+      "max": 5
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "additional_rpg_jewelry:cactea_ring",
+        "additional_rpg_jewelry:dripstone_necklace",
+        "additional_rpg_jewelry:rage_necklace",
+        "additional_rpg_jewelry:rage_ring",
+        "jewelry:copper_ring",
+        "jewelry:iron_ring"
+      ]
+    }
+  ]
+}

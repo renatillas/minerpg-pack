@@ -10,7 +10,9 @@ jobs:
   max_jobs: 2147483647
   #A list of job IDs to exclude from the game. Example: ['jobsplus:miner', 'jobsplus:digger']
   #Default value: []
-  excluded_jobs: []
+  # minerpg: Builder, Digger, Fisherman and Lumberjack are switched off (designer, 2026-10-31); the Jeweler (our own
+  # job, config/originpacks/minerpg_jobs) takes their place.
+  excluded_jobs: ['jobsplus:builder', 'jobsplus:digger', 'jobsplus:fisherman', 'jobsplus:lumberjack']
   #The formula used to calculate experience required for the next level.
   #Default value: '100 + level * level * 0.5791'
   experience_formula: '100 + level * level * 0.5791'

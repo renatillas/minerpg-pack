@@ -231,9 +231,8 @@ E['professions'] = [
         text(f'Press {k("key.jobsplus.open_menu")} to open the Jobs menu and join two jobs. A job levels up '
              'from its own work and pays one $(item)job coin$() per level.$(br2)Spend coins in the same menu '
              'on power-ups, or on a third job.'),
-        text('The ten jobs: Alchemist, Builder, Digger, Enchanter, Farmer, Fisherman, Hunter, Lumberjack, '
-             'Miner and Smith.$(br2)Four of them also $(l)make$() things nobody else can: Smith, Hunter, '
-             'Enchanter and Alchemist.'),
+        text('The seven jobs: Alchemist, Enchanter, Farmer, Hunter, Jeweler, Miner and Smith.$(br2)Five of them '
+             'also $(l)make$() things nobody else can: Smith, Hunter, Enchanter, Jeweler and Alchemist.'),
     ]),
     ('gates', 'Crafting Gates', 'minecraft:anvil', [
         text('Class gear by tier:$(li)Tier 1 at job level 10$(li)Diamond tier 2 at 20$(li)Netherite tier 3 '
@@ -244,6 +243,9 @@ E['professions'] = [
              'shelves at 25, endshelves at 30.$(br)$(l)Alchemist$(): Strong and Long potions at 10, Splash '
              'at 15, Lingering at 20.$(br)$(l)Smith$() reforging: Rare at 10, Epic at 20, Mythic at 30.'
              '$(br2)Hover over an item to see who makes it.'),
+        text('$(l)Jeweler$(): gold and gem jewelry at 10, Socket Mounts at 15, diamond and emerald jewelry at '
+             '20, netherite jewelry at 25. Copper and iron rings are free.$(br2)The Jeweler villager sells rings '
+             'and necklaces, and dungeons hide them.'),
     ]),
     ('anyone', 'No Job? No Problem', 'minecraft:chest', [
         text('Gates only stop $(o)making$() things. Anyone can use, wear, repair and enchant them.$(br2)'
@@ -258,11 +260,12 @@ E['professions'] = [
              'and small quivers.'),
     ]),
     ('xp', 'Other Ways to Level', 'minecraft:experience_bottle', [
-        text('$(li)$(l)Smith$(): reforging, salvaging, socketing gems, smelting.'
-             '$(li)$(l)Enchanter$(): enchanting, binding spells, cutting gems.'
+        text('$(li)$(l)Smith$(): reforging, salvaging, smelting.'
+             '$(li)$(l)Enchanter$(): enchanting, binding spells.'
+             '$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.'
              '$(li)$(l)Alchemist$(): brewing, runes, potion charms.'
              '$(li)$(l)Farmer$(): harvesting and cooking-pot meals.'
-             '$(li)Miner, Digger, Lumberjack, Builder and Fisherman level from exactly what their name says.'),
+             '$(li)Miners level from stone and ores.'),
     ]),
 ]
 
@@ -367,8 +370,10 @@ E['loot'] = [
     ]),
     ('sockets', 'Sockets and Gems', 'apotheosis:gem', [
         text('Weapons, staves and wands can roll $(item)sockets$(). Put a gem in at a smithing table; a '
-             'Sigil of Socketing adds a socket. Armor has no sockets: for defensive gems, wear Jewelry rings '
-             'and necklaces.'),
+             'Sigil of Socketing adds a socket. Armor takes no Apotheosis gems.'),
+        text('Armor has its own $(item)jeweler\'s sockets$(): combine a piece with a Socket Mount at an anvil, '
+             'then with a gem cut at the Jeweler\'s Kit. One per piece.$(br2)Rings and necklaces carry gems '
+             'too.'),
         text('The $(item)Arcanist\'s Prism$() is a gem for staves and wands only: it adds spell power. Look '
              'for it in boss and dungeon loot.'),
     ]),

@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "jewelry:socket_mount",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/jewel_socket_mount"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:jeweler",
+      "level": 15,
+      "inverted": true
+    }
+  ]
+}

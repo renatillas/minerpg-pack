@@ -117,6 +117,60 @@
 		}
 		{
 			dependencies: [
+				"38D3B1761DE5579B"
+			]
+			id: "7F77AC6E99CF3DA3"
+			rewards: [
+				{
+					count: 2
+					id: "515D0213234A551F"
+					item: {
+						count: 1
+						id: "jewelry:ruby"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:guide/jewelers_kit"
+					criterion: ""
+					id: "5FCF6BA89B491997"
+					type: "advancement"
+				}
+			]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"7F77AC6E99CF3DA3"
+			]
+			id: "284B33294DEB1EE1"
+			rewards: [
+				{
+					count: 1
+					id: "5DDFAD5C44555C71"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:guide/socket_mount"
+					criterion: ""
+					id: "61AE23793EEF0A40"
+					type: "advancement"
+				}
+			]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
 				"318F3444CB533462"
 				"14C07E14E60A6AAE"
 			]

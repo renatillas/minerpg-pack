@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The ten jobs: Alchemist, Builder, Digger, Enchanter, Farmer, Fisherman, Hunter, Lumberjack, Miner and Smith.$(br2)Four of them also $(l)make$() things nobody else can: Smith, Hunter, Enchanter and Alchemist."
+      "text": "The seven jobs: Alchemist, Enchanter, Farmer, Hunter, Jeweler, Miner and Smith.$(br2)Five of them also $(l)make$() things nobody else can: Smith, Hunter, Enchanter, Jeweler and Alchemist."
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "name": "Jeweler",
+  "price": 10,
+  "max_level": 100,
+  "color": "#40C0B0",
+  "icon": {
+    "id": "jewelry:jewelers_kit"
+  },
+  "description": "Jewelers craft rings and necklaces, cut gems and set them into gear. The higher the level, the finer the jewelry and the more gems a vein gives up.",
+  "background": "minecraft:textures/block/amethyst_block.png",
+  "is_default": false
+}

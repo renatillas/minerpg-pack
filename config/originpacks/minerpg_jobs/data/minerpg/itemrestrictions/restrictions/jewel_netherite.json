@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "jewelry:netherite_ruby_ring",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/jewel_netherite"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:jeweler",
+      "level": 25,
+      "inverted": true
+    }
+  ]
+}

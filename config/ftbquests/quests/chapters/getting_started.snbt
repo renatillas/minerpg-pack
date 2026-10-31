@@ -714,86 +714,6 @@
 			dependencies: [
 				"5D0D3E3C2B3C0A65"
 			]
-			id: "7107848BAFC6BF09"
-			rewards: [
-				{
-					count: 32
-					id: "131C52740391548A"
-					item: {
-						count: 1
-						id: "minecraft:stone_bricks"
-					}
-					type: "item"
-				}
-				{
-					id: "198AE49AFB70C85E"
-					type: "xp"
-					xp: 10
-				}
-				{
-					command: "/minerpg_jobs coins @s 1"
-					id: "33FB333E8927E6D3"
-					permission_level: 2
-					silent: true
-					type: "command"
-				}
-			]
-			shape: "circle"
-			tasks: [
-				{
-					advancement: "minerpg:jobs/builder"
-					criterion: ""
-					id: "48D711FD6A2A126F"
-					type: "advancement"
-				}
-			]
-			x: -10.5d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"5D0D3E3C2B3C0A65"
-			]
-			id: "4C685D602A4CCFA3"
-			rewards: [
-				{
-					count: 1
-					id: "41A709191989248E"
-					item: {
-						count: 1
-						id: "minecraft:iron_shovel"
-					}
-					type: "item"
-				}
-				{
-					id: "6D6924F657CE56C8"
-					type: "xp"
-					xp: 10
-				}
-				{
-					command: "/minerpg_jobs coins @s 1"
-					id: "49356BB66F0DD4F5"
-					permission_level: 2
-					silent: true
-					type: "command"
-				}
-			]
-			shape: "circle"
-			tasks: [
-				{
-					advancement: "minerpg:jobs/digger"
-					criterion: ""
-					id: "47A5DCB513B389C1"
-					type: "advancement"
-				}
-			]
-			x: -9.0d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"5D0D3E3C2B3C0A65"
-			]
 			id: "6C811E0AFCFDD19B"
 			rewards: [
 				{
@@ -827,7 +747,7 @@
 					type: "advancement"
 				}
 			]
-			x: -7.5d
+			x: -10.5d
 			y: -1.5d
 		}
 		{
@@ -870,48 +790,8 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
+			x: -9.0d
 			y: -1.5d
-		}
-		{
-			dependencies: [
-				"5D0D3E3C2B3C0A65"
-			]
-			id: "7921983A422C6876"
-			rewards: [
-				{
-					count: 8
-					id: "3A59908AB929DC55"
-					item: {
-						count: 1
-						id: "minecraft:cooked_cod"
-					}
-					type: "item"
-				}
-				{
-					id: "66E12A4783D5CF3A"
-					type: "xp"
-					xp: 10
-				}
-				{
-					command: "/minerpg_jobs coins @s 1"
-					id: "781A21659CF60D37"
-					permission_level: 2
-					silent: true
-					type: "command"
-				}
-			]
-			shape: "circle"
-			tasks: [
-				{
-					advancement: "minecraft:husbandry/fishy_business"
-					criterion: ""
-					id: "317DA35032DCB837"
-					type: "advancement"
-				}
-			]
-			x: -12.0d
-			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -953,32 +833,32 @@
 					type: "item"
 				}
 			]
-			x: -10.5d
-			y: 1.5d
+			x: -7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
 				"5D0D3E3C2B3C0A65"
 			]
-			id: "73292E754A800B8D"
+			id: "2260673C6A9418B8"
 			rewards: [
 				{
-					count: 1
-					id: "219671AB3DFDD617"
+					count: 6
+					id: "10498770D8F20D9B"
 					item: {
 						count: 1
-						id: "minecraft:iron_axe"
+						id: "minecraft:gold_ingot"
 					}
 					type: "item"
 				}
 				{
-					id: "3549C1BAFAB7AC13"
+					id: "477A76CFFE3B51DD"
 					type: "xp"
 					xp: 10
 				}
 				{
 					command: "/minerpg_jobs coins @s 1"
-					id: "6CE206584960C6CF"
+					id: "48E7B9FE10C30A65"
 					permission_level: 2
 					silent: true
 					type: "command"
@@ -987,14 +867,16 @@
 			shape: "circle"
 			tasks: [
 				{
-					advancement: "minerpg:jobs/lumberjack"
-					criterion: ""
-					id: "3811AA5D0322C05E"
-					type: "advancement"
+					id: "58DD5EA285B0F658"
+					item: {
+						count: 1
+						id: "jewelry:jewelers_kit"
+					}
+					type: "item"
 				}
 			]
-			x: -9.0d
-			y: 1.5d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1036,7 +918,7 @@
 					type: "item"
 				}
 			]
-			x: -7.5d
+			x: -12.0d
 			y: 1.5d
 		}
 		{
@@ -1076,7 +958,7 @@
 					type: "advancement"
 				}
 			]
-			x: -6.0d
+			x: -10.5d
 			y: 1.5d
 		}
 	]

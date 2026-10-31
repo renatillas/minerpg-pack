@@ -1,20 +1,20 @@
 {
   "holder": {
     "type": "jobsplus:job",
-    "id": "jobsplus:lumberjack"
+    "id": "jobsplus:jeweler"
   },
   "type": "jobsplus:on_job_level_up",
   "rewards": [
     {
       "type": "arc:command",
-      "command": "minerpg_jobs grant %player% minerpg:jobs/level_20"
+      "command": "minerpg_jobs grant %player% minerpg:jobs/level_10"
     }
   ],
   "conditions": [
     {
       "type": "jobsplus:job_level",
-      "job": "jobsplus:lumberjack",
-      "level": 20
+      "job": "jobsplus:jeweler",
+      "level": 10
     }
   ]
 }

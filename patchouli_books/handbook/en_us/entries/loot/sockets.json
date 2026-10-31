@@ -6,7 +6,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Weapons, staves and wands can roll $(item)sockets$(). Put a gem in at a smithing table; a Sigil of Socketing adds a socket. Armor has no sockets: for defensive gems, wear Jewelry rings and necklaces."
+      "text": "Weapons, staves and wands can roll $(item)sockets$(). Put a gem in at a smithing table; a Sigil of Socketing adds a socket. Armor takes no Apotheosis gems."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Armor has its own $(item)jeweler's sockets$(): combine a piece with a Socket Mount at an anvil, then with a gem cut at the Jeweler's Kit. One per piece.$(br2)Rings and necklaces carry gems too."
     },
     {
       "type": "patchouli:text",

@@ -7,9 +7,10 @@
 // This script:
 //   - /minerpg_jobs command: add job coins or job XP (Jobs+'s own /job command can only *set*
 //     values), and silently grant an advancement (used by the generated Arc actions);
-//   - job XP for RPG activities that have no Arc action: Apotheosis reforging, salvaging and
-//     socketing (Smith); Spell Binding Table binds and spell book creation, Jewelry gem cutting
-//     (Enchanter); Farmer's Delight cooking pot meals (Farmer);
+//   - job XP for RPG activities that have no Arc action: Apotheosis reforging and salvaging
+//     (Smith); Spell Binding Table binds and spell book creation (Enchanter); gem cutting at the
+//     Jeweler's Kit and the Apotheosis Gem Cutting Table, Apotheosis socketing and sigils, and
+//     Socket Mounts and cut gems set at the anvil (Jeweler); cooking pot meals (Farmer);
 //   - Hunter skinning: XP for hides, bones and monster parts a Hunter's kills drop, plus extra
 //     yield and rare parts by Hunter level;
 //   - the reforging gate: reforging to Rare / Epic / Mythic needs Smith 10 / 20 / 30;
@@ -28,6 +29,11 @@ const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager')
 const $ReforgingMenu = Java.loadClass('dev.shadowsoffire.apotheosis.affix.reforging.ReforgingMenu')
 const $SalvagingMenu = Java.loadClass('dev.shadowsoffire.apotheosis.affix.salvaging.SalvagingMenu')
 const $GemCuttingMenu = Java.loadClass('net.jewelry.gems.GemCuttingScreenHandler')
+const $ApoGemCuttingMenu = Java.loadClass('dev.shadowsoffire.apotheosis.socket.gem.cutting.GemCuttingMenu')
+const $AnvilRepairEvent = Java.loadClass('net.neoforged.neoforge.event.entity.player.AnvilRepairEvent')
+const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
+const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
+const JEWELRY_GEMS = $TagKey.create($Registries.ITEM, $ResourceLocation.parse('jewelry:gems'))
 const $CookingPotMenu = Java.loadClass('vectorwing.farmersdelight.common.block.entity.container.CookingPotMenu')
 // Note: loading CookingPotMenu on a dedicated server logs one harmless "invalid dist" error for
 // net/minecraft/client/RecipeBookCategories (it is a recipe-book menu). Any script that reads a
@@ -49,14 +55,17 @@ const RARITY_BY_MATERIAL = {
 const REFORGE_LEVEL = { Common: 0, Uncommon: 0, Rare: 10, Epic: 20, Mythic: 30 } // Smith level needed
 const REFORGE_XP = { Common: 8, Uncommon: 12, Rare: 18, Epic: 28, Mythic: 40 }
 const SALVAGE_XP = 5 // Smith, per item salvaged
-const GEM_CUT_XP = 15 // Enchanter, per gem cut
+const GEM_CUT_XP = 15 // Jeweler, per gem cut at the Jeweler's Kit
+const GEM_UPGRADE_XP = 20 // Jeweler, per gem raised a purity at the Apotheosis Gem Cutting Table
+const MOUNT_XP = 15 // Jeweler, per Socket Mount fixed to armor at the anvil
+const SET_GEM_XP = 20 // Jeweler, per cut gem set into a socket at the anvil
 const MEAL_XP = 3 // Farmer, per cooking pot meal
 // Repeatable advancements (config/originpacks/minerpg_jobs/data/minerpg/advancement/jobs_xp/).
 const ADVANCEMENT_XP = {
   'minerpg:jobs_xp/spell_bind': ['enchanter', 30, 'spell bound'],
   'minerpg:jobs_xp/spell_book': ['enchanter', 40, 'spell book made'],
-  'minerpg:jobs_xp/socket_gem': ['smith', 15, 'gem socketed'],
-  'minerpg:jobs_xp/add_socket': ['smith', 20, 'socket added'],
+  'minerpg:jobs_xp/socket_gem': ['jeweler', 15, 'gem socketed'],
+  'minerpg:jobs_xp/add_socket': ['jeweler', 20, 'socket added'],
 }
 // Hunter skinning: XP per material item a Hunter's kill drops.
 const SKIN_XP = {
@@ -100,8 +109,8 @@ const MERCHANT_VILLAGER_XP = 10
 // Jobs+ helpers
 // ---------------------------------------------------------------------------------------
 const JOB_NAMES = {
-  alchemist: 'Alchemist', builder: 'Builder', digger: 'Digger', enchanter: 'Enchanter', farmer: 'Farmer',
-  fisherman: 'Fisherman', hunter: 'Hunter', lumberjack: 'Lumberjack', miner: 'Miner', smith: 'Smith',
+  alchemist: 'Alchemist', enchanter: 'Enchanter', farmer: 'Farmer', hunter: 'Hunter', jeweler: 'Jeweler',
+  miner: 'Miner', smith: 'Smith',
 }
 
 // The player's Job object for a job id like 'smith', or null if they don't have that job.
@@ -253,6 +262,21 @@ function salvageTick(player, menu, state) {
   state.outputs = outputs
 }
 
+// Apotheosis Gem Cutting Table: slot 0 = the gem being raised, 1-3 = the second gem, gem dust and
+// the purity material. A cut uses up slots 1-3 and replaces the gem in slot 0 with the next purity in
+// the same tick, so: inputs went down while slot 0 held a gem before and after, now a different one.
+function apoCutTick(player, menu, state) {
+  const base = menu.getSlot(0).getItem().copy()
+  let inputs = 0
+  for (let i = 1; i < 4; i++) inputs += slotCount(menu, i)
+  if (state.base != null && !state.base.isEmpty() && !base.isEmpty() && inputs < state.inputs
+      && !$ItemStack.isSameItemSameComponents(base, state.base)) {
+    giveJobXp(player, 'jeweler', GEM_UPGRADE_XP, 'gem purity raised')
+  }
+  state.base = base
+  state.inputs = inputs
+}
+
 // Gem cutting (Jewelry) and the cooking pot: count how many of the result (same item, same
 // cut/components) the player holds, in the inventory or on the cursor. When that number goes up
 // while the station is open, the player took results out of it. (Neither station fires an event,
@@ -287,6 +311,7 @@ PlayerEvents.tick(event => {
   if (menu instanceof $ReforgingMenu) kind = 'reforge'
   else if (menu instanceof $SalvagingMenu) kind = 'salvage'
   else if (menu instanceof $GemCuttingMenu) kind = 'gem'
+  else if (menu instanceof $ApoGemCuttingMenu) kind = 'apo_gem'
   else if (menu instanceof $CookingPotMenu) kind = 'pot'
   if (kind == null) {
     if (watch[key]) delete watch[key]
@@ -301,7 +326,8 @@ PlayerEvents.tick(event => {
   try {
     if (kind == 'reforge') reforgeTick(player, menu, state)
     else if (kind == 'salvage') salvageTick(player, menu, state)
-    else if (kind == 'gem') craftedTick(player, menu, state, 1, 'enchanter', GEM_CUT_XP, 'gem(s) cut')
+    else if (kind == 'gem') craftedTick(player, menu, state, 1, 'jeweler', GEM_CUT_XP, 'gem(s) cut')
+    else if (kind == 'apo_gem') apoCutTick(player, menu, state)
     else craftedTick(player, menu, state, 8, 'farmer', MEAL_XP, 'meal(s) cooked')
   } catch (e) {
     console.error(`[minerpg] jobs watcher (${kind}) failed: ${e}`)
@@ -310,6 +336,19 @@ PlayerEvents.tick(event => {
 })
 
 PlayerEvents.loggedOut(event => { delete watch[String(event.player.getGameProfile().getId())] })
+
+// Jewelry sockets at the anvil (taking the result fires NeoForge's AnvilRepairEvent): armor + Socket
+// Mount fixes a socket, armor + cut gem sets the gem.
+NativeEvents.onEvent($AnvilRepairEvent, event => {
+  try {
+    const right = event.getRight()
+    if (right.isEmpty()) return
+    if (itemId(right) == 'jewelry:socket_mount') giveJobXp(event.getEntity(), 'jeweler', MOUNT_XP, 'socket mounted')
+    else if (right.is(JEWELRY_GEMS)) giveJobXp(event.getEntity(), 'jeweler', SET_GEM_XP, 'gem set')
+  } catch (e) {
+    console.error(`[minerpg] jobs anvil socketing failed: ${e}`)
+  }
+})
 
 // ---------------------------------------------------------------------------------------
 // Hunter = Skinning (designer revision). Plain kills give no Hunter XP (the Jobs+ "kill any mob"

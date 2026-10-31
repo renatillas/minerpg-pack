@@ -134,10 +134,50 @@ LEATHER_GOODS = ['minecraft:leather', 'minecraft:leather_helmet', 'minecraft:lea
                  'minecraft:saddle', 'minecraft:bundle', 'minecraft:item_frame', 'archers:small_quiver']
 LEATHER_XP = (3, 5)
 
+# Jeweler (designer, 2026-10-31): a job of our own (Jobs+ jobs are data), owning jewelry crafting, Jewelry gem
+# cutting and sockets, and Apotheosis gems (cutting, socketing, sigils). Its XP for work no Arc action sees is in
+# minerpg_jobs.js. Builder, Digger, Fisherman and Lumberjack are switched off in config/jobsplus-common.yaml.
+# Jewelry is tiered by its recipe: netherite ingot -> netherite, diamond or emerald -> diamond, gold -> gold, the
+# rest (copper, iron, cactus, bone, dripstone) is free. Jeweler villagers and dungeon loot are the alternatives.
+JEWEL_MODS = ('jewelry', 'additional_rpg_jewelry')
+JEWEL_TIERS = [
+    # tier key, required level, title, ingredients that put a recipe in the tier (first match wins), icon
+    ('jewel_netherite', 25, 'netherite jewelry', ['minecraft:netherite_ingot'], 'jewelry:netherite_ruby_ring'),
+    ('jewel_diamond', 20, 'diamond and emerald jewelry', ['minecraft:diamond', 'minecraft:emerald'], 'jewelry:diamond_necklace'),
+    ('jewel_gold', 10, 'gold and gem jewelry', ['minecraft:gold_ingot', 'minecraft:gold_nugget'], 'jewelry:ruby_ring'),
+]
+JEWEL_NOT_JEWELRY = ['jewelry:jewelers_kit', 'jewelry:socket_mount']
+SOCKET_MOUNT_LEVEL = 15
+CRAFT_BONUS.update({'jewel_gold': (8, 12), 'jewel_diamond': (15, 20), 'jewel_netherite': (25, 30),
+                    'jewel_socket_mount': (15, 20)})
+FREE_JEWELRY_XP = (3, 5)
+JEWELER_JOB = {
+    'name': 'Jeweler',
+    'price': 10,
+    'max_level': 100,
+    'color': '#40C0B0',
+    'icon': {'id': 'jewelry:jewelers_kit'},
+    'description': 'Jewelers craft rings and necklaces, cut gems and set them into gear. The higher the level, the '
+                   'finer the jewelry and the more gems a vein gives up.',
+    'background': 'minecraft:textures/block/amethyst_block.png',
+    'is_default': False,
+}
+GEM_VEINS = ['jewelry:gem_vein', 'jewelry:deepslate_gem_vein']
+# Power-ups, the same shape and prices as Jobs+'s own: (id, parent, name, description, icon, price, level).
+JEWELER_POWERUPS = [
+    ('gem_finder_i', None, 'Gem Finder I', 'Grants a 15% chance to get double gems from gem veins.', 'jewelry:ruby', 5, 10),
+    ('gem_finder_ii', 'gem_finder_i', 'Gem Finder II', 'Grants a 30% chance to get double gems from gem veins.', 'jewelry:sapphire', 10, 25),
+    ('gem_finder_iii', 'gem_finder_ii', 'Gem Finder III', 'Grants a 50% chance to get double gems from gem veins.', 'jewelry:tanzanite', 15, 50),
+    ('job_exp_i', None, 'Job Experience I', 'Multiply your job experience by 1.5x', 'minecraft:experience_bottle', 5, 15),
+    ('job_exp_ii', 'job_exp_i', 'Job Experience II', 'Multiply your job experience by 2x', 'minecraft:experience_bottle', 8, 25),
+    ('job_exp_iii', 'job_exp_ii', 'Job Experience III', 'Multiply your job experience by 3x', 'minecraft:experience_bottle', 12, 40),
+]
+GEM_FINDER_CHANCE = {'gem_finder_i': 15, 'gem_finder_ii': 30, 'gem_finder_iii': 50}
+JOB_EXP_MULTIPLIER = {'job_exp_i': 1.5, 'job_exp_ii': 2, 'job_exp_iii': 3}
+
 # Job level milestones for the quest book ("reach level N in any job").
 MILESTONES = [10, 20, 30]
-JOBS = ['alchemist', 'builder', 'digger', 'enchanter', 'farmer', 'fisherman', 'hunter',
-        'lumberjack', 'miner', 'smith']
+JOBS = ['alchemist', 'enchanter', 'farmer', 'hunter', 'jeweler', 'miner', 'smith']
 
 # Repeatable advancements: KubeJS gives job XP and revokes them so they fire again.
 XP_ADVANCEMENTS = {
@@ -238,6 +278,59 @@ def armory_items(mods):
     return sorted(found)
 
 
+def jewelry_tiers(mods):
+    """Crafted jewelry by tier key ('free' for ungated), from the Jewelry mods' crafting recipes."""
+    out = {}
+    for jar in glob.glob(os.path.join(mods, '*.jar')):
+        with zipfile.ZipFile(jar) as z:
+            for name in z.namelist():
+                parts = name.split('/')
+                if len(parts) != 4 or parts[0] != 'data' or parts[1] not in JEWEL_MODS or parts[2] != 'recipe' \
+                        or not name.endswith('.json'):
+                    continue
+                d = json.loads(z.read(name))
+                # Conditional recipes need mods this pack doesn't have (Witcher RPG silver and steel).
+                if d.get('type') != 'minecraft:crafting_shaped' or 'neoforge:conditions' in d:
+                    continue
+                result = d['result']['id']
+                if result in JEWEL_NOT_JEWELRY:
+                    continue
+                ingredients = {v.get('item') for v in d['key'].values() if isinstance(v, dict)}
+                tier = next((key for key, _, _, needs, _ in JEWEL_TIERS if ingredients & set(needs)), 'free')
+                out.setdefault(tier, set()).add(result)
+    return {k: sorted(v) for k, v in out.items()}
+
+
+def write_jeweler_job():
+    """The Jeweler job, its power-ups and their Arc actions (Jobs+ reads jobs from data/jobsplus/jobsplus/)."""
+    base = os.path.join(ROOT, 'config', 'originpacks', 'minerpg_jobs', 'data', 'jobsplus')
+    reset(os.path.join(base, 'jobsplus', 'powerups', 'jeweler'))
+    reset(os.path.join(base, 'arc', 'jeweler'))
+    write(os.path.join(base, 'jobsplus', 'jobs', 'jeweler.json'), JEWELER_JOB)
+    for key, parent, name, description, icon, price, level in JEWELER_POWERUPS:
+        powerup = {'job': 'jobsplus:jeweler', 'name': name, 'description': description, 'icon': {'id': icon},
+                   'price': price, 'required_level': level}
+        if parent:
+            powerup['parent'] = f'jobsplus:jeweler/{parent}'
+        write(os.path.join(base, 'jobsplus', 'powerups', 'jeweler', key + '.json'), powerup)
+        # Only the highest tier bought applies (Jobs+'s own pattern).
+        family = key.rsplit('_', 1)[0]
+        higher = [k for k, *_ in JEWELER_POWERUPS if k.startswith(family) and len(k) > len(key)]
+        not_higher = [{'type': 'jobsplus:powerup_not_active', 'powerup': f'jobsplus:jeweler/{k}'} for k in higher]
+        if family == 'gem_finder':
+            action = {'type': 'arc:on_break_block',
+                      'rewards': [{'type': 'arc:block_drop_multiplier', 'chance': GEM_FINDER_CHANCE[key], 'multiplier': 2}],
+                      'conditions': [{'type': 'arc:blocks', 'blocks': GEM_VEINS}, {'type': 'arc:not_in_block_pos_cache'}]}
+        else:
+            action = {'type': 'jobsplus:on_job_exp',
+                      'rewards': [{'type': 'jobsplus:job_exp_multiplier', 'job': 'jobsplus:jeweler',
+                                   'multiplier': JOB_EXP_MULTIPLIER[key]}],
+                      'conditions': []}
+        action['conditions'] += not_higher
+        write(os.path.join(base, 'arc', 'jeweler', 'powerup', key + '.json'),
+              {'holder': {'type': 'jobsplus:powerup', 'id': f'jobsplus:jeweler/{key}'}, **action})
+
+
 def restriction(job, level, types, item_condition, icon):
     return {
         'icon': icon,
@@ -274,6 +367,13 @@ def build(server):
                 gates.append((job, f'gear_{grp}_{tier}', level, items, icons[grp], CRAFT_BONUS[tier]))
     for key, level, title, items, icon in ENCHANTER_GATES:
         gates.append(('enchanter', key, level, items, icon, CRAFT_BONUS[key]))
+    jewelry = jewelry_tiers(os.path.join(server, 'mods'))
+    for key, level, title, needs, icon in JEWEL_TIERS:
+        if not jewelry.get(key):
+            raise SystemExit(f'no {title} found')
+        gates.append(('jeweler', key, level, jewelry[key], icon, CRAFT_BONUS[key]))
+    gates.append(('jeweler', 'jewel_socket_mount', SOCKET_MOUNT_LEVEL, ['jewelry:socket_mount'], 'jewelry:socket_mount',
+                  CRAFT_BONUS['jewel_socket_mount']))
     for job, key, level, values, icon, bonus in gates:
         write(os.path.join(tag_dir, key + '.json'), {
             'replace': False, 'values': [{'id': v, 'required': False} for v in values]})
@@ -338,6 +438,15 @@ def build(server):
         'conditions': [{'type': 'arc:items', 'items': LEATHER_GOODS}],
     })
 
+    # Jeweler: the job itself, and XP for ungated jewelry (so a new Jeweler can start).
+    write_jeweler_job()
+    write(os.path.join(arc, 'jeweler', 'craft_free_jewelry.json'), {
+        'holder': holder('jeweler'),
+        'type': 'arc:on_craft_item',
+        'rewards': [job_exp(*FREE_JEWELRY_XP)],
+        'conditions': [{'type': 'arc:items', 'items': jewelry.get('free', [])}],
+    })
+
     # Level milestones (quest book): any job reaching N grants minerpg:jobs/level_N.
     for job in JOBS:
         for level in MILESTONES:
@@ -352,6 +461,7 @@ def build(server):
         write(os.path.join(PACK, 'advancement', 'jobs_xp', key + '.json'), {'criteria': criteria})
 
     print(f'{count} item restrictions, ' + ', '.join(f'{k[1]} {k[0]}: {len(v)}' for k, v in sorted(gear.items())) + ', '
+          + ', '.join(f'{k}: {len(v)}' for k, v in sorted(jewelry.items())) + ', '
           f'{len(JOBS) * len(MILESTONES)} milestone actions, {len(XP_ADVANCEMENTS)} XP advancements')
 
 

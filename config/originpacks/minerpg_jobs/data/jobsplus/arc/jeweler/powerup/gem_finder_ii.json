@@ -1,0 +1,30 @@
+{
+  "holder": {
+    "type": "jobsplus:powerup",
+    "id": "jobsplus:jeweler/gem_finder_ii"
+  },
+  "type": "arc:on_break_block",
+  "rewards": [
+    {
+      "type": "arc:block_drop_multiplier",
+      "chance": 30,
+      "multiplier": 2
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:blocks",
+      "blocks": [
+        "jewelry:gem_vein",
+        "jewelry:deepslate_gem_vein"
+      ]
+    },
+    {
+      "type": "arc:not_in_block_pos_cache"
+    },
+    {
+      "type": "jobsplus:powerup_not_active",
+      "powerup": "jobsplus:jeweler/gem_finder_iii"
+    }
+  ]
+}
