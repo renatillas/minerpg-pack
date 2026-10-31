@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arsenal:unique_heavy_crossbow_1",
+              "arsenal:unique_heavy_crossbow_2",
+              "arsenal:unique_heavy_crossbow_sw"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

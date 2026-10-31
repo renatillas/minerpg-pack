@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wizards:frost_robe_head"
+            ]
+          },
+          {
+            "items": [
+              "wizards:frost_robe_chest"
+            ]
+          },
+          {
+            "items": [
+              "wizards:frost_robe_legs"
+            ]
+          },
+          {
+            "items": [
+              "wizards:frost_robe_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

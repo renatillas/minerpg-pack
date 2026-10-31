@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archers_expansion:netherite_tundra_hunter_head"
+            ]
+          },
+          {
+            "items": [
+              "archers_expansion:netherite_tundra_hunter_chest"
+            ]
+          },
+          {
+            "items": [
+              "archers_expansion:netherite_tundra_hunter_legs"
+            ]
+          },
+          {
+            "items": [
+              "archers_expansion:netherite_tundra_hunter_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

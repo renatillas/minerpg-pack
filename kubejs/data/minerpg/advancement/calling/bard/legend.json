@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bards_rpg:unique_rapier_0",
+              "bards_rpg:unique_rapier_1",
+              "bards_rpg:unique_lute_0",
+              "bards_rpg:unique_lute_1",
+              "bards_rpg:unique_lyre_0",
+              "bards_rpg:unique_lyre_1",
+              "bards_rpg:unique_harp_crossbow_0",
+              "bards_rpg:unique_harp_crossbow_1",
+              "bards_rpg:elder_guardian_harp_crossbow"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

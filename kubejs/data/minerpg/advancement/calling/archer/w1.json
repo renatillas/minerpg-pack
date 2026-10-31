@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archers:composite_longbow",
+              "archers:iron_spear"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

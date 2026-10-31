@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rogues:iron_dagger",
+              "rogues:iron_sickle"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

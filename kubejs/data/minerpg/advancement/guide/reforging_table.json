@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "apotheosis:reforging_table",
+              "apotheosis:simple_reforging_table"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

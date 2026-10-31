@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "berserker_rpg:unique_berserker_axe_1",
+              "berserker_rpg:unique_berserker_axe_2",
+              "berserker_rpg:unique_sword_1"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

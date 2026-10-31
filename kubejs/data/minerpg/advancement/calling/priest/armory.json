@@ -1,0 +1,64 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armory_rpgs:avatar_robe_head"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:avatar_robe_chest"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:avatar_robe_legs"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:avatar_robe_feet"
+            ]
+          }
+        ]
+      }
+    },
+    "set_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armory_rpgs:absolution_robe_head"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:absolution_robe_chest"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:absolution_robe_legs"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:absolution_robe_feet"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "set_0",
+      "set_1"
+    ]
+  ]
+}

@@ -1,0 +1,4885 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "your_calling"
+	group: ""
+	icon: {
+		id: "spell_engine:spell_book"
+	}
+	id: "34C6DF4BC6510263"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "744C9A9A39A3F946"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "349EE7DFE56F235B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/arcane_wizard/start"
+					criterion: ""
+					id: "7DD3D5D846ECF6E9"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"744C9A9A39A3F946"
+			]
+			hide_until_deps_visible: true
+			id: "6E1A5C775EB148AF"
+			rewards: [
+				{
+					count: 8
+					id: "34945DECE1B5BF23"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "47CA7F2614946047"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/arcane_wizard/w1"
+					criterion: ""
+					id: "77D40FBC1D59B623"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6E1A5C775EB148AF"
+			]
+			hide_until_deps_visible: true
+			id: "2ED6CFFFB9CFB608"
+			rewards: [
+				{
+					count: 3
+					id: "1C35FA787F267CC9"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "5DC962B2617698F7"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/arcane_wizard/s1"
+					criterion: ""
+					id: "6C672C79CB6CFD58"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2ED6CFFFB9CFB608"
+			]
+			hide_until_deps_visible: true
+			id: "1EAEF213F834998A"
+			rewards: [
+				{
+					count: 2
+					id: "748FA041369B525D"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/arcane_wizard/w2"
+					criterion: ""
+					id: "19EFF35B2AA88F55"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EAEF213F834998A"
+			]
+			hide_until_deps_visible: true
+			id: "2803A79AF0532E3A"
+			rewards: [
+				{
+					count: 1
+					id: "512A401ADAA9A639"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "7413ED8BCC0BCF88"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/arcane_wizard/s2"
+					criterion: ""
+					id: "2236B86956DE6E86"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2803A79AF0532E3A"
+			]
+			hide_until_deps_visible: true
+			id: "4BF5A1C09B254878"
+			rewards: [
+				{
+					count: 1
+					id: "53F2DDE6EE878498"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/arcane_wizard/w3"
+					criterion: ""
+					id: "1E4DA2BEB0890FE2"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4BF5A1C09B254878"
+			]
+			hide_until_deps_visible: true
+			id: "2241FB6771756DF2"
+			rewards: [
+				{
+					id: "772F034BF4B6911B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "15D869B45B5A7887"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "57A044746826DFBB"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/arcane_wizard/s3"
+					criterion: ""
+					id: "23A606C92A5DCB76"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2241FB6771756DF2"
+			]
+			hide_until_deps_visible: true
+			id: "1EFCB5B3F1DBD384"
+			rewards: [
+				{
+					id: "29494A5EB5705539"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "7D32940FB25896AD"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/arcane_wizard/armory"
+					criterion: ""
+					id: "50863D2F0595B8EF"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4BF5A1C09B254878"
+			]
+			hide_until_deps_visible: true
+			id: "5020B4D3ABB2CDA3"
+			optional: true
+			rewards: [
+				{
+					id: "695A3E1223F65543"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/arcane_wizard/legend"
+					criterion: ""
+					id: "7B8D10ABEEE96C85"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 0.9d
+		}
+		{
+			id: "10865476522F9C8E"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "3C84234E8EB87632"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/fire_wizard/start"
+					criterion: ""
+					id: "555458FC8B1D402B"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"10865476522F9C8E"
+			]
+			hide_until_deps_visible: true
+			id: "42848C2DC0442303"
+			rewards: [
+				{
+					count: 8
+					id: "14C8FB1E6FD9061C"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "6B7EF423111D8CE7"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/fire_wizard/w1"
+					criterion: ""
+					id: "3192298D58C0B42A"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"42848C2DC0442303"
+			]
+			hide_until_deps_visible: true
+			id: "5B1A567C94A344A2"
+			rewards: [
+				{
+					count: 3
+					id: "521E42AE55F6E331"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "2C5AC2CE0F37B5A9"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/fire_wizard/s1"
+					criterion: ""
+					id: "61A2C6518D25F7B5"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5B1A567C94A344A2"
+			]
+			hide_until_deps_visible: true
+			id: "6506B3C1E758C6DD"
+			rewards: [
+				{
+					count: 2
+					id: "7B0132888F772025"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/fire_wizard/w2"
+					criterion: ""
+					id: "158D6666B09256E0"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6506B3C1E758C6DD"
+			]
+			hide_until_deps_visible: true
+			id: "160DA70F74EDD430"
+			rewards: [
+				{
+					count: 1
+					id: "24EF885C08062B64"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "11CA94FAFFB03D0D"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/fire_wizard/s2"
+					criterion: ""
+					id: "6E988881316AD759"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"160DA70F74EDD430"
+			]
+			hide_until_deps_visible: true
+			id: "63B19A0EE3936240"
+			rewards: [
+				{
+					count: 1
+					id: "5C73AC7EAC91BD05"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/fire_wizard/w3"
+					criterion: ""
+					id: "78C714AB1D8D019B"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"63B19A0EE3936240"
+			]
+			hide_until_deps_visible: true
+			id: "135B76B18CB805D2"
+			rewards: [
+				{
+					id: "1E81FF34ECD9E925"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "4119281F32AA11EF"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "463A92D2B4028300"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/fire_wizard/s3"
+					criterion: ""
+					id: "5795E13D9675CB68"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"135B76B18CB805D2"
+			]
+			hide_until_deps_visible: true
+			id: "7E6A8B47D8CA49CC"
+			rewards: [
+				{
+					id: "3F766F68D8E6BFE5"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "4F45AD956CC9A0ED"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/fire_wizard/armory"
+					criterion: ""
+					id: "170C051E8B051A76"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"63B19A0EE3936240"
+			]
+			hide_until_deps_visible: true
+			id: "42BD9CB7ADE4FA0A"
+			optional: true
+			rewards: [
+				{
+					id: "1DB5304A65082E24"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/fire_wizard/legend"
+					criterion: ""
+					id: "1038D41B5D544874"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 2.4d
+		}
+		{
+			id: "6381D7FB4BA49469"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "4A0A4E5801EAF4C3"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/frost_wizard/start"
+					criterion: ""
+					id: "596DC54F8E8B4C28"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6381D7FB4BA49469"
+			]
+			hide_until_deps_visible: true
+			id: "2A77503D5F21B68C"
+			rewards: [
+				{
+					count: 8
+					id: "4CCA0F33EB71C55B"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "12123683455A122A"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/frost_wizard/w1"
+					criterion: ""
+					id: "2E8F299B852D7A22"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2A77503D5F21B68C"
+			]
+			hide_until_deps_visible: true
+			id: "3B976CE5D73E5FC0"
+			rewards: [
+				{
+					count: 3
+					id: "33B13266B9A2F7B8"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "3423B0611283429D"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/frost_wizard/s1"
+					criterion: ""
+					id: "563AE857E67B646A"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3B976CE5D73E5FC0"
+			]
+			hide_until_deps_visible: true
+			id: "6C38F2193F5F97B4"
+			rewards: [
+				{
+					count: 2
+					id: "1306CFC7CD6E1AA4"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/frost_wizard/w2"
+					criterion: ""
+					id: "69690ADF22DBF717"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6C38F2193F5F97B4"
+			]
+			hide_until_deps_visible: true
+			id: "63B99B329B96833B"
+			rewards: [
+				{
+					count: 1
+					id: "1F4540E9EC12D836"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "1CE39D24ED42DDE7"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/frost_wizard/s2"
+					criterion: ""
+					id: "7CF66D9DD08CCABC"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"63B99B329B96833B"
+			]
+			hide_until_deps_visible: true
+			id: "71222F68234D4EB9"
+			rewards: [
+				{
+					count: 1
+					id: "1A2B15E6F98AECA9"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/frost_wizard/w3"
+					criterion: ""
+					id: "2A2052876BC0F6A6"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"71222F68234D4EB9"
+			]
+			hide_until_deps_visible: true
+			id: "5DED557257C16AEE"
+			rewards: [
+				{
+					id: "66ADC1862C00B668"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "15248663C7D92762"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "3C0DFD2A6E4C3912"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/frost_wizard/s3"
+					criterion: ""
+					id: "4979EB310F07D364"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5DED557257C16AEE"
+			]
+			hide_until_deps_visible: true
+			id: "364D117B6870A5B2"
+			rewards: [
+				{
+					id: "60E51CA1F2B83A8D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "7B0A4257FB9893E9"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/frost_wizard/armory"
+					criterion: ""
+					id: "2A8050DCDB7ED28D"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"71222F68234D4EB9"
+			]
+			hide_until_deps_visible: true
+			id: "1E0AC8C18F325735"
+			optional: true
+			rewards: [
+				{
+					id: "2298C0B359BB0660"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/frost_wizard/legend"
+					criterion: ""
+					id: "26AE3436F0150985"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 3.9d
+		}
+		{
+			id: "1633486DD7D05BD1"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "33AD32FE7C5B8E6A"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/water_mage/start"
+					criterion: ""
+					id: "15307F55FDD94069"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1633486DD7D05BD1"
+			]
+			hide_until_deps_visible: true
+			id: "2912F0282CC64827"
+			rewards: [
+				{
+					count: 8
+					id: "40A42F57292AF2D6"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3357FC9D32718035"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/water_mage/w1"
+					criterion: ""
+					id: "1575DC45EE20D8AE"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2912F0282CC64827"
+			]
+			hide_until_deps_visible: true
+			id: "6AF27B410258165F"
+			rewards: [
+				{
+					count: 3
+					id: "1DB60BF4CBDE5FFC"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "1ED4EE1C4C9BE571"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/water_mage/s1"
+					criterion: ""
+					id: "72532FA6EFD78C4A"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6AF27B410258165F"
+			]
+			hide_until_deps_visible: true
+			id: "589173AB0C869B9F"
+			rewards: [
+				{
+					count: 2
+					id: "37A867768AFF4B96"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/water_mage/w2"
+					criterion: ""
+					id: "44A6AADD805A409B"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"589173AB0C869B9F"
+			]
+			hide_until_deps_visible: true
+			id: "258BC2864592F600"
+			rewards: [
+				{
+					count: 1
+					id: "1B33898673498080"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "398EBF38C16A5C25"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/water_mage/s2"
+					criterion: ""
+					id: "26B9786161EC5C08"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"258BC2864592F600"
+			]
+			hide_until_deps_visible: true
+			id: "16B2F0A59B063880"
+			rewards: [
+				{
+					count: 1
+					id: "2A4F8A1EEB5FCDD1"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/water_mage/w3"
+					criterion: ""
+					id: "1A26D63EE042481B"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"16B2F0A59B063880"
+			]
+			hide_until_deps_visible: true
+			id: "136C0F86B7BE38A7"
+			rewards: [
+				{
+					id: "1BBAA34113E43FE7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "2AB88E299BF824AD"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "1720A12563A8EFB7"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/water_mage/s3"
+					criterion: ""
+					id: "1B83E449DBEE5AF9"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"136C0F86B7BE38A7"
+			]
+			hide_until_deps_visible: true
+			id: "5C9A512AF929AB58"
+			rewards: [
+				{
+					id: "46A30CE09714DF46"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "4907B8F7410B3BD5"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/water_mage/armory"
+					criterion: ""
+					id: "68B4E0A8119EA9D3"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"16B2F0A59B063880"
+			]
+			hide_until_deps_visible: true
+			id: "624B9A4DB75252BD"
+			optional: true
+			rewards: [
+				{
+					id: "37B06912E2572AC2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/water_mage/legend"
+					criterion: ""
+					id: "17909BA0963462A3"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 5.4d
+		}
+		{
+			id: "65B46437DDA1FF65"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "263EDDEDFB3209EE"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/earth_mage/start"
+					criterion: ""
+					id: "14504806165E58A7"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"65B46437DDA1FF65"
+			]
+			hide_until_deps_visible: true
+			id: "1F6DCBEFED7E0812"
+			rewards: [
+				{
+					count: 8
+					id: "7F854DDBBBF33019"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "130FCC131EF78879"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/earth_mage/w1"
+					criterion: ""
+					id: "1AB4AE69A0D190EE"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1F6DCBEFED7E0812"
+			]
+			hide_until_deps_visible: true
+			id: "391BEC2F41605019"
+			rewards: [
+				{
+					count: 3
+					id: "3C87F92FC16A091A"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "614BE6A671863C68"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/earth_mage/s1"
+					criterion: ""
+					id: "2F7AC166D34B758B"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"391BEC2F41605019"
+			]
+			hide_until_deps_visible: true
+			id: "199799F89DE093FE"
+			rewards: [
+				{
+					count: 2
+					id: "3ADF244266F3B717"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/earth_mage/w2"
+					criterion: ""
+					id: "1E4D8A39B188BCC2"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"199799F89DE093FE"
+			]
+			hide_until_deps_visible: true
+			id: "25A6E69E62FA987F"
+			rewards: [
+				{
+					count: 1
+					id: "60B31DCD8CD8C939"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "4C291A3658BE356B"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/earth_mage/s2"
+					criterion: ""
+					id: "4143EDF04002BDC9"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"25A6E69E62FA987F"
+			]
+			hide_until_deps_visible: true
+			id: "14EFAE6064BD4190"
+			rewards: [
+				{
+					count: 1
+					id: "15FD99E57C7532CE"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/earth_mage/w3"
+					criterion: ""
+					id: "79FA04000FE1E1C8"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"14EFAE6064BD4190"
+			]
+			hide_until_deps_visible: true
+			id: "20FE8A449EC1746B"
+			rewards: [
+				{
+					id: "55CF78E75AE19241"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "7530F1FA996A9F33"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "37A09B20B4ACCE91"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/earth_mage/s3"
+					criterion: ""
+					id: "2B3E721BD4B847D8"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"20FE8A449EC1746B"
+			]
+			hide_until_deps_visible: true
+			id: "67CB5231623A0129"
+			rewards: [
+				{
+					id: "314965E1A80DAF85"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "1D40CCCC65460C3B"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/earth_mage/armory"
+					criterion: ""
+					id: "73EC82E632EACC7B"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"14EFAE6064BD4190"
+			]
+			hide_until_deps_visible: true
+			id: "417E01114649081A"
+			optional: true
+			rewards: [
+				{
+					id: "4F02B2303890992F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/earth_mage/legend"
+					criterion: ""
+					id: "5FA87DC413C15E5B"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 6.9d
+		}
+		{
+			id: "29920E4F607C2A96"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "581601280E89512F"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/wind_mage/start"
+					criterion: ""
+					id: "564529E222419AE1"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"29920E4F607C2A96"
+			]
+			hide_until_deps_visible: true
+			id: "1634EC6D9DC78D3A"
+			rewards: [
+				{
+					count: 8
+					id: "3693078D5CD9AB8E"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5091FDB48B3AFF3E"
+					item: {
+						count: 1
+						id: "minecraft:lapis_lazuli"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/wind_mage/w1"
+					criterion: ""
+					id: "50E2F9955A5EF3F3"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1634EC6D9DC78D3A"
+			]
+			hide_until_deps_visible: true
+			id: "1E37A24026D2DD38"
+			rewards: [
+				{
+					count: 3
+					id: "1354715D01F1AD2F"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "11CEC1226B49A6B3"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/wind_mage/s1"
+					criterion: ""
+					id: "3072E97C39896123"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1E37A24026D2DD38"
+			]
+			hide_until_deps_visible: true
+			id: "57F810F9EBD01932"
+			rewards: [
+				{
+					count: 2
+					id: "70602A768A11EA34"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/wind_mage/w2"
+					criterion: ""
+					id: "1B0ED37D7A3A62DA"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"57F810F9EBD01932"
+			]
+			hide_until_deps_visible: true
+			id: "7117B5E8E653E9E8"
+			rewards: [
+				{
+					count: 1
+					id: "2F0B8F8BE8ADAD54"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "5F11A34AB4FC1834"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/wind_mage/s2"
+					criterion: ""
+					id: "6B9AE7C41C123C1C"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"7117B5E8E653E9E8"
+			]
+			hide_until_deps_visible: true
+			id: "15BA62CCEF012E15"
+			rewards: [
+				{
+					count: 1
+					id: "1DFC9848CD592E6F"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/wind_mage/w3"
+					criterion: ""
+					id: "21FC423A80958A3E"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"15BA62CCEF012E15"
+			]
+			hide_until_deps_visible: true
+			id: "192A9BF9D510B1BC"
+			rewards: [
+				{
+					id: "3683C9063884D217"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "1407B52B58977133"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "1A55CB1F3721F3B9"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/wind_mage/s3"
+					criterion: ""
+					id: "7AE77857D97A67C2"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"192A9BF9D510B1BC"
+			]
+			hide_until_deps_visible: true
+			id: "68A41439B84F7D37"
+			rewards: [
+				{
+					id: "3B592D4776C52B2E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "168E849EAB117EC6"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/wind_mage/armory"
+					criterion: ""
+					id: "53C4C9AA5AEFF1D7"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"15BA62CCEF012E15"
+			]
+			hide_until_deps_visible: true
+			id: "341E7D13B080731C"
+			optional: true
+			rewards: [
+				{
+					id: "3F5599222B378E13"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/wind_mage/legend"
+					criterion: ""
+					id: "634658D77B4E3B21"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 8.4d
+		}
+		{
+			id: "160E770304A9E71A"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "2F8F2A2F36086D15"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/priest/start"
+					criterion: ""
+					id: "2393B2EE0B740144"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"160E770304A9E71A"
+			]
+			hide_until_deps_visible: true
+			id: "1F669FE7EC5A7658"
+			rewards: [
+				{
+					count: 8
+					id: "710341CBF58797BC"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3F5BDC05DC092021"
+					item: {
+						count: 1
+						id: "minecraft:chain"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/priest/w1"
+					criterion: ""
+					id: "1ED86DCEFF9349E5"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"1F669FE7EC5A7658"
+			]
+			hide_until_deps_visible: true
+			id: "441338EFDCC99CEF"
+			rewards: [
+				{
+					count: 3
+					id: "12FAC9A23AC6C221"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "6AE7EC28ADFB3AB4"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/priest/s1"
+					criterion: ""
+					id: "1BB39B0A8812A3E0"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"441338EFDCC99CEF"
+			]
+			hide_until_deps_visible: true
+			id: "2862FA76D20232FE"
+			rewards: [
+				{
+					count: 2
+					id: "3DFD83841A725D19"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/priest/w2"
+					criterion: ""
+					id: "681C2EBF99A5EEB6"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"2862FA76D20232FE"
+			]
+			hide_until_deps_visible: true
+			id: "36E9B005B8159543"
+			rewards: [
+				{
+					count: 1
+					id: "799A2E091C3FA603"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "14D3D42BF20A91DF"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/priest/s2"
+					criterion: ""
+					id: "3E615FE286B3EAC8"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"36E9B005B8159543"
+			]
+			hide_until_deps_visible: true
+			id: "3432529E4CA45247"
+			rewards: [
+				{
+					count: 1
+					id: "51920396E1F585EE"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/priest/w3"
+					criterion: ""
+					id: "16BDEA1F69490768"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"3432529E4CA45247"
+			]
+			hide_until_deps_visible: true
+			id: "3F03244BAA9EF57E"
+			rewards: [
+				{
+					id: "5991B6178894B1C6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "2D4CC6EBDB871598"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "7995EAC6A7C777B4"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/priest/s3"
+					criterion: ""
+					id: "6987F6BEC77521FD"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"3F03244BAA9EF57E"
+			]
+			hide_until_deps_visible: true
+			id: "4B73FD0ECB5CA15E"
+			rewards: [
+				{
+					id: "345ACE34FD5EAEA2"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "69564EE415E5B478"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/priest/armory"
+					criterion: ""
+					id: "3314EDE953266084"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"3432529E4CA45247"
+			]
+			hide_until_deps_visible: true
+			id: "5981EE879EE49344"
+			optional: true
+			rewards: [
+				{
+					id: "174BC93A8A85D166"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/priest/legend"
+					criterion: ""
+					id: "6DB4CFA66FD7EEA3"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 9.9d
+		}
+		{
+			id: "4888226F4A86AA88"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "3A3C3BD30ABA23B5"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/paladin/start"
+					criterion: ""
+					id: "7B7C1D609A967064"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"4888226F4A86AA88"
+			]
+			hide_until_deps_visible: true
+			id: "4C51D21C6BF384AB"
+			rewards: [
+				{
+					count: 8
+					id: "70F5FB25118BB829"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "17990A0F0C6DF2C0"
+					item: {
+						count: 1
+						id: "minecraft:copper_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/paladin/w1"
+					criterion: ""
+					id: "26309F2320691A80"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"4C51D21C6BF384AB"
+			]
+			hide_until_deps_visible: true
+			id: "1917B6FC25356897"
+			rewards: [
+				{
+					count: 3
+					id: "6D03FCC984E5E64D"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "1046789CADDED251"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/paladin/s1"
+					criterion: ""
+					id: "146D8E73784052E8"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"1917B6FC25356897"
+			]
+			hide_until_deps_visible: true
+			id: "2822EF3B2E746D80"
+			rewards: [
+				{
+					count: 2
+					id: "1267EB4D87502371"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/paladin/w2"
+					criterion: ""
+					id: "47A84C2BFE825D3F"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"2822EF3B2E746D80"
+			]
+			hide_until_deps_visible: true
+			id: "1093BA38C50D1EA8"
+			rewards: [
+				{
+					count: 1
+					id: "120AEFA1CA711D2B"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "7169EF4F9ABE34DC"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/paladin/s2"
+					criterion: ""
+					id: "70ABD3850443C2CA"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"1093BA38C50D1EA8"
+			]
+			hide_until_deps_visible: true
+			id: "533BD5F53E1AE9FC"
+			rewards: [
+				{
+					count: 1
+					id: "37EC142D04BF631E"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/paladin/w3"
+					criterion: ""
+					id: "4588DEBCA9062505"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"533BD5F53E1AE9FC"
+			]
+			hide_until_deps_visible: true
+			id: "5F35D4CF3DAF6E1E"
+			rewards: [
+				{
+					id: "4B9F123EABB338BD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "640C85703C0873D0"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "18D3EFAF87A9B903"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/paladin/s3"
+					criterion: ""
+					id: "51ABD51B48B74A01"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"5F35D4CF3DAF6E1E"
+			]
+			hide_until_deps_visible: true
+			id: "647FF63D4206EF38"
+			rewards: [
+				{
+					id: "33547B455807F93E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "6AF2CCA9F185F59C"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/paladin/armory"
+					criterion: ""
+					id: "1D74890FB73DF582"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"533BD5F53E1AE9FC"
+			]
+			hide_until_deps_visible: true
+			id: "1F106773840DE49E"
+			optional: true
+			rewards: [
+				{
+					id: "4CC364777A46FEDA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/paladin/legend"
+					criterion: ""
+					id: "5DEA6926DB91341C"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 11.4d
+		}
+		{
+			id: "4656B3206F4BEC9E"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "77E0146EB1EF2FC5"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/warrior/start"
+					criterion: ""
+					id: "1DB21FEE613DAAA2"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"4656B3206F4BEC9E"
+			]
+			hide_until_deps_visible: true
+			id: "49041290BFFAF015"
+			rewards: [
+				{
+					count: 8
+					id: "1863F4EE5FB9B422"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "1107725D6F6F927F"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/warrior/w1"
+					criterion: ""
+					id: "21CA87BCE34601E4"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"49041290BFFAF015"
+			]
+			hide_until_deps_visible: true
+			id: "4B5B8677B3751637"
+			rewards: [
+				{
+					count: 3
+					id: "4757B88D2DEC107C"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "6BE3BCF699137F2B"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/warrior/s1"
+					criterion: ""
+					id: "68D7092E9E0BA2BD"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"4B5B8677B3751637"
+			]
+			hide_until_deps_visible: true
+			id: "439736F4E5EFBE1D"
+			rewards: [
+				{
+					count: 2
+					id: "3F2B4DB96B4B0DFA"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/warrior/w2"
+					criterion: ""
+					id: "5E234E86D87CA2C7"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"439736F4E5EFBE1D"
+			]
+			hide_until_deps_visible: true
+			id: "41299363454A86A6"
+			rewards: [
+				{
+					count: 1
+					id: "28AF6BF661CEACF2"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "1A7821BDDBBF8EDF"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/warrior/s2"
+					criterion: ""
+					id: "1592ADA6A2871468"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"41299363454A86A6"
+			]
+			hide_until_deps_visible: true
+			id: "62B2868F5BC9B0F1"
+			rewards: [
+				{
+					count: 1
+					id: "7A3099D151E4A435"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/warrior/w3"
+					criterion: ""
+					id: "1D228EC277645FB2"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"62B2868F5BC9B0F1"
+			]
+			hide_until_deps_visible: true
+			id: "56FD8D6AAF4752E8"
+			rewards: [
+				{
+					id: "4054F60BACBE9969"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "1133ED752222A5EE"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "598212A2218A6011"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/warrior/s3"
+					criterion: ""
+					id: "236C4089626CAAA0"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"56FD8D6AAF4752E8"
+			]
+			hide_until_deps_visible: true
+			id: "31E240F857E39A16"
+			rewards: [
+				{
+					id: "58ACF6EB834B5C5B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "2D94AE69608A3E83"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/warrior/armory"
+					criterion: ""
+					id: "1A937D8D0CDE7BC4"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"62B2868F5BC9B0F1"
+			]
+			hide_until_deps_visible: true
+			id: "6AF19D8A355966AA"
+			optional: true
+			rewards: [
+				{
+					id: "1C6CF47E2C33D4D3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/warrior/legend"
+					criterion: ""
+					id: "6044DFD2D19C011D"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 12.9d
+		}
+		{
+			id: "18CF3743171967AF"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "13394057D6113019"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/berserker/start"
+					criterion: ""
+					id: "44342FF9C2C2CA4B"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"18CF3743171967AF"
+			]
+			hide_until_deps_visible: true
+			id: "39BC546692614563"
+			rewards: [
+				{
+					count: 8
+					id: "566615FC658128A9"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "379F7A077390402E"
+					item: {
+						count: 1
+						id: "minecraft:chain"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/berserker/w1"
+					criterion: ""
+					id: "15C5F009910591B6"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"39BC546692614563"
+			]
+			hide_until_deps_visible: true
+			id: "1545503C9E7552D8"
+			rewards: [
+				{
+					count: 3
+					id: "2C091240CC227EEE"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "7396F43C42485DFC"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/berserker/s1"
+					criterion: ""
+					id: "1B67A9D91BAEADF1"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"1545503C9E7552D8"
+			]
+			hide_until_deps_visible: true
+			id: "10318286AE389F9C"
+			rewards: [
+				{
+					count: 2
+					id: "1D45ACFDC10BF5E2"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/berserker/w2"
+					criterion: ""
+					id: "57ADF377C582CDED"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"10318286AE389F9C"
+			]
+			hide_until_deps_visible: true
+			id: "632F93A87EA41C0E"
+			rewards: [
+				{
+					count: 1
+					id: "25413396C3C3CECB"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "1E6C1E5B1B06AE66"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/berserker/s2"
+					criterion: ""
+					id: "12E97CCF0E286B3E"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"632F93A87EA41C0E"
+			]
+			hide_until_deps_visible: true
+			id: "4C3C4D3A9CA28A02"
+			rewards: [
+				{
+					count: 1
+					id: "56847229E3A6976A"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/berserker/w3"
+					criterion: ""
+					id: "218ACE77E920441A"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"4C3C4D3A9CA28A02"
+			]
+			hide_until_deps_visible: true
+			id: "6223038B06217575"
+			rewards: [
+				{
+					id: "3D5EFD048AD21F70"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "76ED979245435924"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "71715C8689467EBF"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/berserker/s3"
+					criterion: ""
+					id: "20C15FB3FB44005C"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"6223038B06217575"
+			]
+			hide_until_deps_visible: true
+			id: "476ABDE74108C527"
+			rewards: [
+				{
+					id: "2CAF7ECAC2B5C712"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "289A812D58BB93AB"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/berserker/armory"
+					criterion: ""
+					id: "1A2165EAE5EB6E6E"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"4C3C4D3A9CA28A02"
+			]
+			hide_until_deps_visible: true
+			id: "3611174B7DE1131E"
+			optional: true
+			rewards: [
+				{
+					id: "4322C8589EBB9D8A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/berserker/legend"
+					criterion: ""
+					id: "34538C76E80F3AB4"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 14.4d
+		}
+		{
+			id: "75611B5C933FAFE7"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "6D1FD63BF2B3D007"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/forcemaster/start"
+					criterion: ""
+					id: "57394BB0CC319FD0"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"75611B5C933FAFE7"
+			]
+			hide_until_deps_visible: true
+			id: "5E16D4E8A85872F0"
+			rewards: [
+				{
+					count: 8
+					id: "5376F94527EF86CC"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7CCF626D88872E9E"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/forcemaster/w1"
+					criterion: ""
+					id: "7BC7D868BD927ADB"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"5E16D4E8A85872F0"
+			]
+			hide_until_deps_visible: true
+			id: "7B4169F3E37652A8"
+			rewards: [
+				{
+					count: 3
+					id: "10285A13915BB1BF"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "3FF51FACAF9EDEFD"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/forcemaster/s1"
+					criterion: ""
+					id: "159BFB38A9923066"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"7B4169F3E37652A8"
+			]
+			hide_until_deps_visible: true
+			id: "7F12355C44326248"
+			rewards: [
+				{
+					count: 2
+					id: "6B15AE91501FC14D"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/forcemaster/w2"
+					criterion: ""
+					id: "4ABCC5DD4E8732F7"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"7F12355C44326248"
+			]
+			hide_until_deps_visible: true
+			id: "6217905150642712"
+			rewards: [
+				{
+					count: 1
+					id: "1CF6F141FE4E43EF"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "7F0A743D32A642E9"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/forcemaster/s2"
+					criterion: ""
+					id: "692C685574526606"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"6217905150642712"
+			]
+			hide_until_deps_visible: true
+			id: "39026CB0D8738A17"
+			rewards: [
+				{
+					count: 1
+					id: "19662445FBD2821F"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/forcemaster/w3"
+					criterion: ""
+					id: "452853D983261048"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"39026CB0D8738A17"
+			]
+			hide_until_deps_visible: true
+			id: "2B3AA7A8937E6500"
+			rewards: [
+				{
+					id: "5AE416E48021309E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "303610231A858AC7"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "2CE0E6A62DC0482E"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/forcemaster/s3"
+					criterion: ""
+					id: "5A9E4EB6DE763568"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"2B3AA7A8937E6500"
+			]
+			hide_until_deps_visible: true
+			id: "1079047B48B1C2FE"
+			rewards: [
+				{
+					id: "118B4F82F361A6A7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "3A5770CDDEC390EF"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/forcemaster/armory"
+					criterion: ""
+					id: "1086A24470E9DA56"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"39026CB0D8738A17"
+			]
+			hide_until_deps_visible: true
+			id: "425435C54A40EF3D"
+			optional: true
+			rewards: [
+				{
+					id: "31C6DE41A0214557"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/forcemaster/legend"
+					criterion: ""
+					id: "2284BE2AB15112B0"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 15.9d
+		}
+		{
+			id: "57ABBFDC4552D08D"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "17DD215A65312EF4"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/rogue/start"
+					criterion: ""
+					id: "7662175C46C42EF7"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"57ABBFDC4552D08D"
+			]
+			hide_until_deps_visible: true
+			id: "1E8FD874A1FF7D03"
+			rewards: [
+				{
+					count: 8
+					id: "1649E4F9ED64EB9E"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1A926BDB887266AC"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/rogue/w1"
+					criterion: ""
+					id: "3867C18299088BFC"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"1E8FD874A1FF7D03"
+			]
+			hide_until_deps_visible: true
+			id: "1AFAFEEA415040B0"
+			rewards: [
+				{
+					count: 3
+					id: "32AFEFACE72B14C7"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "18331A0F0ABE4CAB"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/rogue/s1"
+					criterion: ""
+					id: "142C4CE8E1B3D82E"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"1AFAFEEA415040B0"
+			]
+			hide_until_deps_visible: true
+			id: "4F4BF32187D2040B"
+			rewards: [
+				{
+					count: 2
+					id: "571A5ED441BC6543"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/rogue/w2"
+					criterion: ""
+					id: "7D5F21A4880ACFC2"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"4F4BF32187D2040B"
+			]
+			hide_until_deps_visible: true
+			id: "18A79782D6513961"
+			rewards: [
+				{
+					count: 1
+					id: "5998A2BC26E7DE0E"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "11CF9291ADFCFB11"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/rogue/s2"
+					criterion: ""
+					id: "48B54F313535D127"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"18A79782D6513961"
+			]
+			hide_until_deps_visible: true
+			id: "20B9A30B75154DF8"
+			rewards: [
+				{
+					count: 1
+					id: "7078681EDA7D1B6A"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/rogue/w3"
+					criterion: ""
+					id: "2702AF2F432F40C7"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"20B9A30B75154DF8"
+			]
+			hide_until_deps_visible: true
+			id: "1DC10232987ECA09"
+			rewards: [
+				{
+					id: "18591BA106F53CBF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "7AEF0108E88A3270"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "25BE6D4554B0EC90"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/rogue/s3"
+					criterion: ""
+					id: "6BDF55FEA7C6517F"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"1DC10232987ECA09"
+			]
+			hide_until_deps_visible: true
+			id: "18630AE31317AF46"
+			rewards: [
+				{
+					id: "3A716BD7BC529F3A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "4E5D66DC24393B5A"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/rogue/armory"
+					criterion: ""
+					id: "70D3758FC0A125D2"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"20B9A30B75154DF8"
+			]
+			hide_until_deps_visible: true
+			id: "4C2EC0AB0BDBC6F9"
+			optional: true
+			rewards: [
+				{
+					id: "43164783AFB5E7C6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/rogue/legend"
+					criterion: ""
+					id: "5FFB5CBEFE738732"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 17.4d
+		}
+		{
+			id: "1B42EFBAB1CB5729"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "46C81DA499369840"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/archer/start"
+					criterion: ""
+					id: "79BF0BBCB30F374A"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"1B42EFBAB1CB5729"
+			]
+			hide_until_deps_visible: true
+			id: "301A632C8984BC41"
+			rewards: [
+				{
+					count: 8
+					id: "2C34B870784EFAB1"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "18A867B02042D2CF"
+					item: {
+						count: 1
+						id: "minecraft:chain"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/archer/w1"
+					criterion: ""
+					id: "577C9F0265AC2F4C"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"301A632C8984BC41"
+			]
+			hide_until_deps_visible: true
+			id: "1FF7572DD82363E8"
+			rewards: [
+				{
+					count: 3
+					id: "3AAC7E0A6FD63705"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "6C2EF079C3954A2E"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/archer/s1"
+					criterion: ""
+					id: "2CBA0B38522FB4BC"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"1FF7572DD82363E8"
+			]
+			hide_until_deps_visible: true
+			id: "19A6506E90EAF78A"
+			rewards: [
+				{
+					count: 2
+					id: "3FC0B1B848DBCD93"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/archer/w2"
+					criterion: ""
+					id: "72C17A03A917DD06"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"19A6506E90EAF78A"
+			]
+			hide_until_deps_visible: true
+			id: "46E736ACF7965DCF"
+			rewards: [
+				{
+					count: 1
+					id: "3F21CCC87751F448"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "5AA9B3EAE1ED7DA6"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/archer/s2"
+					criterion: ""
+					id: "15E154A051DEAA13"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"46E736ACF7965DCF"
+			]
+			hide_until_deps_visible: true
+			id: "1B8CB1D0813C11BA"
+			rewards: [
+				{
+					count: 1
+					id: "4902B3DA65CA97BF"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/archer/w3"
+					criterion: ""
+					id: "74410969BF0C36A1"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"1B8CB1D0813C11BA"
+			]
+			hide_until_deps_visible: true
+			id: "4E29AFB11C00708A"
+			rewards: [
+				{
+					id: "4835FE15138180D0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "2181423D7CD39935"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "6BDE16B623331ED1"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/archer/s3"
+					criterion: ""
+					id: "30CC574835FEC519"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"4E29AFB11C00708A"
+			]
+			hide_until_deps_visible: true
+			id: "18ADF425BBD7F047"
+			rewards: [
+				{
+					id: "70D689F50E264AB3"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "6D498238814E7508"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/archer/armory"
+					criterion: ""
+					id: "19089AC41EDD7359"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"1B8CB1D0813C11BA"
+			]
+			hide_until_deps_visible: true
+			id: "7EEB99FFB405925A"
+			optional: true
+			rewards: [
+				{
+					id: "132FD23EEE0FB0FA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/archer/legend"
+					criterion: ""
+					id: "70D9C1E11C696703"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 18.9d
+		}
+		{
+			id: "4123E323E910791A"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "7DC13AF42F60524D"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/deadeye/start"
+					criterion: ""
+					id: "2D7816636AEBEEDC"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"4123E323E910791A"
+			]
+			hide_until_deps_visible: true
+			id: "1C4C98EDF4A6A9A2"
+			rewards: [
+				{
+					count: 8
+					id: "5033607F480B1668"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B1B89D06696961F"
+					item: {
+						count: 1
+						id: "minecraft:chain"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/deadeye/w1"
+					criterion: ""
+					id: "29DCB9A32254F5AB"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"1C4C98EDF4A6A9A2"
+			]
+			hide_until_deps_visible: true
+			id: "653A4D930B08FA2E"
+			rewards: [
+				{
+					count: 3
+					id: "708ED1BCEEE69A21"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "1A52AD91563F2956"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/deadeye/s1"
+					criterion: ""
+					id: "155DB3F094783004"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"653A4D930B08FA2E"
+			]
+			hide_until_deps_visible: true
+			id: "1E25DBC1DC9EEC04"
+			rewards: [
+				{
+					count: 2
+					id: "73A3F959EAE0731F"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/deadeye/w2"
+					criterion: ""
+					id: "512F2697DF332994"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"1E25DBC1DC9EEC04"
+			]
+			hide_until_deps_visible: true
+			id: "7EC13CD969AF09D6"
+			rewards: [
+				{
+					count: 1
+					id: "18ACBA65A3630527"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "446F4D37F6EE04FF"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/deadeye/s2"
+					criterion: ""
+					id: "1E4FE199F1043C91"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"7EC13CD969AF09D6"
+			]
+			hide_until_deps_visible: true
+			id: "1577601890C78DF9"
+			rewards: [
+				{
+					count: 1
+					id: "53C1829DFDDE2D83"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/deadeye/w3"
+					criterion: ""
+					id: "31D729E66FE32162"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"1577601890C78DF9"
+			]
+			hide_until_deps_visible: true
+			id: "4A0B61034D97339F"
+			rewards: [
+				{
+					id: "5DAF6831690598FF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "729D9D3622912659"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "40CA136C2809317B"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/deadeye/s3"
+					criterion: ""
+					id: "2D633EFE974155ED"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"4A0B61034D97339F"
+			]
+			hide_until_deps_visible: true
+			id: "14A3168591A19450"
+			rewards: [
+				{
+					id: "7C3C3B3DFD0896ED"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "2812C3F771DC9914"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/deadeye/armory"
+					criterion: ""
+					id: "1D1820290DF01776"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"1577601890C78DF9"
+			]
+			hide_until_deps_visible: true
+			id: "411A2262ED7F5B5C"
+			optional: true
+			rewards: [
+				{
+					id: "63633517AF894272"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/deadeye/legend"
+					criterion: ""
+					id: "77C140DBB2D05060"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 20.4d
+		}
+		{
+			id: "1ED644D0BF1D22B1"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "2B82F66341EB584D"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/tundra_hunter/start"
+					criterion: ""
+					id: "36A0F23428E13AC6"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"1ED644D0BF1D22B1"
+			]
+			hide_until_deps_visible: true
+			id: "2B8C02ADA6749384"
+			rewards: [
+				{
+					count: 8
+					id: "1C75C1B6A934275C"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1087BAFB03A6F2B3"
+					item: {
+						count: 1
+						id: "minecraft:chain"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/tundra_hunter/w1"
+					criterion: ""
+					id: "326FC1891067160B"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"2B8C02ADA6749384"
+			]
+			hide_until_deps_visible: true
+			id: "159F042572E81979"
+			rewards: [
+				{
+					count: 3
+					id: "6E928C7CADA15183"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "16710DC05F1350F4"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/tundra_hunter/s1"
+					criterion: ""
+					id: "6E47A11260508CDF"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"159F042572E81979"
+			]
+			hide_until_deps_visible: true
+			id: "32C34EE2A68B3253"
+			rewards: [
+				{
+					count: 2
+					id: "1BD965F423FB303B"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/tundra_hunter/w2"
+					criterion: ""
+					id: "378147618BBEEB8D"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"32C34EE2A68B3253"
+			]
+			hide_until_deps_visible: true
+			id: "4A2642B509E8EC39"
+			rewards: [
+				{
+					count: 1
+					id: "58B3126144A92AFB"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "16EDC8B722C0F14A"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/tundra_hunter/s2"
+					criterion: ""
+					id: "30E4CA0DF720077A"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"4A2642B509E8EC39"
+			]
+			hide_until_deps_visible: true
+			id: "1DDA36D6C2E5B030"
+			rewards: [
+				{
+					count: 1
+					id: "5F969EB210E069F1"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/tundra_hunter/w3"
+					criterion: ""
+					id: "79BC78438D3435CB"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"1DDA36D6C2E5B030"
+			]
+			hide_until_deps_visible: true
+			id: "583F79DCD019CF60"
+			rewards: [
+				{
+					id: "3BA446F1C38C057F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "7078B480113718D6"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "18ECBC76B87E7C41"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/tundra_hunter/s3"
+					criterion: ""
+					id: "46A1822EE521092D"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"583F79DCD019CF60"
+			]
+			hide_until_deps_visible: true
+			id: "1862B70199B7B41B"
+			rewards: [
+				{
+					id: "1D378FFA011067FD"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "5A2C671CCC460C1A"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/tundra_hunter/armory"
+					criterion: ""
+					id: "153FE21CDD5A02FB"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"1DDA36D6C2E5B030"
+			]
+			hide_until_deps_visible: true
+			id: "184EFCC08FF60DFA"
+			optional: true
+			rewards: [
+				{
+					id: "6BAB65A446766702"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/tundra_hunter/legend"
+					criterion: ""
+					id: "1FBF203A22767639"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 21.9d
+		}
+		{
+			id: "15B92936D987CD76"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "1732F805F3AA8029"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/war_archer/start"
+					criterion: ""
+					id: "2EE9A2AFAB203651"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"15B92936D987CD76"
+			]
+			hide_until_deps_visible: true
+			id: "77275F9ADF8F5E43"
+			rewards: [
+				{
+					count: 8
+					id: "550E08D2454DB662"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1672F915ADAF4D48"
+					item: {
+						count: 1
+						id: "minecraft:chain"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/war_archer/w1"
+					criterion: ""
+					id: "14504708AE9125E0"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"77275F9ADF8F5E43"
+			]
+			hide_until_deps_visible: true
+			id: "48D3876FA6098A44"
+			rewards: [
+				{
+					count: 3
+					id: "7019DCFB2F5508A5"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "1CBD5420288C2D26"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/war_archer/s1"
+					criterion: ""
+					id: "54EBB02847E4C23D"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"48D3876FA6098A44"
+			]
+			hide_until_deps_visible: true
+			id: "1BA3D489C4863B01"
+			rewards: [
+				{
+					count: 2
+					id: "3FFD988E961D0D94"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/war_archer/w2"
+					criterion: ""
+					id: "3AC1B3C8708B7920"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"1BA3D489C4863B01"
+			]
+			hide_until_deps_visible: true
+			id: "608F868C692240A4"
+			rewards: [
+				{
+					count: 1
+					id: "10235BDC3EAD7FE5"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "5BFB3592A4AA33A8"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/war_archer/s2"
+					criterion: ""
+					id: "1AA9123A6559AF6C"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"608F868C692240A4"
+			]
+			hide_until_deps_visible: true
+			id: "55F345EDFB271EE0"
+			rewards: [
+				{
+					count: 1
+					id: "1BE9B7378313CEC3"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/war_archer/w3"
+					criterion: ""
+					id: "54B3ED50F79F559E"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"55F345EDFB271EE0"
+			]
+			hide_until_deps_visible: true
+			id: "6D97E040B04E5B09"
+			rewards: [
+				{
+					id: "59C2EAE9F5E402CD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "1AD370C2EA447CBF"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "29F4B24A34053347"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/war_archer/s3"
+					criterion: ""
+					id: "114080C98DFEF359"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"6D97E040B04E5B09"
+			]
+			hide_until_deps_visible: true
+			id: "4366581CB1238872"
+			rewards: [
+				{
+					id: "4AA7E20128C77D40"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "48710DC85D5C2258"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/war_archer/armory"
+					criterion: ""
+					id: "6121AE8F22D1ACB8"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"55F345EDFB271EE0"
+			]
+			hide_until_deps_visible: true
+			id: "67BEF13204319F77"
+			optional: true
+			rewards: [
+				{
+					id: "38DE98EA1517D3E5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/war_archer/legend"
+					criterion: ""
+					id: "625C6FE1226A036E"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 23.4d
+		}
+		{
+			id: "2C247588B7ACFE43"
+			invisible: true
+			invisible_until_tasks: 1
+			rewards: [
+				{
+					id: "4241D63EC3795594"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minerpg:calling/bard/start"
+					criterion: ""
+					id: "4577DACD42D67635"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"2C247588B7ACFE43"
+			]
+			hide_until_deps_visible: true
+			id: "4104BDA8E9E7FE69"
+			rewards: [
+				{
+					count: 8
+					id: "64552F81C9D33B50"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "3535829420213A5C"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4907E671310EB165"
+					item: {
+						count: 1
+						id: "minecraft:purple_dye"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/bard/w1"
+					criterion: ""
+					id: "1351326689C264CB"
+					type: "advancement"
+				}
+			]
+			x: 1.5d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"4104BDA8E9E7FE69"
+			]
+			hide_until_deps_visible: true
+			id: "5E559AF7114F6F26"
+			rewards: [
+				{
+					count: 3
+					id: "7FC2B12D7754C87D"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 1"
+					id: "288DDC7E003FAE79"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/bard/s1"
+					criterion: ""
+					id: "102C7BADB8E934E3"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"5E559AF7114F6F26"
+			]
+			hide_until_deps_visible: true
+			id: "1A23F832A283CE90"
+			rewards: [
+				{
+					count: 2
+					id: "7F1DB1BEF39FD486"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/bard/w2"
+					criterion: ""
+					id: "7787BBC3DCB0A16A"
+					type: "advancement"
+				}
+			]
+			x: 4.5d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"1A23F832A283CE90"
+			]
+			hide_until_deps_visible: true
+			id: "160B130DB069CAFF"
+			rewards: [
+				{
+					count: 1
+					id: "4979F7FE9E29C479"
+					item: {
+						count: 1
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+				{
+					command: "/minerpg_jobs coins @s 2"
+					id: "761B3140F71A2BBD"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/bard/s2"
+					criterion: ""
+					id: "46305A026274E9EC"
+					type: "advancement"
+				}
+			]
+			x: 6.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"160B130DB069CAFF"
+			]
+			hide_until_deps_visible: true
+			id: "271E268D7A3A594E"
+			rewards: [
+				{
+					count: 1
+					id: "18EFF8C3CC334818"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/bard/w3"
+					criterion: ""
+					id: "3721A8AD4BA749DF"
+					type: "advancement"
+				}
+			]
+			x: 7.5d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"271E268D7A3A594E"
+			]
+			hide_until_deps_visible: true
+			id: "17F753B33C2A16EF"
+			rewards: [
+				{
+					id: "7258A95709E0CEFF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					command: "/minerpg_jobs coins @s 3"
+					id: "397FBD0459B79A65"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+				{
+					count: 1
+					id: "158714F489728907"
+					item: {
+						count: 1
+						id: "armory_rpgs:epic_armor_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minerpg:calling/bard/s3"
+					criterion: ""
+					id: "71322DF29009BFF1"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"17F753B33C2A16EF"
+			]
+			hide_until_deps_visible: true
+			id: "1EE85DFC69D4B654"
+			rewards: [
+				{
+					id: "111283EE18EAF704"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					command: "/minerpg_jobs coins @s 5"
+					id: "10566F0FB096D43E"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "minerpg:calling/bard/armory"
+					criterion: ""
+					id: "24567D3AF00C548A"
+					type: "advancement"
+				}
+			]
+			x: 10.5d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"271E268D7A3A594E"
+			]
+			hide_until_deps_visible: true
+			id: "39E4EF6895083D0C"
+			optional: true
+			rewards: [
+				{
+					id: "5F6460721A627688"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					advancement: "minerpg:calling/bard/legend"
+					criterion: ""
+					id: "6E0C677269E03701"
+					type: "advancement"
+				}
+			]
+			x: 9.0d
+			y: 24.9d
+		}
+	]
+}

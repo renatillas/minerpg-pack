@@ -1,12 +1,24 @@
 {
+	"chapter.1A1881B1B2F95A83.chapter_subtitle": [
+		"Affixes, gems, reforging, enchanting and spawners."
+	]
+	"chapter.1A1881B1B2F95A83.title": "The Forge & the Library"
 	"chapter.1B0465E0293D763F.chapter_subtitle": [
 		"Fortresses, bastions and fire. Ends with Ignis."
 	]
 	"chapter.1B0465E0293D763F.title": "Chapter 2: The Nether"
+	"chapter.34C6DF4BC6510263.chapter_subtitle": [
+		"Your class, from the tome to the armor of legends."
+	]
+	"chapter.34C6DF4BC6510263.title": "Your Calling"
 	"chapter.558871694C755BB8.chapter_subtitle": [
 		"How everything works, one quest at a time."
 	]
 	"chapter.558871694C755BB8.title": "Getting Started"
+	"chapter.5F33E337E99B9291.chapter_subtitle": [
+		"Jewelry, backpacks, storage, cooking, graves and claims."
+	]
+	"chapter.5F33E337E99B9291.title": "The Adventurer's Kit"
 	"chapter.764B89D8B2026F83.chapter_subtitle": [
 		"Hearthlands, Wildlands and the Frontier. Ends with The Harbinger."
 	]
@@ -16,12 +28,75 @@
 	]
 	"chapter.7F4F1DAF0F1ED786.title": "Chapter 3: The End"
 	"file.0000000000000001.title": "minerpg"
+	"quest.10318286AE389F9C.quest_desc": [
+		"Get a diamond Berserker Axe."
+		""
+		"&6Craft&r: Smith level 20."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.10318286AE389F9C.quest_subtitle": "Tier 2 weapon"
+	"quest.10318286AE389F9C.title": "A Diamond Edge"
+	"quest.1079047B48B1C2FE.quest_desc": [
+		"The endgame set of every Forcemaster: the &dBillporon Suit&r."
+		"At a smithing table, upgrade each Phasleb Suit piece (diamond or netherite) with a &dAscetic's Lost Crystal&r."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only a Smith of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.1079047B48B1C2FE.quest_subtitle": "Endgame armor"
+	"quest.1079047B48B1C2FE.title": "The Armory"
+	"quest.10865476522F9C8E.quest_desc": [
+		"Every Fire Wizard walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.10865476522F9C8E.quest_subtitle": "Your class, step by step"
+	"quest.10865476522F9C8E.title": "The Fire Wizard's Path"
+	"quest.1093BA38C50D1EA8.quest_desc": [
+		"Wear or carry all four pieces of the &eCrusader Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Smith level 20."
+		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.1093BA38C50D1EA8.quest_subtitle": "Tier 2 armor"
+	"quest.1093BA38C50D1EA8.title": "Crusader Armor"
+	"quest.10E969E37FE81A40.quest_desc": [
+		"A &6Reforging Table&r rerolls the bonuses of a piece of gear, and can raise its rarity. It costs rarity materials and gem dust."
+		"Reforging to &9Rare&r needs a Smith of level 10, &5Epic&r 20, &6Mythic&r 30."
+	]
+	"quest.10E969E37FE81A40.quest_subtitle": "Reroll and upgrade gear"
+	"quest.10E969E37FE81A40.title": "A Second Forging"
 	"quest.11F4C25FDB99D364.quest_desc": [
 		"Never take a blow you can roll away from. R, unless you changed it."
 		"Mid-roll, nothing can touch you. Rolls recharge over time."
 	]
 	"quest.11F4C25FDB99D364.quest_subtitle": "Dodge roll"
 	"quest.11F4C25FDB99D364.title": "Light on Your Feet"
+	"quest.130AD4B6ADB6DAEF.quest_desc": [
+		"&dGems&r drop from monsters and chests. Each one gives a different bonus depending on where it sits: weapon, armor, or anything else."
+		"Hover over a gem to read all its bonuses."
+	]
+	"quest.130AD4B6ADB6DAEF.quest_subtitle": "Find a gem"
+	"quest.130AD4B6ADB6DAEF.title": "Stones of Power"
+	"quest.135B76B18CB805D2.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Fire Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.135B76B18CB805D2.quest_subtitle": "Tier 3 armor"
+	"quest.135B76B18CB805D2.title": "Netherite Fire Robes"
+	"quest.136C0F86B7BE38A7.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Aqua Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.136C0F86B7BE38A7.quest_subtitle": "Tier 3 armor"
+	"quest.136C0F86B7BE38A7.title": "Netherite Aqua Robes"
 	"quest.139971D90D5C61AB.quest_desc": [
 		"Many spells burn runes. Make them at a Rune Crafting Altar: same materials, more runes than a crafting table."
 	]
@@ -46,6 +121,37 @@
 	]
 	"quest.14102C2355F637DA.quest_subtitle": "Boss"
 	"quest.14102C2355F637DA.title": "Teeth of the Tide"
+	"quest.14A3168591A19450.quest_desc": [
+		"The endgame set of every Deadeye: the &dBounty Hunter Armor&r."
+		"At a smithing table, upgrade each Deadeye Armor piece (diamond or netherite) with a &dGeneral's Lost Crystal&r."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only a Hunter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.14A3168591A19450.quest_subtitle": "Endgame armor"
+	"quest.14A3168591A19450.title": "The Armory"
+	"quest.14C07E14E60A6AAE.quest_desc": [
+		"One necklace at a time. Pick the one that matches your class's power."
+	]
+	"quest.14C07E14E60A6AAE.quest_subtitle": "Necklace slot"
+	"quest.14C07E14E60A6AAE.title": "Close to the Heart"
+	"quest.14EFAE6064BD4190.quest_desc": [
+		"Get a netherite Terra Wand or Staff."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.14EFAE6064BD4190.quest_subtitle": "Tier 3 weapon"
+	"quest.14EFAE6064BD4190.title": "Forged in Netherite"
+	"quest.1545503C9E7552D8.quest_desc": [
+		"Wear or carry all four pieces of the &eWildling Suit&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.1545503C9E7552D8.quest_subtitle": "Tier 1 armor"
+	"quest.1545503C9E7552D8.title": "Wildling Suit"
 	"quest.15511B0F8DB55CDA.quest_desc": [
 		"This book walks with you from your first night to the edge of the world."
 		"Each tab is a chapter. Each quest points at something worth trying, and pays you for it."
@@ -57,11 +163,92 @@
 	]
 	"quest.15511B0F8DB55CDA.quest_subtitle": "Start here"
 	"quest.15511B0F8DB55CDA.title": "Welcome, Traveler"
+	"quest.1577601890C78DF9.quest_desc": [
+		"Get a netherite Longbow or Shortbow."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.1577601890C78DF9.quest_subtitle": "Tier 3 weapon"
+	"quest.1577601890C78DF9.title": "Forged in Netherite"
+	"quest.159F042572E81979.quest_desc": [
+		"Wear or carry all four pieces of the &eArcher Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.159F042572E81979.quest_subtitle": "Tier 1 armor"
+	"quest.159F042572E81979.title": "Archer Armor"
+	"quest.15B92936D987CD76.quest_desc": [
+		"Every War Archer walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.15B92936D987CD76.quest_subtitle": "Your class, step by step"
+	"quest.15B92936D987CD76.title": "The War Archer's Path"
+	"quest.15BA62CCEF012E15.quest_desc": [
+		"Get a netherite Wind Wand or Staff."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.15BA62CCEF012E15.quest_subtitle": "Tier 3 weapon"
+	"quest.15BA62CCEF012E15.title": "Forged in Netherite"
+	"quest.160B130DB069CAFF.quest_desc": [
+		"Wear or carry all four pieces of the &eTroubadour Garb&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Buy&r: the Luthier in the Bard's pub may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.160B130DB069CAFF.quest_subtitle": "Tier 2 armor"
+	"quest.160B130DB069CAFF.title": "Troubadour Garb"
+	"quest.160DA70F74EDD430.quest_desc": [
+		"Wear or carry all four pieces of the &eFire Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.160DA70F74EDD430.quest_subtitle": "Tier 2 armor"
+	"quest.160DA70F74EDD430.title": "Fire Robes"
+	"quest.160E770304A9E71A.quest_desc": [
+		"Every Priest walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.160E770304A9E71A.quest_subtitle": "Your class, step by step"
+	"quest.160E770304A9E71A.title": "The Priest's Path"
 	"quest.160ED3FACCC66FD9.quest_desc": [
 		"Shulkers guard the cities. Their shells make portable chests."
 	]
 	"quest.160ED3FACCC66FD9.quest_subtitle": "Side task"
 	"quest.160ED3FACCC66FD9.title": "Shell Collector"
+	"quest.1633486DD7D05BD1.quest_desc": [
+		"Every Water Mage walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.1633486DD7D05BD1.quest_subtitle": "Your class, step by step"
+	"quest.1633486DD7D05BD1.title": "The Water Mage's Path"
+	"quest.1634EC6D9DC78D3A.quest_desc": [
+		"Get an Elemental Staff."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.1634EC6D9DC78D3A.quest_subtitle": "Tier 1 weapon"
+	"quest.1634EC6D9DC78D3A.title": "First Steel"
+	"quest.16382999932D7891.quest_desc": [
+		"The &6Augmenting Table&r fine-tunes the bonuses of your very best gear. JEI shows what it costs."
+		"Save it for the pieces you mean to keep."
+	]
+	"quest.16382999932D7891.quest_subtitle": "Endgame tuning"
+	"quest.16382999932D7891.title": "The Final Polish"
 	"quest.16410072A73C2220.quest_desc": [
 		"Targets in a fenced yard. The Archery Artisan sells bows, crossbows, arrows and archer armor."
 		""
@@ -77,26 +264,116 @@
 	]
 	"quest.1683BAA7EE6A9D08.quest_subtitle": "Chapter start"
 	"quest.1683BAA7EE6A9D08.title": "Eyes of the Void"
+	"quest.16B2F0A59B063880.quest_desc": [
+		"Get a netherite Aqua Wand or Staff."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.16B2F0A59B063880.quest_subtitle": "Tier 3 weapon"
+	"quest.16B2F0A59B063880.title": "Forged in Netherite"
 	"quest.16E53725EC3775DC.quest_desc": [
 		"Dungeon chests keep a share for each of you. No need to race your friends to the loot."
 	]
 	"quest.16E53725EC3775DC.quest_subtitle": "Personal dungeon chests"
 	"quest.16E53725EC3775DC.title": "Yours Alone"
+	"quest.17F753B33C2A16EF.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Troubadour Garb&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.17F753B33C2A16EF.quest_subtitle": "Tier 3 armor"
+	"quest.17F753B33C2A16EF.title": "Netherite Troubadour Garb"
 	"quest.18165E933705A224.quest_desc": [
 		"Rusted halls under the mountains, still humming. Something there is still awake."
 	]
 	"quest.18165E933705A224.quest_subtitle": "Frontier"
 	"quest.18165E933705A224.title": "The Ancient Factory"
+	"quest.184EFCC08FF60DFA.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a longbow made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.184EFCC08FF60DFA.quest_subtitle": "Optional: boss-only weapon"
+	"quest.184EFCC08FF60DFA.title": "A Legend in Hand"
+	"quest.1862B70199B7B41B.quest_desc": [
+		"The endgame set of every Tundra Hunter: the &dPolar Stalker Armor&r."
+		"At a smithing table, upgrade each Tundra Armor piece (diamond or netherite) with a &dRavager's Lost Crystal&r."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only a Hunter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.1862B70199B7B41B.quest_subtitle": "Endgame armor"
+	"quest.1862B70199B7B41B.title": "The Armory"
+	"quest.18630AE31317AF46.quest_desc": [
+		"Two endgame sets answer a Rogue. Either one completes this step:"
+		"- &dDeathmantle Armor&r: Assassin Armor piece + &dChampion's Lost Crystal&r"
+		"- &dSlayer Armor&r: Assassin Armor piece + &dChampion's Forgotten Crystal&r"
+		"Upgrade each piece at a smithing table (diamond or netherite pieces both work)."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only a Hunter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.18630AE31317AF46.quest_subtitle": "Endgame armor"
+	"quest.18630AE31317AF46.title": "The Armory"
 	"quest.1870DB9E3B1A8057.quest_desc": [
 		"Alchemists earn experience brewing, crafting runes and potion charms. Brew any potion."
 	]
 	"quest.1870DB9E3B1A8057.quest_subtitle": "Job starter"
 	"quest.1870DB9E3B1A8057.title": "Alchemist"
+	"quest.18A79782D6513961.quest_desc": [
+		"Wear or carry all four pieces of the &eAssassin Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Hunter level 20."
+		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.18A79782D6513961.quest_subtitle": "Tier 2 armor"
+	"quest.18A79782D6513961.title": "Assassin Armor"
+	"quest.18ADF425BBD7F047.quest_desc": [
+		"Two endgame sets answer a Archer. Either one completes this step:"
+		"- &dStrider Armor&r: Ranger Armor piece + &dVanquisher's Lost Crystal&r"
+		"- &dRiftstalker Armor&r: Ranger Armor piece + &dVanquisher's Forgotten Crystal&r"
+		"Upgrade each piece at a smithing table (diamond or netherite pieces both work)."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only a Hunter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.18ADF425BBD7F047.quest_subtitle": "Endgame armor"
+	"quest.18ADF425BBD7F047.title": "The Armory"
+	"quest.18CF3743171967AF.quest_desc": [
+		"Every Berserker walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.18CF3743171967AF.quest_subtitle": "Your class, step by step"
+	"quest.18CF3743171967AF.title": "The Berserker's Path"
 	"quest.1912871E23D2757E.quest_desc": [
 		"Wither skeletons roam the fortress halls. Their skulls are needed if you ever dare summon the Wither."
 	]
 	"quest.1912871E23D2757E.quest_subtitle": "Side task"
 	"quest.1912871E23D2757E.title": "Grim Trophies"
+	"quest.1917B6FC25356897.quest_desc": [
+		"Wear or carry all four pieces of the &ePaladin Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.1917B6FC25356897.quest_subtitle": "Tier 1 armor"
+	"quest.1917B6FC25356897.title": "Paladin Armor"
+	"quest.192A9BF9D510B1BC.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Wind Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.192A9BF9D510B1BC.quest_subtitle": "Tier 3 armor"
+	"quest.192A9BF9D510B1BC.title": "Netherite Wind Robes"
 	"quest.1957E4BC9E79A53A.quest_desc": [
 		"Defeat &bMaledictus&r, the prisoner who became the prison."
 		""
@@ -104,6 +381,32 @@
 	]
 	"quest.1957E4BC9E79A53A.quest_subtitle": "Boss"
 	"quest.1957E4BC9E79A53A.title": "The Cursed Warden"
+	"quest.199799F89DE093FE.quest_desc": [
+		"Get a Terra Wand or Staff."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.199799F89DE093FE.quest_subtitle": "Tier 2 weapon"
+	"quest.199799F89DE093FE.title": "A Diamond Edge"
+	"quest.19A6506E90EAF78A.quest_desc": [
+		"Get a Royal Longbow, Mechanic Shortbow or diamond Spear."
+		""
+		"&6Craft&r: Hunter level 20."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.19A6506E90EAF78A.quest_subtitle": "Tier 2 weapon"
+	"quest.19A6506E90EAF78A.title": "A Diamond Edge"
+	"quest.1A23F832A283CE90.quest_desc": [
+		"Get a diamond Rapier, Lute, Lyre or Harp Crossbow."
+		""
+		"&6Craft&r: Smith (rapier), Enchanter (lute, lyre) or Hunter (harp crossbow) level 20."
+		"&6Buy&r: the Luthier in the Bard's pub may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.1A23F832A283CE90.quest_subtitle": "Tier 2 weapon"
+	"quest.1A23F832A283CE90.title": "A Diamond Edge"
 	"quest.1A456EDA90491257.quest_desc": [
 		"Tome in its spell book slot. A weapon of the same class in hand."
 		"Now cast: the spell keys are shown on your hotbar."
@@ -114,6 +417,53 @@
 		"Smelt the debris, mix it with gold and forge your first netherite ingot."
 	]
 	"quest.1A5DB36593187D79.title": "Netherite in Hand"
+	"quest.1ADCB7997A7BB683.quest_desc": [
+		"Infuse your shelves at the enchanting table itself, then upgrade them. Enchant at level 60."
+	]
+	"quest.1ADCB7997A7BB683.quest_subtitle": "Enchanter 20"
+	"quest.1ADCB7997A7BB683.title": "Mastering Hell and Sea"
+	"quest.1AFAFEEA415040B0.quest_desc": [
+		"Wear or carry all four pieces of the &eRogue Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.1AFAFEEA415040B0.quest_subtitle": "Tier 1 armor"
+	"quest.1AFAFEEA415040B0.title": "Rogue Armor"
+	"quest.1B42EFBAB1CB5729.quest_desc": [
+		"Every Archer walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.1B42EFBAB1CB5729.quest_subtitle": "Your class, step by step"
+	"quest.1B42EFBAB1CB5729.title": "The Archer's Path"
+	"quest.1B8CB1D0813C11BA.quest_desc": [
+		"Get a netherite Longbow, Shortbow or Spear."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.1B8CB1D0813C11BA.quest_subtitle": "Tier 3 weapon"
+	"quest.1B8CB1D0813C11BA.title": "Forged in Netherite"
+	"quest.1BA0A3C135C77EEB.quest_desc": [
+		"Claim the chunks of your home so nobody else can break or open anything there."
+		"Press F3+G to see chunk borders. Stand inside one and type &e/oclaims claim&r; &e/oclaims unclaim&r gives it back. &e/oclaims anchor&r places a claiming anchor that claims the area around it."
+		"Party members share claims; the ' key opens the menu with more options."
+		"Each player can claim up to 500 chunks."
+	]
+	"quest.1BA0A3C135C77EEB.quest_subtitle": "Land claims"
+	"quest.1BA0A3C135C77EEB.title": "This Land Is Mine"
+	"quest.1BA3D489C4863B01.quest_desc": [
+		"Get a Rapid or Heavy Crossbow."
+		""
+		"&6Craft&r: Hunter level 20."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.1BA3D489C4863B01.quest_subtitle": "Tier 2 weapon"
+	"quest.1BA3D489C4863B01.title": "A Diamond Edge"
 	"quest.1BACA375DF555AD6.quest_desc": [
 		"A forge built of blackstone and lava, guarded by its own creation."
 	]
@@ -141,6 +491,27 @@
 	]
 	"quest.1C1A258BBB1C69E5.quest_subtitle": "Side task"
 	"quest.1C1A258BBB1C69E5.title": "Eye of the Void"
+	"quest.1C4C98EDF4A6A9A2.quest_desc": [
+		"Get a Composite Longbow."
+		""
+		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.1C4C98EDF4A6A9A2.quest_subtitle": "Tier 1 weapon"
+	"quest.1C4C98EDF4A6A9A2.title": "First Steel"
+	"quest.1CCCDDC9CD24B811.quest_desc": [
+		"Small things that make a long road easier: jewelry, a backpack, a storage room, a kitchen, and what to do when things go wrong."
+		""
+		"Already in Getting Started: rolling (R), reviving friends, parties (H), waystones, the cooking pot, salvaging and your own chest loot."
+	]
+	"quest.1CCCDDC9CD24B811.quest_subtitle": "Everything else, step by step"
+	"quest.1CCCDDC9CD24B811.title": "The Adventurer's Kit"
+	"quest.1D039509704E59E4.quest_desc": [
+		"Socketed a gem into the wrong sword? A &6Sigil of Withdrawal&r at the smithing table takes the gems back out, unharmed."
+	]
+	"quest.1D039509704E59E4.quest_subtitle": "Remove gems"
+	"quest.1D039509704E59E4.title": "Second Thoughts"
 	"quest.1D4EBCBCFF715BE5.quest_desc": [
 		"Gear comes in rarities, each with its own color: Common, Uncommon, Rare, Epic, Mythic. The rarer, the more bonus stats."
 		"Gear you do not need goes to a Salvaging Table. Its scraps pay for reforging."
@@ -149,6 +520,45 @@
 	]
 	"quest.1D4EBCBCFF715BE5.quest_subtitle": "Gear rarity and salvaging"
 	"quest.1D4EBCBCFF715BE5.title": "Not All Blades Are Equal"
+	"quest.1DC10232987ECA09.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Assassin Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.1DC10232987ECA09.quest_subtitle": "Tier 3 armor"
+	"quest.1DC10232987ECA09.title": "Netherite Assassin Armor"
+	"quest.1DDA36D6C2E5B030.quest_desc": [
+		"Get a netherite Longbow or Shortbow."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.1DDA36D6C2E5B030.quest_subtitle": "Tier 3 weapon"
+	"quest.1DDA36D6C2E5B030.title": "Forged in Netherite"
+	"quest.1E0AC8C18F325735.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a staff made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.1E0AC8C18F325735.quest_subtitle": "Optional: boss-only weapon"
+	"quest.1E0AC8C18F325735.title": "A Legend in Hand"
+	"quest.1E25DBC1DC9EEC04.quest_desc": [
+		"Get a Royal Longbow or Mechanic Shortbow."
+		""
+		"&6Craft&r: Hunter level 20."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.1E25DBC1DC9EEC04.quest_subtitle": "Tier 2 weapon"
+	"quest.1E25DBC1DC9EEC04.title": "A Diamond Edge"
+	"quest.1E37A24026D2DD38.quest_desc": [
+		"Wear or carry all four pieces of the &eElemental Apprentice Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.1E37A24026D2DD38.quest_subtitle": "Tier 1 armor"
+	"quest.1E37A24026D2DD38.title": "Elemental Apprentice Robes"
 	"quest.1E4A5E0883A15E45.quest_desc": [
 		"Something has nested under the fields. Find a small dungeon and clear out what lives there."
 		""
@@ -156,6 +566,54 @@
 	]
 	"quest.1E4A5E0883A15E45.quest_subtitle": "Hearthlands"
 	"quest.1E4A5E0883A15E45.title": "Cellar Dwellers"
+	"quest.1E8FD874A1FF7D03.quest_desc": [
+		"Get an iron Dagger or Sickle."
+		""
+		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.1E8FD874A1FF7D03.quest_subtitle": "Tier 1 weapon"
+	"quest.1E8FD874A1FF7D03.title": "First Steel"
+	"quest.1EAEF213F834998A.quest_desc": [
+		"Get a Arcane Wand or Staff."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.1EAEF213F834998A.quest_subtitle": "Tier 2 weapon"
+	"quest.1EAEF213F834998A.title": "A Diamond Edge"
+	"quest.1ED644D0BF1D22B1.quest_desc": [
+		"Every Tundra Hunter walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.1ED644D0BF1D22B1.quest_subtitle": "Your class, step by step"
+	"quest.1ED644D0BF1D22B1.title": "The Tundra Hunter's Path"
+	"quest.1EE85DFC69D4B654.quest_desc": [
+		"The endgame set of every Bard: the &dStoryteller Garb&r."
+		"At a smithing table, upgrade each Troubadour Garb piece (diamond or netherite) with a &dVirtuoso's Lost Crystal&r."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.1EE85DFC69D4B654.quest_subtitle": "Endgame armor"
+	"quest.1EE85DFC69D4B654.title": "The Armory"
+	"quest.1EFCB5B3F1DBD384.quest_desc": [
+		"Two endgame sets answer a Arcane Wizard. Either one completes this step:"
+		"- &dAstral Robes&r: Arcane Robes piece + &dConqueror's Lost Crystal&r"
+		"- &dTempest Robes&r: Arcane Robes piece + &dConqueror's Forgotten Crystal&r"
+		"Upgrade each piece at a smithing table (diamond or netherite pieces both work)."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.1EFCB5B3F1DBD384.quest_subtitle": "Endgame armor"
+	"quest.1EFCB5B3F1DBD384.title": "The Armory"
 	"quest.1EFEBF71C0647595.quest_desc": [
 		"Defeat the &6Ancient Remnant&r in the depths of the pyramid."
 		""
@@ -163,6 +621,29 @@
 	]
 	"quest.1EFEBF71C0647595.quest_subtitle": "Boss"
 	"quest.1EFEBF71C0647595.title": "Bones of the Sun King"
+	"quest.1F106773840DE49E.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a claymore, hammer or mace made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.1F106773840DE49E.quest_subtitle": "Optional: boss-only weapon"
+	"quest.1F106773840DE49E.title": "A Legend in Hand"
+	"quest.1F669FE7EC5A7658.quest_desc": [
+		"Get a Holy Wand or Holy Staff."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.1F669FE7EC5A7658.quest_subtitle": "Tier 1 weapon"
+	"quest.1F669FE7EC5A7658.title": "First Steel"
+	"quest.1F6DCBEFED7E0812.quest_desc": [
+		"Get an Elemental Staff."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.1F6DCBEFED7E0812.quest_subtitle": "Tier 1 weapon"
+	"quest.1F6DCBEFED7E0812.title": "First Steel"
 	"quest.1FAA931726326BFC.quest_desc": [
 		"Towers of blue stone under the waves. Bring water breathing."
 	]
@@ -173,6 +654,21 @@
 	]
 	"quest.1FF45754B3ADE445.quest_subtitle": "Job starter"
 	"quest.1FF45754B3ADE445.title": "Farmer"
+	"quest.1FF7572DD82363E8.quest_desc": [
+		"Wear or carry all four pieces of the &eArcher Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.1FF7572DD82363E8.quest_subtitle": "Tier 1 armor"
+	"quest.1FF7572DD82363E8.title": "Archer Armor"
+	"quest.20081EFCB48D59A1.quest_desc": [
+		"Spawners can be picked up with a &6Silk Touch&r pickaxe (not inside the great dungeons, where the stone will not break), carried home and modified."
+		"Right-click a spawner with the right item to change it; JEI lists every modifier."
+	]
+	"quest.20081EFCB48D59A1.quest_subtitle": "Collect and modify spawners"
+	"quest.20081EFCB48D59A1.title": "Caged Monsters"
 	"quest.20827BF57F7546BE.quest_desc": [
 		"Old keeps and piglin donjons dot the wastes. Explore one."
 	]
@@ -184,10 +680,34 @@
 	]
 	"quest.208546346D7B1A57.quest_subtitle": "Learn new spells"
 	"quest.208546346D7B1A57.title": "The Binding Table"
+	"quest.20B9A30B75154DF8.quest_desc": [
+		"Get a netherite Dagger or Sickle."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.20B9A30B75154DF8.quest_subtitle": "Tier 3 weapon"
+	"quest.20B9A30B75154DF8.title": "Forged in Netherite"
+	"quest.20FE8A449EC1746B.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Terra Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.20FE8A449EC1746B.quest_subtitle": "Tier 3 armor"
+	"quest.20FE8A449EC1746B.title": "Netherite Terra Robes"
 	"quest.21324AB76EF33990.quest_desc": [
 		"A broken fortress drifting at the edge of the void."
 	]
 	"quest.21324AB76EF33990.title": "The Ruined Citadel"
+	"quest.2241FB6771756DF2.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Arcane Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.2241FB6771756DF2.quest_subtitle": "Tier 3 armor"
+	"quest.2241FB6771756DF2.title": "Netherite Arcane Robes"
 	"quest.23438309D3EE7ED9.quest_desc": [
 		"Some things only a trained hand can &omake&r:"
 		"Class gear is made by three trades, by tier: tier 1 at level 10, diamond tier 2 at 20, netherite tier 3 at 25, Armory sets at 30."
@@ -203,15 +723,116 @@
 	]
 	"quest.23438309D3EE7ED9.quest_subtitle": "Crafting gates and job experience"
 	"quest.23438309D3EE7ED9.title": "Masters of a Trade"
+	"quest.258BC2864592F600.quest_desc": [
+		"Wear or carry all four pieces of the &eAqua Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.258BC2864592F600.quest_subtitle": "Tier 2 armor"
+	"quest.258BC2864592F600.title": "Aqua Robes"
+	"quest.25A6E69E62FA987F.quest_desc": [
+		"Wear or carry all four pieces of the &eTerra Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.25A6E69E62FA987F.quest_subtitle": "Tier 2 armor"
+	"quest.25A6E69E62FA987F.title": "Terra Robes"
 	"quest.267B5D48DAF1CC15.quest_desc": [
 		"Smiths earn experience smelting ingots, crafting tools, weapons and armor, and reforging, salvaging and socketing gear. Craft an iron pickaxe."
 	]
 	"quest.267B5D48DAF1CC15.quest_subtitle": "Job starter"
 	"quest.267B5D48DAF1CC15.title": "Smith"
+	"quest.271E268D7A3A594E.quest_desc": [
+		"Get a netherite Rapier, Lute, Lyre or Harp Crossbow."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith (rapier), Enchanter (lute, lyre) or Hunter (harp crossbow) level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.271E268D7A3A594E.quest_subtitle": "Tier 3 weapon"
+	"quest.271E268D7A3A594E.title": "Forged in Netherite"
+	"quest.2803A79AF0532E3A.quest_desc": [
+		"Wear or carry all four pieces of the &eArcane Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.2803A79AF0532E3A.quest_subtitle": "Tier 2 armor"
+	"quest.2803A79AF0532E3A.title": "Arcane Robes"
+	"quest.2822EF3B2E746D80.quest_desc": [
+		"Get a diamond Claymore, Great Hammer or Mace."
+		""
+		"&6Craft&r: Smith level 20."
+		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.2822EF3B2E746D80.quest_subtitle": "Tier 2 weapon"
+	"quest.2822EF3B2E746D80.title": "A Diamond Edge"
+	"quest.2862FA76D20232FE.quest_desc": [
+		"Get a diamond Holy Wand or Staff."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.2862FA76D20232FE.quest_subtitle": "Tier 2 weapon"
+	"quest.2862FA76D20232FE.title": "A Diamond Edge"
+	"quest.2912F0282CC64827.quest_desc": [
+		"Get an Elemental Staff."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.2912F0282CC64827.quest_subtitle": "Tier 1 weapon"
+	"quest.2912F0282CC64827.title": "First Steel"
+	"quest.29920E4F607C2A96.quest_desc": [
+		"Every Wind Mage walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.29920E4F607C2A96.quest_subtitle": "Your class, step by step"
+	"quest.29920E4F607C2A96.title": "The Wind Mage's Path"
 	"quest.29E79544ED9ADE2F.quest_desc": [
 		"Throw an eye and follow it underground to the stronghold and its portal room."
 	]
 	"quest.29E79544ED9ADE2F.title": "The Stronghold"
+	"quest.2A77503D5F21B68C.quest_desc": [
+		"Get a Wizard Staff."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.2A77503D5F21B68C.quest_subtitle": "Tier 1 weapon"
+	"quest.2A77503D5F21B68C.title": "First Steel"
+	"quest.2B3AA7A8937E6500.quest_desc": [
+		"Wear or carry all four pieces of the &eAken Suit&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.2B3AA7A8937E6500.quest_subtitle": "Tier 3 armor"
+	"quest.2B3AA7A8937E6500.title": "Aken Suit"
+	"quest.2B8C02ADA6749384.quest_desc": [
+		"Get a Composite Longbow."
+		""
+		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.2B8C02ADA6749384.quest_subtitle": "Tier 1 weapon"
+	"quest.2B8C02ADA6749384.title": "First Steel"
+	"quest.2C247588B7ACFE43.quest_desc": [
+		"Every Bard walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.2C247588B7ACFE43.quest_subtitle": "Your class, step by step"
+	"quest.2C247588B7ACFE43.title": "The Bard's Path"
 	"quest.2C9281C642E70027.quest_desc": [
 		"The &aHearthlands&r are the gentle lands: plains, forests, meadows and rivers, with villages, taverns and small dungeons. Learn your class here."
 		"Walk the streets of a village to begin."
@@ -233,17 +854,61 @@
 		"Fill the frame and jump in. There is no coming back until the dragon falls, or you die."
 	]
 	"quest.2E75B2448D173567.title": "Into the End"
+	"quest.2ED6CFFFB9CFB608.quest_desc": [
+		"Wear or carry all four pieces of the &eWizard Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.2ED6CFFFB9CFB608.quest_subtitle": "Tier 1 armor"
+	"quest.2ED6CFFFB9CFB608.title": "Wizard Robes"
+	"quest.301A632C8984BC41.quest_desc": [
+		"Get a Composite Longbow or an iron Spear."
+		""
+		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.301A632C8984BC41.quest_subtitle": "Tier 1 weapon"
+	"quest.301A632C8984BC41.title": "First Steel"
 	"quest.303494E14ED1C03B.quest_desc": [
 		"Choose who you start as. You get the class tome, a starter weapon, one armor piece, and the runes or arrows it burns."
 		""
 		"Nothing is final: a second class waits at any Spell Binding Table."
+		""
+		"Your class's road from here, weapon by weapon and set by set, opens in the &6Your Calling&r tab."
 	]
 	"quest.303494E14ED1C03B.quest_subtitle": "Your class starter kit"
 	"quest.303494E14ED1C03B.title": "Choose Your Calling"
+	"quest.30AD317EAFFF4326.quest_desc": [
+		"A &6Library&r stores enchanted books as points and hands out any enchantment you have stored, at any level up to the best you put in. The &6Ender Library&r holds far more."
+		"Feed it the books you will never use."
+	]
+	"quest.30AD317EAFFF4326.quest_subtitle": "Store enchantments"
+	"quest.30AD317EAFFF4326.title": "The Library"
 	"quest.311B8E5CCB0CEAB9.quest_desc": [
 		"Dark brick bridges cross the lava seas. Find a fortress."
 	]
 	"quest.311B8E5CCB0CEAB9.title": "Fortress of Flame"
+	"quest.318F3444CB533462.quest_desc": [
+		"Rings and necklaces go in their own slots (G opens them) and add spell power, health or speed."
+		"Craft one with a gem and gold, or find one in a dungeon."
+	]
+	"quest.318F3444CB533462.quest_subtitle": "Ring slot"
+	"quest.318F3444CB533462.title": "A Ring for Each Hand"
+	"quest.31E240F857E39A16.quest_desc": [
+		"Two endgame sets answer a Warrior. Either one completes this step:"
+		"- &dDestroyer Armor&r: Berserker Armor piece + &dChampion's Lost Crystal&r"
+		"- &dOnslaught Armor&r: Berserker Armor piece + &dChampion's Forgotten Crystal&r"
+		"Upgrade each piece at a smithing table (diamond or netherite pieces both work)."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only a Smith of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.31E240F857E39A16.quest_subtitle": "Endgame armor"
+	"quest.31E240F857E39A16.title": "The Armory"
 	"quest.320B32FBD74A9EAF.quest_desc": [
 		"You can walk anywhere. Two doors need keys:"
 		"- &6Nether Sigil&r: from The Harbinger, at the end of the Overworld chapter. Fire will not wake a Nether portal; the sigil will."
@@ -252,6 +917,29 @@
 	]
 	"quest.320B32FBD74A9EAF.quest_subtitle": "The Nether Sigil and the Void Shard"
 	"quest.320B32FBD74A9EAF.title": "Locked Doors"
+	"quest.32C34EE2A68B3253.quest_desc": [
+		"Get a Royal Longbow or Mechanic Shortbow."
+		""
+		"&6Craft&r: Hunter level 20."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.32C34EE2A68B3253.quest_subtitle": "Tier 2 weapon"
+	"quest.32C34EE2A68B3253.title": "A Diamond Edge"
+	"quest.341E7D13B080731C.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a staff made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.341E7D13B080731C.quest_subtitle": "Optional: boss-only weapon"
+	"quest.341E7D13B080731C.title": "A Legend in Hand"
+	"quest.3432529E4CA45247.quest_desc": [
+		"Get a netherite Holy Wand or Staff."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.3432529E4CA45247.quest_subtitle": "Tier 3 weapon"
+	"quest.3432529E4CA45247.title": "Forged in Netherite"
 	"quest.34BEFE9F912CD9C5.quest_desc": [
 		"Deep under the Hearthlands, a sealed chamber holds a suit of armor that is not empty: the &7Ferrous Wroughtnaut&r."
 		"Its armor turns most blows. Dodge the axe, then strike its back while it recovers."
@@ -259,11 +947,96 @@
 	]
 	"quest.34BEFE9F912CD9C5.quest_subtitle": "Optional boss"
 	"quest.34BEFE9F912CD9C5.title": "The Iron Sentinel"
+	"quest.3611174B7DE1131E.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a axe or sword made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.3611174B7DE1131E.quest_subtitle": "Optional: boss-only weapon"
+	"quest.3611174B7DE1131E.title": "A Legend in Hand"
+	"quest.364D117B6870A5B2.quest_desc": [
+		"Two endgame sets answer a Frost Wizard. Either one completes this step:"
+		"- &dGlacier Robes&r: Frost Robes piece + &dVanquisher's Lost Crystal&r"
+		"- &dRimeweave Robes&r: Frost Robes piece + &dVanquisher's Forgotten Crystal&r"
+		"Upgrade each piece at a smithing table (diamond or netherite pieces both work)."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.364D117B6870A5B2.quest_subtitle": "Endgame armor"
+	"quest.364D117B6870A5B2.title": "The Armory"
 	"quest.3666625E717DFC13.quest_desc": [
 		"Summon and destroy &8the Wither&r with your whole group. Everyone nearby earns an Ashen Skull Shard."
 	]
 	"quest.3666625E717DFC13.quest_subtitle": "Optional raid"
 	"quest.3666625E717DFC13.title": "The Wither"
+	"quest.36E9B005B8159543.quest_desc": [
+		"Wear or carry all four pieces of the &ePrior Vestments&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.36E9B005B8159543.quest_subtitle": "Tier 2 armor"
+	"quest.36E9B005B8159543.title": "Prior Vestments"
+	"quest.38D3B1761DE5579B.quest_desc": [
+		"Villages with a &6Jeweler&r trade gems, rings and necklaces. Gem veins hide underground too."
+	]
+	"quest.38D3B1761DE5579B.quest_subtitle": "Rings and necklaces"
+	"quest.38D3B1761DE5579B.title": "The Jeweler"
+	"quest.39026CB0D8738A17.quest_desc": [
+		"Get netherite Knuckles."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.39026CB0D8738A17.quest_subtitle": "Tier 3 weapon"
+	"quest.39026CB0D8738A17.title": "Forged in Netherite"
+	"quest.391BEC2F41605019.quest_desc": [
+		"Wear or carry all four pieces of the &eElemental Apprentice Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.391BEC2F41605019.quest_subtitle": "Tier 1 armor"
+	"quest.391BEC2F41605019.title": "Elemental Apprentice Robes"
+	"quest.3976D3F96227D68F.quest_desc": [
+		"Gear in this world is more than its name. Every magic item rolls &obonuses&r (affixes), can hold &ogems&r, and can be broken down, reforged and fine-tuned."
+		"Enchanting reaches far past level 30 once the right shelves stand around the table."
+		""
+		"This tab walks through both. Rarity and world tiers are in Getting Started."
+	]
+	"quest.3976D3F96227D68F.quest_subtitle": "Apotheosis, step by step"
+	"quest.3976D3F96227D68F.title": "The Forge and the Library"
+	"quest.39BC546692614563.quest_desc": [
+		"Get an iron Berserker Axe."
+		""
+		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.39BC546692614563.quest_subtitle": "Tier 1 weapon"
+	"quest.39BC546692614563.title": "First Steel"
+	"quest.39E4EF6895083D0C.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a instrument, rapier or harp crossbow made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.39E4EF6895083D0C.quest_subtitle": "Optional: boss-only weapon"
+	"quest.39E4EF6895083D0C.title": "A Legend in Hand"
+	"quest.3A6C127DAF675E05.quest_desc": [
+		"A &6Gem Cutting Table&r combines gems (and gem dust) into a gem of higher purity. Higher purity, bigger bonuses."
+		"Enchanters earn job experience cutting gems."
+	]
+	"quest.3A6C127DAF675E05.quest_subtitle": "Raise gem purity"
+	"quest.3A6C127DAF675E05.title": "The Gem Cutter"
+	"quest.3B976CE5D73E5FC0.quest_desc": [
+		"Wear or carry all four pieces of the &eWizard Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.3B976CE5D73E5FC0.quest_subtitle": "Tier 1 armor"
+	"quest.3B976CE5D73E5FC0.title": "Wizard Robes"
 	"quest.3DFB025E3BBA5CDC.quest_desc": [
 		"Defeat &4The Harbinger&r, the factory's iron herald."
 		"Everyone nearby at the kill receives a &6Nether Sigil&r: use it on an obsidian frame to open the way to the Nether."
@@ -276,6 +1049,14 @@
 	]
 	"quest.3E7B599CAC455CBF.quest_subtitle": "Wildlands"
 	"quest.3E7B599CAC455CBF.title": "The Cursed Pyramid"
+	"quest.3F03244BAA9EF57E.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Prior Vestments&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.3F03244BAA9EF57E.quest_subtitle": "Tier 3 armor"
+	"quest.3F03244BAA9EF57E.title": "Netherite Prior Vestments"
 	"quest.3F043D30988BC476.quest_desc": [
 		"Press H for the Party HUD: invite your friends and keep their health in sight."
 		"Your spells and swings never hurt each other, and kills near a friend teach you both. Heals and buffs reach every player, party or not."
@@ -322,6 +1103,50 @@
 	]
 	"quest.409FB0BE8F2205F1.quest_subtitle": "Spend a talent point"
 	"quest.409FB0BE8F2205F1.title": "A Point to Spend"
+	"quest.4104BDA8E9E7FE69.quest_desc": [
+		"Get an iron Rapier, a Lute or a Harp Crossbow."
+		""
+		"&6Craft&r: Smith (rapier), Enchanter (lute, lyre) or Hunter (harp crossbow) level 10, or any friend who is one."
+		"&6Buy&r: the Luthier in the Bard's pub may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.4104BDA8E9E7FE69.quest_subtitle": "Tier 1 weapon"
+	"quest.4104BDA8E9E7FE69.title": "First Steel"
+	"quest.411A2262ED7F5B5C.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a longbow made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.411A2262ED7F5B5C.quest_subtitle": "Optional: boss-only weapon"
+	"quest.411A2262ED7F5B5C.title": "A Legend in Hand"
+	"quest.4123E323E910791A.quest_desc": [
+		"Every Deadeye walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.4123E323E910791A.quest_subtitle": "Your class, step by step"
+	"quest.4123E323E910791A.title": "The Deadeye's Path"
+	"quest.41299363454A86A6.quest_desc": [
+		"Wear or carry all four pieces of the &eBerserker Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Smith level 20."
+		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.41299363454A86A6.quest_subtitle": "Tier 2 armor"
+	"quest.41299363454A86A6.title": "Berserker Armor"
+	"quest.417E01114649081A.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a staff made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.417E01114649081A.quest_subtitle": "Optional: boss-only weapon"
+	"quest.417E01114649081A.title": "A Legend in Hand"
+	"quest.425435C54A40EF3D.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a knuckles made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.425435C54A40EF3D.quest_subtitle": "Optional: boss-only weapon"
+	"quest.425435C54A40EF3D.title": "A Legend in Hand"
 	"quest.42582C31630D2A7E.quest_desc": [
 		"An Eye of Desert points the way to the cursed pyramid. Craft one and throw it."
 	]
@@ -332,16 +1157,133 @@
 	]
 	"quest.4278AAA096D6AA74.quest_subtitle": "Side task"
 	"quest.4278AAA096D6AA74.title": "Eye of the Deep"
+	"quest.42848C2DC0442303.quest_desc": [
+		"Get a Wizard Staff."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.42848C2DC0442303.quest_subtitle": "Tier 1 weapon"
+	"quest.42848C2DC0442303.title": "First Steel"
+	"quest.42BD9CB7ADE4FA0A.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a staff made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.42BD9CB7ADE4FA0A.quest_subtitle": "Optional: boss-only weapon"
+	"quest.42BD9CB7ADE4FA0A.title": "A Legend in Hand"
+	"quest.42C7A3AB42E6134D.quest_desc": [
+		"&5Endshelves&r take Infused Dragon's Breath and an Enchanter of level 30. Enchant at level 100, the top."
+	]
+	"quest.42C7A3AB42E6134D.quest_subtitle": "Enchanter 30"
+	"quest.42C7A3AB42E6134D.title": "Dragon-Slaying Enchanter"
+	"quest.4366581CB1238872.quest_desc": [
+		"The endgame set of every War Archer: the &dSentinel Archer Armor&r."
+		"At a smithing table, upgrade each Bowman Armor piece (diamond or netherite) with a &dGeneral's Lost Crystal&r."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only a Hunter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.4366581CB1238872.quest_subtitle": "Endgame armor"
+	"quest.4366581CB1238872.title": "The Armory"
+	"quest.439736F4E5EFBE1D.quest_desc": [
+		"Get a diamond Double Axe or Glaive."
+		""
+		"&6Craft&r: Smith level 20."
+		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.439736F4E5EFBE1D.quest_subtitle": "Tier 2 weapon"
+	"quest.439736F4E5EFBE1D.title": "A Diamond Edge"
+	"quest.441338EFDCC99CEF.quest_desc": [
+		"Wear or carry all four pieces of the &ePriest Vestments&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.441338EFDCC99CEF.quest_subtitle": "Tier 1 armor"
+	"quest.441338EFDCC99CEF.title": "Priest Vestments"
 	"quest.44A9402B363085DF.quest_desc": [
 		"Destroy the crystals and slay the &5Ender Dragon&r. Everyone nearby earns a Dragonscale."
 		"With both the Dragonscale and the Citadel Keystone, your world tier rises to &ePinnacle&r."
 	]
 	"quest.44A9402B363085DF.quest_subtitle": "Boss"
 	"quest.44A9402B363085DF.title": "The Last Dragon"
+	"quest.4656B3206F4BEC9E.quest_desc": [
+		"Every Warrior walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.4656B3206F4BEC9E.quest_subtitle": "Your class, step by step"
+	"quest.4656B3206F4BEC9E.title": "The Warrior's Path"
+	"quest.46E736ACF7965DCF.quest_desc": [
+		"Wear or carry all four pieces of the &eRanger Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Hunter level 20."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.46E736ACF7965DCF.quest_subtitle": "Tier 2 armor"
+	"quest.46E736ACF7965DCF.title": "Ranger Armor"
 	"quest.47192179145EF3AD.quest_desc": [
 		"Piglins hoard gold in huge black fortresses. Find a bastion."
 	]
 	"quest.47192179145EF3AD.title": "Bastion of Gold"
+	"quest.476ABDE74108C527.quest_desc": [
+		"The endgame set of every Berserker: the &dNorse Warlord Suit&r."
+		"At a smithing table, upgrade each Northling Suit piece (diamond or netherite) with a &dRavager's Lost Crystal&r."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only a Smith of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.476ABDE74108C527.quest_subtitle": "Endgame armor"
+	"quest.476ABDE74108C527.title": "The Armory"
+	"quest.47A7D524E4668C17.quest_desc": [
+		"Tier upgrades (iron, gold, diamond, netherite) add rows of slots. Other upgrades add a crafting grid, a furnace, a magnet or auto-feeding."
+	]
+	"quest.47A7D524E4668C17.quest_subtitle": "Backpack upgrades"
+	"quest.47A7D524E4668C17.title": "Room to Grow"
+	"quest.47E3538B073BEA0C.quest_desc": [
+		"Unroll the backpack's sleeping bag to sleep out in the wild, far from any bed."
+	]
+	"quest.47E3538B073BEA0C.quest_subtitle": "Sleeping bag"
+	"quest.47E3538B073BEA0C.title": "Camp Anywhere"
+	"quest.484F1A15221E6BFE.quest_desc": [
+		"Tom's Storage turns a room of chests into one searchable window. Put an &6Inventory Connector&r touching your chests (or linked to them by cables) and a &6Storage Terminal&r next to it."
+		"With a Wireless Terminal in your pocket, M opens it from nearby."
+	]
+	"quest.484F1A15221E6BFE.quest_subtitle": "Tom's Simple Storage"
+	"quest.484F1A15221E6BFE.title": "One Window for Every Chest"
+	"quest.4888226F4A86AA88.quest_desc": [
+		"Every Paladin walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.4888226F4A86AA88.quest_subtitle": "Your class, step by step"
+	"quest.4888226F4A86AA88.title": "The Paladin's Path"
+	"quest.48D3876FA6098A44.quest_desc": [
+		"Wear or carry all four pieces of the &eArcher Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.48D3876FA6098A44.quest_subtitle": "Tier 1 armor"
+	"quest.48D3876FA6098A44.title": "Archer Armor"
+	"quest.49041290BFFAF015.quest_desc": [
+		"Get an iron Double Axe or Glaive."
+		""
+		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.49041290BFFAF015.quest_subtitle": "Tier 1 weapon"
+	"quest.49041290BFFAF015.title": "First Steel"
 	"quest.498B6C57012F8D8C.quest_desc": [
 		"You start in a plains village. Besides its gazebo, villages can have buildings for the classes, each with its own merchant:"
 		"- &dWizard Tower&r: Wizard Merchant (wizards and mages)"
@@ -356,6 +1298,87 @@
 	]
 	"quest.498B6C57012F8D8C.quest_subtitle": "Visit the village"
 	"quest.498B6C57012F8D8C.title": "Merchants of Every Calling"
+	"quest.49CA855A6EB004C9.quest_desc": [
+		"Enchanting here has three stats, shown on the table: &aEterna&r (how high the level goes), &cQuanta&r (how wild the result) and &dArcana&r (how many and how rare the enchantments)."
+		"Every shelf around the table adds to them. Plain bookshelves reach level 30; the shelves below go further."
+	]
+	"quest.49CA855A6EB004C9.quest_subtitle": "How the enchanting table works"
+	"quest.49CA855A6EB004C9.title": "Beyond Level 30"
+	"quest.4A0B61034D97339F.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Deadeye Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.4A0B61034D97339F.quest_subtitle": "Tier 3 armor"
+	"quest.4A0B61034D97339F.title": "Netherite Deadeye Armor"
+	"quest.4A2642B509E8EC39.quest_desc": [
+		"Wear or carry all four pieces of the &eTundra Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Hunter level 20."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.4A2642B509E8EC39.quest_subtitle": "Tier 2 armor"
+	"quest.4A2642B509E8EC39.title": "Tundra Armor"
+	"quest.4B5B8677B3751637.quest_desc": [
+		"Wear or carry all four pieces of the &eWarrior Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.4B5B8677B3751637.quest_subtitle": "Tier 1 armor"
+	"quest.4B5B8677B3751637.title": "Warrior Armor"
+	"quest.4B73FD0ECB5CA15E.quest_desc": [
+		"Two endgame sets answer a Priest. Either one completes this step:"
+		"- &dAvatar Vestments&r: Prior Vestments piece + &dRedeemer's Lost Crystal&r"
+		"- &dAbsolution Vestments&r: Prior Vestments piece + &dRedeemer's Forgotten Crystal&r"
+		"Upgrade each piece at a smithing table (diamond or netherite pieces both work)."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.4B73FD0ECB5CA15E.quest_subtitle": "Endgame armor"
+	"quest.4B73FD0ECB5CA15E.title": "The Armory"
+	"quest.4BE568A5179E7FC1.quest_desc": [
+		"Some monsters are &celites&r: a title over their heads and special powers, from shields to reflecting damage. They hit harder and drop better loot."
+		"Fight them with your party, or not at all."
+	]
+	"quest.4BE568A5179E7FC1.quest_subtitle": "Champions"
+	"quest.4BE568A5179E7FC1.title": "Not Just Another Zombie"
+	"quest.4BF5A1C09B254878.quest_desc": [
+		"Get a netherite Arcane Wand or Staff."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.4BF5A1C09B254878.quest_subtitle": "Tier 3 weapon"
+	"quest.4BF5A1C09B254878.title": "Forged in Netherite"
+	"quest.4C2EC0AB0BDBC6F9.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a dagger or sickle made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.4C2EC0AB0BDBC6F9.quest_subtitle": "Optional: boss-only weapon"
+	"quest.4C2EC0AB0BDBC6F9.title": "A Legend in Hand"
+	"quest.4C3C4D3A9CA28A02.quest_desc": [
+		"Get a netherite Berserker Axe."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.4C3C4D3A9CA28A02.quest_subtitle": "Tier 3 weapon"
+	"quest.4C3C4D3A9CA28A02.title": "Forged in Netherite"
+	"quest.4C51D21C6BF384AB.quest_desc": [
+		"Get an iron Claymore, Great Hammer or Mace."
+		""
+		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.4C51D21C6BF384AB.quest_subtitle": "Tier 1 weapon"
+	"quest.4C51D21C6BF384AB.title": "First Steel"
 	"quest.4C685D602A4CCFA3.quest_desc": [
 		"Diggers earn experience digging dirt, sand, gravel and clay. Carry 32 of one."
 	]
@@ -367,6 +1390,34 @@
 	]
 	"quest.4C6920214DBED4FE.quest_subtitle": "Chapter start"
 	"quest.4C6920214DBED4FE.title": "Through the Veil"
+	"quest.4E29AFB11C00708A.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Ranger Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.4E29AFB11C00708A.quest_subtitle": "Tier 3 armor"
+	"quest.4E29AFB11C00708A.title": "Netherite Ranger Armor"
+	"quest.4EB55E1C1DEAA36C.quest_desc": [
+		"&8Deepshelves&r and &8Sculkshelves&r (a Warden Tendril for the sculk ones) need an Enchanter of level 25. Enchant at level 80."
+	]
+	"quest.4EB55E1C1DEAA36C.quest_subtitle": "Enchanter 25"
+	"quest.4EB55E1C1DEAA36C.title": "Into the Deep"
+	"quest.4F4BF32187D2040B.quest_desc": [
+		"Get a diamond Dagger or Sickle."
+		""
+		"&6Craft&r: Hunter level 20."
+		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.4F4BF32187D2040B.quest_subtitle": "Tier 2 weapon"
+	"quest.4F4BF32187D2040B.title": "A Diamond Edge"
+	"quest.5020B4D3ABB2CDA3.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a staff made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.5020B4D3ABB2CDA3.quest_subtitle": "Optional: boss-only weapon"
+	"quest.5020B4D3ABB2CDA3.title": "A Legend in Hand"
 	"quest.50C778B21D914B33.quest_desc": [
 		"The deep dark keeps its secrets in echo shards. Bring some back, quietly."
 	]
@@ -386,6 +1437,20 @@
 	]
 	"quest.516F384D63226205.quest_subtitle": "Class building"
 	"quest.516F384D63226205.title": "The Sanctuary"
+	"quest.5263DB62DE2D45A9.quest_desc": [
+		"If you are downed, a friend can pick you up. If you truly die, nothing is lost: your items, armor, trinkets, backpack and experience wait in a &6grave&r. The chat says where, and you respawn with a compass to it."
+		"Only you can open it for 15 minutes; after that a friend may collect it for you."
+	]
+	"quest.5263DB62DE2D45A9.quest_subtitle": "Graves"
+	"quest.5263DB62DE2D45A9.title": "If You Fall"
+	"quest.533BD5F53E1AE9FC.quest_desc": [
+		"Get a netherite Claymore, Great Hammer or Mace."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.533BD5F53E1AE9FC.quest_subtitle": "Tier 3 weapon"
+	"quest.533BD5F53E1AE9FC.title": "Forged in Netherite"
 	"quest.5342B109738F0034.quest_desc": [
 		"Fishermen avoid one stretch of sea: towers stand under the water there. They marked it for you."
 		""
@@ -399,6 +1464,12 @@
 	]
 	"quest.540E7EDF83A1ADBE.quest_subtitle": "Job milestone"
 	"quest.540E7EDF83A1ADBE.title": "Made for a Friend"
+	"quest.54311A9745EC4D9E.quest_desc": [
+		"A &6Potion Charm&r holds a potion and gives its effect while it sits in your inventory, until it wears out."
+		"Alchemists earn job experience making them."
+	]
+	"quest.54311A9745EC4D9E.quest_subtitle": "Effects that last"
+	"quest.54311A9745EC4D9E.title": "Bottled Luck"
 	"quest.54854E6D0A86E2C6.quest_desc": [
 		"The &cFrontier&r is the extreme: frozen peaks, ice spikes, the deep dark and the deep ocean. The hardest lands of this world."
 		"Beat at least one Wildlands boss, then find an ancient city in the deep dark."
@@ -423,17 +1494,71 @@
 		"Blazes guard the fortress. Their rods feed brewing stands and Eyes of Ender alike."
 	]
 	"quest.558D7ACBE84CC796.title": "Burning Wardens"
+	"quest.55F345EDFB271EE0.quest_desc": [
+		"Get a netherite Rapid or Heavy Crossbow."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.55F345EDFB271EE0.quest_subtitle": "Tier 3 weapon"
+	"quest.55F345EDFB271EE0.title": "Forged in Netherite"
+	"quest.56FD8D6AAF4752E8.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Berserker Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.56FD8D6AAF4752E8.quest_subtitle": "Tier 3 armor"
+	"quest.56FD8D6AAF4752E8.title": "Netherite Berserker Armor"
+	"quest.57ABBFDC4552D08D.quest_desc": [
+		"Every Rogue walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.57ABBFDC4552D08D.quest_subtitle": "Your class, step by step"
+	"quest.57ABBFDC4552D08D.title": "The Rogue's Path"
+	"quest.57F810F9EBD01932.quest_desc": [
+		"Get a Wind Wand or Staff."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.57F810F9EBD01932.quest_subtitle": "Tier 2 weapon"
+	"quest.57F810F9EBD01932.title": "A Diamond Edge"
+	"quest.583F79DCD019CF60.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Tundra Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.583F79DCD019CF60.quest_subtitle": "Tier 3 armor"
+	"quest.583F79DCD019CF60.title": "Netherite Tundra Armor"
 	"quest.588CB70442A544B0.quest_desc": [
 		"Waystones stand in villages and along the roads. Wake one, and any other waystone can bring you back to it."
 		"Each trip costs a little experience: farther costs more."
 	]
 	"quest.588CB70442A544B0.quest_subtitle": "Fast travel"
 	"quest.588CB70442A544B0.title": "Stones of Passage"
+	"quest.589173AB0C869B9F.quest_desc": [
+		"Get a Aqua Wand or Staff."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.589173AB0C869B9F.quest_subtitle": "Tier 2 weapon"
+	"quest.589173AB0C869B9F.title": "A Diamond Edge"
 	"quest.5912FE33E4E2C70E.quest_desc": [
 		"Miners earn experience breaking stone and ores. Mine 16 coal."
 	]
 	"quest.5912FE33E4E2C70E.quest_subtitle": "Job starter"
 	"quest.5912FE33E4E2C70E.title": "Miner"
+	"quest.5981EE879EE49344.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a healing staff made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.5981EE879EE49344.quest_subtitle": "Optional: boss-only weapon"
+	"quest.5981EE879EE49344.title": "A Legend in Hand"
 	"quest.5A29FB8E07307813.quest_desc": [
 		"A ring of fire where a fallen knight still waits for challengers."
 	]
@@ -442,6 +1567,25 @@
 		"Deep in the Nether, ancient debris resists even lava. Dig some up."
 	]
 	"quest.5A678F41280A7521.title": "Ancient Debris"
+	"quest.5B1A567C94A344A2.quest_desc": [
+		"Wear or carry all four pieces of the &eWizard Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.5B1A567C94A344A2.quest_subtitle": "Tier 1 armor"
+	"quest.5B1A567C94A344A2.title": "Wizard Robes"
+	"quest.5C9A512AF929AB58.quest_desc": [
+		"The endgame set of every Water Mage: the &dOcean Robes&r."
+		"At a smithing table, upgrade each Aqua Robes piece (diamond or netherite) with a &dWarden's Lost Crystal&r."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.5C9A512AF929AB58.quest_subtitle": "Endgame armor"
+	"quest.5C9A512AF929AB58.title": "The Armory"
 	"quest.5D0D3E3C2B3C0A65.quest_desc": [
 		"Press J and join two jobs. Each grows from its own work and pays in coins and perks."
 		"Spend &6job coins&r in the same menu on power-ups or a third job. Every level pays a coin; many quests pay more."
@@ -454,11 +1598,36 @@
 	]
 	"quest.5DDDF61746F073A3.quest_subtitle": "Side task"
 	"quest.5DDDF61746F073A3.title": "Wart and All"
+	"quest.5DED557257C16AEE.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Frost Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.5DED557257C16AEE.quest_subtitle": "Tier 3 armor"
+	"quest.5DED557257C16AEE.title": "Netherite Frost Robes"
+	"quest.5E16D4E8A85872F0.quest_desc": [
+		"Get iron Knuckles."
+		""
+		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.5E16D4E8A85872F0.quest_subtitle": "Tier 1 weapon"
+	"quest.5E16D4E8A85872F0.title": "First Steel"
 	"quest.5E38F20E3A481EE5.quest_desc": [
 		"Deep in the lush caves, an amethyst nest glows. Its keeper does not like visitors."
 	]
 	"quest.5E38F20E3A481EE5.quest_subtitle": "Hearthlands"
 	"quest.5E38F20E3A481EE5.title": "Glitter in the Deep"
+	"quest.5E559AF7114F6F26.quest_desc": [
+		"Wear or carry all four pieces of the &eEntertainer Garb&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Buy&r: the Luthier in the Bard's pub may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.5E559AF7114F6F26.quest_subtitle": "Tier 1 armor"
+	"quest.5E559AF7114F6F26.title": "Entertainer Garb"
 	"quest.5E8BD5E5357754FB.quest_desc": [
 		"A tall tower of stone and purple glass. The Wizard Merchant sells staves, wands, robes and runes for Arcane, Fire and Frost Wizards (and mages can buy runes there too)."
 		""
@@ -471,11 +1640,139 @@
 	]
 	"quest.5F0FA75876070FF6.quest_subtitle": "Side task"
 	"quest.5F0FA75876070FF6.title": "Wings of the End"
+	"quest.5F35D4CF3DAF6E1E.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Crusader Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.5F35D4CF3DAF6E1E.quest_subtitle": "Tier 3 armor"
+	"quest.5F35D4CF3DAF6E1E.title": "Netherite Crusader Armor"
+	"quest.605EA1F5F566343D.quest_desc": [
+		"A &6Salvaging Table&r breaks affixed gear into the materials of its rarity. Keep what you wear; salvage the rest."
+		"Smiths earn job experience for every piece they salvage."
+	]
+	"quest.605EA1F5F566343D.quest_subtitle": "Break gear down"
+	"quest.605EA1F5F566343D.title": "Nothing Goes to Waste"
 	"quest.608F4956BDD8B0F1.quest_desc": [
 		"Some outer islands hold great castles and lighthouses. Explore one."
 	]
 	"quest.608F4956BDD8B0F1.quest_subtitle": "Side task"
 	"quest.608F4956BDD8B0F1.title": "The Castle at the Edge"
+	"quest.608F868C692240A4.quest_desc": [
+		"Wear or carry all four pieces of the &eBowman Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Hunter level 20."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.608F868C692240A4.quest_subtitle": "Tier 2 armor"
+	"quest.608F868C692240A4.title": "Bowman Armor"
+	"quest.6217905150642712.quest_desc": [
+		"Wear or carry all four pieces of the &ePhasleb Suit&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Smith level 20."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.6217905150642712.quest_subtitle": "Tier 2 armor"
+	"quest.6217905150642712.title": "Phasleb Suit"
+	"quest.6223038B06217575.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Northling Suit&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.6223038B06217575.quest_subtitle": "Tier 3 armor"
+	"quest.6223038B06217575.title": "Netherite Northling Suit"
+	"quest.624B9A4DB75252BD.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a staff made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.624B9A4DB75252BD.quest_subtitle": "Optional: boss-only weapon"
+	"quest.624B9A4DB75252BD.title": "A Legend in Hand"
+	"quest.62B2868F5BC9B0F1.quest_desc": [
+		"Get a netherite Double Axe or Glaive."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.62B2868F5BC9B0F1.quest_subtitle": "Tier 3 weapon"
+	"quest.62B2868F5BC9B0F1.title": "Forged in Netherite"
+	"quest.631C3BDECD63BF8D.quest_desc": [
+		"Gems go into &osockets&r. Some gear rolls with sockets already; a &6Sigil of Socketing&r adds one at a smithing table."
+		"Then put the gem in at the smithing table too: gear + gem."
+	]
+	"quest.631C3BDECD63BF8D.quest_subtitle": "Add sockets"
+	"quest.631C3BDECD63BF8D.title": "Set in Stone"
+	"quest.632F93A87EA41C0E.quest_desc": [
+		"Wear or carry all four pieces of the &eNorthling Suit&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Smith level 20."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.632F93A87EA41C0E.quest_subtitle": "Tier 2 armor"
+	"quest.632F93A87EA41C0E.title": "Northling Suit"
+	"quest.6381D7FB4BA49469.quest_desc": [
+		"Every Frost Wizard walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.6381D7FB4BA49469.quest_subtitle": "Your class, step by step"
+	"quest.6381D7FB4BA49469.title": "The Frost Wizard's Path"
+	"quest.63AF791A1948A92A.quest_desc": [
+		"A &6Traveler's Backpack&r carries a chest's worth of items, two fluid tanks and a sleeping bag. Wear it; B opens it."
+		"JEI shows the recipe, and the dozens of other looks a backpack can be crafted in."
+	]
+	"quest.63AF791A1948A92A.quest_subtitle": "Traveler's Backpack"
+	"quest.63AF791A1948A92A.title": "Everything You Own, On Your Back"
+	"quest.63B19A0EE3936240.quest_desc": [
+		"Get a netherite Fire Wand or Staff."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.63B19A0EE3936240.quest_subtitle": "Tier 3 weapon"
+	"quest.63B19A0EE3936240.title": "Forged in Netherite"
+	"quest.63B99B329B96833B.quest_desc": [
+		"Wear or carry all four pieces of the &eFrost Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.63B99B329B96833B.quest_subtitle": "Tier 2 armor"
+	"quest.63B99B329B96833B.title": "Frost Robes"
+	"quest.647FF63D4206EF38.quest_desc": [
+		"Two endgame sets answer a Paladin. Either one completes this step:"
+		"- &dJusticar Armor&r: Crusader Armor piece + &dRedeemer's Lost Crystal&r"
+		"- &dLightbringer Armor&r: Crusader Armor piece + &dRedeemer's Forgotten Crystal&r"
+		"Upgrade each piece at a smithing table (diamond or netherite pieces both work)."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only a Smith of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.647FF63D4206EF38.quest_subtitle": "Endgame armor"
+	"quest.647FF63D4206EF38.title": "The Armory"
+	"quest.6506B3C1E758C6DD.quest_desc": [
+		"Get a Fire Wand or Staff."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.6506B3C1E758C6DD.quest_subtitle": "Tier 2 weapon"
+	"quest.6506B3C1E758C6DD.title": "A Diamond Edge"
+	"quest.653A4D930B08FA2E.quest_desc": [
+		"Wear or carry all four pieces of the &eArcher Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.653A4D930B08FA2E.quest_subtitle": "Tier 1 armor"
+	"quest.653A4D930B08FA2E.title": "Archer Armor"
 	"quest.654D4488C8A8FA77.quest_desc": [
 		"Taverns sit along the roads of the Hearthlands. Travelers trade, rest and swap stories there."
 		"The map you woke with leads to the nearest one."
@@ -488,6 +1785,40 @@
 	]
 	"quest.6555936DF8BED6FB.quest_subtitle": "Side task"
 	"quest.6555936DF8BED6FB.title": "A Stone of Your Own"
+	"quest.65B46437DDA1FF65.quest_desc": [
+		"Every Earth Mage walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.65B46437DDA1FF65.quest_subtitle": "Your class, step by step"
+	"quest.65B46437DDA1FF65.title": "The Earth Mage's Path"
+	"quest.67BEF13204319F77.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a heavy crossbow made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.67BEF13204319F77.quest_subtitle": "Optional: boss-only weapon"
+	"quest.67BEF13204319F77.title": "A Legend in Hand"
+	"quest.67CB5231623A0129.quest_desc": [
+		"The endgame set of every Earth Mage: the &dMountain Robes&r."
+		"At a smithing table, upgrade each Terra Robes piece (diamond or netherite) with a &dWarden's Lost Crystal&r."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.67CB5231623A0129.quest_subtitle": "Endgame armor"
+	"quest.67CB5231623A0129.title": "The Armory"
+	"quest.68A41439B84F7D37.quest_desc": [
+		"The endgame set of every Wind Mage: the &dHurricane Robes&r."
+		"At a smithing table, upgrade each Wind Robes piece (diamond or netherite) with a &dWarden's Lost Crystal&r."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.68A41439B84F7D37.quest_subtitle": "Endgame armor"
+	"quest.68A41439B84F7D37.title": "The Armory"
 	"quest.68ADD28694A0A17E.quest_desc": [
 		"An Eye of Mech points to the ancient factory. Craft one and follow it."
 	]
@@ -498,17 +1829,63 @@
 	]
 	"quest.691EA646A3AD516D.quest_subtitle": "Side task"
 	"quest.691EA646A3AD516D.title": "Ironclad"
+	"quest.6AF19D8A355966AA.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a axe, glaive or longsword made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.6AF19D8A355966AA.quest_subtitle": "Optional: boss-only weapon"
+	"quest.6AF19D8A355966AA.title": "A Legend in Hand"
+	"quest.6AF27B410258165F.quest_desc": [
+		"Wear or carry all four pieces of the &eElemental Apprentice Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.6AF27B410258165F.quest_subtitle": "Tier 1 armor"
+	"quest.6AF27B410258165F.title": "Elemental Apprentice Robes"
 	"quest.6B54BC29B3B37827.quest_desc": [
 		"Defeat the &5Ender Guardian&r, last warden of the citadel. Beating it earns you your last talent point."
 		"With both the Citadel Keystone and the Dragonscale, your world tier rises to &ePinnacle&r."
 	]
 	"quest.6B54BC29B3B37827.quest_subtitle": "Chapter boss"
 	"quest.6B54BC29B3B37827.title": "Guardian of the Void"
+	"quest.6C38F2193F5F97B4.quest_desc": [
+		"Get a Frost Wand or Staff."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.6C38F2193F5F97B4.quest_subtitle": "Tier 2 weapon"
+	"quest.6C38F2193F5F97B4.title": "A Diamond Edge"
 	"quest.6C811E0AFCFDD19B.quest_desc": [
 		"Enchanters earn experience at the enchanting table, the Spell Binding Table and the gem cutting table. Enchant any item."
 	]
 	"quest.6C811E0AFCFDD19B.quest_subtitle": "Job starter"
 	"quest.6C811E0AFCFDD19B.title": "Enchanter"
+	"quest.6C8A4B797B816007.quest_desc": [
+		"A &6Cutting Board&r slices with a knife; a &6Skillet&r cooks over heat. Together with the cooking pot they make every Farmer's Delight meal."
+		"Farmers earn job experience for meals."
+	]
+	"quest.6C8A4B797B816007.quest_subtitle": "Farmer's Delight"
+	"quest.6C8A4B797B816007.title": "A Proper Kitchen"
+	"quest.6D97E040B04E5B09.quest_desc": [
+		"Wear or carry all four pieces of the &eNetherite Bowman Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.6D97E040B04E5B09.quest_subtitle": "Tier 3 armor"
+	"quest.6D97E040B04E5B09.title": "Netherite Bowman Armor"
+	"quest.6E1A5C775EB148AF.quest_desc": [
+		"Get a Wizard Staff."
+		""
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.6E1A5C775EB148AF.quest_subtitle": "Tier 1 weapon"
+	"quest.6E1A5C775EB148AF.title": "First Steel"
 	"quest.7107848BAFC6BF09.quest_desc": [
 		"Builders earn experience for every block they place. Place one to start."
 	]
@@ -520,6 +1897,22 @@
 	]
 	"quest.710AD64B960DC726.quest_subtitle": "Wildlands"
 	"quest.710AD64B960DC726.title": "Into the Wildlands"
+	"quest.7117B5E8E653E9E8.quest_desc": [
+		"Wear or carry all four pieces of the &eWind Robes&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Enchanter level 20."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.7117B5E8E653E9E8.quest_subtitle": "Tier 2 armor"
+	"quest.7117B5E8E653E9E8.title": "Wind Robes"
+	"quest.71222F68234D4EB9.quest_desc": [
+		"Get a netherite Frost Wand or Staff."
+		""
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
+	]
+	"quest.71222F68234D4EB9.quest_subtitle": "Tier 3 weapon"
+	"quest.71222F68234D4EB9.title": "Forged in Netherite"
 	"quest.71ED147E96C3CDB4.quest_desc": [
 		"Defeat &cIgnis&r, the burning champion."
 		"Everyone nearby at the kill receives a &dVoid Shard&r. Eyes of Ender need it, and it is never used up."
@@ -532,17 +1925,42 @@
 	]
 	"quest.73292E754A800B8D.quest_subtitle": "Job starter"
 	"quest.73292E754A800B8D.title": "Lumberjack"
+	"quest.744C9A9A39A3F946.quest_desc": [
+		"Every Arcane Wizard walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.744C9A9A39A3F946.quest_subtitle": "Your class, step by step"
+	"quest.744C9A9A39A3F946.title": "The Arcane Wizard's Path"
 	"quest.74B908B7033E7344.quest_desc": [
 		"An Eye of Curse leads to a prison buried in snow. Craft one and throw it."
 	]
 	"quest.74B908B7033E7344.quest_subtitle": "Side task"
 	"quest.74B908B7033E7344.title": "Eye of the Frost"
+	"quest.75611B5C933FAFE7.quest_desc": [
+		"Every Forcemaster walks the same road: a weapon, then a full set of armor, each tier stronger than the last."
+		"This row follows it from your first steel to the armor of legends."
+		""
+		"Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon as the step opens."
+	]
+	"quest.75611B5C933FAFE7.quest_subtitle": "Your class, step by step"
+	"quest.75611B5C933FAFE7.title": "The Forcemaster's Path"
 	"quest.76FFB30A032160C1.quest_desc": [
 		"Something huge sleeps in the snowfields and on the ice spikes: the &bFrostmaw&r. Wake it and it breathes ice."
 		"Optional. Everyone nearby at the kill earns a Rimefang Tusk."
 	]
 	"quest.76FFB30A032160C1.quest_subtitle": "Optional boss"
 	"quest.76FFB30A032160C1.title": "Rimefang"
+	"quest.77275F9ADF8F5E43.quest_desc": [
+		"Get a Crossbow."
+		""
+		"&6Craft&r: anyone can, at a crafting table."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.77275F9ADF8F5E43.quest_subtitle": "Tier 1 weapon"
+	"quest.77275F9ADF8F5E43.title": "First Steel"
 	"quest.785E70544950B7A5.quest_desc": [
 		"Caravan guards tell of a pyramid that swallows the sun. Ask around, and someone sketches you a map."
 		""
@@ -578,15 +1996,70 @@
 	]
 	"quest.7ADADD9D86E83E50.quest_subtitle": "Side task"
 	"quest.7ADADD9D86E83E50.title": "Glittering Hoard"
+	"quest.7B4169F3E37652A8.quest_desc": [
+		"Wear or carry all four pieces of the &eOriene Suit&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
+	]
+	"quest.7B4169F3E37652A8.quest_subtitle": "Tier 1 armor"
+	"quest.7B4169F3E37652A8.title": "Oriene Suit"
+	"quest.7C301FD6C811E316.quest_desc": [
+		"&dRelics&r are trinkets with a single strong effect: heal on a kill, a burst of speed, a ward against death."
+		"Most drop from bosses and deep dungeons."
+	]
+	"quest.7C301FD6C811E316.quest_subtitle": "Trinket slot"
+	"quest.7C301FD6C811E316.title": "Relics"
 	"quest.7DC8CDF63FD9011E.quest_desc": [
 		"Optional raid. Bring three wither skeleton skulls and soul sand, and pick a place you do not mind losing."
 	]
 	"quest.7DC8CDF63FD9011E.quest_subtitle": "Optional raid"
 	"quest.7DC8CDF63FD9011E.title": "Call of the Wither"
+	"quest.7E34F5E08D7B282D.quest_desc": [
+		"&cHellshelves&r (Nether bricks) and &bSeashelves&r (prismarine) are the first step past level 30."
+		"Making them needs an &dEnchanter&r of level 10; their upgrades level 20."
+	]
+	"quest.7E34F5E08D7B282D.quest_subtitle": "Enchanter 10"
+	"quest.7E34F5E08D7B282D.title": "Hell and Sea"
+	"quest.7E6A8B47D8CA49CC.quest_desc": [
+		"Two endgame sets answer a Fire Wizard. Either one completes this step:"
+		"- &dScarlet Robes&r: Fire Robes piece + &dConqueror's Lost Crystal&r"
+		"- &dSmouldering Robes&r: Fire Robes piece + &dConqueror's Forgotten Crystal&r"
+		"Upgrade each piece at a smithing table (diamond or netherite pieces both work)."
+		""
+		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
+		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
+		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+	]
+	"quest.7E6A8B47D8CA49CC.quest_subtitle": "Endgame armor"
+	"quest.7E6A8B47D8CA49CC.title": "The Armory"
+	"quest.7EC13CD969AF09D6.quest_desc": [
+		"Wear or carry all four pieces of the &eDeadeye Armor&r: helmet, chest, legs and boots."
+		""
+		"&6Craft&r: Hunter level 20."
+		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.7EC13CD969AF09D6.quest_subtitle": "Tier 2 armor"
+	"quest.7EC13CD969AF09D6.title": "Deadeye Armor"
 	"quest.7EC7FF658A0626F1.quest_desc": [
 		"Piglin brutes do not care about your gold. Show them what you learned up top."
 	]
 	"quest.7EC7FF658A0626F1.title": "Brute Force"
+	"quest.7EEB99FFB405925A.quest_desc": [
+		"No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind weapons; one of them may be a longbow or spear made for you."
+		"Bring friends: these are the hardest fights in the world."
+	]
+	"quest.7EEB99FFB405925A.quest_subtitle": "Optional: boss-only weapon"
+	"quest.7EEB99FFB405925A.title": "A Legend in Hand"
+	"quest.7F12355C44326248.quest_desc": [
+		"Get diamond Knuckles."
+		""
+		"&6Craft&r: Smith level 20."
+		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
+	]
+	"quest.7F12355C44326248.quest_subtitle": "Tier 2 weapon"
+	"quest.7F12355C44326248.title": "A Diamond Edge"
 	"quest.7F3ACDC21971B67E.quest_desc": [
 		"Build a &6Cooking Pot&r and set it on a campfire or stove. Pot meals feed more and give the whole group buffs:"
 		"- &aNourishment&r: your hunger stops dropping for a while."
@@ -596,128 +2069,380 @@
 	"quest.7F3ACDC21971B67E.quest_subtitle": "Cooking (Farmer's Delight)"
 	"quest.7F3ACDC21971B67E.title": "A Feast for the Party"
 	"reward.101C0F1F77A34A36.title": "Berserker"
+	"reward.1046789CADDED251.title": "+1 job coins"
+	"reward.10566F0FB096D43E.title": "+5 job coins"
+	"reward.1133ED752222A5EE.title": "+3 job coins"
 	"reward.113FC9A4C49E6433.title": "Map to a Small Dungeon"
+	"reward.11CA94FAFFB03D0D.title": "+2 job coins"
+	"reward.11CEC1226B49A6B3.title": "+1 job coins"
+	"reward.11CF9291ADFCFB11.title": "+2 job coins"
 	"reward.121F3AC8B68AF412.title": "+1 talent point"
 	"reward.1283E905E288BBDD.title": "Earth Mage"
+	"reward.1407B52B58977133.title": "+3 job coins"
 	"reward.1432181C873ED062.title": "Map to an Ancient City"
 	"reward.145975B3287423F6.title": "Rogue"
+	"reward.14D3D42BF20A91DF.title": "+2 job coins"
+	"reward.15248663C7D92762.title": "+3 job coins"
+	"reward.15D869B45B5A7887.title": "+3 job coins"
 	"reward.160FB3F4CEC75B27.title": "Map to the Sunken City"
+	"reward.16710DC05F1350F4.title": "+1 job coins"
+	"reward.168E849EAB117EC6.title": "+5 job coins"
+	"reward.16EDC8B722C0F14A.title": "+2 job coins"
 	"reward.170282E5A35F0C0B.title": "+5 job coins"
+	"reward.18331A0F0ABE4CAB.title": "+1 job coins"
 	"reward.19AC4242A24009D8.title": "Map to the Frosted Prison"
+	"reward.1A52AD91563F2956.title": "+1 job coins"
+	"reward.1A7821BDDBBF8EDF.title": "+2 job coins"
 	"reward.1A9543EB3DAAEE9A.title": "+1 talent point"
+	"reward.1AD370C2EA447CBF.title": "+3 job coins"
 	"reward.1B56AF9B35492A83.title": "Deadeye"
+	"reward.1CBD5420288C2D26.title": "+1 job coins"
 	"reward.1CD8BCE7F0290F9F.title": "+12 job coins"
+	"reward.1CE39D24ED42DDE7.title": "+2 job coins"
+	"reward.1D40CCCC65460C3B.title": "+5 job coins"
+	"reward.1E6C1E5B1B06AE66.title": "+2 job coins"
+	"reward.1ED4EE1C4C9BE571.title": "+1 job coins"
 	"reward.209434EA11D17CA5.title": "+8 job coins"
 	"reward.20F460CCC42134B7.title": "Map to a Great Dungeon"
+	"reward.2181423D7CD39935.title": "+3 job coins"
 	"reward.24538A39D1C08953.title": "Bard"
 	"reward.2602F1DEEEB8717D.title": "+5 job coins"
 	"reward.26E86235C37FDA29.title": "+1 job coins"
 	"reward.27DC7FDA56B7E3F4.title": "+1 job coins"
+	"reward.2812C3F771DC9914.title": "+5 job coins"
+	"reward.288DDC7E003FAE79.title": "+1 job coins"
+	"reward.289A812D58BB93AB.title": "+5 job coins"
+	"reward.2AB88E299BF824AD.title": "+3 job coins"
+	"reward.2C5AC2CE0F37B5A9.title": "+1 job coins"
 	"reward.2CF12E85EEA9B179.title": "+1 job coins"
+	"reward.2D4CC6EBDB871598.title": "+3 job coins"
+	"reward.2D94AE69608A3E83.title": "+5 job coins"
 	"reward.2ED37D3123F7FE03.title": "Tundra Hunter"
+	"reward.303610231A858AC7.title": "+3 job coins"
 	"reward.31C569972EEB20B8.title": "Wind Mage"
 	"reward.32855D8B687FD180.title": "Map to the Ancient Factory"
 	"reward.32E8BE12F1C33A56.title": "Arcane Wizard"
 	"reward.33FB333E8927E6D3.title": "+1 job coins"
+	"reward.3423B0611283429D.title": "+1 job coins"
 	"reward.35BE7033ECA14120.title": "+1 talent point"
+	"reward.397FBD0459B79A65.title": "+3 job coins"
+	"reward.398EBF38C16A5C25.title": "+2 job coins"
 	"reward.3A213B34E654B328.title": "Frost Wizard"
+	"reward.3A5770CDDEC390EF.title": "+5 job coins"
 	"reward.3B932ECCA3AF6364.title": "+1 job coins"
+	"reward.3FF51FACAF9EDEFD.title": "+1 job coins"
+	"reward.4119281F32AA11EF.title": "+3 job coins"
+	"reward.446F4D37F6EE04FF.title": "+2 job coins"
 	"reward.45C3170CD8AA82F6.title": "+1 job coins"
 	"reward.47638B6BFE884E36.title": "Priest"
+	"reward.48710DC85D5C2258.title": "+5 job coins"
+	"reward.4907B8F7410B3BD5.title": "+5 job coins"
 	"reward.49356BB66F0DD4F5.title": "+1 job coins"
+	"reward.4C291A3658BE356B.title": "+2 job coins"
 	"reward.4D1BE821DDD5FA70.title": "War Archer"
 	"reward.4D34157362C8FDFC.title": "Map to an Ancient City"
+	"reward.4E5D66DC24393B5A.title": "+5 job coins"
 	"reward.4E79CFDAE25B9A8D.title": "Warrior"
+	"reward.4F45AD956CC9A0ED.title": "+5 job coins"
 	"reward.4F6851F81574E735.title": "Fire Wizard"
 	"reward.5640AEE2A26C7EE3.title": "Forcemaster"
 	"reward.564563EC1D693729.title": "Paladin"
+	"reward.5A2C671CCC460C1A.title": "+5 job coins"
+	"reward.5AA9B3EAE1ED7DA6.title": "+2 job coins"
+	"reward.5BFB3592A4AA33A8.title": "+2 job coins"
+	"reward.5DC962B2617698F7.title": "+1 job coins"
 	"reward.5E06483D725045B2.title": "Map to an Ancient City"
 	"reward.5ECDDBA48C71A7D6.title": "Archer"
 	"reward.5EE93922FA92E40E.title": "+1 talent point"
+	"reward.5F11A34AB4FC1834.title": "+2 job coins"
+	"reward.614BE6A671863C68.title": "+1 job coins"
+	"reward.640C85703C0873D0.title": "+3 job coins"
 	"reward.67A4AA648230E254.title": "Map to the Amethyst Nest"
 	"reward.689BE609850AD506.title": "+5 job coins"
 	"reward.694C8A642DE11306.title": "+5 job coins"
+	"reward.69564EE415E5B478.title": "+5 job coins"
 	"reward.6AE0BA86B1748339.title": "+3 job coins"
+	"reward.6AE7EC28ADFB3AB4.title": "+1 job coins"
+	"reward.6AF2CCA9F185F59C.title": "+5 job coins"
+	"reward.6BE3BCF699137F2B.title": "+1 job coins"
+	"reward.6C2EF079C3954A2E.title": "+1 job coins"
 	"reward.6CE206584960C6CF.title": "+1 job coins"
+	"reward.6D498238814E7508.title": "+5 job coins"
+	"reward.7078B480113718D6.title": "+3 job coins"
+	"reward.7169EF4F9ABE34DC.title": "+2 job coins"
 	"reward.71EA04589D7BCA18.title": "Map to the Stronghold"
 	"reward.71FBA5F1320A99C6.title": "+5 job coins"
+	"reward.729D9D3622912659.title": "+3 job coins"
+	"reward.7396F43C42485DFC.title": "+1 job coins"
+	"reward.7413ED8BCC0BCF88.title": "+2 job coins"
+	"reward.7530F1FA996A9F33.title": "+3 job coins"
+	"reward.761B3140F71A2BBD.title": "+2 job coins"
+	"reward.76ED979245435924.title": "+3 job coins"
 	"reward.781A21659CF60D37.title": "+1 job coins"
 	"reward.7894D021D2B9F7DE.title": "+1 job coins"
 	"reward.797292397D0CD70A.title": "Map to the Cursed Pyramid"
 	"reward.7ABB09364EF09AFD.title": "Water Mage"
+	"reward.7AEF0108E88A3270.title": "+3 job coins"
+	"reward.7B0A4257FB9893E9.title": "+5 job coins"
+	"reward.7D32940FB25896AD.title": "+5 job coins"
 	"reward.7DF88BDFC271E356.title": "+1 job coins"
+	"reward.7F0A743D32A642E9.title": "+2 job coins"
 	"reward_table.1DF313CE425EA7B8.title": "Class starter kits"
+	"task.102C7BADB8E934E3.title": "All four pieces of the Entertainer Garb"
+	"task.1038D41B5D544874.title": "A legendary staff"
+	"task.107C9A0FC770B675.title": "Enchant at level 60"
+	"task.1086A24470E9DA56.title": "All four pieces: Billporon Suit"
 	"task.112DB2912AA700A4.title": "Make a job-gated item"
+	"task.114080C98DFEF359.title": "All four pieces of the Netherite Bowman Armor"
+	"task.1173D251F27FCBE4.title": "Have a Hellshelf"
 	"task.11B5C5B357764DF0.title": "Explore an End castle or lighthouse"
 	"task.1284ABB32E41FD5A.title": "Ask for directions"
+	"task.12E97CCF0E286B3E.title": "All four pieces of the Northling Suit"
 	"task.12F778CE68AE5841.title": "Reach level 20 in a job"
+	"task.130A5CE4E2298BC1.title": "Have a Potion Charm"
+	"task.131734B13CE7DD21.title": "Find a relic"
+	"task.1351326689C264CB.title": "Have an iron Rapier, a Lute or a Harp Crossbow"
+	"task.13D4F23F2A8F34C8.title": "Upgrade a backpack to iron"
+	"task.142C4CE8E1B3D82E.title": "All four pieces of the Rogue Armor"
+	"task.14504708AE9125E0.title": "Have a Crossbow"
+	"task.14504806165E58A7.title": "Carry the Earth Mage tome"
+	"task.14510D81104F0BBF.title": "Have a Gem Cutting Table"
+	"task.146D8E73784052E8.title": "All four pieces of the Paladin Armor"
+	"task.15307F55FDD94069.title": "Carry the Water Mage tome"
 	"task.15386B424EFBFD1F.title": "Ask for directions"
+	"task.153FE21CDD5A02FB.title": "All four pieces: Polar Stalker Armor"
+	"task.1554B203E34D71DF.title": "Understood"
+	"task.1558D351C0ADC5BE.title": "Have a necklace"
+	"task.155DB3F094783004.title": "All four pieces of the Archer Armor"
+	"task.1575DC45EE20D8AE.title": "Have an Elemental Staff"
+	"task.158D6666B09256E0.title": "Have a Fire Wand or Staff"
+	"task.1592ADA6A2871468.title": "All four pieces of the Berserker Armor"
+	"task.159BFB38A9923066.title": "All four pieces of the Oriene Suit"
+	"task.15C5F009910591B6.title": "Have an iron Berserker Axe"
+	"task.15E154A051DEAA13.title": "All four pieces of the Ranger Armor"
 	"task.163DD1B46441069F.title": "I am ready to choose"
+	"task.16BDEA1F69490768.title": "Have a netherite Holy Wand or Staff"
+	"task.170C051E8B051A76.title": "All four pieces: Scarlet Robes or Smouldering Robes"
+	"task.1779579597A955BA.title": "Understood"
+	"task.17909BA0963462A3.title": "A legendary staff"
 	"task.17F83656E7E25EF4.title": "Find the Sunken City"
 	"task.17F947AABE42C745.title": "Find the Cursed Pyramid"
 	"task.18728C590A91F64B.title": "Trade with the merchant"
 	"task.18AE9273ADA2A094.title": "Find the Soul Blacksmith"
 	"task.18AF28D6B5F16691.title": "Find the Frosted Prison"
+	"task.18CBC9773174C85C.title": "Have a ring"
+	"task.19089AC41EDD7359.title": "All four pieces: Strider Armor or Riftstalker Armor"
 	"task.19B7A34DEDBD1C89.title": "Find the Burning Arena"
+	"task.19EFF35B2AA88F55.title": "Have a Arcane Wand or Staff"
+	"task.1A2165EAE5EB6E6E.title": "All four pieces: Norse Warlord Suit"
+	"task.1A26D63EE042481B.title": "Have a netherite Aqua Wand or Staff"
+	"task.1A937D8D0CDE7BC4.title": "All four pieces: Destroyer Armor or Onslaught Armor"
+	"task.1AA9123A6559AF6C.title": "All four pieces of the Bowman Armor"
+	"task.1AB4AE69A0D190EE.title": "Have an Elemental Staff"
 	"task.1ABC863AE9CC3E2D.title": "Find the stronghold"
+	"task.1B0ED37D7A3A62DA.title": "Have a Wind Wand or Staff"
 	"task.1B238D6515501D30.title": "Bind a spell"
+	"task.1B67A9D91BAEADF1.title": "All four pieces of the Wildling Suit"
+	"task.1B83E449DBEE5AF9.title": "All four pieces of the Netherite Aqua Robes"
 	"task.1B8AB9E29A00271C.title": "Open the stats screen"
+	"task.1BB39B0A8812A3E0.title": "All four pieces of the Priest Vestments"
+	"task.1C6AAB1C5C2708B6.title": "Enchant at level 80"
+	"task.1D1820290DF01776.title": "All four pieces: Bounty Hunter Armor"
+	"task.1D228EC277645FB2.title": "Have a netherite Double Axe or Glaive"
 	"task.1D70722A7FF6C39A.title": "Enter the End"
+	"task.1D74890FB73DF582.title": "All four pieces: Justicar Armor or Lightbringer Armor"
+	"task.1DB21FEE613DAAA2.title": "Carry the Warrior tome"
+	"task.1E4D8A39B188BCC2.title": "Have a Terra Wand or Staff"
+	"task.1E4DA2BEB0890FE2.title": "Have a netherite Arcane Wand or Staff"
+	"task.1E4FE199F1043C91.title": "All four pieces of the Deadeye Armor"
+	"task.1ED86DCEFF9349E5.title": "Have a Holy Wand or Holy Staff"
 	"task.1F25DFD103C77F08.title": "Reach level 30 in a job"
+	"task.1FBF203A22767639.title": "A legendary longbow"
 	"task.1FD1DBDA560D1085.title": "Trade with the merchant"
 	"task.20881C86CEDC168C.title": "Understood"
+	"task.20C15FB3FB44005C.title": "All four pieces of the Netherite Northling Suit"
+	"task.218ACE77E920441A.title": "Have a netherite Berserker Axe"
 	"task.21C6EC0D4872DB43.title": "Find the Ancient Factory"
+	"task.21CA87BCE34601E4.title": "Have an iron Double Axe or Glaive"
+	"task.21FC423A80958A3E.title": "Have a netherite Wind Wand or Staff"
+	"task.2236B86956DE6E86.title": "All four pieces of the Arcane Robes"
+	"task.2284BE2AB15112B0.title": "A legendary knuckles"
+	"task.236C4089626CAAA0.title": "All four pieces of the Netherite Berserker Armor"
+	"task.2393B2EE0B740144.title": "Carry the Priest tome"
+	"task.23A606C92A5DCB76.title": "All four pieces of the Netherite Arcane Robes"
+	"task.24567D3AF00C548A.title": "All four pieces: Storyteller Garb"
 	"task.247A9EA8A774C6D2.title": "Enter the Nether"
 	"task.24BA2AB8D1004409.title": "Trade with the merchant"
 	"task.255650F195F11137.title": "Join two jobs"
+	"task.25E1B032A0799CF1.title": "Enchant at level 30"
+	"task.26309F2320691A80.title": "Have an iron Claymore, Great Hammer or Mace"
+	"task.26AE3436F0150985.title": "A legendary staff"
+	"task.26B9786161EC5C08.title": "All four pieces of the Aqua Robes"
+	"task.2702AF2F432F40C7.title": "Have a netherite Dagger or Sickle"
 	"task.27DC3743B94D70AE.title": "Unlock a talent"
 	"task.29C18C0DB954D588.title": "Citadel Keystone"
+	"task.29DCB9A32254F5AB.title": "Have a Composite Longbow"
+	"task.2A2052876BC0F6A6.title": "Have a netherite Frost Wand or Staff"
+	"task.2A8050DCDB7ED28D.title": "All four pieces: Glacier Robes or Rimeweave Robes"
+	"task.2B3E721BD4B847D8.title": "All four pieces of the Netherite Terra Robes"
+	"task.2CBA0B38522FB4BC.title": "All four pieces of the Archer Armor"
+	"task.2D633EFE974155ED.title": "All four pieces of the Netherite Deadeye Armor"
+	"task.2D7816636AEBEEDC.title": "Carry the Deadeye tome"
 	"task.2E599EC5D14B66A9.title": "Craft any rune"
+	"task.2E8F299B852D7A22.title": "Have a Wizard Staff"
+	"task.2EE9A2AFAB203651.title": "Carry the War Archer tome"
+	"task.2F7AC166D34B758B.title": "All four pieces of the Elemental Apprentice Robes"
 	"task.302BF4C11E97D7CB.title": "Nether Sigil"
+	"task.3072E97C39896123.title": "All four pieces of the Elemental Apprentice Robes"
+	"task.30CC574835FEC519.title": "All four pieces of the Netherite Ranger Armor"
+	"task.30E4CA0DF720077A.title": "All four pieces of the Tundra Armor"
 	"task.317DA35032DCB837.title": "Catch a fish"
+	"task.3192298D58C0B42A.title": "Have a Wizard Staff"
 	"task.31C8DF173A175089.title": "Do a combat roll"
+	"task.31D729E66FE32162.title": "Have a netherite Longbow or Shortbow"
+	"task.326FC1891067160B.title": "Have a Composite Longbow"
+	"task.3314EDE953266084.title": "All four pieces: Avatar Vestments or Absolution Vestments"
+	"task.34538C76E80F3AB4.title": "A legendary axe or sword"
+	"task.356CFA9D31EB1249.title": "Show me"
+	"task.36A0F23428E13AC6.title": "Carry the Tundra Hunter tome"
+	"task.3721A8AD4BA749DF.title": "Have a netherite Rapier, Lute, Lyre or Harp Crossbow"
+	"task.378147618BBEEB8D.title": "Have a Royal Longbow or Mechanic Shortbow"
 	"task.3811AA5D0322C05E.title": "Gather 16 logs"
+	"task.383F39505E3A5A45.title": "Find a gem"
+	"task.3867C18299088BFC.title": "Have an iron Dagger or Sickle"
+	"task.3A2B31BED000788D.title": "I have claimed my home"
+	"task.3AC1B3C8708B7920.title": "Have a Rapid or Heavy Crossbow"
 	"task.3C1EE764482629CD.title": "Craft an iron pickaxe"
+	"task.3C25A3689EEFF564.title": "Have a Sigil of Withdrawal"
 	"task.3C9FFDADD7459B25.title": "Open a dungeon chest"
+	"task.3CED7010A0DFE3A2.title": "Have an Augmenting Table"
+	"task.3E615FE286B3EAC8.title": "All four pieces of the Prior Vestments"
+	"task.40ABEFEAA76558B1.title": "Have a Cutting Board"
 	"task.40D2EFBCEA4F1121.title": "Rimefang Tusk"
+	"task.4143EDF04002BDC9.title": "All four pieces of the Terra Robes"
 	"task.42B71E3EB6C49F2A.title": "Join or form a party"
+	"task.44342FF9C2C2CA4B.title": "Carry the Berserker tome"
+	"task.44A6AADD805A409B.title": "Have a Aqua Wand or Staff"
+	"task.452853D983261048.title": "Have netherite Knuckles"
 	"task.454585A7B8F63BE1.title": "Sunbird Plume"
+	"task.4577DACD42D67635.title": "Carry the Bard tome"
 	"task.45792096E156E094.title": "Explore a Nether keep"
+	"task.4588DEBCA9062505.title": "Have a netherite Claymore, Great Hammer or Mace"
 	"task.462EF832FEFAD119.title": "Sun-Bleached Fang"
+	"task.46305A026274E9EC.title": "All four pieces of the Troubadour Garb"
+	"task.46A1822EE521092D.title": "All four pieces of the Netherite Tundra Armor"
 	"task.47A5DCB513B389C1.title": "Gather 32 dirt, sand, gravel or clay"
+	"task.47A84C2BFE825D3F.title": "Have a diamond Claymore, Great Hammer or Mace"
+	"task.48B54F313535D127.title": "All four pieces of the Assassin Armor"
 	"task.48D711FD6A2A126F.title": "Place a block"
+	"task.4979EB310F07D364.title": "All four pieces of the Netherite Frost Robes"
 	"task.4A63160D953DD699.title": "Use your racial power"
 	"task.4A922A57DA24E513.title": "Frostbound Crown"
 	"task.4AB911E09D2D62A3.title": "Trade with a class merchant"
+	"task.4ABCC5DD4E8732F7.title": "Have diamond Knuckles"
+	"task.4B2BB031F974658A.title": "Have a Reforging Table"
 	"task.4BA51549706FBE25.title": "Reach level 10 in a job"
 	"task.4D29AF731F304F2C.title": "Understood"
 	"task.4DABEFEF63961B92.title": "Dragonscale"
 	"task.4E54A909613B1160.title": "Find the Amethyst Nest"
 	"task.4FA2E8445AFFB9F0.title": "Wrought Rivet"
+	"task.5034241239C26419.title": "Have a Salvaging Table"
+	"task.50863D2F0595B8EF.title": "All four pieces: Astral Robes or Tempest Robes"
+	"task.50E2F9955A5EF3F3.title": "Have an Elemental Staff"
+	"task.512F2697DF332994.title": "Have a Royal Longbow or Mechanic Shortbow"
+	"task.51ABD51B48B74A01.title": "All four pieces of the Netherite Crusader Armor"
+	"task.53C4C9AA5AEFF1D7.title": "All four pieces: Hurricane Robes"
 	"task.54761F8D3820AA01.title": "Trade with the merchant"
+	"task.54B3ED50F79F559E.title": "Have a netherite Rapid or Heavy Crossbow"
+	"task.54EBB02847E4C23D.title": "All four pieces of the Archer Armor"
+	"task.555458FC8B1D402B.title": "Carry the Fire Wizard tome"
 	"task.55690ED8CFB47271.title": "Understood"
+	"task.55790B83E80B0C2D.title": "Have a Seashelf"
+	"task.563AE857E67B646A.title": "All four pieces of the Wizard Robes"
+	"task.564529E222419AE1.title": "Carry the Wind Mage tome"
+	"task.56839BD55974FEE8.title": "Have a Storage Terminal"
+	"task.57394BB0CC319FD0.title": "Carry the Forcemaster tome"
+	"task.577C9F0265AC2F4C.title": "Have a Composite Longbow or an iron Spear"
+	"task.5795E13D9675CB68.title": "All four pieces of the Netherite Fire Robes"
+	"task.57ADF377C582CDED.title": "Have a diamond Berserker Axe"
 	"task.57FE63978AC454DA.title": "Find a bastion"
 	"task.583A2578AA83D3DF.title": "Find a small dungeon"
+	"task.587B0F16545B5589.title": "Sleep in a sleeping bag"
+	"task.596DC54F8E8B4C28.title": "Carry the Frost Wizard tome"
 	"task.5A17672205BBB06F.title": "Cast any spell"
+	"task.5A9E4EB6DE763568.title": "All four pieces of the Aken Suit"
 	"task.5D71108002945D0A.title": "Find an End city"
+	"task.5DEA6926DB91341C.title": "A legendary claymore, hammer or mace"
+	"task.5E234E86D87CA2C7.title": "Have a diamond Double Axe or Glaive"
 	"task.5E7654375954BFB2.title": "Molten Heart"
+	"task.5FA87DC413C15E5B.title": "A legendary staff"
 	"task.5FD54099D5C15F75.title": "Find the Ruined Citadel"
+	"task.5FFB5CBEFE738732.title": "A legendary dagger or sickle"
 	"task.60353EFCB45D1EFE.title": "Enchant an item"
+	"task.6044DFD2D19C011D.title": "A legendary axe, glaive or longsword"
+	"task.6081A7051871246F.title": "Trade with a Jeweler"
+	"task.6121AE8F22D1ACB8.title": "All four pieces: Sentinel Archer Armor"
+	"task.61A2C6518D25F7B5.title": "All four pieces of the Wizard Robes"
+	"task.625C6FE1226A036E.title": "A legendary heavy crossbow"
+	"task.634658D77B4E3B21.title": "A legendary staff"
+	"task.63ACE87DDCCF40F3.title": "Have a Sigil of Socketing"
 	"task.63B7D85A9DD9382D.title": "Trade with the merchant"
 	"task.645F29DBB2048238.title": "Find a Nether fortress"
+	"task.66305C2AFD30DC14.title": "Enchant at level 100"
+	"task.670255EAC96733EA.title": "Show me"
+	"task.681C2EBF99A5EEB6.title": "Have a diamond Holy Wand or Staff"
+	"task.68B4E0A8119EA9D3.title": "All four pieces: Ocean Robes"
+	"task.68D7092E9E0BA2BD.title": "All four pieces of the Warrior Armor"
+	"task.692C685574526606.title": "All four pieces of the Phasleb Suit"
+	"task.69690ADF22DBF717.title": "Have a Frost Wand or Staff"
+	"task.6987F6BEC77521FD.title": "All four pieces of the Netherite Prior Vestments"
 	"task.6B7FB8F75E0ABD9D.title": "Find an ancient city"
+	"task.6B9AE7C41C123C1C.title": "All four pieces of the Wind Robes"
+	"task.6BDF55FEA7C6517F.title": "All four pieces of the Netherite Assassin Armor"
+	"task.6C672C79CB6CFD58.title": "All four pieces of the Wizard Robes"
 	"task.6C9EF992B5F2CAF0.title": "Abyssal Scale"
+	"task.6DB4CFA66FD7EEA3.title": "A legendary healing staff"
 	"task.6DF33D11FB4F9596.title": "Ashen Skull Shard"
+	"task.6E0C677269E03701.title": "A legendary instrument, rapier or harp crossbow"
 	"task.6E240CDBEB03285A.title": "Craft a Cooking Pot"
+	"task.6E47A11260508CDF.title": "All four pieces of the Archer Armor"
+	"task.6E988881316AD759.title": "All four pieces of the Fire Robes"
 	"task.7040411BA905E17E.title": "Geode Claw"
 	"task.7094D33006BAD032.title": "Open the book"
+	"task.70ABD3850443C2CA.title": "All four pieces of the Crusader Armor"
+	"task.70D3758FC0A125D2.title": "All four pieces: Deathmantle Armor or Slayer Armor"
+	"task.70D9C1E11C696703.title": "A legendary longbow or spear"
+	"task.71322DF29009BFF1.title": "All four pieces of the Netherite Troubadour Garb"
+	"task.715DD6CD68902390.title": "Modify a spawner"
 	"task.7174399ADFE35BE8.title": "Visit a tavern"
 	"task.7215B11B3E0BA590.title": "Void Shard"
+	"task.72532FA6EFD78C4A.title": "All four pieces of the Elemental Apprentice Robes"
 	"task.72968790A3198598.title": "Visit a village"
+	"task.72C17A03A917DD06.title": "Have a Royal Longbow, Mechanic Shortbow or diamond Spear"
+	"task.73EC82E632EACC7B.title": "All four pieces: Mountain Robes"
+	"task.74410969BF0C36A1.title": "Have a netherite Longbow, Shortbow or Spear"
+	"task.74DA02C9E2FF7566.title": "Have a Library"
+	"task.7662175C46C42EF7.title": "Carry the Rogue tome"
 	"task.76C0A5A98518E865.title": "Activate a waystone"
+	"task.7760E9BD1F200962.title": "Have a Skillet"
+	"task.7787BBC3DCB0A16A.title": "Have a diamond Rapier, Lute, Lyre or Harp Crossbow"
 	"task.77BACE939F14E365.title": "Ask for directions"
+	"task.77C140DBB2D05060.title": "A legendary longbow"
 	"task.77C4004A4EC01217.title": "Explore a great dungeon"
+	"task.77D40FBC1D59B623.title": "Have a Wizard Staff"
 	"task.78A118B13A8C6536.title": "Brew a potion"
+	"task.78C714AB1D8D019B.title": "Have a netherite Fire Wand or Staff"
+	"task.79BC78438D3435CB.title": "Have a netherite Longbow or Shortbow"
+	"task.79BF0BBCB30F374A.title": "Carry the Archer tome"
+	"task.79FA04000FE1E1C8.title": "Have a netherite Terra Wand or Staff"
+	"task.7A8161436F760911.title": "Craft a backpack"
+	"task.7AE77857D97A67C2.title": "All four pieces of the Netherite Wind Robes"
 	"task.7B512AAA79226288.title": "Salvage a piece of gear"
+	"task.7B7C1D609A967064.title": "Carry the Paladin tome"
+	"task.7B8D10ABEEE96C85.title": "A legendary staff"
+	"task.7BC7D868BD927ADB.title": "Have iron Knuckles"
+	"task.7CF66D9DD08CCABC.title": "All four pieces of the Frost Robes"
+	"task.7D5F21A4880ACFC2.title": "Have a diamond Dagger or Sickle"
 	"task.7DD06313148AB4BC.title": "Kill 15 undead"
+	"task.7DD3D5D846ECF6E9.title": "Carry the Arcane Wizard tome"
 }

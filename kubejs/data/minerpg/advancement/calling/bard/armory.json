@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bards_rpg:storyteller_garb_head"
+            ]
+          },
+          {
+            "items": [
+              "bards_rpg:storyteller_garb_chest"
+            ]
+          },
+          {
+            "items": [
+              "bards_rpg:storyteller_garb_legs"
+            ]
+          },
+          {
+            "items": [
+              "bards_rpg:storyteller_garb_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

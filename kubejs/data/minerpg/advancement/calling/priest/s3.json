@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paladins:netherite_prior_robe_head"
+            ]
+          },
+          {
+            "items": [
+              "paladins:netherite_prior_robe_chest"
+            ]
+          },
+          {
+            "items": [
+              "paladins:netherite_prior_robe_legs"
+            ]
+          },
+          {
+            "items": [
+              "paladins:netherite_prior_robe_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

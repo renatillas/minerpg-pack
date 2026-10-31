@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archers:archer_armor_head"
+            ]
+          },
+          {
+            "items": [
+              "archers:archer_armor_chest"
+            ]
+          },
+          {
+            "items": [
+              "archers:archer_armor_legs"
+            ]
+          },
+          {
+            "items": [
+              "archers:archer_armor_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

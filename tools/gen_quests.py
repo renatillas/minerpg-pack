@@ -12,10 +12,14 @@ Quest object ids are derived from stable keys (sha1), so re-running keeps ids (a
 progress) stable as long as a quest's key does not change. This folder is excluded from the
 pack by pack/.packwizignore.
 """
+import glob
 import hashlib
 import json
 import os
+import re
 import shutil
+import sys
+import zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # .../pack
 QUESTS = os.path.join(ROOT, 'config', 'ftbquests', 'quests')
@@ -281,6 +285,8 @@ def write_kit_functions():
         ]
         for item, count in extras:
             lines.append(f'give @s {item} {count}')
+        # Opens this class's row in the Your Calling tab (kubejs/server_scripts/minerpg_calling.js grants it too).
+        lines.append(f'advancement grant @s only minerpg:calling/{key}/start')
         lines.append('tellraw @s ' + json.dumps({'text': KIT_FLAVOR[key], 'color': 'gray', 'italic': True}))
         lines.append('tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}')
         write(os.path.join(folder, f'{key}.mcfunction'), '\n'.join(lines))
@@ -306,7 +312,7 @@ TALENT_ROOTS = {"weapon_skills": ["hdp8z71mlgffw17t", "o5e8ipv2xtpeksec", "43fud
 def write_advancements():
     folder = os.path.join(DATA, 'minerpg', 'advancement')
     # Only our own subfolders: advancement/field_guide/ belongs to tools/gen_handbook.py.
-    for sub in ('tutorial', 'jobs', 'tour'):
+    for sub in ('tutorial', 'jobs', 'tour', 'calling', 'guide'):
         if os.path.isdir(os.path.join(folder, sub)):
             shutil.rmtree(os.path.join(folder, sub))
     ADV['cast'] = adv('tutorial/cast_spell', {'cast': {'trigger': 'spell_engine:spell_cast', 'conditions': {}}})
@@ -343,6 +349,12 @@ def write_advancements():
             'nbt': '{VillagerData:{profession:"%s"}}' % profession}}}
     for key, professions in MERCHANTS.items():
         ADV['trade_' + key] = adv('tour/' + key, {p.split(':')[1]: trade(p) for p in professions}, any_of=True)
+    # Your Calling: one "has the class" advancement per kit (granted by the kit function and the tome scan), and the
+    # "has an item" tasks of the Calling and guide tabs.
+    for key in CALLING:
+        adv(f'calling/{key}/start', {'granted': {'trigger': 'minecraft:impossible'}})
+    for path, (criteria, any_of) in HAS_ADV.items():
+        adv(path, criteria, any_of=any_of)
 
 
 # --------------------------------------------------------------------------------------
@@ -382,6 +394,7 @@ MERCHANTS = {
     'pub': ['bards_rpg:luthier'],                 # Bard's pub
 }
 MERCHANTS['any'] = [p for ps in MERCHANTS.values() for p in ps] + ['jewelry:jeweler']
+MERCHANTS['jeweler'] = ['jewelry:jeweler']  # The Adventurer's Kit
 
 # Explorer maps given by quest rewards (loot tables kubejs/data/minerpg/loot_table/map/<key>.json,
 # run with /loot give, which searches from the player's position). Overworld targets only.
@@ -480,7 +493,9 @@ GETTING_STARTED = [
     Q('gs_calling', 'Choose Your Calling', 2, 0, [
         'Choose who you start as. You get the class tome, a starter weapon, one armor piece, and the runes or arrows it burns.',
         '',
-        'Nothing is final: a second class waits at any Spell Binding Table.'],
+        'Nothing is final: a second class waits at any Spell Binding Table.',
+        '',
+        'Your class\'s road from here, weapon by weapon and set by set, opens in the &6Your Calling&r tab.'],
         [t_check('I am ready to choose')], [{'type': 'choice', '_table': KIT_TABLE}, r_item('minecraft:emerald', 6)],
         deps=['gs_welcome'], subtitle='Your class starter kit', size=Double(1.5), shape='hexagon'),
     Q('gs_cast', 'Bound to the Book', 4, -1.5, [
@@ -884,12 +899,622 @@ CHAPTER_3 = [
         deps=['c3_wither_call'], subtitle='Optional raid', shape='gear', size=Double(1.5), optional=True),
 ]
 
+# --------------------------------------------------------------------------------------
+# "Has an item" tasks (hidden helper advancements, written by write_advancements)
+# --------------------------------------------------------------------------------------
+# path -> criteria/requirements. Filled while the quest tables below are defined, written later
+# (write_advancements wipes and rewrites the folders first).
+HAS_ADV = {}
+
+
+def has_any(path, items, title):
+    """Task: the player has any one of `items` (ids, or a single '#tag') anywhere in the inventory."""
+    HAS_ADV[path] = ({'has': {'trigger': 'minecraft:inventory_changed', 'conditions': {'items': [{'items': items}]}}}, False)
+    return t_adv('minerpg:' + path, title)
+
+
+def has_sets(path, sets, title):
+    """Task: the player has all pieces of at least one of `sets` (lists of ids) at the same time.
+    Worn armor counts: the armor slots are part of the inventory."""
+    criteria = {f'set_{i}': {'trigger': 'minecraft:inventory_changed', 'conditions': {
+        'items': [{'items': [piece]} for piece in pieces]}} for i, pieces in enumerate(sets)}
+    HAS_ADV[path] = (criteria, len(sets) > 1)
+    return t_adv('minerpg:' + path, title)
+
+
+def pieces(chest):
+    """The four pieces of an armor set, from its chest piece id (every class set names them *_head/_chest/_legs/_feet)."""
+    return [chest.replace('chest', slot) for slot in ('head', 'chest', 'legs', 'feet')]
+
+
+# --------------------------------------------------------------------------------------
+# Your Calling: one row per class kit, from the tome to the endgame set
+# --------------------------------------------------------------------------------------
+# Design: docs/superpowers/specs/2026-10-31-minerpg-calling-and-guides-design.md. A row stays hidden
+# until the player has that class: advancement minerpg:calling/<kit>/start is granted by the kit
+# function and by kubejs/server_scripts/minerpg_calling.js (written below) when a tome of that
+# class sits in the inventory or the spell book slot.
+
+# Crafting job by gear group (pack/tools/gen_jobs.py GEAR_GROUP_JOB) and the levels that open each tier.
+JOB_NAME = {'smith': 'Smith', 'hunter': 'Hunter', 'enchanter': 'Enchanter'}
+
+# Class buildings in villages and their merchants (see MERCHANTS).
+SHOP = {
+    'wizard': 'the Wizard Merchant in the Wizard Tower',
+    'sanctuary': 'the Monk in the Sanctuary',
+    'barracks': 'the Arms Dealer in the Barracks',
+    'range': 'the Archery Artisan in the Archery Range',
+    'pub': 'the Luthier in the Bard\'s pub',
+}
+
+# Tier-1 armor materials (from each set's recipe): the reward for the first weapon, toward the first set.
+T1_MATS = {
+    'robe': [('minecraft:white_wool', 8), ('minecraft:lapis_lazuli', 6)],
+    'elemental': [('minecraft:white_wool', 8), ('minecraft:lapis_lazuli', 4)],
+    'paladin': [('minecraft:iron_ingot', 8), ('minecraft:copper_ingot', 8)],
+    'priest': [('minecraft:white_wool', 8), ('minecraft:chain', 4)],
+    'rogue': [('minecraft:white_wool', 8), ('minecraft:leather', 8)],
+    'warrior': [('minecraft:iron_ingot', 8), ('minecraft:leather', 6)],
+    'wildling': [('minecraft:leather', 8), ('minecraft:chain', 4)],
+    'oriene': [('minecraft:white_wool', 8), ('minecraft:leather', 8)],
+    'archer': [('minecraft:leather', 8), ('minecraft:chain', 4)],
+    'bard': [('minecraft:white_wool', 8), ('minecraft:leather', 6), ('minecraft:purple_dye', 2)],
+}
+
+WIZ = 'wizards'
+ELE = 'elemental_wizards_rpg'
+ARS = 'arsenal'
+
+
+def school(school, armory):
+    """Wizard school row data: weapons and robes named after the school."""
+    return dict(
+        weapons=([f'{WIZ}:staff_wizard'], [f'{WIZ}:wand_{school}', f'{WIZ}:staff_{school}'],
+                 [f'{WIZ}:wand_netherite_{school}', f'{WIZ}:staff_netherite_{school}']),
+        weapon_words=('a Wizard Staff', f'a {school.title()} Wand or Staff', f'a netherite {school.title()} Wand or Staff'),
+        sets=(f'{WIZ}:wizard_robe_chest', f'{WIZ}:{school}_robe_chest', f'{WIZ}:netherite_{school}_robe_chest'),
+        set_names=('Wizard Robes', f'{school.title()} Robes', f'Netherite {school.title()} Robes'),
+        armory=armory, armor_job='enchanter', weapon_job='Enchanter', shop='wizard', mats='robe',
+        legend=[f'{ARS}:unique_staff_damage_{n}' for n in ('1', '2', '3', '4', '5', '6', 'sw')], legend_words='staff')
+
+
+def element(name, word, base, armory):
+    return dict(
+        weapons=([f'{ELE}:staff_elemental'], [f'{ELE}:wand_{name}', f'{ELE}:staff_{name}'],
+                 [f'{ELE}:wand_netherite_{name}', f'{ELE}:staff_netherite_{name}']),
+        weapon_words=('an Elemental Staff', f'a {word} Wand or Staff', f'a netherite {word} Wand or Staff'),
+        sets=(f'{ELE}:elemental_chest', f'{ELE}:{base}_chest', f'{ELE}:netherite_{base}_chest'),
+        set_names=('Elemental Apprentice Robes', f'{word} Robes', f'Netherite {word} Robes'),
+        armory=armory, armor_job='enchanter', weapon_job='Enchanter', shop=None, mats='elemental',
+        legend=[f'{ELE}:unique_staff_1'] + [f'{ARS}:unique_staff_damage_{n}' for n in ('1', '2', '3', '4', '5', '6', 'sw')],
+        legend_words='staff')
+
+
+def bows(t1):
+    return ([t1], ['archers:royal_longbow', 'archers:mechanic_shortbow'], ['archers:netherite_longbow', 'archers:netherite_shortbow'])
+
+
+# Armory entries: (set name, chest id, crystal name). Crystals drop from Ignis, the Ender Guardian,
+# the Ender Dragon and the Wither (config/rpg_series/loot_equipment_v2.json).
+CALLING = {
+    'arcane_wizard': school('arcane', [('Astral Robes', 'armory_rpgs:astral_robe_chest', "Conqueror's Lost Crystal"),
+                                             ('Tempest Robes', 'armory_rpgs:tempest_robe_chest', "Conqueror's Forgotten Crystal")]),
+    'fire_wizard': school('fire', [('Scarlet Robes', 'armory_rpgs:scarlet_robe_chest', "Conqueror's Lost Crystal"),
+                                         ('Smouldering Robes', 'armory_rpgs:smouldering_robe_chest', "Conqueror's Forgotten Crystal")]),
+    'frost_wizard': school('frost', [('Glacier Robes', 'armory_rpgs:glacier_robe_chest', "Vanquisher's Lost Crystal"),
+                                           ('Rimeweave Robes', 'armory_rpgs:rimeweave_robe_chest', "Vanquisher's Forgotten Crystal")]),
+    'water_mage': element('aqua', 'Aqua', 'kelp', [('Ocean Robes', f'{ELE}:ocean_robe_chest', "Warden's Lost Crystal")]),
+    'earth_mage': element('terra', 'Terra', 'dripstone', [('Mountain Robes', f'{ELE}:mountain_robe_chest', "Warden's Lost Crystal")]),
+    'wind_mage': element('wind', 'Wind', 'wind', [('Hurricane Robes', f'{ELE}:hurricane_robe_chest', "Warden's Lost Crystal")]),
+    'paladin': dict(
+        weapons=(['paladins:iron_claymore', 'paladins:iron_great_hammer', 'paladins:iron_mace'],
+                 ['paladins:diamond_claymore', 'paladins:diamond_great_hammer', 'paladins:diamond_mace'],
+                 ['paladins:netherite_claymore', 'paladins:netherite_great_hammer', 'paladins:netherite_mace']),
+        weapon_words=('an iron Claymore, Great Hammer or Mace', 'a diamond Claymore, Great Hammer or Mace',
+                      'a netherite Claymore, Great Hammer or Mace'),
+        sets=('paladins:paladin_armor_chest', 'paladins:crusader_armor_chest', 'paladins:netherite_crusader_armor_chest'),
+        set_names=('Paladin Armor', 'Crusader Armor', 'Netherite Crusader Armor'),
+        armory=[('Justicar Armor', 'armory_rpgs:justicar_armor_chest', "Redeemer's Lost Crystal"),
+                ('Lightbringer Armor', 'armory_rpgs:lightbringer_armor_chest', "Redeemer's Forgotten Crystal")],
+        armor_job='smith', weapon_job='Smith', shop='sanctuary', mats='paladin',
+        legend=[f'{ARS}:unique_{t}_{n}' for t in ('claymore', 'hammer', 'mace') for n in ('1', '2', 'sw')],
+        legend_words='claymore, hammer or mace'),
+    'priest': dict(
+        weapons=(['paladins:holy_wand', 'paladins:holy_staff'], ['paladins:diamond_holy_wand', 'paladins:diamond_holy_staff'],
+                 ['paladins:netherite_holy_wand', 'paladins:netherite_holy_staff']),
+        weapon_words=('a Holy Wand or Holy Staff', 'a diamond Holy Wand or Staff', 'a netherite Holy Wand or Staff'),
+        sets=('paladins:priest_robe_chest', 'paladins:prior_robe_chest', 'paladins:netherite_prior_robe_chest'),
+        set_names=('Priest Vestments', 'Prior Vestments', 'Netherite Prior Vestments'),
+        armory=[('Avatar Vestments', 'armory_rpgs:avatar_robe_chest', "Redeemer's Lost Crystal"),
+                ('Absolution Vestments', 'armory_rpgs:absolution_robe_chest', "Redeemer's Forgotten Crystal")],
+        armor_job='enchanter', weapon_job='Enchanter', shop='sanctuary', mats='priest',
+        legend=[f'{ARS}:unique_staff_heal_{n}' for n in ('1', '2', 'sw')], legend_words='healing staff'),
+    'rogue': dict(
+        weapons=(['rogues:iron_dagger', 'rogues:iron_sickle'], ['rogues:diamond_dagger', 'rogues:diamond_sickle'],
+                 ['rogues:netherite_dagger', 'rogues:netherite_sickle']),
+        weapon_words=('an iron Dagger or Sickle', 'a diamond Dagger or Sickle', 'a netherite Dagger or Sickle'),
+        sets=('rogues:rogue_armor_chest', 'rogues:assassin_armor_chest', 'rogues:netherite_assassin_armor_chest'),
+        set_names=('Rogue Armor', 'Assassin Armor', 'Netherite Assassin Armor'),
+        armory=[('Deathmantle Armor', 'armory_rpgs:deathmantle_armor_chest', "Champion's Lost Crystal"),
+                ('Slayer Armor', 'armory_rpgs:slayer_armor_chest', "Champion's Forgotten Crystal")],
+        armor_job='hunter', weapon_job='Hunter', shop='barracks', mats='rogue',
+        legend=[f'{ARS}:unique_{t}_{n}' for t in ('dagger', 'sickle') for n in ('1', '2', 'sw')], legend_words='dagger or sickle'),
+    'warrior': dict(
+        weapons=(['rogues:iron_double_axe', 'rogues:iron_glaive'], ['rogues:diamond_double_axe', 'rogues:diamond_glaive'],
+                 ['rogues:netherite_double_axe', 'rogues:netherite_glaive']),
+        weapon_words=('an iron Double Axe or Glaive', 'a diamond Double Axe or Glaive', 'a netherite Double Axe or Glaive'),
+        sets=('rogues:warrior_armor_chest', 'rogues:berserker_armor_chest', 'rogues:netherite_berserker_armor_chest'),
+        set_names=('Warrior Armor', 'Berserker Armor', 'Netherite Berserker Armor'),
+        armory=[('Destroyer Armor', 'armory_rpgs:destroyer_armor_chest', "Champion's Lost Crystal"),
+                ('Onslaught Armor', 'armory_rpgs:onslaught_armor_chest', "Champion's Forgotten Crystal")],
+        armor_job='smith', weapon_job='Smith', shop='barracks', mats='warrior',
+        legend=[f'{ARS}:unique_{t}_{n}' for t in ('double_axe', 'glaive') for n in ('1', '2', 'sw')] + [f'{ARS}:unique_longsword_sw'],
+        legend_words='axe, glaive or longsword'),
+    'berserker': dict(
+        weapons=(['berserker_rpg:iron_berserker_axe'], ['berserker_rpg:diamond_berserker_axe'], ['berserker_rpg:netherite_berserker_axe']),
+        weapon_words=('an iron Berserker Axe', 'a diamond Berserker Axe', 'a netherite Berserker Axe'),
+        sets=('berserker_rpg:wildling_chest', 'berserker_rpg:northling_chest', 'berserker_rpg:netherite_northling_chest'),
+        set_names=('Wildling Suit', 'Northling Suit', 'Netherite Northling Suit'),
+        armory=[('Norse Warlord Suit', 'berserker_rpg:warlord_chest', "Ravager's Lost Crystal")],
+        armor_job='smith', weapon_job='Smith', shop=None, mats='wildling',
+        legend=['berserker_rpg:unique_berserker_axe_1', 'berserker_rpg:unique_berserker_axe_2', 'berserker_rpg:unique_sword_1'],
+        legend_words='axe or sword'),
+    'forcemaster': dict(
+        weapons=(['forcemaster_rpg:iron_knuckle'], ['forcemaster_rpg:diamond_knuckle'], ['forcemaster_rpg:netherite_knuckle']),
+        weapon_words=('iron Knuckles', 'diamond Knuckles', 'netherite Knuckles'),
+        sets=('forcemaster_rpg:oriene_chest', 'forcemaster_rpg:phasleb_chest', 'forcemaster_rpg:aken_chest'),
+        set_names=('Oriene Suit', 'Phasleb Suit', 'Aken Suit'),
+        armory=[('Billporon Suit', 'forcemaster_rpg:billporon_chest', "Ascetic's Lost Crystal")],
+        armor_job='smith', weapon_job='Smith', shop=None, mats='oriene',
+        legend=['forcemaster_rpg:unique_knuckle_0', 'forcemaster_rpg:unique_knuckle_1'], legend_words='knuckles'),
+    'archer': dict(
+        weapons=(['archers:composite_longbow', 'archers:iron_spear'],
+                 ['archers:royal_longbow', 'archers:mechanic_shortbow', 'archers:diamond_spear'],
+                 ['archers:netherite_longbow', 'archers:netherite_shortbow', 'archers:netherite_spear']),
+        weapon_words=('a Composite Longbow or an iron Spear', 'a Royal Longbow, Mechanic Shortbow or diamond Spear',
+                      'a netherite Longbow, Shortbow or Spear'),
+        sets=('archers:archer_armor_chest', 'archers:ranger_armor_chest', 'archers:netherite_ranger_armor_chest'),
+        set_names=('Archer Armor', 'Ranger Armor', 'Netherite Ranger Armor'),
+        armory=[('Strider Armor', 'armory_rpgs:strider_armor_chest', "Vanquisher's Lost Crystal"),
+                ('Riftstalker Armor', 'armory_rpgs:riftstalker_armor_chest', "Vanquisher's Forgotten Crystal")],
+        armor_job='hunter', weapon_job='Hunter', shop='range', mats='archer',
+        legend=[f'{ARS}:unique_{t}_{n}' for t in ('longbow', 'spear') for n in ('1', '2', 'sw')], legend_words='longbow or spear'),
+    'deadeye': dict(
+        weapons=bows('archers:composite_longbow'),
+        weapon_words=('a Composite Longbow', 'a Royal Longbow or Mechanic Shortbow', 'a netherite Longbow or Shortbow'),
+        sets=('archers:archer_armor_chest', 'archers_expansion:deadeye_chest', 'archers_expansion:netherite_deadeye_chest'),
+        set_names=('Archer Armor', 'Deadeye Armor', 'Netherite Deadeye Armor'),
+        armory=[('Bounty Hunter Armor', 'archers_expansion:bounty_hunter_chest', "General's Lost Crystal")],
+        armor_job='hunter', weapon_job='Hunter', shop='range', mats='archer',
+        legend=[f'{ARS}:unique_longbow_{n}' for n in ('1', '2', 'sw')], legend_words='longbow'),
+    'tundra_hunter': dict(
+        weapons=bows('archers:composite_longbow'),
+        weapon_words=('a Composite Longbow', 'a Royal Longbow or Mechanic Shortbow', 'a netherite Longbow or Shortbow'),
+        sets=('archers:archer_armor_chest', 'archers_expansion:tundra_hunter_chest', 'archers_expansion:netherite_tundra_hunter_chest'),
+        set_names=('Archer Armor', 'Tundra Armor', 'Netherite Tundra Armor'),
+        armory=[('Polar Stalker Armor', 'archers_expansion:polar_stalker_chest', "Ravager's Lost Crystal")],
+        armor_job='hunter', weapon_job='Hunter', shop='range', mats='archer',
+        legend=[f'{ARS}:unique_longbow_{n}' for n in ('1', '2', 'sw')], legend_words='longbow'),
+    'war_archer': dict(
+        weapons=(['minecraft:crossbow'], ['archers:rapid_crossbow', 'archers:heavy_crossbow'],
+                 ['archers:netherite_rapid_crossbow', 'archers:netherite_heavy_crossbow']),
+        weapon_words=('a Crossbow', 'a Rapid or Heavy Crossbow', 'a netherite Rapid or Heavy Crossbow'),
+        sets=('archers:archer_armor_chest', 'archers_expansion:war_archer_chest', 'archers_expansion:netherite_war_archer_chest'),
+        set_names=('Archer Armor', 'Bowman Armor', 'Netherite Bowman Armor'),
+        armory=[('Sentinel Archer Armor', 'archers_expansion:sentinel_archer_chest', "General's Lost Crystal")],
+        armor_job='hunter', weapon_job='Hunter', shop='range', mats='archer',
+        legend=[f'{ARS}:unique_heavy_crossbow_{n}' for n in ('1', '2', 'sw')], legend_words='heavy crossbow'),
+    'bard': dict(
+        weapons=(['bards_rpg:iron_rapier', 'bards_rpg:wooden_lute', 'bards_rpg:harp_crossbow'],
+                 ['bards_rpg:diamond_rapier', 'bards_rpg:diamond_lute', 'bards_rpg:diamond_lyre', 'bards_rpg:diamond_harp_crossbow'],
+                 ['bards_rpg:netherite_rapier', 'bards_rpg:netherite_lute', 'bards_rpg:netherite_lyre', 'bards_rpg:netherite_harp_crossbow']),
+        weapon_words=('an iron Rapier, a Lute or a Harp Crossbow', 'a diamond Rapier, Lute, Lyre or Harp Crossbow',
+                      'a netherite Rapier, Lute, Lyre or Harp Crossbow'),
+        sets=('bards_rpg:entertainer_garb_chest', 'bards_rpg:troubadour_garb_chest', 'bards_rpg:netherite_troubadour_garb_chest'),
+        set_names=('Entertainer Garb', 'Troubadour Garb', 'Netherite Troubadour Garb'),
+        armory=[('Storyteller Garb', 'bards_rpg:storyteller_garb_chest', "Virtuoso's Lost Crystal")],
+        armor_job='enchanter', weapon_job='Smith (rapier), Enchanter (lute, lyre) or Hunter (harp crossbow)', shop='pub',
+        mats='bard',
+        legend=['bards_rpg:unique_rapier_0', 'bards_rpg:unique_rapier_1', 'bards_rpg:unique_lute_0', 'bards_rpg:unique_lute_1',
+                'bards_rpg:unique_lyre_0', 'bards_rpg:unique_lyre_1', 'bards_rpg:unique_harp_crossbow_0',
+                'bards_rpg:unique_harp_crossbow_1', 'bards_rpg:elder_guardian_harp_crossbow'],
+        legend_words='instrument, rapier or harp crossbow'),
+}
+
+# Where each tier drops (config/rpg_series/loot_equipment_v2.json boss ladder and the zone dungeons).
+LOOT_WHERE = {
+    1: 'Hearthlands chests, small dungeons and the Amethyst Crab',
+    2: 'Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla',
+    3: 'the Harbinger and the Netherite Monstrosity',
+}
+LEVEL = {1: 10, 2: 20, 3: 25}
+ROW_FAMILY_ORDER = ['arcane_wizard', 'fire_wizard', 'frost_wizard', 'water_mage', 'earth_mage', 'wind_mage', 'priest',
+                    'paladin', 'warrior', 'berserker', 'forcemaster', 'rogue', 'archer', 'deadeye', 'tundra_hunter',
+                    'war_archer', 'bard']
+
+
+def calling_routes(c, tier, what, items):
+    """The three ways to get a tier: craft (job and level), buy (class merchant), loot (where)."""
+    job = c['weapon_job'] if what == 'weapon' else JOB_NAME[c['armor_job']]
+    lines = [f'&6Craft&r: {job} level {LEVEL[tier]}' + (', or any friend who is one.' if tier == 1 else '.')]
+    if all(i.startswith('minecraft:') for i in items):
+        lines[0] = '&6Craft&r: anyone can, at a crafting table.'
+    if tier == 3:
+        lines[0] = (f'&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade '
+                    f'template ({job} level 25).')
+    if c['shop'] and tier < 3:
+        lines.append(f'&6Buy&r: {SHOP[c["shop"]]} may have it in stock.')
+    lines.append(f'&6Loot&r: {LOOT_WHERE[tier]}.')
+    return lines
+
+
+def calling_row(key, row):
+    c = CALLING[key]
+    title = next(k[1] for k in KITS if k[0] == key)
+    y = row * 1.5
+    p = f'calling/{key}'
+    sub = dict(hide_until_deps_visible=True)
+    weapon_mats = [r_item(item, n) for item, n in T1_MATS[c['mats']]]
+    quests = [
+        Q(f'cl_{key}_start', f'The {title}\'s Path', 0, y, [
+            f'Every {title} walks the same road: a weapon, then a full set of armor, each tier stronger than the last.',
+            'This row follows it from your first steel to the armor of legends.',
+            '',
+            'Each step can be &ocrafted&r, &obought&r or &olooted&r, and says how. Gear you already own counts as soon '
+            'as the step opens.'],
+            [t_adv(f'minerpg:{p}/start', f'Carry the {title} tome')], [r_xp(50)],
+            subtitle='Your class, step by step', shape='hexagon', size=Double(1.25), invisible=True,
+            invisible_until_tasks=1),
+    ]
+    steps = [
+        ('w1', 'First Steel', 1, 'weapon', 0, weapon_mats),
+        ('s1', c['set_names'][0], 1, 'set', 0, [r_item('minecraft:diamond', 3), r_coins(1)]),
+        ('w2', 'A Diamond Edge', 2, 'weapon', 1, [r_item('minecraft:diamond', 2)]),
+        ('s2', c['set_names'][1], 2, 'set', 1, [r_item('minecraft:netherite_upgrade_smithing_template'), r_coins(2)]),
+        ('w3', 'Forged in Netherite', 3, 'weapon', 2, [r_item('minecraft:netherite_ingot')]),
+        ('s3', c['set_names'][2], 3, 'set', 2, [r_levels(5), r_coins(3), r_item('armory_rpgs:epic_armor_upgrade')]),
+    ]
+    prev = f'cl_{key}_start'
+    for i, (step, name, tier, what, idx, rewards) in enumerate(steps):
+        if what == 'weapon':
+            desc = [f'Get {c["weapon_words"][idx]}.', ''] + calling_routes(c, tier, 'weapon', c['weapons'][idx])
+            task = has_any(f'{p}/{step}', c['weapons'][idx], f'Have {c["weapon_words"][idx]}')
+            subtitle = f'Tier {tier} weapon'
+        else:
+            desc = [f'Wear or carry all four pieces of the &e{name}&r: helmet, chest, legs and boots.', ''] + \
+                calling_routes(c, tier, 'armor', pieces(c['sets'][idx]))
+            task = has_sets(f'{p}/{step}', [pieces(c['sets'][idx])], f'All four pieces of the {name}')
+            subtitle = f'Tier {tier} armor'
+        quests.append(Q(f'cl_{key}_{step}', name, 1.5 * (i + 1), y, desc, [task], rewards, deps=[prev],
+                        subtitle=subtitle, **sub))
+        prev = f'cl_{key}_{step}'
+    armory = c['armory']
+    if len(armory) == 1:
+        name, chest, crystal = armory[0]
+        choice = [f'The endgame set of every {title}: the &d{name}&r.',
+                  f'At a smithing table, upgrade each {c["set_names"][1]} piece (diamond or netherite) with a &d{crystal}&r.']
+        title_text = name
+    else:
+        choice = [f'Two endgame sets answer a {title}. Either one completes this step:',
+                  f'- &d{armory[0][0]}&r: {c["set_names"][1]} piece + &d{armory[0][2]}&r',
+                  f'- &d{armory[1][0]}&r: {c["set_names"][1]} piece + &d{armory[1][2]}&r',
+                  'Upgrade each piece at a smithing table (diamond or netherite pieces both work).']
+        title_text = f'{armory[0][0]} or {armory[1][0]}'
+    quests.append(Q(f'cl_{key}_armory', 'The Armory', 1.5 * 7, y, choice + [
+        '',
+        'Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds.',
+        'Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r.',
+        f'Only {"an" if c["armor_job"] == "enchanter" else "a"} {JOB_NAME[c["armor_job"]]} of level 30 can do the '
+        'upgrade; anyone can wear it.'],
+        [has_sets(f'{p}/armory', [pieces(chest) for _, chest, _ in armory], f'All four pieces: {title_text}')],
+        [r_levels(10), r_coins(5)], deps=[prev], subtitle='Endgame armor', shape='gear', size=Double(1.5), **sub))
+    quests.append(Q(f'cl_{key}_legend', 'A Legend in Hand', 1.5 * 6, y + 0.9, [
+        f'No smith makes these. The &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r carry one-of-a-kind '
+        f'weapons; one of them may be a {c["legend_words"]} made for you.',
+        'Bring friends: these are the hardest fights in the world.'],
+        [has_any(f'{p}/legend', c['legend'], f'A legendary {c["legend_words"]}')], [r_levels(5)],
+        deps=[f'cl_{key}_w3'], subtitle='Optional: boss-only weapon', shape='diamond', optional=True, **sub))
+    return quests
+
+
+CALLING_TAB = [q for row, key in enumerate(ROW_FAMILY_ORDER) for q in calling_row(key, row)]
+assert set(ROW_FAMILY_ORDER) == set(CALLING) == {k[0] for k in KITS}, 'every kit needs exactly one Calling row'
+
+
+# --------------------------------------------------------------------------------------
+# The Forge & the Library: Apotheosis (gear, gems), Apothic Enchanting, Apothic Spawners
+# --------------------------------------------------------------------------------------
+APO = 'apotheosis'
+ENC = 'apothic_enchanting'
+FORGE_TAB = [
+    Q('fl_intro', 'The Forge and the Library', 0, 2, [
+        'Gear in this world is more than its name. Every magic item rolls &obonuses&r (affixes), can hold &ogems&r, '
+        'and can be broken down, reforged and fine-tuned.',
+        'Enchanting reaches far past level 30 once the right shelves stand around the table.',
+        '',
+        'This tab walks through both. Rarity and world tiers are in Getting Started.'],
+        [t_check('Show me')], [r_item(f'{APO}:gem_dust', 4)], subtitle='Apotheosis, step by step', shape='hexagon',
+        size=Double(1.5)),
+    # Gear row
+    Q('fl_salvage', 'Nothing Goes to Waste', 2, 0, [
+        'A &6Salvaging Table&r breaks affixed gear into the materials of its rarity. Keep what you wear; salvage the rest.',
+        'Smiths earn job experience for every piece they salvage.'],
+        [has_any('guide/salvaging_table', [f'{APO}:salvaging_table'], 'Have a Salvaging Table')],
+        [r_item(f'{APO}:gem_dust', 6)], deps=['fl_intro'], subtitle='Break gear down'),
+    Q('fl_reforge', 'A Second Forging', 3.5, 0, [
+        'A &6Reforging Table&r rerolls the bonuses of a piece of gear, and can raise its rarity. It costs rarity '
+        'materials and gem dust.',
+        'Reforging to &9Rare&r needs a Smith of level 10, &5Epic&r 20, &6Mythic&r 30.'],
+        [has_any('guide/reforging_table', [f'{APO}:reforging_table', f'{APO}:simple_reforging_table'], 'Have a Reforging Table')],
+        [r_item(f'{APO}:gem_dust', 12)], deps=['fl_salvage'], subtitle='Reroll and upgrade gear'),
+    Q('fl_augment', 'The Final Polish', 5, 0, [
+        'The &6Augmenting Table&r fine-tunes the bonuses of your very best gear. JEI shows what it costs.',
+        'Save it for the pieces you mean to keep.'],
+        [has_any('guide/augmenting_table', [f'{APO}:augmenting_table'], 'Have an Augmenting Table')],
+        [r_levels(3)], deps=['fl_reforge'], subtitle='Endgame tuning'),
+    # Gems row
+    Q('fl_gem', 'Stones of Power', 2, 1.5, [
+        '&dGems&r drop from monsters and chests. Each one gives a different bonus depending on where it sits: weapon, '
+        'armor, or anything else.',
+        'Hover over a gem to read all its bonuses.'],
+        [has_any('guide/gem', [f'{APO}:gem'], 'Find a gem')], [r_item(f'{APO}:gem_dust', 4)], deps=['fl_intro'],
+        subtitle='Find a gem'),
+    Q('fl_socket', 'Set in Stone', 3.5, 1.5, [
+        'Gems go into &osockets&r. Some gear rolls with sockets already; a &6Sigil of Socketing&r adds one at a '
+        'smithing table.',
+        'Then put the gem in at the smithing table too: gear + gem.'],
+        [has_any('guide/socketing', [f'{APO}:sigil_of_socketing'], 'Have a Sigil of Socketing')],
+        [r_item(f'{APO}:gem_dust', 6)], deps=['fl_gem'], subtitle='Add sockets'),
+    Q('fl_withdraw', 'Second Thoughts', 5, 1.5, [
+        'Socketed a gem into the wrong sword? A &6Sigil of Withdrawal&r at the smithing table takes the gems back out, '
+        'unharmed.'],
+        [has_any('guide/withdrawal', [f'{APO}:sigil_of_withdrawal'], 'Have a Sigil of Withdrawal')], [r_levels(1)],
+        deps=['fl_socket'], subtitle='Remove gems'),
+    Q('fl_cut', 'The Gem Cutter', 3.5, 3, [
+        'A &6Gem Cutting Table&r combines gems (and gem dust) into a gem of higher purity. Higher purity, bigger '
+        'bonuses.',
+        'Enchanters earn job experience cutting gems.'],
+        [has_any('guide/gem_cutting_table', [f'{APO}:gem_cutting_table'], 'Have a Gem Cutting Table')],
+        [r_item(f'{APO}:gem_dust', 8)], deps=['fl_gem'], subtitle='Raise gem purity'),
+    Q('fl_charm', 'Bottled Luck', 5, 3, [
+        'A &6Potion Charm&r holds a potion and gives its effect while it sits in your inventory, until it wears out.',
+        'Alchemists earn job experience making them.'],
+        [has_any('guide/potion_charm', [f'{APO}:potion_charm'], 'Have a Potion Charm')], [r_item('minecraft:glass_bottle', 4)],
+        deps=['fl_intro'], subtitle='Effects that last'),
+    # Enchanting row
+    Q('fl_ench', 'Beyond Level 30', -2, 0, [
+        'Enchanting here has three stats, shown on the table: &aEterna&r (how high the level goes), &cQuanta&r (how '
+        'wild the result) and &dArcana&r (how many and how rare the enchantments).',
+        'Every shelf around the table adds to them. Plain bookshelves reach level 30; the shelves below go further.'],
+        [t_adv(f'{ENC}:30ench', 'Enchant at level 30')], [r_item('minecraft:lapis_lazuli', 16)], deps=['fl_intro'],
+        subtitle='How the enchanting table works'),
+    Q('fl_hell_sea', 'Hell and Sea', -3.5, 0, [
+        '&cHellshelves&r (Nether bricks) and &bSeashelves&r (prismarine) are the first step past level 30.',
+        'Making them needs an &dEnchanter&r of level 10; their upgrades level 20.'],
+        [t_adv(f'{ENC}:hellshelf', 'Have a Hellshelf'), t_adv(f'{ENC}:seashelf', 'Have a Seashelf')],
+        [r_levels(3)], deps=['fl_ench'], subtitle='Enchanter 10'),
+    Q('fl_60', 'Mastering Hell and Sea', -5, 0, [
+        'Infuse your shelves at the enchanting table itself, then upgrade them. Enchant at level 60.'],
+        [t_adv(f'{ENC}:60ench', 'Enchant at level 60')], [r_levels(5)], deps=['fl_hell_sea'], subtitle='Enchanter 20'),
+    Q('fl_deep', 'Into the Deep', -5, 1.5, [
+        '&8Deepshelves&r and &8Sculkshelves&r (a Warden Tendril for the sculk ones) need an Enchanter of level 25. '
+        'Enchant at level 80.'],
+        [t_adv(f'{ENC}:80ench', 'Enchant at level 80')], [r_levels(7)], deps=['fl_60'], subtitle='Enchanter 25'),
+    Q('fl_end', 'Dragon-Slaying Enchanter', -5, 3, [
+        '&5Endshelves&r take Infused Dragon\'s Breath and an Enchanter of level 30. Enchant at level 100, the top.'],
+        [t_adv(f'{ENC}:100ench', 'Enchant at level 100')], [r_levels(10)], deps=['fl_deep'], subtitle='Enchanter 30'),
+    Q('fl_library', 'The Library', -3.5, 1.5, [
+        'A &6Library&r stores enchanted books as points and hands out any enchantment you have stored, at any level '
+        'up to the best you put in. The &6Ender Library&r holds far more.',
+        'Feed it the books you will never use.'],
+        [has_any('guide/library', [f'{ENC}:library', f'{ENC}:ender_library'], 'Have a Library')], [r_item('minecraft:book', 8)],
+        deps=['fl_ench'], subtitle='Store enchantments'),
+    # Spawners
+    Q('fl_spawner', 'Caged Monsters', -2, 3, [
+        'Spawners can be picked up with a &6Silk Touch&r pickaxe (not inside the great dungeons, where the stone '
+        'will not break), carried home and modified.',
+        'Right-click a spawner with the right item to change it; JEI lists every modifier.'],
+        [t_adv('apothic_spawners:modifier', 'Modify a spawner')], [r_levels(5)], deps=['fl_intro'],
+        subtitle='Collect and modify spawners', optional=True),
+]
+
+
+# --------------------------------------------------------------------------------------
+# The Adventurer's Kit: the other mods worth knowing
+# --------------------------------------------------------------------------------------
+TBP = 'travelersbackpack'
+KIT_TAB = [
+    Q('ak_intro', 'The Adventurer\'s Kit', 0, 0, [
+        'Small things that make a long road easier: jewelry, a backpack, a storage room, a kitchen, and what to do '
+        'when things go wrong.',
+        '',
+        'Already in Getting Started: rolling (R), reviving friends, parties (H), waystones, the cooking pot, '
+        'salvaging and your own chest loot.'],
+        [t_check('Show me')], [r_item('minecraft:emerald', 2)], subtitle='Everything else, step by step', shape='hexagon',
+        size=Double(1.5)),
+    # Jewelry and relics
+    Q('ak_jeweler', 'The Jeweler', 2, -1.5, [
+        'Villages with a &6Jeweler&r trade gems, rings and necklaces. Gem veins hide underground too.'],
+        [t_adv('trade_jeweler', 'Trade with a Jeweler')], [r_item('minecraft:gold_ingot', 4)], deps=['ak_intro'],
+        subtitle='Rings and necklaces'),
+    Q('ak_ring', 'A Ring for Each Hand', 3.5, -2, [
+        'Rings and necklaces go in their own slots (G opens them) and add spell power, health or speed.',
+        'Craft one with a gem and gold, or find one in a dungeon.'],
+        [has_any('guide/ring', '#curios:ring', 'Have a ring')], [r_item('minecraft:gold_ingot', 3)], deps=['ak_jeweler'],
+        subtitle='Ring slot'),
+    Q('ak_necklace', 'Close to the Heart', 3.5, -1, [
+        'One necklace at a time. Pick the one that matches your class\'s power.'],
+        [has_any('guide/necklace', '#curios:necklace', 'Have a necklace')], [r_item('minecraft:string', 4)],
+        deps=['ak_jeweler'], subtitle='Necklace slot'),
+    Q('ak_relic', 'Relics', 5, -1.5, [
+        '&dRelics&r are trinkets with a single strong effect: heal on a kill, a burst of speed, a ward against death.',
+        'Most drop from bosses and deep dungeons.'],
+        [has_any('guide/relic', '#relics_rpgs:all', 'Find a relic')], [r_levels(3)], deps=['ak_ring', 'ak_necklace'],
+        subtitle='Trinket slot'),
+    # Backpack
+    Q('ak_backpack', 'Everything You Own, On Your Back', 2, 1, [
+        'A &6Traveler\'s Backpack&r carries a chest\'s worth of items, two fluid tanks and a sleeping bag. Wear it; '
+        'B opens it.',
+        'JEI shows the recipe, and the dozens of other looks a backpack can be crafted in.'],
+        [t_adv(f'{TBP}:standard', 'Craft a backpack')], [r_item('minecraft:leather', 6)], deps=['ak_intro'],
+        subtitle='Traveler\'s Backpack'),
+    Q('ak_backpack_upgrade', 'Room to Grow', 3.5, 1, [
+        'Tier upgrades (iron, gold, diamond, netherite) add rows of slots. Other upgrades add a crafting grid, a '
+        'furnace, a magnet or auto-feeding.'],
+        [t_adv(f'{TBP}:iron_upgrade', 'Upgrade a backpack to iron')], [r_item('minecraft:iron_ingot', 6)],
+        deps=['ak_backpack'], subtitle='Backpack upgrades'),
+    Q('ak_sleeping_bag', 'Camp Anywhere', 5, 1, [
+        'Unroll the backpack\'s sleeping bag to sleep out in the wild, far from any bed.'],
+        [t_adv(f'{TBP}:use_sleeping_bag', 'Sleep in a sleeping bag')], [r_item('minecraft:torch', 16)],
+        deps=['ak_backpack'], subtitle='Sleeping bag', optional=True),
+    # Storage
+    Q('ak_terminal', 'One Window for Every Chest', 2, 2.5, [
+        'Tom\'s Storage turns a room of chests into one searchable window. Put an &6Inventory Connector&r touching your '
+        'chests (or linked to them by cables) and a &6Storage Terminal&r next to it.',
+        'With a Wireless Terminal in your pocket, M opens it from nearby.'],
+        [has_any('guide/storage_terminal', ['toms_storage:storage_terminal', 'toms_storage:crafting_terminal'],
+                 'Have a Storage Terminal')],
+        [r_item('minecraft:chest', 4)], deps=['ak_intro'], subtitle='Tom\'s Simple Storage'),
+    # Kitchen
+    Q('ak_kitchen', 'A Proper Kitchen', -2, -1.5, [
+        'A &6Cutting Board&r slices with a knife; a &6Skillet&r cooks over heat. Together with the cooking pot they '
+        'make every Farmer\'s Delight meal.',
+        'Farmers earn job experience for meals.'],
+        [has_any('guide/cutting_board', ['farmersdelight:cutting_board'], 'Have a Cutting Board'),
+         has_any('guide/skillet', ['farmersdelight:skillet'], 'Have a Skillet')],
+        [r_item('farmersdelight:rice', 8), r_item('farmersdelight:onion', 4)], deps=['ak_intro'], subtitle='Farmer\'s Delight'),
+    # When things go wrong
+    Q('ak_grave', 'If You Fall', -2, 1, [
+        'If you are downed, a friend can pick you up. If you truly die, nothing is lost: your items, armor, trinkets, '
+        'backpack and experience wait in a &6grave&r. The chat says where, and you respawn with a compass to it.',
+        'Only you can open it for 15 minutes; after that a friend may collect it for you.'],
+        [t_check('Understood')], [r_item('minecraft:compass')], deps=['ak_intro'], subtitle='Graves'),
+    Q('ak_claim', 'This Land Is Mine', -2, 2.5, [
+        'Claim the chunks of your home so nobody else can break or open anything there.',
+        'Press F3+G to see chunk borders. Stand inside one and type &e/oclaims claim&r; &e/oclaims unclaim&r gives it '
+        'back. &e/oclaims anchor&r places a claiming anchor that claims the area around it.',
+        'Party members share claims; the \' key opens the menu with more options.',
+        'Each player can claim up to 500 chunks.'],
+        [t_check('I have claimed my home')], [r_item('minecraft:oak_sign', 4)], deps=['ak_intro'], subtitle='Land claims'),
+    Q('ak_elites', 'Not Just Another Zombie', -3.5, 1, [
+        'Some monsters are &celites&r: a title over their heads and special powers, from shields to reflecting '
+        'damage. They hit harder and drop better loot.',
+        'Fight them with your party, or not at all.'],
+        [t_check('Understood')], [r_xp(30)], deps=['ak_intro'], subtitle='Champions'),
+]
+
+
 CHAPTERS = [
     ('getting_started', 'Getting Started', ['How everything works, one quest at a time.'], 'minecraft:writable_book', GETTING_STARTED),
+    ('your_calling', 'Your Calling', ['Your class, from the tome to the armor of legends.'], 'spell_engine:spell_book', CALLING_TAB),
     ('chapter_1_overworld', 'Chapter 1: The Overworld', ['Hearthlands, Wildlands and the Frontier. Ends with The Harbinger.'], 'minecraft:grass_block', CHAPTER_1),
     ('chapter_2_nether', 'Chapter 2: The Nether', ['Fortresses, bastions and fire. Ends with Ignis.'], 'minecraft:netherrack', CHAPTER_2),
     ('chapter_3_end', 'Chapter 3: The End', ['The dragon, the cities and the citadel.'], 'minecraft:end_stone', CHAPTER_3),
+    ('forge_and_library', 'The Forge & the Library', ['Affixes, gems, reforging, enchanting and spawners.'], 'apotheosis:reforging_table', FORGE_TAB),
+    ('adventurers_kit', 'The Adventurer\'s Kit', ['Jewelry, backpacks, storage, cooking, graves and claims.'], 'travelersbackpack:standard', KIT_TAB),
 ]
+
+
+# --------------------------------------------------------------------------------------
+# Your Calling: the tome scan (kubejs/server_scripts/minerpg_calling.js)
+# --------------------------------------------------------------------------------------
+CALLING_SCRIPT = os.path.join(ROOT, 'kubejs', 'server_scripts', 'minerpg_calling.js')
+
+
+def write_calling_script():
+    pools = {pool: key for key, _, pool, _, _, _ in KITS}
+    write(CALLING_SCRIPT, """// minerpg: open a class's row in the "Your Calling" quest tab when the player has that class's tome.
+// GENERATED by pack/tools/gen_quests.py (edit the generator, not this file).
+//
+// The kit function grants minerpg:calling/<kit>/start when a kit is chosen. A second class bound later at a Spell
+// Binding Table never runs a kit, so every 2 s this checks each player's inventory and spell book slot for a tome
+// and grants the row of its class. A tome's class is the pool in its spell_engine:spell_container component.
+
+const $CallingCurios = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
+
+const CALLING_POOLS = %s
+
+// player name -> {kit: true} already granted this session (the grant command is a no-op after the first time)
+const callingSeen = {}
+
+function callingCheckStack(player, stack, seen) {
+  if (stack.isEmpty() || stack.id != 'spell_engine:spell_book') return
+  const text = String(stack.getComponentString())
+  for (const pool in CALLING_POOLS) {
+    const kit = CALLING_POOLS[pool]
+    if (!seen[kit] && text.indexOf('"' + pool + '"') >= 0) {
+      seen[kit] = true
+      player.server.runCommandSilent('advancement grant ' + player.username + ' only minerpg:calling/' + kit + '/start')
+    }
+  }
+}
+
+function callingScan(player) {
+  const seen = callingSeen[player.username] || (callingSeen[player.username] = {})
+  const inv = player.inventory
+  for (let i = 0; i < inv.getContainerSize(); i++) callingCheckStack(player, inv.getItem(i), seen)
+  const curios = $CallingCurios.getCuriosInventory(player).orElse(null)
+  if (curios == null) return
+  const equipped = curios.getEquippedCurios()
+  for (let i = 0; i < equipped.getSlots(); i++) callingCheckStack(player, equipped.getStackInSlot(i), seen)
+}
+
+PlayerEvents.loggedOut(event => {
+  delete callingSeen[event.player.username]
+})
+
+let callingTicks = 0
+ServerEvents.tick(event => {
+  callingTicks++
+  if (callingTicks %% 40 != 0) return
+  event.server.players.forEach(player => {
+    try {
+      callingScan(player)
+    } catch (err) {
+      console.error('minerpg calling: scan failed for ' + player.username + ': ' + err)
+    }
+  })
+})
+""" % json.dumps(pools, indent=2))
+
+
+# --------------------------------------------------------------------------------------
+# Item id check (optional): every modded id the quests use must exist in the installed jars
+# --------------------------------------------------------------------------------------
+def check_item_ids(mods_dir):
+    """Fail the build on an item id no jar defines (a typo makes a task silently impossible).
+    Vanilla ids and tags are not checked."""
+    known = set()
+    for jar in glob.glob(os.path.join(mods_dir, '*.jar')):
+        with zipfile.ZipFile(jar) as z:
+            for name in z.namelist():
+                m = re.match(r'assets/([^/]+)/models/item/([^/]+)\.json$', name)
+                if m:
+                    known.add(f'{m.group(1)}:{m.group(2)}')
+    used = set()
+
+    def walk(v):
+        if isinstance(v, str):
+            if re.fullmatch(r'[a-z0-9_]+:[a-z0-9_/]+', v) and not v.startswith(('minecraft:', 'minerpg:')):
+                used.add(v)
+        elif isinstance(v, dict):
+            for x in v.values():
+                walk(x)
+        elif isinstance(v, (list, tuple)):
+            for x in v:
+                walk(x)
+    # Ids in "has an item" tasks (trigger names are minecraft: ids and skipped) and in item rewards.
+    for criteria, _ in HAS_ADV.values():
+        walk(criteria)
+    for _, _, _, _, quests in CHAPTERS:
+        for qd in quests:
+            for r in qd['rewards']:
+                if r.get('type') == 'item':
+                    walk(r['item']['id'])
+    missing = sorted(i for i in used if i not in known)
+    if missing:
+        raise SystemExit('unknown item ids: ' + ', '.join(missing))
+    print(f'item ids checked: {len(used)} modded ids, all present')
 
 
 # --------------------------------------------------------------------------------------
@@ -901,7 +1526,7 @@ def resolve_adv(task):
     return task
 
 
-def build():
+def build(mods_dir=None):
     write_kit_functions()
     write_advancements()
     write_structure_tags()
@@ -935,12 +1560,19 @@ def build():
         'rewards': table_rewards,
     }))
 
+    # Quest keys are global, so a quest can depend on one in another tab.
+    keys = {}
+    for _, _, _, _, quests in CHAPTERS:
+        for qd in quests:
+            if qd['key'] in keys:
+                raise SystemExit(f'duplicate quest key {qd["key"]}')
+            keys[qd['key']] = oid('quest:' + qd['key'])
+
     counts = {}
     for order, (filename, title, subtitle, icon, quests) in enumerate(CHAPTERS):
         cid = oid('chapter:' + filename)
         lang('chapter', cid, 'title', title)
         lang('chapter', cid, 'chapter_subtitle', subtitle)
-        keys = {qd['key']: oid('quest:' + qd['key']) for qd in quests}
         out = []
         for qd in quests:
             qid = keys[qd['key']]
@@ -1021,10 +1653,13 @@ def build():
         'verify_on_load': False,
     }))
     write(os.path.join(QUESTS, 'lang', 'en_us.snbt'), snbt(LANG))
+    write_calling_script()
+    if mods_dir:
+        check_item_ids(mods_dir)
     for k, v in counts.items():
         print(f'{k}: {v} quests')
     print(f'{len(KITS)} class kits')
 
 
 if __name__ == '__main__':
-    build()
+    build(sys.argv[1] if len(sys.argv) > 1 else None)

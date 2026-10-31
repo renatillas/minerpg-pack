@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "apothic_enchanting:library",
+              "apothic_enchanting:ender_library"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

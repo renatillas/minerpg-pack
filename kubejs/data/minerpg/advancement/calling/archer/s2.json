@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archers:ranger_armor_head"
+            ]
+          },
+          {
+            "items": [
+              "archers:ranger_armor_chest"
+            ]
+          },
+          {
+            "items": [
+              "archers:ranger_armor_legs"
+            ]
+          },
+          {
+            "items": [
+              "archers:ranger_armor_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

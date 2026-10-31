@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bards_rpg:iron_rapier",
+              "bards_rpg:wooden_lute",
+              "bards_rpg:harp_crossbow"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

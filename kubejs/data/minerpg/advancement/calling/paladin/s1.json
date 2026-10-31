@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paladins:paladin_armor_head"
+            ]
+          },
+          {
+            "items": [
+              "paladins:paladin_armor_chest"
+            ]
+          },
+          {
+            "items": [
+              "paladins:paladin_armor_legs"
+            ]
+          },
+          {
+            "items": [
+              "paladins:paladin_armor_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

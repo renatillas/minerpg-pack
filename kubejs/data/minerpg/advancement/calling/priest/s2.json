@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paladins:prior_robe_head"
+            ]
+          },
+          {
+            "items": [
+              "paladins:prior_robe_chest"
+            ]
+          },
+          {
+            "items": [
+              "paladins:prior_robe_legs"
+            ]
+          },
+          {
+            "items": [
+              "paladins:prior_robe_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

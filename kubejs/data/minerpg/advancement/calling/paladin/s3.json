@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paladins:netherite_crusader_armor_head"
+            ]
+          },
+          {
+            "items": [
+              "paladins:netherite_crusader_armor_chest"
+            ]
+          },
+          {
+            "items": [
+              "paladins:netherite_crusader_armor_legs"
+            ]
+          },
+          {
+            "items": [
+              "paladins:netherite_crusader_armor_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

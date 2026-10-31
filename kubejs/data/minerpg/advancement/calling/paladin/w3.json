@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paladins:netherite_claymore",
+              "paladins:netherite_great_hammer",
+              "paladins:netherite_mace"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

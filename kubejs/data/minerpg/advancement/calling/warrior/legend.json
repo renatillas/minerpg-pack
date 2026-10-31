@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arsenal:unique_double_axe_1",
+              "arsenal:unique_double_axe_2",
+              "arsenal:unique_double_axe_sw",
+              "arsenal:unique_glaive_1",
+              "arsenal:unique_glaive_2",
+              "arsenal:unique_glaive_sw",
+              "arsenal:unique_longsword_sw"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -3,5 +3,6 @@ give @s spell_engine:spell_book[minecraft:item_name='{"translate": "item.archers
 give @s archers:rapid_crossbow 1
 give @s archers_expansion:war_archer_chest 1
 give @s minecraft:arrow 64
+advancement grant @s only minerpg:calling/war_archer/start
 tellraw @s {"text": "A crossbow, a steady hand and a hail of bolts. Hold the line from range.", "color": "gray", "italic": true}
 tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}

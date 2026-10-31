@@ -1,0 +1,64 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armory_rpgs:strider_armor_head"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:strider_armor_chest"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:strider_armor_legs"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:strider_armor_feet"
+            ]
+          }
+        ]
+      }
+    },
+    "set_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armory_rpgs:riftstalker_armor_head"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:riftstalker_armor_chest"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:riftstalker_armor_legs"
+            ]
+          },
+          {
+            "items": [
+              "armory_rpgs:riftstalker_armor_feet"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "set_0",
+      "set_1"
+    ]
+  ]
+}

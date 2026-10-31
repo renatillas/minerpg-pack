@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paladins:holy_wand",
+              "paladins:holy_staff"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

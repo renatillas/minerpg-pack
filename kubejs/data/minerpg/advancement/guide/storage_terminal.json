@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "toms_storage:storage_terminal",
+              "toms_storage:crafting_terminal"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

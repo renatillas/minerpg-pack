@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arsenal:unique_staff_heal_1",
+              "arsenal:unique_staff_heal_2",
+              "arsenal:unique_staff_heal_sw"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

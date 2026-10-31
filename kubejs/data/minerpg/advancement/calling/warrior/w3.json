@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rogues:netherite_double_axe",
+              "rogues:netherite_glaive"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

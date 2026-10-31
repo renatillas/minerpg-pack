@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archers:netherite_longbow",
+              "archers:netherite_shortbow",
+              "archers:netherite_spear"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

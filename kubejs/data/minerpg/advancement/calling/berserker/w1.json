@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "berserker_rpg:iron_berserker_axe"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

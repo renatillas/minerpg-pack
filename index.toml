@@ -97,20 +97,32 @@ file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/adventurers_kit.snbt"
+hash = "240a58869345983fcd0314303a8374afdbd8300e5acde8f6d5eb24149ee62f30"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_overworld.snbt"
-hash = "678b266ebcaaa8426d82ac309bee3fc6a62d528f8fed81769b87747c5418721d"
+hash = "c76509088b3a2399e106688997f32838de1c9c69d0ebca299791ef41f0c17898"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_nether.snbt"
-hash = "010b600e691868081a4d9f87a0763871e2879f57a5eb367e1655c3a7303867fa"
+hash = "741f3dcd6b87816f20dfce99c18bb5f86ee1f159c09311a03d8df7060dd979ee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_end.snbt"
-hash = "2f688e70f658547f31bc6d3480d6ea1ec6e05e778dd108ac766443a73235598e"
+hash = "b68f5de85667ffa22223b1acff9eb5408ce8e7aa14c38832dbffe728e1272f21"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/forge_and_library.snbt"
+hash = "9bab201d3a598807493ab5f1b423a0bd04d1daa4c619fcfd75293dec5e07a931"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
-hash = "e614b68d4c06d0771230fd0fd43b0ed64819bfcc718403a746708c3343575d5c"
+hash = "c421604cfd15769d268335ab4b4e6782b32780af74735a47d2b6699dcbf45fb7"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/your_calling.snbt"
+hash = "e6773822f06aede1597ec6694f4532e574716a64e9b358371b3fefe0a41e4044"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -118,7 +130,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "4e2a10caaf39de6f5086545f64e0b531419ca8cc4167807232c2a355af72fc16"
+hash = "6edb7a6fe2329e4294439434b224929741cb717d7634ca79135e498fee5e005d"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -1269,6 +1281,618 @@ file = "kubejs/data/minecraft/tags/block/enderman_holdable.json"
 hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/calling/arcane_wizard/armory.json"
+hash = "d4c48b7d164bc360668779ea97cac0fe92eacc52b70110374532f6734884831a"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/arcane_wizard/legend.json"
+hash = "97031bde0b69f86d85ac5b556a29cfce47a3552e1ff1e58886fba6f5f8049f4f"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/arcane_wizard/s1.json"
+hash = "ee58f0518c65736ae527320f55004f8a7dc0d23f9f9a64c1379c277ca527c27d"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/arcane_wizard/s2.json"
+hash = "aa107b5e50b16444335841f908204e9da65d193cc90ccf86306c3a6ad0ecf533"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/arcane_wizard/s3.json"
+hash = "d9d782438df40eec17077324d2542b9890e29a4a54df18ce84d205cc77284299"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/arcane_wizard/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/arcane_wizard/w1.json"
+hash = "ed570d79186aa91769348c7697766e2c3fead948f34442ad9251aa1e7ce6b4dc"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/arcane_wizard/w2.json"
+hash = "45040d1d38b5f46f347dd8d23a6b92038633458cde618d18cf2df8d01543286e"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/arcane_wizard/w3.json"
+hash = "dc248a6babc2cb76513ebc1362a80b2563911766543b41488b4fef299e04a413"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/archer/armory.json"
+hash = "478ed949dc3a01b793e29a5c53a61315f009a36cb319bbde0934b09e6d62fd50"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/archer/legend.json"
+hash = "22bb21d453b270af0fed072f456c34653006322744a93217f7db3cf6f501c1b3"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/archer/s1.json"
+hash = "3b4bcd0a4e0c2a510dfe556fb106a7206bee6af5ffb741ed977f1b21b38aee61"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/archer/s2.json"
+hash = "97a6c6750cc420c07483229b34f9c7132049668615068d8ef89b2a2e525b2739"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/archer/s3.json"
+hash = "c3a97fad9536c65bd44e1d877c5490965cb069edb1f4c7bdf94f4d431c91dde1"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/archer/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/archer/w1.json"
+hash = "4ab087b0654d8c15eecd89513e82c84adc2776dc6d653bf334a85ffa9ac8937a"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/archer/w2.json"
+hash = "097de85fdb7e0c4d35d8a00d747fc396b7391b30b23342c89b4b88e94d3f1aae"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/archer/w3.json"
+hash = "c88a2f8c7b11f8ba00da8f96d34815fcebf4cd605494b164dc3f45cd9b109ce9"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/bard/armory.json"
+hash = "7d5983bfd6a43c3dd4fdb686137487f086b8dfa914aa0bbda6b7bed1e86680fa"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/bard/legend.json"
+hash = "4d7709ee4a07d71ea7cb61bd2f4f6cced4b71c88ccd8037aef53ca5f31ee61f3"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/bard/s1.json"
+hash = "f8c73c258e2df846467394b6a8063565ba961dd4f3de5de95af59fc6642cfb68"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/bard/s2.json"
+hash = "64093b25dc433ce092162420088abbbf8f85a44ad335f4d86f0b6f6bcdbc1f10"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/bard/s3.json"
+hash = "42dcb3058d32b0b65a31526c596402e7032d8a4cce6ef3deb97f935ef42c1700"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/bard/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/bard/w1.json"
+hash = "410551ea11dfd23227676231a86f33aa919b436396a2fb34e69042842d754b96"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/bard/w2.json"
+hash = "4e1aabe894b05e787fc3636e462c3ca8cc630b5b22d83dc80ae30ac9443e93c5"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/bard/w3.json"
+hash = "d092bf0d2ddbcd5a1fec83919cdd6090e12c930826add94b7f5350c7480c9ba3"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/berserker/armory.json"
+hash = "d02358dcaa04a275f05afc025ca4207e3b02fcc9a3c9f8fd776e742c6c161dcd"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/berserker/legend.json"
+hash = "63eb0272979460d101aa5c2e6455ddb7fd25f48a1a2d6a21959918a253e7606c"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/berserker/s1.json"
+hash = "1b4274dbc9680d16fe77b46f6c6c30c69b36f102d2746a7b65fcb724dd995552"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/berserker/s2.json"
+hash = "b201aa61d9d6a1538ba3780b18c564fa7213bc68cb652459121891559a994a0a"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/berserker/s3.json"
+hash = "dddf69e033e0a99675b0bf3299ce9bffcc66097b8b73d2f2a0581ee0f4343c1d"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/berserker/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/berserker/w1.json"
+hash = "a25a714791555d1812f64fb04ca1b7810965a36f2fe9da58fb10c9e89b0ae36c"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/berserker/w2.json"
+hash = "764fc85875b95b8d1d63a0b42985b7321fa4774be99ef1bad4429531bf200a38"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/berserker/w3.json"
+hash = "490a9365beb1331d96f989546cf3e6a562dfa8a4c9a49828685209433c9caafd"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/deadeye/armory.json"
+hash = "17cc2bf525ac8ad0e3934fda01e614f97d47f4335ed53a4383e62d69e56ed534"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/deadeye/legend.json"
+hash = "1b4d404a4105c9c49ed982f2c3fcd24e265ff1d5cdfd22a36c2dfe3db31c6ebe"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/deadeye/s1.json"
+hash = "3b4bcd0a4e0c2a510dfe556fb106a7206bee6af5ffb741ed977f1b21b38aee61"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/deadeye/s2.json"
+hash = "01ee59d9805264217a681a22071c17c2c13462dead60d98722efa8d380b3634f"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/deadeye/s3.json"
+hash = "1c46cceadb3a11d10337b9c3898a53b0f62410914cd33152608bb0f66cd740f0"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/deadeye/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/deadeye/w1.json"
+hash = "bc02672143597dca40cececed2f6aa173b08e283b6b335a5f98054c9963a9b35"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/deadeye/w2.json"
+hash = "ce2cc15b65f1e5a1bed53353c67dcd3a3aebb4b240e51fd7d59376618d9c396b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/deadeye/w3.json"
+hash = "1439b148c97f608ff191e97889090f274b5396b16f7ac4f1c1f17956c2a10bc4"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/earth_mage/armory.json"
+hash = "b012956be7a3f61b1267e0c01d02ea2efe168b6f04f6c3dcb830f4d8ecb4b5c8"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/earth_mage/legend.json"
+hash = "64b1d47dbf0d7709194ae1cc9b0e6f23735e4b68ebd61e6badb761cd043105f3"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/earth_mage/s1.json"
+hash = "8d62d8dbb25e9712a77125d525b3d32352b15bd8c3673887a936d0191e412b99"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/earth_mage/s2.json"
+hash = "41502456d3a55d794666973eda5a47b6dceca096c2a8e0f1d60af9c406ad78aa"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/earth_mage/s3.json"
+hash = "c0f3572bd6494e36a6256bef357bcd09513447c7787bb8a581965e00fc83ac84"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/earth_mage/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/earth_mage/w1.json"
+hash = "55a6a028a3bfc4a80fbb94b2f0f815a04c701306b122929a4965514566c223da"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/earth_mage/w2.json"
+hash = "7baec159afdf12ca3da9986140e44ae8693e002fdda6a10fda4c7cf04a310913"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/earth_mage/w3.json"
+hash = "5342e5017eaad0421ec220fd3ef00559693f0168a6aac8121e3026ad80f89f28"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/fire_wizard/armory.json"
+hash = "9ceab61f70fd0d18328d4bb18f3e902096c490c82216fad914878787d1bb9c2a"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/fire_wizard/legend.json"
+hash = "97031bde0b69f86d85ac5b556a29cfce47a3552e1ff1e58886fba6f5f8049f4f"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/fire_wizard/s1.json"
+hash = "ee58f0518c65736ae527320f55004f8a7dc0d23f9f9a64c1379c277ca527c27d"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/fire_wizard/s2.json"
+hash = "87868f418331ebca2affab3cfd3347a3f2df7633d75493649e44f5da6d759c81"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/fire_wizard/s3.json"
+hash = "9bdf3f4d03a9742882e9f27b8487ec2724e97fb9ea6c26e6b4abb8aec36f1673"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/fire_wizard/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/fire_wizard/w1.json"
+hash = "ed570d79186aa91769348c7697766e2c3fead948f34442ad9251aa1e7ce6b4dc"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/fire_wizard/w2.json"
+hash = "dacb43b0dff71bb6e4fe168e8f4a66cee1964d57b18f299785307b6f72ce7094"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/fire_wizard/w3.json"
+hash = "9e26d7a4db54c2b75a637e547302a63ed19671fa9a1fb376653742a5769d8720"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/forcemaster/armory.json"
+hash = "9d8982285230450ba772f0ffebdac8230c1827c71ea8873fcb9449abc799b764"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/forcemaster/legend.json"
+hash = "ad2aec958234e1031168dbc9308204ffbd70752291ef045ffa3071ee7703c42d"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/forcemaster/s1.json"
+hash = "438ae1ec6b866dc45371e2a5fb629bccac6d3da661a2fe2f9720b25bfd040bb1"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/forcemaster/s2.json"
+hash = "0f38731f3eacc558218a999d49af018304dcf456e39d8b51c2869fe91b1ca8a5"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/forcemaster/s3.json"
+hash = "af04b21e8632eea127f9e1fcda7edb2349663f07dd871115f18e0ae2e060c116"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/forcemaster/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/forcemaster/w1.json"
+hash = "db78a684fedf5ca233fc93ac10abf74dbd3cd8007542d6e46124071fe36e6abd"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/forcemaster/w2.json"
+hash = "34f097e0f97878b1791ff7c612b03ac8d8c624b4c46e3970e28ee7ea5a0bbd6e"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/forcemaster/w3.json"
+hash = "42aea81aa295441bf9f46ee43d8d10918dcfcaef400f0f43aa2caf26c9fdf5a3"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/frost_wizard/armory.json"
+hash = "54bf16517ae0f50f2a6a4f2e3ac070acec15659f53597bf6879bdce368cf8b43"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/frost_wizard/legend.json"
+hash = "97031bde0b69f86d85ac5b556a29cfce47a3552e1ff1e58886fba6f5f8049f4f"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/frost_wizard/s1.json"
+hash = "ee58f0518c65736ae527320f55004f8a7dc0d23f9f9a64c1379c277ca527c27d"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/frost_wizard/s2.json"
+hash = "bbc48c162dd464bbfe416af5ebec53c01dd8b2ef4a2ee14be747d5f7b079a975"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/frost_wizard/s3.json"
+hash = "c4d69422962b978a82c1a0f33b0a16035a5e6515f4d712dffc1a2c0a09cf6e66"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/frost_wizard/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/frost_wizard/w1.json"
+hash = "ed570d79186aa91769348c7697766e2c3fead948f34442ad9251aa1e7ce6b4dc"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/frost_wizard/w2.json"
+hash = "b6838009529990b5ef43bab23c815c55747261bace915aa1522eee96a8c403ec"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/frost_wizard/w3.json"
+hash = "82a6eab712b2d9524be910e170b4b209e10e77cddf9c2dd81c2564972940b750"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/paladin/armory.json"
+hash = "b675551e02e536dc2375ee70dc7fd0e06c1d9882735e7c6109ba77088481215f"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/paladin/legend.json"
+hash = "d589173aa9059679fcc9c6bcdc052bee8dd8b942e1d08e2888a4fc0c0a4f74e0"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/paladin/s1.json"
+hash = "a5fbb1a9d75ff8ef13cafd341e72ab31e03bb339e32d5ee1626d024bdc801c6a"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/paladin/s2.json"
+hash = "b14fa211c121e6ae1abf44ee7f6c6f43f0603549a02198f5aba94596fef1805c"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/paladin/s3.json"
+hash = "e6c9ee21363e7df3b0a7ca23c1f41438c63de8f8529a76ec1814e16a77f67fde"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/paladin/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/paladin/w1.json"
+hash = "01c86b0684d7e43878bcb082961ac1a01bc445714bafe29d3d9b59facaf816f0"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/paladin/w2.json"
+hash = "64b8e7b5fa4e131e7bc17033313077ef07c923f6886c4ed12b108ec3d9d5fd25"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/paladin/w3.json"
+hash = "2cb2f7018f0ebfa3cbe20c1965a13d3039c5e42dce4f0f3012d6bd71887d5289"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/priest/armory.json"
+hash = "e758f0e75e20083e11a4ea54202853fec6554f5f4e5ea381d03fcbf60761268b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/priest/legend.json"
+hash = "0be77a9d3afc75adcd633c6c64d01570cbb4cf6e95f2bc53f35c90024d657c84"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/priest/s1.json"
+hash = "b94c3cb933bb77d0dfc9ba3500811c06f846236e449d43952f52fe3736467104"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/priest/s2.json"
+hash = "0d5f657dbe5e38cc033e65043a3029cac9edbbc75f5ebfde1570e84e7bd2be90"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/priest/s3.json"
+hash = "5b333ced189013b84217080c061e1552dbc78e51c8564497766a93e572fa4fd8"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/priest/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/priest/w1.json"
+hash = "e198be9aaf4c17ef4a2e40b9a5ad661a62b70a1934f85816c2ac16388ed20368"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/priest/w2.json"
+hash = "d876f80a7ecfe1dae5f1e24500561a8f6c3891e08addb89cd4f010472c5d8fad"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/priest/w3.json"
+hash = "9a3f76c265f7f1c8565357a91dc51884e8e43a5662a34b18cd7f9d8dd93d6123"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/rogue/armory.json"
+hash = "1e6386789eaef5e00f18a2a24a19b19f84a6e31c30e5349d2884eab45d157532"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/rogue/legend.json"
+hash = "534ad250fbe8e778dba5313e12fa766458f89ec94fb0b5750da97d12f195816f"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/rogue/s1.json"
+hash = "1fa1c81db12cb0bbd7804a8ddcd284e22431864f666fd764d694bba8b575ada7"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/rogue/s2.json"
+hash = "caf142d7efcaf1b8ca0530a39d82b29e707eac0cab6c35948f1fb080da5473fd"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/rogue/s3.json"
+hash = "386657dba4bc9af45488d94c45315cc1ad70c67b2f85601a0bc331ac0c36e6df"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/rogue/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/rogue/w1.json"
+hash = "9ca142e3caf2599bf0969043be2df8728d0bad1d1b32499a7d073477a64fa654"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/rogue/w2.json"
+hash = "fd86743f3e14690ee265fccce24a52cf1d26e7dc9d6d00bd3c465c40f04c0b39"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/rogue/w3.json"
+hash = "fb86e3f7966c6fd0eb7569b30ff410c838d5e03dbeb80c70b3d6175e3f2bae46"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/tundra_hunter/armory.json"
+hash = "b1974bdba4e28f7a2550d04067359c784140d5bd2ccc20396f6ffedce7e19db0"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/tundra_hunter/legend.json"
+hash = "1b4d404a4105c9c49ed982f2c3fcd24e265ff1d5cdfd22a36c2dfe3db31c6ebe"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/tundra_hunter/s1.json"
+hash = "3b4bcd0a4e0c2a510dfe556fb106a7206bee6af5ffb741ed977f1b21b38aee61"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/tundra_hunter/s2.json"
+hash = "fed63da91e60b065736fa0e93e307186472f5e77d3e0277b11f29e2699162fda"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/tundra_hunter/s3.json"
+hash = "b77beaefa51b11e018ca0502ff212746ead5df393736c0fb15cb851e50553f31"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/tundra_hunter/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/tundra_hunter/w1.json"
+hash = "bc02672143597dca40cececed2f6aa173b08e283b6b335a5f98054c9963a9b35"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/tundra_hunter/w2.json"
+hash = "ce2cc15b65f1e5a1bed53353c67dcd3a3aebb4b240e51fd7d59376618d9c396b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/tundra_hunter/w3.json"
+hash = "1439b148c97f608ff191e97889090f274b5396b16f7ac4f1c1f17956c2a10bc4"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/war_archer/armory.json"
+hash = "425bb8209bfaf8ad1479f30dce44621e86f6bb2f6b78528eee169d199c7e4f62"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/war_archer/legend.json"
+hash = "25273de15f613f66f48d998a06a6765d9878fbff674a416a65e661fbfc9bde1e"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/war_archer/s1.json"
+hash = "3b4bcd0a4e0c2a510dfe556fb106a7206bee6af5ffb741ed977f1b21b38aee61"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/war_archer/s2.json"
+hash = "583fe841bceb6914cbb5a718c09d6dfa3257322f6a16780ecdf1c5489f7d67a8"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/war_archer/s3.json"
+hash = "03e655ff085788fd4da8138da9081c5b086e132b6e5ce6287bcc1fb16ff214fa"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/war_archer/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/war_archer/w1.json"
+hash = "e9c4accd61ff75d7135d3797080120d1cd5d729813e2c81d1c427ee3bd591c0d"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/war_archer/w2.json"
+hash = "ee751291a3d96a370a462da67cc2193aefae58d316be086a54524ec7173c51f8"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/war_archer/w3.json"
+hash = "ecef9e704ef9433b332217eebf56d68f62ac9cbce34a185d82e9d3e0f00f356e"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/warrior/armory.json"
+hash = "b5ed68a719fcb753d72e6622af9d515a4a084de711b4838cd4fcd497afa95b6c"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/warrior/legend.json"
+hash = "82d913762a874a9be490f95a3c94d7f4c2cf696fd93eb5df6d38137ba957f995"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/warrior/s1.json"
+hash = "8730755718f6a2d50eb68f411c9b22d41289bf75a7a49e728b6bc76ffcf785db"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/warrior/s2.json"
+hash = "0871a24638bdff15255ee14f06eeb75ebefa64e34adb0eaf1a62b2ec4e77841c"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/warrior/s3.json"
+hash = "cf0e8959b58e696dcdbe60b04ed8c1e8a7191e722f82f48b624f65a38e6e3d79"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/warrior/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/warrior/w1.json"
+hash = "4ae9eb045ce33779a96db23674c9261f5f83d840744b06c63e3100952082b855"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/warrior/w2.json"
+hash = "df7c896b3131f134b30b73ad98cfff0068514744cb2aa38178619de1ae113f1f"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/warrior/w3.json"
+hash = "e228c8f0ce7fee7b82b5f5e923151900de6ab62bb572550ef15eda7b6217783d"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/water_mage/armory.json"
+hash = "ddb25aef0e88b5eabeeb4ca73c1f02bd45e6a89f4ece6c2ad3420d39a337ce39"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/water_mage/legend.json"
+hash = "64b1d47dbf0d7709194ae1cc9b0e6f23735e4b68ebd61e6badb761cd043105f3"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/water_mage/s1.json"
+hash = "8d62d8dbb25e9712a77125d525b3d32352b15bd8c3673887a936d0191e412b99"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/water_mage/s2.json"
+hash = "454c73f5b0da96075de710a9551506c6fcf2cd779e71dde6916465c66f4ac5bd"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/water_mage/s3.json"
+hash = "82c8d29d9f14ee9116de6ec9c29dddf69762026f9da4b1dcb36177dab26c110d"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/water_mage/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/water_mage/w1.json"
+hash = "55a6a028a3bfc4a80fbb94b2f0f815a04c701306b122929a4965514566c223da"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/water_mage/w2.json"
+hash = "06d1152f2e00d14b804728f3b772da892ec280ac69ac0764c1b5a95d0f488ce6"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/water_mage/w3.json"
+hash = "d6c6e9f0c5feb7243cc322140f69e53e4879fe0aa70af5bd0095c00e55d178b1"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/wind_mage/armory.json"
+hash = "584f9cbe6092cbe2f2f8d18fe3828c82430685c3a287cc152fe86c0a351571be"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/wind_mage/legend.json"
+hash = "64b1d47dbf0d7709194ae1cc9b0e6f23735e4b68ebd61e6badb761cd043105f3"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/wind_mage/s1.json"
+hash = "8d62d8dbb25e9712a77125d525b3d32352b15bd8c3673887a936d0191e412b99"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/wind_mage/s2.json"
+hash = "d8e1c6b6e59cade0604bd3e1c460a807cff44f4bcdda7604a56bc97350031cec"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/wind_mage/s3.json"
+hash = "b4de10373936898258f41ade4cd3ade2250cc6442584d21db1329bf49047e804"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/wind_mage/start.json"
+hash = "2d5cc73aba257f5534883a220fdcf23fd45f47f4fb4f575b613565c7256ce03b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/wind_mage/w1.json"
+hash = "55a6a028a3bfc4a80fbb94b2f0f815a04c701306b122929a4965514566c223da"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/wind_mage/w2.json"
+hash = "4e7e33be2ee5b1c19d456833d2f2b4ae9a0d73dc825473e237f72d92b4d71d2f"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/calling/wind_mage/w3.json"
+hash = "157908e5543b7933433e392161d917c0d45918a4652c387bd7eea3aa21a26553"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/defeated/amethyst_crab.json"
 hash = "8c3310cdf9cccd45b0487f2c4a7e58957c9ff9ea01395da612ad14ca37b26003"
 
@@ -1421,6 +2045,66 @@ file = "kubejs/data/minerpg/advancement/field_guide/sighted/wither.json"
 hash = "3ea8099092e1b26ba0181ac85d04459976ec64ba475ef0c2bbfe7eb65105a302"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/guide/augmenting_table.json"
+hash = "7ef803e4cd529e2e789b5a6d76a8d8af3778df939049269795cc9cdbf59775ea"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/cutting_board.json"
+hash = "8864918aa5773d1184908d3bcd9bc7de1358351f501e624a38f49ec112258700"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/gem.json"
+hash = "1b8e6af03a1ac72d34452c165f4b5c5f319155eeb3cb0843fbb2939a4bf73d9b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/gem_cutting_table.json"
+hash = "474f5a9317ad1494b848e25a73b7a9a61780548da99957ce8ace57738f71785b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/library.json"
+hash = "039398eb41aa74eda7cc57aabb05ac45e5e91b887e8f328ad8e9ba11b8caa654"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/necklace.json"
+hash = "61e97cc212479b4432fee658973d472282ccd0df0d30d4ad86ccfdc120afcb9b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/potion_charm.json"
+hash = "485e90b6ced4e1a70551209b5139145fc7d0abe86ce968ce08394980ea0e7933"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/reforging_table.json"
+hash = "ba763a69e1997fc12f9817dc43d894533700df036244edc4f02ca702492d1458"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/relic.json"
+hash = "7f4be23eca2fca1d0897b3aac5ed2843c9413899b835efbe436980cc8cf3d3d4"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/ring.json"
+hash = "56753fdedd1d1a5eeb61ffd9b1bdb6ad6a674eaba30d4d4b3027f19c8575ad43"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/salvaging_table.json"
+hash = "668829721aa8bd9691f9fc8af37509e6cea1d085ac2b3230119c245063d50dec"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/skillet.json"
+hash = "2801500123bac1557b673ff4ede9e9a28b88d2cd3eeda85e3b7add548165ece8"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/socketing.json"
+hash = "cd6d42b241aefd5e975eeed65e78ec2add94b4d2c47b9b9a93fe3a748b572931"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/storage_terminal.json"
+hash = "9539167fa5742d48673e3bfe7e0dccd14acded9926bb13dc7c0ee26ba20a1905"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/guide/withdrawal.json"
+hash = "8b1955e72dc8444bd5a50af0cbd4d5cf0d40b79a37978f431bf5f030dc9cad10"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/jobs/alchemist.json"
 hash = "e93b413d44eb8e3a38f1da017daf3c60f1fd80bc6b6db85952d491d8dbc17d9c"
 
@@ -1459,6 +2143,10 @@ hash = "7d3dc0e7bf97b6ed130bb8cd82ac3fcbfa8191fad6b799cfdd5145d226454a1c"
 [[files]]
 file = "kubejs/data/minerpg/advancement/tour/barracks.json"
 hash = "884acd000ddcba9afe35e606d01907b2479ccc69448278d1764447f23121ed5f"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/tour/jeweler.json"
+hash = "6de0df7bd39f30f8094dffde4c78b89d1bbd77912d26b1b0d1b9763065280685"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/tour/pub.json"
@@ -2790,71 +3478,71 @@ hash = "509f3f47fffed52e48f442b8aa785ea3cadfef11b24a7da863b82cd8962e4a2b"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/arcane_wizard.mcfunction"
-hash = "727566f4c7d1c8ba47159eef4f388e199c9e9e07eed7284a2417605d79ddbc44"
+hash = "d7cd0f863f868ee0124589aed52a8afde1282a50540658d4ffae080c9cedb967"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/archer.mcfunction"
-hash = "a2abc90bcdc597879b354eb3d574ef76665cecd6d11cb7395b2cead1c116957b"
+hash = "61c86efc06d95f37b1f443e45e245cb85e0d1c528df49a46336a5411ee28dcbd"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/bard.mcfunction"
-hash = "481d6b8b4b1c6bda9f4c84767a59349b25b83996fb7e99c9460c5ca6349a5895"
+hash = "f7856cf35f5fab3825fce58e110b7733f2578a1029ac2d92dd66c9d46ae8c6d5"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/berserker.mcfunction"
-hash = "aef8a578a1e057f7575613fa9a5b844f7ec39e956c2164eee1fdb6f1d8cf9102"
+hash = "e5827a54dc2f5c6ed41f2824830fc4f4ec11b6f7208b799b6d42da63f699c749"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/deadeye.mcfunction"
-hash = "da7a7ba5729cd93a7d02153f5ba753a91a607ce64118f7a658b5ba1e19a2b9b3"
+hash = "0e82ffedba4023b9979f44373816f7c52495f5feb843488ef8f26f0e03c4107e"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/earth_mage.mcfunction"
-hash = "67b7cd47b8a0e0c03d194d1d4c38c9f8967266c6f4c519064b7f3f54cfe2d5bf"
+hash = "335671009ef638b5148a7e2586b1cde2ae65c7b6bb6489ece38ecab87afbd682"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/fire_wizard.mcfunction"
-hash = "8ebf8acd6a7f1c3304d0793f12465e7f17c8ecfe3d4328110b3986fe54ec7020"
+hash = "439db0047da9ea94f7540e3a5281c12b8db59481e223e98f588e7f04839ea762"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/forcemaster.mcfunction"
-hash = "210c16197b69c12ef74879aaa2522d3ebb32e728c5466f05d24a57d3c5947c7b"
+hash = "5c50fcc2dcf44fcf741973ed9380a4b68b99044abe6dcea77a22a836f8bf018d"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/frost_wizard.mcfunction"
-hash = "73fa575244a326e846482d7a93a7f3e6a2da867e982f805d44263b868c17a8f7"
+hash = "a261bbe928e7e52621bbd2690e32345cd23d9ebc184131505071bc44e586e9b6"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/paladin.mcfunction"
-hash = "24e1442d0d888f74ef68f2d66c272b727814f79dc4e3605e8a9605c9221038c7"
+hash = "d25fd49c1a93bcf7c7c3a0a87cb8e1a660eca14227c8d5e42e9403f0d9ccd205"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/priest.mcfunction"
-hash = "35b75e9487fc7ea2dd90c11cc1426074fb5ad192c902559019b716aa1d1330a7"
+hash = "3b0afc6522dc76c6f2bb82e3c6b4d1b5a260202a9e2e69c57102146feed56baf"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/rogue.mcfunction"
-hash = "5790ed65fbbc4e915462ee4ab162b853540fb0855192a22d25ef8eebcd658015"
+hash = "f55e863e212cc879f206c55d73f78d120a7ecadbf15dda70a28e3abc5f9f5ed6"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/tundra_hunter.mcfunction"
-hash = "66d77414a96db89c9f191dcb7939bcebd02608d278ba6feb57b25ac8b223aa97"
+hash = "4ca7d38441f6d46f548aecf68dafeafa8b58506a149377e3e8386b525db5f824"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/war_archer.mcfunction"
-hash = "aed691ffad6b40e7cb42c513126b24e532a503c9c4b6ef78778f051cd439afeb"
+hash = "5f5b5fb443039efcb8d8725d2cc6ff528585c4d15d2db41dcb92bf384ebeb0d0"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/warrior.mcfunction"
-hash = "a4b0283628095df61c3bb79371e39b33be7e0077e321f242e9abe4d4a94dda87"
+hash = "c8edba80f0237df7a32318859ed96c544c5b1be40a34f58b77400443cfb0814d"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/water_mage.mcfunction"
-hash = "dfc608dc28800828a628e37d9ed27fc4e5760eb83db5a6da68d99aca3f03771a"
+hash = "09eb03e52ae3ff34d68ffec1b040b1f54ef929cffbbd73e3cf014fa8fb598f2d"
 
 [[files]]
 file = "kubejs/data/minerpg/function/kit/wind_mage.mcfunction"
-hash = "b4d0a0616afd4f3bcb712cb52b32a8b30329ed525409defe170e9fa81c7d94e2"
+hash = "fd072bb34298ad0b161557447587e85b77969fb479390aeaa6b36982ef26f4dd"
 
 [[files]]
 file = "kubejs/data/minerpg/function/tier/sync.mcfunction"
@@ -3063,6 +3751,10 @@ hash = "15c57a36748157e593c4024d86b22a203f2ac777bd5927ff0602de76c3b85ffc"
 [[files]]
 file = "kubejs/server_scripts/minerpg_boss_tuning.js"
 hash = "31ccf4edc16032e39094dbb66e5cc6fdc7a575570fa68f1428defcb33efd2ac4"
+
+[[files]]
+file = "kubejs/server_scripts/minerpg_calling.js"
+hash = "e80bbb24dad7d3ed5e600beef913fa29a8f15047ae84486a9b11e001de938403"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_enchanting.js"

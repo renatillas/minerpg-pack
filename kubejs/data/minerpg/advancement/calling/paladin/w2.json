@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paladins:diamond_claymore",
+              "paladins:diamond_great_hammer",
+              "paladins:diamond_mace"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

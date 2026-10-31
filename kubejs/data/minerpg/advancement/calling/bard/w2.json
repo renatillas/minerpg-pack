@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bards_rpg:diamond_rapier",
+              "bards_rpg:diamond_lute",
+              "bards_rpg:diamond_lyre",
+              "bards_rpg:diamond_harp_crossbow"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

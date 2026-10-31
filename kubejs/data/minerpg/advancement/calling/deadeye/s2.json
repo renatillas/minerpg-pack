@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archers_expansion:deadeye_head"
+            ]
+          },
+          {
+            "items": [
+              "archers_expansion:deadeye_chest"
+            ]
+          },
+          {
+            "items": [
+              "archers_expansion:deadeye_legs"
+            ]
+          },
+          {
+            "items": [
+              "archers_expansion:deadeye_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

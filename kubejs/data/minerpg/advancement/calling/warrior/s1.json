@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rogues:warrior_armor_head"
+            ]
+          },
+          {
+            "items": [
+              "rogues:warrior_armor_chest"
+            ]
+          },
+          {
+            "items": [
+              "rogues:warrior_armor_legs"
+            ]
+          },
+          {
+            "items": [
+              "rogues:warrior_armor_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

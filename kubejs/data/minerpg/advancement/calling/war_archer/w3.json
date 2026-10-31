@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archers:netherite_rapid_crossbow",
+              "archers:netherite_heavy_crossbow"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

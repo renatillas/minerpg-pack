@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "archers:netherite_ranger_armor_head"
+            ]
+          },
+          {
+            "items": [
+              "archers:netherite_ranger_armor_chest"
+            ]
+          },
+          {
+            "items": [
+              "archers:netherite_ranger_armor_legs"
+            ]
+          },
+          {
+            "items": [
+              "archers:netherite_ranger_armor_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

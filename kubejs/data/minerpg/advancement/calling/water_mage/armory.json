@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elemental_wizards_rpg:ocean_robe_head"
+            ]
+          },
+          {
+            "items": [
+              "elemental_wizards_rpg:ocean_robe_chest"
+            ]
+          },
+          {
+            "items": [
+              "elemental_wizards_rpg:ocean_robe_legs"
+            ]
+          },
+          {
+            "items": [
+              "elemental_wizards_rpg:ocean_robe_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

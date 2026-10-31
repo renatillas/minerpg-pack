@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "rogues:diamond_double_axe",
+              "rogues:diamond_glaive"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

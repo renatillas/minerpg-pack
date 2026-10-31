@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "berserker_rpg:wildling_head"
+            ]
+          },
+          {
+            "items": [
+              "berserker_rpg:wildling_chest"
+            ]
+          },
+          {
+            "items": [
+              "berserker_rpg:wildling_legs"
+            ]
+          },
+          {
+            "items": [
+              "berserker_rpg:wildling_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

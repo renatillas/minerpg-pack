@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "forcemaster_rpg:billporon_head"
+            ]
+          },
+          {
+            "items": [
+              "forcemaster_rpg:billporon_chest"
+            ]
+          },
+          {
+            "items": [
+              "forcemaster_rpg:billporon_legs"
+            ]
+          },
+          {
+            "items": [
+              "forcemaster_rpg:billporon_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

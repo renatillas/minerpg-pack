@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "jeweler": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{profession:\"jewelry:jeweler\"}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "jeweler"
+    ]
+  ]
+}

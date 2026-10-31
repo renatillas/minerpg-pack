@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "berserker_rpg:warlord_head"
+            ]
+          },
+          {
+            "items": [
+              "berserker_rpg:warlord_chest"
+            ]
+          },
+          {
+            "items": [
+              "berserker_rpg:warlord_legs"
+            ]
+          },
+          {
+            "items": [
+              "berserker_rpg:warlord_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

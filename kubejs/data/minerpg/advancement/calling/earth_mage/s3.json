@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elemental_wizards_rpg:netherite_dripstone_head"
+            ]
+          },
+          {
+            "items": [
+              "elemental_wizards_rpg:netherite_dripstone_chest"
+            ]
+          },
+          {
+            "items": [
+              "elemental_wizards_rpg:netherite_dripstone_legs"
+            ]
+          },
+          {
+            "items": [
+              "elemental_wizards_rpg:netherite_dripstone_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

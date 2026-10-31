@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bards_rpg:netherite_rapier",
+              "bards_rpg:netherite_lute",
+              "bards_rpg:netherite_lyre",
+              "bards_rpg:netherite_harp_crossbow"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

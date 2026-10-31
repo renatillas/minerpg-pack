@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elemental_wizards_rpg:unique_staff_1",
+              "arsenal:unique_staff_damage_1",
+              "arsenal:unique_staff_damage_2",
+              "arsenal:unique_staff_damage_3",
+              "arsenal:unique_staff_damage_4",
+              "arsenal:unique_staff_damage_5",
+              "arsenal:unique_staff_damage_6",
+              "arsenal:unique_staff_damage_sw"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

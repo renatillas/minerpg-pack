@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elemental_wizards_rpg:wand_aqua",
+              "elemental_wizards_rpg:staff_aqua"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

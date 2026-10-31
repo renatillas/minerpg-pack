@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elemental_wizards_rpg:kelp_head"
+            ]
+          },
+          {
+            "items": [
+              "elemental_wizards_rpg:kelp_chest"
+            ]
+          },
+          {
+            "items": [
+              "elemental_wizards_rpg:kelp_legs"
+            ]
+          },
+          {
+            "items": [
+              "elemental_wizards_rpg:kelp_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wizards:netherite_fire_robe_head"
+            ]
+          },
+          {
+            "items": [
+              "wizards:netherite_fire_robe_chest"
+            ]
+          },
+          {
+            "items": [
+              "wizards:netherite_fire_robe_legs"
+            ]
+          },
+          {
+            "items": [
+              "wizards:netherite_fire_robe_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

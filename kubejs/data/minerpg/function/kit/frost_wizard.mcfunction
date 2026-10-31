@@ -3,5 +3,6 @@ give @s spell_engine:spell_book[minecraft:item_name='{"translate": "item.wizards
 give @s wizards:wand_frost 1
 give @s wizards:wizard_robe_chest 1
 give @s runes:frost_stone 32
+advancement grant @s only minerpg:calling/frost_wizard/start
 tellraw @s {"text": "Slow them, then shatter them. Nothing reaches you through the ice.", "color": "gray", "italic": true}
 tellraw @s {"text":"Your calling answers. Wear the tome in its slot and hold your weapon.","color":"gold"}

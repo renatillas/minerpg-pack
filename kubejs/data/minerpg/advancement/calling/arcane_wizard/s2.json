@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "set_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wizards:arcane_robe_head"
+            ]
+          },
+          {
+            "items": [
+              "wizards:arcane_robe_chest"
+            ]
+          },
+          {
+            "items": [
+              "wizards:arcane_robe_legs"
+            ]
+          },
+          {
+            "items": [
+              "wizards:arcane_robe_feet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

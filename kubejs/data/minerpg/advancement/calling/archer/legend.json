@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arsenal:unique_longbow_1",
+              "arsenal:unique_longbow_2",
+              "arsenal:unique_longbow_sw",
+              "arsenal:unique_spear_1",
+              "arsenal:unique_spear_2",
+              "arsenal:unique_spear_sw"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

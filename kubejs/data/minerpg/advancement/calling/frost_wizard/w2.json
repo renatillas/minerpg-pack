@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wizards:wand_frost",
+              "wizards:staff_frost"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
