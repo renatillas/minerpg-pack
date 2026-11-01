@@ -59,7 +59,7 @@ function takeCoins(player, copper) {
 function syncCoinBalance(player) {
   const wallet = coinWallet(player) / COPPER_PER_GOLD
   if (Math.abs(player.jobsplus$getCoins() - wallet) > 0.000001) player.jobsplus$setCoins(wallet)
-  COIN_LAST_SET[String(player.getUUID())] = wallet
+  COIN_LAST_SET[String(player.getGameProfile().getId())] = wallet
 }
 
 // A Gold Coin per job level gained since the last check. Levels are remembered per job in persistentData; a job
@@ -90,7 +90,7 @@ PlayerEvents.tick(event => {
   const player = event.player
   if (player.tickCount % COIN_SYNC_TICKS != 0) return
   try {
-    var uuid = String(player.getUUID())
+    var uuid = String(player.getGameProfile().getId())
     var last = COIN_LAST_SET[uuid]
     if (last === undefined) {
       // First check this session. Job coins from before the switch become Gold Coins, once.
@@ -113,7 +113,7 @@ PlayerEvents.tick(event => {
   }
 })
 
-PlayerEvents.loggedOut(event => { delete COIN_LAST_SET[String(event.player.getUUID())] })
+PlayerEvents.loggedOut(event => { delete COIN_LAST_SET[String(event.player.getGameProfile().getId())] })
 
 // Changing coins: 9 Copper <-> 1 Iron, 9 Iron <-> 1 Gold.
 ServerEvents.recipes(event => {

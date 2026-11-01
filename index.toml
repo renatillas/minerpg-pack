@@ -1281,6 +1281,10 @@ file = "kubejs/assets/minerpg/textures/item/void_shard.png"
 hash = "10ac2bb285ab7e4af7b01c502c2eb31e46d561d009a031e644f822a6b83a117a"
 
 [[files]]
+file = "kubejs/client_scripts/minerpg_jobs_guard.js"
+hash = "c9dbcd9a9597aa660541a79b155ceb26137da3b4048ce3ee93a887b3c5a70d84"
+
+[[files]]
 file = "kubejs/client_scripts/minerpg_tooltips.js"
 hash = "4b9e68df1837ca119c4fc70a14ab9218f257ce90d527bf1e82207310038cf3e0"
 
@@ -4126,7 +4130,7 @@ hash = "e80bbb24dad7d3ed5e600beef913fa29a8f15047ae84486a9b11e001de938403"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_coins.js"
-hash = "63337f5fcc20548dc7cddfd73ed84f9512558095279ddd28982d204c6414b8fd"
+hash = "ec305d4ad32922e1e91f8c7102ed5fb1c544126a511e9fba6ed22ab592a38b00"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_enchanting.js"
@@ -4142,7 +4146,7 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "b304cb98c19ca00cd67698c4745624d50efa3098f67c7f7d374bbe0b1462e174"
+hash = "ee6b9f1dcbdd133bcff49d8f5018900f8deaa73ee0a2e9d4318fd63524911957"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"

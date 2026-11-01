@@ -253,7 +253,7 @@ function leaveJobWarn(player, key) {
     player.tell(Text.of(`You don't have the ${JOB_NAMES[key]} job.`).red())
     return 0
   }
-  LEAVE_JOB_PENDING[String(player.getUUID())] = { job: key, time: Date.now() }
+  LEAVE_JOB_PENDING[String(player.getGameProfile().getId())] = { job: key, time: Date.now() }
   player.tell(Text.of(`Leaving the ${JOB_NAMES[key]} job costs ${LEAVE_JOB_PRICE} gold and deletes it for good: `
     + `level ${job.getLevel()}, its XP and every power-up bought for it. You can then join another job.`).gold())
   player.tell(Text.of(`[Leave ${JOB_NAMES[key]}]`).red().bold()
@@ -265,12 +265,12 @@ function leaveJobWarn(player, key) {
 }
 
 function leaveJobConfirm(player, key) {
-  const pending = LEAVE_JOB_PENDING[String(player.getUUID())]
+  const pending = LEAVE_JOB_PENDING[String(player.getGameProfile().getId())]
   if (!pending || pending.job != key || Date.now() - pending.time > LEAVE_JOB_WINDOW_MS) {
     player.tell(Text.of(`Type /leavejob ${key} first to see what you would lose.`).red())
     return 0
   }
-  delete LEAVE_JOB_PENDING[String(player.getUUID())]
+  delete LEAVE_JOB_PENDING[String(player.getGameProfile().getId())]
   if (jobOf(player, key) == null) {
     player.tell(Text.of(`You don't have the ${JOB_NAMES[key]} job.`).red())
     return 0
