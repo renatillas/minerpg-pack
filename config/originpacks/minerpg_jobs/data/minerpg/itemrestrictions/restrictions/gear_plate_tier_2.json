@@ -16,7 +16,7 @@
     {
       "type": "jobsplus:job_level",
       "job": "jobsplus:smith",
-      "level": 20,
+      "level": 10,
       "inverted": true
     }
   ]

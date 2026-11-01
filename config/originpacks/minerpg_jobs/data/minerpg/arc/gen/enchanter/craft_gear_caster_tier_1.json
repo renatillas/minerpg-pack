@@ -10,10 +10,6 @@
       "chance": 100,
       "min": 8,
       "max": 12
-    },
-    {
-      "type": "arc:command",
-      "command": "minerpg_jobs grant %player% minerpg:jobs/gated_craft"
     }
   ],
   "conditions": [

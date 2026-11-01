@@ -31,7 +31,7 @@
 	"quest.10318286AE389F9C.quest_desc": [
 		"Get a diamond Berserker Axe."
 		""
-		"&6Craft&r: Smith level 20."
+		"&6Craft&r: Smith level 10, or any friend who is one."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
 	"quest.10318286AE389F9C.quest_subtitle": "Tier 2 weapon"
@@ -42,7 +42,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only a Smith of level 30 can do the upgrade; anyone can wear it."
+		"Only a Smith of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.1079047B48B1C2FE.quest_subtitle": "Endgame armor"
 	"quest.1079047B48B1C2FE.title": "The Armory"
@@ -57,7 +57,7 @@
 	"quest.1093BA38C50D1EA8.quest_desc": [
 		"Wear or carry all four pieces of the &eCrusader Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Smith level 20."
+		"&6Craft&r: Smith level 10, or any friend who is one."
 		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -84,7 +84,7 @@
 	"quest.135B76B18CB805D2.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Fire Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.135B76B18CB805D2.quest_subtitle": "Tier 3 armor"
@@ -92,7 +92,7 @@
 	"quest.136C0F86B7BE38A7.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Aqua Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.136C0F86B7BE38A7.quest_subtitle": "Tier 3 armor"
@@ -127,7 +127,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only a Hunter of level 30 can do the upgrade; anyone can wear it."
+		"Only a Hunter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.14A3168591A19450.quest_subtitle": "Endgame armor"
 	"quest.14A3168591A19450.title": "The Armory"
@@ -139,7 +139,7 @@
 	"quest.14EFAE6064BD4190.quest_desc": [
 		"Get a netherite Terra Wand or Staff."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.14EFAE6064BD4190.quest_subtitle": "Tier 3 weapon"
@@ -147,7 +147,7 @@
 	"quest.1545503C9E7552D8.quest_desc": [
 		"Wear or carry all four pieces of the &eWildling Suit&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
 	"quest.1545503C9E7552D8.quest_subtitle": "Tier 1 armor"
@@ -166,7 +166,7 @@
 	"quest.1577601890C78DF9.quest_desc": [
 		"Get a netherite Longbow or Shortbow."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.1577601890C78DF9.quest_subtitle": "Tier 3 weapon"
@@ -174,7 +174,7 @@
 	"quest.159F042572E81979.quest_desc": [
 		"Wear or carry all four pieces of the &eArcher Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -191,7 +191,7 @@
 	"quest.15BA62CCEF012E15.quest_desc": [
 		"Get a netherite Wind Wand or Staff."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.15BA62CCEF012E15.quest_subtitle": "Tier 3 weapon"
@@ -199,7 +199,7 @@
 	"quest.160B130DB069CAFF.quest_desc": [
 		"Wear or carry all four pieces of the &eTroubadour Garb&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Buy&r: the Luthier in the Bard's pub may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -208,7 +208,7 @@
 	"quest.160DA70F74EDD430.quest_desc": [
 		"Wear or carry all four pieces of the &eFire Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -238,7 +238,7 @@
 	"quest.1634EC6D9DC78D3A.quest_desc": [
 		"Get an Elemental Staff."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
 	"quest.1634EC6D9DC78D3A.quest_subtitle": "Tier 1 weapon"
@@ -267,7 +267,7 @@
 	"quest.16B2F0A59B063880.quest_desc": [
 		"Get a netherite Aqua Wand or Staff."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.16B2F0A59B063880.quest_subtitle": "Tier 3 weapon"
@@ -280,7 +280,7 @@
 	"quest.17F753B33C2A16EF.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Troubadour Garb&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.17F753B33C2A16EF.quest_subtitle": "Tier 3 armor"
@@ -302,7 +302,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only a Hunter of level 30 can do the upgrade; anyone can wear it."
+		"Only a Hunter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.1862B70199B7B41B.quest_subtitle": "Endgame armor"
 	"quest.1862B70199B7B41B.title": "The Armory"
@@ -314,7 +314,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only a Hunter of level 30 can do the upgrade; anyone can wear it."
+		"Only a Hunter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.18630AE31317AF46.quest_subtitle": "Endgame armor"
 	"quest.18630AE31317AF46.title": "The Armory"
@@ -326,7 +326,7 @@
 	"quest.18A79782D6513961.quest_desc": [
 		"Wear or carry all four pieces of the &eAssassin Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Hunter level 20."
+		"&6Craft&r: Hunter level 10, or any friend who is one."
 		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -340,7 +340,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only a Hunter of level 30 can do the upgrade; anyone can wear it."
+		"Only a Hunter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.18ADF425BBD7F047.quest_subtitle": "Endgame armor"
 	"quest.18ADF425BBD7F047.title": "The Armory"
@@ -360,7 +360,7 @@
 	"quest.1917B6FC25356897.quest_desc": [
 		"Wear or carry all four pieces of the &ePaladin Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -369,7 +369,7 @@
 	"quest.192A9BF9D510B1BC.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Wind Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.192A9BF9D510B1BC.quest_subtitle": "Tier 3 armor"
@@ -384,7 +384,7 @@
 	"quest.199799F89DE093FE.quest_desc": [
 		"Get a Terra Wand or Staff."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
 	"quest.199799F89DE093FE.quest_subtitle": "Tier 2 weapon"
@@ -392,7 +392,7 @@
 	"quest.19A6506E90EAF78A.quest_desc": [
 		"Get a Royal Longbow, Mechanic Shortbow or diamond Spear."
 		""
-		"&6Craft&r: Hunter level 20."
+		"&6Craft&r: Hunter level 10, or any friend who is one."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -401,7 +401,7 @@
 	"quest.1A23F832A283CE90.quest_desc": [
 		"Get a diamond Rapier, Lute, Lyre or Harp Crossbow."
 		""
-		"&6Craft&r: Smith (rapier), Enchanter (lute, lyre) or Hunter (harp crossbow) level 20."
+		"&6Craft&r: Smith (rapier), Enchanter (lute, lyre) or Hunter (harp crossbow) level 10, or any friend who is one."
 		"&6Buy&r: the Luthier in the Bard's pub may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -425,7 +425,7 @@
 	"quest.1AFAFEEA415040B0.quest_desc": [
 		"Wear or carry all four pieces of the &eRogue Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -442,7 +442,7 @@
 	"quest.1B8CB1D0813C11BA.quest_desc": [
 		"Get a netherite Longbow, Shortbow or Spear."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.1B8CB1D0813C11BA.quest_subtitle": "Tier 3 weapon"
@@ -458,7 +458,7 @@
 	"quest.1BA3D489C4863B01.quest_desc": [
 		"Get a Rapid or Heavy Crossbow."
 		""
-		"&6Craft&r: Hunter level 20."
+		"&6Craft&r: Hunter level 10, or any friend who is one."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -494,7 +494,7 @@
 	"quest.1C4C98EDF4A6A9A2.quest_desc": [
 		"Get a Composite Longbow."
 		""
-		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -523,7 +523,7 @@
 	"quest.1DC10232987ECA09.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Assassin Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.1DC10232987ECA09.quest_subtitle": "Tier 3 armor"
@@ -531,7 +531,7 @@
 	"quest.1DDA36D6C2E5B030.quest_desc": [
 		"Get a netherite Longbow or Shortbow."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.1DDA36D6C2E5B030.quest_subtitle": "Tier 3 weapon"
@@ -545,7 +545,7 @@
 	"quest.1E25DBC1DC9EEC04.quest_desc": [
 		"Get a Royal Longbow or Mechanic Shortbow."
 		""
-		"&6Craft&r: Hunter level 20."
+		"&6Craft&r: Hunter level 10, or any friend who is one."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -554,7 +554,7 @@
 	"quest.1E37A24026D2DD38.quest_desc": [
 		"Wear or carry all four pieces of the &eElemental Apprentice Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
 	"quest.1E37A24026D2DD38.quest_subtitle": "Tier 1 armor"
@@ -569,7 +569,7 @@
 	"quest.1E8FD874A1FF7D03.quest_desc": [
 		"Get an iron Dagger or Sickle."
 		""
-		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -578,7 +578,7 @@
 	"quest.1EAEF213F834998A.quest_desc": [
 		"Get a Arcane Wand or Staff."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -598,7 +598,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+		"Only an Enchanter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.1EE85DFC69D4B654.quest_subtitle": "Endgame armor"
 	"quest.1EE85DFC69D4B654.title": "The Armory"
@@ -610,7 +610,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+		"Only an Enchanter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.1EFCB5B3F1DBD384.quest_subtitle": "Endgame armor"
 	"quest.1EFCB5B3F1DBD384.title": "The Armory"
@@ -630,7 +630,7 @@
 	"quest.1F669FE7EC5A7658.quest_desc": [
 		"Get a Holy Wand or Holy Staff."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -639,7 +639,7 @@
 	"quest.1F6DCBEFED7E0812.quest_desc": [
 		"Get an Elemental Staff."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
 	"quest.1F6DCBEFED7E0812.quest_subtitle": "Tier 1 weapon"
@@ -657,7 +657,7 @@
 	"quest.1FF7572DD82363E8.quest_desc": [
 		"Wear or carry all four pieces of the &eArcher Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -683,7 +683,7 @@
 	"quest.20B9A30B75154DF8.quest_desc": [
 		"Get a netherite Dagger or Sickle."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.20B9A30B75154DF8.quest_subtitle": "Tier 3 weapon"
@@ -691,7 +691,7 @@
 	"quest.20FE8A449EC1746B.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Terra Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.20FE8A449EC1746B.quest_subtitle": "Tier 3 armor"
@@ -703,7 +703,7 @@
 	"quest.2241FB6771756DF2.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Arcane Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.2241FB6771756DF2.quest_subtitle": "Tier 3 armor"
@@ -715,7 +715,7 @@
 	"quest.2260673C6A9418B8.title": "Jeweler"
 	"quest.23438309D3EE7ED9.quest_desc": [
 		"Some things only a trained hand can &omake&r:"
-		"Class gear is made by three trades, by tier: tier 1 at level 10, diamond tier 2 at 20, netherite tier 3 at 25, Armory sets at 30."
+		"Class gear is made by three trades, by tier: anyone can make tier 1; diamond tier 2 needs level 10, netherite tier 3 20, Armory sets 25."
 		"- &cSmith&r: plate armor and melee weapons (Warrior, Paladin, Berserker, Forcemaster). Reforging to Rare needs Smith 10, Epic 20, Mythic 30."
 		"- &2Hunter&r: leather armor, bows, crossbows, spears and quivers (Archer, Rogue)."
 		"- &dEnchanter&r: robes, staves, wands and instruments (Wizard, mages, Priest, Bard), and the stronger enchanting shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30."
@@ -734,7 +734,7 @@
 	"quest.258BC2864592F600.quest_desc": [
 		"Wear or carry all four pieces of the &eAqua Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
 	"quest.258BC2864592F600.quest_subtitle": "Tier 2 armor"
@@ -742,7 +742,7 @@
 	"quest.25A6E69E62FA987F.quest_desc": [
 		"Wear or carry all four pieces of the &eTerra Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
 	"quest.25A6E69E62FA987F.quest_subtitle": "Tier 2 armor"
@@ -755,7 +755,7 @@
 	"quest.271E268D7A3A594E.quest_desc": [
 		"Get a netherite Rapier, Lute, Lyre or Harp Crossbow."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith (rapier), Enchanter (lute, lyre) or Hunter (harp crossbow) level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith (rapier), Enchanter (lute, lyre) or Hunter (harp crossbow) level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.271E268D7A3A594E.quest_subtitle": "Tier 3 weapon"
@@ -763,7 +763,7 @@
 	"quest.2803A79AF0532E3A.quest_desc": [
 		"Wear or carry all four pieces of the &eArcane Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -772,7 +772,7 @@
 	"quest.2822EF3B2E746D80.quest_desc": [
 		"Get a diamond Claymore, Great Hammer or Mace."
 		""
-		"&6Craft&r: Smith level 20."
+		"&6Craft&r: Smith level 10, or any friend who is one."
 		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -788,7 +788,7 @@
 	"quest.2862FA76D20232FE.quest_desc": [
 		"Get a diamond Holy Wand or Staff."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -797,7 +797,7 @@
 	"quest.2912F0282CC64827.quest_desc": [
 		"Get an Elemental Staff."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
 	"quest.2912F0282CC64827.quest_subtitle": "Tier 1 weapon"
@@ -826,7 +826,7 @@
 	"quest.2A77503D5F21B68C.quest_desc": [
 		"Get a Wizard Staff."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -835,7 +835,7 @@
 	"quest.2B3AA7A8937E6500.quest_desc": [
 		"Wear or carry all four pieces of the &eAken Suit&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.2B3AA7A8937E6500.quest_subtitle": "Tier 3 armor"
@@ -843,7 +843,7 @@
 	"quest.2B8C02ADA6749384.quest_desc": [
 		"Get a Composite Longbow."
 		""
-		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -881,7 +881,7 @@
 	"quest.2ED6CFFFB9CFB608.quest_desc": [
 		"Wear or carry all four pieces of the &eWizard Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -890,7 +890,7 @@
 	"quest.301A632C8984BC41.quest_desc": [
 		"Get a Composite Longbow or an iron Spear."
 		""
-		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -929,7 +929,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only a Smith of level 30 can do the upgrade; anyone can wear it."
+		"Only a Smith of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.31E240F857E39A16.quest_subtitle": "Endgame armor"
 	"quest.31E240F857E39A16.title": "The Armory"
@@ -944,7 +944,7 @@
 	"quest.32C34EE2A68B3253.quest_desc": [
 		"Get a Royal Longbow or Mechanic Shortbow."
 		""
-		"&6Craft&r: Hunter level 20."
+		"&6Craft&r: Hunter level 10, or any friend who is one."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -959,7 +959,7 @@
 	"quest.3432529E4CA45247.quest_desc": [
 		"Get a netherite Holy Wand or Staff."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.3432529E4CA45247.quest_subtitle": "Tier 3 weapon"
@@ -985,7 +985,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+		"Only an Enchanter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.364D117B6870A5B2.quest_subtitle": "Endgame armor"
 	"quest.364D117B6870A5B2.title": "The Armory"
@@ -997,7 +997,7 @@
 	"quest.36E9B005B8159543.quest_desc": [
 		"Wear or carry all four pieces of the &ePrior Vestments&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -1012,7 +1012,7 @@
 	"quest.39026CB0D8738A17.quest_desc": [
 		"Get netherite Knuckles."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.39026CB0D8738A17.quest_subtitle": "Tier 3 weapon"
@@ -1020,7 +1020,7 @@
 	"quest.391BEC2F41605019.quest_desc": [
 		"Wear or carry all four pieces of the &eElemental Apprentice Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
 	"quest.391BEC2F41605019.quest_subtitle": "Tier 1 armor"
@@ -1036,7 +1036,7 @@
 	"quest.39BC546692614563.quest_desc": [
 		"Get an iron Berserker Axe."
 		""
-		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
 	"quest.39BC546692614563.quest_subtitle": "Tier 1 weapon"
@@ -1056,7 +1056,7 @@
 	"quest.3B976CE5D73E5FC0.quest_desc": [
 		"Wear or carry all four pieces of the &eWizard Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1077,7 +1077,7 @@
 	"quest.3F03244BAA9EF57E.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Prior Vestments&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.3F03244BAA9EF57E.quest_subtitle": "Tier 3 armor"
@@ -1131,7 +1131,7 @@
 	"quest.4104BDA8E9E7FE69.quest_desc": [
 		"Get an iron Rapier, a Lute or a Harp Crossbow."
 		""
-		"&6Craft&r: Smith (rapier), Enchanter (lute, lyre) or Hunter (harp crossbow) level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Luthier in the Bard's pub may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1154,7 +1154,7 @@
 	"quest.41299363454A86A6.quest_desc": [
 		"Wear or carry all four pieces of the &eBerserker Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Smith level 20."
+		"&6Craft&r: Smith level 10, or any friend who is one."
 		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -1185,7 +1185,7 @@
 	"quest.42848C2DC0442303.quest_desc": [
 		"Get a Wizard Staff."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1208,14 +1208,14 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only a Hunter of level 30 can do the upgrade; anyone can wear it."
+		"Only a Hunter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.4366581CB1238872.quest_subtitle": "Endgame armor"
 	"quest.4366581CB1238872.title": "The Armory"
 	"quest.439736F4E5EFBE1D.quest_desc": [
 		"Get a diamond Double Axe or Glaive."
 		""
-		"&6Craft&r: Smith level 20."
+		"&6Craft&r: Smith level 10, or any friend who is one."
 		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -1224,7 +1224,7 @@
 	"quest.441338EFDCC99CEF.quest_desc": [
 		"Wear or carry all four pieces of the &ePriest Vestments&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1247,7 +1247,7 @@
 	"quest.46E736ACF7965DCF.quest_desc": [
 		"Wear or carry all four pieces of the &eRanger Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Hunter level 20."
+		"&6Craft&r: Hunter level 10, or any friend who is one."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -1263,7 +1263,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only a Smith of level 30 can do the upgrade; anyone can wear it."
+		"Only a Smith of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.476ABDE74108C527.quest_subtitle": "Endgame armor"
 	"quest.476ABDE74108C527.title": "The Armory"
@@ -1294,7 +1294,7 @@
 	"quest.48D3876FA6098A44.quest_desc": [
 		"Wear or carry all four pieces of the &eArcher Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1303,7 +1303,7 @@
 	"quest.49041290BFFAF015.quest_desc": [
 		"Get an iron Double Axe or Glaive."
 		""
-		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1332,7 +1332,7 @@
 	"quest.4A0B61034D97339F.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Deadeye Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.4A0B61034D97339F.quest_subtitle": "Tier 3 armor"
@@ -1340,7 +1340,7 @@
 	"quest.4A2642B509E8EC39.quest_desc": [
 		"Wear or carry all four pieces of the &eTundra Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Hunter level 20."
+		"&6Craft&r: Hunter level 10, or any friend who is one."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -1349,7 +1349,7 @@
 	"quest.4B5B8677B3751637.quest_desc": [
 		"Wear or carry all four pieces of the &eWarrior Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1363,7 +1363,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+		"Only an Enchanter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.4B73FD0ECB5CA15E.quest_subtitle": "Endgame armor"
 	"quest.4B73FD0ECB5CA15E.title": "The Armory"
@@ -1376,7 +1376,7 @@
 	"quest.4BF5A1C09B254878.quest_desc": [
 		"Get a netherite Arcane Wand or Staff."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.4BF5A1C09B254878.quest_subtitle": "Tier 3 weapon"
@@ -1390,7 +1390,7 @@
 	"quest.4C3C4D3A9CA28A02.quest_desc": [
 		"Get a netherite Berserker Axe."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.4C3C4D3A9CA28A02.quest_subtitle": "Tier 3 weapon"
@@ -1398,7 +1398,7 @@
 	"quest.4C51D21C6BF384AB.quest_desc": [
 		"Get an iron Claymore, Great Hammer or Mace."
 		""
-		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Monk in the Sanctuary may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1413,7 +1413,7 @@
 	"quest.4E29AFB11C00708A.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Ranger Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.4E29AFB11C00708A.quest_subtitle": "Tier 3 armor"
@@ -1426,7 +1426,7 @@
 	"quest.4F4BF32187D2040B.quest_desc": [
 		"Get a diamond Dagger or Sickle."
 		""
-		"&6Craft&r: Hunter level 20."
+		"&6Craft&r: Hunter level 10, or any friend who is one."
 		"&6Buy&r: the Arms Dealer in the Barracks may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -1466,7 +1466,7 @@
 	"quest.533BD5F53E1AE9FC.quest_desc": [
 		"Get a netherite Claymore, Great Hammer or Mace."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.533BD5F53E1AE9FC.quest_subtitle": "Tier 3 weapon"
@@ -1517,7 +1517,7 @@
 	"quest.55F345EDFB271EE0.quest_desc": [
 		"Get a netherite Rapid or Heavy Crossbow."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.55F345EDFB271EE0.quest_subtitle": "Tier 3 weapon"
@@ -1525,7 +1525,7 @@
 	"quest.56FD8D6AAF4752E8.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Berserker Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.56FD8D6AAF4752E8.quest_subtitle": "Tier 3 armor"
@@ -1541,7 +1541,7 @@
 	"quest.57F810F9EBD01932.quest_desc": [
 		"Get a Wind Wand or Staff."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
 	"quest.57F810F9EBD01932.quest_subtitle": "Tier 2 weapon"
@@ -1549,7 +1549,7 @@
 	"quest.583F79DCD019CF60.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Tundra Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.583F79DCD019CF60.quest_subtitle": "Tier 3 armor"
@@ -1563,7 +1563,7 @@
 	"quest.589173AB0C869B9F.quest_desc": [
 		"Get a Aqua Wand or Staff."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
 	"quest.589173AB0C869B9F.quest_subtitle": "Tier 2 weapon"
@@ -1590,7 +1590,7 @@
 	"quest.5B1A567C94A344A2.quest_desc": [
 		"Wear or carry all four pieces of the &eWizard Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1602,7 +1602,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+		"Only an Enchanter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.5C9A512AF929AB58.quest_subtitle": "Endgame armor"
 	"quest.5C9A512AF929AB58.title": "The Armory"
@@ -1621,7 +1621,7 @@
 	"quest.5DED557257C16AEE.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Frost Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.5DED557257C16AEE.quest_subtitle": "Tier 3 armor"
@@ -1629,7 +1629,7 @@
 	"quest.5E16D4E8A85872F0.quest_desc": [
 		"Get iron Knuckles."
 		""
-		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
 	"quest.5E16D4E8A85872F0.quest_subtitle": "Tier 1 weapon"
@@ -1642,7 +1642,7 @@
 	"quest.5E559AF7114F6F26.quest_desc": [
 		"Wear or carry all four pieces of the &eEntertainer Garb&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Luthier in the Bard's pub may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1663,7 +1663,7 @@
 	"quest.5F35D4CF3DAF6E1E.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Crusader Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.5F35D4CF3DAF6E1E.quest_subtitle": "Tier 3 armor"
@@ -1682,7 +1682,7 @@
 	"quest.608F868C692240A4.quest_desc": [
 		"Wear or carry all four pieces of the &eBowman Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Hunter level 20."
+		"&6Craft&r: Hunter level 10, or any friend who is one."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -1691,7 +1691,7 @@
 	"quest.6217905150642712.quest_desc": [
 		"Wear or carry all four pieces of the &ePhasleb Suit&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Smith level 20."
+		"&6Craft&r: Smith level 10, or any friend who is one."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
 	"quest.6217905150642712.quest_subtitle": "Tier 2 armor"
@@ -1699,7 +1699,7 @@
 	"quest.6223038B06217575.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Northling Suit&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.6223038B06217575.quest_subtitle": "Tier 3 armor"
@@ -1713,7 +1713,7 @@
 	"quest.62B2868F5BC9B0F1.quest_desc": [
 		"Get a netherite Double Axe or Glaive."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Smith level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.62B2868F5BC9B0F1.quest_subtitle": "Tier 3 weapon"
@@ -1727,7 +1727,7 @@
 	"quest.632F93A87EA41C0E.quest_desc": [
 		"Wear or carry all four pieces of the &eNorthling Suit&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Smith level 20."
+		"&6Craft&r: Smith level 10, or any friend who is one."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
 	"quest.632F93A87EA41C0E.quest_subtitle": "Tier 2 armor"
@@ -1749,7 +1749,7 @@
 	"quest.63B19A0EE3936240.quest_desc": [
 		"Get a netherite Fire Wand or Staff."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.63B19A0EE3936240.quest_subtitle": "Tier 3 weapon"
@@ -1757,7 +1757,7 @@
 	"quest.63B99B329B96833B.quest_desc": [
 		"Wear or carry all four pieces of the &eFrost Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -1771,14 +1771,14 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only a Smith of level 30 can do the upgrade; anyone can wear it."
+		"Only a Smith of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.647FF63D4206EF38.quest_subtitle": "Endgame armor"
 	"quest.647FF63D4206EF38.title": "The Armory"
 	"quest.6506B3C1E758C6DD.quest_desc": [
 		"Get a Fire Wand or Staff."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -1787,7 +1787,7 @@
 	"quest.653A4D930B08FA2E.quest_desc": [
 		"Wear or carry all four pieces of the &eArcher Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Hunter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1825,7 +1825,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+		"Only an Enchanter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.67CB5231623A0129.quest_subtitle": "Endgame armor"
 	"quest.67CB5231623A0129.title": "The Armory"
@@ -1835,7 +1835,7 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+		"Only an Enchanter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.68A41439B84F7D37.quest_subtitle": "Endgame armor"
 	"quest.68A41439B84F7D37.title": "The Armory"
@@ -1863,7 +1863,7 @@
 	"quest.6AF27B410258165F.quest_desc": [
 		"Wear or carry all four pieces of the &eElemental Apprentice Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
 	"quest.6AF27B410258165F.quest_subtitle": "Tier 1 armor"
@@ -1877,7 +1877,7 @@
 	"quest.6C38F2193F5F97B4.quest_desc": [
 		"Get a Frost Wand or Staff."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -1897,7 +1897,7 @@
 	"quest.6D97E040B04E5B09.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Bowman Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Hunter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.6D97E040B04E5B09.quest_subtitle": "Tier 3 armor"
@@ -1905,7 +1905,7 @@
 	"quest.6E1A5C775EB148AF.quest_desc": [
 		"Get a Wizard Staff."
 		""
-		"&6Craft&r: Enchanter level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Buy&r: the Wizard Merchant in the Wizard Tower may have it in stock."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
@@ -1920,7 +1920,7 @@
 	"quest.7117B5E8E653E9E8.quest_desc": [
 		"Wear or carry all four pieces of the &eWind Robes&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Enchanter level 20."
+		"&6Craft&r: Enchanter level 10, or any friend who is one."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
 	"quest.7117B5E8E653E9E8.quest_subtitle": "Tier 2 armor"
@@ -1928,7 +1928,7 @@
 	"quest.71222F68234D4EB9.quest_desc": [
 		"Get a netherite Frost Wand or Staff."
 		""
-		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 25)."
+		"&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade template (Enchanter level 20)."
 		"&6Loot&r: the Harbinger and the Netherite Monstrosity."
 	]
 	"quest.71222F68234D4EB9.quest_subtitle": "Tier 3 weapon"
@@ -2016,7 +2016,7 @@
 	"quest.7B4169F3E37652A8.quest_desc": [
 		"Wear or carry all four pieces of the &eOriene Suit&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Smith level 10, or any friend who is one."
+		"&6Craft&r: anyone can, at a crafting table."
 		"&6Loot&r: Hearthlands chests, small dungeons and the Amethyst Crab."
 	]
 	"quest.7B4169F3E37652A8.quest_subtitle": "Tier 1 armor"
@@ -2051,14 +2051,14 @@
 		""
 		"Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds."
 		"Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r."
-		"Only an Enchanter of level 30 can do the upgrade; anyone can wear it."
+		"Only an Enchanter of level 25 can do the upgrade; anyone can wear it."
 	]
 	"quest.7E6A8B47D8CA49CC.quest_subtitle": "Endgame armor"
 	"quest.7E6A8B47D8CA49CC.title": "The Armory"
 	"quest.7EC13CD969AF09D6.quest_desc": [
 		"Wear or carry all four pieces of the &eDeadeye Armor&r: helmet, chest, legs and boots."
 		""
-		"&6Craft&r: Hunter level 20."
+		"&6Craft&r: Hunter level 10, or any friend who is one."
 		"&6Buy&r: the Archery Artisan in the Archery Range may have it in stock."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
@@ -2077,7 +2077,7 @@
 	"quest.7F12355C44326248.quest_desc": [
 		"Get diamond Knuckles."
 		""
-		"&6Craft&r: Smith level 20."
+		"&6Craft&r: Smith level 10, or any friend who is one."
 		"&6Loot&r: Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla."
 	]
 	"quest.7F12355C44326248.quest_subtitle": "Tier 2 weapon"

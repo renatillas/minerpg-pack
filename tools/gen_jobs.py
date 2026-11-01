@@ -31,7 +31,9 @@ PACK = os.path.join(ROOT, 'config', 'originpacks', 'minerpg_jobs', 'data', 'mine
 # Gate table (single source of truth). Levels are tuned in the design doc's pacing table.
 # --------------------------------------------------------------------------------------
 # Class gear: RPG Series weapons and armor, split into gear groups x tiers. Tier 0 (wood, flint,
-# novice wands) is free. RPG Series tags its gear by tier: tier 1 = iron-era, tier 2 = diamond,
+# novice wands) is free, and so is tier 1 (designer, 2026-11-01: a level 10 gate on the first real
+# armor was too much; the whole ladder moved down one step). A level of 0 means no gate, but crafting
+# still gives the job XP bonus. RPG Series tags its gear by tier: tier 1 = iron-era, tier 2 = diamond,
 # tier 3 = netherite (smithing upgrade); tier 4 is empty in this pack. "set" = the Armory / More
 # RPG Classes set pieces made at the smithing table with an Ignis upgrade crystal.
 #
@@ -63,10 +65,10 @@ GEAR_GROUP_OVERRIDES = [
 EXTRA_GEAR = {('tier_1', 'leather'): ['archers:medium_quiver'], ('tier_2', 'leather'): ['archers:large_quiver']}
 GEAR_TIERS = [
     # tier key, required level, title, icon per group
-    ('tier_1', 10, 'tier 1', {'caster': 'wizards:staff_wizard', 'plate': 'paladins:iron_claymore', 'leather': 'archers:composite_longbow'}),
-    ('tier_2', 20, 'tier 2 (diamond)', {'caster': 'wizards:staff_arcane', 'plate': 'paladins:diamond_claymore', 'leather': 'archers:royal_longbow'}),
-    ('tier_3', 25, 'tier 3 (netherite)', {'caster': 'wizards:staff_netherite_arcane', 'plate': 'paladins:netherite_claymore', 'leather': 'archers:netherite_longbow'}),
-    ('set', 30, 'Armory set', {'caster': 'armory_rpgs:astral_robe_chest', 'plate': 'armory_rpgs:destroyer_armor_chest', 'leather': 'archers_expansion:bounty_hunter_chest'}),
+    ('tier_1', 0, 'tier 1', {'caster': 'wizards:staff_wizard', 'plate': 'paladins:iron_claymore', 'leather': 'archers:composite_longbow'}),
+    ('tier_2', 10, 'tier 2 (diamond)', {'caster': 'wizards:staff_arcane', 'plate': 'paladins:diamond_claymore', 'leather': 'archers:royal_longbow'}),
+    ('tier_3', 20, 'tier 3 (netherite)', {'caster': 'wizards:staff_netherite_arcane', 'plate': 'paladins:netherite_claymore', 'leather': 'archers:netherite_longbow'}),
+    ('set', 25, 'Armory set', {'caster': 'armory_rpgs:astral_robe_chest', 'plate': 'armory_rpgs:destroyer_armor_chest', 'leather': 'archers_expansion:bounty_hunter_chest'}),
 ]
 
 # Enchanter: Apothic Enchanting shelves by the enchanting power they unlock (max Eterna).
@@ -513,15 +515,16 @@ def build(server):
         write(os.path.join(tag_dir, key + '.json'), {
             'replace': False, 'values': [{'id': v, 'required': False} for v in values]})
         items = {'type': 'arc:items', 'items': [f'#minerpg:job_gate/{key}']}
-        write(os.path.join(restrictions, key + '.json'),
-              restriction(job, level, ['craft'], items, {'id': icon, 'count': 1}))
-        count += 1
-        lo, hi = bonus
+        rewards = [job_exp(*bonus)]
+        if level:  # level 0: free to craft, only the XP bonus
+            write(os.path.join(restrictions, key + '.json'),
+                  restriction(job, level, ['craft'], items, {'id': icon, 'count': 1}))
+            count += 1
+            rewards.append({'type': 'arc:command', 'command': SILENT_GRANT + 'minerpg:jobs/gated_craft'})
         write(os.path.join(arc, job, f'craft_{key}.json'), {
             'holder': holder(job),
             'type': 'arc:on_craft_item',
-            'rewards': [job_exp(lo, hi),
-                        {'type': 'arc:command', 'command': SILENT_GRANT + 'minerpg:jobs/gated_craft'}],
+            'rewards': rewards,
             'conditions': [items],
         })
 

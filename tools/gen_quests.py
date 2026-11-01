@@ -581,7 +581,7 @@ GETTING_STARTED = [
         [t_check('Join two jobs')], [r_xp(30), r_coins(3)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
     Q('gs_job_gates', 'Masters of a Trade', -13.5, 0, [
         'Some things only a trained hand can &omake&r:',
-        'Class gear is made by three trades, by tier: tier 1 at level 10, diamond tier 2 at 20, netherite tier 3 at 25, Armory sets at 30.',
+        'Class gear is made by three trades, by tier: anyone can make tier 1; diamond tier 2 needs level 10, netherite tier 3 20, Armory sets 25.',
         '- &cSmith&r: plate armor and melee weapons (Warrior, Paladin, Berserker, Forcemaster). Reforging to Rare needs Smith 10, Epic 20, Mythic 30.',
         '- &2Hunter&r: leather armor, bows, crossbows, spears and quivers (Archer, Rogue).',
         '- &dEnchanter&r: robes, staves, wands and instruments (Wizard, mages, Priest, Bard), and the stronger enchanting shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk shelves at 25, endshelves at 30.',
@@ -1142,7 +1142,7 @@ LOOT_WHERE = {
     2: 'Wildlands and Frontier dungeons, and the Ancient Remnant, Maledictus, the Leviathan and Scylla',
     3: 'the Harbinger and the Netherite Monstrosity',
 }
-LEVEL = {1: 10, 2: 20, 3: 25}
+LEVEL = {1: 0, 2: 10, 3: 20}  # 0: anyone can craft it
 ROW_FAMILY_ORDER = ['arcane_wizard', 'fire_wizard', 'frost_wizard', 'water_mage', 'earth_mage', 'wind_mage', 'priest',
                     'paladin', 'warrior', 'berserker', 'forcemaster', 'rogue', 'archer', 'deadeye', 'tundra_hunter',
                     'war_archer', 'bard']
@@ -1151,12 +1151,12 @@ ROW_FAMILY_ORDER = ['arcane_wizard', 'fire_wizard', 'frost_wizard', 'water_mage'
 def calling_routes(c, tier, what, items):
     """The three ways to get a tier: craft (job and level), buy (class merchant), loot (where)."""
     job = c['weapon_job'] if what == 'weapon' else JOB_NAME[c['armor_job']]
-    lines = [f'&6Craft&r: {job} level {LEVEL[tier]}' + (', or any friend who is one.' if tier == 1 else '.')]
-    if all(i.startswith('minecraft:') for i in items):
+    lines = [f'&6Craft&r: {job} level {LEVEL[tier]}' + (', or any friend who is one.' if tier == 2 else '.')]
+    if not LEVEL[tier] or all(i.startswith('minecraft:') for i in items):
         lines[0] = '&6Craft&r: anyone can, at a crafting table.'
     if tier == 3:
         lines[0] = (f'&6Craft&r: at a smithing table, the diamond piece + a netherite ingot + a netherite upgrade '
-                    f'template ({job} level 25).')
+                    f'template ({job} level {LEVEL[3]}).')
     if c['shop'] and tier < 3:
         lines.append(f'&6Buy&r: {SHOP[c["shop"]]} may have it in stock.')
     lines.append(f'&6Loot&r: {LOOT_WHERE[tier]}.')
@@ -1220,7 +1220,7 @@ def calling_row(key, row):
         '',
         'Every upgrade also takes an &dArmory template&r, copied at a crafting table with diamonds.',
         'Crystals and templates drop from &cIgnis&r, the &5Ender Guardian&r, the &5Ender Dragon&r and the &8Wither&r.',
-        f'Only {"an" if c["armor_job"] == "enchanter" else "a"} {JOB_NAME[c["armor_job"]]} of level 30 can do the '
+        f'Only {"an" if c["armor_job"] == "enchanter" else "a"} {JOB_NAME[c["armor_job"]]} of level 25 can do the '
         'upgrade; anyone can wear it.'],
         [has_sets(f'{p}/armory', [pieces(chest) for _, chest, _ in armory], f'All four pieces: {title_text}')],
         [r_levels(10), r_coins(5)], deps=[prev], subtitle='Endgame armor', shape='gear', size=Double(1.5), **sub))

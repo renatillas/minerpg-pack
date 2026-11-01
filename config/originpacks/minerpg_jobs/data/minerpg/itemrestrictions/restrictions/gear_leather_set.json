@@ -16,7 +16,7 @@
     {
       "type": "jobsplus:job_level",
       "job": "jobsplus:hunter",
-      "level": 30,
+      "level": 25,
       "inverted": true
     }
   ]

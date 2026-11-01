@@ -134,7 +134,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "a585b4bbf7284ff7c4f9ada738841f04877718b3452fd19cffa04be3d793d174"
+hash = "66976d4ec98cb1f32c24ba27e9a843e890ee9358e5cf72d1c09c065c5ff5e1c9"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -402,7 +402,7 @@ hash = "0c048ff37aee0de505d5691f93b34ddb190f42d66a61863955bfa12547cf8f78"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/enchanter/craft_gear_caster_tier_1.json"
-hash = "f133e9db29bf84bc3e7bf7f64e14eb5ce4093a0ee12422c6d6902aa86fd99f61"
+hash = "86ac9ecc47f3f8465495692bbfc07fb4dec177b200624b59dbb7769d9e39d3ed"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/enchanter/craft_gear_caster_tier_2.json"
@@ -450,7 +450,7 @@ hash = "2f130a61d313044e12968d8584f14514d9eab95a067dfc05ef61681ab850446e"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/hunter/craft_gear_leather_tier_1.json"
-hash = "1ac29ec4288f50d97b998c8590e2a3b1c62ce3a313d0cdc9d92ba090db6ff1b3"
+hash = "151081687eb55ab24f9e36a6eca2ebfb7da76e596b23554700769f915f57b85f"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/hunter/craft_gear_leather_tier_2.json"
@@ -598,7 +598,7 @@ hash = "75a59133dd21213afe89fc4e1ff586297eb87b3c0f2a74c3600bbfed430cb2e9"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/smith/craft_gear_plate_tier_1.json"
-hash = "ee4f5ff1c4575fb268296f38abe60b03187918f89d1c7002de953688030b8285"
+hash = "61cf1c771c5716c5815b7ac992ed2abcb55b2f7893208802a62a392567d7dc99"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/smith/craft_gear_plate_tier_2.json"
@@ -734,51 +734,39 @@ hash = "8db4a7b2d14ce10c1ab9986a87cc2ceb249a29aa6ae799c49a3a4e38eff5e666"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_caster_set.json"
-hash = "cfc3dad5ab4c4087c7c9437cae856a292b739a5bb094210abf7cdea352ad5b09"
-
-[[files]]
-file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_caster_tier_1.json"
-hash = "1beda942cf1d1267a50e63f53af7eb26f4cb5a7c2f34105321b323cdd718b357"
+hash = "8046ab77a9c6193a2c5ba68ca42ad10c79f385707c9bb3449ffb1b043276b196"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_caster_tier_2.json"
-hash = "b54e46bf05105db2c135b4bbe73d0dc57661b18c6f8242b2d5782ef8f1659da7"
+hash = "e21ea07da5331cb2b99515370d70e8fa50773cf306d8af65f0d92ac95642af18"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_caster_tier_3.json"
-hash = "a53ff855faf7e3dc6ded72cb9dcdbbcf01ed415c9cc7fdfdca4525439ab1c20c"
+hash = "c562722c9cee567ae4363161a8bfd04ce28874802646277bcdcca675770f79ed"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_leather_set.json"
-hash = "f08410d9b1a517644cba6e73aa2d92699fc786482342c750edee8b87abff7497"
-
-[[files]]
-file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_leather_tier_1.json"
-hash = "c418d2e51d88b70433035e52ac0710031d054c548d412e44bb2a805bb8467bf8"
+hash = "384b8eaf61cc45759333e88c9b32dff4c797ff3f6f0871daf4bbdee66bb963fd"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_leather_tier_2.json"
-hash = "705fe42bdef39426d45b6fc96bf0c9484f22f135e5083337d0c7795e503d9bfe"
+hash = "4856be68419ae586b3743eda15fed4e4c4a887732466709d625bdd50ac216e86"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_leather_tier_3.json"
-hash = "7a933a63e6938ef0d93effc41b675ad1316849a629a40296b2936ada50c2ad75"
+hash = "fc3342f9be6d688483049dfa0794cdb3b5d84a0fea0dec9db1fd7671febd89a1"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_plate_set.json"
-hash = "406b3a79b9bb5e24d937aa6431ebcbb34759eb3bf7930415f2107c60b1fadd20"
-
-[[files]]
-file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_plate_tier_1.json"
-hash = "8e7e224ca0c0b39b009d113eb87a293286726c76f8dd89cf14ca9233b9f87a3f"
+hash = "12916fae6515cca0b9deb7f9904e7b396bdeebcd4936814e6194bcc3cc8cd173"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_plate_tier_2.json"
-hash = "cf6ad404bc0d1737878f442db48a1e95c9af98083358ef74161c4c52d5b8ce89"
+hash = "f00c61272c4f972630e2672a1865673b42665001071552ca6cd0bc2a5571a7a0"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/gear_plate_tier_3.json"
-hash = "ed856ccc90d72775b6f561df32ad6e4d5c0c6b9d8253c84271f64323a6ee737f"
+hash = "f76b2d2f69f45310b157408374a6c67a6bd30c55f49c029b4d35889697c569d7"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/jewel_diamond.json"
@@ -1234,7 +1222,7 @@ hash = "ac9464d108eb6f017da8c04668bebb95f384ddf8cb98bd33aee7aedd0763e07c"
 
 [[files]]
 file = "kubejs/assets/jobsplus/lang/en_us.json"
-hash = "9361d21917719c3a2d6c964a345894a17334a357efe389720d006e69b6bcfead"
+hash = "fefbc6fe321971441a13e95c3b8e3598b2b3d039e16d8a0e557141914d640dc5"
 
 [[files]]
 file = "kubejs/assets/minerpg/lang/en_us.json"
@@ -5048,7 +5036,7 @@ hash = "2a055d40e035cdc7cb355136f3b48ef05830c1f5f0fd95f7625a4f4abf17132c"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/gates.json"
-hash = "24083f1d59b70fdd6b4b180165593de71dc8780b6cf43bd4f53b64306cd9837a"
+hash = "d09bac6e06e1c708a1f92ecaaf025f739a352b3798bf5ada4abea7e89f637878"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/hunter.json"

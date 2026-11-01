@@ -244,8 +244,8 @@ E['professions'] = [
              'Alchemist, Cook and Explorer.'),
     ]),
     ('gates', 'Crafting Gates', 'minecraft:anvil', [
-        text('Class gear by tier:$(li)Tier 1 at job level 10$(li)Diamond tier 2 at 20$(li)Netherite tier 3 '
-             'at 25$(li)Armory sets at 30$(br2)$(l)Smith$(): plate armor and melee weapons. '
+        text('Class gear by tier:$(li)Tier 1: anyone can craft it$(li)Diamond tier 2 at job level 10$(li)Netherite tier 3 '
+             'at 20$(li)Armory sets at 25$(br2)$(l)Smith$(): plate armor and melee weapons. '
              '$(l)Hunter$(): leather armor, bows, crossbows, spears, quivers. $(l)Enchanter$(): robes, staves, '
              'wands, instruments.'),
         text('$(l)Enchanter$() shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk '

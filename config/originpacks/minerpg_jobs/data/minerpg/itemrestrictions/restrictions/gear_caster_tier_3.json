@@ -16,7 +16,7 @@
     {
       "type": "jobsplus:job_level",
       "job": "jobsplus:enchanter",
-      "level": 25,
+      "level": 20,
       "inverted": true
     }
   ]
