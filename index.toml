@@ -1282,7 +1282,7 @@ hash = "10ac2bb285ab7e4af7b01c502c2eb31e46d561d009a031e644f822a6b83a117a"
 
 [[files]]
 file = "kubejs/client_scripts/minerpg_jobs_guard.js"
-hash = "c9dbcd9a9597aa660541a79b155ceb26137da3b4048ce3ee93a887b3c5a70d84"
+hash = "ed6d16b2bedd7713288b6844ac8a6de273c4e5ba905d22928ad0c19790d29ebb"
 
 [[files]]
 file = "kubejs/client_scripts/minerpg_tooltips.js"

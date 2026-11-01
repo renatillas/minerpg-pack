@@ -5,16 +5,17 @@
 // them from the client's copy loses nothing; the server's next job update rebuilds the list anyway.
 
 ClientEvents.tick(event => {
-  const player = Client.player
-  if (player == null) return
+  var guardPlayer = Client.player
+  if (guardPlayer == null) return
+  // var, not const: Rhino rejects const/let re-declared on every run inside a try block.
   try {
     // Every tick: the list is at most two jobs, and a tooltip can be drawn in the same frame as an update.
-    const it = player.jobsplus$getJobs().iterator()
-    while (it.hasNext()) {
-      var job = it.next()
-      if (job.getJobInstance() == null) {
-        console.warn(`[minerpg] dropped a job with no definition from the local job list (level ${job.getLevel()})`)
-        it.remove()
+    var guardJobs = guardPlayer.jobsplus$getJobs().iterator()
+    while (guardJobs.hasNext()) {
+      var guardJob = guardJobs.next()
+      if (guardJob.getJobInstance() == null) {
+        console.warn(`[minerpg] dropped a job with no definition from the local job list (level ${guardJob.getLevel()})`)
+        guardJobs.remove()
       }
     }
   } catch (e) {
