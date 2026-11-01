@@ -1,0 +1,13 @@
+name = "MixAuth"
+filename = "mixauth-1.21.1-1.3.3.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/GzSiVPHb/versions/nkxiqfJq/mixauth-1.21.1-1.3.3.jar"
+hash-format = "sha512"
+hash = "4cf7c48d5b38bba5440d318f45bdc47481179f4f98245de628164e39c0d6343f0590573be6f258753431214e88fa58e5c405ea81bb03bf7656f571aa4b14eda8"
+
+[update]
+[update.modrinth]
+mod-id = "GzSiVPHb"
+version = "nkxiqfJq"

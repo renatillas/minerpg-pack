@@ -157,6 +157,10 @@ file = "config/jobsplus-common.yaml"
 hash = "743f48e7beb9d52664104afc4e506a6bc0a3964b6a33c006338b8de4d03d5ed7"
 
 [[files]]
+file = "config/mixauth-server.toml"
+hash = "36fd87b87923de8ce0192d9667e5edd0c3d0151e7eef698268fe8dc3eb5ab545"
+
+[[files]]
 file = "config/mowziesmobs-common.toml"
 hash = "cdae19a55c0ad67c27750508dccf50d9883a43913caf61a364a6135a634f0e7f"
 
@@ -4494,6 +4498,11 @@ metafile = true
 [[files]]
 file = "mods/mezzconfig.pw.toml"
 hash = "8691a6080607f512d7adbbc1c17911ba83db273a5b5f113711fd8408b8d6a9df"
+metafile = true
+
+[[files]]
+file = "mods/mixauth.pw.toml"
+hash = "94867ea2f0b435da9235cf4966a4c901c486ff50a35a6d20f92676512c2a2fa9"
 metafile = true
 
 [[files]]
