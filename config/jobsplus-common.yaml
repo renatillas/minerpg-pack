@@ -46,13 +46,15 @@ jobs:
   coins:
     #the amount of coins a player gets when they level up a job
     #Minimum value: 0.0, Maximum value: 1.7976931348623157E308, Default value: 1.0
-    coins_per_level_up: 1.0
+    # minerpg: 0, level-ups pay a Gold Coin item instead (kubejs/server_scripts/minerpg_coins.js).
+  coins_per_level_up: 0.0
 display:
   #The format used to display coins.
   #Uses DecimalFormat patterns.
   #Examples: '#,##0.00', '0.0a', '##0‰'
   #Minimum length: 1, Maximum length: 32, Default value: '#,###.#'
-  coin_format: '#,###.#'
+  # minerpg: the balance mirrors the coins a player carries, in gold (an Iron Coin is 1/9, a Copper Coin 1/81).
+  coin_format: '#,##0.##'
   #The format used to display experience.
   #Uses DecimalFormat patterns.
   #Examples: '#,##0.00', '0.0a', '##0‰'

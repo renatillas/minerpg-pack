@@ -1,0 +1,13 @@
+name = "RPG Coins"
+filename = "Coins-3.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fToZyNsQ/versions/dzaUdrig/Coins-3.0.1.jar"
+hash-format = "sha512"
+hash = "dda721897b08cd4e7e8b62671a02ed2cfd033c5060e008d98a5c034f504cb024613e1fcdd9070889e520cf6c79a7c4b4e7662053c3151d5ede8aead44346840f"
+
+[update]
+[update.modrinth]
+mod-id = "fToZyNsQ"
+version = "dzaUdrig"

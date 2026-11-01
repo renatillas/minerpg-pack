@@ -419,11 +419,13 @@
 					xp: 30
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "6AE0BA86B1748339"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -446,11 +448,13 @@
 			optional: true
 			rewards: [
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "27DC7FDA56B7E3F4"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "diamond"
@@ -745,11 +749,13 @@
 					xp: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "3B932ECCA3AF6364"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "circle"
@@ -788,11 +794,13 @@
 					xp: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "7DF88BDFC271E356"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "circle"
@@ -831,11 +839,13 @@
 					xp: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "105232067F3DA1B3"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "circle"
@@ -871,11 +881,13 @@
 					xp: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "298707F0E2BB803D"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "circle"
@@ -913,11 +925,13 @@
 					xp: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "26E86235C37FDA29"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "circle"
@@ -956,11 +970,13 @@
 					xp: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "7894D021D2B9F7DE"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "circle"
@@ -999,11 +1015,13 @@
 					xp: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "48E7B9FE10C30A65"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "circle"
@@ -1041,11 +1059,13 @@
 					xp: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "2CF12E85EEA9B179"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "circle"
@@ -1087,11 +1107,13 @@
 					xp: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "45C3170CD8AA82F6"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "circle"

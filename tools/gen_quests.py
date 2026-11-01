@@ -190,10 +190,10 @@ def r_talent_point():
     return r_cmd('/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses', '+1 talent point')
 
 
-# Jobs+ coins (spent on new jobs and power-ups in the Jobs menu). Jobs+'s own /job command can
-# only set coins, so this uses the pack's /minerpg_jobs command (kubejs/server_scripts/minerpg_jobs.js).
+# Gold Coins (RPG Coins), the pack's money: the Jobs menu spends the coins a player carries
+# (kubejs/server_scripts/minerpg_coins.js).
 def r_coins(amount):
-    return r_cmd(f'/minerpg_jobs coins @s {amount}', f'+{amount} job coins')
+    return r_item('coins:gold_coin', amount)
 
 
 # One Spell Infinity book (spells stop using runes). It is not on the enchanting table or in
@@ -575,8 +575,8 @@ GETTING_STARTED = [
         'Your quest book stays your own. When a boss falls, everyone nearby gets their own trophy or key.'],
         [t_check('Join or form a party')], [r_xp(30)], deps=['gs_welcome'], subtitle='Party HUD (H)'),
     Q('gs_jobs', 'Pick Your Trades', -6, 0, [
-        'Press J and join two jobs. Each grows from its own work and pays in coins and perks.',
-        'Two jobs is the most anyone can hold. To swap one, type &e/leavejob <job>&r: it deletes that job\'s level and power-ups for good. Spend &6job coins&r in the same menu on power-ups. Every level pays a coin; many quests pay more.',
+        'Press J and join two jobs. Each grows from its own work and pays a &6Gold Coin&r every level.',
+        'Two jobs is the most anyone can hold. To swap one, type &e/leavejob <job>&r: it deletes that job\'s level and power-ups for good. Buy power-ups in the same menu with the &6coins&r you carry. Coins also come from quests, chests and bosses.',
         'The quests below show one way into each job.'],
         [t_check('Join two jobs')], [r_xp(30), r_coins(3)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
     Q('gs_job_gates', 'Masters of a Trade', -13.5, 0, [

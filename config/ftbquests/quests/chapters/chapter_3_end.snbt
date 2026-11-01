@@ -349,11 +349,13 @@
 					type: "command"
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "694C8A642DE11306"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -382,11 +384,13 @@
 			optional: true
 			rewards: [
 				{
-					command: "/minerpg_jobs coins @s 12"
+					count: 12
 					id: "1CD8BCE7F0290F9F"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 2

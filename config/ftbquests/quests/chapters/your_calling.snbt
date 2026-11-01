@@ -127,11 +127,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "5DC962B2617698F7"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -196,11 +198,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "7413ED8BCC0BCF88"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -261,11 +265,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "15D869B45B5A7887"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -304,11 +310,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "7D32940FB25896AD"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -447,11 +455,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "2C5AC2CE0F37B5A9"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -516,11 +526,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "11CA94FAFFB03D0D"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -581,11 +593,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "4119281F32AA11EF"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -624,11 +638,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "4F45AD956CC9A0ED"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -767,11 +783,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "3423B0611283429D"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -836,11 +854,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "1CE39D24ED42DDE7"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -901,11 +921,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "15248663C7D92762"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -944,11 +966,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "7B0A4257FB9893E9"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -1087,11 +1111,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "1ED4EE1C4C9BE571"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1156,11 +1182,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "398EBF38C16A5C25"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1221,11 +1249,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "2AB88E299BF824AD"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -1264,11 +1294,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "4907B8F7410B3BD5"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -1407,11 +1439,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "614BE6A671863C68"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1476,11 +1510,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "4C291A3658BE356B"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1541,11 +1577,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "7530F1FA996A9F33"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -1584,11 +1622,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "1D40CCCC65460C3B"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -1727,11 +1767,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "11CEC1226B49A6B3"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1796,11 +1838,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "5F11A34AB4FC1834"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1861,11 +1905,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "1407B52B58977133"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -1904,11 +1950,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "168E849EAB117EC6"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -2047,11 +2095,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "6AE7EC28ADFB3AB4"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -2116,11 +2166,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "14D3D42BF20A91DF"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -2181,11 +2233,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "2D4CC6EBDB871598"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -2224,11 +2278,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "69564EE415E5B478"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -2367,11 +2423,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "1046789CADDED251"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -2436,11 +2494,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "7169EF4F9ABE34DC"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -2501,11 +2561,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "640C85703C0873D0"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -2544,11 +2606,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "6AF2CCA9F185F59C"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -2687,11 +2751,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "6BE3BCF699137F2B"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -2756,11 +2822,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "1A7821BDDBBF8EDF"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -2821,11 +2889,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "1133ED752222A5EE"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -2864,11 +2934,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "2D94AE69608A3E83"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -3007,11 +3079,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "7396F43C42485DFC"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -3076,11 +3150,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "1E6C1E5B1B06AE66"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -3141,11 +3217,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "76ED979245435924"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -3184,11 +3262,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "289A812D58BB93AB"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -3327,11 +3407,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "3FF51FACAF9EDEFD"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -3396,11 +3478,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "7F0A743D32A642E9"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -3461,11 +3545,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "303610231A858AC7"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -3504,11 +3590,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "3A5770CDDEC390EF"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -3647,11 +3735,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "18331A0F0ABE4CAB"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -3716,11 +3806,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "11CF9291ADFCFB11"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -3781,11 +3873,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "7AEF0108E88A3270"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -3824,11 +3918,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "4E5D66DC24393B5A"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -3967,11 +4063,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "6C2EF079C3954A2E"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -4036,11 +4134,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "5AA9B3EAE1ED7DA6"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -4101,11 +4201,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "2181423D7CD39935"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -4144,11 +4246,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "6D498238814E7508"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -4287,11 +4391,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "1A52AD91563F2956"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -4356,11 +4462,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "446F4D37F6EE04FF"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -4421,11 +4529,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "729D9D3622912659"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -4464,11 +4574,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "2812C3F771DC9914"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -4607,11 +4719,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "16710DC05F1350F4"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -4676,11 +4790,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "16EDC8B722C0F14A"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -4741,11 +4857,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "7078B480113718D6"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -4784,11 +4902,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "5A2C671CCC460C1A"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -4927,11 +5047,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "1CBD5420288C2D26"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -4996,11 +5118,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "5BFB3592A4AA33A8"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -5061,11 +5185,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "1AD370C2EA447CBF"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -5104,11 +5230,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "48710DC85D5C2258"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -5256,11 +5384,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 1"
+					count: 1
 					id: "288DDC7E003FAE79"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -5325,11 +5455,13 @@
 					type: "item"
 				}
 				{
-					command: "/minerpg_jobs coins @s 2"
+					count: 2
 					id: "761B3140F71A2BBD"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -5390,11 +5522,13 @@
 					xp_levels: 5
 				}
 				{
-					command: "/minerpg_jobs coins @s 3"
+					count: 3
 					id: "397FBD0459B79A65"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 				{
 					count: 1
@@ -5433,11 +5567,13 @@
 					xp_levels: 10
 				}
 				{
-					command: "/minerpg_jobs coins @s 5"
+					count: 5
 					id: "10566F0FB096D43E"
-					permission_level: 2
-					silent: true
-					type: "command"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"

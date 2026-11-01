@@ -5,8 +5,9 @@
 // minerpg_jobs datapack (config/originpacks/minerpg_jobs/).
 //
 // This script:
-//   - /minerpg_jobs command: add job coins or job XP (Jobs+'s own /job command can only *set*
+//   - /minerpg_jobs command: give Gold Coins or add job XP (Jobs+'s own /job command can only *set*
 //     values), and silently grant an advancement (used by the generated Arc actions);
+//   - /leavejob: a player drops one of their (at most two) jobs for 5 gold;
 //   - job XP for RPG activities that have no Arc action: Apotheosis reforging and salvaging
 //     (Smith); Spell Binding Table binds and spell book creation (Enchanter); gem cutting at the
 //     Jeweler's Kit and the Apotheosis Gem Cutting Table, Apotheosis socketing and sigils, and
@@ -177,7 +178,7 @@ function itemId(stack) {
 
 // ---------------------------------------------------------------------------------------
 // /minerpg_jobs (operators and quest rewards; quest command rewards run at permission 2)
-//   /minerpg_jobs coins <players> <amount>        add job coins
+//   /minerpg_jobs coins <players> <amount>        give Gold Coins (the money, see minerpg_coins.js)
 //   /minerpg_jobs xp <players> <job> <amount>     add job XP (only if they have the job)
 //   /minerpg_jobs grant <players> <advancement>   grant an advancement without chat feedback
 // ---------------------------------------------------------------------------------------
@@ -200,8 +201,8 @@ ServerEvents.commandRegistry(event => {
             const amount = Arguments.INTEGER.getResult(ctx, 'amount')
             let n = 0
             Arguments.PLAYERS.getResult(ctx, 'players').forEach(p => {
-              p.jobsplus$addCoins(amount)
-              p.tell(Text.of(`+${amount} job coins (spend them in the Jobs menu, J)`).gold())
+              giveCoins(p, amount * COPPER_PER_GOLD)
+              p.tell(Text.of(`+${amount} Gold Coins`).gold())
               n++
             })
             return n
@@ -229,8 +230,9 @@ ServerEvents.commandRegistry(event => {
             return n
           })))))
 
-  // /leavejob <job>: warns what the player loses; /leavejob <job> confirm (within a minute) drops the job, its
-  // level and its power-ups for good, freeing the slot for another (designer, 2026-10-31: two jobs at most).
+  // /leavejob <job>: warns what the player loses; /leavejob <job> confirm (within a minute) takes LEAVE_JOB_PRICE
+  // gold and drops the job, its level and its power-ups for good, freeing the slot for another (designer,
+  // 2026-10-31: two jobs at most; 2026-11-01: leaving costs gold).
   let leave = Commands.literal('leavejob').requires(source => source.isPlayer())
   Object.keys(JOB_NAMES).forEach(key => {
     leave = leave.then(Commands.literal(key)
@@ -243,6 +245,7 @@ ServerEvents.commandRegistry(event => {
 // Player UUID -> {job, time} of the last /leavejob warning, so "confirm" only works right after it.
 const LEAVE_JOB_PENDING = {}
 const LEAVE_JOB_WINDOW_MS = 60000
+const LEAVE_JOB_PRICE = 5 // Gold Coins
 
 function leaveJobWarn(player, key) {
   const job = jobOf(player, key)
@@ -250,9 +253,9 @@ function leaveJobWarn(player, key) {
     player.tell(Text.of(`You don't have the ${JOB_NAMES[key]} job.`).red())
     return 0
   }
-  LEAVE_JOB_PENDING[String(player.uuid)] = { job: key, time: Date.now() }
-  player.tell(Text.of(`Leaving the ${JOB_NAMES[key]} job deletes it for good: level ${job.getLevel()}, its XP and `
-    + 'every power-up bought for it. Coins spent are not refunded. You can then join another job.').gold())
+  LEAVE_JOB_PENDING[String(player.getUUID())] = { job: key, time: Date.now() }
+  player.tell(Text.of(`Leaving the ${JOB_NAMES[key]} job costs ${LEAVE_JOB_PRICE} gold and deletes it for good: `
+    + `level ${job.getLevel()}, its XP and every power-up bought for it. You can then join another job.`).gold())
   player.tell(Text.of(`[Leave ${JOB_NAMES[key]}]`).red().bold()
     .clickRunCommand(`/leavejob ${key} confirm`)
     .hover(Text.of(`Click to leave the ${JOB_NAMES[key]} job (within a minute)`))
@@ -262,16 +265,22 @@ function leaveJobWarn(player, key) {
 }
 
 function leaveJobConfirm(player, key) {
-  const pending = LEAVE_JOB_PENDING[String(player.uuid)]
+  const pending = LEAVE_JOB_PENDING[String(player.getUUID())]
   if (!pending || pending.job != key || Date.now() - pending.time > LEAVE_JOB_WINDOW_MS) {
     player.tell(Text.of(`Type /leavejob ${key} first to see what you would lose.`).red())
     return 0
   }
-  delete LEAVE_JOB_PENDING[String(player.uuid)]
+  delete LEAVE_JOB_PENDING[String(player.getUUID())]
   if (jobOf(player, key) == null) {
     player.tell(Text.of(`You don't have the ${JOB_NAMES[key]} job.`).red())
     return 0
   }
+  if (coinWallet(player) < LEAVE_JOB_PRICE * COPPER_PER_GOLD) {
+    player.tell(Text.of(`Leaving a job costs ${LEAVE_JOB_PRICE} gold, and you carry less.`).red())
+    return 0
+  }
+  takeCoins(player, LEAVE_JOB_PRICE * COPPER_PER_GOLD)
+  syncCoinBalance(player)
   player.jobsplus$removeJob($JobInstance.of($ResourceLocation.parse('jobsplus:' + key)))
   player.tell(Text.of(`You left the ${JOB_NAMES[key]} job. Press J to join another.`).green())
   console.info(`[minerpg] ${player.username} left the ${key} job`)

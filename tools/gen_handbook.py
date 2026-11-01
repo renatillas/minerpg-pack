@@ -229,8 +229,13 @@ E['classes'] = [
 E['professions'] = [
     ('jobs', 'Jobs', 'minecraft:iron_pickaxe', [
         text(f'Press {k("key.jobsplus.open_menu")} to open the Jobs menu and join two jobs. A job levels up '
-             'from its own work and pays one $(item)job coin$() per level.$(br2)Spend coins in the same menu '
-             'on power-ups. Two jobs is the most anyone can hold. To swap one, type $(thing)/leavejob <job>$(): it deletes that job\'s level and power-ups for good.'),
+             'from its own work and pays one $(item)Gold Coin$() per level.$(br2)Two jobs is the most anyone can '
+             'hold. To swap one, type $(thing)/leavejob <job>$(): it costs 5 gold and deletes that job\'s level '
+             'and power-ups for good.'),
+        text('$(l)Coins$() are the money of the realm: 9 $(item)Copper$() make 1 $(item)Iron$(), 9 Iron make 1 '
+             '$(item)Gold$() (change them at a crafting table).$(br2)They come from job levels, quests, chests, '
+             'dungeons and bosses. The Jobs menu counts the coins you carry, in gold, and buying a power-up takes '
+             'them from your inventory, with change given back.'),
         text('The nine jobs: Alchemist, Cook, Enchanter, Explorer, Farmer, Hunter, Jeweler, Miner and Smith.'
              '$(br2)Seven of them also $(l)make$() things nobody else can: Smith, Hunter, Enchanter, Jeweler, '
              'Alchemist, Cook and Explorer.'),

@@ -1,6 +1,9 @@
 {
-    "replace": false,
-    "entries": [
-        "minerpg:affix_mob_drops"
-    ]
+  "replace": false,
+  "entries": [
+    "minerpg:affix_mob_drops",
+    "minerpg:coins_ordinary_chests",
+    "minerpg:coins_dungeon_chests",
+    "minerpg:coins_bosses"
+  ]
 }

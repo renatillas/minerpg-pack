@@ -102,15 +102,15 @@ hash = "efd648a49846de145fb0c968d9548104eee18886ec1221455375df0d788511b3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_overworld.snbt"
-hash = "e1a6482183011516a0e0b4ad19db0735f3f9bbd7d98d0793b3b54abe80f38a90"
+hash = "a373bc305c94a1a3e28a9cba6d79d0d009f037ff53602c69dd041f2bb628dc16"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_nether.snbt"
-hash = "1e0265c2d261df870d0bbab5f3e319fe4e5686e530628a68b78e1c94f82e9c40"
+hash = "6f9bf66d178cf3c61a8ed245c5c58ab21ce0adee862ded71314a8041019df38b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_end.snbt"
-hash = "d69f2172ae690b7f6dd65472b761dce9dc53e6dc899e638a5522a15f2f0217af"
+hash = "3aba392e68ccf4aca357b4995f0537cfb0989241afe9e690be640272b0686847"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/forge_and_library.snbt"
@@ -118,11 +118,11 @@ hash = "1413efca2fe33dcdbec3b3fdfce16e095b6ede8eb905b80c4c61cd5ecd6efc60"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/getting_started.snbt"
-hash = "3ca667c51105fca49bccc84cb7786e32bd46a7fc5353caaf6e30eabefbe13d28"
+hash = "dc375ffff502f8261bc0bbb07431df4cac8ac8832d23c73c84d7a29e0502eb41"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/your_calling.snbt"
-hash = "232b8d9437f7b88828113d25d342b9be52ae9904024d6a6480adb004eb725ec2"
+hash = "6173b2b183197230d068bb09b5c095cde19b4cdb8a6d59409750ee2b981dd0cb"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -130,7 +130,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "00e00d2341e03a1d856a2a64537f037a5144e268df216ca56f7a32501ae85a1c"
+hash = "d9ae66db4c07596451ce3fea85dbac1176949a4b173429de8227f3d77f9ef9cc"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -150,7 +150,7 @@ hash = "dbad3c65facc183b43af94ed6434226b8bcd6f241ab648b553f77f8e405be0ed"
 
 [[files]]
 file = "config/jobsplus-common.yaml"
-hash = "47561a4cc36b1faa8b6925b52d7836fb045c9770ccb981d6fe0b224a8a0fa541"
+hash = "743f48e7beb9d52664104afc4e506a6bc0a3964b6a33c006338b8de4d03d5ed7"
 
 [[files]]
 file = "config/mowziesmobs-common.toml"
@@ -1222,7 +1222,7 @@ hash = "ac9464d108eb6f017da8c04668bebb95f384ddf8cb98bd33aee7aedd0763e07c"
 
 [[files]]
 file = "kubejs/assets/jobsplus/lang/en_us.json"
-hash = "c6a06770d65c31f985ea3af016329b3951d3ad19680b13c66bd64aa6534563b4"
+hash = "9361d21917719c3a2d6c964a345894a17334a357efe389720d006e69b6bcfead"
 
 [[files]]
 file = "kubejs/assets/minerpg/lang/en_us.json"
@@ -3877,6 +3877,30 @@ file = "kubejs/data/minerpg/loot_modifiers/affix_mob_drops.json"
 hash = "acfcdcb46384b82f3ddf63b75f10a0d90700234b42c6ef3d5dcf91b6a4783f23"
 
 [[files]]
+file = "kubejs/data/minerpg/loot_modifiers/coins_bosses.json"
+hash = "4a10037ef568203c26eb20898354bf95c6466a898a581668040673f94b274fb7"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_modifiers/coins_dungeon_chests.json"
+hash = "76a41570937ef3f6c98c80717401d29adb39bc96fe709681f2649111b13232a5"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_modifiers/coins_ordinary_chests.json"
+hash = "28403b68cf9f01a7e94ff9ad2fa9449856c33a7274f75afb5caac2ae97e6d7e1"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/coins/boss.json"
+hash = "3062dc36ecceb1d028edef3fcc6201e5e94552738703ac847e3ea61cbccbbce7"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/coins/dungeon_chest.json"
+hash = "00f95f56d3f569f52c01aaf5e9bfb540c2e8803bf88fb13487f9e2e742581ff8"
+
+[[files]]
+file = "kubejs/data/minerpg/loot_table/coins/ordinary_chest.json"
+hash = "fd22a1af444adfd3f0a740ce99c07d9fe1a59e5785926641fa9b7d2591878132"
+
+[[files]]
 file = "kubejs/data/minerpg/loot_table/map/amethyst_nest.json"
 hash = "853c2ab10d758aade2b447764c78d2e4cfc1c9660a99ff25b71a047778ec708c"
 
@@ -4078,7 +4102,7 @@ hash = "9826f513cb9557b3349bf32fa137b92ec8eafc90fdf050e9b007960ef67da776"
 
 [[files]]
 file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
-hash = "dca4c9de9bdf9b6ec5dce522852dc7d8c16c690fab05ed8c0c9eed023cf71b96"
+hash = "dbd41125a340da26ebd20760709dbfd3846ec41e9175a8f164a468559ccd2719"
 
 [[files]]
 file = "kubejs/data/nova_structures/tags/worldgen/biome/illager_hideout.json"
@@ -4101,6 +4125,10 @@ file = "kubejs/server_scripts/minerpg_calling.js"
 hash = "e80bbb24dad7d3ed5e600beef913fa29a8f15047ae84486a9b11e001de938403"
 
 [[files]]
+file = "kubejs/server_scripts/minerpg_coins.js"
+hash = "df395f67c7ced908ddf0bd3f8f0eb3dc6368928ae1a8a56b4e85ac7852afc5d4"
+
+[[files]]
 file = "kubejs/server_scripts/minerpg_enchanting.js"
 hash = "ea4be89cfb7b6b5570f23bc061950e5ea02dc5085cbaea7ff3d972a4746390b3"
 
@@ -4114,7 +4142,7 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "fddeed9f95b50aed13fd951ef32e0167ad8032dc217f94da6b2bae9543910559"
+hash = "b304cb98c19ca00cd67698c4745624d50efa3098f67c7f7d374bbe0b1462e174"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
@@ -4581,6 +4609,11 @@ hash = "0e9c8a13f0fea014d007b27e2d8fee0d374b900654c77aaaec66274d91118c4b"
 metafile = true
 
 [[files]]
+file = "mods/rpgcoins.pw.toml"
+hash = "b156535b9cb6b9f0f42547a27d539d330308f674ac2ffda610b80a3847ddf650"
+metafile = true
+
+[[files]]
 file = "mods/runes.pw.toml"
 hash = "05c5359a4419b39c0e72c2693f0cda3bc5959520fe42b348d3bd701384491aef"
 metafile = true
@@ -4982,7 +5015,7 @@ hash = "f9d3d8821bf87713ae2de5b41e1afa49e5a2447b5ad439e0aad09563a329ba1a"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/jobs.json"
-hash = "c6641682f92cfb564b4378b8875e5a274ef2a2b3e19e291033393cc9e36c179d"
+hash = "2cfd467a30d76002f9607fef9183ae898c352a620ddefd1f7fe147450ad9038e"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/xp.json"
