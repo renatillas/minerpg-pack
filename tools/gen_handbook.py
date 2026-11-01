@@ -105,7 +105,8 @@ E['getting_started'] = [
              '$(li)One sleeper is enough to skip the night.'
              '$(li)No phantoms.'
              '$(li)Creepers, ghast fireballs and wither skulls do not break blocks. Endermen do not pick blocks up.'
-             '$(li)Villagers still farm, sheep still eat grass.'),
+             '$(li)Villagers still farm, sheep still eat grass.'
+             '$(li)An axe fells a whole tree at once; sneak to cut a single log.'),
         text('$(li)Nothing is lost when you die: it waits in your $(item)grave$() (see Party). With friends online '
              'you fall $(item)downed$() first, and they can pick you up.'
              '$(li)Dungeon chests are personal: everyone finds their own loot in the same chest.'

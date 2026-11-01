@@ -89,6 +89,10 @@ file = "config/elemental_wizards_rpg/equipment_v1.json"
 hash = "317c07a47335291f6bd5b8aece509ed1c16eb6ed9884e52aedc18b3f529c9d0d"
 
 [[files]]
+file = "config/fallingtree.json"
+hash = "7f3651d02e398a68d1e7962f2ac4557ac19f0333e4951f336812cbca5f2dbf8a"
+
+[[files]]
 file = "config/forcemaster_rpg/equipment_v3.json"
 hash = "cb935b46721407a06dd8bd479577d29365ae000845c0f4d14d9152b4f255a2ae"
 
@@ -4338,6 +4342,11 @@ hash = "426238488c9ffd843f661f8bc74aa8e585fa6b4d342c43c4ba4cb8451298b725"
 metafile = true
 
 [[files]]
+file = "mods/fallingtree.pw.toml"
+hash = "7d61ad815f97afb27f7e97475e80376aa19fecf25a1b04a500a4c3a6e5055973"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "97347efd9e808841d72fe3599da8a11add8422e97f89ae1c85cdfc0acfa18f96"
 metafile = true
@@ -4967,7 +4976,7 @@ hash = "c9bd7e5a3ac09ba692b770a96883426b2f5cdc760d80824b2f69145ed586b8d1"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/getting_started/house_rules.json"
-hash = "70dab771ba77707f1fce4b427e2945b1a4ef6ad530456c10b0f45b27abe8ef18"
+hash = "10269af8b69d313c7c74c0ee2f6a7df38536610b3ae08f0bd40bb06f497342a8"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/getting_started/welcome.json"
