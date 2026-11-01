@@ -130,7 +130,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "d9ae66db4c07596451ce3fea85dbac1176949a4b173429de8227f3d77f9ef9cc"
+hash = "a585b4bbf7284ff7c4f9ada738841f04877718b3452fd19cffa04be3d793d174"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -4126,7 +4126,7 @@ hash = "e80bbb24dad7d3ed5e600beef913fa29a8f15047ae84486a9b11e001de938403"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_coins.js"
-hash = "df395f67c7ced908ddf0bd3f8f0eb3dc6368928ae1a8a56b4e85ac7852afc5d4"
+hash = "63337f5fcc20548dc7cddfd73ed84f9512558095279ddd28982d204c6414b8fd"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_enchanting.js"

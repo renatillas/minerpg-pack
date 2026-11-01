@@ -90,12 +90,12 @@ PlayerEvents.tick(event => {
   const player = event.player
   if (player.tickCount % COIN_SYNC_TICKS != 0) return
   try {
-    const uuid = String(player.getUUID())
-    const last = COIN_LAST_SET[uuid]
+    var uuid = String(player.getUUID())
+    var last = COIN_LAST_SET[uuid]
     if (last === undefined) {
       // First check this session. Job coins from before the switch become Gold Coins, once.
       if (!player.persistentData.getBoolean('minerpg_coins_migrated')) {
-        const old = Math.floor(player.jobsplus$getCoins())
+        var old = Math.floor(player.jobsplus$getCoins())
         if (old > 0) {
           giveCoins(player, old * COPPER_PER_GOLD)
           player.tell(Text.of(`Your ${old} job coins are now ${old} Gold Coins.`).gold())
@@ -103,7 +103,7 @@ PlayerEvents.tick(event => {
         player.persistentData.putBoolean('minerpg_coins_migrated', true)
       }
     } else {
-      const spent = Math.round((last - player.jobsplus$getCoins()) * COPPER_PER_GOLD)
+      var spent = Math.round((last - player.jobsplus$getCoins()) * COPPER_PER_GOLD)
       if (spent > 0) takeCoins(player, spent)
     }
     payJobLevels(player)

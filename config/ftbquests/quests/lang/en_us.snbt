@@ -1608,7 +1608,7 @@
 	"quest.5C9A512AF929AB58.title": "The Armory"
 	"quest.5D0D3E3C2B3C0A65.quest_desc": [
 		"Press J and join two jobs. Each grows from its own work and pays a &6Gold Coin&r every level."
-		"Two jobs is the most anyone can hold. To swap one, type &e/leavejob <job>&r: it deletes that job's level and power-ups for good. Buy power-ups in the same menu with the &6coins&r you carry. Coins also come from quests, chests and bosses."
+		"Two jobs is the most anyone can hold. To swap one, type &e/leavejob <job>&r: it costs 5 gold and deletes that job's level and power-ups for good. Buy power-ups in the same menu with the &6coins&r you carry. Coins also come from quests, chests and bosses."
 		"The quests below show one way into each job."
 	]
 	"quest.5D0D3E3C2B3C0A65.quest_subtitle": "Jobs menu (J)"
