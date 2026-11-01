@@ -4411,6 +4411,11 @@ hash = "4601b9be31b6e131dca8a148c974d015444bcac7c82fcb66fbd8751a67933a5d"
 metafile = true
 
 [[files]]
+file = "mods/inventory-profiles-next.pw.toml"
+hash = "ab503e89461dff879ee793253e173625b6ab868f570a371323ef725e567cf5ea"
+metafile = true
+
+[[files]]
 file = "mods/item-borders.pw.toml"
 hash = "709a01e949975ef624c4fbeabb1d8a2339eb50709d2b3e1e84732ca31f341c4d"
 metafile = true
@@ -4441,6 +4446,11 @@ hash = "9b7a34f513a4227c72c89e725d38c59df923a756ba89cc04695b3e31fc2e527e"
 metafile = true
 
 [[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "34580d9d26462eb2381a526dbbcb60d9526dcc0ba9c0e442cc348abac709ce49"
+metafile = true
+
+[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "7e0eca275f27b6543f06c36dec433851a956960cbedd2be57d19e159d636bfc1"
 metafile = true
@@ -4453,6 +4463,11 @@ metafile = true
 [[files]]
 file = "mods/legendary-tooltips.pw.toml"
 hash = "9ca14134538c66b6d8ef74107f6b15ba9487ec632d984427e84ad38aa47afa60"
+metafile = true
+
+[[files]]
+file = "mods/libipn.pw.toml"
+hash = "0d2a00252d64ed7d2d9b19994f7accb780304be61f3903d36e810714b414c6cb"
 metafile = true
 
 [[files]]
@@ -4985,7 +5000,7 @@ hash = "c9bd7e5a3ac09ba692b770a96883426b2f5cdc760d80824b2f69145ed586b8d1"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/getting_started/house_rules.json"
-hash = "10269af8b69d313c7c74c0ee2f6a7df38536610b3ae08f0bd40bb06f497342a8"
+hash = "23fe046e4a09c663d2af822b91f4dd45d5baf47a220e7e395d468d374ca166cb"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/getting_started/welcome.json"

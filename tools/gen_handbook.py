@@ -110,7 +110,9 @@ E['getting_started'] = [
         text('$(li)Nothing is lost when you die: it waits in your $(item)grave$() (see Party). With friends online '
              'you fall $(item)downed$() first, and they can pick you up.'
              '$(li)Dungeon chests are personal: everyone finds their own loot in the same chest.'
-             '$(li)Mining is blocked inside many surface dungeons (see World & Danger).'),
+             '$(li)Mining is blocked inside many surface dungeons (see World & Danger).'
+             '$(li)The small buttons beside any chest and your inventory sort it (or press R). A tool or stack '
+             'that runs out is refilled from your bag.'),
     ]),
 ]
 
