@@ -153,6 +153,10 @@ file = "config/hardcorerevival-common.toml"
 hash = "dbad3c65facc183b43af94ed6434226b8bcd6f241ab648b553f77f8e405be0ed"
 
 [[files]]
+file = "config/inventoryprofilesnext/inventoryprofiles.json"
+hash = "cfc19b7cc8077b199f0eb5ccde8e297dcd1a612300f58375a4efc0e45c5e6024"
+
+[[files]]
 file = "config/jobsplus-common.yaml"
 hash = "743f48e7beb9d52664104afc4e506a6bc0a3964b6a33c006338b8de4d03d5ed7"
 

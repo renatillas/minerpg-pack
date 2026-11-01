@@ -1,0 +1,14 @@
+{
+    "ModSettings": {
+        "enable_updates_check": false,
+        "first_run": false
+    },
+    "AutoRefillSettings": {
+        "auto_refill_enable_indicator_icons": {
+            "value": false
+        },
+        "auto_refill_enable_horbar_indicator_icons": {
+            "value": false
+        }
+    }
+}
