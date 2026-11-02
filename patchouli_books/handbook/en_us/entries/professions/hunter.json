@@ -2,7 +2,7 @@
   "name": "Hunter: Skinning",
   "icon": "minecraft:leather",
   "category": "patchouli:professions",
-  "sortnum": 4,
+  "sortnum": 5,
   "pages": [
     {
       "type": "patchouli:text",

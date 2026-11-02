@@ -2,7 +2,7 @@
   "name": "Crafting Gates",
   "icon": "minecraft:anvil",
   "category": "patchouli:professions",
-  "sortnum": 1,
+  "sortnum": 2,
   "pages": [
     {
       "type": "patchouli:text",

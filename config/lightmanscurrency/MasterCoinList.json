@@ -1,0 +1,15 @@
+{
+  "Chains": [
+    {
+      "chain": "main",
+      "name": { "text": "Coins" },
+      "displayType": "lightmanscurrency:coin",
+      "InputType": "DEFAULT",
+      "CoreChain": [
+        { "Coin": "coins:copper_coin", "initial": { "text": "c" }, "plural": { "text": "Copper Coins" } },
+        { "Coin": "coins:iron_coin", "exchangeRate": 9, "initial": { "text": "i" }, "plural": { "text": "Iron Coins" } },
+        { "Coin": "coins:gold_coin", "exchangeRate": 9, "initial": { "text": "g" }, "plural": { "text": "Gold Coins" } }
+      ]
+    }
+  ]
+}

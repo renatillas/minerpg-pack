@@ -230,6 +230,14 @@ E['classes'] = [
 ]
 
 E['professions'] = [
+    ('market', 'The Market', 'coins:gold_coin', [
+        text('The spawn village has a $(l)market$(): one stall for each job, selling supplies and rare goods '
+             'for $(item)Gold Coins$(). The stock never runs out.$(br2)A stall gives $(l)25% off$() to members '
+             'of its own job, so a friend with the right job can buy for you.'),
+        text('$(l)Player shops$(): craft a $(item)Vending Machine$() or another shop block, fill it and set '
+             'your prices in coins. Friends buy even while you are away, and the coins wait inside until you '
+             'collect them.$(br2)Put coins in the slots on the shop screen to pay; change comes back there.'),
+    ]),
     ('jobs', 'Jobs', 'minecraft:iron_pickaxe', [
         text(f'Press {k("key.jobsplus.open_menu")} to open the Jobs menu and join two jobs. A job levels up '
              'from its own work and pays one $(item)Gold Coin$() per level.$(br2)Two jobs is the most anyone can '

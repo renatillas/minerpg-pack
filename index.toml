@@ -161,6 +161,18 @@ file = "config/jobsplus-common.yaml"
 hash = "743f48e7beb9d52664104afc4e506a6bc0a3964b6a33c006338b8de4d03d5ed7"
 
 [[files]]
+file = "config/lightmanscurrency-common.txt"
+hash = "de1c8937e31c5f785915a77c3563b80249066e5390eff7cd5c774e291c7674d1"
+
+[[files]]
+file = "config/lightmanscurrency-server.txt"
+hash = "08e1ae89410c36a12e83272ba687a883bb34b41db6b991cba908a99904d9475a"
+
+[[files]]
+file = "config/lightmanscurrency/MasterCoinList.json"
+hash = "416b5281881103410eb2965dd2d6aac68368fbdbb186738ce30ea55b431dbb1f"
+
+[[files]]
 file = "config/mixauth-server.toml"
 hash = "36fd87b87923de8ce0192d9667e5edd0c3d0151e7eef698268fe8dc3eb5ab545"
 
@@ -4150,7 +4162,7 @@ hash = "ec9c1733788c9869f82fae9a2db5675229b2a3bf49b53b03c7c24d2ba927c2be"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_coins.js"
-hash = "ec305d4ad32922e1e91f8c7102ed5fb1c544126a511e9fba6ed22ab592a38b00"
+hash = "76c9e399e82540215e6c5b4eb6d81a70feaceb03cd5a78feaffe96fbf596995b"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_enchanting.js"
@@ -4167,6 +4179,10 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
 hash = "84eb780b421440e6926766e700d799ee069e5ee03e07c90d9eda07b4e42e6105"
+
+[[files]]
+file = "kubejs/server_scripts/minerpg_market.js"
+hash = "6dcb172ca9af0ee09decbe59bdcb97251ae1a23dceb3f56eab6c8f442c261079"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
@@ -4480,6 +4496,11 @@ metafile = true
 [[files]]
 file = "mods/libipn.pw.toml"
 hash = "0d2a00252d64ed7d2d9b19994f7accb780304be61f3903d36e810714b414c6cb"
+metafile = true
+
+[[files]]
+file = "mods/lightmans-currency.pw.toml"
+hash = "fd7402b385c133630eea8f1ab08dd64983e996f10df850791144cbfb2093e37d"
 metafile = true
 
 [[files]]
@@ -5048,27 +5069,31 @@ hash = "9c52c4e7c7ca3ed0f6c5599c6f7caa686692faf238e7f1a3761249228d14e61f"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/anyone.json"
-hash = "e1978997e4683db09cb353a2c36f30631908abf0848959b5a36bddba00d7d8b3"
+hash = "848895d7c90277acdc2ddbf3b96ebc722381b7383070a517cdebd8267103fdb2"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/explorer.json"
-hash = "2a055d40e035cdc7cb355136f3b48ef05830c1f5f0fd95f7625a4f4abf17132c"
+hash = "2c0fea88bedf1570cf604e31f23d17f71e9aac552cfedbd4c52350f982e3f3c3"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/gates.json"
-hash = "d09bac6e06e1c708a1f92ecaaf025f739a352b3798bf5ada4abea7e89f637878"
+hash = "e711e8ddb6a3c67e2f6c2ef054c934a6fe375af27ba2411082b0a2d1fe2f4a21"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/hunter.json"
-hash = "f9d3d8821bf87713ae2de5b41e1afa49e5a2447b5ad439e0aad09563a329ba1a"
+hash = "6f6ad515b7b747c1e4e200a425ea7da695b1339838d60a9f63340723fc9c18ca"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/jobs.json"
-hash = "2cfd467a30d76002f9607fef9183ae898c352a620ddefd1f7fe147450ad9038e"
+hash = "d5b5c91eb178f83fa3c2a1c40c2cf35610693d2a89f662c3409eb1b29c0d5352"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/professions/market.json"
+hash = "ac69d80d913464a39ba9b3c9db69db5b37bf7d26894f153c89153a2507533862"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/xp.json"
-hash = "1a6e6fdf366a76faa7b46d7d718e4939d76f148facb56ed7031cd6522077c66e"
+hash = "ad2e05b214f74aad3440d1ec907dc0f73af39c8cf4f2daf5b164aa295ef27065"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/races/change.json"
