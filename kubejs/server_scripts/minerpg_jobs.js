@@ -65,6 +65,9 @@ const GEM_CUT_XP = 15 // Jeweler, per gem cut at the Jeweler's Kit
 const GEM_UPGRADE_XP = 20 // Jeweler, per gem raised a purity at the Apotheosis Gem Cutting Table
 const MOUNT_XP = 15 // Jeweler, per Socket Mount fixed to armor at the anvil
 const SET_GEM_XP = 20 // Jeweler, per cut gem set into a socket at the anvil
+// Enchanter (designer, 2026-11-02: the Enchanter was hard to level early): applying an enchanted book at the anvil,
+// per level of every enchantment on the book (Sharpness III = 30). The Smith's own anvil XP is unchanged.
+const ANVIL_BOOK_XP_PER_LEVEL = 10
 const MEAL_XP = 12 // Cook, per cooking pot meal (from the pot's window or served with a bowl)
 // Cook (designer, 2026-11-02: the Cook levelled too slowly).
 const FIRST_DISH_XP = 25 // the first time a Cook makes each dish (pot meals and table food)
@@ -464,14 +467,23 @@ PlayerEvents.tick(event => {
 
 PlayerEvents.loggedOut(event => { delete watch[String(event.player.getGameProfile().getId())] })
 
-// Jewelry sockets at the anvil (taking the result fires NeoForge's AnvilRepairEvent): armor + Socket
-// Mount fixes a socket, armor + cut gem sets the gem.
+// The anvil (taking the result fires NeoForge's AnvilRepairEvent): armor + Socket Mount fixes a socket and
+// armor + cut gem sets the gem (Jeweler); anything + enchanted book is enchanting (Enchanter).
 NativeEvents.onEvent($AnvilRepairEvent, event => {
   try {
     const right = event.getRight()
     if (right.isEmpty()) return
     if (itemId(right) == 'jewelry:socket_mount') giveJobXp(event.getEntity(), 'jeweler', MOUNT_XP, 'socket mounted')
     else if (right.is(JEWELRY_GEMS)) giveJobXp(event.getEntity(), 'jeweler', SET_GEM_XP, 'gem set')
+    else if (itemId(right) == 'minecraft:enchanted_book') {
+      var stored = right.get($DataComponents.STORED_ENCHANTMENTS)
+      var levels = 0
+      if (stored != null) {
+        var entries = stored.entrySet().iterator()
+        while (entries.hasNext()) levels += entries.next().getIntValue()
+      }
+      giveJobXp(event.getEntity(), 'enchanter', ANVIL_BOOK_XP_PER_LEVEL * levels, 'enchanted at the anvil')
+    }
   } catch (e) {
     console.error(`[minerpg] jobs anvil socketing failed: ${e}`)
   }

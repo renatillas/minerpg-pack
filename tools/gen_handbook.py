@@ -282,7 +282,7 @@ E['professions'] = [
     ]),
     ('xp', 'Other Ways to Level', 'minecraft:experience_bottle', [
         text('$(li)$(l)Smith$(): reforging, salvaging, smelting.'
-             '$(li)$(l)Enchanter$(): enchanting, binding spells.'
+             '$(li)$(l)Enchanter$(): enchanting at the table or with books at the anvil, binding spells.'
              '$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.'
              '$(li)$(l)Alchemist$(): brewing, runes, potion charms.'
              '$(li)$(l)Cook$(): every meal (pot, table, furnace, smoker, campfire or stove), more for each new dish.'

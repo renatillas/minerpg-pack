@@ -592,7 +592,7 @@ GETTING_STARTED = [
         '',
         'Anyone can &ouse&r these things. Class gear still drops from dungeons and bosses, class merchants sell it, plain bookshelves work for everyone, the Jeweler villager sells rings and necklaces, and a friend with the job can make it for you.',
         'Hover over an item to see the job and level that make it.',
-        'Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Cooks from every meal and each new dish, Explorers from each new biome, structure and waystone they find and each map they fill in.',
+        'Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells and applying enchanted books at the anvil, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Cooks from every meal and each new dish, Explorers from each new biome, structure and waystone they find and each map they fill in.',
         'Class merchants buy crafted goods for emeralds: runes, diamond-tier class weapons and pot meals.'],
         [t_check('Understood')], [r_coins(1)], deps=['gs_jobs'], subtitle='Crafting gates and job experience', shape='diamond', optional=True),
     # v0.4 additions. Item rewards only, so Getting Started quest points stay as tuned.
