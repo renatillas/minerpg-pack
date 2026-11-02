@@ -726,7 +726,7 @@
 		""
 		"Anyone can &ouse&r these things. Class gear still drops from dungeons and bosses, class merchants sell it, plain bookshelves work for everyone, the Jeweler villager sells rings and necklaces, and a friend with the job can make it for you."
 		"Hover over an item to see the job and level that make it."
-		"Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Cooks from every meal, Explorers from each new waystone they use."
+		"Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Cooks from every meal, Explorers from each new biome, structure and waystone they find and each map they fill in."
 		"Class merchants buy crafted goods for emeralds: runes, diamond-tier class weapons and pot meals."
 	]
 	"quest.23438309D3EE7ED9.quest_subtitle": "Crafting gates and job experience"
@@ -2028,7 +2028,7 @@
 	"quest.7C301FD6C811E316.quest_subtitle": "Trinket slot"
 	"quest.7C301FD6C811E316.title": "Relics"
 	"quest.7DC0800E7F0DC167.quest_desc": [
-		"Explorers draw Survey Maps that lead the party to settlements, crypts, dungeons and boss lairs, and build the waystone network. They also earn experience the first time they use each waystone. Draw a Survey Map from a map and an emerald."
+		"Explorers draw Survey Maps that lead the party to settlements, crypts, dungeons and boss lairs, and build the waystone network. They earn experience by exploring: each new biome, each village, crypt or dungeon they walk into, each new waystone and each map they fill in. Draw a Survey Map from a map and an emerald."
 	]
 	"quest.7DC0800E7F0DC167.quest_subtitle": "Job starter"
 	"quest.7DC0800E7F0DC167.title": "Explorer"

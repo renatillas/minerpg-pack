@@ -592,7 +592,7 @@ GETTING_STARTED = [
         '',
         'Anyone can &ouse&r these things. Class gear still drops from dungeons and bosses, class merchants sell it, plain bookshelves work for everyone, the Jeweler villager sells rings and necklaces, and a friend with the job can make it for you.',
         'Hover over an item to see the job and level that make it.',
-        'Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Cooks from every meal, Explorers from each new waystone they use.',
+        'Job experience also comes from the adventure: Smiths from reforging and salvaging, Enchanters from binding spells, Jewelers from cutting gems and setting them into gear, Alchemists from runes and potion charms, Hunters from skinning their kills and working leather, Cooks from every meal, Explorers from each new biome, structure and waystone they find and each map they fill in.',
         'Class merchants buy crafted goods for emeralds: runes, diamond-tier class weapons and pot meals.'],
         [t_check('Understood')], [r_coins(1)], deps=['gs_jobs'], subtitle='Crafting gates and job experience', shape='diamond', optional=True),
     # v0.4 additions. Item rewards only, so Getting Started quest points stay as tuned.
@@ -652,7 +652,7 @@ JOB_STARTERS = [
     ('enchanter', 'Enchanter', 'Enchanters earn experience at the enchanting table and the Spell Binding Table. Enchant any item.', t_adv('minecraft:story/enchant_item', 'Enchant an item'), r_item('minecraft:lapis_lazuli', 12)),
     ('cook', 'Cook', 'Cooks earn experience for every meal: stews and soups from the cooking pot, plated meals and feasts at the table. Plated meals need Cook 10, feasts Cook 20. Cook any meal in a cooking pot.',
      has_any('guide/pot_meal', POT_MEALS, 'Cook a pot meal'), r_item('minecraft:bowl', 8)),
-    ('explorer', 'Explorer', 'Explorers draw Survey Maps that lead the party to settlements, crypts, dungeons and boss lairs, and build the waystone network. They also earn experience the first time they use each waystone. Draw a Survey Map from a map and an emerald.',
+    ('explorer', 'Explorer', 'Explorers draw Survey Maps that lead the party to settlements, crypts, dungeons and boss lairs, and build the waystone network. They earn experience by exploring: each new biome, each village, crypt or dungeon they walk into, each new waystone and each map they fill in. Draw a Survey Map from a map and an emerald.',
      t_item('minerpg:survey_map_settlement', title='Draw a Survey Map'), r_item('minecraft:map', 3)),
     ('farmer', 'Farmer', 'Farmers earn experience harvesting grown crops and raising animals. Bring in 16 wheat.', t_item('minecraft:wheat', 16), r_item('minecraft:bone_meal', 16)),
     ('hunter', 'Hunter', 'Hunters are skinners and leatherworkers. They earn experience for every hide, bone and monster part their kills drop (and find more of them as they level), for hunting animals and for crafting leather goods. Bring in 8 leather.', t_item('minecraft:leather', 8), r_item('minecraft:arrow', 32)),

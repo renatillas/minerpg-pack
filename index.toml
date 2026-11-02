@@ -134,7 +134,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "66976d4ec98cb1f32c24ba27e9a843e890ee9358e5cf72d1c09c065c5ff5e1c9"
+hash = "afb03b4393d7bfad3e8e2a7ded6527b094800329e37580a51a15c07de1a8a5b6"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -414,7 +414,11 @@ hash = "a1765488b2eb4fb26219a1668623f3f402c7600e8ce75fbd32fb0d2641ed9e12"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_free_survey_map.json"
-hash = "285137de6ce0b162f9b094bc9748f56f607511910635df9995fe657f6f7a04d9"
+hash = "8058efc8b1268ba344c4108affd0f5e43fa30c11f9dea67373fc373628deb462"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_map.json"
+hash = "680cabbe62a60c23cc3273e517051e6554a50b47341cc46e0803f251a35fdcaf"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_survey_crypt.json"
@@ -4146,7 +4150,7 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "ee6b9f1dcbdd133bcff49d8f5018900f8deaa73ee0a2e9d4318fd63524911957"
+hash = "294b038b8745fc684687f1c2cf77415f9773617af06eea5a945fd096ce6a6898"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
@@ -5048,7 +5052,7 @@ hash = "2cfd467a30d76002f9607fef9183ae898c352a620ddefd1f7fe147450ad9038e"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/xp.json"
-hash = "b238d0edfdb113ee99d2e57f421adcc4c17675f54cf814a9beaefdf37c6bbdcf"
+hash = "ce3fbc7f702db56a2464540027b7567e6e65acabc49e6e582d24ba2727c13c49"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/races/change.json"

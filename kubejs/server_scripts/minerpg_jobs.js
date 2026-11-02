@@ -12,7 +12,7 @@
 //     (Smith); Spell Binding Table binds and spell book creation (Enchanter); gem cutting at the
 //     Jeweler's Kit and the Apotheosis Gem Cutting Table, Apotheosis socketing and sigils, and
 //     Socket Mounts and cut gems set at the anvil (Jeweler); cooking pot meals (Cook); the first use of
-//     each waystone (Explorer);
+//     each waystone, each new biome and structure entered, and each map filled in (Explorer);
 //   - Survey Maps (Explorer): used up into a map to the nearest place of their kind;
 //   - the "extra copy" power-ups: Second Helping (Cook), Mapmaker and Waywright (Explorer);
 //   - Hunter skinning: XP for hides, bones and monster parts a Hunter's kills drop, plus extra
@@ -37,6 +37,7 @@ const $ApoGemCuttingMenu = Java.loadClass('dev.shadowsoffire.apotheosis.socket.g
 const $AnvilRepairEvent = Java.loadClass('net.neoforged.neoforge.event.entity.player.AnvilRepairEvent')
 const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
+const $DataComponents = Java.loadClass('net.minecraft.core.component.DataComponents')
 const JEWELRY_GEMS = $TagKey.create($Registries.ITEM, $ResourceLocation.parse('jewelry:gems'))
 const $CookingPotMenu = Java.loadClass('vectorwing.farmersdelight.common.block.entity.container.CookingPotMenu')
 // Note: loading CookingPotMenu on a dedicated server logs one harmless "invalid dist" error for
@@ -64,7 +65,13 @@ const GEM_UPGRADE_XP = 20 // Jeweler, per gem raised a purity at the Apotheosis 
 const MOUNT_XP = 15 // Jeweler, per Socket Mount fixed to armor at the anvil
 const SET_GEM_XP = 20 // Jeweler, per cut gem set into a socket at the anvil
 const MEAL_XP = 5 // Cook, per cooking pot meal
-const WAYSTONE_XP = 10 // Explorer, the first time they use each waystone
+const WAYSTONE_XP = 25 // Explorer, the first time they use each waystone
+// Explorer discovery (designer, 2026-11-02: travelling itself should level the Explorer).
+const BIOME_XP = 20 // the first time they enter each biome
+const STRUCTURE_XP = 30 // the first time they walk into each structure (every village, crypt, dungeon... counts)
+const MAP_COMPLETE_XP = 25 // a filled map at least MAP_COMPLETE_SHARE explored, times 2 per zoom level
+const MAP_COMPLETE_SHARE = 0.9
+const DISCOVERY_TICKS = 40 // how often a player's position and held map are checked
 // "Extra copy" power-ups: [job, power-up family, item tag of what they apply to, chance by tier I/II/III].
 // Pot meals get Second Helping in the cooking pot watcher (the tag lists crafting-table results only).
 const EXTRA_COPY = [
@@ -541,6 +548,84 @@ BlockEvents.rightClicked(event => {
   if (seen.split(';').indexOf(key) >= 0) return
   data.putString('minerpg_waystones', seen ? seen + ';' + key : key)
   giveJobXp(player, 'explorer', WAYSTONE_XP, 'new waystone')
+})
+
+// ---------------------------------------------------------------------------------------
+// Explorer discovery: XP the first time an Explorer enters each biome and walks into each structure (remembered
+// per player: biomes by id, structures by kind and start chunk), and for each map they fill in. A map pays once
+// for the whole server (by map id, so copies and locked maps don't pay again); a zoomed-out map is a new map.
+// ---------------------------------------------------------------------------------------
+function discover(player, kind, key, xp, why) {
+  const data = player.persistentData
+  const seen = data.getCompound('minerpg_explored_' + kind)
+  if (seen.contains(key)) return
+  seen.putBoolean(key, true)
+  data.put('minerpg_explored_' + kind, seen)
+  giveJobXp(player, 'explorer', xp, why)
+}
+
+function prettyId(id) {
+  const path = id.substring(id.indexOf(':') + 1)
+  return path.split('/').pop().split('_').map(w => w.charAt(0).toUpperCase() + w.substring(1)).join(' ')
+}
+
+function discoveryTick(player) {
+  const level = player.level
+  const pos = player.blockPosition()
+  const dim = String(level.dimension)
+
+  const biome = level.getBiome(pos).unwrapKey()
+  if (biome.isPresent()) {
+    var biomeId = String(biome.get().location())
+    discover(player, 'biomes', biomeId, BIOME_XP, 'new biome, ' + prettyId(biomeId))
+  }
+
+  const structures = level.structureManager()
+  if (structures.hasAnyStructureAt(pos)) {
+    var registry = level.registryAccess().registryOrThrow($Registries.STRUCTURE)
+    var found = structures.getAllStructuresAt(pos).keySet().iterator()
+    while (found.hasNext()) {
+      var structure = found.next()
+      var start = structures.getStructureAt(pos, structure)
+      if (!start.isValid() || !structures.structureHasPieceAt(pos, start)) continue
+      var structureId = String(registry.getKey(structure))
+      var chunk = start.getChunkPos()
+      discover(player, 'structures', `${dim}|${structureId}|${chunk.x}|${chunk.z}`, STRUCTURE_XP,
+        'discovered ' + prettyId(structureId))
+    }
+  }
+
+  const held = player.getMainHandItem()
+  if (held.id == 'minecraft:filled_map') {
+    var mapId = held.get($DataComponents.MAP_ID)
+    // (level.getMapData, not MapItem.getSavedData: Rhino can't pick between that method's two overloads.)
+    var map = mapId == null ? null : level.getMapData(mapId)
+    if (map != null) {
+      var mapsDone = player.server.persistentData.getCompound('minerpg_maps_completed')
+      var mapKey = String(mapId.id())
+      if (!mapsDone.contains(mapKey)) {
+        var colors = map.colors
+        var filled = 0
+        for (var i = 0; i < colors.length; i++) if (colors[i] != 0) filled++
+        if (filled >= colors.length * MAP_COMPLETE_SHARE) {
+          mapsDone.putBoolean(mapKey, true)
+          player.server.persistentData.put('minerpg_maps_completed', mapsDone)
+          giveJobXp(player, 'explorer', MAP_COMPLETE_XP * Math.pow(2, map.scale), 'map completed')
+        }
+      }
+    }
+  }
+}
+
+PlayerEvents.tick(event => {
+  const player = event.player
+  if (player.tickCount % DISCOVERY_TICKS != 0) return
+  if (jobOf(player, 'explorer') == null) return
+  try {
+    discoveryTick(player)
+  } catch (e) {
+    console.error(`[minerpg] explorer discovery failed for ${player.username}: ${e}`)
+  }
 })
 
 // ---------------------------------------------------------------------------------------

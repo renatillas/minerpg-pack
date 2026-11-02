@@ -286,7 +286,7 @@ E['professions'] = [
              '$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.'
              '$(li)$(l)Alchemist$(): brewing, runes, potion charms.'
              '$(li)$(l)Cook$(): every meal, pot or table.'
-             '$(li)$(l)Explorer$(): Survey Maps, travel items, each new waystone.'
+             '$(li)$(l)Explorer$(): each new biome, place and waystone, filling in maps, maps and travel items.'
              '$(li)$(l)Farmer$(): harvesting, planting, breeding.'
              '$(li)Miners level from stone and ores.'),
     ]),

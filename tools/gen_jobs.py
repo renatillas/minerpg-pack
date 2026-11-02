@@ -245,7 +245,9 @@ TRAVEL_GATES = [
 CRAFT_BONUS.update({'survey_crypt': (8, 12), 'survey_dungeon': (15, 20), 'survey_lair': (25, 30),
                     'travel_scrolls': (4, 6), 'travel_sharestones': (12, 15), 'travel_waystones': (15, 20),
                     'travel_warp_plate': (20, 25)})
-FREE_SURVEY_XP = (3, 5)
+FREE_SURVEY_XP = (10, 12)
+# Crafting a blank map (designer, 2026-11-02: Explorer was too slow to level early on).
+MAP_CRAFT_XP = (4, 6)
 EXPLORER_JOB = {
     'name': 'Explorer',
     'price': 10,
@@ -591,6 +593,12 @@ def build(server):
         'type': 'arc:on_craft_item',
         'rewards': [job_exp(*FREE_SURVEY_XP)],
         'conditions': [{'type': 'arc:items', 'items': [i for _, lvl, i in SURVEY_MAPS if not lvl]}],
+    })
+    write(os.path.join(arc, 'explorer', 'craft_map.json'), {
+        'holder': holder('explorer'),
+        'type': 'arc:on_craft_item',
+        'rewards': [job_exp(*MAP_CRAFT_XP)],
+        'conditions': [{'type': 'arc:items', 'items': ['minecraft:map']}],
     })
     write(os.path.join(arc, 'jeweler', 'craft_free_jewelry.json'), {
         'holder': holder('jeweler'),
