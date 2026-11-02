@@ -11,7 +11,8 @@
 //   - job XP for RPG activities that have no Arc action: Apotheosis reforging and salvaging
 //     (Smith); Spell Binding Table binds and spell book creation (Enchanter); gem cutting at the
 //     Jeweler's Kit and the Apotheosis Gem Cutting Table, Apotheosis socketing and sigils, and
-//     Socket Mounts and cut gems set at the anvil (Jeweler); cooking pot meals (Cook); the first use of
+//     Socket Mounts and cut gems set at the anvil (Jeweler); cooking pot meals, food put on a campfire or stove
+//     and the first time each dish is made (Cook); the first use of
 //     each waystone, each new biome and structure entered, and each map filled in (Explorer);
 //   - Survey Maps (Explorer): used up into a map to the nearest place of their kind;
 //   - the "extra copy" power-ups: Second Helping (Cook), Mapmaker and Waywright (Explorer);
@@ -64,7 +65,11 @@ const GEM_CUT_XP = 15 // Jeweler, per gem cut at the Jeweler's Kit
 const GEM_UPGRADE_XP = 20 // Jeweler, per gem raised a purity at the Apotheosis Gem Cutting Table
 const MOUNT_XP = 15 // Jeweler, per Socket Mount fixed to armor at the anvil
 const SET_GEM_XP = 20 // Jeweler, per cut gem set into a socket at the anvil
-const MEAL_XP = 5 // Cook, per cooking pot meal
+const MEAL_XP = 12 // Cook, per cooking pot meal (from the pot's window or served with a bowl)
+// Cook (designer, 2026-11-02: the Cook levelled too slowly).
+const FIRST_DISH_XP = 25 // the first time a Cook makes each dish (pot meals and table food)
+const COOK_FIRE_XP = 2 // per raw food put on a campfire, stove or skillet (it cooks later, with nobody attached)
+const COOK_FIRE_BLOCKS = ['minecraft:campfire', 'minecraft:soul_campfire', 'farmersdelight:stove', 'farmersdelight:skillet']
 const WAYSTONE_XP = 25 // Explorer, the first time they use each waystone
 // Explorer discovery (designer, 2026-11-02: travelling itself should level the Explorer).
 const BIOME_XP = 20 // the first time they enter each biome
@@ -97,7 +102,7 @@ const ADVANCEMENT_XP = {
 // Hunter skinning: XP per material item a Hunter's kill drops.
 const SKIN_XP = {
   'minecraft:leather': 3, 'minecraft:rabbit_hide': 2, 'minecraft:feather': 1, 'minecraft:bone': 3,
-  'minecraft:string': 3, 'minecraft:spider_eye': 3, 'minecraft:gunpowder': 3, 'minecraft:slime_ball': 3,
+  'minecraft:rotten_flesh': 2, 'minecraft:string': 3, 'minecraft:spider_eye': 3, 'minecraft:gunpowder': 3, 'minecraft:slime_ball': 3,
   'minecraft:ink_sac': 1, 'minecraft:glow_ink_sac': 2, 'minecraft:rabbit_foot': 6, 'minecraft:ender_pearl': 5,
   'minecraft:blaze_rod': 5, 'minecraft:magma_cream': 4, 'minecraft:phantom_membrane': 5,
   'minecraft:armadillo_scute': 5, 'minecraft:turtle_scute': 5, 'minecraft:ghast_tear': 10,
@@ -401,11 +406,12 @@ function countIfSame(stack, sample) {
   return !stack.isEmpty() && $ItemStack.isSameItemSameComponents(stack, sample) ? stack.getCount() : 0
 }
 
-function craftedTick(player, menu, state, outputSlot, job, xpEach, what, extraChance) {
+function craftedTick(player, menu, state, outputSlot, job, xpEach, what, extraChance, onMade) {
   if (state.sample != null) {
     const made = holding(player, menu, state.sample) - state.have
     if (made > 0) {
       giveJobXp(player, job, xpEach * made, `${made} ${what}`)
+      if (onMade) onMade(state.sample)
       // Extra servings go straight to the inventory, after the count is read, so they aren't counted as made.
       let extra = 0
       for (let i = 0; i < made; i++) if (extraChance > 0 && player.getRandom().nextFloat() < extraChance) extra++
@@ -447,7 +453,8 @@ PlayerEvents.tick(event => {
     else if (kind == 'apo_gem') apoCutTick(player, menu, state)
     else {
       const tier = powerupTier(player, 'cook', 'second_helping')
-      craftedTick(player, menu, state, 8, 'cook', MEAL_XP, 'meal(s) cooked', tier > 0 ? SECOND_HELPING_CHANCE[tier - 1] : 0)
+      craftedTick(player, menu, state, 8, 'cook', MEAL_XP, 'meal(s) cooked', tier > 0 ? SECOND_HELPING_CHANCE[tier - 1] : 0,
+        meal => firstDish(player, meal))
     }
   } catch (e) {
     console.error(`[minerpg] jobs watcher (${kind}) failed: ${e}`)
@@ -471,6 +478,53 @@ NativeEvents.onEvent($AnvilRepairEvent, event => {
 })
 
 // ---------------------------------------------------------------------------------------
+// Cook: a bonus the first time each dish is made (remembered per player by item id), XP for pot meals served by
+// right-clicking the pot with a bowl, and for raw food put on a campfire, stove or skillet. Both clicks are read one
+// tick later: the held stack shrank only if the pot served a meal or the fire took the food.
+// ---------------------------------------------------------------------------------------
+function firstDish(player, stack) {
+  if (jobOf(player, 'cook') == null) return
+  const id = itemId(stack)
+  const data = player.persistentData
+  const dishes = data.getCompound('minerpg_dishes')
+  if (dishes.contains(id)) return
+  dishes.putBoolean(id, true)
+  data.put('minerpg_dishes', dishes)
+  giveJobXp(player, 'cook', FIRST_DISH_XP, 'new dish, ' + stack.getHoverName().getString())
+}
+
+BlockEvents.rightClicked(event => {
+  const player = event.player
+  if (player == null || String(event.hand) != 'MAIN_HAND' || jobOf(player, 'cook') == null) return
+  const blockId = String(event.block.id)
+  const pot = blockId == 'farmersdelight:cooking_pot'
+  if (!pot && COOK_FIRE_BLOCKS.indexOf(blockId) < 0) return
+  const held = player.getMainHandItem()
+  if (held.isEmpty()) return
+  const heldId = itemId(held)
+  const before = held.getCount()
+  // (Only food on a fire, only the pot's serving container on a pot: a block placed beside them also shrinks the stack.)
+  if (!pot && !held.has($DataComponents.FOOD)) return
+  const meal = pot ? event.block.entity.getMeal().copy() : null
+  if (pot && (meal.isEmpty() || itemId(event.block.entity.getContainer()) != heldId)) return
+  player.server.scheduleInTicks(1, () => {
+    try {
+      var now = player.getMainHandItem()
+      var used = before - (itemId(now) == heldId ? now.getCount() : 0)
+      if (used <= 0) return
+      if (pot) {
+        giveJobXp(player, 'cook', MEAL_XP * used, `${used} meal(s) served`)
+        firstDish(player, meal)
+      } else {
+        giveJobXp(player, 'cook', COOK_FIRE_XP * used, 'food on the fire')
+      }
+    } catch (e) {
+      console.error(`[minerpg] cook click failed: ${e}`)
+    }
+  })
+})
+
+// ---------------------------------------------------------------------------------------
 // "Extra copy" power-ups for crafting-table results: Second Helping (Cook meals and feasts), Mapmaker
 // (Survey Maps), Waywright (scrolls, Warp Stones, waystones, Sharestones, Portstones, Warp Plates).
 // ---------------------------------------------------------------------------------------
@@ -479,6 +533,7 @@ ItemEvents.crafted(event => {
     const player = event.player
     const result = event.item
     if (player == null || result.isEmpty()) return
+    if (result.hasTag('minerpg:job_bonus/second_helping')) firstDish(player, result)
     EXTRA_COPY.forEach(([job, family, tag, chances]) => {
       if (!result.hasTag(tag)) return
       const tier = powerupTier(player, job, family)

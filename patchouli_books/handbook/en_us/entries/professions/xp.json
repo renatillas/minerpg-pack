@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(li)$(l)Smith$(): reforging, salvaging, smelting.$(li)$(l)Enchanter$(): enchanting, binding spells.$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.$(li)$(l)Alchemist$(): brewing, runes, potion charms.$(li)$(l)Cook$(): every meal, pot or table.$(li)$(l)Explorer$(): each new biome, place and waystone, filling in maps, maps and travel items.$(li)$(l)Farmer$(): harvesting, planting, breeding.$(li)Miners level from stone and ores."
+      "text": "$(li)$(l)Smith$(): reforging, salvaging, smelting.$(li)$(l)Enchanter$(): enchanting, binding spells.$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.$(li)$(l)Alchemist$(): brewing, runes, potion charms.$(li)$(l)Cook$(): every meal (pot, table, furnace, smoker, campfire or stove), more for each new dish.$(li)$(l)Explorer$(): each new biome, place and waystone, filling in maps, maps and travel items.$(li)$(l)Farmer$(): harvesting, planting, breeding.$(li)Miners level from stone and ores."
     }
   ]
 }

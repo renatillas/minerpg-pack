@@ -38,6 +38,10 @@
       "required": false
     },
     {
+      "id": "farmersdelight:gleaming_salad_block",
+      "required": false
+    },
+    {
       "id": "farmersdelight:bacon_sandwich",
       "required": false
     },
@@ -111,6 +115,34 @@
     },
     {
       "id": "farmersdelight:melon_juice",
+      "required": false
+    },
+    {
+      "id": "minecraft:bread",
+      "required": false
+    },
+    {
+      "id": "minecraft:cake",
+      "required": false
+    },
+    {
+      "id": "minecraft:cookie",
+      "required": false
+    },
+    {
+      "id": "minecraft:pumpkin_pie",
+      "required": false
+    },
+    {
+      "id": "minecraft:mushroom_stew",
+      "required": false
+    },
+    {
+      "id": "minecraft:rabbit_stew",
+      "required": false
+    },
+    {
+      "id": "minecraft:beetroot_soup",
       "required": false
     }
   ]

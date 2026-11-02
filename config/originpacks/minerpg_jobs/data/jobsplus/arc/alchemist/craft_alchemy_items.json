@@ -1,0 +1,31 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:alchemist"
+  },
+  "type": "arc:on_craft_item",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 3,
+      "max": 4
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "minecraft:brewing_stand",
+        "minecraft:glistering_melon_slice",
+        "minecraft:sugar",
+        "minecraft:rabbit_foot",
+        "minecraft:blaze_powder",
+        "minecraft:fermented_spider_eye",
+        "minecraft:magma_cream",
+        "minecraft:golden_carrot",
+        "minecraft:turtle_helmet"
+      ]
+    }
+  ]
+}

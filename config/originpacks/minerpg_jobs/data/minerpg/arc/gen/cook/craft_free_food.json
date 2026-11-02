@@ -8,8 +8,8 @@
     {
       "type": "jobsplus:job_exp",
       "chance": 100,
-      "min": 2,
-      "max": 3
+      "min": 5,
+      "max": 6
     }
   ],
   "conditions": [
@@ -34,7 +34,14 @@
         "farmersdelight:honey_cookie",
         "farmersdelight:sweet_berry_cookie",
         "farmersdelight:melon_popsicle",
-        "farmersdelight:melon_juice"
+        "farmersdelight:melon_juice",
+        "minecraft:bread",
+        "minecraft:cake",
+        "minecraft:cookie",
+        "minecraft:pumpkin_pie",
+        "minecraft:mushroom_stew",
+        "minecraft:rabbit_stew",
+        "minecraft:beetroot_soup"
       ]
     }
   ]

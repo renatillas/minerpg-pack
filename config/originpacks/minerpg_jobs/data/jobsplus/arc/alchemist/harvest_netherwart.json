@@ -1,0 +1,26 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:alchemist"
+  },
+  "type": "arc:on_break_block",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 2,
+      "max": 3
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:blocks",
+      "blocks": [
+        "minecraft:nether_wart"
+      ]
+    },
+    {
+      "type": "arc:crop_fully_grown"
+    }
+  ]
+}

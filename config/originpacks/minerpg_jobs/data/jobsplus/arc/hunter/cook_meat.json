@@ -1,0 +1,20 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:cook"
+  },
+  "type": "arc:on_smelt_item",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "chance": 100,
+      "min": 2,
+      "max": 2
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:is_smoking_recipe"
+    }
+  ]
+}

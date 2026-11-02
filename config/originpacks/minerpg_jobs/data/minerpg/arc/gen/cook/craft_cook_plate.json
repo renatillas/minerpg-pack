@@ -8,8 +8,8 @@
     {
       "type": "jobsplus:job_exp",
       "chance": 100,
-      "min": 8,
-      "max": 12
+      "min": 15,
+      "max": 20
     },
     {
       "type": "arc:command",

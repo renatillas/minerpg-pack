@@ -16,6 +16,10 @@
     {
       "id": "farmersdelight:rice_roll_medley_block",
       "required": false
+    },
+    {
+      "id": "farmersdelight:gleaming_salad_block",
+      "required": false
     }
   ]
 }

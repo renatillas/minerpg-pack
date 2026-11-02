@@ -129,12 +129,12 @@ HUNTED_ANIMALS = ['minecraft:cow', 'minecraft:mooshroom', 'minecraft:pig', 'mine
                   'minecraft:rabbit', 'minecraft:horse', 'minecraft:donkey', 'minecraft:mule', 'minecraft:llama',
                   'minecraft:trader_llama', 'minecraft:goat', 'minecraft:hoglin', 'minecraft:polar_bear',
                   'minecraft:fox', 'minecraft:camel', 'minecraft:armadillo', 'minecraft:turtle']
-ANIMAL_KILL_XP = (3, 5)
+ANIMAL_KILL_XP = (5, 7)
 # Leatherworking: crafting leather goods (on top of the gated-gear bonus above).
 LEATHER_GOODS = ['minecraft:leather', 'minecraft:leather_helmet', 'minecraft:leather_chestplate',
                  'minecraft:leather_leggings', 'minecraft:leather_boots', 'minecraft:leather_horse_armor',
                  'minecraft:saddle', 'minecraft:bundle', 'minecraft:item_frame', 'archers:small_quiver']
-LEATHER_XP = (3, 5)
+LEATHER_XP = (5, 6)
 
 # Jeweler (designer, 2026-10-31): a job of our own (Jobs+ jobs are data), owning jewelry crafting, Jewelry gem
 # cutting and sockets, and Apotheosis gems (cutting, socketing, sigils). Its XP for work no Arc action sees is in
@@ -152,7 +152,7 @@ JEWEL_NOT_JEWELRY = ['jewelry:jewelers_kit', 'jewelry:socket_mount']
 SOCKET_MOUNT_LEVEL = 15
 CRAFT_BONUS.update({'jewel_gold': (8, 12), 'jewel_diamond': (15, 20), 'jewel_netherite': (25, 30),
                     'jewel_socket_mount': (15, 20)})
-FREE_JEWELRY_XP = (3, 5)
+FREE_JEWELRY_XP = (10, 12)
 JEWELER_JOB = {
     'name': 'Jeweler',
     'price': 10,
@@ -191,16 +191,28 @@ COOK_GATES = [
         'steak_and_potatoes', 'roasted_mutton_chops', 'grilled_salmon', 'bacon_and_eggs', 'stuffed_potato']],
      FD + 'steak_and_potatoes'),
     ('cook_feast', 20, 'feasts', [FD + i for i in [
-        'roast_chicken_block', 'honey_glazed_ham_block', 'shepherds_pie_block', 'rice_roll_medley_block']],
+        'roast_chicken_block', 'honey_glazed_ham_block', 'shepherds_pie_block', 'rice_roll_medley_block',
+        'gleaming_salad_block']],
      FD + 'roast_chicken_block'),
 ]
 # Table-made food anyone can make; pays a little Cook XP so a new Cook can start.
 COOK_FREE_FOOD = [FD + i for i in [
     'bacon_sandwich', 'chicken_sandwich', 'egg_sandwich', 'hamburger', 'mutton_wrap', 'fruit_salad', 'mixed_salad',
     'nether_salad', 'barbecue_stick', 'kelp_roll', 'salmon_roll', 'cod_roll', 'apple_pie', 'chocolate_pie',
-    'sweet_berry_cheesecake', 'honey_cookie', 'sweet_berry_cookie', 'melon_popsicle', 'melon_juice']]
-FREE_FOOD_XP = (2, 3)
-CRAFT_BONUS.update({'cook_plate': (8, 12), 'cook_feast': (20, 25)})
+    'sweet_berry_cheesecake', 'honey_cookie', 'sweet_berry_cookie', 'melon_popsicle', 'melon_juice']] + [
+    'minecraft:' + i for i in [
+        'bread', 'cake', 'cookie', 'pumpkin_pie', 'mushroom_stew', 'rabbit_stew', 'beetroot_soup']]
+FREE_FOOD_XP = (5, 6)
+CRAFT_BONUS.update({'cook_plate': (15, 20), 'cook_feast': (40, 50)})
+# Early levelling (designer, 2026-11-02: every job should be able to level early). Jobs+ built-in actions given new
+# numbers (same id, so they replace the jar's): [file under data/jobsplus/arc/, XP, new job or None].
+BUILTIN_OVERRIDES = [
+    # Food cooked in a furnace or smoker is the Cook's (Jobs+ gives it to the Hunter).
+    ('hunter/cook_meat.json', (2, 2), 'cook'),
+    ('alchemist/brew_potion.json', (4, 6), None),
+    ('alchemist/craft_alchemy_items.json', (3, 4), None),
+    ('alchemist/harvest_netherwart.json', (2, 3), None),
+]
 COOK_JOB = {
     'name': 'Cook',
     'price': 10,
@@ -577,6 +589,16 @@ def build(server):
         'rewards': [job_exp(*LEATHER_XP)],
         'conditions': [{'type': 'arc:items', 'items': LEATHER_GOODS}],
     })
+
+    # Built-in actions with new numbers (or a new job).
+    jobsplus_jar = glob.glob(os.path.join(server, 'mods', 'jobsplus-*.jar'))[0]
+    with zipfile.ZipFile(jobsplus_jar) as z:
+        for path, (lo, hi), job in BUILTIN_OVERRIDES:
+            action = json.loads(z.read('data/jobsplus/arc/' + path))
+            action['rewards'] = [job_exp(lo, hi)]
+            if job:
+                action['holder'] = holder(job)
+            write(os.path.join(ROOT, 'config', 'originpacks', 'minerpg_jobs', 'data', 'jobsplus', 'arc', path), action)
 
     # Jeweler: the job itself, and XP for ungated jewelry (so a new Jeweler can start).
     write_custom_job('jeweler', JEWELER_JOB, JEWELER_POWERUPS + JOB_EXP_POWERUPS)
