@@ -4182,7 +4182,7 @@ hash = "84eb780b421440e6926766e700d799ee069e5ee03e07c90d9eda07b4e42e6105"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_market.js"
-hash = "6dcb172ca9af0ee09decbe59bdcb97251ae1a23dceb3f56eab6c8f442c261079"
+hash = "de4e52d9c2d731010bb82875091517cbcffbcab0be483b2eb22a9eeb4035dbe2"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"

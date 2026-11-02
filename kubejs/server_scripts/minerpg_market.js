@@ -113,8 +113,8 @@ ServerEvents.commandRegistry(event => {
       const stall = MARKET_STALLS[id]
       const name = JSON.stringify(JSON.stringify({ text: stall.name, color: 'gold' }))
       const nbt = `{NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,DespawnDelay:0,CustomNameVisible:1b,` +
-        `CustomName:${name},Tags:["${MARKET_TAG}","${MARKET_TAG}_${id}"],Rotation:[${player.getYRot()}f,0f]}`
-      player.server.runCommandSilent(`execute in ${player.level.dimension().location()} positioned ${player.getX()} ${player.getY()} ${player.getZ()} ` +
+        `CustomName:${name},Tags:["${MARKET_TAG}","${MARKET_TAG}_${id}"],Rotation:[${player.yaw}f,0f]}`
+      player.server.runCommandSilent(`execute in ${player.level.dimension} positioned ${player.x} ${player.y} ${player.z} ` +
         `run summon minecraft:wandering_trader ~ ~ ~ ${nbt}`)
       player.tell(Text.of(`Placed ${stall.name}.`).green())
       return 1
