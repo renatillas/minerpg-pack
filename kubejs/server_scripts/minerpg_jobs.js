@@ -455,7 +455,7 @@ PlayerEvents.tick(event => {
     else if (kind == 'gem') craftedTick(player, menu, state, 1, 'jeweler', GEM_CUT_XP, 'gem(s) cut', 0)
     else if (kind == 'apo_gem') apoCutTick(player, menu, state)
     else {
-      const tier = powerupTier(player, 'cook', 'second_helping')
+      var tier = powerupTier(player, 'cook', 'second_helping')
       craftedTick(player, menu, state, 8, 'cook', MEAL_XP, 'meal(s) cooked', tier > 0 ? SECOND_HELPING_CHANCE[tier - 1] : 0,
         meal => firstDish(player, meal))
     }
@@ -471,7 +471,7 @@ PlayerEvents.loggedOut(event => { delete watch[String(event.player.getGameProfil
 // armor + cut gem sets the gem (Jeweler); anything + enchanted book is enchanting (Enchanter).
 NativeEvents.onEvent($AnvilRepairEvent, event => {
   try {
-    const right = event.getRight()
+    var right = event.getRight()
     if (right.isEmpty()) return
     if (itemId(right) == 'jewelry:socket_mount') giveJobXp(event.getEntity(), 'jeweler', MOUNT_XP, 'socket mounted')
     else if (right.is(JEWELRY_GEMS)) giveJobXp(event.getEntity(), 'jeweler', SET_GEM_XP, 'gem set')
@@ -542,13 +542,13 @@ BlockEvents.rightClicked(event => {
 // ---------------------------------------------------------------------------------------
 ItemEvents.crafted(event => {
   try {
-    const player = event.player
-    const result = event.item
+    var player = event.player
+    var result = event.item
     if (player == null || result.isEmpty()) return
     if (result.hasTag('minerpg:job_bonus/second_helping')) firstDish(player, result)
     EXTRA_COPY.forEach(([job, family, tag, chances]) => {
       if (!result.hasTag(tag)) return
-      const tier = powerupTier(player, job, family)
+      var tier = powerupTier(player, job, family)
       if (tier > 0 && player.getRandom().nextFloat() < chances[tier - 1]) {
         player.getInventory().placeItemBackInInventory(result.copy())
         player.tell(Text.of(`${family == 'second_helping' ? 'Second Helping' : family == 'mapmaker' ? 'Mapmaker' : 'Waywright'}: one more ${result.getHoverName().getString()}`).gold())

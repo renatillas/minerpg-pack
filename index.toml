@@ -4146,7 +4146,7 @@ hash = "31ccf4edc16032e39094dbb66e5cc6fdc7a575570fa68f1428defcb33efd2ac4"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_calling.js"
-hash = "e80bbb24dad7d3ed5e600beef913fa29a8f15047ae84486a9b11e001de938403"
+hash = "ec9c1733788c9869f82fae9a2db5675229b2a3bf49b53b03c7c24d2ba927c2be"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_coins.js"
@@ -4166,7 +4166,7 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "0789cda41948e1523d49c5876d9a958c19772c7a3a189014b172cd3206d3129d"
+hash = "84eb780b421440e6926766e700d799ee069e5ee03e07c90d9eda07b4e42e6105"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
@@ -4186,7 +4186,7 @@ hash = "6b7e323ed0a9d08f6ddbfefd81e755bad5b543d364089111a795c313820ed165"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_champions.js"
-hash = "520891bfab3f2e3451c945e9aae70f931be8d3598357cb778c1eafd2f3cea8b7"
+hash = "0ae1c586565a255f4bf29c66d25dc82b28957c3d6d0064c54db3f67a94c8e748"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_items.js"

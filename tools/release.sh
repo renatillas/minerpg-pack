@@ -21,6 +21,9 @@ if [ -n "$(git status --porcelain pack)" ]; then
   exit 1
 fi
 
+# KubeJS scripts that break at run time in Rhino (const/let in a try block or a loop) look fine on a test boot.
+python3 pack/tools/check_scripts.py || { echo "Fix the scripts above first." >&2; exit 1; }
+
 # The index must match the files, or installers reject the pack with hash errors.
 (cd pack && ~/go/bin/packwiz refresh >/dev/null)
 if [ -n "$(git status --porcelain pack)" ]; then

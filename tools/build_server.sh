@@ -29,6 +29,7 @@ fi
 
 VERSION="$(sed -n 's/^version = "\(.*\)"/\1/p' "$ROOT/pack/pack.toml")"
 NEOFORGE="$(sed -n 's/^neoforge = "\(.*\)"/\1/p' "$ROOT/pack/pack.toml")"
+python3 "$ROOT/pack/tools/check_scripts.py" || { echo "Fix the scripts above first." >&2; exit 1; }
 mkdir -p "$SRV"
 cd "$SRV"
 

@@ -50,8 +50,9 @@ function maxTierForZoneLevel(level) {
 // dimension), the same lookup DD uses when it scales the mob.
 function zoneLevel(entity) {
   try {
-    const level = entity.level()
-    const difficulty = $DDPatternMatching.getDifficulty($DDLocationData.create(level, entity.blockPosition()), level)
+    // (var, not const: Rhino rejects a const declared inside a try block.)
+    var level = entity.level()
+    var difficulty = $DDPatternMatching.getDifficulty($DDLocationData.create(level, entity.blockPosition()), level)
     return difficulty == null ? 0 : difficulty.level()
   } catch (e) {
     // If DD's lookup ever fails, fall back to a middle cap instead of breaking spawns.

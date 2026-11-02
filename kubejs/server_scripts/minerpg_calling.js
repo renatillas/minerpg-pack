@@ -33,8 +33,9 @@ const callingSeen = {}
 function callingCheckStack(player, stack, seen) {
   if (stack.isEmpty() || stack.id != 'spell_engine:spell_book') return
   const text = String(stack.getComponentString())
-  for (const pool in CALLING_POOLS) {
-    const kit = CALLING_POOLS[pool]
+  // (var, not const: Rhino keeps the first value of a const declared in a loop.)
+  for (var pool in CALLING_POOLS) {
+    var kit = CALLING_POOLS[pool]
     if (!seen[kit] && text.indexOf('"' + pool + '"') >= 0) {
       seen[kit] = true
       player.server.runCommandSilent('advancement grant ' + player.username + ' only minerpg:calling/' + kit + '/start')
