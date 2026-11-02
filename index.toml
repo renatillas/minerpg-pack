@@ -4182,7 +4182,7 @@ hash = "4294af65e087ec534600562d53733f745dbedd4047f71abb6cb11db106d85bfa"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_tier_client_sync.js"
-hash = "6b7e323ed0a9d08f6ddbfefd81e755bad5b543d364089111a795c313820ed165"
+hash = "eafe75a30a3f56417f9dc493e82a3c6b865b1dd53d68a2b6ec14580bbf939204"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_champions.js"

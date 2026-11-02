@@ -16,7 +16,8 @@ const tcLastTier = {}
 
 function tcSendStats(player) {
   try {
-    player.getStats().sendStats(player)
+    // (Through the player list: KubeJS replaces player.getStats() with its own wrapper, which can't send.)
+    player.server.getPlayerList().getPlayerStats(player).sendStats(player)
   } catch (err) {
     console.error('minerpg tier sync: could not send stats to ' + player.username + ': ' + err)
   }
