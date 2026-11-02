@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Player shops$(): craft a $(item)Vending Machine$() or another shop block, fill it and set your prices in coins. Friends buy even while you are away, and the coins wait inside until you collect them.$(br2)Put coins in the slots on the shop screen to pay; change comes back there."
+      "text": "$(l)Player shops$(): craft a $(item)Vending Machine$() or another shop block, fill it and set your prices in coins. Friends buy even while you are away, and the coins wait inside until you collect them.$(br2)Put coins in the slots on the shop screen to pay; change comes back there. Don't link a shop to a bank account: there is no way to take coins out of one."
     }
   ]
 }

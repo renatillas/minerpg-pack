@@ -236,7 +236,8 @@ E['professions'] = [
              'of its own job, so a friend with the right job can buy for you.'),
         text('$(l)Player shops$(): craft a $(item)Vending Machine$() or another shop block, fill it and set '
              'your prices in coins. Friends buy even while you are away, and the coins wait inside until you '
-             'collect them.$(br2)Put coins in the slots on the shop screen to pay; change comes back there.'),
+             'collect them.$(br2)Put coins in the slots on the shop screen to pay; change comes back there. Don\'t '
+             'link a shop to a bank account: there is no way to take coins out of one.'),
     ]),
     ('jobs', 'Jobs', 'minecraft:iron_pickaxe', [
         text(f'Press {k("key.jobsplus.open_menu")} to open the Jobs menu and join two jobs. A job levels up '

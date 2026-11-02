@@ -4162,7 +4162,7 @@ hash = "ec9c1733788c9869f82fae9a2db5675229b2a3bf49b53b03c7c24d2ba927c2be"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_coins.js"
-hash = "76c9e399e82540215e6c5b4eb6d81a70feaceb03cd5a78feaffe96fbf596995b"
+hash = "e22e441ae4f199ed4c056ebfe6be28b5c46bf03140e24c866066e02777a886ef"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_enchanting.js"
@@ -5089,7 +5089,7 @@ hash = "d5b5c91eb178f83fa3c2a1c40c2cf35610693d2a89f662c3409eb1b29c0d5352"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/market.json"
-hash = "ac69d80d913464a39ba9b3c9db69db5b37bf7d26894f153c89153a2507533862"
+hash = "0dac52830680b8f794eaf9a9608b6e2b74de096876f9abc75cb625e79c8a69cb"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/xp.json"

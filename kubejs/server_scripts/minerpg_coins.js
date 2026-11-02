@@ -122,8 +122,8 @@ ServerEvents.recipes(event => {
   event.shapeless('coins:gold_coin', ['9x coins:iron_coin']).id('minerpg:coins/gold_from_iron')
   event.shapeless('9x coins:iron_coin', ['coins:gold_coin']).id('minerpg:coins/iron_from_gold')
   // Lightman's Currency (player shops) takes RPG Coins as its money (config/lightmanscurrency/MasterCoinList.json).
-  // Coins kept in its wallets, coin jars and banking items would be invisible to the Jobs menu and the market
+  // Coins kept in its wallets, money bags, coin jars and banking items would be invisible to the Jobs menu and the market
   // stalls, and its own coins have no use here, so those items can't be made. Its ATM isn't needed: coins are
   // changed at the crafting table above.
-  event.remove({ output: /^lightmanscurrency:(wallet_.*|coin.*|atm.*|portable_atm|piggy_bank|.*jar)$/ })
+  event.remove({ output: /^lightmanscurrency:(wallet_.*|coin.*|atm.*|portable_atm|piggy_bank|money_bag|.*jar)$/ })
 })
