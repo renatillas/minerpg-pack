@@ -167,7 +167,7 @@ def frost():
              particles('spell_engine:snowflake', 25, lo=0.2, hi=0.5)]
     return 'wizards', sch, (120, 200, 255), [
         ('rime_field', 'spell', 'Rime Field',
-         'Freezes the ground in front of you for {spawn_duration} sec. Enemies inside are slowed and take '
+         'Freezes the ground in front of you for {cloud_duration} sec. Enemies inside are slowed and take '
          '{damage} frost damage every second.',
          {'school': sch, 'range': 0.0, 'tier': 4, 'learn': {}, 'active': {
              'cast': {'duration': 0.5, 'animation': {'id': 'spell_engine:one_handed_area_charge'},
@@ -296,7 +296,7 @@ def paladin():
     holy = [particles('spell_engine:magic_holy', 20, color=HOLY, motion='DECELERATE', lo=0.2, hi=0.3)]
     return 'paladins', sch, (255, 210, 90), [
         ('oathbound_aegis', 'spell', 'Oathbound Aegis',
-         'You and every ally within {range} blocks gain a barrier that absorbs damage and take less damage for '
+         'You and every ally within 8 blocks gain a barrier that absorbs damage and take less damage for '
          '{effect_duration} sec.',
          {'school': sch, 'range': 8.0, 'tier': 4, 'learn': {}, 'active': {
              'cast': {'duration': 0.5, 'animation': {'id': 'spell_engine:one_handed_area_charge'},
