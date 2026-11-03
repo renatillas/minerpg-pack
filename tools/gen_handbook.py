@@ -410,7 +410,11 @@ E['loot'] = [
              'for it in boss and dungeon loot.'),
     ]),
     ('reforging', 'Salvage and Reforge', 'apotheosis:mysterious_scrap_metal', [
-        text('Break gear you do not need at a $(item)Salvaging Table$() for rarity materials.$(br2)At a '
+        text('Recycle what you do not need at a $(item)Salvaging Table$(). Class weapons, armor, quivers '
+             'and jewelry give back part of their materials; relics give rarity materials by grade; gear '
+             'with a rarity also gives its rarity material. Unique weapons always have a rarity. Spell books, '
+             'scrolls, song sheets and upgrade crystals cannot be recycled.'),
+        text('At a '
              '$(item)Reforging Table$(), spend a rarity material and gem dust to reroll an item\'s affixes '
              'at that rarity. Reforging to Rare, Epic or Mythic needs Smith level 10, 20 or 30.'),
     ]),

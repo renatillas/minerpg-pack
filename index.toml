@@ -4005,6 +4005,2238 @@ file = "kubejs/data/minerpg/rarity_override/apotheosis/leggings.json"
 hash = "52bc1c272c440d95d0dcbc510dd347ba97a528eaa2c821f25322e1527e0d9172"
 
 [[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__aquamarine_necklace.json"
+hash = "b9b6d83d307e59f90712054cb5b9d431b9732bb509e2743a8a4bb74d0ab87d7c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__aquamarine_ring.json"
+hash = "b2bd873ba20088ef5dc266157fa1cf95d69a1d22af7c7a508134e3c3e82bb4a3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__cactea_ring.json"
+hash = "60ba8a747f02786112a59d7066afb6dd050a5c2020a8a2a8f9d7b2429168cddb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__dark_steel_jade_necklace.json"
+hash = "4ddf9ce632e702e0defe32d7a9a824b954bd623ed3a859577c3d6c8a06125a33"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__dark_steel_jade_ring.json"
+hash = "ebb52fb1a426cc2dadb67776243c2836764d562f6a006a91e18b5612e3b4bedc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__dripstone_necklace.json"
+hash = "84ba7cbc0c03dfa32a3575e8ca1576b0fd724b4857098b21343ad2609f321a74"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__malachite_necklace.json"
+hash = "6d7b8cec5b4a96744b86116c48b8c3e245eee22ea181f319a021e3e85a1de3e7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__malachite_ring.json"
+hash = "dd173dc4d214fb0f2a7bc4f8595b7b5fa17094835b59d9498d169d53b6a8244f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__meteorite_silver_sapphire_necklace.json"
+hash = "601487e0fb5ef96abb36e436e52e20db7178c6f725123f0ea8db0bb1fcb149c7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__meteorite_silver_sapphire_ring.json"
+hash = "6a726c9d033c0e2905188020fbc47a1d79e820bca4cfaace2592466e1f485af0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__netherite_aquamarine_necklace.json"
+hash = "69c14e177d59807d1628f8d6ab44e342719fde1c5e99a01e8e6cc1830d5b15a9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__netherite_aquamarine_ring.json"
+hash = "5332c57141c9f7c0fa593010ed0e21da4ff7a36abbfcde6865f48bd4bcd971d1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__netherite_malachite_necklace.json"
+hash = "55203ddfa8e44b583563d90c690ab45f25cf4145f686de824dc24c0587cbf0d6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__netherite_malachite_ring.json"
+hash = "ed63bfa3e5bd2d9b769e2c9fcb999a45f05d2c6507ab54095fc880cb1cf9a3c5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__netherite_rage_necklace.json"
+hash = "adea44d2276d630df765ce2bba2f7138a33f029628d99f5294db1c2637e3693c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__netherite_rage_ring.json"
+hash = "47032b4a4f93646c4710d5d3841fd5857169cc903f87486fdbe789477a875a43"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__rage_necklace.json"
+hash = "8ee9a8076f8a25ead07e094494d1c279ee096e470a86f4471117f4494166f994"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__rage_ring.json"
+hash = "1b729c25a23c5c535ad5f6d2d5851b1a46c91df5468d8c74bce8ae56521cb155"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__silver_sapphire_necklace.json"
+hash = "4206cb9607b58e98d38635b69e33b094d996afe18100be4bdaed0655400d0f40"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__silver_sapphire_ring.json"
+hash = "178a66540f5b72f23dfc2d8e5e290e0b39589efe143ae725fc471d6981b89fc0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__spell_vampire_necklace.json"
+hash = "f491b326d3d2aa4aef77c5892bc95a1b42621fc31bc1459d1aaccb520cb67c4b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__spell_vampire_ring.json"
+hash = "dc35ad40170ab91b4e7f013305cfb3f865c3d3e57181ed0b39028bdccff9ab55"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__steel_jade_necklace.json"
+hash = "e14baa45a12dfe3a41d6c2a86dff60ce53da69ae22e959f5d6f6750b05efaf4d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__steel_jade_ring.json"
+hash = "eafd690577550de0a4b322779808f7ec5669729e38405507ad8ec1732c69c670"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_earth_necklace.json"
+hash = "029e63bc9383472484f9141c6e50a2722d216add3045fcacf38fd3f3a0764432"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_earth_ring.json"
+hash = "ab481ef2b7190973c78d101efb4a7fb43135a4ba46f07fc998c3b3ea99ae8ad8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_forest_necklace.json"
+hash = "75b4c68e403f1ea12d24c8914f4cad93d827d6a8501b5a4da347b0cf37cdefaa"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_forest_ring.json"
+hash = "da700fb8e6aba9317f2a66ad6bdaaef1b90a85338aab57c763edece0aa6dd574"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_ocean_necklace.json"
+hash = "0375a2b2b599923a100b73d14abb8c449a9f123cd7ec4ea530a4162bdbaa67d8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_ocean_ring.json"
+hash = "fdf3b34c79fd49a37169ce2fce80b642d0236132675f0cbcabedd363befc6280"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_rage_necklace.json"
+hash = "31b19cd9e21449970506af17e777bc59f2acd437e6f4b87cc285ca760b6d6a32"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_rage_ring.json"
+hash = "1a9d715b97dc0cc2a22d3f2572cae7350951e8764a26798e2fec642e3b7227ac"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_sky_necklace.json"
+hash = "426582e0e8bc72941730238abad20b01336f272ece7e5a90501bc2b5499a98b7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_sky_ring.json"
+hash = "99f7f14bebda5e8c4ae62acff94656f95c58d7a0db27d41ef3ea725b06f661d7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_witcher_necklace.json"
+hash = "e76472b45e8b6358ccd2a19632ed383c52d8431512b1d3882b728c8ad8f53d78"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__unique_witcher_ring.json"
+hash = "d94bbe67ccc4178144179d48e334f1e3108ace1a5cf6dcce241192179359ce71"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__vampire_necklace.json"
+hash = "28c4f6c7394fe81b5bf5e2eecdcf9ff081b7bf46e09110ea5fb0a014718c2b70"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/additional_rpg_jewelry__vampire_ring.json"
+hash = "b7359298ce1d6c83cea84e494aadadeb1c0deefd0cd25bab0c242a47a4ee71a7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__archer_armor_chest.json"
+hash = "cebd7a9aef32873f17ae01712f287e3f6a61a2cb01864890e2a73e6ac2759ceb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__archer_armor_feet.json"
+hash = "1b67f2f1815c76a6e5df13f88684fca2cdf9993ce04a95a9c0d09dc75bde4ae9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__archer_armor_head.json"
+hash = "69eadb36cccf68b64b17889d0d96fb258e008a96cea590feb15bdb23178f408e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__archer_armor_legs.json"
+hash = "f7593a76c34d7b172398c2274e29a96efbbba8581c0fef6433161c79e1760a31"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__auto_fire_hook.json"
+hash = "6fc15c6d4e7fb2274e18c25612356ea037d4dab702fe8981432cc20b81f02205"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__composite_longbow.json"
+hash = "65e30dbfe8c7ce16ec714f9444e53815b8c84f821d7872132752d62d16aeabc0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__diamond_spear.json"
+hash = "012fae663b0afc1b2a410c94c02b8a1be2d0a3db83f214249adb2f7a137e9ad4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__flint_spear.json"
+hash = "d627cb909d611a8eaf14e43c1b1d43c138ef7180bd06a10bab51aa7dbe0c47db"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__golden_spear.json"
+hash = "abfe58d96514ad901a7906a1bcdcf7a4254df8c58aaf6f587a976e5400e22a38"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__heavy_crossbow.json"
+hash = "e5f5950d631ebd0672b3b41ed72ff76d5882cceecb77ba356376f115cce8bddc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__iron_spear.json"
+hash = "d460396b89068f698283652df1ad7ec79501c6df6bd5c14e41e847a9d2bd5ad4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__large_quiver.json"
+hash = "d9f2c0d8ffebeccb1fa227d54834af68a4e47e5213d54b09db3ae550d1bc90e4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__mechanic_shortbow.json"
+hash = "f8cad0e80efdd647f5f499078ce0ce7af7b5e67eebdab6b9924c5117f02e1be9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__medium_quiver.json"
+hash = "431fcfbb8c648b7ad6068c03542b0be570a93e647d2b22d940cb18e0cff6319a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__netherite_heavy_crossbow.json"
+hash = "6276cd4df4a6213da544b513ddf241da0d0ffeab6cf2974e74ee4d40cdd4b6dc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__netherite_longbow.json"
+hash = "17f42413ffebe523cc755554187eb72bbcf05fd42ea80f285fbad79a5f300a27"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__netherite_ranger_armor_chest.json"
+hash = "119c57cdd4754296ca55f3c5b0941b5d37fe253888aeab1fa902de6c63afb436"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__netherite_ranger_armor_feet.json"
+hash = "44506ab971c998feb6dd031ad84efb2e288b6d9c525474f89c9d3ff88a1dd004"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__netherite_ranger_armor_head.json"
+hash = "0477de3f9df0eaa875f3a5310b95499f18e3ff5775f4c069c75baffb676a158d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__netherite_ranger_armor_legs.json"
+hash = "4c51f8ba733b47c1c8b2f9201d6e64955a865e4ed05355bb5021b4b9c720c357"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__netherite_rapid_crossbow.json"
+hash = "5129df69d82bdf79edb15b220ac422af8c2fa3c894eea6aec500697356e95ffa"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__netherite_shortbow.json"
+hash = "3f8c15798fb16f6f8c0c31a1162a5bbc9924b257a28b497c857c0c23dbd5e622"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__netherite_spear.json"
+hash = "605c942bbd200f87d5f14bf95eb44164b6b6cccc524ffac8ace66f529917706c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__ranger_armor_chest.json"
+hash = "d767930e9015854996cb28907e33a4b7b8dd54289540109547808d3fc8fd4ee7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__ranger_armor_feet.json"
+hash = "b85a3a87059f353e6d65134e88c13106538a61f1e0029e7f424691dc81b84010"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__ranger_armor_head.json"
+hash = "846a549bf5d947acf0ac152b4fe5021c83f6577c36f4986b0e246b3c58edd78f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__ranger_armor_legs.json"
+hash = "f11c1a992767c340ef50327c6940afdaee2a49b2ed0adc0ef319b8ca68f7251a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__rapid_crossbow.json"
+hash = "61bec30fb03cb57f1452690007bc5c642d8b12573847a26fc14a8a6d89410c5c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__royal_longbow.json"
+hash = "f6276d458165ebcd1b4f6596f075b223c3b8296d2d5783fceb1615dee80e4a30"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers__small_quiver.json"
+hash = "2bde2ba0d88e2cef0323214da8c6cfb0b65ce6a80c8e67cbda9140f8c9d7afa2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__bounty_hunter_chest.json"
+hash = "7071d53f8d59022232d5e63b3e2f87ad6efc65d6b21ee3b6b053b1b5411ba92b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__bounty_hunter_feet.json"
+hash = "94c145352eeddb66441d88247375cc3fa6ae3dd080939ba319f723451446b575"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__bounty_hunter_head.json"
+hash = "10ac7211ca72bfa9ed10ce1651904c1e4e80f5020e1e8cd31a2b5284efbe0072"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__bounty_hunter_legs.json"
+hash = "c6dd8eb35beb4f680741c7bb5cf5aeae011be2230d1d791ab1083ff77143fb48"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__deadeye_chest.json"
+hash = "f6a2e5947c3840a34223b7b0582651ba444aa45192d95268dce66dc12027410e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__deadeye_feet.json"
+hash = "8d5f1f85184683baa229ea3b2b1b30e6c3ef2821d9899709cf3073bae4f37bda"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__deadeye_head.json"
+hash = "6fda8aba71d27a3fbf596f9a37852c0949e69f3a3da3128663a4f66646668511"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__deadeye_legs.json"
+hash = "8d4864e0b5aebf03453f96a1ae8fcf82c55868210f7e75d126dbd845c5ecf60f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_deadeye_chest.json"
+hash = "410c1094702f0a347fa24996bb03edcb48e39083709b9c3ca50b4fd6439f2aed"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_deadeye_feet.json"
+hash = "7e39d7522c6ea5051a3a101c4702f0ed363afe01da485b0c41fddcb42d946812"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_deadeye_head.json"
+hash = "fccb6dc2ed2b66d4ba7d1a4d1988f32e2ebc50eb73d203ba78119481cbb69bb4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_deadeye_legs.json"
+hash = "0b4bf1a1811546028db2f92b1a74de6450cc792761af537ce11647b1bc7a3436"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_tundra_hunter_chest.json"
+hash = "8141aed2a47e8f4c8b4197c7293e99b2f102b19b48d8e817ca1c20edd7fb05cb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_tundra_hunter_feet.json"
+hash = "5d435df4dbcf9fef4031f75ddd720c6ae0b018086512f4df343381d3e81a0e5e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_tundra_hunter_head.json"
+hash = "57d14d2909de78569f99a0b4c98f9e2bfc256a2bdde54d02948ec8dbb21b96a8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_tundra_hunter_legs.json"
+hash = "eeb318b9429d167254e3a150e060048f2464ac10dd0e38397ce00dfb9756225b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_war_archer_chest.json"
+hash = "43840c0e1caa339a495f46b74096e596b182c57c344792432de0da6517667336"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_war_archer_feet.json"
+hash = "11a953bf80f3b306e286b3faffc21b8f3f2ae3b6494f6d0c7fd7a45dc8ee5c60"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_war_archer_head.json"
+hash = "608b216ed8f0782a435db4c55cbf5830fd31ae797e81334fe739ab63f1a3e184"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__netherite_war_archer_legs.json"
+hash = "aca3ef38daad276f91acd6594ba13e06cbfdc6c40895fb625022055d30ad7f02"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__polar_stalker_chest.json"
+hash = "7fda951714c626b8db80301d2dd72637e5b9632d011aef5420055cd3c9c5f6b9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__polar_stalker_feet.json"
+hash = "71f3216fa5df4b732511be46b171a742ffe480e29e94158ea531bfaed4e3cd4b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__polar_stalker_head.json"
+hash = "4a655d9c2c3208d9e117b38b116451aa1c71cefa5e6d95ad0c48eb5b312b9817"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__polar_stalker_legs.json"
+hash = "313223edcd0805723497ed856e7c8af7d21be93a739443370b80c909cc86dc50"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__sentinel_archer_chest.json"
+hash = "756ac567c1c5f3ea8511d317bbf206b1e359873a4ce1abac2d1358fab413b5bf"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__sentinel_archer_feet.json"
+hash = "1eaf979ff15ab7777b1ff050a734f65676ab2b433d9586e16fa6feb1fbf55da9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__sentinel_archer_head.json"
+hash = "b421b94b59ff97d145ce7f94728d09b62109d117e6e63d3058366a087dc81e7d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__sentinel_archer_legs.json"
+hash = "a0d97bb062f3aff03ac459651308734492bfa190a71db3e7a31fd04f949eda26"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__tundra_hunter_chest.json"
+hash = "fcf2b9403689df2dbe72a1d2b002e9a9899a16acc743e86493d35c9b73ce6783"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__tundra_hunter_feet.json"
+hash = "868de7237d0100283802c8199121b636801ed16520c9adc54f6a0aa33a14fcb7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__tundra_hunter_head.json"
+hash = "c466086ec00b57d9cd11c34289ecfbfcd458309602e02d9b216c8f07c3c4f360"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__tundra_hunter_legs.json"
+hash = "25fd52a5a3c465fd4392a513c201015fee8b2f15a36398c5e7f097f5a15de761"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__war_archer_chest.json"
+hash = "f0ff493840c871ad21daaeb3552da8b79a9df80c39bc34b08a79f424222437c5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__war_archer_feet.json"
+hash = "2d10d7830389e1ac73a2da508eb6301bae169ac90157f96fcbcb8210d3ea0f70"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__war_archer_head.json"
+hash = "898bbdfddedc7bf86eb976b9c9902a917b6caf523bd4ee90bead3ad51bd36950"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/archers_expansion__war_archer_legs.json"
+hash = "f8052a9e23eaf4afe715648a2e01eeb078729f9af3603a3978c9bec4d00c3c28"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__absolution_robe_chest.json"
+hash = "3a314a39f0767564c8081872c8ebd8c544dcadc258c5fb18dc643a42a852bc06"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__absolution_robe_feet.json"
+hash = "07afdc7a73af9f51365a8144bc059d62d79cb879b8957287ce0c44c73cabd1ac"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__absolution_robe_head.json"
+hash = "3ebcaefecffe68d05fb3abb8d392e8f1ae6ba9d43563fe17270fe727f89e9085"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__absolution_robe_legs.json"
+hash = "5660cb1bbfe6e08f8ec363253f7bfa8322f11a3fb8ee5af211e9694a4f35741c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__astral_robe_chest.json"
+hash = "aae713a8dff39857b60ab44b8f3b5101ad5a6499e71c63d9d48a7c5bbb44fd4a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__astral_robe_feet.json"
+hash = "6ef6b975848497a7d855fa0e96c2dbf5f6d51e9d510ddf746d55e383c3b1ab6e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__astral_robe_head.json"
+hash = "5b23c25497c7fcdaa58c11478ecd0bb7bfd95bddea11eb82384cd620ca6fb6b1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__astral_robe_legs.json"
+hash = "15cc762e7e9022059b3bfe9586009b93a648d49d84ec128f1d971fad51bf9fc9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__avatar_robe_chest.json"
+hash = "21e4e1fd1cf6882def5709b824a07a358d0bb2bdb9df9c903f804c1ce36ba96c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__avatar_robe_feet.json"
+hash = "387f3b5332d277789ca9252302782c913884ce5ca83035adc59ade0862b94fc9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__avatar_robe_head.json"
+hash = "2cf7da60175b2a06abb88b8764623474d0bc10b35539aeeff866a7336467eea5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__avatar_robe_legs.json"
+hash = "a07fc99191690f884dee6d1eb4b19716eff8431beda4b2d67e9fcd1e5423c2fc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__deathmantle_armor_chest.json"
+hash = "30f6791c84a1b60ebdcdfc5dc652e6e63b4ac271f50ac1f45f3e3dca8ae057a5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__deathmantle_armor_feet.json"
+hash = "515fb9ebfc343e128ad51ec875806fef6d3eb7966d3312f5c35d37fac4f552e2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__deathmantle_armor_head.json"
+hash = "ef6a2204e7d108a955c8fce99e6f9e552da635d668d9498f957c12de42d5b596"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__deathmantle_armor_legs.json"
+hash = "81fdc566e2ca47710f20232da66fd89fb09cd60058e7c99e6c80bbe2b7cdbf7a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__destroyer_armor_chest.json"
+hash = "f9e72ece653b76837bd8a05f624f2ef7c6b350e22ac4d9508deaeef380226c26"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__destroyer_armor_feet.json"
+hash = "4fd0c19abfcd7fb8f823c303694120ae5b34a8af8de119cf61d786672bcc24ad"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__destroyer_armor_head.json"
+hash = "a9c3db780bdf13f2d8fe7b9d4916bd6d9fe772d31869ddff746621020dc21e26"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__destroyer_armor_legs.json"
+hash = "2cb19c6c66fc81f11d47521a0eb297a6fb9d97688aa602fa076db5eaece1b5bb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__glacier_robe_chest.json"
+hash = "ba89b22832aac811cc3da4a0b9780f9782840e81daed687b6734dec28724cb25"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__glacier_robe_feet.json"
+hash = "d5671f3d8da7502cf605d07b8e5b89c4c3d2bf60d1c07fbae0eba8c45a555aa4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__glacier_robe_head.json"
+hash = "1e417778e4a4b6c41a2e394e54412125175055907355ea5d8e7c00a6cf6184cf"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__glacier_robe_legs.json"
+hash = "7e8f9dcf7b431a00dbeb2a0624a553130d55819ca85b4339afe42d51cd29da83"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__justicar_armor_chest.json"
+hash = "b368c662f0222f6ed50604ede62cc409a67fa02e90bd025fa5b60ecc6180b19a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__justicar_armor_feet.json"
+hash = "4cf95797a495329753b499a3cd7a7f15db6053fd0b90eb0c3a2a25550899f063"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__justicar_armor_head.json"
+hash = "0b3565f507b9fa9be53f4936282482e02f53ef2f9d67a185aa65775e31a78f7f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__justicar_armor_legs.json"
+hash = "af2e49f7bb9ec1b796550c7d17e6500536e2e8c4e5c86f3f7bbce58511c5485b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__lightbringer_armor_chest.json"
+hash = "b3c224cf7f0d9a0a62807a301c7a971c97fcfcdbe2f36223cd6584ab5ba25a94"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__lightbringer_armor_feet.json"
+hash = "15e2b5f841ec9b16e31be172f013d85973b9fc020a3b38b492399bfcbb9d8325"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__lightbringer_armor_head.json"
+hash = "e412dd3cb8c9bdcb9ac2df86d1f61c295ab2735c191afc7c95bd6669187296c6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__lightbringer_armor_legs.json"
+hash = "b673a4dfdb8831d55d79d112308f448ae69bdf6fa14e0dd4ee181f891d26f166"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__onslaught_armor_chest.json"
+hash = "0d88540317f645bf2b9c3d20e252e23edf8af6a8e2abf37e109786dd6de7291d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__onslaught_armor_feet.json"
+hash = "3dc6f8a83734f98e75fb1df40e6b5873bb1ca5f80a955c88be09885e58bbc364"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__onslaught_armor_head.json"
+hash = "14dfc3a5878f148fb6638825937241c49051a00b7f8e4a0f92f1c60a5986d3ae"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__onslaught_armor_legs.json"
+hash = "42d786540ae4294854a0b0900b9e3dfe1d06f577e4fe5de1e5cf055e623b05d4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__riftstalker_armor_chest.json"
+hash = "02c4651db3cd47892dc8de2b9a79c9c0a886c7b56053c777b53e5865f3794590"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__riftstalker_armor_feet.json"
+hash = "7437ce75c0d920d1899672d840bf3465bc826686dd4ffcf712b80818eeca363b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__riftstalker_armor_head.json"
+hash = "68ba42f7b0aa7c6b428d91bdab9edffe1d897d9055070e9d4287657148d06f87"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__riftstalker_armor_legs.json"
+hash = "8ee258e966c695156f504e02a82cf831444635289ab0114e77d12dc2a9daf5a8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__rimeweave_robe_chest.json"
+hash = "34c2faf08a1bf4ace3fb8eb0d767cc8372a1ead7cbb25930b2f1e8fdbd723981"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__rimeweave_robe_feet.json"
+hash = "13a4bd9d55766bd1e29a9a911de020b094998a7dcc8fdddc657d5d98b73d1fd0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__rimeweave_robe_head.json"
+hash = "56ab7a4a0304df28d23202c39c619eee22ba486dbc8bafe4d90da004d09131c3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__rimeweave_robe_legs.json"
+hash = "1aacab28d3f179b95347f78b93532dce592fc3cd7ef23ca4e08b6f28e5e8151c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__scarlet_robe_chest.json"
+hash = "46d7e1ddb645bbc7e639123bde777c51a955c9c7542882a5dec564d1493957ac"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__scarlet_robe_feet.json"
+hash = "8869727088f0e8e24fdb49fcb190e25b82305b6cfa4b07886aab61579f0c0243"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__scarlet_robe_head.json"
+hash = "a9668fd0552b35d22a3929ea80129db10983f2123151075c1ec4eeb7f52acbcd"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__scarlet_robe_legs.json"
+hash = "c913028dc145abd5426fb1ee584dc72431d35a0a2382467f5b1d451cdbee15d3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__slayer_armor_chest.json"
+hash = "ac4472fc437f86459849948994227ef14eacc5773fa26436b273fafaf1bf7f3e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__slayer_armor_feet.json"
+hash = "ecdb5faacfe4681e2abd476c4de602649f15409b927bfd541fa4cbefa88a7b57"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__slayer_armor_head.json"
+hash = "1d219b43c5dd4abd86a1c8fb16c6be6fd3d8ddac018fc72533d8d28c14cc655f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__slayer_armor_legs.json"
+hash = "dad94621916283ef288d8c0650815b5a6b32fd830202e96702a0016813976d28"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__smouldering_robe_chest.json"
+hash = "9437c7f11090ac4ce5596f86b1ba4242dd9254658951413115b8341680abd10d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__smouldering_robe_feet.json"
+hash = "d9cb0cc1518d3d2ccb0354df1651388aa4a519c3f6cbb5b145e9f99a8b77d8ae"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__smouldering_robe_head.json"
+hash = "c0f63be70dfc1c3e8dd5665fedbaa563d23fe5c6faa59dd4eb9d26771483ce7d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__smouldering_robe_legs.json"
+hash = "c81d6675ce499f9eb5fd8143afc7a4188b586ca4791c38a1cc161f48fd78c18e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__strider_armor_chest.json"
+hash = "07bdb6db702706ffe80c2b7984cd4bf26fdd9a11bc929b5ec8404e4398b60cc5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__strider_armor_feet.json"
+hash = "8422c69419848ae6d38962ed6c4503a724a9a75b6690be99d997c6cc65519b73"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__strider_armor_head.json"
+hash = "b55ca54e5c3fa9fb6369eb4057df72894e7351950adffe0ce15e370ab15a90b4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__strider_armor_legs.json"
+hash = "cab2546ce584550df09d147d25e5c7e62433de3cd2db1a998ad85c9952707064"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__tempest_robe_chest.json"
+hash = "16d0bebccf61369f7164a61e7fd66f1037f9f2adfe2c56fedaa10590dc3a6671"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__tempest_robe_feet.json"
+hash = "c04b66fb47ea595d3b6a6bb7850dac4183b0ac6111e92c0ed02d452625767261"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__tempest_robe_head.json"
+hash = "37337f6e364f7454e4dac712aa75c7977413fb6630ee5ac5bb198ba27c480878"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/armory_rpgs__tempest_robe_legs.json"
+hash = "cc6d6f09420d59e64ca04ec75098cc00906b3d5afb517672ef091009fb8cbdeb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__aeternium_lyre.json"
+hash = "ded97b3f5e49fb13bc1484e15ea26437e8279de6dfaa83605de4a6f00e7f91ec"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__aeternium_rapier.json"
+hash = "82254a8934017061ee9ba3f3539b6128502c58e72fe2a7bc65739a6bc33d600b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__diamond_harp_crossbow.json"
+hash = "4831d2f2ba98f8f80d81c95184959dd9419c7b46fb19da890488a3bc68244654"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__diamond_lute.json"
+hash = "1045ea6d7acaf809fbb8bf66b07204e8a562dfd4016294efee882ab17b3a5545"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__diamond_lyre.json"
+hash = "abea2e654b8a399aac5b6bfcddde30fb79bbf08f7d4224f042b87aef1addd4d0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__diamond_rapier.json"
+hash = "63734e96ed405039a17eea22773c259493fa79848638a2b81779b4b4ac7bb1ed"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__entertainer_garb_chest.json"
+hash = "3d5c6487ab77a9c0fbad3a7afa7101e3ae0117d405551d3b5ea05111bae00ea5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__entertainer_garb_feet.json"
+hash = "e60e0c5e345463efef2393a70453c14a278c305de5559e0983336ed969d8aabb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__entertainer_garb_head.json"
+hash = "d23bebbf4296ddc06d953ae18ff76a6736c5920c9bb76644b0293844ee12cbd7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__entertainer_garb_legs.json"
+hash = "3e0dbda31b1f88eba6158d54cb7ea7de6c85ebde1b14300b2dfca91cdb56e0c1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__golden_lyre.json"
+hash = "a642416da4a9e086b876529279b07424567e6409c95d7c52564413c7983ad380"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__golden_rapier.json"
+hash = "416cbb9d7b9e2f4c1d37607bf2c59f60b423976a2637ec2383246907effee9bb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__harp_crossbow.json"
+hash = "7de7e56d025352d8cfe652345c42e0ad469de379fb35d96f27958cbba2a579d1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__iron_rapier.json"
+hash = "9310404ae64dafdc42495cad4213eab758f4f14a37cd02c88a19d1ba2b7e963e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__netherite_harp_crossbow.json"
+hash = "1c6f40df6b4ccfbe7ac0e40f0a2ca348ba24a3bc1105942119db7f0cc1aa1fc7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__netherite_lute.json"
+hash = "70348577c1144e7e766437c2eac83b7ecea1f8a6e2744a3f47c21d7b54aacd2a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__netherite_lyre.json"
+hash = "408e6ebe9379046be4fcc63d811633508c567e8962635c3ae0904e4115975bfc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__netherite_rapier.json"
+hash = "377cc3071d17462cf71cc497897d301e9f7e544ea20c3adce872e26e06b9f4be"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__netherite_troubadour_garb_chest.json"
+hash = "4f7c32f964c4eda4fb569b088198c7a6a56b932e485342885706c28ac1a8506a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__netherite_troubadour_garb_feet.json"
+hash = "ecef74bfe4b1958ed9e3edd1ac2b57bb157446b0b870a357ff61c8f263b2ef05"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__netherite_troubadour_garb_head.json"
+hash = "3917ddc124acd2b8dc280a7a4c7c525dbcc71388479e5d0a284cc5de2c4f5860"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__netherite_troubadour_garb_legs.json"
+hash = "a37ecf5cd4e5530a6511cd2bb6d519a48aef61117a0f968918dc1d4420da23fc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__storyteller_garb_chest.json"
+hash = "4e77e5f9989738d14544207e9efaffbedc6a87bdb9498c1dfd5c8ce7671230b1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__storyteller_garb_feet.json"
+hash = "dd568d505603f2c93c99344d23b71dfcefe2bb75b351eaa6493122b159c6d584"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__storyteller_garb_head.json"
+hash = "116c10fe03bf3f50bf42c047c7fce27cfe4ccbca1d76048ab8c666672e0deec9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__storyteller_garb_legs.json"
+hash = "91312cb2520e2bc8a5d40c8d461ad81dd34f573641b4884e517d9151586d739f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__troubadour_garb_chest.json"
+hash = "d5c3e16096de6bd60be622760307cb3d1a0b51dd15859bb33403d5602385296d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__troubadour_garb_feet.json"
+hash = "57d18daf11e8e45da42e72e8fb58968cb6ca0b6c65154aebf41bdf2ced0e744e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__troubadour_garb_head.json"
+hash = "037b226ba6a2fbd7ad344d43d9ec94f702232cb8869636038b8ffe03ddbba8b5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__troubadour_garb_legs.json"
+hash = "d503d160d986e4b4f2a97831072227720afcca325f894986bc02e33b119e1fe0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/bards_rpg__wooden_lute.json"
+hash = "863cf8df85b6a475f6dcd92205e204d249f52362572edbcf5b21760b34163910"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__diamond_berserker_axe.json"
+hash = "cd08f149d82ff2690f8c156ef683831b4b87bebe2f186230bc3fb9a96f835734"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__flint_berserker_axe.json"
+hash = "11b7759535e688e35203489ad8ee79d20006ff29b9640f6b55a535fdf5eac205"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__golden_berserker_axe.json"
+hash = "bc285e49e4d6cb34a917b9abb7402f85d9987659e2dc138a7f5e407cb8c8eada"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__iron_berserker_axe.json"
+hash = "2cd5e098a3f665e376382771b7ca26dc2cc5b5b89274198569822d61db0204c2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__netherite_berserker_axe.json"
+hash = "bed243f27db608ae323563ca36bdd51deb8604b95e11c3bfa19d2f570a59edbb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__netherite_northling_chest.json"
+hash = "3d9596cb7f5b42a151d2261876624e2a7599535e370aff4dd71293b200ef6058"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__netherite_northling_feet.json"
+hash = "b01ec856765aea23f8d1e745665cb4d47020e8bcc22bfbc04d878e7912da3622"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__netherite_northling_head.json"
+hash = "7274a462ec3e02ce3198dca59947cbef345c4247483f86d384347a55a542c728"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__netherite_northling_legs.json"
+hash = "6190bb7651e54bdcf975f2073f5170fc97224f685ce5b3e9719c4d2d61df3dff"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__northling_chest.json"
+hash = "5b9004a8b34733dccbf4d11653e15fb8fff8cd9710e31d3b1c3430297b25eda8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__northling_feet.json"
+hash = "9ff3ca0eaef7c6ea38c8ad9c2c1eacec23d710f407bb903b52fca42ccd7ee9ec"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__northling_head.json"
+hash = "8bbe59850b1439b1090b90572c2776e6d1087caead79282157a5c93593050c9d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__northling_legs.json"
+hash = "87f54a5e2a002a94a225c73c5e5eaff8fb1232fe1655d1c045ab6c75f407b40c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__stone_berserker_axe.json"
+hash = "daaf8f91399305934f47210008efa664b743adab901f9affcc8ab8ea0461a79d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__warlord_chest.json"
+hash = "6a0c3a49ac024c076c86d47730e3d609988bc73f3c924351016fa35ab48fa663"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__warlord_feet.json"
+hash = "7030860a122d63b358a9ef05ad2e403ecfa7986592285fd4ebbfbc908eb68d68"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__warlord_head.json"
+hash = "62a432939482fc59e8b0d150971c742f1cd1a061819e52ee44161c034b710ba5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__warlord_legs.json"
+hash = "860d72661ffeabbe7ef8ad4639a8c33d3d9b3e0a6f9c29ad37a54384f6d39662"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__wildling_chest.json"
+hash = "56ad4c1aa510303703e67f12fd32f0f00e5878981492fc8552bc7ddbc4fe0375"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__wildling_feet.json"
+hash = "b1a5e6eb2b506678d395816a1c8b994a62bbf127157d7fb05ea5828b339a913a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__wildling_head.json"
+hash = "fb353bc6b08369d99f5d4e99d0fff08d9be1333fb2ff6567c9788758c78d52e9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__wildling_legs.json"
+hash = "00aacfc054f0f575b0fd0601c4d1e35eaa233f69299cba609f1a853f95c791f0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__dripstone_chest.json"
+hash = "907e3974cf77b66e6cbb675ed566372a41e21d145410bf8da8b0b27af698a9c1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__dripstone_feet.json"
+hash = "afe5898e04a50100b1412d319b3c84a1e8f951e31db02b756ca0c2fcd5ae59e4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__dripstone_head.json"
+hash = "e54b39c09233b09fa62c6b0bc6d309e61966545524d646109528f1186e8b1194"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__dripstone_legs.json"
+hash = "eba182e1d670215d49f43f8af7ca0b41c2709273e8953bc1aab2568804ca85db"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__elemental_chest.json"
+hash = "3ed8f35ddd21b9fb01b480f6c7ea58eb54b8bb32e8768212e49a9eeb948b6bab"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__elemental_feet.json"
+hash = "979bd37029dbe5ab19687a46afe6f4611c052967a821e2b4cc3b6ad94adc0b92"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__elemental_head.json"
+hash = "a15af7d281874783aa1bb5b1684d650691be3d241b5b733cc9896d44c8a6279f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__elemental_legs.json"
+hash = "b566c1028e07cb62decc16bb008386ea940b52d98db695d452bb616da556f124"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__hurricane_robe_chest.json"
+hash = "997e355dd0e06560218185b8acc76cdb3c92432532cb8a78571a0ad9847a2d64"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__hurricane_robe_feet.json"
+hash = "1af3fa147156cec4d66c6f44add630698078dc7b11b1a322f5623fa48f204914"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__hurricane_robe_head.json"
+hash = "75289b2052cbf0f632b13e6f133cd9b071026377aae76a45253976eff47ed373"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__hurricane_robe_legs.json"
+hash = "429c709cbe54894718791da3989a1afa5cba66660a6d1d358e3caa27cc89c514"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__kelp_chest.json"
+hash = "f84a505747bfb5d1c23d19fed122a7dc0cc6d6944ac4e462080d2b81cc60cc68"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__kelp_feet.json"
+hash = "4957de002a716d08c4439aaf983fb7f3e62c1cba63a192494c5efe72a0a464ee"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__kelp_head.json"
+hash = "cdfa6f3bfa03ac695172bf049154a1914bec55920ee0c9442c097afa16c0e7c6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__kelp_legs.json"
+hash = "6ab1f18c7dc8f43c6ff31851139ff739b978be4a51e899ca1de29e632ad676c2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__mountain_robe_chest.json"
+hash = "c1a4992d321ad5f7c4ee226817833bfdf31edddb7aaa2473d0b508db9a4e21b4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__mountain_robe_feet.json"
+hash = "7edfc087d0336e1977f64c605c1e4d866817d3c9b4554009287c6e7373f6a1d4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__mountain_robe_head.json"
+hash = "4c246295b4be35d99923e06205144d0cc1c252ccc937448471132569f961d6f9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__mountain_robe_legs.json"
+hash = "d4fe4c1aa8ae1f6e1a986b37d8936afecb09c6f1f7ea6d41c33e5ec01b58cca9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_dripstone_chest.json"
+hash = "8bfadc15e20a3f578eb18ae915c0cdbc4f39c8b7cda568a2c20b445b0f51028f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_dripstone_feet.json"
+hash = "b439f765de33d2efb28d2e70e2d25ca2b9e60338e142733758159dc580255436"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_dripstone_head.json"
+hash = "a8b02713d4e0970c83c853511f41c3ba39ba7453150fa5d11304d4a7c5b4d311"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_dripstone_legs.json"
+hash = "8b29f79e2ee840e4f49d718145c7f1d5ee9f05cb76f4f55e7473b35dfce6aba8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_kelp_chest.json"
+hash = "3e911747e1f5051eb010cba4a91a4a695ee8227ea9695848f0f509e563770d43"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_kelp_feet.json"
+hash = "7cc447e516acbc839ca2d52cfd1be5965ad2863d0353aabd1bd6987d131b2257"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_kelp_head.json"
+hash = "ac29e6032d011fba06480a5bc7ae5edba587ab458629979a641e612b37ca9dcd"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_kelp_legs.json"
+hash = "14d7ddde8bef689a3b9cc1d9aa464360509e2d53e230fc2abe2499b4ceddc982"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_wind_chest.json"
+hash = "f849c9a5696dd66e3fe3eeb77c72d50729b075d0c56aef8ba00c9b7c2083d325"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_wind_feet.json"
+hash = "89f31cf49ec31bc064967b7de959b3baee0d35f243d3f433f568c987ff3de504"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_wind_head.json"
+hash = "0e61472d9606664e9caab78fc43e50ff6fc9357c812de9b1655d43e6918f36e1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__netherite_wind_legs.json"
+hash = "c121dc00a316c67d9573a1d17d746b65126066d8ff4a9a285623ab882c78824b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__ocean_robe_chest.json"
+hash = "ccdab880fa886c1cf22445183fe52b0ff9909e4ed2d773f8b6e76ba4000078af"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__ocean_robe_feet.json"
+hash = "2a49f45d209a3e3bb0aa69b7724653845c0e2c3be4472b1d9ce7657070f2a079"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__ocean_robe_head.json"
+hash = "73c0affcab9db41f1de86c880487251d4a76d88013f139e856063c595add105d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__ocean_robe_legs.json"
+hash = "8e54057b64930dc3643502c0bec4bd3348b00b57da3fe0cad0612a463c14fe1b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__staff_aqua.json"
+hash = "f2ac7da1f1539bd8a8b5976f7c675b229c369a4a460c7ac3eedc170870bb3ead"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__staff_elemental.json"
+hash = "dad561903a30c5c64f8d28648beca4c6e4010a9258f43d4292472cb951810266"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__staff_netherite_aqua.json"
+hash = "b7aa6b63eff189b8294894e601e7ec14a7e70eec3421462f44ac41274a1d545c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__staff_netherite_terra.json"
+hash = "f2b69818d33dde74892b5ac86ff3e33a1f66fe469aee88b7febc7c7ed26d2af1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__staff_netherite_wind.json"
+hash = "69ce64faf92a473e2ae9eb0cafa459bbcb666f0fff3802e300e8ee1ae2a8af11"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__staff_terra.json"
+hash = "1806439e808619fb2d442524aa08834734485c4fb3c020f3f7e708f977d2a46b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__staff_wind.json"
+hash = "52c4b8079e47fe29b7211bb34f122349788ba811b320729cb3890b4391755039"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wand_aqua.json"
+hash = "976a9ecf55374a791dd4c93a4e1e0fe7305b1c76d563944efe95d158c8976559"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wand_clay.json"
+hash = "b7385ff9cfff592300c2b25d02de4087c935332ff7bcf584ff89e4b32f52ee81"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wand_feather.json"
+hash = "2dd2b967ab5ef6711c937c12240150dbe539266acc0ee83e224c0d03a3de0a7b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wand_kelp.json"
+hash = "3aa995355720be1597b52fc3fb87e9aba8e279e7a5d9daa5695a3bbd104911da"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wand_netherite_aqua.json"
+hash = "e5911efdf5d922b0bfafaa6d6967c00201959a0a89735d13b8d5e812503237c7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wand_netherite_terra.json"
+hash = "cb33909fc16384ea87cff2c771fa2f16fa7fe2574d30829562cb1e19c33b658b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wand_netherite_wind.json"
+hash = "53f37a30924894fad8aa35ed433ba4726a2f277ccd2a6ef9441a23d4857d9181"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wand_terra.json"
+hash = "09626c07c7281373a2e51f3aacaaccc348814673f1aa978a4c75c66572531b40"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wand_wind.json"
+hash = "f5063b005948922d02f3bd1cb2843b9b7208c05104e6b5fcd7ee1569636b3175"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wind_chest.json"
+hash = "ffcedf90bf14d929eedfc451f063113654800e3b2a05e53a11c145dcef0fe62b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wind_feet.json"
+hash = "65b88ca9597bba37d09ed9328131984dfb8fc711141c43616f52f2c5ca3ebda2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wind_head.json"
+hash = "b25f79b75edd39f489fcb0f5cb8b7abd649b0b36e089d29133855d7e87a5198c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wind_legs.json"
+hash = "b380cae60b78a7eb8d2e6cccc34e21218063048005aaa682354fceb9d4fe05ae"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__aken_chest.json"
+hash = "4c2a8ecbd0e009a6461eefd34e9abc257bc47b8c30106be81ffd9dda9092c26f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__aken_feet.json"
+hash = "305ab3054b9fe91c10d8d5664e0c0d0b5d0295b9c213bbb1b7a3e546a47419c9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__aken_head.json"
+hash = "34e2f1715b270e0ba4ec97d74994f8676f07545497075eb2eea865f54db5d56b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__aken_legs.json"
+hash = "764ed16ab7a737a6b8b09d4ab64a23cc8131e9d28f3d94f08af16e3837f8ba54"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__billporon_chest.json"
+hash = "305979e37e88904385b88280f90062c9c759f83690fdd13c89288ff59a214f3a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__billporon_feet.json"
+hash = "6d1c1d63f39869cb96209d61940eefaa7bf14f3efe786bffae9d0fb188d19113"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__billporon_head.json"
+hash = "85401dc03ea9f153151e91b9c43125d971421ab8df6dca607d37be45ccc7fe5d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__billporon_legs.json"
+hash = "cca2d35743994f940766f28e3a78d531af158d73b33410aee0990a43e66b85b3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__diamond_knuckle.json"
+hash = "b1c5dadcfe5af8893d9c97fd01418adc848ba81a2774d890b71940c42a3afbe7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__golden_knuckle.json"
+hash = "50e77c076618c21d70f5972a87d5627e04b4a916d885498eda926101062ab630"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__iron_knuckle.json"
+hash = "5d235a4fffc78ff6b3341ce90aa79187fbeda2502a64741414be083718b60e3d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__netherite_knuckle.json"
+hash = "b17dfab8e2e17178d934b9565acac05b7fd9e3bd9233f05e2ecb481b9c491a92"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__oriene_chest.json"
+hash = "bc5b27602616141ee2b2628d252933f9a4351f87ae45e79accebdd1e74eccf6f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__oriene_feet.json"
+hash = "183cc3d9ed1d9b8d274bd348732287c844b19bfd5c20ceaf7b9f378d59ebc730"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__oriene_head.json"
+hash = "9e365ab49c2f80c6686dc55106186c95f3e4cc91ea1a786d15d58ba0f615c82c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__oriene_legs.json"
+hash = "e1a08ffe57b6d07fdebfb2ed66341d320a43abd58175d6f62258c9d0a693065f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__phasleb_chest.json"
+hash = "72a33ae0cb12581238013da9f57794ee6d4c92f0193c06c12429b92335fb920d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__phasleb_feet.json"
+hash = "e0feda76ae2e3b12aad9f53ce24be526fbbdcaac67b8431fd10c8a399944d046"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__phasleb_head.json"
+hash = "d2879a19c422d63e97416dd0949597b9c0fb48dcfd6cbaf8c37a8fb7a2024d8c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__phasleb_legs.json"
+hash = "56f034cfedfb0443798509ac86c649f7c3ca7945ef757b59c606d7f03c3ac91b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__stone_knuckle.json"
+hash = "9423e0dcc056a7d9c4766db7696c8f5437e69d2281ae97f1db71516787dfd7af"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__wooden_knuckle.json"
+hash = "a44821490217b0b4a74700d0cb4329c8fd9ce1691d5305f1d467153138dd2c55"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__citrine_necklace.json"
+hash = "d8bdf38efdba67cb71505412eeba08d31a3e649b01d5eb8317669ff8b3c844ee"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__citrine_ring.json"
+hash = "abf3af53acd74dda71479e8d8149da60e723d34ad86bc0df9c93c9c3b5f6750d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__copper_ring.json"
+hash = "e577cf12d8157c26a59125c5f64b426cb24f309812a8f54fe77a9b90eb20ce9d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__diamond_necklace.json"
+hash = "bfdb2fec96c48134121d58a1022fc8fa516f3986e3a20bf60ebb0ca0b3c1a0bb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__diamond_ring.json"
+hash = "22451602905f0d95397f266c9808d8005bd6abc3b475fa849419651fa98a3b24"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__emerald_necklace.json"
+hash = "073d7ce674be86e106671bcfaf04fa5f73f8256afc3c833eb31e0c424e3c5628"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__gold_ring.json"
+hash = "12ace6e7eda76a6bc687a177301d5838a103b91dbe4dbd2ef13edc5bcf635ac2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__iron_ring.json"
+hash = "c45d0d9e877bcf537937a18e8457fa3f21067f244eacf8ea9ac3e9a67cbf55b5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__jade_necklace.json"
+hash = "dadb1aa55f5be95828b6662a394b08ff46c43627480fc7cf35a5f42fe0867544"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__jade_ring.json"
+hash = "160b3c5a678f23c6167cc68ddff35821452b4aeff75d54624dec3801f3238f5a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_citrine_necklace.json"
+hash = "402e1043588fae34b5419167de0933e2a65dd4fe69e2a084d04b5357fc7df658"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_citrine_ring.json"
+hash = "36a2ef52781a958ccfdc7ba2dcab141b7d4e071c51c7000426a5725265398f03"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_jade_necklace.json"
+hash = "6dc1971826d5fda77faa5e37a9c78d189ec4264497afca13da07f7e1cc7cb4af"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_jade_ring.json"
+hash = "3813a9d0aa245844ef2e2b72689f540d601f27aa428f3770045df7aaebd75a80"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_ruby_necklace.json"
+hash = "3077ac142a1c18a5a5257debc8d806f58c338f95fd5bd8faaee228ed33db2976"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_ruby_ring.json"
+hash = "9d3cbbe4105512210a280d412cbf64b356487aeb812a6f20fde5d13c661b0bbb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_sapphire_necklace.json"
+hash = "ba2e14e636b56e231b21c8bf1cd35919c37303dbdd9fe1bfed56f0c16e692d6a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_sapphire_ring.json"
+hash = "31c0c311cdc4c72bfb4267e582db7e4e90caf40a0e6841ed9e6dd20a390b1458"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_tanzanite_necklace.json"
+hash = "d176f2628a59817669157fb5886d832d7c0f87e403a20f893cb577acc07cd89d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_tanzanite_ring.json"
+hash = "6009c3be1dbc1331f3c7ea12ebdfb8ea6d2d6766bfdd6b77b29e512cbe4db73e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_topaz_necklace.json"
+hash = "091fe9dfe017b92eb151a765b53bd1f51c87e7ea5870c03a7a80dc4e4177b431"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__netherite_topaz_ring.json"
+hash = "08456db425c0754b719e94bf51ce01a1a0446f1e1271530dda5bb48fc8681221"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__ruby_necklace.json"
+hash = "2a91a9c39d9257747d8e889385b5d7ba4c1dd48d285cf916f976c988c2017dfb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__ruby_ring.json"
+hash = "76b8391efb3c0570d8528cd345937f8064b9e3e16f8bf66865db24fca3fbb076"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__sapphire_necklace.json"
+hash = "1ec3fc8570908ca8bff7075976956a3f7cebc4456599c71b3527f8cbfcdb36c2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__sapphire_ring.json"
+hash = "0139cc85d7d0ee4d37bd4c7165db5ac28ec63e33308d0e55f534940b9b4a92ab"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__tanzanite_necklace.json"
+hash = "6eaa751aac21768aca3b33332ca2ac2e108a27142152bd8e6c1d7fbd570f118a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__tanzanite_ring.json"
+hash = "f058a9f2ea0c3a0599561ad880c57758ac4de89c26ef51a3ee2c2e104d8bfc30"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__topaz_necklace.json"
+hash = "bc2c2c82586ec17d22bb113e71b925ec50570bd72878272175e661cae552bbaa"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__topaz_ring.json"
+hash = "4620e38f2af1cc6f1d597b2c927c14cbe94bfc02460241ea66d812bf7398c7a7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_arcane_necklace.json"
+hash = "0dc42e4a9289e221fc3a3f99c46dffa02a8c5dd62f636fec23e5730abb62db56"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_arcane_ring.json"
+hash = "5fefaf6b25150039846a3eabd63acdd68027bf46a738ffd09c429dbabc04ce27"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_archer_necklace.json"
+hash = "573c416c5927353163896b018f055471148ad0cfa847d538e4aa819b015167dd"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_archer_ring.json"
+hash = "cb2be2480b43a42b47876f449785ddd06710f5243525a49a66e3c60d743da880"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_attack_necklace.json"
+hash = "15e83bd1374a145e529cc5a82ce76edf63ea708e49d2f65e124eba358b6c5122"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_attack_ring.json"
+hash = "41e7b6be20e1853f0d5c82b0f3f6078de439ce246de7b035b9c40874a0465d91"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_crit_necklace.json"
+hash = "9ee0d3d7770d931fa44e9f64a5f1762843bfc7de204a516d8823cddaf8393d42"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_crit_ring.json"
+hash = "c0f5cfc104a84b406979b722dd560612a4910bed1d300e136976c85b8e065153"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_dex_necklace.json"
+hash = "30496ec733bb3073e44fb397d7d076b60b063e2c83f66aea24c834e6c70744c0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_dex_ring.json"
+hash = "557f3f4ee15a714108fa679c0d27825221d5b52777e1132138d0061706bf27b3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_fire_necklace.json"
+hash = "cae574cd5d775c07067301fc29177225007a4dc80becd55f0e776e639b831b11"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_fire_ring.json"
+hash = "5cb4a5a6aab14973c6076319445be34a718a69cd4789f60d6c7da32b4000cd78"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_frost_necklace.json"
+hash = "a982b94aa6a769650ed8bcbfbc34b50ec7776d4b7d549c4aa0aba1abc7c0c41c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_frost_ring.json"
+hash = "a85f77124d73d8f14b5591bac442b087570cb7a90f958520c25145472004264b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_healing_necklace.json"
+hash = "2ea2fe3db7722245902432cf11f9e938d26c606ee9e439ebe8d35e5b01e9e93c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_healing_ring.json"
+hash = "7b26ce9e43bb3a595029098d9d4d1bacaa9fd5426556d77557d9bcb3ea74ae53"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_lightning_necklace.json"
+hash = "899ef47583d6f2c05979cb1e807c5418950c75a3b3216ad69d4e2ac3c5af3455"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_lightning_ring.json"
+hash = "12fd2c40e5ff3422373c8a1ef9395e0b85ee4fa29ef35174cc6439f39a895b78"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_soul_necklace.json"
+hash = "61ee8506f42a32325d139828beb8cba80ad6edd71e54a74dc85057aae825adcc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_soul_ring.json"
+hash = "4f0ac79f5ca3d2afbceec9315beaa1012cbe08ab460ec6889b7d29f4a9458136"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_spell_necklace.json"
+hash = "89e4382dcedbdac3d37a56c41bb3d4b9e8c17d7b2d055518a84b08bf23723312"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_spell_ring.json"
+hash = "5a796310c8aec06b3b166aaa4d30d09f42b8e761fd348ccd6d3708069f25eb7c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_tank_necklace.json"
+hash = "7a828db4931765e69361cd7ed3e2a37ee3e3b55a539ba7767ef488bdd743026e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__unique_tank_ring.json"
+hash = "42616c0a7868c5e58cc83766e355155a3ae4fc36213fa9e75333095822e0d9b6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__greater_frozen_heart.json"
+hash = "6a3699b22d5c0aced745fd64c2efed59b1e4b4b289e85b879779cd37a8b22035"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__greater_kircheis_shard.json"
+hash = "bcf5f608cd67985eb9f3f9eb4f692e92cf2caa98073a4011c8e11551d8f379b4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__greater_liandrys_torment.json"
+hash = "a4804099121394966f10da95188baa21cf233a1defee75cb6de66777a2579965"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__greater_madreds_bloodrazor.json"
+hash = "af169f2c79230024e280c339c1a0910621ad3313913b5826506106f3e5513899"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__greater_proc_rage.json"
+hash = "efec58bf79aa182037ac3168c12ed699ccc49d02624ca0b93ec7ab3a1bdd6a7c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__greater_sunfire_cape.json"
+hash = "7acde30e850ed7e472aa99a37cf31bf7f251e5249379d3eeb12518dc2c5397f6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__jewel_figurine_aquamarine.json"
+hash = "5ee2f429bcfb7ca569edaa9a72b8744de65f1c791db646937d1ff73c8b2968c8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__jewel_figurine_chain.json"
+hash = "e1b7725fd669739711e82f8cd8c56fba8b9f67acaff77870d13e24c835a48e1d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__jewel_figurine_malachite.json"
+hash = "6d0f163ffb112e1be7ddfe90d9357bdda6867165386d8bace15755672dc560dd"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__lesser_proc_air_water.json"
+hash = "69e9e9cbf94d48822f7535f04202c214e0386dd58fee9f317140b82b4b84b18f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__lesser_proc_earth_nature.json"
+hash = "d1d05c47d62d5077566051c3bc3f8992ad65a39bab61ef557412cda0dd138af2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__lesser_use_rage.json"
+hash = "2267ce1e88c724945440caf546d77aa1fe2577d71465b33ec0537d01087dd8f9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__medium_proc_lifesteal.json"
+hash = "b0b61ffbf697da8b64dcbc989067f13019d360d9cd44b8168e5c8965e838e794"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__medium_proc_rage.json"
+hash = "af47ed1e311f1c8bc45caa88188909d4270e7b0bbb990ee1fc9b59f04fdd5c46"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__medium_use_air_power.json"
+hash = "3f9ac9ed22b22906ddfdc0fa9446c84575b41ed271e44687176f45b4e6680cb8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__medium_use_earth_power.json"
+hash = "149fd915c18172c3e92ee5f33950e7c3b425c8a670f696c4a7f2cf916f4d26c6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__medium_use_nature_power.json"
+hash = "f68d2df1f0fec784a13b886bb5d2a0b9115b78110726b067f9124f9cc60bd90e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__medium_use_water_power.json"
+hash = "abb6b29be14832ca22ff44d7768b0a7005ae71e00c0ebc33a834df0956f40de1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__superior_guardian_angel.json"
+hash = "b4874664c391d538db271c2a9d336817bfc2308e67a66cc3813bcad68660edc1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__superior_mejais_soulstealer.json"
+hash = "dcab40d0fa42f6dfe4f37da3b058a7cb379867160009d70b0035048124d51c32"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__superior_mikaels_blessing.json"
+hash = "992ad46af72271b4209710cb966836020217ee281197894ab87545ba115d5a7f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__superior_shurelyas_battlesong.json"
+hash = "2efb657142a6a873558a4f66a103c397a9d9bc14158fe5d742dff76c23a5c0d9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__superior_zhonyas_hourglass.json"
+hash = "9ec11b3f9e8e40687bc20d2879f5d9333f58a12316323d1a6ecf181f58e49bc7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__acolyte_wand.json"
+hash = "efaf9e25c3086f9886b054e4a0d62034cc5ffaf162bb0b63cbb76044d93f750f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__crusader_armor_chest.json"
+hash = "c9f3e361b2f4ef146d75d0601f4aeb9ba0bdf3c318e8af14c65670f844d9589c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__crusader_armor_feet.json"
+hash = "d45df8c089af20bcf424777ad9fcbffb189c7a62655eae8fad1c6b2c9e3c646f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__crusader_armor_head.json"
+hash = "4f2a6048fe2992235f1e4c7ebf49f3dcade78756e476d5f5dec7683fe500b803"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__crusader_armor_legs.json"
+hash = "b7d96140fed8445c06d76b4dde3df4f8ec396c638cd4eeef7396d3f0d406d882"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__diamond_claymore.json"
+hash = "95ed03cc90c38eaa5e0c827c441ed782605d9aad7be321fbc170cf05d2cbb2d2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__diamond_great_hammer.json"
+hash = "2516d23c663a91d9c0e826b82f5e19e977167fa45ab37b4c822410b6a5271ef1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__diamond_holy_staff.json"
+hash = "7db008d207feaf4dd262ad9f0f9027602ec31bb4a0f9aad16dc3ec3a6448bce3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__diamond_holy_wand.json"
+hash = "493653b40494105b700d5a253859f456ab0db17b7bc8ce46ea843aff55ddbd75"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__diamond_kite_shield.json"
+hash = "de7122f1b06370e253aa1213d1fa245223f51258bdf25b5048f43dea48c0762f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__diamond_mace.json"
+hash = "c4333871de50042c6a23f3c53b0403cd2b6f4d17be59de5eb195e8242c769e09"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__golden_claymore.json"
+hash = "ab5b32e49003e4beefc35c125864017e2e74f389b59c5da4df2af8e86b48e518"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__golden_great_hammer.json"
+hash = "5a52b6558e668ed5e4071f95f1146e2f81e93adc5c5ea738d49f7c227b11cebe"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__golden_kite_shield.json"
+hash = "332bb73e1d1975c61b224d78710603f56f6ceaaae761d8af24232dd45e0a5c99"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__golden_mace.json"
+hash = "6d495f6ae18c218feec14d0511da149df105d732c7d15a2e78929337942ae3b1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__holy_staff.json"
+hash = "d36b3f62ab47b0061d174f53cea57022d70f8b0a3d4fe24af8f59f644336d8dc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__holy_wand.json"
+hash = "b6f3a4a89e3572f1c02274d71a545eded32ddc39a985fb0c0c884097aaefa0b1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__iron_claymore.json"
+hash = "a1c460f3c9758bf36795724cb266c3befca606409cd4c0817cfb7054968d70c4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__iron_great_hammer.json"
+hash = "893455b61b9fb47ec1882aa69f24bad4cb69747d89f959483bf2210780e1e9b3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__iron_kite_shield.json"
+hash = "50ebd0f2721ad468635ff26a25bef58b2e3b25c23169950cf354c30e032b8e05"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__iron_mace.json"
+hash = "95171d0a71a963646ae3b622a8ad26519730b1fbc592de215ad916d9517adcef"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_claymore.json"
+hash = "cd8ecdc4f3d25c708f94b3f186cbdbf756bb464eab0cc93cc3ee3595c0573c59"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_crusader_armor_chest.json"
+hash = "990a4f39080e2587def6d23266f8f03c9e75a2150e7f796a820689164729ae30"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_crusader_armor_feet.json"
+hash = "bb42886b265748dfb2332e00e61d61285d74853bce3eff566ebbca3f0b1c2ff8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_crusader_armor_head.json"
+hash = "d0417a455d86bd77611939ebbacc651652d7cefc9ebe3ddcc29fddd2d95b9263"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_crusader_armor_legs.json"
+hash = "a9576cafe16ce6ceb5678d9764169c7bf0ae147476a1e0cf75e11032e82ebeb2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_great_hammer.json"
+hash = "271d9146370b28ee1908695d768e97ccd2fb4582ffc81a42e3d402594125162d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_holy_staff.json"
+hash = "c98bee3547f759a1e1691736706bd42edcf3b2cfc9504d86764716e1b149cdce"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_holy_wand.json"
+hash = "7ff2e18c7873ec5c0d4b10d1b299993a4d12235345a302b9dd66ee1f5e2a48a6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_kite_shield.json"
+hash = "153152a80aeb374f072e46c9083da0880d922b2b80aab219746420a12f2b0073"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_mace.json"
+hash = "dc87df8c1af54e22ae2bb2d5ca9bc6404323bdd7be932d1eeb69af52a8261c11"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_prior_robe_chest.json"
+hash = "9ee5663c9d629ab5a84be0115ef26673d38209295d2ed39c049d864c6abcfe15"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_prior_robe_feet.json"
+hash = "1c5cbfa59c5cbba6fc1a3f4bf613ece1d31a9f7e67882a94bb653253ed296bf0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_prior_robe_head.json"
+hash = "6e0da4857949fa46efbc3e9675f2b83b116ac5463e1aaeef849c4a1f46b9ba16"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__netherite_prior_robe_legs.json"
+hash = "266195987a1f826a681adc075d4e267c0f743a52d9a0faaaea92c5d3d278af63"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__paladin_armor_chest.json"
+hash = "6e8d918e56f321dbe5b8e5e2fab2a9965f23c226aa1faa091de75163702988af"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__paladin_armor_feet.json"
+hash = "9a592dfa4bf3582cee0404c9b3f052a4c231be9c467b35432e1d48e453feb176"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__paladin_armor_head.json"
+hash = "ac5b1828b332df3ec261a995900f976882a9c211a16fb065065e6338abb7069b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__paladin_armor_legs.json"
+hash = "3e00081b0218722e032c65adb8f4e327c8a7f8812351bfcc47604bd8b6358227"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__priest_robe_chest.json"
+hash = "f9a269ac26cb82c7f43041c71da7bae26f8325b8e7794593de62a3715229f660"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__priest_robe_feet.json"
+hash = "33efb256ef2ddb6df4a2f5c576ccf1260b2feb29733a9cdfd4a07c7c9fd78e77"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__priest_robe_head.json"
+hash = "6e5c88131ec315c0e7fcce8db095fb5ce1e84f85e05c1318cfacc974e75dd22c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__priest_robe_legs.json"
+hash = "a4a2107adef1a7e7b86dc3c1d0afb6e63236fde3f8da6e1be55da430e6217b15"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__prior_robe_chest.json"
+hash = "4ffee0522efc955136cdda3234b3635d2cb59ceef87aeac31331567eb84a02f6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__prior_robe_feet.json"
+hash = "1c1a1d6230a73b18f11479f3b443e7d13528c80cba875f9764d9821f53f7bff6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__prior_robe_head.json"
+hash = "29f36d1a6c83817aa35e82f10f007a14798d0a88a5d433dffa3a4b476a671151"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__prior_robe_legs.json"
+hash = "59c6abb781dd5f349f62324395233e0700a28f40f255ac0691334b70edde37de"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__stone_claymore.json"
+hash = "62efe9b3f41000843f36ab01ae074a9298fbfac04de24f3b915e581d9cc9887a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__stone_great_hammer.json"
+hash = "44859349e0f076c1d024aea3c87d7700b7368a10a68da714804539c53cd12180"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__wooden_great_hammer.json"
+hash = "a75784a6b3af7a97e0bb70fc2acf620b8ea55366e8ff6cf600f0a2f6c610757e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_healing_taken.json"
+hash = "f4ff77d075fc63c936d40d10d5386133dba8c7b16ec83ea27a5613b02ebfdc62"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_perk_defense_block.json"
+hash = "d4a8b9bbad013ec6a05678232c1d9f43199d0524323652e6a9e7fb3d044caa2b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_perk_evasion_attack.json"
+hash = "9d738c0f40c7596d2f7815d89ceecc923766a61a7ec9ef45d06fd6e74cfdba9b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_perk_heal_cleanse.json"
+hash = "aed6735b90b5e98b78368f6611b75877dcabfacd1555f31ac8f373b3813277d3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_perk_heal_danger.json"
+hash = "358501280176f47fab986fae64c4398a88be664b3b501fda464fc531c35ae88c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_perk_melee_stun.json"
+hash = "6530cf82e1f6d92a60ccca1a3230e7d1b9a7fae857f38529d1f547426304e57e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_perk_ranged_levitate.json"
+hash = "40059f9f01e7be15d700cfd19a8f77229d19e64a68ff440a022f2600945ba0e3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_perk_roll_damage.json"
+hash = "63600bf009b8ab91deb8a2b59db52b71d5f7553ad74ce5fd95c9bde69f34c6f4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_perk_shield_reset.json"
+hash = "ab03b9523c2917809fe5e72ba45440972ac2463459b0983a3db0bea4a24b4a73"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_perk_spell_stun.json"
+hash = "bb69f3417326fa12f1b6134d9d66130f03a0344b9ec1f79073e219e00f34f1c4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_proc_defense_danger.json"
+hash = "29e7d3e2bd628ca6eb51426bf3bc610fa7494a404040f75c7bb93cce0f5015e2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_proc_physical_trance.json"
+hash = "2f839bdd201405a06efeaae9680dbf91ccea066e2647cc853c370f0256f33489"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__greater_proc_spell_trance.json"
+hash = "0550f2fa8bc8c9e11084430af22a89b04020f998c41ef842689be9de2c462a9c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__jewel_figurine_citrine.json"
+hash = "0e41f312f42f8910d1f470c3bedecc68a2d972fb86963ebf53a7d454c6d0fecc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__jewel_figurine_jade.json"
+hash = "5b11056e94f1950e387afd4e4b0d96b474bd95a828cf2af8179b965534cb8675"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__jewel_figurine_ruby.json"
+hash = "4650679e14c72425146fe6fbbf89b6760245576a7c7831a4fb16bfda25ee0944"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__jewel_figurine_sapphire.json"
+hash = "88cb64d943fc4da85c0c45d0e76148cdb261d640413843d7f554b166fa84ce8a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__jewel_figurine_tanzanite.json"
+hash = "2d11465a9e1b801c24daa40dd8fac9d94dfa260a50dee8779f1d1428bc804351"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__jewel_figurine_topaz.json"
+hash = "3a2d30e6974bd36c82dab665a1da8111cf8893c4736be417566c550b2bc426cf"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_evasion.json"
+hash = "14fef3ac85204d9fb5ce8a1a065b6807fc0b5fa4f41dd4341a6cc3c6e79236ac"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_melee_crit_chance.json"
+hash = "7bc88e158786dad1e4102c745dae48bd2e3c51724e1106213fb5eac2b507e331"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_melee_crit_damage.json"
+hash = "2277debd6e53b729dc88ec2f533f5f0e5b3320a33e0fe2f862331b26fc195439"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_proc_arcane_fire.json"
+hash = "511c79fc988f6ed7da3524aee1ddce123a58f95639cf1b689171dab0c82aaa06"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_proc_crit_damage.json"
+hash = "5c082f3d898a2ec8ae195872fd578bcfc4ea795a239902dfaf2175a8137a1bee"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_proc_frost_healing.json"
+hash = "98e3ebc7f8749b4634b58bc9ef9a45be858e6d73bfb3ff6da410e833ede4f4d4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_proc_spell_crit.json"
+hash = "d7abb81a16d814c8d8b0ea58946aa1a5dbb92206f97d6b72ef18ce8c883f6c64"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_roll.json"
+hash = "133f9f37335315b5193ad64b60e548fc6cf0b16f12691002d194932cd3753259"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_use_damage.json"
+hash = "c22f8af1ab68c104f4114e450fd0a99077f91c2bfbcdf8af95baa81b8b0943b9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_use_dex.json"
+hash = "0c361bb0ab7db535dcedb9707f6798665fe1c48707764bfaf5b85d7f02e86980"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_use_health.json"
+hash = "f1e3bd0fe139fcb29ef5ccca749df429c8c13eda4e59a7062d86be6c624dabf4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_use_ranged.json"
+hash = "8f98f6e303da626d9dac60538e7e423aa6907b6f67327413810c1963a9171820"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_use_spell_haste.json"
+hash = "2025e3b690a5d978ec96d28e082179bc0862664105ae7001269cc300f8010c4c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__lesser_use_spell_power.json"
+hash = "d50ab19928ec7ab1bc7f26c34830e3652f89a3c3e89ec2995e81c1f33868e9e1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_arcane_power.json"
+hash = "4a04b34c947425a02c4184cbe9f5bcde72b924c2ea592fef8ea9c8a4bd1142af"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_attack_damage.json"
+hash = "6a479bea9cb47a1c3efe2aa5746b8835456978ac9701e83af74c2469543417fc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_attack_speed.json"
+hash = "65b7c0ef6cfb601caa8a6b561d1f411c68155ee1b1ad7c052deb59e1922dc261"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_defense.json"
+hash = "4b6af779984abbafa1b9edd5244aea9f4ad8d9102f1763357620c198cd979881"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_evasion.json"
+hash = "9d3c7ede5877d7b0957937f14a946b946a2af8d9c368c66f0fa2bb15d4e7c3d2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_fire_power.json"
+hash = "ce9a865bd2fc0ce3b5a64244083dfb7d23c26d57de251e7d43c31e12e5ab3f32"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_frost_power.json"
+hash = "ca270d1f044d97edba136356a4a2a0428f8863673309e23764cb4564cfc1bacc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_healing_power.json"
+hash = "baea3f06064cb730160b986a16b965271b7cdbcc47429bb8ef0a09b3dbe66750"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_ranged_damage.json"
+hash = "cc74339f101b3b59d1cfd117600d9ce01cf415ad81ac00a353352c0862cd60c6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_spell_haste.json"
+hash = "1ecbee4acbe71b8b7ada815a621b413d7099449caf2994e31300fed918e1b4de"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__medium_proc_spell_power.json"
+hash = "2b8ef69baaf21d896a406228f8b9c9db1cfc36677a307951a2ddebffdb05e533"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__superior_use_area_attack_damage.json"
+hash = "97d1d123da44bbc89d66bd60ae74410a95492a9c968553f70e23db106d6c5547"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__superior_use_area_defense_health.json"
+hash = "4cd82ec3e5245fe377e10bd252be93616f62e43618f71e9319262a7015bfe873"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__superior_use_zone_healing_taken.json"
+hash = "c0cb38d5ac0a2dc01f1ad9fa47aa8427877c2092285a18bcff078574aea24d33"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/relics_rpgs__superior_use_zone_spell_power.json"
+hash = "f6fd7ac5ad2e45536e3ffbd8a4b776be17e5b175f070175ec08a5b4b3703cd6d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__assassin_armor_chest.json"
+hash = "28dbbfcbfbfcb2ac15a4da294bec17849d350a73599e34f7fdee203a0e7381bb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__assassin_armor_feet.json"
+hash = "3f48da6ece35fcc042358ca708a4c9ef5374ad85e669676efe7d7886fc6fc463"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__assassin_armor_head.json"
+hash = "3c27dd7086efdee29e46cf8925b294e2cd0d10fe85ab4419f3ecee343180cacc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__assassin_armor_legs.json"
+hash = "ca7d248d037af5210057ca42f1c2a7f8d2667320f50d316316b92de2c8a7578b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__berserker_armor_chest.json"
+hash = "e61f72bf6eb32989d652b57e8b681ade13160c018b3de16d6c2208e842f6fecb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__berserker_armor_feet.json"
+hash = "2344e33e474fcae62c2175b87b6f4c81c5a8bef25d7b51d88bf215171d165306"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__berserker_armor_head.json"
+hash = "f6a1bd897d13425cfcba8a3757f546b463cf827fffacedd4f8953a4549c110c2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__berserker_armor_legs.json"
+hash = "a1bad898002a5cfa18f5fbabc5a561a99f1e44de4d45ffd0c89f538968ae1afc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__diamond_dagger.json"
+hash = "e3c2dae10361de60a6d325b8a33f12f27d8de10b003a83ada86e8433f3b100f2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__diamond_double_axe.json"
+hash = "3a4d77d4c3afba2ce11133b3c23b2ff63233438c140a79925386f37cd781d272"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__diamond_glaive.json"
+hash = "4723fa684ccde5438813c06a114c61621923479a61ad5f860ce759a96fe3e620"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__diamond_sickle.json"
+hash = "248ffb2b5e17ed01d6fd8f9e74abe00da60042c4f53640f7d16767febb31987d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__flint_dagger.json"
+hash = "ab3b6cd92ce062e27eb8dae15da3a639f145c9de9380490c1541fde086df4ad6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__golden_dagger.json"
+hash = "d5f994801d76fb46a19e6d3e323903aff25574be56bed4345b6208af7137de76"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__golden_double_axe.json"
+hash = "6271534b6509f2c738b0be1490ac7bce72188126dd901e8f58e66d051127f210"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__golden_glaive.json"
+hash = "ae535dad619daf377baf5c0ce1c6a963c348eef6369f22b0d66b12d067a09429"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__golden_sickle.json"
+hash = "5661a8a0aedfb9916a098baa9725818dbc6a7dbc1ece978eb052e52c33321850"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__iron_dagger.json"
+hash = "eb44b15e313c2c6b7878c76b78e02229e7d019506211a54d5466ea9a6c2d0a68"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__iron_double_axe.json"
+hash = "25b626986b5e8b776d5809ac0316a162ef199c215b6a56149af59b2302b91f81"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__iron_glaive.json"
+hash = "86b8b40c90a6b2d3659345d67f46c48c3eea1ba830a8b0674a2c6a7db1d0587e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__iron_sickle.json"
+hash = "8bf080c5d603b9e0baee8fa878ea4004b25be01521f5d6903068be1f80706e15"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_assassin_armor_chest.json"
+hash = "33893f2050f2f5ac2024d871d9b26c51fd80074187e6e9d99e67914048a81741"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_assassin_armor_feet.json"
+hash = "6ebc24d9074023bb548203cf395c03bb860bd2da5f5959c73c9294d5cfe5b892"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_assassin_armor_head.json"
+hash = "d4364f04e75eb249b28731b366f1b205be2b33c305b679844f3df79dce1bf8fb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_assassin_armor_legs.json"
+hash = "4fc151b66f9f5e3efdb030af145da7f58ce6e31b821d5a7ed83e8c4253bc0ebb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_berserker_armor_chest.json"
+hash = "06b479916ab88b08e8e92949a9f4a3bd964b8cf2275ea036c42f19e28cb5c3b6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_berserker_armor_feet.json"
+hash = "9feb3fc3e06444cf0010147271f2cb8924306fe3e8dac917ac33960689290b6d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_berserker_armor_head.json"
+hash = "90ad81050d1342b21816871418ece141258f7b646bbea039bf6c756f85ce6393"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_berserker_armor_legs.json"
+hash = "86cf1459b8b7bddfeb738f3575a42fea5da5753ca864f04bb5f3c1a89229aae8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_dagger.json"
+hash = "acec2bb364066ae051303846edc25df371ac3dca196df961ac7573d203761c54"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_double_axe.json"
+hash = "4de9b1ecefa73df23bf5d19edf0644e51834d8fc6029b2096014c0f2cb4b6779"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_glaive.json"
+hash = "bad64d1edb9c066750b3d44de4913190d067ea49a63490a89e42f48f8b19b2a3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__netherite_sickle.json"
+hash = "dc93e4fd9abaaa3284d0970b4378a5b78c4fe19438960f1912ee4f86acbdf24e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__rogue_armor_chest.json"
+hash = "612bcbfa9603e850b15c895590c66497e843962bcad27f07a57c5002973b96ef"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__rogue_armor_feet.json"
+hash = "59248446e950d4d57b57c5058bd830b7e30f5c4d3cb344560f9685f6901558d3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__rogue_armor_head.json"
+hash = "3d2632b95bfd16863d4d80e1152dcaf32656fce00fcfba5967be1c665c25240c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__rogue_armor_legs.json"
+hash = "95634ab11d0048af02cd081f02f8eb126ea89fe3a1d25a4429e8f68dd363c7f7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__stone_double_axe.json"
+hash = "6c1ad30da6b6e74ebb3cb4810d49413e2c751567b517eaab3bd312b7df9c70d8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__warrior_armor_chest.json"
+hash = "173e126064a5c90316f2df3ccf67d86d85d3caa62c180bf18a2a969b34a82145"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__warrior_armor_feet.json"
+hash = "2b8e517877818fe3dd77d9605a837c7a1d529b7d135923ce609b55a18592a799"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__warrior_armor_head.json"
+hash = "d11d7f8d36b6694037f1aca454521b55577d48559f12e2651bdb26ec2688e357"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/rogues__warrior_armor_legs.json"
+hash = "ee682b5c1ef4493a5e3639146a57ba89c2ffa3df9394f25a6da7034622b80b97"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__arcane_robe_chest.json"
+hash = "561ee8d1420d867d27cfc53dd422553252df319b4e3c85e53560fc180929673a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__arcane_robe_feet.json"
+hash = "c5606ea4b50fe59b667d15a3ee86de92c442bd9b2d66ce3ba2608eacdbb3e653"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__arcane_robe_head.json"
+hash = "fce4e66ddec8a3042d62deb21e07e8db652138030b30ff2bd5acc1b66abac338"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__arcane_robe_legs.json"
+hash = "3f9c9d4b6f5e95eeaf62fa914ce0df359cc75037f3cfdf300fadfd4ca6e070e9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__fire_robe_chest.json"
+hash = "076e6634b3a1809530f9945ed051894eab5fcff1fb522a32335533d615609eec"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__fire_robe_feet.json"
+hash = "d809c38ef62552abd2ff0fea3dbc9c9df77c9b641df5e8deec84025891b816d9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__fire_robe_head.json"
+hash = "95229fadda4b3bc4b9977e3c937f1d8b01a0e166dfe45ab0efcf38382ad5e9d6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__fire_robe_legs.json"
+hash = "b7b53d80944820c20474a2ac8434554b01808cdee37ce6ff7f3e0bd17946322b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__frost_robe_chest.json"
+hash = "f2d909eb6171944801a1a2191883b0c1898d5781a8d8a59ec1af7a838b3fdb05"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__frost_robe_feet.json"
+hash = "d29451afa3ea2b85d10d74a6f8703e914936bc18b5d0ef310e4bfafcd9b6496a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__frost_robe_head.json"
+hash = "ff7223247657ffa5dbeda957b6a0e7bb4858400d47104d6b1e029072f0b61321"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__frost_robe_legs.json"
+hash = "8b5820537e39368c26717513417693a50f4d58342d43c91a715784723fae22d7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_arcane_robe_chest.json"
+hash = "054489c66df57a962cea871e48714e43f49b3bef0deca862b182ddbd4fb36fd2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_arcane_robe_feet.json"
+hash = "2d5ad529bf0eb95534f1c4d231c925cbade741427750f0bedbd357e5bf18037b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_arcane_robe_head.json"
+hash = "14e6578d48daba279c1850311a14e08bb77d6997e2a8bfe46822c5e436bbc6cc"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_arcane_robe_legs.json"
+hash = "988fc993edc2584ac1dc386cb730d8d94c0d36b887b67d662cebe53f348aa8d8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_fire_robe_chest.json"
+hash = "83b33b973f688d2125e6baf60c51b162a03fdadbf6a5ecea0bec373eac277b84"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_fire_robe_feet.json"
+hash = "d06c659485e0a8495364f58bcbc6b1bfb261883f387c81a720f27e9cefd6204a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_fire_robe_head.json"
+hash = "5fe87b2c8276b0e8bfe9b829038d5f853fb0b20966417571a9e93ae7f1d53455"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_fire_robe_legs.json"
+hash = "c4e8ace80a5a2438a3445cd0218b25f825bba08919d4dc02e3d7da4354de9f23"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_frost_robe_chest.json"
+hash = "9ab86d84ac1c4094518b0d498cb1e1256cc170c30441f9e2cd449db71e12df26"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_frost_robe_feet.json"
+hash = "33fa2a4fca83b6d8b8590ca8c2ce38e01a843771905fc2b421c315a3aad40adb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_frost_robe_head.json"
+hash = "e7c7379e35bee441fff4c8b82c1d70409ad0392e27be09515d8f5c28e424d46b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__netherite_frost_robe_legs.json"
+hash = "b3bfc00d01da8a7c9c0bdb04cccf93a552c644c4c7df1c1984b9fc3718ecd8dd"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__staff_arcane.json"
+hash = "0af5b7e912422cef3b0461ea90945bd8ab9999427093a0d080b68b1bd461b869"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__staff_fire.json"
+hash = "041f71b8d7da3fce073db247f34a98dc29d85d3173266979a324f0c17d51f3a8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__staff_frost.json"
+hash = "877228911a47632af495848550c01800f74d048a454a14dd6879565450ce194a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__staff_netherite_arcane.json"
+hash = "c46216e65775bfcb8194c810c664cbcbb6f03b53c9fcd6c004c7d7f4d103fda0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__staff_netherite_fire.json"
+hash = "ed66d1007136f853179ac0bd15cb420fecde524981d860fc92de0a3b01877f3f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__staff_netherite_frost.json"
+hash = "048420b7fe657935ab22294588f136b158e35366cc9e0b2474e9a9ce5faccf56"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__staff_wizard.json"
+hash = "24bb183734d59b28ed518dedb98bf6a8da7c18708d803b3154311fe85ab8e905"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wand_arcane.json"
+hash = "848ce5ace8dc653836c6d9bedc815de1682b300e869acfd2b06afde9da7038b9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wand_fire.json"
+hash = "3564ef53754046ec695f0f745e79d3d0ec93d1aa5cfb9f27854ce0916defab82"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wand_frost.json"
+hash = "4b3197f8cd91207a6788016d213d5cd7b63811e01454317d5436f838afe50da0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wand_netherite_arcane.json"
+hash = "e759fc210a0e18e5cabdd47104b93996b25d867237a8afe1c5be7ca830142a4b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wand_netherite_fire.json"
+hash = "95488aea318e31588b054e619ae73faccabc398e8b5d3f42ef3001effd4cbaca"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wand_netherite_frost.json"
+hash = "687f6a64a66ba313e1aeecebfff29acb1dba4b012ab7421b5b27fbf743f176a8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wand_novice.json"
+hash = "c4b88af855dd38243dba8a1dbf91f53c4f80bfa09ee2fd8d2ce49fb3acdbfbcd"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wizard_robe_chest.json"
+hash = "06d83b18d45b1bc02743ac25799138cd06cbf86312647e3ab097e851d6ae5266"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wizard_robe_feet.json"
+hash = "4f293375340e222fe09e9e1f90651b181fb0543a259f48ef063c18173a424410"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wizard_robe_head.json"
+hash = "201924c03e0c92284dc7bed8dcb08583e00884036f81693f2f7b52ccf0586594"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wizard_robe_legs.json"
+hash = "3df637a16ed3c513fa97b53cd5666466a8db17e8aa5b590163626886b8043943"
+
+[[files]]
 file = "kubejs/data/minerpg/tags/entity_type/boss.json"
 hash = "83f5bdd1b5c84bffe62cd4bd5007753567b6599397cfca3d3e46c8fa739d633d"
 
@@ -4183,6 +6415,10 @@ hash = "de4e52d9c2d731010bb82875091517cbcffbcab0be483b2eb22a9eeb4035dbe2"
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
 hash = "6e4bc65d4548a88a2cd61e99210fbb1c5facb6539f8b6108fb58651fec4c4c2d"
+
+[[files]]
+file = "kubejs/server_scripts/minerpg_salvage.js"
+hash = "d9595f664e57e6c71deaa64d511943d680b9f6efea5d906438b2fdf64d555705"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_server_rules.js"
@@ -5040,7 +7276,7 @@ hash = "8f3cf2df76c7caa86893e12f1a68b46b1040d028968169a6de55629f05a83284"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/loot/reforging.json"
-hash = "768311d19e420576c68c57bc39f5e95d059d834d1ca514966685e24303e017a1"
+hash = "ee87ed2932d5e0f981801aa9ff434af04d2bfa80eb8d9280eec5706646a9e2c6"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/loot/sockets.json"
