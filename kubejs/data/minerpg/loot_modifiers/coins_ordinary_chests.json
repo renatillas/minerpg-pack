@@ -18,6 +18,14 @@
         },
         {
           "condition": "neoforge:loot_table_id",
+          "loot_table_id": "croptopia:chests/mountain_salt_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "croptopia:chests/tuna_sandwich_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
           "loot_table_id": "gazebo:chests/gazebo"
         },
         {
@@ -211,6 +219,10 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "minecraft:chests/village/village_weaponsmith"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mushroomquest:chests/witch_cottage_chests"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -695,6 +707,26 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "rogues:chests/barracks"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "takesapillage:chests/bastille/center"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "takesapillage:chests/bastille/church"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "takesapillage:chests/bastille/farm"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "takesapillage:chests/bastille/gallows"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "takesapillage:chests/bastille/graveyard"
         },
         {
           "condition": "neoforge:loot_table_id",

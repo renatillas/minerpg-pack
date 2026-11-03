@@ -1,0 +1,13 @@
+name = "ATi Structures - Vanilla Edition"
+filename = "ATi Structures Vanilla V1.4.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YWVAO3wq/versions/ivErXrfo/ATi%20Structures%20Vanilla%20V1.4.7.jar"
+hash-format = "sha512"
+hash = "e27e8b112521e3686e2afeb9e62f3c311add924142afadf60bda026005a164f0bdb6c1b932d79802ffff938f26b9422a2a3beb9be24c8e7690d53710a94b9533"
+
+[update]
+[update.modrinth]
+mod-id = "YWVAO3wq"
+version = "ivErXrfo"

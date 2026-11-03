@@ -111,6 +111,158 @@
     {
       "id": "dungeons_arise:mining_system",
       "required": false
+    },
+    {
+      "id": "graveyard:small_grave",
+      "required": false
+    },
+    {
+      "id": "graveyard:small_graveyard",
+      "required": false
+    },
+    {
+      "id": "graveyard:small_desert_grave",
+      "required": false
+    },
+    {
+      "id": "graveyard:small_desert_graveyard",
+      "required": false
+    },
+    {
+      "id": "graveyard:small_mountain_grave",
+      "required": false
+    },
+    {
+      "id": "graveyard:small_savanna_grave",
+      "required": false
+    },
+    {
+      "id": "graveyard:ruins",
+      "required": false
+    },
+    {
+      "id": "graveyard:mushroom_grave",
+      "required": false
+    },
+    {
+      "id": "takesapillage:pillager_camp",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:camp1",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:camp2",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:camp3",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:blackridge_watch",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:blackridge_watch_taiga",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:east_spur_tower",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:north_spur_tower",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:south_spur_tower",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:west_spur_tower",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:high_spur_tower",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:old_timber_watch",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:river_bend_watch",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:tor_tower",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:thatch_outpost",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:sandfell_outpost",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:stonyfell_outpost",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:stonyfell_outpost_plains",
+      "required": false
+    },
+    {
+      "id": "ati_structures:illager_homestead",
+      "required": false
+    },
+    {
+      "id": "ati_structures:illager_tower",
+      "required": false
+    },
+    {
+      "id": "ati_structures:nomadic_camp",
+      "required": false
+    },
+    {
+      "id": "ati_structures:overgrown_outpost",
+      "required": false
+    },
+    {
+      "id": "ati_structures:desert_outpost",
+      "required": false
+    },
+    {
+      "id": "ati_structures:spider_nest",
+      "required": false
+    },
+    {
+      "id": "ati_structures:arachnid_dwelling",
+      "required": false
+    },
+    {
+      "id": "ati_structures:silverfish_nest",
+      "required": false
+    },
+    {
+      "id": "ati_structures:haunted_ruin",
+      "required": false
+    },
+    {
+      "id": "ati_structures:stray_ruins",
+      "required": false
+    },
+    {
+      "id": "ati_structures:mud_tower",
+      "required": false
+    },
+    {
+      "id": "ati_structures:old_fort",
+      "required": false
     }
   ]
 }

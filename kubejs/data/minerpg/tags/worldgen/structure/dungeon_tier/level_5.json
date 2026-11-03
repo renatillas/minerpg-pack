@@ -19,6 +19,14 @@
     {
       "id": "dungeons_arise:shiraz_palace",
       "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:lich_tower",
+      "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:void_blossom",
+      "required": false
     }
   ]
 }

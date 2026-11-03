@@ -35,6 +35,10 @@
     {
       "id": "nova_structures:nether_skeleton_tower_waste",
       "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:gauntlet_arena",
+      "required": false
     }
   ]
 }

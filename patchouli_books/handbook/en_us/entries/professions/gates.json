@@ -18,7 +18,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Cook$(): plated meals at 10, feasts at 20. Cooking pot meals are free for everyone.$(br2)$(l)Explorer$(): scrolls and Crypt Survey Maps at 10, Warp Stones and Sharestones at 15, Waystones, Portstones and Great Dungeon maps at 20, Warp Plates at 25, Boss Lair maps at 30."
+      "text": "$(l)Cook$(): plated meals and hearty dishes (4-5 ingredients) at 10, feasts and grand dishes (6 or more) at 20. Simple dishes and cooking pot meals are free for everyone.$(br2)$(l)Explorer$(): scrolls and Crypt Survey Maps at 10, Warp Stones and Sharestones at 15, Waystones, Portstones and Great Dungeon maps at 20, Warp Plates at 25, Boss Lair maps at 30."
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "croptopia:almond_brittle",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/cook_croptopia_hearty"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:cook",
+      "level": 10,
+      "inverted": true
+    }
+  ]
+}

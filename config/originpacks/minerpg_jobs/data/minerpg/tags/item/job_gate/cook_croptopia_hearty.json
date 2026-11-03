@@ -1,0 +1,245 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "croptopia:almond_brittle",
+      "required": false
+    },
+    {
+      "id": "croptopia:anchovy_pizza",
+      "required": false
+    },
+    {
+      "id": "croptopia:banana_cream_pie",
+      "required": false
+    },
+    {
+      "id": "croptopia:banana_nut_bread",
+      "required": false
+    },
+    {
+      "id": "croptopia:banana_smoothie",
+      "required": false
+    },
+    {
+      "id": "croptopia:blt",
+      "required": false
+    },
+    {
+      "id": "croptopia:brownies",
+      "required": false
+    },
+    {
+      "id": "croptopia:burrito",
+      "required": false
+    },
+    {
+      "id": "croptopia:buttered_green_beans",
+      "required": false
+    },
+    {
+      "id": "croptopia:caesar_salad",
+      "required": false
+    },
+    {
+      "id": "croptopia:candied_nuts",
+      "required": false
+    },
+    {
+      "id": "croptopia:carnitas",
+      "required": false
+    },
+    {
+      "id": "croptopia:cashew_chicken",
+      "required": false
+    },
+    {
+      "id": "croptopia:cheese_pizza",
+      "required": false
+    },
+    {
+      "id": "croptopia:cheesy_asparagus",
+      "required": false
+    },
+    {
+      "id": "croptopia:cherry_pie",
+      "required": false
+    },
+    {
+      "id": "croptopia:chicken_and_noodles",
+      "required": false
+    },
+    {
+      "id": "croptopia:chicken_and_rice",
+      "required": false
+    },
+    {
+      "id": "croptopia:chili_relleno",
+      "required": false
+    },
+    {
+      "id": "croptopia:chocolate_ice_cream",
+      "required": false
+    },
+    {
+      "id": "croptopia:churros",
+      "required": false
+    },
+    {
+      "id": "croptopia:cucumber_salad",
+      "required": false
+    },
+    {
+      "id": "croptopia:deep_fried_shrimp",
+      "required": false
+    },
+    {
+      "id": "croptopia:doughnut",
+      "required": false
+    },
+    {
+      "id": "croptopia:egg_roll",
+      "required": false
+    },
+    {
+      "id": "croptopia:enchilada",
+      "required": false
+    },
+    {
+      "id": "croptopia:fajitas",
+      "required": false
+    },
+    {
+      "id": "croptopia:fish_and_chips",
+      "required": false
+    },
+    {
+      "id": "croptopia:fried_calamari",
+      "required": false
+    },
+    {
+      "id": "croptopia:fried_chicken",
+      "required": false
+    },
+    {
+      "id": "croptopia:leafy_salad",
+      "required": false
+    },
+    {
+      "id": "croptopia:leek_soup",
+      "required": false
+    },
+    {
+      "id": "croptopia:lemon_chicken",
+      "required": false
+    },
+    {
+      "id": "croptopia:mango_ice_cream",
+      "required": false
+    },
+    {
+      "id": "croptopia:nether_wart_stew",
+      "required": false
+    },
+    {
+      "id": "croptopia:nutty_cookie",
+      "required": false
+    },
+    {
+      "id": "croptopia:onion_rings",
+      "required": false
+    },
+    {
+      "id": "croptopia:peanut_butter",
+      "required": false
+    },
+    {
+      "id": "croptopia:pecan_ice_cream",
+      "required": false
+    },
+    {
+      "id": "croptopia:pecan_pie",
+      "required": false
+    },
+    {
+      "id": "croptopia:pepperoni",
+      "required": false
+    },
+    {
+      "id": "croptopia:potato_soup",
+      "required": false
+    },
+    {
+      "id": "croptopia:pumpkin_spice_latte",
+      "required": false
+    },
+    {
+      "id": "croptopia:quesadilla",
+      "required": false
+    },
+    {
+      "id": "croptopia:raisin_oatmeal_cookie",
+      "required": false
+    },
+    {
+      "id": "croptopia:refried_beans",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_asparagus",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_radishes",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_squash",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_turnips",
+      "required": false
+    },
+    {
+      "id": "croptopia:rum_raisin_ice_cream",
+      "required": false
+    },
+    {
+      "id": "croptopia:salsa",
+      "required": false
+    },
+    {
+      "id": "croptopia:strawberry_ice_cream",
+      "required": false
+    },
+    {
+      "id": "croptopia:strawberry_smoothie",
+      "required": false
+    },
+    {
+      "id": "croptopia:taco",
+      "required": false
+    },
+    {
+      "id": "croptopia:tofuburger",
+      "required": false
+    },
+    {
+      "id": "croptopia:tostada",
+      "required": false
+    },
+    {
+      "id": "croptopia:vanilla_ice_cream",
+      "required": false
+    },
+    {
+      "id": "croptopia:veggie_salad",
+      "required": false
+    },
+    {
+      "id": "croptopia:yam_jam",
+      "required": false
+    }
+  ]
+}

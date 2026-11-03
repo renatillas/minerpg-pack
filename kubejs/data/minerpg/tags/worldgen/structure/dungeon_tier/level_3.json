@@ -119,6 +119,154 @@
     {
       "id": "dungeons_arise:undead_pirate_ship",
       "required": false
+    },
+    {
+      "id": "graveyard:medium_graveyard",
+      "required": false
+    },
+    {
+      "id": "graveyard:large_graveyard",
+      "required": false
+    },
+    {
+      "id": "graveyard:haunted_house",
+      "required": false
+    },
+    {
+      "id": "graveyard:crypt",
+      "required": false
+    },
+    {
+      "id": "graveyard:overrun_desert_village",
+      "required": false
+    },
+    {
+      "id": "graveyard:overrun_plains_village",
+      "required": false
+    },
+    {
+      "id": "graveyard:overrun_savanna_village",
+      "required": false
+    },
+    {
+      "id": "graveyard:overrun_snowy_village",
+      "required": false
+    },
+    {
+      "id": "graveyard:overrun_taiga_village",
+      "required": false
+    },
+    {
+      "id": "takesapillage:bastille",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:grain_sack_fort",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:grain_sack_hold",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:grain_sack_keep",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:frozen_onion_fort",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:frozen_onion_fort_taiga",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:whitewarden_keep",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:eldermoor",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:zweiberg",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:zweiberg_plains",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:zweiberg_taiga",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:weathered_colosseum",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:chill_hallmanor",
+      "required": false
+    },
+    {
+      "id": "ati_structures:small_keep",
+      "required": false
+    },
+    {
+      "id": "ati_structures:woodland_keep",
+      "required": false
+    },
+    {
+      "id": "ati_structures:dark_tower",
+      "required": false
+    },
+    {
+      "id": "ati_structures:granite_fort",
+      "required": false
+    },
+    {
+      "id": "ati_structures:ruined_castle",
+      "required": false
+    },
+    {
+      "id": "ati_structures:rotting_temple",
+      "required": false
+    },
+    {
+      "id": "ati_structures:rotting_temple_underground",
+      "required": false
+    },
+    {
+      "id": "ati_structures:sinking_temple",
+      "required": false
+    },
+    {
+      "id": "ati_structures:jungle_grotto",
+      "required": false
+    },
+    {
+      "id": "ati_structures:fortified_temple",
+      "required": false
+    },
+    {
+      "id": "ati_structures:underwater_dungeon",
+      "required": false
+    },
+    {
+      "id": "ati_structures:ancient_temple",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise_seven_seas:small_yacht",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise_seven_seas:pirate_junk",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise_seven_seas:corsair_corvette",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,13 @@
+name = "Grim kingdoms: Lost structures & ruins Vanilla Edition"
+filename = "grim-kingdoms-lost-structures-ruins-vanilla-edition-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/yclIRcrN/versions/Hn8zuckE/grim-kingdoms-lost-structures-ruins-vanilla-edition-2.0.0.jar"
+hash-format = "sha512"
+hash = "bef176cdcf5605b727230e52f482b9625224adf302e8acec5ca8cd98f9dd662265f5adcf9138a7d44083b38edc5dee98f154238aa9a17ff85772b5a7f4a462a1"
+
+[update]
+[update.modrinth]
+mod-id = "yclIRcrN"
+version = "Hn8zuckE"

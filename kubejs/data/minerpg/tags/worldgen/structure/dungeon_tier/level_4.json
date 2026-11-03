@@ -59,6 +59,106 @@
     {
       "id": "dungeons_arise:typhon",
       "required": false
+    },
+    {
+      "id": "graveyard:lich_prison",
+      "required": false
+    },
+    {
+      "id": "graveyard:altar",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:silentgale_citadel",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:silentgale_citadel_plains",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:snowgrave_citadel",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:winterhold_citadel",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:winterhold_citadel_taiga",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:glimmervault_fortress",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:glimmervault_fortress_plains",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:glacierfall_keep",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:glacierfall_keep_plains",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:frostbloom_bastion",
+      "required": false
+    },
+    {
+      "id": "grim_kingdoms:shardspire_castle",
+      "required": false
+    },
+    {
+      "id": "ati_structures:dark_keep",
+      "required": false
+    },
+    {
+      "id": "ati_structures:deepslate_keep",
+      "required": false
+    },
+    {
+      "id": "ati_structures:wither_keep",
+      "required": false
+    },
+    {
+      "id": "ati_structures:wither_cavern",
+      "required": false
+    },
+    {
+      "id": "ati_structures:catalonian_castle",
+      "required": false
+    },
+    {
+      "id": "ati_structures:castillo",
+      "required": false
+    },
+    {
+      "id": "ati_structures:herobrine_stronghold",
+      "required": false
+    },
+    {
+      "id": "ati_structures:underground_monument",
+      "required": false
+    },
+    {
+      "id": "ati_structures:sculk_deposit",
+      "required": false
+    },
+    {
+      "id": "ati_structures:warden_monument",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise_seven_seas:victory_frigate",
+      "required": false
+    },
+    {
+      "id": "dungeons_arise_seven_seas:unicorn_galleon",
+      "required": false
     }
   ]
 }

@@ -1,0 +1,165 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "croptopia:ajvar",
+      "required": false
+    },
+    {
+      "id": "croptopia:beef_jerky",
+      "required": false
+    },
+    {
+      "id": "croptopia:beef_stir_fry",
+      "required": false
+    },
+    {
+      "id": "croptopia:beef_wellington",
+      "required": false
+    },
+    {
+      "id": "croptopia:beetroot_salad",
+      "required": false
+    },
+    {
+      "id": "croptopia:borscht",
+      "required": false
+    },
+    {
+      "id": "croptopia:cabbage_roll",
+      "required": false
+    },
+    {
+      "id": "croptopia:candied_kumquats",
+      "required": false
+    },
+    {
+      "id": "croptopia:cornish_pasty",
+      "required": false
+    },
+    {
+      "id": "croptopia:crab_legs",
+      "required": false
+    },
+    {
+      "id": "croptopia:eggplant_parmesan",
+      "required": false
+    },
+    {
+      "id": "croptopia:eton_mess",
+      "required": false
+    },
+    {
+      "id": "croptopia:figgy_pudding",
+      "required": false
+    },
+    {
+      "id": "croptopia:fruit_cake",
+      "required": false
+    },
+    {
+      "id": "croptopia:fruit_smoothie",
+      "required": false
+    },
+    {
+      "id": "croptopia:goulash",
+      "required": false
+    },
+    {
+      "id": "croptopia:grilled_eggplant",
+      "required": false
+    },
+    {
+      "id": "croptopia:grilled_oysters",
+      "required": false
+    },
+    {
+      "id": "croptopia:horchata",
+      "required": false
+    },
+    {
+      "id": "croptopia:kale_smoothie",
+      "required": false
+    },
+    {
+      "id": "croptopia:lemon_coconut_bar",
+      "required": false
+    },
+    {
+      "id": "croptopia:meringue",
+      "required": false
+    },
+    {
+      "id": "croptopia:nougat",
+      "required": false
+    },
+    {
+      "id": "croptopia:pineapple_pepperoni_pizza",
+      "required": false
+    },
+    {
+      "id": "croptopia:pork_jerky",
+      "required": false
+    },
+    {
+      "id": "croptopia:protein_bar",
+      "required": false
+    },
+    {
+      "id": "croptopia:pumpkin_bars",
+      "required": false
+    },
+    {
+      "id": "croptopia:rhubarb_crisp",
+      "required": false
+    },
+    {
+      "id": "croptopia:scones",
+      "required": false
+    },
+    {
+      "id": "croptopia:steamed_clams",
+      "required": false
+    },
+    {
+      "id": "croptopia:sticky_toffee_pudding",
+      "required": false
+    },
+    {
+      "id": "croptopia:stir_fry",
+      "required": false
+    },
+    {
+      "id": "croptopia:stuffed_artichoke",
+      "required": false
+    },
+    {
+      "id": "croptopia:stuffed_poblanos",
+      "required": false
+    },
+    {
+      "id": "croptopia:supreme_pizza",
+      "required": false
+    },
+    {
+      "id": "croptopia:tamales",
+      "required": false
+    },
+    {
+      "id": "croptopia:trail_mix",
+      "required": false
+    },
+    {
+      "id": "croptopia:treacle_tart",
+      "required": false
+    },
+    {
+      "id": "croptopia:tres_leche_cake",
+      "required": false
+    },
+    {
+      "id": "croptopia:trifle",
+      "required": false
+    }
+  ]
+}

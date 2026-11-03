@@ -267,7 +267,8 @@ E['professions'] = [
         text('$(l)Jeweler$(): gold and gem jewelry at 10, Socket Mounts at 15, diamond and emerald jewelry at '
              '20, netherite jewelry at 25. Copper and iron rings are free.$(br2)The Jeweler villager sells rings '
              'and necklaces, and dungeons hide them.'),
-        text('$(l)Cook$(): plated meals at 10, feasts at 20. Cooking pot meals are free for everyone.'
+        text('$(l)Cook$(): plated meals and hearty dishes (4-5 ingredients) at 10, feasts and grand dishes (6 or more) at '
+             '20. Simple dishes and cooking pot meals are free for everyone.'
              '$(br2)$(l)Explorer$(): scrolls and Crypt Survey Maps at 10, Warp Stones and Sharestones at 15, '
              'Waystones, Portstones and Great Dungeon maps at 20, Warp Plates at 25, Boss Lair maps at 30.'),
     ]),
@@ -302,7 +303,7 @@ E['professions'] = [
              'each new dish.'
              '$(li)$(l)Explorer$(): each new biome, place and waystone, filling in maps, maps, atlases and travel '
              'items.'
-             '$(li)$(l)Farmer$(): harvesting, planting, breeding.'
+             '$(li)$(l)Farmer$(): harvesting (ripe fruit and crops picked by hand too), planting, breeding.'
              '$(li)Miners level from stone and ores.'),
     ]),
 ]

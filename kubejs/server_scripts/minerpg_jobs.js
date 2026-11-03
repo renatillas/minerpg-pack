@@ -70,6 +70,7 @@ const SET_GEM_XP = 20 // Jeweler, per cut gem set into a socket at the anvil
 // per level of every enchantment on the book (Sharpness III = 30). The Smith's own anvil XP is unchanged.
 const ANVIL_BOOK_XP_PER_LEVEL = 10
 const MEAL_XP = 12 // Cook, per cooking pot meal (from the pot's window or served with a bowl)
+const ATLAS_XP = [8, 12] // Explorer, per new atlas (not for adding maps to one)
 const KEG_XP = 6 // Cook, per drink or cheese taken from a Brewin' And Chewin' keg (pack 1.5.0)
 const KEG_OUTPUT_SLOT = 5 // KegBlockEntity.OUTPUT_SLOT
 // Cook (designer, 2026-11-02: the Cook levelled too slowly).
@@ -555,6 +556,13 @@ ItemEvents.crafted(event => {
     var result = event.item
     if (player == null || result.isEmpty()) return
     if (result.hasTag('minerpg:job_bonus/second_helping')) firstDish(player, result)
+    // Explorer: XP for a newly made atlas only. Adding maps to an atlas (or cutting one) also crafts an atlas, with
+    // the atlas itself in the grid (pack 1.5.1: adding maps one at a time was an XP farm).
+    if (result.id == 'map_atlases:atlas' && jobOf(player, 'explorer') != null) {
+      var grid = event.inventory, hadAtlas = false
+      for (var i = 0; i < grid.getContainerSize(); i++) if (grid.getItem(i).id == 'map_atlases:atlas') hadAtlas = true
+      if (!hadAtlas) giveJobXp(player, 'explorer', ATLAS_XP[0] + player.getRandom().nextInt(ATLAS_XP[1] - ATLAS_XP[0] + 1), 'atlas made')
+    }
     EXTRA_COPY.forEach(([job, family, tag, chances]) => {
       if (!result.hasTag(tag)) return
       var tier = powerupTier(player, job, family)

@@ -216,6 +216,21 @@ COOK_FREE_FOOD = [FD + i for i in [
     'minecraft:' + i for i in [
         'bread', 'cake', 'cookie', 'pumpkin_pie', 'mushroom_stew', 'rabbit_stew', 'beetroot_soup']]
 FREE_FOOD_XP = (5, 6)
+# Croptopia (pack 1.5.1, designer: "integrate Croptopia to what we have"). Its table dishes join the Cook by real
+# ingredient count (its own kitchen tools don't count): 1-3 free (FREE_FOOD_XP), 4-5 hearty at Cook 10, 6+ grand at
+# Cook 20. Dishes and crops Farmer's Delight or Brewin' And Chewin' already have are left out: minerpg_croptopia.js
+# hides them and swaps them for the kept item (keep CROPTOPIA_DUPLICATES in step with its CROPTOPIA_KEEP).
+CROPTOPIA_TOOLS = {'croptopia:frying_pan', 'croptopia:cooking_pot', 'croptopia:knife', 'croptopia:mortar_and_pestle',
+                   'croptopia:food_press'}
+CROPTOPIA_DUPLICATES = {'tomato', 'cabbage', 'onion', 'rice', 'bacon', 'cooked_bacon', 'milk_bottle', 'melon_juice',
+                        'apple_pie', 'fruit_salad', 'hamburger', 'beef_stew', 'pumpkin_soup', 'ratatouille',
+                        'shepherds_pie', 'beer', 'mead', 'pizza', 'quiche'}
+CROPTOPIA_FOOD_TAGS = ('advancements_food_crafted', 'advancements_food_big', 'advancements_drinks')
+CROPTOPIA_TIERS = [  # key, level, title, fewest real ingredients
+    ('cook_croptopia_grand', 20, 'grand dishes', 6),
+    ('cook_croptopia_hearty', 10, 'hearty dishes', 4),
+]
+CRAFT_BONUS.update({'cook_croptopia_hearty': (10, 14), 'cook_croptopia_grand': (20, 25)})
 CRAFT_BONUS.update({'cook_plate': (15, 20), 'cook_feast': (40, 50)})
 # Early levelling (designer, 2026-11-02: every job should be able to level early). Jobs+ built-in actions given new
 # numbers (same id, so they replace the jar's): [file under data/jobsplus/arc/, XP, new job or None].
@@ -269,7 +284,7 @@ TRAVEL_GATES = [
 ]
 # Map Atlases (pack 1.5.0): the Explorer makes atlases for the party (its minimap is off, client config).
 ATLAS_GATE = ('travel_atlas', 10, 'Atlases', 'map_atlases:atlas')
-CRAFT_BONUS.update({'travel_atlas': (8, 12), 'survey_crypt': (8, 12), 'survey_dungeon': (15, 20), 'survey_lair': (25, 30),
+CRAFT_BONUS.update({'survey_crypt': (8, 12), 'survey_dungeon': (15, 20), 'survey_lair': (25, 30),
                     'travel_scrolls': (4, 6), 'travel_sharestones': (12, 15), 'travel_waystones': (15, 20),
                     'travel_warp_plate': (20, 25)})
 FREE_SURVEY_XP = (10, 12)
@@ -378,6 +393,41 @@ def gear_groups(server):
     for tier, items in tiers.items():
         for item in sorted(set(items)):
             out.setdefault((tier, group(item)), []).append(item)
+    return out
+
+
+def croptopia_dishes(mods):
+    """Croptopia's table dishes by tier: {'free': [...], <CROPTOPIA_TIERS key>: [...]}. A dish with several table
+    recipes takes its easiest one."""
+    jars = glob.glob(os.path.join(mods, 'croptopia-*.jar'))
+    if not jars:
+        raise SystemExit('no Croptopia jar found')
+    with zipfile.ZipFile(jars[0]) as z:
+        food = set()
+        for tag in CROPTOPIA_FOOD_TAGS:
+            food |= {v for v in json.loads(z.read(f'data/croptopia/tags/item/{tag}.json'))['values']
+                     if isinstance(v, str) and not v.startswith('#')}
+        fewest = {}
+        for name in z.namelist():
+            if not re.match(r'data/croptopia/recipe/[^/]*\.json$', name):
+                continue
+            recipe = json.loads(z.read(name))
+            if not recipe.get('type', '').startswith('minecraft:crafting_'):
+                continue
+            result = recipe.get('result', {})
+            rid = result.get('id') if isinstance(result, dict) else None
+            if rid not in food or rid.split(':')[1] in CROPTOPIA_DUPLICATES:
+                continue
+            if 'key' in recipe:
+                ings = [recipe['key'][c] for row in recipe['pattern'] for c in row if c != ' ']
+            else:
+                ings = recipe.get('ingredients', [])
+            real = [i for i in ings if not (isinstance(i, dict) and i.get('item') in CROPTOPIA_TOOLS)]
+            fewest[rid] = min(fewest.get(rid, 99), len(real))
+    out = {'free': []}
+    for rid, n in sorted(fewest.items()):
+        key = next((k for k, _, _, least in CROPTOPIA_TIERS if n >= least), 'free')
+        out.setdefault(key, []).append(rid)
     return out
 
 
@@ -546,6 +596,10 @@ def build(server):
                   CRAFT_BONUS['jewel_socket_mount']))
     for key, level, title, items, icon in COOK_GATES:
         gates.append(('cook', key, level, items, icon, CRAFT_BONUS[key]))
+    croptopia = croptopia_dishes(os.path.join(server, 'mods'))
+    for key, level, title, least in CROPTOPIA_TIERS:
+        gates.append(('cook', key, level, croptopia[key], croptopia[key][0], CRAFT_BONUS[key]))
+    free_food = COOK_FREE_FOOD + croptopia['free']
     for key, level, item in SURVEY_MAPS:
         if level:
             gates.append(('explorer', key, level, [item], item, CRAFT_BONUS[key]))
@@ -555,12 +609,13 @@ def build(server):
             raise SystemExit(f'no {title} found')
         gates.append(('explorer', key, level, travel[key], icon, CRAFT_BONUS[key]))
     key, level, title, item = ATLAS_GATE
-    gates.append(('explorer', key, level, [item], item, CRAFT_BONUS[key]))
+    # No XP here: adding maps to an atlas is also a crafted atlas. minerpg_jobs.js pays only a newly made one.
+    gates.append(('explorer', key, level, [item], item, None))
     for job, key, level, values, icon, bonus in gates:
         write(os.path.join(tag_dir, key + '.json'), {
             'replace': False, 'values': [{'id': v, 'required': False} for v in values]})
         items = {'type': 'arc:items', 'items': [f'#minerpg:job_gate/{key}']}
-        rewards = [job_exp(*bonus)]
+        rewards = [job_exp(*bonus)] if bonus else []
         if level:  # level 0: free to craft, only the XP bonus
             write(os.path.join(restrictions, key + '.json'),
                   restriction(job, level, ['craft'], items, {'id': icon, 'count': 1}))
@@ -640,7 +695,7 @@ def build(server):
         'holder': holder('cook'),
         'type': 'arc:on_craft_item',
         'rewards': [job_exp(*FREE_FOOD_XP)],
-        'conditions': [{'type': 'arc:items', 'items': COOK_FREE_FOOD}],
+        'conditions': [{'type': 'arc:items', 'items': free_food}],
     })
     write(os.path.join(arc, 'explorer', 'craft_free_survey_map.json'), {
         'holder': holder('explorer'),
@@ -671,7 +726,8 @@ def build(server):
     bonus_dir = os.path.join(PACK, 'tags', 'item', 'job_bonus')
     reset(bonus_dir)
     bonus = {
-        'second_helping': [i for _, _, _, items, _ in COOK_GATES for i in items] + COOK_FREE_FOOD,
+        'second_helping': [i for _, _, _, items, _ in COOK_GATES for i in items] + free_food
+                          + [i for k, _, _, _ in CROPTOPIA_TIERS for i in croptopia[k]],
         'mapmaker': [i for _, _, i in SURVEY_MAPS],
         'waywright': [i for k in travel for i in travel[k]],
     }
@@ -695,6 +751,7 @@ def build(server):
     print(f'{count} item restrictions, ' + ', '.join(f'{k[1]} {k[0]}: {len(v)}' for k, v in sorted(gear.items())) + ', '
           + ', '.join(f'{k}: {len(v)}' for k, v in sorted(jewelry.items())) + ', '
           + ', '.join(f'{k}: {len(v)}' for k, v in sorted(travel.items())) + ', '
+          + ', '.join(f'croptopia {k}: {len(v)}' for k, v in sorted(croptopia.items())) + ', '
           f'{len(JOBS) * len(MILESTONES)} milestone actions, {len(XP_ADVANCEMENTS)} XP advancements')
 
 

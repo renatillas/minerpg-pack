@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "croptopia:ajvar",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/cook_croptopia_grand"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:cook",
+      "level": 20,
+      "inverted": true
+    }
+  ]
+}

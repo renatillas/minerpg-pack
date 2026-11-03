@@ -23,6 +23,14 @@
     {
       "id": "dungeons_arise:heavenly_rider",
       "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:obsidilith_arena",
+      "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:void_blossom",
+      "required": false
     }
   ]
 }

@@ -26,6 +26,8 @@ const MARKET_STALLS = {
   farmer: { job: 'farmer', name: "Willa Furrowfield, Farmer's Goods", offers: [
     ['farmersdelight:cabbage_seeds', 8, 3], ['farmersdelight:tomato_seeds', 8, 3], ['farmersdelight:rice', 8, 3],
     ['minecraft:bone_meal', 32, 4], ['minecraft:cherry_sapling', 4, 15], ['minecraft:mangrove_propagule', 4, 15],
+    ['croptopia:strawberry_seed', 8, 3], ['croptopia:corn_seed', 8, 3], ['croptopia:garlic_seed', 8, 3],
+    ['croptopia:apple_sapling', 1, 8], ['croptopia:orange_sapling', 1, 8], ['croptopia:banana_sapling', 1, 8],
     ['minecraft:enchanted_golden_apple', 1, 128]] },
   smith: { job: 'smith', name: "Haldor Brightanvil, Smith's Wares", offers: [
     ['minecraft:anvil', 1, 12], ['minecraft:iron_block', 4, 15],
@@ -40,7 +42,7 @@ const MARKET_STALLS = {
     ['minecraft:blaze_rod', 4, 20], ['minecraft:ghast_tear', 1, 20],
     ['apotheosis:potion_charm[potion_contents={potion:"minecraft:regeneration"}]', 1, 90]] },
   cook: { job: 'cook', name: "Mabel Saltpan, Cook's Pantry", offers: [
-    ['minecraft:sugar', 16, 3], ['farmersdelight:onion', 16, 4], ['farmersdelight:tomato', 16, 4],
+    ['minecraft:sugar', 16, 3], ['croptopia:salt', 16, 3], ['farmersdelight:onion', 16, 4], ['farmersdelight:tomato', 16, 4],
     ['minecraft:golden_carrot', 8, 15], ['farmersdelight:cooking_pot', 1, 20], ['minecraft:golden_apple', 4, 70]] },
   hunter: { job: 'hunter', name: "Tamsin Ridgewatch, Hunter's Lodge", offers: [
     ['minecraft:arrow', 64, 4], ['minecraft:leather', 16, 5], ['minecraft:lead', 2, 3],

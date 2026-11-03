@@ -37,6 +37,10 @@ file = "config/bettercombat/server.json5"
 hash = "3fb34cf72b4a39dbd7b4ff85d4672c528bad2c6b064773de5b2a27ecc06753b2"
 
 [[files]]
+file = "config/bosses_of_mass_destruction.json5"
+hash = "05385426fb4784007c1ea88c877aaf97c4d63e88156772b7310a826d7ff19d83"
+
+[[files]]
 file = "config/cataclysm-common.toml"
 hash = "5bd979c7cbbd47287756e3a46ed87ae11cac32fded862ebacaa43f9917b6432a"
 
@@ -138,7 +142,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "cb85c65d4f815d31298004d46b26cd19ff62ef5b46d5309662e2eccc8c730e11"
+hash = "17f20b2ad0a8a34138783fd868cb1a0517326dec8190b190b5108c317f87b0ff"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -151,6 +155,10 @@ hash = "b363301b3243d56fc32dbb3ee498abe1bd1b1a20e74cdbe5c8a3581e956f742d"
 [[files]]
 file = "config/gazebo/villages.json"
 hash = "2488d0fbb03859c43940f6e3939f09c9570bfdccb6fb49101bb2ad5c9a2fc11f"
+
+[[files]]
+file = "config/graveyard/graveyard.json5"
+hash = "1dc5d8ec3fc4339e8d56f73b3ed115c6189a491cab62d0e16f815f5ececce5ae"
 
 [[files]]
 file = "config/hardcorerevival-common.toml"
@@ -389,6 +397,10 @@ file = "config/originpacks/minerpg_jobs/data/minerpg/arc/farmer/harvest_fd_mushr
 hash = "61871ae1e380efb832429af08fe1878eed0e2ca57cbaa9a9fead46b0e6d3417c"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/farmer/pick_croptopia_crops.json"
+hash = "97d1a23b7ebc6dd8ca9f1d738ff32638924d84cba964de20d8ffdca900d5b115"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/farmer/pick_fd_tomatoes.json"
 hash = "ce4cdb3751d1d8522703137eef204d70df101768cee7de53d70799fc16f2ec91"
 
@@ -405,6 +417,14 @@ file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/alchemist/craft_run
 hash = "b60187007deaec785ad004f241f53b8218c4e5d13df96a91a10bc21e618d105b"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/cook/craft_cook_croptopia_grand.json"
+hash = "a924c1eb78fdd9f1ceab01c955c5dc6650a6de60e060728941d2870405769fc1"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/cook/craft_cook_croptopia_hearty.json"
+hash = "cb534ae091f5c3b4551cec05832ee9cd14a9b87779ed4148c35b0836923a6fed"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/cook/craft_cook_feast.json"
 hash = "191b1a82f905408b71e01f11d07efd7e23d078ba6b8ebb005dd64e0c9424ce4e"
 
@@ -414,7 +434,7 @@ hash = "28abbfbb82643591bb6635a72824ee18ecfc7fa57e501553d98aee30a8a32dea"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/cook/craft_free_food.json"
-hash = "d3c43b770fd164b691338048f4c309357e6b0798a5965f7a4d0f5d7b00baee74"
+hash = "90bdc2548ec5e8f9c93feee5bbe0525aa07806e785f4b1bf0d78f5655629a1bc"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/enchanter/craft_enchanter_shelf_1.json"
@@ -470,7 +490,7 @@ hash = "f938d3f63baf5d5af2244fc80349c78e968c1ac8373ef13902a94930da72d92f"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_travel_atlas.json"
-hash = "a5b2a16528997cfb8c1e7caa7cd734684cdccb1589dbd2e63209255a5db1dfd6"
+hash = "141e0546112e4acd961307bb9fcbacad6a62c17f3ed7dab35a24c932834b5a1d"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_travel_scrolls.json"
@@ -655,14 +675,6 @@ hash = "11d6eec58aef72ff598fb509f1cf2c94f1b18b27f0d59fb353dd66989361c25a"
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/hunter/forage_mushroom_quest.json"
 hash = "045a5c8598d2422e705d99c435b6468278c8721dec8831d6453ffbfb5183c7a9"
-
-[[files]]
-file = "config/originpacks/minerpg_jobs/data/minerpg/arc/miner/break_geore_clusters.json"
-hash = "d4d01f6fe0d0ac3536b022abc33f44adf46482b509bd750c430a22d591600929"
-
-[[files]]
-file = "config/originpacks/minerpg_jobs/data/minerpg/arc/miner/break_geore_rare_clusters.json"
-hash = "18a50600ab30bcd6bec521e3eadd82f477d4f14a9a532eb2849a0840aa676dca"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/smith/craft_rpg_gear.json"
@@ -957,6 +969,14 @@ file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictio
 hash = "203723daba4f5c5120c48af3532c88d71300fdd82117e59fddf4d03d25d9a652"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/cook_croptopia_grand.json"
+hash = "514fa4eda457033043cd959e1687166c52194774d33dba889c66a421791597dc"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/cook_croptopia_hearty.json"
+hash = "7f556d21ad8e6a5432ae99ca3c65ab333880216f6e4bf78038a1eeaabc5c93ed"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/cook_feast.json"
 hash = "11f376aea8f53d22e561395132fad812945692662881a70ff6d2b5c66d7e7ad8"
 
@@ -1070,11 +1090,19 @@ hash = "5fee2a52fc027da4606007bbb9c4c7318979980ee1f675964c115891086c154c"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_bonus/second_helping.json"
-hash = "e0a8bea3b9a2dcc141df26b39e5151d945596977587d764a8f6273f16d466f34"
+hash = "32532b9234b744b951056b073783c850a96ca5b672155524dc63f2b32afcfb56"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_bonus/waywright.json"
 hash = "4cfe69a6dde71650110be354be826646599fbc9d5e6d2230f170f109c01c8bf2"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/cook_croptopia_grand.json"
+hash = "1dbd62cf156fd4e45f2d8f5bd6fb21abfa60301e7e2f175079cca56528452eb9"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/cook_croptopia_hearty.json"
+hash = "bd90de7ee6c0cae18ea6a32c71443f4fde3d6f9d5cb51e10b0b031d5962832e2"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/cook_feast.json"
@@ -1138,15 +1166,15 @@ hash = "20ffa4f2b38c59659cf18b334c8aa1cada873e85a3832c00222cc5c9bf4834b0"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_plate_tier_1.json"
-hash = "9da1275eea86f021fd5eb12c75a5ebdfea15bad1ca585b0f9577b59036efd0aa"
+hash = "6ff45a79e2b53de46fb7b4da80874ebf326b0f23a78a5602b14482dd047ff0c2"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_plate_tier_2.json"
-hash = "9597a2a1c298bdbadba5fbab17f1bd65410141b115f486104b9709ba88f5ada9"
+hash = "8666069ee64ed88091c8bfd9f3eaf7bba5be68807daa2a971e5bab1bb075036b"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_plate_tier_3.json"
-hash = "8eb14ecb4337710e5d3b94fb52a8be6f9e599beb35dad71bdb1fc523c0b3211b"
+hash = "cffc9ee4043d85dad7f2ff9e6398a20b6eae02628754befb41ce71e5e8aa0684"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/jewel_diamond.json"
@@ -1467,6 +1495,10 @@ hash = "72b9cd13614463bc6db7a2565ff899d15f24403ba7221647343e53c8c6b33237"
 [[files]]
 file = "kubejs/assets/apotheosis/models/item/gems/caster/arcanist.json"
 hash = "01b0277b6eaac75d738b5c60e53317ed09311b2e29292423a9023d9b13fbc0b3"
+
+[[files]]
+file = "kubejs/assets/croptopia/lang/en_us.json"
+hash = "c44691a3a076bcc6e9b256401d7bbae624628a12fef5fe88a44a03c0f1334c17"
 
 [[files]]
 file = "kubejs/assets/itemrestrictions/lang/en_us.json"
@@ -1889,12 +1921,32 @@ file = "kubejs/data/apotheosis/tier_augments/summit/armor_pierce.json"
 hash = "9b92dd9e70e61c0d30b9191595d14bb5ebceb1c8a3f0400fd9bfd57f6c7b0cb8"
 
 [[files]]
+file = "kubejs/data/c/tags/item/oats.json"
+hash = "4e6386399046bc731d6cb1e527f2a6149b2ba249277a320bfde55e6ca74feff8"
+
+[[files]]
 file = "kubejs/data/cataclysm/tags/block/needs_black_steel_tool.json"
 hash = "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31"
 
 [[files]]
 file = "kubejs/data/cataclysm/tags/block/needs_monstrosity_tool.json"
 hash = "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31"
+
+[[files]]
+file = "kubejs/data/croptopia/neoforge/biome_modifier/add_cabbage_crop_to_biomes.json"
+hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
+
+[[files]]
+file = "kubejs/data/croptopia/neoforge/biome_modifier/add_onion_crop_to_biomes.json"
+hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
+
+[[files]]
+file = "kubejs/data/croptopia/neoforge/biome_modifier/add_rice_crop_to_biomes.json"
+hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
+
+[[files]]
+file = "kubejs/data/croptopia/neoforge/biome_modifier/add_tomato_crop_to_biomes.json"
+hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
 
 [[files]]
 file = "kubejs/data/dungeon_difficulty/tags/block/no_mining_exempt.json"
@@ -4258,11 +4310,11 @@ hash = "4a10037ef568203c26eb20898354bf95c6466a898a581668040673f94b274fb7"
 
 [[files]]
 file = "kubejs/data/minerpg/loot_modifiers/coins_dungeon_chests.json"
-hash = "76a41570937ef3f6c98c80717401d29adb39bc96fe709681f2649111b13232a5"
+hash = "2164a7e9fa247a936631abfe57497184b2a7e7aeef095ab49d1a3141a2204685"
 
 [[files]]
 file = "kubejs/data/minerpg/loot_modifiers/coins_ordinary_chests.json"
-hash = "28403b68cf9f01a7e94ff9ad2fa9449856c33a7274f75afb5caac2ae97e6d7e1"
+hash = "e4ed285af6fd53c9798786c50b84682e0344408a2fd3f60f27686637d91fc871"
 
 [[files]]
 file = "kubejs/data/minerpg/loot_table/coins/boss.json"
@@ -6702,7 +6754,7 @@ hash = "f4b4f4d6cde4741f16063cbb10a3ec132c673cfbe44dd7da464505583d9f21bd"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/entity_type/boss.json"
-hash = "83f5bdd1b5c84bffe62cd4bd5007753567b6599397cfca3d3e46c8fa739d633d"
+hash = "bffaafb55fda0cd2c46620ed69c4e7bd3e5b786abf4ee4d65d94c5f63019a4e5"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/entity_type/tuned_boss.json"
@@ -6722,7 +6774,7 @@ hash = "7ab8086e2101129cf3ed4a7b5d592ecc1ee2488dc1619c5b544ca534c7a0da3f"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/end.json"
-hash = "9ceed88580ef345cbcd330c44c91cf4f615d017633bc136605414a90ff1250cc"
+hash = "36e11a24fdaf490407e06b0fe17f540bf62906e4bb95f69982b66bb8d9e66afa"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/end_great.json"
@@ -6730,23 +6782,23 @@ hash = "d0792c357353e2fdc0c261dd2fc494d633d3ca67849206afa3419c6f33a7c7dd"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_2.json"
-hash = "41e99477bdfb6a0b87c8798dbe7f7fe1c39b5a600214fe182905e70506a6e41b"
+hash = "f7e4f719d995c96221d7ec7f38aa1a4a2e93a3aa9133839bcfb9ec625d620c98"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_3.json"
-hash = "e4c3b849954cd4ff9cf918ba4871ed1effb7f48f5f4b25433e29de8a99fe48a8"
+hash = "391f554d4851ce1623a0c2af659749c3c220799199ba668aefb44f5888f58373"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_4.json"
-hash = "4a7267c0e0eb273dc1ca90d95b12bf65a4d01b1869891f4d81053f168485fe06"
+hash = "1654a49e797cb3642c99a072bf1dc2a52f3024793e94170ec8b810291c17159f"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_5.json"
-hash = "36b5c8d6d4f2474da98c2d947f495ba65fefd857be5682a98e1d837a644c71f9"
+hash = "a507ed22a39fa054f3f3676e9efe1c2fc1cd46c920ec6d81721b0cc6cfcc2b77"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/nether.json"
-hash = "bcb47eb0509f55d2155106b51646b34ef07efdaa1f28c349372eceba63c7e613"
+hash = "e418d29e6203a4b0734c559a4f6c3d2db01f320eaae9bed3113763bedfc06f5e"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/overworld.json"
@@ -6877,6 +6929,10 @@ file = "kubejs/server_scripts/minerpg_coins.js"
 hash = "e22e441ae4f199ed4c056ebfe6be28b5c46bf03140e24c866066e02777a886ef"
 
 [[files]]
+file = "kubejs/server_scripts/minerpg_croptopia.js"
+hash = "eec3fc12197ec55880818d2c8ab7775cc50fb504e7d627ea039be214aa244630"
+
+[[files]]
 file = "kubejs/server_scripts/minerpg_enchanting.js"
 hash = "ea4be89cfb7b6b5570f23bc061950e5ea02dc5085cbaea7ff3d972a4746390b3"
 
@@ -6890,11 +6946,11 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "dd0813ec9372c55f64c80275dd9d3fb9549c85eecb874ed6c835fa8e26b7665d"
+hash = "e069fd990804c55e4b78fafb7afcdc3013f5316ab31eb2f1b8f812b3982d2bf9"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_market.js"
-hash = "de4e52d9c2d731010bb82875091517cbcffbcab0be483b2eb22a9eeb4035dbe2"
+hash = "a3d13fcf840c2861ecdd1fde12f209ea37b64e21feed4f7874803cf4bec32f2a"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_mastery.js"
@@ -6902,7 +6958,7 @@ hash = "029bda98de8ec5be1b3773d5d62015a67fbf28fa194ca86455504d3200859982"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
-hash = "6e4bc65d4548a88a2cd61e99210fbb1c5facb6539f8b6108fb58651fec4c4c2d"
+hash = "4d52343d7934265b08d37c7b9601b684ccebe1f1a5433eefb266301d641cfba2"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_salvage.js"
@@ -6999,6 +7055,11 @@ hash = "4dd0f3a3980d883254e550b4d98aa9f13dae45a8113e67565ff62786e0172c12"
 metafile = true
 
 [[files]]
+file = "mods/ati-structures-vanilla-edition.pw.toml"
+hash = "6b0cc79adaf736f3d73a3dc647a627e017d9bc2067355700b259cf7fc872b274"
+metafile = true
+
+[[files]]
 file = "mods/attributefix.pw.toml"
 hash = "f0edb6932d0c3f97338cf660763ff43bc5febdf0eb5edeca3a1927c20f14e296"
 metafile = true
@@ -7034,8 +7095,18 @@ hash = "68d6016fa3707c434b3aca5db041c7518c70feb53d0183faa2502cc6efd4c827"
 metafile = true
 
 [[files]]
+file = "mods/bosses-of-mass-destruction-forge.pw.toml"
+hash = "74143850a12b0f9daf3ef2c503e61141319f3715a48a2fde53bc31b3c9719788"
+metafile = true
+
+[[files]]
 file = "mods/brewin-and-chewin.pw.toml"
 hash = "22d9510588b081cf9905f6549d24bc11012aa8d9c7d38a8619ab9db5ccb7b9a8"
+metafile = true
+
+[[files]]
+file = "mods/cerbons-api.pw.toml"
+hash = "479dab388743fb59d3399d2d87a0a7dc0819a4184b74f734fa9cc1eecdd6f6f6"
 metafile = true
 
 [[files]]
@@ -7164,6 +7235,11 @@ hash = "35779b39ddc06059ec483b33de2ecfdc3adb95c0a49e69b6701fb0024827e2f5"
 metafile = true
 
 [[files]]
+file = "mods/grim-kingdoms-lost-structures-ruins-vanilla-edition.pw.toml"
+hash = "45214ae1279a5cac81fcb8396870e2b299e8245b68da829b12f85f26441da098"
+metafile = true
+
+[[files]]
 file = "mods/hardcore-revival.pw.toml"
 hash = "b40bf18d55e384abd8799b611c84a264518e4fc6aed6f49aa568a49578bae083"
 metafile = true
@@ -7186,6 +7262,11 @@ metafile = true
 [[files]]
 file = "mods/inventory-profiles-next.pw.toml"
 hash = "ab503e89461dff879ee793253e173625b6ab868f570a371323ef725e567cf5ea"
+metafile = true
+
+[[files]]
+file = "mods/it-takes-a-pillage-continuation.pw.toml"
+hash = "6ed3569361aa9242512f437d3ec7091add82bf6178762d2bca72549ac667ece4"
 metafile = true
 
 [[files]]
@@ -7419,6 +7500,11 @@ hash = "bee98f0db61db79ee173e45c940a58d1fc09f754797bdb2aee4e10e4884ebd04"
 metafile = true
 
 [[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "c0b066684294c33972d562e0cb08ea17b2d31bcf86cd1d6c63b8e968f0eac7a2"
+metafile = true
+
+[[files]]
 file = "mods/rhino.pw.toml"
 hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
@@ -7489,6 +7575,16 @@ hash = "b43fd8343ee66b129ea22bcd7ba47ad392e7edc33cb24be0ed604b2225ed0229"
 metafile = true
 
 [[files]]
+file = "mods/structurify.pw.toml"
+hash = "525721054a6788dfeb36276dee55100414b265a60b9bce655612930ad3705d15"
+metafile = true
+
+[[files]]
+file = "mods/the-graveyard-fabric.pw.toml"
+hash = "dc2c6aee92eeeac4527b10dd8ecb7f3f6332f0c08c6603ca523e7e8a6a961448"
+metafile = true
+
+[[files]]
 file = "mods/tiny-config.pw.toml"
 hash = "be98f35a27ed18827b70b4aa3fce92067d7a3d00f4d39d1ada5797cfb90fa470"
 metafile = true
@@ -7524,8 +7620,18 @@ hash = "ab97b4d7dc071fe3b414e00631750b8eabdb1ea8437c9565f2f2b15d331c7a25"
 metafile = true
 
 [[files]]
+file = "mods/villagerstradingplus.pw.toml"
+hash = "a15e0c1dbfe367ca9997c3464024960f2d38010d227aed65c33dc874c2b3e2d8"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
 hash = "2dad5577c5ec5e73bb3d5cec8da606e3b72e384207c9291a25e1ae96fd20bb70"
+metafile = true
+
+[[files]]
+file = "mods/when-dungeons-arise-seven-seas.pw.toml"
+hash = "6817acd8f1a98c3e7c00e61507a9178fa9c7398b356f6e92704656a712157dcd"
 metafile = true
 
 [[files]]
@@ -7536,6 +7642,11 @@ metafile = true
 [[files]]
 file = "mods/wizards.pw.toml"
 hash = "e6e7bdb68b3a0a824b3c6a19c7f4ec880555f912d6f354d67bbd4c8250922591"
+metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "539f362e9e192cf3b2813e0dfdfc51a5e6814129c6e82a9733842529beea6242"
 metafile = true
 
 [[files]]
@@ -7832,7 +7943,7 @@ hash = "2c0fea88bedf1570cf604e31f23d17f71e9aac552cfedbd4c52350f982e3f3c3"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/gates.json"
-hash = "e711e8ddb6a3c67e2f6c2ef054c934a6fe375af27ba2411082b0a2d1fe2f4a21"
+hash = "76999f43e6be3bf73384caa5e6792e3fc863e5db396828e75c0c05cf6b7b4357"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/hunter.json"
@@ -7848,7 +7959,7 @@ hash = "0dac52830680b8f794eaf9a9608b6e2b74de096876f9abc75cb625e79c8a69cb"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/xp.json"
-hash = "acff3cb557ffe10c0060870a5de58ebf80125c023917065e7fbf96a77e45c42e"
+hash = "f42c08b9feb2e53b5c04bf2bb2af8ad7bebcc8c4d2a26783cd90e6674345eb2e"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/races/change.json"

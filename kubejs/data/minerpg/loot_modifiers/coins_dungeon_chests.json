@@ -22,6 +22,90 @@
         },
         {
           "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/aqua"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/archer_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/archer_chest2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/armory"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/coal_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/construction"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/copper_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/crafting"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/food_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/gold_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/ingredients"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/iron_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/library"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/mechanism_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/minerals"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/potion_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/resources"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/slime"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/stone_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/vegetation"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ati_structures:chests/wood_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
           "loot_table_id": "betterdeserttemples:chests/food_storage"
         },
         {
@@ -147,6 +231,18 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "betterstrongholds:chests/treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "bosses_of_mass_destruction:chests/gauntlet"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "bosses_of_mass_destruction:chests/lich_tower"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "bosses_of_mass_destruction:chests/obsidilith"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -735,6 +831,170 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/corsair_corvette/corsair_corvette_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/corsair_corvette/corsair_corvette_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/corsair_corvette/corsair_corvette_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/pirate_junk/pirate_junk_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/pirate_junk/pirate_junk_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/pirate_junk/pirate_junk_supply"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/pirate_junk/pirate_junk_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/small_yacht/small_yacht_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/small_yacht/small_yacht_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/small_yacht/small_yacht_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/unicorn_galleon/unicorn_galleon_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/unicorn_galleon/unicorn_galleon_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/unicorn_galleon/unicorn_galleon_supply"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/unicorn_galleon/unicorn_galleon_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/victory_frigate/victory_frigate_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/victory_frigate/victory_frigate_normal_lower"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/victory_frigate/victory_frigate_normal_upper"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/victory_frigate/victory_frigate_supply"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise_seven_seas:chests/victory_frigate/victory_frigate_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/arrow_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/bone_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/brewing_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/candle_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/creeper_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/crypt_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/crypt_urn_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/desert_graveyard_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/flesh_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/flower_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/great_crypt_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/large_graveyard_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/large_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/medium_graveyard_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/medium_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/misc_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/ore_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/small_graveyard_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/small_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/swamp_graveyard_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/totem_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "graveyard:chests/vase_loot"
         },
         {
           "condition": "neoforge:loot_table_id",

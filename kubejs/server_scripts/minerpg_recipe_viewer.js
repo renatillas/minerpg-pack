@@ -71,4 +71,6 @@ const JEI_HIDDEN_ITEMS = [
 
 RecipeViewerEvents.removeEntries('item', event => {
   JEI_HIDDEN_ITEMS.forEach(id => event.remove(id))
+  // Croptopia's copies of Farmer's Delight / Brewin' And Chewin' items (minerpg_croptopia.js).
+  Object.keys(CROPTOPIA_KEEP).forEach(id => event.remove(id))
 })
