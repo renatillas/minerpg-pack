@@ -7138,7 +7138,7 @@ hash = "ec9c1733788c9869f82fae9a2db5675229b2a3bf49b53b03c7c24d2ba927c2be"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_cognition.js"
-hash = "0e88fa27ad401fcead644042b7ec68dd2e1fb186301c8f2c16698bc85c073cb8"
+hash = "a25a6d0a889868759f389edf9191c1080a392eea39175516afdf80547a177346"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_coins.js"
