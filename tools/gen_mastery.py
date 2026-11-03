@@ -116,6 +116,20 @@ def spell_hit(p, school=None, impact='DAMAGE', **extra):
 
 GOLD, HOLY, FROST, BLOOD, GREEN = 4294954111, 4294954239, 3439329279, 4291559424, 4284940287
 
+# Stat skills' tooltip text. Skill Tree RPGs only fills tooltips for its own skills (a client-side list keyed by
+# skill id), so stat skills carry their text as a plain translation; spell skills get their tooltip from
+# kubejs/client_scripts/minerpg_mastery_tooltips.js, which adds them to that list.
+ATTR_TEXT = {
+    'minecraft:generic.armor': '+{v:g} armor',
+    'minecraft:generic.attack_damage': '+{p:g}% melee damage',
+    'minecraft:generic.attack_speed': '+{p:g}% attack speed',
+    'minecraft:generic.max_health': '+{v:g} max health',
+    'ranged_weapon:damage': '+{p:g}% ranged damage',
+    'spell_power:frost': '+{p:g}% frost spell power',
+    'spell_power:haste': '+{p:g}% spell haste',
+    'spell_power:healing': '+{p:g}% healing power',
+}
+
 # --------------------------------------------------------------------------------------
 # The Mastery designs. Spell ids: minerpg:mastery_<class>_<name>.
 # Each class: (required mod, school, icon color, [skills]); a skill is
@@ -442,6 +456,8 @@ def main():
             if kind == 'stat':
                 attribute, op, value = data
                 definition['icon'] = {'type': 'item', 'data': {'item': rest[0]}}
+                definition['description'] = {'translate': f'skill.minerpg.{def_id}.description'}
+                lang[f'skill.minerpg.{def_id}.description'] = ATTR_TEXT[attribute].format(v=value, p=round(value * 100, 1))
                 definition['rewards'] = [{'type': 'puffish_skills:attribute',
                                           'data': {'attribute': attribute, 'operation': op, 'value': value}}]
             else:

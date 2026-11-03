@@ -1510,7 +1510,7 @@ hash = "fefbc6fe321971441a13e95c3b8e3598b2b3d039e16d8a0e557141914d640dc5"
 
 [[files]]
 file = "kubejs/assets/minerpg/lang/en_us.json"
-hash = "ffc0f68e2343c5c49417bc9ede59122f28674331907ddaf10f680fa4a599f9b1"
+hash = "779179d09c7d6dfd2fdfaaab1ced66513c736298dc1681e6cb17dec2c555098e"
 
 [[files]]
 file = "kubejs/assets/minerpg/textures/item/nether_sigil.png"
@@ -1687,6 +1687,10 @@ hash = "cf546882fd321fd9985789403bd8655a0a31f00e6f25c49a97c2336864a583e0"
 [[files]]
 file = "kubejs/client_scripts/minerpg_jobs_guard.js"
 hash = "ed6d16b2bedd7713288b6844ac8a6de273c4e5ba905d22928ad0c19790d29ebb"
+
+[[files]]
+file = "kubejs/client_scripts/minerpg_mastery_tooltips.js"
+hash = "510062ff5ee85748ee5510666141ff4a7e163e49fa89bae6456df1bf98cf93de"
 
 [[files]]
 file = "kubejs/client_scripts/minerpg_tooltips.js"
@@ -7110,7 +7114,7 @@ hash = "c73c389473f79ffc3207db35b9cbb555f50ffe2863f425935785bea70ed2f1e9"
 
 [[files]]
 file = "kubejs/mastery/class_skills/definitions.json"
-hash = "fdcbb4baa36fc25f24422344a10333f926ccc3a83aeda8ca1a1f52d6543b3e07"
+hash = "9cbc6a9af5db49076edd2ae098632586eaea00c2002b28105668bba1064dcc9d"
 
 [[files]]
 file = "kubejs/mastery/class_skills/skills.json"
