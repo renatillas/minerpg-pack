@@ -1,0 +1,6 @@
+# minerpg (pack 1.5.1): the atlas minimap shows while you carry an atlas (Explorer item). It sits top right, so
+# it doesn't cover the RPG-HUD armour on the left; it moves down by itself when potion effects show there.
+# Shipped as a plain config (not Default Options) so it also reaches players who already ran 1.5.0.
+[minimap]
+	enabled = true
+	anchoring = "UPPER_RIGHT"

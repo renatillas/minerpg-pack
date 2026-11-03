@@ -73,10 +73,6 @@ file = "config/defaultoptions/extra/config/jobsplus-client.yaml"
 hash = "4b1e3b53df4146b9c03307550adb12a6691608d6f579081dcff1e0cf6fbf0dc4"
 
 [[files]]
-file = "config/defaultoptions/extra/config/map_atlases-client.toml"
-hash = "429bb45fd119bf66599b036a9687971c54d4895a1f3346e06127187912bf6bff"
-
-[[files]]
 file = "config/defaultoptions/extra/config/travelerstitles-neoforge-1_21.toml"
 hash = "a4538151ed765e64b8b77ec1ae9c58b712514b458db5b41eebde682c6807b3f0"
 
@@ -179,6 +175,10 @@ hash = "08e1ae89410c36a12e83272ba687a883bb34b41db6b991cba908a99904d9475a"
 [[files]]
 file = "config/lightmanscurrency/MasterCoinList.json"
 hash = "416b5281881103410eb2965dd2d6aac68368fbdbb186738ce30ea55b431dbb1f"
+
+[[files]]
+file = "config/map_atlases-client.toml"
+hash = "a244ee7752cfe161904f92e02e6bb216ff13437e2fdcd8f8d0a2c01e9ca8c437"
 
 [[files]]
 file = "config/mixauth-server.toml"
