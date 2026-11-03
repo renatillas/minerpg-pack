@@ -375,37 +375,10 @@ def gear_groups(server):
     out = {}
     for key, items in EXTRA_GEAR.items():
         out[key] = list(items)
-    for key, items in epic_knights_items(mods).items():
-        out.setdefault(key, []).extend(items)
     for tier, items in tiers.items():
         for item in sorted(set(items)):
             out.setdefault((tier, group(item)), []).append(item)
     return out
-
-
-def epic_knights_items(mods):
-    """Epic Knights (pack 1.5.0) weapons, shields and armor by material, as Smith plate gear: netherite (smithing
-    upgrades) tier 3, diamond and steel tier 2, everything else (wood, stone, copper, bronze, iron, gold) tier 1."""
-    out = {}
-    for jar in glob.glob(os.path.join(mods, 'epic-knights-*.jar')):
-        with zipfile.ZipFile(jar) as z:
-            for name in z.namelist():
-                if not re.match(r'data/magistuarmory/recipe/.*\.json$', name):
-                    continue
-                recipe = json.loads(z.read(name))
-                if recipe.get('type') not in ('minecraft:crafting_shaped', 'minecraft:smithing_transform'):
-                    continue
-                result = recipe.get('result', {})
-                rid = result.get('id') if isinstance(result, dict) else None
-                if not rid or not rid.startswith('magistuarmory:') or re.search(
-                        r'(decoration|template|nugget|ingot|plume|hammer)', rid):
-                    continue
-                text = json.dumps({k: v for k, v in recipe.items() if k != 'result'})
-                tier = 'tier_3' if 'netherite' in text else 'tier_2' if ('diamond' in text or 'steel' in text) else 'tier_1'
-                out.setdefault((tier, 'plate'), set()).add(rid)
-    if not out:
-        raise SystemExit('no Epic Knights gear found')
-    return {k: sorted(v) for k, v in out.items()}
 
 
 def apothecary_strong(mods):

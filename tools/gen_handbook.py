@@ -303,7 +303,7 @@ E['professions'] = [
              '$(li)$(l)Explorer$(): each new biome, place and waystone, filling in maps, maps, atlases and travel '
              'items.'
              '$(li)$(l)Farmer$(): harvesting, planting, breeding.'
-             '$(li)Miners level from stone, ores and geode crystals.'),
+             '$(li)Miners level from stone and ores.'),
     ]),
 ]
 

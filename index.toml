@@ -7114,11 +7114,6 @@ hash = "bb3972a97a3915f202ce571fc7b943b2055119a0d70404424505e4dbc811958c"
 metafile = true
 
 [[files]]
-file = "mods/epic-knights-shields-armor-and-weapons.pw.toml"
-hash = "26732361a7ce5141aa8d6ebdb3c9b35bdc4693fc37e73c8281c402df7ccd0f2a"
-metafile = true
-
-[[files]]
 file = "mods/fallingtree.pw.toml"
 hash = "7d61ad815f97afb27f7e97475e80376aa19fecf25a1b04a500a4c3a6e5055973"
 metafile = true
@@ -7166,11 +7161,6 @@ metafile = true
 [[files]]
 file = "mods/geckolib.pw.toml"
 hash = "35779b39ddc06059ec483b33de2ecfdc3adb95c0a49e69b6701fb0024827e2f5"
-metafile = true
-
-[[files]]
-file = "mods/geore.pw.toml"
-hash = "bedc3bb2683976b24cea0161476647a43ec40c3e9abde00595408d7c627bb626"
 metafile = true
 
 [[files]]
