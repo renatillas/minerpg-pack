@@ -420,7 +420,7 @@ E['party'] = [
     ('party_hud', 'The Party', 'minecraft:cake', [
         text(f'Press {k("key.partyhud.open_screen")} to invite friends. In the Members tab, add each friend '
              'to favorites to see their health frames.$(br2)Party members share talent experience within 200 '
-             'blocks, and your spells and swings never hurt each other. Heals and buffs reach every player.'),
+             'blocks, and your spells, arrows and swings never hurt each other. Heals and buffs reach every player.'),
         text('Your quest book stays your own. Boss trophies and key items go to everyone nearby, so nobody '
              'falls behind.$(br2)Set a waystone to Team to share it with your party.'),
     ]),

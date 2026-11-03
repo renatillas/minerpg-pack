@@ -79,3 +79,18 @@ NativeEvents.onEvent($Detonate, event => {
 ServerEvents.recipes(event => {
   event.shapeless(Item.of('patchouli:guide_book[patchouli:book="patchouli:handbook"]'), ['minecraft:book', 'minecraft:feather']).id('minerpg:handbook')
 })
+
+// ---------------------------------------------------------------------------------------
+// No friendly fire inside a party (pack 1.4.2). A Party Hud party is a vanilla scoreboard team
+// named partyhud_<...>, and vanilla teams start with friendly fire on, so arrows and melee hit
+// party members (spells already spare them: Spell Engine treats teammates as allies). Every
+// 2 s each party team without the flag gets it turned off, which also covers new parties.
+// ---------------------------------------------------------------------------------------
+let partyTicks = 0
+ServerEvents.tick(event => {
+  partyTicks++
+  if (partyTicks % 40 != 0) return
+  event.server.getScoreboard().getPlayerTeams().forEach(team => {
+    if (String(team.getName()).startsWith('partyhud_') && team.isAllowFriendlyFire()) team.setAllowFriendlyFire(false)
+  })
+})

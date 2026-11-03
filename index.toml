@@ -4190,7 +4190,7 @@ hash = "6e4bc65d4548a88a2cd61e99210fbb1c5facb6539f8b6108fb58651fec4c4c2d"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_server_rules.js"
-hash = "c1f16e9dfc472c5a3851eb7837be55a13d18f7323ca4c3d7cef1e7b9a44b114d"
+hash = "2556d275ab050ef1de0b13bc313b2cfb11c7d1280ce734a9933026150fbefc34"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_soft_locks.js"
@@ -5061,7 +5061,7 @@ hash = "b9cd892e2200bfac7c5af918b8326bf507892d5ca095565b16325f6a9f63819b"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/party/party_hud.json"
-hash = "df3df5b3e84a7a4b912f8667bed6b1e5b2187a4ef719b563e2dc0781e25c2fae"
+hash = "03feb775791b5ba39da0dc2b062591d9d6f973f4e3d25ef799dd6583f9e321f9"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/party/revive.json"
