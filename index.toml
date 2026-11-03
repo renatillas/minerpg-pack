@@ -1921,8 +1921,168 @@ file = "kubejs/data/apotheosis/tier_augments/summit/armor_pierce.json"
 hash = "9b92dd9e70e61c0d30b9191595d14bb5ebceb1c8a3f0400fd9bfd57f6c7b0cb8"
 
 [[files]]
+file = "kubejs/data/c/tags/item/apple_pies.json"
+hash = "919135c21b19fd2df833de6a39d2e6a9017747f7c44c797cbd05b891645d359e"
+
+[[files]]
+file = "kubejs/data/c/tags/item/beers.json"
+hash = "0e31923e4f1708f8782ab6fa9b51fd6a9166a1154dfe3de8802c72ae6bde79bc"
+
+[[files]]
+file = "kubejs/data/c/tags/item/cabbage.json"
+hash = "8f776b05a7d80c8ec1923c0f5eead102d9e4b70669b1e2859173d28145dbef01"
+
+[[files]]
+file = "kubejs/data/c/tags/item/cabbage_seeds.json"
+hash = "82e3b5c7d0183159d0111eea37989f754129c0190d96378a39f34633d2b88e95"
+
+[[files]]
+file = "kubejs/data/c/tags/item/cooked_bacon.json"
+hash = "ddbc9b22c3973204ea02f0197580a0e04ea134039ca8844ab6b3354c109db895"
+
+[[files]]
+file = "kubejs/data/c/tags/item/crops/cabbage.json"
+hash = "0f3de2c99e23fc1a17583f4635e73cd98400423c168877f8fe01a1da63b39901"
+
+[[files]]
+file = "kubejs/data/c/tags/item/crops/onion.json"
+hash = "fce71ad50085fba4f28b205fa0d1f27dd64d077d719fe8da27e57545994aeff4"
+
+[[files]]
+file = "kubejs/data/c/tags/item/crops/rice.json"
+hash = "9dd5f567c695963641433f96d1cbc56ffa70c89e6693c332d1dc6eac9403bec3"
+
+[[files]]
+file = "kubejs/data/c/tags/item/crops/tomato.json"
+hash = "dbba2e89ff0398e6c4970a3e4887a309e41b0df46595a744f411f0ee5e07b977"
+
+[[files]]
+file = "kubejs/data/c/tags/item/foods.json"
+hash = "e36dd909248ec5251adea0aa0903202a046c6ebbb7bbdcdba1b818a8416a3f62"
+
+[[files]]
+file = "kubejs/data/c/tags/item/fruit_salads.json"
+hash = "ac1e597b97a4df5dce0330a9b05a6ebb60ac124b9cf875ec54747616df940cf8"
+
+[[files]]
+file = "kubejs/data/c/tags/item/grain/rice.json"
+hash = "9dd5f567c695963641433f96d1cbc56ffa70c89e6693c332d1dc6eac9403bec3"
+
+[[files]]
+file = "kubejs/data/c/tags/item/hamburgers.json"
+hash = "c4fae0bce91f02f7adbf31e002f8784f5ada5b5a13fbdf33d1826fb5e0bfc9ed"
+
+[[files]]
+file = "kubejs/data/c/tags/item/juices/melon_juice.json"
+hash = "a7023a1ee3ec425e7c9c38a97e120b62bffd7a1d25a2721a6d1d514d13a53f1b"
+
+[[files]]
+file = "kubejs/data/c/tags/item/meads.json"
+hash = "dc40b0ce7e4234f25ed0f29014ef9bfc0657490ed4effbbe44abff87f2893a7c"
+
+[[files]]
+file = "kubejs/data/c/tags/item/melon_juices.json"
+hash = "a7023a1ee3ec425e7c9c38a97e120b62bffd7a1d25a2721a6d1d514d13a53f1b"
+
+[[files]]
+file = "kubejs/data/c/tags/item/milk.json"
+hash = "f2cb9f410ff504be5ab140e206ee1884f6b18b6ed18729a71e27f4c8b407b9fc"
+
+[[files]]
+file = "kubejs/data/c/tags/item/milk_bottles.json"
+hash = "f2cb9f410ff504be5ab140e206ee1884f6b18b6ed18729a71e27f4c8b407b9fc"
+
+[[files]]
+file = "kubejs/data/c/tags/item/milks.json"
+hash = "f2cb9f410ff504be5ab140e206ee1884f6b18b6ed18729a71e27f4c8b407b9fc"
+
+[[files]]
 file = "kubejs/data/c/tags/item/oats.json"
 hash = "4e6386399046bc731d6cb1e527f2a6149b2ba249277a320bfde55e6ca74feff8"
+
+[[files]]
+file = "kubejs/data/c/tags/item/onion.json"
+hash = "fce71ad50085fba4f28b205fa0d1f27dd64d077d719fe8da27e57545994aeff4"
+
+[[files]]
+file = "kubejs/data/c/tags/item/onion_seeds.json"
+hash = "fce71ad50085fba4f28b205fa0d1f27dd64d077d719fe8da27e57545994aeff4"
+
+[[files]]
+file = "kubejs/data/c/tags/item/onions.json"
+hash = "fce71ad50085fba4f28b205fa0d1f27dd64d077d719fe8da27e57545994aeff4"
+
+[[files]]
+file = "kubejs/data/c/tags/item/pizzas.json"
+hash = "0007e3d2b8e9f6002ae8b578346bf11d9d08816563fa648c266a96453e15aa3b"
+
+[[files]]
+file = "kubejs/data/c/tags/item/pumpkin_soups.json"
+hash = "d3e7fcfdacd346efce80b7a84c02c8fc313ab481be4eac9f1e188ae634c2cd2c"
+
+[[files]]
+file = "kubejs/data/c/tags/item/quiche.json"
+hash = "9b016245c23630a88d7821f7f09f4c8c03003d8c49fb3b787d866922aa0cf4e5"
+
+[[files]]
+file = "kubejs/data/c/tags/item/ratatouille.json"
+hash = "bd20b25c2fcd3e4412ad948e4d31c7b9ff0a209b225969d7fef5f8339e7ea46e"
+
+[[files]]
+file = "kubejs/data/c/tags/item/raw_bacon.json"
+hash = "50370c70e0b9e7ffaecf649c8e9694c348ca6e122992af100bd831a369834e94"
+
+[[files]]
+file = "kubejs/data/c/tags/item/rice.json"
+hash = "9dd5f567c695963641433f96d1cbc56ffa70c89e6693c332d1dc6eac9403bec3"
+
+[[files]]
+file = "kubejs/data/c/tags/item/rice_seeds.json"
+hash = "9dd5f567c695963641433f96d1cbc56ffa70c89e6693c332d1dc6eac9403bec3"
+
+[[files]]
+file = "kubejs/data/c/tags/item/seeds/cabbage.json"
+hash = "82e3b5c7d0183159d0111eea37989f754129c0190d96378a39f34633d2b88e95"
+
+[[files]]
+file = "kubejs/data/c/tags/item/seeds/onion.json"
+hash = "fce71ad50085fba4f28b205fa0d1f27dd64d077d719fe8da27e57545994aeff4"
+
+[[files]]
+file = "kubejs/data/c/tags/item/seeds/rice.json"
+hash = "9dd5f567c695963641433f96d1cbc56ffa70c89e6693c332d1dc6eac9403bec3"
+
+[[files]]
+file = "kubejs/data/c/tags/item/seeds/tomato.json"
+hash = "ca94f635d85ab422601dbaec6dc51814eb257f6c95b0e4d78c607c4817782bf3"
+
+[[files]]
+file = "kubejs/data/c/tags/item/shepherds_pie.json"
+hash = "e33354b9cb5e00adec393e1a55388cd91b54966251de92d8021b4619435f4106"
+
+[[files]]
+file = "kubejs/data/c/tags/item/tomato.json"
+hash = "ca94f635d85ab422601dbaec6dc51814eb257f6c95b0e4d78c607c4817782bf3"
+
+[[files]]
+file = "kubejs/data/c/tags/item/tomato_seeds.json"
+hash = "ca94f635d85ab422601dbaec6dc51814eb257f6c95b0e4d78c607c4817782bf3"
+
+[[files]]
+file = "kubejs/data/c/tags/item/tomatoes.json"
+hash = "dbba2e89ff0398e6c4970a3e4887a309e41b0df46595a744f411f0ee5e07b977"
+
+[[files]]
+file = "kubejs/data/c/tags/item/vegetables/cabbage.json"
+hash = "0f3de2c99e23fc1a17583f4635e73cd98400423c168877f8fe01a1da63b39901"
+
+[[files]]
+file = "kubejs/data/c/tags/item/vegetables/onion.json"
+hash = "fce71ad50085fba4f28b205fa0d1f27dd64d077d719fe8da27e57545994aeff4"
+
+[[files]]
+file = "kubejs/data/c/tags/item/vegetables/tomato.json"
+hash = "dbba2e89ff0398e6c4970a3e4887a309e41b0df46595a744f411f0ee5e07b977"
 
 [[files]]
 file = "kubejs/data/cataclysm/tags/block/needs_black_steel_tool.json"
@@ -1947,6 +2107,22 @@ hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
 [[files]]
 file = "kubejs/data/croptopia/neoforge/biome_modifier/add_tomato_crop_to_biomes.json"
 hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/item/advancements_drinks.json"
+hash = "5e0b089f7bfbeb1fb966732dad0be97d743cd930a7bdb32c5921a674e9bf1e8e"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/item/advancements_food_big.json"
+hash = "83f30548d973dd2c375d62c1a355617cdee3d038e1fdf5d27decd645e9c619bf"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/item/advancements_food_crafted.json"
+hash = "71206750f54bccb7632352527aa3a81e8c63c43556833d3759898dc694621e51"
+
+[[files]]
+file = "kubejs/data/croptopia/tags/item/advancements_seeds.json"
+hash = "5818f27248fd7bab93b6b1d2b98f9a5743b3fdc996bbd9a5b9989ab21a3f4a3b"
 
 [[files]]
 file = "kubejs/data/dungeon_difficulty/tags/block/no_mining_exempt.json"
@@ -2023,6 +2199,22 @@ hash = "498416550f8ce9b927b62b89c915dd11f9cdd936c1fc82df74089ba7828d529f"
 [[files]]
 file = "kubejs/data/minecraft/tags/block/enderman_holdable.json"
 hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/item/chicken_food.json"
+hash = "5818f27248fd7bab93b6b1d2b98f9a5743b3fdc996bbd9a5b9989ab21a3f4a3b"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/item/parrot_food.json"
+hash = "5818f27248fd7bab93b6b1d2b98f9a5743b3fdc996bbd9a5b9989ab21a3f4a3b"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/item/piglin_food.json"
+hash = "5c1a6494b8b7ed30179360e50c9c350a999cd060386b576a2f4d2271ea63f1de"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/item/villager_plantable_seeds.json"
+hash = "5818f27248fd7bab93b6b1d2b98f9a5743b3fdc996bbd9a5b9989ab21a3f4a3b"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/calling/arcane_wizard/armory.json"
@@ -6887,6 +7079,14 @@ hash = "dbd41125a340da26ebd20760709dbfd3846ec41e9175a8f164a468559ccd2719"
 [[files]]
 file = "kubejs/data/nova_structures/tags/worldgen/biome/illager_hideout.json"
 hash = "0f0e33e5d9cba92cb9c90faa91cd0730237b7d0a7a58b92975324d7aa7a67675"
+
+[[files]]
+file = "kubejs/data/sereneseasons/tags/item/spring_crops.json"
+hash = "7c192b3a0cc3df3bf0e24a38690ae0118c1849d665a8aa1ea08e6fd6c4d0c9c5"
+
+[[files]]
+file = "kubejs/data/sereneseasons/tags/item/summer_crops.json"
+hash = "4d4a7e1937b85e5a968573ae1c80b9027f37d46eb7177ce8cc1b71fb9286ac94"
 
 [[files]]
 file = "kubejs/data/skill_tree_rpgs/puffish_skills/categories/class_skills/category.json"
