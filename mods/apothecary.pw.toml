@@ -1,0 +1,13 @@
+name = "Apothecary"
+filename = "apothecary-1.5.2.1-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/frObM4qa/versions/E5ML1wiW/apothecary-1.5.2.1-1.21.1.jar"
+hash-format = "sha512"
+hash = "f3616eedad53f56dbe095ea1a7143d4db1f7813e9cb12157f4adb13c91ac97b06bf75f3019587a605fa95b002af0a5a051d4b72a041b9f94d6a09877c6f9ecd6"
+
+[update]
+[update.modrinth]
+mod-id = "frObM4qa"
+version = "E5ML1wiW"

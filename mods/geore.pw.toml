@@ -1,0 +1,13 @@
+name = "GeOre"
+filename = "GeOre-1.21.1-6.2.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Xw6zG9hl/versions/73hXLxdm/GeOre-1.21.1-6.2.4.jar"
+hash-format = "sha512"
+hash = "6c1ea5b5899a37427cda563cd94f8340b948e584852b57a1ac8895236a06dd799ed6df6ac3f93e17fcc5b414e7c1cb0362b94e1120f63ece71bf23d8a53027cd"
+
+[update]
+[update.modrinth]
+mod-id = "Xw6zG9hl"
+version = "73hXLxdm"

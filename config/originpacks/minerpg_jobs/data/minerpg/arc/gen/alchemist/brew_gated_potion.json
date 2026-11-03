@@ -285,6 +285,582 @@
           }
         },
         {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_archery"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_broken_armor"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_burning"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_confusion"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_corrosion"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_diamond_skin"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_frail"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_health_boost"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_iron_skin"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_lethargy"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_magic_drain"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_magic_power"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_magic_shield"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_misfire"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_quick_draw"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_repairing"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_resistance"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_ruptured_armor"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_shocked"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_spelunker"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_thorns"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_vulnerable"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_wither"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:long_wrath"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_archery"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_broken_armor"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_burning"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_corrosion"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_diamond_skin"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_extension"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_frail"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_health_boost"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_iron_skin"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_lightning"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_magic_drain"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_magic_power"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_magic_shield"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_quick_draw"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_repairing"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_resistance"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_reversion"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_ruptured_armor"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_shocked"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_spelunker"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_thorns"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_vulnerable"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_wither"
+              }
+            }
+          }
+        },
+        {
+          "type": "arc:item",
+          "item": {
+            "id": "minecraft:potion",
+            "count": 1,
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "apothecary:strong_wrath"
+              }
+            }
+          }
+        },
+        {
           "type": "arc:items",
           "items": [
             "minecraft:splash_potion"

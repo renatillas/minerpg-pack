@@ -1,0 +1,320 @@
+# minerpg (pack 1.5.0): Flight and Reach off (creative flight and reach are too strong), the mana potions off (they
+# need Iron's Spells, not in the pack), potion sickness off (class spells, affixes and food buffs go past 10 effects).
+[General]
+	#Global toggle to disable this entire mod, client config, stack size, and attributes will still work if this is disabled
+	Apothecary_Enabled = true
+	#Global toggle to disable all potions from this mod
+	Potions_Enabled = true
+	#Enable world events (effects being able to occur in the world outside of potions)
+	World_Events = true
+	#Max stack size of potions
+	# Default: 1
+	# Range: 1 ~ 64
+	Stack_Size = 1
+	#Max amount of damage resistance the player can get
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	Max_Damage_Resistance = 1.0
+	#Disable ice and fire compat
+	Disable = false
+
+	[Potions.Iron_Skin]
+		#Enable Iron Skin
+		Enable = true
+		#Main ingredient used to brew iron skin potions
+		Ingredient = "minecraft:iron_block"
+		#Armor points provided by iron skin potions
+		Armor_Increase = 4
+
+	[Potions.Broken_Armor]
+		#Enable Broken Armor
+		Enable = true
+		#Main ingredient used to brew broken armor potions
+		Ingredient = "minecraft:fermented_spider_eye"
+		#Armor points decreased by broken armor potions
+		Armor_Decrease = 4
+
+	[Potions.Diamond_Skin]
+		#Enable Diamond Skin
+		Enable = true
+		#Main ingredient used to brew diamond skin potions
+		Ingredient = "minecraft:diamond_block"
+		#Armor toughness points provided by diamond skin potions
+		Armor_Toughness_Increase = 4
+
+	[Potions.Magic_Shield]
+		#Enable Magic Shield
+		Enable = true
+		#Main ingredient used to brew magic shield potions
+		Ingredient = "minecraft:lapis_block"
+		#Magic shielding points provided by magic shield potions
+		Magic_Shielding_Increase = 2
+
+	[Potions.Ruptured_Armor]
+		#Enable Ruptured Armor
+		Enable = true
+		#Main ingredient used to brew ruptured armor potions
+		Ingredient = "minecraft:fermented_spider_eye"
+		#Armor toughness points decreased by ruptured armor potions
+		Armor_Toughness_Decrease = 4
+
+	[Potions.Archery]
+		#Enable Archery
+		Enable = true
+		#Main ingredient used to brew archery potions
+		Ingredient = "minecraft:skeleton_skull"
+		#Damage increase provided by archery potions
+		Damage_Increase = 3
+
+	[Potions.Misfire]
+		#Enable Misfire
+		Enable = true
+		#Main ingredient used to brew misfire potions
+		Ingredient = "minecraft:fermented_spider_eye"
+		#Damage decrease provided by misfire potions
+		Damage_Decrease = 4
+
+	[Potions.Quick_Draw]
+		#Enable Quick Draw
+		Enable = true
+		#Main ingredient used to brew quick draw potions
+		Ingredient = "minecraft:wither_skeleton_skull"
+		#Draw speed increase provided by quick draw potions
+		Draw_Speed_Increase = 0.1
+		#Projectile velocity increase provided by quick draw potions
+		Projectile_Velocity_Increase = 0.05
+
+	[Potions.Lethargy]
+		#Enable Lethargy
+		Enable = true
+		#Main ingredient used to brew lethargy potions
+		Ingredient = "minecraft:fermented_spider_eye"
+		#Draw speed increase provided by lethargy potions
+		Draw_Speed_Decrease = 0.1
+		#Projectile velocity increase provided by lethargy potions
+		Projectile_Velocity_Decrease = 0.05
+
+	[Potions.Wrath]
+		#Enable Wrath
+		Enable = true
+		#Main ingredient used to brew wrath potions
+		Ingredient = "minecraft:crimson_fungus"
+		#Damage increase provided by wrath potions in percentage
+		Damage_Increase = 0.1
+
+	[Potions.Frail]
+		#Enable Frail
+		Enable = true
+		#Main ingredient used to brew frail potions
+		Ingredient = "minecraft:fermented_spider_eye"
+		#Damage decrease provided by frail potions in percentage
+		Damage_Decrease = 0.1
+
+	[Potions.Vulnerable]
+		#Enable Vulnerable
+		Enable = true
+		#Main ingredient used to brew vulnerable potions
+		Ingredient = "minecraft:fermented_spider_eye"
+		#Decreased damage resistance provided by vulnerable potions in percentage
+		Damage_Resistance = 0.2
+
+	[Potions.Flight]
+		#Enable Flight
+		Enable = false
+		#Main ingredient used to brew flight potions
+		Ingredient = "minecraft:dragon_head"
+
+	[Potions.Reach]
+		#Enable Reach
+		Enable = false
+		#Main ingredient used to brew reach potions
+		Ingredient = "minecraft:end_rod"
+		#Reach distance increased by reach potions
+		Reach_Increase = 1
+
+	[Potions.Repairing]
+		#Enable Repairing
+		Enable = true
+		#Main ingredient used to brew repairing potions
+		Ingredient = "minecraft:anvil"
+		#Repair amount provided by repairing potions
+		Repair_Amount = 1
+
+	[Potions.Corrosion]
+		#Enable Corrosion
+		Enable = true
+		#Main ingredient used to brew corrosion potions
+		Ingredient = "minecraft:fermented_spider_eye"
+		#Corrosion amount provided by corrosion potions
+		Corrosion_Amount = 1
+
+	[Potions.Magic_Power]
+		#Enable Magic power
+		Enable = true
+		#Main ingredient used to brew magic power potions
+		Ingredient = "minecraft:lapis_lazuli"
+		#Damage increase provided by magic power potions in percentage
+		Magic_Power_Increase = 0.1
+
+	[Potions.Magic_Drain]
+		#Enable Magic drain
+		Enable = true
+		#Main ingredient used to brew magic drain potions
+		Ingredient = "minecraft:fermented_spider_eye"
+		#Damage decrease provided by magic drain potions in percentage
+		Magic_Drain_Increase = 0.1
+
+	[Potions.Mana_Regeneration]
+		#Enable Mana Regeneration
+		Enable = false
+		#Main ingredient used to brew mana regeneration potions
+		Ingredient = "irons_spellbooks:arcane_essence"
+		#Mana regeneration increase provided by mana regeneration potions in percentage
+		Mana_Regeneration_Increase = 0.2
+
+	[Potions.Mana_Exhaustion]
+		#Enable Mana Exhaustion
+		Enable = false
+		#Main ingredient used to brew mana exhaustion potions
+		Ingredient = "irons_spellbooks:arcane_essence"
+		#Mana regeneration decrease provided by mana exhaustion potions in percentage
+		Mana_Regeneration_Decrease = 0.2
+
+	[Potions.Thorns]
+		#Enable Thorns Potion
+		Enable = true
+		#Main ingredient used to brew thorns potions
+		Ingredient = "minecraft:cactus"
+		#Damage reflected by thorns potions in percentage
+		Damage_Reflected = 0.2
+
+	[Potions.Confusion]
+		#Enable Confusion
+		Enable = true
+		#Main ingredient used to brew thorns potions
+		Ingredient = "minecraft:sniffer_egg"
+		#Max health a mob can have to be able to get confused, any value under this allows confusion
+		Confusion_Health_Threshold = 50.0
+
+	[Potions.Purification]
+		#Enable Purification
+		Enable = true
+		#Main ingredient used to brew purification potions
+		Ingredient = "minecraft:heart_of_the_sea"
+		#List of effects to blacklist being immune to from the purification effect (e.g., minecraft:poison, minecraft:slowness etc)
+		Purification_Blacklist_Effects = []
+
+	[Potions.Corruption]
+		#Enable Corruption
+		Enable = true
+		#Main ingredient used to brew corruption potions
+		Ingredient = "minecraft:fermented_spider_eye"
+		#List of effects to blacklist being immune to from the corruption effect (e.g., minecraft:strength, minecraft:speed etc)
+		Corruption_Blacklist_Effects = []
+
+	[Potions.Shuffling]
+		#Enable Shuffling
+		Enable = true
+		#Main ingredient used to brew shuffling potions
+		Ingredient = "minecraft:trapped_chest"
+
+	[Potions.Burning]
+		#Enable Burning
+		Enable = true
+		#Main ingredient used to brew burning potions
+		Ingredient = "minecraft:magma_block"
+
+	[Potions.Shocked]
+		#Enable Shocked
+		Enable = true
+		#Main ingredient used to brew shocked potions
+		Ingredient = "minecraft:copper_block"
+		#Amount of movement speed reduction for the shocked effect
+		Shocked_Speed_Decrease = 0.5
+
+	[Potions.Lightning]
+		#Enable Lightning
+		Enable = true
+		#Main ingredient used to brew lightning potions
+		Ingredient = "minecraft:lightning_rod"
+
+	[Potions.Spelunker]
+		#Enable Spelunker
+		Enable = true
+		#Main ingredient used to brew spelunker potions
+		Ingredient = "minecraft:raw_gold_block"
+		#List of ores that the spelunker effect can detect (e.g., minecraft:iron_ore, minecraft:gold_ore etc)
+		Spelunker_Ore_List = []
+
+	[Potions.Extension]
+		#Enable Extension
+		Enable = true
+		#Main ingredient used to brew extension potions
+		Ingredient = "minecraft:pitcher_pod"
+		#List of effects to blacklist being extended from the extension effect (e.g., minecraft:jump_boost, minecraft:water_breathing etc)
+		Extension_Blacklist_Effects = []
+		#Max duration cap for the extension effect to increase in seconds
+		Extension_Cap = 600
+
+	[Potions.Reversion]
+		#Enable Reversion
+		Enable = true
+		#Main ingredient used to brew reversion potions
+		Ingredient = "minecraft:fermented_spider_eye"
+
+	[Potions.Health_Boost]
+		#Enable Health Boost
+		Enable = true
+		#Main ingredient used to brew health boost potions
+		Ingredient = "minecraft:golden_apple"
+
+	[Potions.Luck]
+		#Enable Luck
+		Enable = true
+		#Main ingredient used to brew luck potions
+		Ingredient = "minecraft:emerald_block"
+
+	[Potions.Resistance]
+		#Enable Resistance
+		Enable = true
+		#Main ingredient used to brew resistance potions
+		Ingredient = "minecraft:warped_fungus"
+		#Increased damage resistance provided by resistance potions in percentage
+		Damage_Resistance = 0.2
+
+	[Potions.Jump_Boost]
+		#Increased jump height in blocks
+		Jump_Height = 0.5
+
+	[Potions.Haste]
+		#Increased digging speed in percentage
+		Dig_Speed = 0.2
+
+	[Potions.Wither]
+		#Enable the wither potion recipe
+		Enable = true
+		#Main ingredient used to brew wither potions
+		Ingredient = "minecraft:wither_rose"
+
+[World_Events]
+	#Amount of apothecary potions witches can throw before they default back to vanilla potions.
+	Witch_Potion_Count = 1
+	#Cooldown for witches to be able to throw apothecary potions again after the potion count has been reached in seconds
+	Witch_Potion_Cooldown = 5
+	#A list of potions witches can throw with formatting as 'modid:potion_id,weight'.
+	#Lower weights means rarer potions while higher weights means more common potions, supports modded potions
+	configurable_potions = ["apothecary:vulnerable, 10", "apothecary:burning, 10", "apothecary:lightning, 10", "apothecary:wither, 10", "apothecary:corruption, 10", "apothecary:corrosion, 10", "apothecary:confusion, 10", "apothecary:feeble, 15", "apothecary:shuffling, 5"]
+
+	[World_Events.Potion_Sickness]
+		#Enable the potion sickness effect, adding a max limit of how many positive effects players can have
+		Enable_Potion_Sickness = false
+		#Max effects a player can have before they can get potion sickness, any number after this value will cause potion sickness
+		Max_Effects = 10
+		#Chance that potion sickness will cause chaos every second (in percentage)
+		Potion_Sickness_Chance = 0.01
+		#A list of harmful effects potion sickness can apply, overwrites the random harmful effects, format as: 'modid:potion_id'.
+		Effect_Whitelist = []
+		#A list of harmful effects potion sickness cannot apply, format as: 'modid:potion_id'.
+		Effect_Blacklist = ["minecraft:levitation", "apothecary:shuffling", "apothecary:reversion", "apothecary:corruption"]
+		#Enable potion sickness instantly applying one random negative effect when first applied
+		Instant_Effect = false

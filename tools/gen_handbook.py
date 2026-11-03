@@ -286,18 +286,21 @@ E['professions'] = [
         text('A Hunter skins what they kill: leather, hides, bones, string and monster parts give Hunter '
              'experience. Plain monster kills give little or none, animals give a bit.$(br2)Every level adds a '
              '1% chance of an extra material (up to 40%), and a small chance of rarer parts.'),
-        text('Hunters also level from leatherworking: leather, leather armor, saddles, bundles, item frames '
-             'and small quivers.'),
+        text('Wild game counts too: deer, boars, bears, turkeys, mammoths and more drop hides, fur, fat, teeth '
+             'and antlers.$(br2)Hunters also level from leatherworking (leather, leather armor, saddles, bundles, '
+             'item frames, small quivers, knapsacks) and from foraging: breaking mushroom stumps and trunks.'),
     ]),
     ('xp', 'Other Ways to Level', 'minecraft:experience_bottle', [
         text('$(li)$(l)Smith$(): reforging, salvaging, smelting.'
              '$(li)$(l)Enchanter$(): enchanting at the table or with books at the anvil, binding spells.'
              '$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.'
-             '$(li)$(l)Alchemist$(): brewing, runes, potion charms.'
-             '$(li)$(l)Cook$(): every meal (pot, table, furnace, smoker, campfire or stove), more for each new dish.'
-             '$(li)$(l)Explorer$(): each new biome, place and waystone, filling in maps, maps and travel items.'
+             '$(li)$(l)Alchemist$(): brewing (Apothecary potions too), runes, potion charms.'
+             '$(li)$(l)Cook$(): every meal (pot, table, furnace, smoker, campfire or stove) and keg drink, more for '
+             'each new dish.'
+             '$(li)$(l)Explorer$(): each new biome, place and waystone, filling in maps, maps, atlases and travel '
+             'items.'
              '$(li)$(l)Farmer$(): harvesting, planting, breeding.'
-             '$(li)Miners level from stone and ores.'),
+             '$(li)Miners level from stone, ores and geode crystals.'),
     ]),
 ]
 

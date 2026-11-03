@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "map_atlases:atlas",
+      "required": false
+    }
+  ]
+}

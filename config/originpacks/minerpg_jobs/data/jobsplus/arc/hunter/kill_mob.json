@@ -33,7 +33,25 @@
         "minecraft:fox",
         "minecraft:camel",
         "minecraft:armadillo",
-        "minecraft:turtle"
+        "minecraft:turtle",
+        "naturalist:deer",
+        "naturalist:boar",
+        "naturalist:bear",
+        "naturalist:black_bear",
+        "naturalist:turkey",
+        "naturalist:duck",
+        "naturalist:mammoth",
+        "naturalist:rhino",
+        "naturalist:lion",
+        "naturalist:tiger",
+        "naturalist:elephant",
+        "naturalist:zebra",
+        "naturalist:giraffe",
+        "naturalist:hippo",
+        "naturalist:alligator",
+        "naturalist:komodo_dragon",
+        "naturalist:capybara",
+        "naturalist:ostrich"
       ]
     }
   ]

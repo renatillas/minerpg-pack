@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/apothecary-common.toml"
+hash = "de3caabebe7ad1ac66196af12b8b6b258329fd8078affb3a1e72c0f99d006441"
+
+[[files]]
 file = "config/apotheosis/apotheosis.cfg"
 hash = "c2d5e69c55139b22133387ee60fc6f71ca5a4b457b0cc0645bec2cd294aeef9e"
 
@@ -67,6 +71,10 @@ hash = "209093b92398669adba9df98264a0d957ed10b7ba0f5849d19423c52fb47284b"
 [[files]]
 file = "config/defaultoptions/extra/config/jobsplus-client.yaml"
 hash = "4b1e3b53df4146b9c03307550adb12a6691608d6f579081dcff1e0cf6fbf0dc4"
+
+[[files]]
+file = "config/defaultoptions/extra/config/map_atlases-client.toml"
+hash = "429bb45fd119bf66599b036a9687971c54d4895a1f3346e06127187912bf6bff"
 
 [[files]]
 file = "config/defaultoptions/extra/config/travelerstitles-neoforge-1_21.toml"
@@ -234,7 +242,7 @@ hash = "4ed8272756d75b399cc3be3f19d067bdc638db0577251c26be50ffe6ef9cac0c"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/hunter/kill_mob.json"
-hash = "eac9448178a567a868f688fba18c4d79a28eaee9dba2a7d8f62e8df54db1173a"
+hash = "a4d1ceee5cadd7e395c8af124f3a2403b6250a0a0d6a1400564177c71e209d90"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/jobsplus/arc/jeweler/powerup/gem_finder_i.json"
@@ -386,7 +394,7 @@ hash = "ce4cdb3751d1d8522703137eef204d70df101768cee7de53d70799fc16f2ec91"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/alchemist/brew_gated_potion.json"
-hash = "5e40d50de1066fd86d994bc76f51b0eac4e47c5e3a1d06e600226767ba637eae"
+hash = "e2a3bd8e0b132393ee6c5b17a5b5413b11802ae6e8f92fac182b7369e7a990db"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/alchemist/craft_potion_charm.json"
@@ -461,6 +469,10 @@ file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_surv
 hash = "f938d3f63baf5d5af2244fc80349c78e968c1ac8373ef13902a94930da72d92f"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_travel_atlas.json"
+hash = "a5b2a16528997cfb8c1e7caa7cd734684cdccb1589dbd2e63209255a5db1dfd6"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/explorer/craft_travel_scrolls.json"
 hash = "e420f8c35b5c5b64a2cdb4977afc9568b50dc4939986948a42bc0df0819429b7"
 
@@ -494,7 +506,7 @@ hash = "f8dac5abd54dc8dda372b52351abf845eac9755998d6c6ccd65e1c0341558de3"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/hunter/craft_leather_goods.json"
-hash = "726c42d79c56756f9d86980d2e1c27b18a514b67ad1b2e85e304413e7cd73d25"
+hash = "8af8e4532cc51dabd6e839b392624293be76cae4ce33c5e4711c8d341f7d5b77"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/jeweler/craft_free_jewelry.json"
@@ -641,8 +653,212 @@ file = "config/originpacks/minerpg_jobs/data/minerpg/arc/gen/smith/craft_gear_pl
 hash = "11d6eec58aef72ff598fb509f1cf2c94f1b18b27f0d59fb353dd66989361c25a"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/hunter/forage_mushroom_quest.json"
+hash = "045a5c8598d2422e705d99c435b6468278c8721dec8831d6453ffbfb5183c7a9"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/miner/break_geore_clusters.json"
+hash = "d4d01f6fe0d0ac3536b022abc33f44adf46482b509bd750c430a22d591600929"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/arc/miner/break_geore_rare_clusters.json"
+hash = "18a50600ab30bcd6bec521e3eadd82f477d4f14a9a532eb2849a0840aa676dca"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/arc/smith/craft_rpg_gear.json"
 hash = "245b363260e5f960980d539759374f58645ee86f0b12836623bce25c5d7930aa"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_archery.json"
+hash = "b07777ae5bd7ecd2a30cc70905655cc663ab2ce16bccdc731110e303725529d6"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_broken_armor.json"
+hash = "bd94678bbf8bfd156664bc1794efdca777214e28c4045128c87b656cf8f4350a"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_burning.json"
+hash = "dd0e023f15b93183f712b413112fa635ba3fa4994643049166a0d31a4d7fad65"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_confusion.json"
+hash = "87f73e0a581750714f646b328f6f6688069159a0b573bbc9b0afdea2f43c1e1a"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_corrosion.json"
+hash = "3282735f849b3f58a96a5940fc7122b59d0fcb0476e7450a54bd5ab40d5e6556"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_diamond_skin.json"
+hash = "4c2e0929fd2610f054de907a234c2a651e9466978c17ad9f884aa298e86f2d3f"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_frail.json"
+hash = "585614a9a4eb4fa8b7cbd7a4fbf35528f46326bb101f24644d4bc89bf8cc3c75"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_health_boost.json"
+hash = "6393c9b14894bbf8a82beac4fcdae42e31e738a5860450b364307c657ebfe677"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_iron_skin.json"
+hash = "d9ec0f753524c31f9c2d0a18e555337e5f96c70bd8add6371b8083736d54976e"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_lethargy.json"
+hash = "d949bc0d67ee56ee05c8fd0606c71174ca6d50b0be23b4aa80fbf677df656d7f"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_magic_drain.json"
+hash = "ae4f43396544e0a8e0bf061fba83a512e4b408aa6e81ea03a4ff5a349eded7da"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_magic_power.json"
+hash = "ac8d38f134e5f49f341db2ae5157b556dbf7f9c9e183c40a6145870436dc6e02"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_magic_shield.json"
+hash = "3aa8640f8e279e14f144eec06e513dce74ec9877fbe733688daa686ba1fda6ef"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_misfire.json"
+hash = "aff565435f69dfe4104896e81dbe40f075e281a328afa41baf84889261144104"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_quick_draw.json"
+hash = "be0744bae280c1ccf343c54e7f2df59e8a2f7336b1b3bdb768eca1e8d60c253a"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_repairing.json"
+hash = "c0ffe266522187c81cf31ffb7f6f262bd5cf9f311a2b4b97da5e008fe68ed5f9"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_resistance.json"
+hash = "3eb90819fe54a5ff43ff260f92069d487149995cfdaa6e5fb06f8cd679258ff0"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_ruptured_armor.json"
+hash = "dd51b6f3507f577800fb8e0a13d4e6bcb40ed4bc50b93ef74cbc7e10234d3eeb"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_shocked.json"
+hash = "43deb0044ee81c34d606c560b40e47cdfaf029f615f67b0dcbb538d2502be563"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_spelunker.json"
+hash = "5622a9ca10085f1da00f16d6ec9f68ba196381a5f39a919543575df93d2fe0cc"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_thorns.json"
+hash = "46773de71f71a9739089ed87e8aad34fcd93bf9c47763dd7ada68e99fdea5d86"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_vulnerable.json"
+hash = "39b59579572e0cb97a41bb81ecb54388ec766eb367df3b3cca47f7e229e3e28f"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_wither.json"
+hash = "72db840fef878420d6c4f40561eda3d96fe6a7a0f6bfc314eca74ad900a5f5fe"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_long_wrath.json"
+hash = "c2d55a51b9cac7bfad9c63e2b342930b603d3ca3ab3ac423a95e302a799752f0"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_archery.json"
+hash = "87262cf22359e480c930021d2beece4efb9845a0e48ebb83ef5401cdbd4a90d0"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_broken_armor.json"
+hash = "a097ec1999ec0f7963d25d553e2b2bbee108af60b0dc9b27e0eb0004453a7d15"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_burning.json"
+hash = "a43cd1d69792d7467ddd77f8b65540b6f7602dfbb56473ee9740c470cac18c75"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_corrosion.json"
+hash = "27b7309a67f097dc4d7abb9437db9585e144ed92a750c1cb39004b2ccacf20c9"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_diamond_skin.json"
+hash = "4de863fb33c0fb9aebbdcc8e911bab48b87f41203c64b90705c3068a84bc46a3"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_extension.json"
+hash = "599900f0cc3df687b53610ef0e97d32924544c5139a374b9b232219cae553e27"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_frail.json"
+hash = "8786010fca85e48300b76c3796c4d1d88e43c1c2beaa5b03acaf0256430d3d8a"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_health_boost.json"
+hash = "34c195692c2454e8238e2d805d79c52cbc066f6f62a0f67ca99a6864485976d0"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_iron_skin.json"
+hash = "4eaec04017f2654b581a36e5c04432897e216e7a4857ceee89cd02039f823110"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_lightning.json"
+hash = "36e220a28e0a587c07bcdf155a1ac6d3df7a2cb3d848ed73f88c25982fe12668"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_magic_drain.json"
+hash = "f3ea46b8aaf8d8b40e585d0f7ef7a194f9c9f7705e7fc08dd9f3ef5f6a5fa29d"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_magic_power.json"
+hash = "d48d2e260a5ebff9420bd364aeb9db5c6b2d3ca97b51b1e5434106681f8fa2ca"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_magic_shield.json"
+hash = "418f4dc77348a9bb7bae56feb61a007ed4b6b6f61f9d1962f8041cb6bce10fd9"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_quick_draw.json"
+hash = "d2b13b870bf3aa826a52528b851a0ef1916723f6edbeda0fe9a99c275bf84fd8"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_repairing.json"
+hash = "f340b8cc39b84e13098080f504bb3d25e9a239027b128aa633d5494fcf635e4b"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_resistance.json"
+hash = "1b9ad4807539cc586e70f333cd6dba7d5a09cd328b64b59e6b1e3318e9b71899"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_reversion.json"
+hash = "2e46b93e0dcaa6eb70d07babec4f19cc608bde3b7695872cd339b703ac072c8b"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_ruptured_armor.json"
+hash = "ff80e8e3792c522595424a4c7a566bfe2bd8c0fc373fa22ab39ea091e9895980"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_shocked.json"
+hash = "1b173f409def9451dc5689d9a489a3d9260a67367d35ceb16a6b80d9b6a7640c"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_spelunker.json"
+hash = "649e1458acc5bf169e213b061de1e1e297d15dc161ba0e1472463cdb27154336"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_thorns.json"
+hash = "ff81acba1715dcd43b4cab7bf9abd866fcd6deeafd7736dfa31cdc0f6490b5ad"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_vulnerable.json"
+hash = "d14b20174d98e3c19b303eb6bff84615d6e3abce5eefd5f6b787954ecfffec58"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_wither.json"
+hash = "3e33c19aebb872db8b1e99a15c001b76c7621f41f5fedd83942b6a1554f53ddd"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_apothecary_strong_wrath.json"
+hash = "004eb389259c36aaca304e32ce3527ebd1ee81bbda50934a33ffa9d576335795"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/alchemist_lingering.json"
@@ -829,6 +1045,10 @@ file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictio
 hash = "bbd2ca5f55661021a61532578026fc89859e5211e6b2a84a805be522ce5d7a92"
 
 [[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/travel_atlas.json"
+hash = "37c3f2501983e80328dc6baba0c4d4f5418c98fece9d14d751b8083409a661bd"
+
+[[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/itemrestrictions/restrictions/travel_scrolls.json"
 hash = "f8b2a141a6eccd0550c5ce1ee44789812380aa00b5272ab2d39b60878560e904"
 
@@ -918,15 +1138,15 @@ hash = "20ffa4f2b38c59659cf18b334c8aa1cada873e85a3832c00222cc5c9bf4834b0"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_plate_tier_1.json"
-hash = "6ff45a79e2b53de46fb7b4da80874ebf326b0f23a78a5602b14482dd047ff0c2"
+hash = "9da1275eea86f021fd5eb12c75a5ebdfea15bad1ca585b0f9577b59036efd0aa"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_plate_tier_2.json"
-hash = "8666069ee64ed88091c8bfd9f3eaf7bba5be68807daa2a971e5bab1bb075036b"
+hash = "9597a2a1c298bdbadba5fbab17f1bd65410141b115f486104b9709ba88f5ada9"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/gear_plate_tier_3.json"
-hash = "cffc9ee4043d85dad7f2ff9e6398a20b6eae02628754befb41ce71e5e8aa0684"
+hash = "8eb14ecb4337710e5d3b94fb52a8be6f9e599beb35dad71bdb1fc523c0b3211b"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/jewel_diamond.json"
@@ -955,6 +1175,10 @@ hash = "fb33b6bd3fce2d68eadad0323bf73e0685d0bce9e71ff564b2854310fc467bcb"
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/survey_lair.json"
 hash = "4ab198e69d3027eae0d90ced3d000f3ce6748c1c36003e085193094efd5eb171"
+
+[[files]]
+file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/travel_atlas.json"
+hash = "76201eedbd780cb382af5c34e6cc6f9d9d0036a73f026d721e331bcb0bd3ecf9"
 
 [[files]]
 file = "config/originpacks/minerpg_jobs/data/minerpg/tags/item/job_gate/travel_scrolls.json"
@@ -6406,7 +6630,7 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "84eb780b421440e6926766e700d799ee069e5ee03e07c90d9eda07b4e42e6105"
+hash = "dd0813ec9372c55f64c80275dd9d3fb9549c85eecb874ed6c835fa8e26b7665d"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_market.js"
@@ -6443,6 +6667,11 @@ hash = "e10028c74b38583ffd23c80bd0bceffd4d9d7f920b6079818d0d7ae32d8aa708"
 [[files]]
 file = "mods/additional-rpg-jewelry.pw.toml"
 hash = "716f2e257d9509f8e4f800d661e861c34de86bd9d5b81e8862f3a741c0d64d50"
+metafile = true
+
+[[files]]
+file = "mods/apothecary.pw.toml"
+hash = "efaa3d2d7381cedf67c28ed19d7599fc8325113dbde32690b21762b475122d75"
 metafile = true
 
 [[files]]
@@ -6541,6 +6770,11 @@ hash = "68d6016fa3707c434b3aca5db041c7518c70feb53d0183faa2502cc6efd4c827"
 metafile = true
 
 [[files]]
+file = "mods/brewin-and-chewin.pw.toml"
+hash = "22d9510588b081cf9905f6549d24bc11012aa8d9c7d38a8619ab9db5ccb7b9a8"
+metafile = true
+
+[[files]]
 file = "mods/champions-unofficial.pw.toml"
 hash = "d69fa75ffcd25e60fb1e5a7a2f915e8d5f3ee3fbfd8db8b86928eace4d58ae04"
 metafile = true
@@ -6568,6 +6802,11 @@ metafile = true
 [[files]]
 file = "mods/critical-strike.pw.toml"
 hash = "8f7ec1d22f09c9a78d88a13763e4e780f6111e45685f8147e7afd6e49aea4a5c"
+metafile = true
+
+[[files]]
+file = "mods/croptopia.pw.toml"
+hash = "f4a74eca4d76cbe003e7fd3832ae57a390177813dfb01f30944a2feed97d6bcf"
 metafile = true
 
 [[files]]
@@ -6606,8 +6845,23 @@ hash = "426238488c9ffd843f661f8bc74aa8e585fa6b4d342c43c4ba4cb8451298b725"
 metafile = true
 
 [[files]]
+file = "mods/epherolib.pw.toml"
+hash = "bb3972a97a3915f202ce571fc7b943b2055119a0d70404424505e4dbc811958c"
+metafile = true
+
+[[files]]
+file = "mods/epic-knights-shields-armor-and-weapons.pw.toml"
+hash = "26732361a7ce5141aa8d6ebdb3c9b35bdc4693fc37e73c8281c402df7ccd0f2a"
+metafile = true
+
+[[files]]
 file = "mods/fallingtree.pw.toml"
 hash = "7d61ad815f97afb27f7e97475e80376aa19fecf25a1b04a500a4c3a6e5055973"
+metafile = true
+
+[[files]]
+file = "mods/farmers-croptopia.pw.toml"
+hash = "01e2b329ef9ac935b71c2b744a66a422451b0042852dc8994b8ff45482520c79"
 metafile = true
 
 [[files]]
@@ -6648,6 +6902,11 @@ metafile = true
 [[files]]
 file = "mods/geckolib.pw.toml"
 hash = "35779b39ddc06059ec483b33de2ecfdc3adb95c0a49e69b6701fb0024827e2f5"
+metafile = true
+
+[[files]]
+file = "mods/geore.pw.toml"
+hash = "bedc3bb2683976b24cea0161476647a43ec40c3e9abde00595408d7c627bb626"
 metafile = true
 
 [[files]]
@@ -6776,6 +7035,11 @@ hash = "0d3683a8c533e1fb67bf0b1668089a322fc5f594f9610d441657378ab4f64383"
 metafile = true
 
 [[files]]
+file = "mods/map-atlases-forge.pw.toml"
+hash = "b54addad8fd6bdd9ee141d740de8c346b1744258cb8c8ab663a61054e48e308e"
+metafile = true
+
+[[files]]
 file = "mods/mezzconfig.pw.toml"
 hash = "8691a6080607f512d7adbbc1c17911ba83db273a5b5f113711fd8408b8d6a9df"
 metafile = true
@@ -6823,6 +7087,16 @@ metafile = true
 [[files]]
 file = "mods/mowzies-mobs.pw.toml"
 hash = "02aa4dcb8fa24cffcd2182c66683c2a476a95abf53002373f953a49737a587e3"
+metafile = true
+
+[[files]]
+file = "mods/mushroom-quest.pw.toml"
+hash = "675b8f3f3d5103fbaf1a631982b681804e07dabfa8eec4a42458da4973136bd5"
+metafile = true
+
+[[files]]
+file = "mods/naturalist.pw.toml"
+hash = "607da40a1b301721af35c07c3ee5eb06f82c2a13722037d0cd7d2584ab2dbe57"
 metafile = true
 
 [[files]]
@@ -7308,7 +7582,7 @@ hash = "e711e8ddb6a3c67e2f6c2ef054c934a6fe375af27ba2411082b0a2d1fe2f4a21"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/hunter.json"
-hash = "6f6ad515b7b747c1e4e200a425ea7da695b1339838d60a9f63340723fc9c18ca"
+hash = "d1d5f5176518f2a28ca12ff9a9b4ead30c6e3ee10c14bd07c5e330737145177e"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/jobs.json"
@@ -7320,7 +7594,7 @@ hash = "0dac52830680b8f794eaf9a9608b6e2b74de096876f9abc75cb625e79c8a69cb"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/xp.json"
-hash = "ad2e05b214f74aad3440d1ec907dc0f73af39c8cf4f2daf5b164aa295ef27065"
+hash = "acff3cb557ffe10c0060870a5de58ebf80125c023917065e7fbf96a77e45c42e"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/races/change.json"

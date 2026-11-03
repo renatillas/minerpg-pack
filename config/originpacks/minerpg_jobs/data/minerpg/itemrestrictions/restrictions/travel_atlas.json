@@ -1,0 +1,23 @@
+{
+  "icon": {
+    "id": "map_atlases:atlas",
+    "count": 1
+  },
+  "types": [
+    "craft"
+  ],
+  "conditions": [
+    {
+      "type": "arc:items",
+      "items": [
+        "#minerpg:job_gate/travel_atlas"
+      ]
+    },
+    {
+      "type": "jobsplus:job_level",
+      "job": "jobsplus:explorer",
+      "level": 10,
+      "inverted": true
+    }
+  ]
+}

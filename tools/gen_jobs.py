@@ -19,6 +19,7 @@ are not touched. This tools folder is excluded from the pack by pack/.packwizign
 """
 import glob
 import json
+import re
 import os
 import shutil
 import sys
@@ -101,6 +102,11 @@ STRONG_POTIONS = [
     'long_regeneration', 'long_slow_falling', 'long_slowness', 'long_strength', 'long_swiftness',
     'long_turtle_master', 'long_water_breathing', 'long_weakness',
 ]
+# Apothecary (pack 1.5.0): its strong and long potions, except the ones switched off in config/apothecary-common.toml
+# (flight, reach, mana). Read from the jar's brewing recipes in build().
+APOTHECARY_OFF = ('flight', 'reach', 'mana_regeneration', 'mana_exhaustion')
+# Named in its lang file but not registered (checked against the potion registry on the test server, 1.5.2.1).
+APOTHECARY_UNREGISTERED = ('strong_lethargy', 'strong_misfire')
 ALCHEMIST_THROWABLE = [
     ('alchemist_splash', 15, 'minecraft:splash_potion'),
     ('alchemist_lingering', 20, 'minecraft:lingering_potion'),
@@ -128,12 +134,19 @@ CHARM_XP = (20, 30)
 HUNTED_ANIMALS = ['minecraft:cow', 'minecraft:mooshroom', 'minecraft:pig', 'minecraft:sheep', 'minecraft:chicken',
                   'minecraft:rabbit', 'minecraft:horse', 'minecraft:donkey', 'minecraft:mule', 'minecraft:llama',
                   'minecraft:trader_llama', 'minecraft:goat', 'minecraft:hoglin', 'minecraft:polar_bear',
-                  'minecraft:fox', 'minecraft:camel', 'minecraft:armadillo', 'minecraft:turtle']
+                  'minecraft:fox', 'minecraft:camel', 'minecraft:armadillo', 'minecraft:turtle',
+                  # Naturalist (pack 1.5.0): game animals hunted for hide, fur, fat, teeth and antlers.
+                  'naturalist:deer', 'naturalist:boar', 'naturalist:bear', 'naturalist:black_bear',
+                  'naturalist:turkey', 'naturalist:duck', 'naturalist:mammoth', 'naturalist:rhino',
+                  'naturalist:lion', 'naturalist:tiger', 'naturalist:elephant', 'naturalist:zebra',
+                  'naturalist:giraffe', 'naturalist:hippo', 'naturalist:alligator', 'naturalist:komodo_dragon',
+                  'naturalist:capybara', 'naturalist:ostrich']
 ANIMAL_KILL_XP = (5, 7)
 # Leatherworking: crafting leather goods (on top of the gated-gear bonus above).
 LEATHER_GOODS = ['minecraft:leather', 'minecraft:leather_helmet', 'minecraft:leather_chestplate',
                  'minecraft:leather_leggings', 'minecraft:leather_boots', 'minecraft:leather_horse_armor',
-                 'minecraft:saddle', 'minecraft:bundle', 'minecraft:item_frame', 'archers:small_quiver']
+                 'minecraft:saddle', 'minecraft:bundle', 'minecraft:item_frame', 'archers:small_quiver',
+                 'naturalist:knapsack']
 LEATHER_XP = (5, 6)
 
 # Jeweler (designer, 2026-10-31): a job of our own (Jobs+ jobs are data), owning jewelry crafting, Jewelry gem
@@ -254,7 +267,9 @@ TRAVEL_GATES = [
      lambda p: p.endswith('waystone') or p.endswith('_portstone'), 'waystones:waystone'),
     ('travel_warp_plate', 25, 'Warp Plates', lambda p: p == 'warp_plate', 'waystones:warp_plate'),
 ]
-CRAFT_BONUS.update({'survey_crypt': (8, 12), 'survey_dungeon': (15, 20), 'survey_lair': (25, 30),
+# Map Atlases (pack 1.5.0): the Explorer makes atlases for the party (its minimap is off, client config).
+ATLAS_GATE = ('travel_atlas', 10, 'Atlases', 'map_atlases:atlas')
+CRAFT_BONUS.update({'travel_atlas': (8, 12), 'survey_crypt': (8, 12), 'survey_dungeon': (15, 20), 'survey_lair': (25, 30),
                     'travel_scrolls': (4, 6), 'travel_sharestones': (12, 15), 'travel_waystones': (15, 20),
                     'travel_warp_plate': (20, 25)})
 FREE_SURVEY_XP = (10, 12)
@@ -360,10 +375,51 @@ def gear_groups(server):
     out = {}
     for key, items in EXTRA_GEAR.items():
         out[key] = list(items)
+    for key, items in epic_knights_items(mods).items():
+        out.setdefault(key, []).extend(items)
     for tier, items in tiers.items():
         for item in sorted(set(items)):
             out.setdefault((tier, group(item)), []).append(item)
     return out
+
+
+def epic_knights_items(mods):
+    """Epic Knights (pack 1.5.0) weapons, shields and armor by material, as Smith plate gear: netherite (smithing
+    upgrades) tier 3, diamond and steel tier 2, everything else (wood, stone, copper, bronze, iron, gold) tier 1."""
+    out = {}
+    for jar in glob.glob(os.path.join(mods, 'epic-knights-*.jar')):
+        with zipfile.ZipFile(jar) as z:
+            for name in z.namelist():
+                if not re.match(r'data/magistuarmory/recipe/.*\.json$', name):
+                    continue
+                recipe = json.loads(z.read(name))
+                if recipe.get('type') not in ('minecraft:crafting_shaped', 'minecraft:smithing_transform'):
+                    continue
+                result = recipe.get('result', {})
+                rid = result.get('id') if isinstance(result, dict) else None
+                if not rid or not rid.startswith('magistuarmory:') or re.search(
+                        r'(decoration|template|nugget|ingot|plume|hammer)', rid):
+                    continue
+                text = json.dumps({k: v for k, v in recipe.items() if k != 'result'})
+                tier = 'tier_3' if 'netherite' in text else 'tier_2' if ('diamond' in text or 'steel' in text) else 'tier_1'
+                out.setdefault((tier, 'plate'), set()).add(rid)
+    if not out:
+        raise SystemExit('no Epic Knights gear found')
+    return {k: sorted(v) for k, v in out.items()}
+
+
+def apothecary_strong(mods):
+    """Apothecary's strong and long potions (registry ids), from its potion registry names in the jar's lang."""
+    out = set()
+    for jar in glob.glob(os.path.join(mods, 'apothecary-*.jar')):
+        with zipfile.ZipFile(jar) as z:
+            for name in z.namelist():
+                if name.endswith('lang/en_us.json'):
+                    for key in json.loads(z.read(name)):
+                        m = re.match(r'item\.minecraft\.potion\.effect\.((strong|long)_[a-z_]+)$', key)
+                        if m and m.group(1).split('_', 1)[1] not in APOTHECARY_OFF and m.group(1) not in APOTHECARY_UNREGISTERED:
+                            out.add('apothecary:' + m.group(1))
+    return sorted(out)
 
 
 def armory_items(mods):
@@ -525,6 +581,8 @@ def build(server):
         if not travel.get(key):
             raise SystemExit(f'no {title} found')
         gates.append(('explorer', key, level, travel[key], icon, CRAFT_BONUS[key]))
+    key, level, title, item = ATLAS_GATE
+    gates.append(('explorer', key, level, [item], item, CRAFT_BONUS[key]))
     for job, key, level, values, icon, bonus in gates:
         write(os.path.join(tag_dir, key + '.json'), {
             'replace': False, 'values': [{'id': v, 'required': False} for v in values]})
@@ -544,11 +602,12 @@ def build(server):
 
     # Brewing gates (Alchemist) + brewing XP bonus.
     gated_potions = []
-    for potion in STRONG_POTIONS:
-        cond = {'type': 'arc:item', 'item': potion_stack('minecraft:potion', 'minecraft:' + potion)}
+    for potion in ['minecraft:' + p for p in STRONG_POTIONS] + apothecary_strong(os.path.join(server, 'mods')):
+        cond = {'type': 'arc:item', 'item': potion_stack('minecraft:potion', potion)}
         gated_potions.append(cond)
-        write(os.path.join(restrictions, f'alchemist_{potion}.json'),
-              restriction('alchemist', ALCHEMIST_STRONG_LEVEL, ['brew'], cond, potion_stack('minecraft:potion', 'minecraft:' + potion)))
+        name = potion.replace('minecraft:', '').replace(':', '_')
+        write(os.path.join(restrictions, f'alchemist_{name}.json'),
+              restriction('alchemist', ALCHEMIST_STRONG_LEVEL, ['brew'], cond, potion_stack('minecraft:potion', potion)))
         count += 1
     for key, level, item in ALCHEMIST_THROWABLE:
         cond = {'type': 'arc:items', 'items': [item]}

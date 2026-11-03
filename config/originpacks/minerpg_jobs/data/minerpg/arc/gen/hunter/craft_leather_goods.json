@@ -25,7 +25,8 @@
         "minecraft:saddle",
         "minecraft:bundle",
         "minecraft:item_frame",
-        "archers:small_quiver"
+        "archers:small_quiver",
+        "naturalist:knapsack"
       ]
     }
   ]

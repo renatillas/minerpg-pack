@@ -1,0 +1,31 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:hunter"
+  },
+  "type": "arc:on_break_block",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "min": 3,
+      "max": 5
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:blocks",
+      "blocks": [
+        "mushroomquest:oak_stump",
+        "mushroomquest:spruce_stump",
+        "mushroomquest:acacia_stump",
+        "mushroomquest:birch_trunk",
+        "mushroomquest:jungle_trunk",
+        "mushroomquest:field_trunk",
+        "mushroomquest:shrump"
+      ]
+    },
+    {
+      "type": "arc:not_in_block_pos_cache"
+    }
+  ]
+}

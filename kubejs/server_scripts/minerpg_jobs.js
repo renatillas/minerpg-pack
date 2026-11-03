@@ -11,7 +11,7 @@
 //   - job XP for RPG activities that have no Arc action: Apotheosis reforging and salvaging
 //     (Smith); Spell Binding Table binds and spell book creation (Enchanter); gem cutting at the
 //     Jeweler's Kit and the Apotheosis Gem Cutting Table, Apotheosis socketing and sigils, and
-//     Socket Mounts and cut gems set at the anvil (Jeweler); cooking pot meals, food put on a campfire or stove
+//     Socket Mounts and cut gems set at the anvil (Jeweler); cooking pot meals, keg drinks, food put on a campfire or stove
 //     and the first time each dish is made (Cook); the first use of
 //     each waystone, each new biome and structure entered, and each map filled in (Explorer);
 //   - Survey Maps (Explorer): used up into a map to the nearest place of their kind;
@@ -41,6 +41,7 @@ const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const $DataComponents = Java.loadClass('net.minecraft.core.component.DataComponents')
 const JEWELRY_GEMS = $TagKey.create($Registries.ITEM, $ResourceLocation.parse('jewelry:gems'))
 const $CookingPotMenu = Java.loadClass('vectorwing.farmersdelight.common.block.entity.container.CookingPotMenu')
+const $KegMenu = Java.loadClass('umpaz.brewinandchewin.common.block.entity.container.KegMenu')
 // Note: loading CookingPotMenu on a dedicated server logs one harmless "invalid dist" error for
 // net/minecraft/client/RecipeBookCategories (it is a recipe-book menu). Any script that reads a
 // player's open menu makes Rhino inspect such a class (the player inventory is one too), so the
@@ -69,6 +70,8 @@ const SET_GEM_XP = 20 // Jeweler, per cut gem set into a socket at the anvil
 // per level of every enchantment on the book (Sharpness III = 30). The Smith's own anvil XP is unchanged.
 const ANVIL_BOOK_XP_PER_LEVEL = 10
 const MEAL_XP = 12 // Cook, per cooking pot meal (from the pot's window or served with a bowl)
+const KEG_XP = 6 // Cook, per drink or cheese taken from a Brewin' And Chewin' keg (pack 1.5.0)
+const KEG_OUTPUT_SLOT = 5 // KegBlockEntity.OUTPUT_SLOT
 // Cook (designer, 2026-11-02: the Cook levelled too slowly).
 const FIRST_DISH_XP = 25 // the first time a Cook makes each dish (pot meals and table food)
 const COOK_FIRE_XP = 2 // per raw food put on a campfire, stove or skillet (it cooks later, with nobody attached)
@@ -110,6 +113,9 @@ const SKIN_XP = {
   'minecraft:blaze_rod': 5, 'minecraft:magma_cream': 4, 'minecraft:phantom_membrane': 5,
   'minecraft:armadillo_scute': 5, 'minecraft:turtle_scute': 5, 'minecraft:ghast_tear': 10,
   'minecraft:shulker_shell': 10, 'minecraft:prismarine_shard': 2, 'minecraft:goat_horn': 10,
+  // Naturalist game animals (pack 1.5.0)
+  'naturalist:hide': 4, 'naturalist:fur': 4, 'naturalist:fat': 3, 'naturalist:tooth': 5, 'naturalist:antler': 6,
+  'naturalist:scorpion_poison_gland': 5, 'naturalist:snail_shell': 3,
 }
 // Extra yield: each material stack gets one more item with this chance per Hunter level (capped).
 const SKIN_EXTRA_PER_LEVEL = 0.01
@@ -320,7 +326,7 @@ NativeEvents.onEvent($AdvancementProgressEvent, event => {
 })
 
 // ---------------------------------------------------------------------------------------
-// Workstation watchers: reforging, salvaging, gem cutting, cooking pot.
+// Workstation watchers: reforging, salvaging, gem cutting, cooking pot, keg.
 // None of these fire an event, so while a player has one open we compare its slots (and the
 // player's "items crafted" statistic) from one tick to the next.
 // ---------------------------------------------------------------------------------------
@@ -439,6 +445,7 @@ PlayerEvents.tick(event => {
   else if (menu instanceof $GemCuttingMenu) kind = 'gem'
   else if (menu instanceof $ApoGemCuttingMenu) kind = 'apo_gem'
   else if (menu instanceof $CookingPotMenu) kind = 'pot'
+  else if (menu instanceof $KegMenu) kind = 'keg'
   if (kind == null) {
     if (watch[key]) delete watch[key]
     return
@@ -454,6 +461,8 @@ PlayerEvents.tick(event => {
     else if (kind == 'salvage') salvageTick(player, menu, state)
     else if (kind == 'gem') craftedTick(player, menu, state, 1, 'jeweler', GEM_CUT_XP, 'gem(s) cut', 0)
     else if (kind == 'apo_gem') apoCutTick(player, menu, state)
+    else if (kind == 'keg') craftedTick(player, menu, state, KEG_OUTPUT_SLOT, 'cook', KEG_XP, 'drink(s) poured', 0,
+      drink => firstDish(player, drink))
     else {
       var tier = powerupTier(player, 'cook', 'second_helping')
       craftedTick(player, menu, state, 8, 'cook', MEAL_XP, 'meal(s) cooked', tier > 0 ? SECOND_HELPING_CHANCE[tier - 1] : 0,

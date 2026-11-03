@@ -1,0 +1,13 @@
+name = "Map Atlases [Forge]"
+filename = "map_atlases-1.21-7.0.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4hwXMFif/versions/ecuMnNO4/map_atlases-1.21-7.0.1-neoforge.jar"
+hash-format = "sha512"
+hash = "28146573e0c274c1188d17150c6197a9f432a6375ee8e7c34aeab8c5f023766eee863f86187bd0b133c046465b1f0edf108b13f607493132a87dc1da5b87861b"
+
+[update]
+[update.modrinth]
+mod-id = "4hwXMFif"
+version = "ecuMnNO4"

@@ -1,0 +1,31 @@
+{
+  "holder": {
+    "type": "jobsplus:job",
+    "id": "jobsplus:miner"
+  },
+  "type": "arc:on_break_block",
+  "rewards": [
+    {
+      "type": "jobsplus:job_exp",
+      "min": 4,
+      "max": 6
+    }
+  ],
+  "conditions": [
+    {
+      "type": "arc:blocks",
+      "blocks": [
+        "geore:coal_cluster",
+        "geore:copper_cluster",
+        "geore:iron_cluster",
+        "geore:gold_cluster",
+        "geore:lapis_cluster",
+        "geore:redstone_cluster",
+        "geore:quartz_cluster"
+      ]
+    },
+    {
+      "type": "arc:not_in_block_pos_cache"
+    }
+  ]
+}
