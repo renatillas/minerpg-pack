@@ -67,6 +67,42 @@
     {
       "id": "mowziesmobs:umvuthi",
       "required": false
+    },
+    {
+      "id": "block_factorys_bosses:sandworm",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:yeti",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:kraken",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:infernal_dragon",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:underworld_knight",
+      "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:lich",
+      "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:gauntlet",
+      "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:obsidilith",
+      "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:void_blossom",
+      "required": false
     }
   ]
 }

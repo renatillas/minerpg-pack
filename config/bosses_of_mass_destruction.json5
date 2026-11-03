@@ -1,10 +1,12 @@
 // minerpg (pack 1.5.1): eternalNighttime off, so the Night Lich never stops the day-night cycle for everyone.
+// minerpg (pack 1.5.2): health raised to the chapter ladder (Lich 4500, Gauntlet 5000, Void Blossom 6000, Obsidilith
+// 8000; defaults 250-350 died in seconds); their hits are doubled in kubejs/server_scripts/minerpg_boss_tuning.js.
 {
 	"lichConfig": {
 		"eternalNighttime": false,
 		"experienceDrop": 1500,
 		"idleHealingPerTick": 0.20000000298023224,
-		"health": 300.0,
+		"health": 4500.0,
 		"missile": {
 			"mobEffectId": "minecraft:slowness",
 			"mobEffectDuration": 100,
@@ -36,7 +38,7 @@
 		}
 	},
 	"obsidilithConfig": {
-		"health": 300.0,
+		"health": 8000.0,
 		"armor": 14.0,
 		"attack": 16.0,
 		"idleHealingPerTick": 0.5,
@@ -45,7 +47,7 @@
 		"anvilAttackExplosionStrength": 4.0
 	},
 	"gauntletConfig": {
-		"health": 250.0,
+		"health": 5000.0,
 		"armor": 8.0,
 		"attack": 16.0,
 		"idleHealingPerTick": 0.5,
@@ -55,7 +57,7 @@
 		"normalPunchExplosionMultiplier": 1.5
 	},
 	"voidBlossomConfig": {
-		"health": 350.0,
+		"health": 6000.0,
 		"armor": 4.0,
 		"attack": 12.0,
 		"idleHealingPerTick": 0.5,

@@ -1,29 +1,112 @@
 {
   "values": [
-    { "id": "#c:bosses", "required": false },
-    { "id": "cataclysm:the_harbinger", "required": false },
-    { "id": "cataclysm:netherite_monstrosity", "required": false },
-    { "id": "cataclysm:ignis", "required": false },
-    { "id": "cataclysm:ender_guardian", "required": false },
-    { "id": "cataclysm:ancient_remnant", "required": false },
-    { "id": "cataclysm:maledictus", "required": false },
-    { "id": "cataclysm:the_leviathan", "required": false },
-    { "id": "cataclysm:scylla", "required": false },
-    { "id": "cataclysm:amethyst_crab", "required": false },
-    { "id": "cataclysm:ender_golem", "required": false },
-    { "id": "cataclysm:ignited_revenant", "required": false },
-    { "id": "mowziesmobs:ferrous_wroughtnaut", "required": false },
-    { "id": "mowziesmobs:frostmaw", "required": false },
-    { "id": "mowziesmobs:umvuthi", "required": false },
-    { "id": "mowziesmobs:sculptor", "required": false },
-    { "id": "graveyard:lich", "required": false },
-    { "id": "bosses_of_mass_destruction:lich", "required": false },
-    { "id": "bosses_of_mass_destruction:obsidilith", "required": false },
-    { "id": "bosses_of_mass_destruction:gauntlet", "required": false },
-    { "id": "bosses_of_mass_destruction:void_blossom", "required": false },
+    {
+      "id": "#c:bosses",
+      "required": false
+    },
+    {
+      "id": "cataclysm:the_harbinger",
+      "required": false
+    },
+    {
+      "id": "cataclysm:netherite_monstrosity",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignis",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ender_guardian",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ancient_remnant",
+      "required": false
+    },
+    {
+      "id": "cataclysm:maledictus",
+      "required": false
+    },
+    {
+      "id": "cataclysm:the_leviathan",
+      "required": false
+    },
+    {
+      "id": "cataclysm:scylla",
+      "required": false
+    },
+    {
+      "id": "cataclysm:amethyst_crab",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ender_golem",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignited_revenant",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:ferrous_wroughtnaut",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:frostmaw",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:umvuthi",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:sculptor",
+      "required": false
+    },
+    {
+      "id": "graveyard:lich",
+      "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:lich",
+      "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:obsidilith",
+      "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:gauntlet",
+      "required": false
+    },
+    {
+      "id": "bosses_of_mass_destruction:void_blossom",
+      "required": false
+    },
     "minecraft:wither",
     "minecraft:ender_dragon",
     "minecraft:warden",
-    "minecraft:elder_guardian"
+    "minecraft:elder_guardian",
+    {
+      "id": "block_factorys_bosses:sandworm",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:yeti",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:kraken",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:infernal_dragon",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:underworld_knight",
+      "required": false
+    }
   ]
 }

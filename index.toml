@@ -37,8 +37,12 @@ file = "config/bettercombat/server.json5"
 hash = "3fb34cf72b4a39dbd7b4ff85d4672c528bad2c6b064773de5b2a27ecc06753b2"
 
 [[files]]
+file = "config/block_factorys_bosses-server.toml"
+hash = "61b32def376de8e4a7a482f17c0d953b46ae34033f0860635853afe98ca79f24"
+
+[[files]]
 file = "config/bosses_of_mass_destruction.json5"
-hash = "05385426fb4784007c1ea88c877aaf97c4d63e88156772b7310a826d7ff19d83"
+hash = "0fa0df1f12d6e219d9038df8b9e522912b2997bd5b036cf0a47da25c5bfa8589"
 
 [[files]]
 file = "config/cataclysm-common.toml"
@@ -90,7 +94,7 @@ hash = "58679ee9c6c2c44c00cd29804dfa112c9fe8936c62b43f4c720600ea0619f39f"
 
 [[files]]
 file = "config/dungeon_difficulty/difficulty_v2.json"
-hash = "e706958ff1472815044ef89438395b053476cd4bf5f8ad4d91fb3f229f2539cf"
+hash = "2e55cc151ee7f88419be4c5d36873a74240c05658de367499af777fdba9c793d"
 
 [[files]]
 file = "config/elemental_wizards_rpg/equipment_v1.json"
@@ -1878,7 +1882,7 @@ hash = "d82b80f987c8f0ccc0c1053c42070985792aee531633c08552768893828dc683"
 
 [[files]]
 file = "kubejs/data/apotheosis/loot_modifiers/affix_conversion.json"
-hash = "4463f06539bf2b46f7c93b2c1177fe1cc6209080616511858ff1e9452490efcd"
+hash = "97ff041a99040f4cc7eba2de097a99d930d47e571de922443b6621e637a6cf3b"
 
 [[files]]
 file = "kubejs/data/apotheosis/loot_modifiers/affix_loot_injection.json"
@@ -4514,7 +4518,7 @@ hash = "4a10037ef568203c26eb20898354bf95c6466a898a581668040673f94b274fb7"
 
 [[files]]
 file = "kubejs/data/minerpg/loot_modifiers/coins_dungeon_chests.json"
-hash = "2164a7e9fa247a936631abfe57497184b2a7e7aeef095ab49d1a3141a2204685"
+hash = "601b0639417acfa97a1b54794fd0317862061a67c9e1591583ab1dcb3aa44df9"
 
 [[files]]
 file = "kubejs/data/minerpg/loot_modifiers/coins_ordinary_chests.json"
@@ -6958,11 +6962,11 @@ hash = "f4b4f4d6cde4741f16063cbb10a3ec132c673cfbe44dd7da464505583d9f21bd"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/entity_type/boss.json"
-hash = "bffaafb55fda0cd2c46620ed69c4e7bd3e5b786abf4ee4d65d94c5f63019a4e5"
+hash = "417807a1638ed6f11753b07effa45aeb6f1034e74a45721aca61c4e0cf933ce2"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/entity_type/tuned_boss.json"
-hash = "19043382cbb7c2190cc703d57171554ecf3e58cca22be8eb40f7c2ddcc2237cc"
+hash = "57d83fbe566d55ba79fe2a20a3ecfe829843f6ddcc888ded410909791cb55706"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/biome/zone/frontier.json"
@@ -7130,7 +7134,7 @@ hash = "1cb5a533f27c523568ca4bbb84a342d17a13ec8da35d4712fc7f3ef7cdee1f9c"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_boss_tuning.js"
-hash = "31ccf4edc16032e39094dbb66e5cc6fdc7a575570fa68f1428defcb33efd2ac4"
+hash = "588a11254b70d0fc01a054677d06fbd410752bf261c69e93c9e5eabac6e7f391"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_calling.js"
@@ -7195,6 +7199,10 @@ hash = "eafe75a30a3f56417f9dc493e82a3c6b865b1dd53d68a2b6ec14580bbf939204"
 [[files]]
 file = "kubejs/startup_scripts/minerpg_champions.js"
 hash = "0ae1c586565a255f4bf29c66d25dc82b28957c3d6d0064c54db3f67a94c8e748"
+
+[[files]]
+file = "kubejs/startup_scripts/minerpg_gear_tuning.js"
+hash = "c2e297967ecf1287dc2c246bb8aacaf76997bb4994d5a84649d6d1ddaaf0f683"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_items.js"
@@ -7313,6 +7321,11 @@ metafile = true
 [[files]]
 file = "mods/bosses-of-mass-destruction-forge.pw.toml"
 hash = "74143850a12b0f9daf3ef2c503e61141319f3715a48a2fde53bc31b3c9719788"
+metafile = true
+
+[[files]]
+file = "mods/bossesrise.pw.toml"
+hash = "d20e603af6e9156021a1b8db31edd187a089b2b21cd7f70fa7eb7507bf81dbf9"
 metafile = true
 
 [[files]]

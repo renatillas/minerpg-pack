@@ -27,6 +27,21 @@
             "rarities": [ "apotheosis:rare", "apotheosis:epic", "apotheosis:mythic" ]
         },
         {
+            "chance": 1.0,
+            "pattern": { "domain": "block_factorys_bosses", "path_regex": "entities/underworld_knight" },
+            "rarities": [ "apotheosis:epic", "apotheosis:mythic" ]
+        },
+        {
+            "chance": 1.0,
+            "pattern": { "domain": "block_factorys_bosses", "path_regex": "entities/(sandworm|yeti|kraken|infernal_dragon)" },
+            "rarities": [ "apotheosis:rare", "apotheosis:epic", "apotheosis:mythic" ]
+        },
+        {
+            "chance": 1.0,
+            "pattern": { "domain": "bosses_of_mass_destruction", "path_regex": "entities/.*" },
+            "rarities": [ "apotheosis:epic", "apotheosis:mythic" ]
+        },
+        {
             "chance": 0.6,
             "pattern": { "domain": "cataclysm", "path_regex": "entities/.*" },
             "rarities": [ "apotheosis:uncommon", "apotheosis:rare", "apotheosis:epic" ]

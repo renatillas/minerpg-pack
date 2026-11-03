@@ -370,6 +370,60 @@
         },
         {
           "zone_matches": {
+            "structure": "block_factorys_bosses:sandworm_nest"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 2
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "block_factorys_bosses:yeti_hideout"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 2
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "block_factorys_bosses:kraken_ship"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 3
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "block_factorys_bosses:dragon_tower"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 3
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "bosses_of_mass_destruction:lich_tower"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 5
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "bosses_of_mass_destruction:void_blossom"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 5
+          }
+        },
+        {
+          "zone_matches": {
             "structure": "mowziesmobs:umvuthana_grove"
           },
           "difficulty": {
@@ -529,6 +583,24 @@
         },
         {
           "zone_matches": {
+            "structure": "block_factorys_bosses:underworld_arena"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 6
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "bosses_of_mass_destruction:gauntlet_arena"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 6
+          }
+        },
+        {
+          "zone_matches": {
             "structure": "#minerpg:dungeon_tier/nether"
           },
           "difficulty": {
@@ -607,6 +679,15 @@
         {
           "zone_matches": {
             "structure": "cataclysm:ruined_citadel"
+          },
+          "difficulty": {
+            "name": "lair",
+            "level": 8
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "bosses_of_mass_destruction:obsidilith_arena"
           },
           "difficulty": {
             "name": "lair",

@@ -50,7 +50,8 @@ VANILLA_DUNGEON = re.compile(r'^(simple_dungeon|stronghold_.*|ancient_city.*|bas
 DUNGEON_MODS = {'cataclysm', 'mowziesmobs', 'apotheosis', 'betterstrongholds', 'betterfortresses',
                 'betterdeserttemples', 'betterjungletemples', 'betteroceanmonuments', 'dungeons_arise',
                 # pack 1.5.1 combat structures (It Takes a Pillage camps stay ordinary chests)
-                'graveyard', 'ati_structures', 'dungeons_arise_seven_seas', 'bosses_of_mass_destruction'}
+                'graveyard', 'ati_structures', 'dungeons_arise_seven_seas', 'bosses_of_mass_destruction',
+                'block_factorys_bosses'}
 # Tables that are only pulled into other tables (class mods' injections, Farmer's Delight's additions) or are no
 # real chest: coins there would come twice or from nowhere.
 SKIP_MODS = {'lne_wizards', 'lne_archers', 'lne_paladins', 'lne_rogues', 'farmersdelight', 'lootr'}

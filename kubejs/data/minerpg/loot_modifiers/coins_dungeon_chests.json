@@ -234,6 +234,30 @@
         },
         {
           "condition": "neoforge:loot_table_id",
+          "loot_table_id": "block_factorys_bosses:chests/dragon_tower"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "block_factorys_bosses:chests/dragon_tower_common"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "block_factorys_bosses:chests/underworld_arena_common"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "block_factorys_bosses:chests/underworld_arena_rare"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "block_factorys_bosses:chests/underworld_arena_trash"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "block_factorys_bosses:chests/underworld_arena_vault"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
           "loot_table_id": "bosses_of_mass_destruction:chests/gauntlet"
         },
         {
