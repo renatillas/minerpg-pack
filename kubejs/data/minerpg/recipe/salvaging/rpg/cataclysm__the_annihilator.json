@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "cataclysm:the_annihilator"
+    }
+  ],
+  "type": "apotheosis:salvaging",
+  "input": [
+    {
+      "item": "cataclysm:the_annihilator"
+    }
+  ],
+  "outputs": [
+    {
+      "max_count": 1,
+      "min_count": 0,
+      "stack": {
+        "count": 1,
+        "id": "cataclysm:black_steel_ingot"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "mowziesmobs:sol_visage"
+    }
+  ],
+  "type": "apotheosis:salvaging",
+  "input": [
+    {
+      "item": "mowziesmobs:sol_visage"
+    }
+  ],
+  "outputs": [
+    {
+      "max_count": 2,
+      "min_count": 1,
+      "stack": {
+        "count": 1,
+        "id": "apotheosis:arcane_sands"
+      }
+    }
+  ]
+}

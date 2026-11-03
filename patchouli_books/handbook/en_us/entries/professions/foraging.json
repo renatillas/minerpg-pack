@@ -1,0 +1,16 @@
+{
+  "name": "Foraging and Wild Things",
+  "icon": "mushroomquest:blue_glowshroom",
+  "category": "patchouli:professions",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Mushrooms grow on stumps and trunks in the woods: a Hunter levels from foraging them. Many cook into meals, and some brew into potions.$(br2)Naturalist's wild animals drop hides, fur, fat, teeth and antlers for Hunters. Some of them bite back."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A $(item)capture net$() catches butterflies, fireflies and other small creatures, and a Hunter levels from each catch.$(br2)Farmers level from picking ripe Croptopia crops and fruit by hand."
+    }
+  ]
+}

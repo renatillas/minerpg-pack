@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "cataclysm:gauntlet_of_guard"
+    }
+  ],
+  "type": "apotheosis:salvaging",
+  "input": [
+    {
+      "item": "cataclysm:gauntlet_of_guard"
+    }
+  ],
+  "outputs": [
+    {
+      "max_count": 2,
+      "min_count": 1,
+      "stack": {
+        "count": 1,
+        "id": "apotheosis:arcane_sands"
+      }
+    }
+  ]
+}

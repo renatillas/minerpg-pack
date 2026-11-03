@@ -267,6 +267,54 @@
     {
       "id": "dungeons_arise_seven_seas:corsair_corvette",
       "required": false
+    },
+    {
+      "id": "lne_archers:war_archer_outpost",
+      "required": false
+    },
+    {
+      "id": "lne_archers:war_archer_tower",
+      "required": false
+    },
+    {
+      "id": "lne_archers:deadeye_hideout",
+      "required": false
+    },
+    {
+      "id": "lne_rogues:rogue_hideout",
+      "required": false
+    },
+    {
+      "id": "lne_rogues:thiefs_guild",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:wizards_earth_tower",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:wizards_arcane_tower",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:wizards_fire_tower",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:wizards_wind_tower",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:wizards_water_tower",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:wizards_frost_tower",
+      "required": false
+    },
+    {
+      "id": "nova_structures:remnant_taiga_castle",
+      "required": false
     }
   ]
 }

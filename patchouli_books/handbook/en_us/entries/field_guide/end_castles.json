@@ -2,7 +2,7 @@
   "name": "End Castles",
   "icon": "minecraft:end_stone_bricks",
   "category": "patchouli:field_guide",
-  "sortnum": 23,
+  "sortnum": 33,
   "pages": [
     {
       "type": "patchouli:text",

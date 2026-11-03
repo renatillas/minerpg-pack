@@ -1,0 +1,12 @@
+{
+  "name": "Storage",
+  "icon": "toms_storage:storage_terminal",
+  "category": "patchouli:home",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "An $(item)Inventory Connector$() links every chest touching it, and every chest touching those, up to 16 blocks away. A $(item)Storage Terminal$() next to it shows everything in one window.$(br2)Use $(l)one$() connector per storage room: two connectors touching the same chests count their items twice in the terminal (the items are fine; the number is wrong)."
+    }
+  ]
+}

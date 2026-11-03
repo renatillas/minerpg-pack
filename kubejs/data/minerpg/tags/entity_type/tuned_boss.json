@@ -103,6 +103,10 @@
     {
       "id": "bosses_of_mass_destruction:void_blossom",
       "required": false
+    },
+    {
+      "id": "graveyard:lich",
+      "required": false
     }
   ]
 }

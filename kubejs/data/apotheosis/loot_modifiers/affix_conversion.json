@@ -38,6 +38,11 @@
         },
         {
             "chance": 1.0,
+            "pattern": { "domain": "graveyard", "path_regex": "entities/lich" },
+            "rarities": [ "apotheosis:rare", "apotheosis:epic", "apotheosis:mythic" ]
+        },
+        {
+            "chance": 1.0,
             "pattern": { "domain": "bosses_of_mass_destruction", "path_regex": "entities/.*" },
             "rarities": [ "apotheosis:epic", "apotheosis:mythic" ]
         },

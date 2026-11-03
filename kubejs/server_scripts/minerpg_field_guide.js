@@ -24,6 +24,16 @@ const FG_BOSSES = {
   'cataclysm:ender_guardian': 'ender_guardian',
   'minecraft:wither': 'wither',
   'minecraft:ender_dragon': 'ender_dragon',
+  'block_factorys_bosses:sandworm': 'sandworm',
+  'block_factorys_bosses:yeti': 'yeti',
+  'block_factorys_bosses:kraken': 'kraken',
+  'block_factorys_bosses:infernal_dragon': 'infernal_dragon',
+  'block_factorys_bosses:underworld_knight': 'underworld_knight',
+  'graveyard:lich': 'corrupted_champion',
+  'bosses_of_mass_destruction:lich': 'night_lich',
+  'bosses_of_mass_destruction:gauntlet': 'gauntlet',
+  'bosses_of_mass_destruction:void_blossom': 'void_blossom',
+  'bosses_of_mass_destruction:obsidilith': 'obsidilith',
 }
 const FG_RANGE = 32
 

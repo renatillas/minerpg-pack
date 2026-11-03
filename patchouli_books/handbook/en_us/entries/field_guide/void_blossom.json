@@ -1,0 +1,18 @@
+{
+  "name": "The Void Blossom",
+  "icon": "minerpg:trophy_void_blossom",
+  "category": "patchouli:field_guide",
+  "sortnum": 21,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A flower that grew from nothing, rooted deep below the surface.$()$(br2)$(l)Counter:$() Spikes break from the floor and its petals heal it. Watch the ground and keep the pressure on.$(br2)It cannot move. Use that."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Void Petal$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/void_blossom"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/void_blossom"
+}

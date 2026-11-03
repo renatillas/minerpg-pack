@@ -2,7 +2,7 @@
   "name": "Crypts and Cellars",
   "icon": "minecraft:mossy_cobblestone",
   "category": "patchouli:field_guide",
-  "sortnum": 15,
+  "sortnum": 25,
   "pages": [
     {
       "type": "patchouli:text",

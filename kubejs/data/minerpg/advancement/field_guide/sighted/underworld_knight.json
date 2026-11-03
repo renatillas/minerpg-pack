@@ -1,0 +1,56 @@
+{
+  "parent": "minerpg:field_guide/root",
+  "display": {
+    "icon": {
+      "id": "minerpg:trophy_underworld_knight"
+    },
+    "title": {
+      "text": "Sighted: Helvar, the Underworld Knight"
+    },
+    "description": {
+      "text": "A new page opens in your Field Guide."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "lair": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "block_factorys_bosses:underworld_arena"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "seen": {
+      "trigger": "minecraft:impossible"
+    },
+    "trophy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minerpg:trophy_underworld_knight"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lair",
+      "seen",
+      "trophy"
+    ]
+  ]
+}

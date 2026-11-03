@@ -7,6 +7,10 @@
     {
       "type": "patchouli:text",
       "text": "$(li)$(l)Smith$(): reforging, salvaging, smelting.$(li)$(l)Enchanter$(): enchanting at the table or with books at the anvil, binding spells.$(li)$(l)Jeweler$(): jewelry, cutting gems, sockets and setting gems.$(li)$(l)Alchemist$(): brewing (Apothecary potions too), runes, potion charms.$(li)$(l)Cook$(): every meal (pot, table, furnace, smoker, campfire or stove) and keg drink, more for each new dish.$(li)$(l)Explorer$(): each new biome, place and waystone, filling in maps, maps, atlases and travel items.$(li)$(l)Farmer$(): harvesting (ripe fruit and crops picked by hand too), planting, breeding.$(li)Miners level from stone and ores."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Side stations pay too:$(li)$(l)Smith$(): carving bone at the Ossuary, forging at the Mechanical Fusion Anvil.$(li)$(l)Cook$(): cutting on a cutting board.$(li)$(l)Hunter$(): catching butterflies, fireflies and the like with a capture net."
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "name": "Furniture",
+  "icon": "handcrafted:oak_chair",
+  "category": "patchouli:home",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Chairs, tables, shelves, cupboards, beds and plates in every kind of wood: craft them at a crafting table, no job needed.$(br2)Sit on a chair or bench by using it."
+    }
+  ]
+}

@@ -331,6 +331,186 @@
 		}
 		{
 			dependencies: [
+				"20827BF57F7546BE"
+			]
+			id: "401EC80945F55D97"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "7ACC11AB44CF87B8"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+				{
+					id: "1CA4256596C854C3"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 6
+					id: "527A5F8ACFCCA519"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "31D174446C67ED11"
+					item: {
+						count: 1
+						id: "minerpg:trophy_underworld_knight"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"20827BF57F7546BE"
+			]
+			id: "14D806722C4BEFC1"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "7E3C6C2D1C90425A"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+				{
+					id: "41B1B83090CC4353"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 6
+					id: "6AB9E3CAAD4B26E4"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1C42EB60642B8613"
+					item: {
+						count: 1
+						id: "minerpg:trophy_gauntlet"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4C6920214DBED4FE"
+			]
+			id: "6DA8F6337A1AD59A"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "11E210170AF3967B"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+				{
+					id: "4CD8B29FDF3BF023"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 6
+					id: "2FD105D5C8BBEF4D"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "7AAB244DEF801266"
+					item: {
+						count: 1
+						id: "minerpg:trophy_night_lich"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4C6920214DBED4FE"
+			]
+			id: "1920A684486A3F39"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "540F6FF690630A28"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+				{
+					id: "17F89A14D6696465"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 6
+					id: "4BED1FBB95D68EA8"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1E09E9B76E138B0E"
+					item: {
+						count: 1
+						id: "minerpg:trophy_void_blossom"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
 				"311B8E5CCB0CEAB9"
 				"47192179145EF3AD"
 			]

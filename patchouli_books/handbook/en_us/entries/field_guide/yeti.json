@@ -1,0 +1,18 @@
+{
+  "name": "Skor, the Yeti",
+  "icon": "minerpg:trophy_yeti",
+  "category": "patchouli:field_guide",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A shaggy giant who has made a cave in the snowy plains his own, and does not share it.$()$(br2)$(l)Counter:$() It hurls ice and drives spikes up through the ground. Spread out so one volley never hits the whole party.$(br2)Its blows are slow but brutal. Roll them; do not trade hits."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Hoarfrost Pelt$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/yeti"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/yeti"
+}

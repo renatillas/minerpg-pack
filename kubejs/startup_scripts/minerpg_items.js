@@ -25,6 +25,18 @@ StartupEvents.registry('item', event => {
     'ferrous_wroughtnaut',
     'frostmaw',
     'umvuthi',
+    // Pack 1.5.5 bosses (Bosses'Rise, Bosses of Mass Destruction, The Graveyard). Icons and names:
+    // tools/gen_trophy_icons.py.
+    'sandworm',
+    'yeti',
+    'kraken',
+    'infernal_dragon',
+    'underworld_knight',
+    'corrupted_champion',
+    'night_lich',
+    'gauntlet',
+    'void_blossom',
+    'obsidilith',
   ]
   trophies.forEach(name => {
     event.create(`minerpg:trophy_${name}`).rarity('rare').maxStackSize(16)

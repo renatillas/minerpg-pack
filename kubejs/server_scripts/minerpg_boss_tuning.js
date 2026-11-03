@@ -33,6 +33,8 @@ const BT_VANILLA_BOSSES = {
   'block_factorys_bosses:infernal_dragon': { health: 14.0, damage: 2.0 },
   'block_factorys_bosses:kraken': { health: 7.0, damage: 3.0 },
   'block_factorys_bosses:underworld_knight': { health: 20.0, damage: 2.7 },
+  // The Graveyard's Corrupted Champion (pack 1.5.5): 400 -> 3500, late Chapter 1 like the Kraken and the Dragon.
+  'graveyard:lich': { health: 8.75, damage: 2.0 },
   // Bosses of Mass Destruction: health is in its own config (config/bosses_of_mass_destruction.json5); hits doubled.
   'bosses_of_mass_destruction:lich': { health: 1.0, damage: 2.0 },
   'bosses_of_mass_destruction:gauntlet': { health: 1.0, damage: 2.0 },

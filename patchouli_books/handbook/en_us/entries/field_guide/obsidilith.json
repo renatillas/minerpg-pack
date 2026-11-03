@@ -1,0 +1,18 @@
+{
+  "name": "The Obsidilith",
+  "icon": "minerpg:trophy_obsidilith",
+  "category": "patchouli:field_guide",
+  "sortnum": 24,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A living pillar of obsidian on the outer islands of the End.$()$(br2)$(l)Counter:$() It drops anvils, raises pillars and sends waves across the floor. Jump the waves and stay off the center when it rises.$(br2)It hits hardest of all the optional bosses. Bring the whole party."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Obsidian Heartstone$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/obsidilith"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/obsidilith"
+}

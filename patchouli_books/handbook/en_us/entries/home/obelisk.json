@@ -1,0 +1,16 @@
+{
+  "name": "The Experience Obelisk",
+  "icon": "cognition:experience_obelisk",
+  "category": "patchouli:home",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "An $(item)Experience Obelisk$() is the party's well of experience. Anyone can pour levels in and draw them out, so the group can feed whoever needs levels to bind spells or enchant.$(br2)It stores the experience itself, not levels: ten levels poured in at level 40 are worth far more than ten at level 5."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Making one$()$(li)Cognitive Flux: lapis, an amethyst shard and paper (makes 4).$(li)Smelt it into Amalgam.$(li)Amalgam with copper: Alloy. Amalgam with an emerald: Crystal.$(li)Alloy, Crystal and redstone: an Astute Assembly.$(li)Then the obelisk.$(br2)Flux turns up in ruined portals and Assemblies in desert pyramids."
+    }
+  ]
+}

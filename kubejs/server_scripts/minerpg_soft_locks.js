@@ -117,6 +117,17 @@ const BOSS_DROPS = {
   'mowziesmobs:ferrous_wroughtnaut': { item: 'minerpg:trophy_ferrous_wroughtnaut', text: 'The Ferrous Wroughtnaut topples. You earned a Wrought Rivet.' },
   'mowziesmobs:frostmaw': { item: 'minerpg:trophy_frostmaw', text: 'The Frostmaw falls silent. You earned a Rimefang Tusk.' },
   'mowziesmobs:umvuthi': { item: 'minerpg:trophy_umvuthi', text: 'Umvuthi\'s fire dies down. You earned a Sunbird Plume.' },
+  // Pack 1.5.5 bosses (optional side quests in each chapter).
+  'block_factorys_bosses:sandworm': { item: 'minerpg:trophy_sandworm', text: 'Sirok sinks into the sand for good. You earned a Dune Fang.' },
+  'block_factorys_bosses:yeti': { item: 'minerpg:trophy_yeti', text: 'Skor goes still in the snow. You earned a Hoarfrost Pelt.' },
+  'block_factorys_bosses:kraken': { item: 'minerpg:trophy_kraken', text: 'Nerakyss slips beneath the waves. You earned Abyssal Ink.' },
+  'block_factorys_bosses:infernal_dragon': { item: 'minerpg:trophy_infernal_dragon', text: 'Ashlord crashes from his tower. You earned a Cinder Scale.' },
+  'block_factorys_bosses:underworld_knight': { item: 'minerpg:trophy_underworld_knight', text: 'Helvar kneels at last. You earned an Oathbreaker Seal.' },
+  'graveyard:lich': { item: 'minerpg:trophy_corrupted_champion', text: 'The Corrupted Champion falls. You earned a Champion\'s Tarnished Crest.' },
+  'bosses_of_mass_destruction:lich': { item: 'minerpg:trophy_night_lich', text: 'The Night Lich unravels. You earned a Phylactery Shard.' },
+  'bosses_of_mass_destruction:gauntlet': { item: 'minerpg:trophy_gauntlet', text: 'The Gauntlet grinds to a halt. You earned its Core.' },
+  'bosses_of_mass_destruction:void_blossom': { item: 'minerpg:trophy_void_blossom', text: 'The Void Blossom withers. You earned a Void Petal.' },
+  'bosses_of_mass_destruction:obsidilith': { item: 'minerpg:trophy_obsidilith', text: 'The Obsidilith cracks apart. You earned its Heartstone.' },
 }
 const BOSS_CREDIT_RADIUS = 64
 

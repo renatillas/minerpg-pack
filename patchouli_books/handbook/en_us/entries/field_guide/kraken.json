@@ -1,0 +1,18 @@
+{
+  "name": "Nerakyss, the Kraken",
+  "icon": "minerpg:trophy_kraken",
+  "category": "patchouli:field_guide",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A wrecked ship rides the deep ocean, and something holds it in its arms. Its crew still fights for it.$()$(br2)$(l)Counter:$() Its tentacles rise around the deck one after another. Cut them down as they come up, and keep the cannons off you.$(br2)Fight on the ship, not in the water."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Abyssal Ink$() counts for the quest book. Its teeth make the Kraken Trident.",
+      "advancement": "minerpg:field_guide/defeated/kraken"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/kraken"
+}

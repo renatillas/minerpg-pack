@@ -136,6 +136,12 @@
 	]
 	"quest.14C07E14E60A6AAE.quest_subtitle": "Necklace slot"
 	"quest.14C07E14E60A6AAE.title": "Close to the Heart"
+	"quest.14D806722C4BEFC1.quest_desc": [
+		"In an arena of black stone a giant fist waits to be woken: &cthe Gauntlet&r."
+		"Optional. Everyone nearby at the kill earns a Gauntlet Core."
+	]
+	"quest.14D806722C4BEFC1.quest_subtitle": "Optional boss"
+	"quest.14D806722C4BEFC1.title": "The Iron Fist"
 	"quest.14EFAE6064BD4190.quest_desc": [
 		"Get a netherite Terra Wand or Staff."
 		""
@@ -366,6 +372,12 @@
 	]
 	"quest.1917B6FC25356897.quest_subtitle": "Tier 1 armor"
 	"quest.1917B6FC25356897.title": "Paladin Armor"
+	"quest.1920A684486A3F39.quest_desc": [
+		"Deep below the Overworld, something grows that should not: &5the Void Blossom&r."
+		"Optional. Everyone nearby at the kill earns a Void Petal."
+	]
+	"quest.1920A684486A3F39.quest_subtitle": "Optional boss"
+	"quest.1920A684486A3F39.title": "Roots of Nothing"
 	"quest.192A9BF9D510B1BC.quest_desc": [
 		"Wear or carry all four pieces of the &eNetherite Wind Robes&r: helmet, chest, legs and boots."
 		""
@@ -713,6 +725,12 @@
 	]
 	"quest.2260673C6A9418B8.quest_subtitle": "Job starter"
 	"quest.2260673C6A9418B8.title": "Jeweler"
+	"quest.22C1C2A9DA342526.quest_desc": [
+		"Under one desert the sand moves on its own. &6Sirok, the Sandworm&r nests there, and it surfaces to feed."
+		"Optional. Everyone nearby at the kill earns a Dune Fang."
+	]
+	"quest.22C1C2A9DA342526.quest_subtitle": "Optional boss"
+	"quest.22C1C2A9DA342526.title": "Ripples in the Dunes"
 	"quest.23438309D3EE7ED9.quest_desc": [
 		"Some things only a trained hand can &omake&r:"
 		"Class gear is made by three trades, by tier: anyone can make tier 1; diamond tier 2 needs level 10, netherite tier 3 20, Armory sets 25."
@@ -933,6 +951,12 @@
 	]
 	"quest.31E240F857E39A16.quest_subtitle": "Endgame armor"
 	"quest.31E240F857E39A16.title": "The Armory"
+	"quest.31E9814687B5A8AE.quest_desc": [
+		"Giant tracks lead to a cave in the snowy plains. &bSkor, the Yeti&r does not take kindly to visitors."
+		"Optional. Everyone nearby at the kill earns a Hoarfrost Pelt."
+	]
+	"quest.31E9814687B5A8AE.quest_subtitle": "Optional boss"
+	"quest.31E9814687B5A8AE.title": "Tracks in the Snow"
 	"quest.320B32FBD74A9EAF.quest_desc": [
 		"You can walk anywhere. Two doors need keys:"
 		"- &6Nether Sigil&r: from The Harbinger, at the end of the Overworld chapter. Fire will not wake a Nether portal; the sigil will."
@@ -1062,6 +1086,12 @@
 	]
 	"quest.3B976CE5D73E5FC0.quest_subtitle": "Tier 1 armor"
 	"quest.3B976CE5D73E5FC0.title": "Wizard Robes"
+	"quest.3CC5C2E540AFC999.quest_desc": [
+		"Sailors swear a ship floats on the deep ocean with no wind in its sails. &9Nerakyss, the Kraken&r holds it, and its crew still guards the deck."
+		"Optional. Everyone nearby at the kill earns a Abyssal Ink."
+	]
+	"quest.3CC5C2E540AFC999.quest_subtitle": "Optional boss"
+	"quest.3CC5C2E540AFC999.title": "The Drowned Deck"
 	"quest.3DFB025E3BBA5CDC.quest_desc": [
 		"Defeat &4The Harbinger&r, the factory's iron herald."
 		"Everyone nearby at the kill receives a &6Nether Sigil&r: use it on an obsidian frame to open the way to the Nether."
@@ -1109,6 +1139,12 @@
 	]
 	"quest.4006A822FCE741F9.quest_subtitle": "Wildlands"
 	"quest.4006A822FCE741F9.title": "The Frosted Prison"
+	"quest.401EC80945F55D97.quest_desc": [
+		"A sealed arena in the Nether keeps its gates shut. Inside waits &5Helvar, the Underworld Knight&r. Win the key in its halls first."
+		"Optional. Everyone nearby at the kill earns a Oathbreaker Seal."
+	]
+	"quest.401EC80945F55D97.quest_subtitle": "Optional boss"
+	"quest.401EC80945F55D97.title": "The Oathsworn"
 	"quest.404575A89AD631AE.quest_desc": [
 		"An Eye of Monstrous leads to the soul blacksmith's forge. Craft one."
 	]
@@ -1839,6 +1875,12 @@
 	]
 	"quest.68A41439B84F7D37.quest_subtitle": "Endgame armor"
 	"quest.68A41439B84F7D37.title": "The Armory"
+	"quest.68A6A185A12ED4E6.quest_desc": [
+		"Among the great graveyards stands an altar, and on it waits the &7Corrupted Champion&r, a hero who would not stay buried."
+		"Optional. Everyone nearby at the kill earns a Champion's Tarnished Crest."
+	]
+	"quest.68A6A185A12ED4E6.quest_subtitle": "Optional boss"
+	"quest.68A6A185A12ED4E6.title": "The Fallen Hero"
 	"quest.68ADD28694A0A17E.quest_desc": [
 		"An Eye of Mech points to the ancient factory. Craft one and follow it."
 	]
@@ -1902,6 +1944,12 @@
 	]
 	"quest.6D97E040B04E5B09.quest_subtitle": "Tier 3 armor"
 	"quest.6D97E040B04E5B09.title": "Netherite Bowman Armor"
+	"quest.6DA8F6337A1AD59A.quest_desc": [
+		"Back in the Overworld, a tower on the frozen peaks belongs to &bthe Night Lich&r. Slay enough of the dead near it and it comes."
+		"Optional. Everyone nearby at the kill earns a Phylactery Shard."
+	]
+	"quest.6DA8F6337A1AD59A.quest_subtitle": "Optional boss"
+	"quest.6DA8F6337A1AD59A.title": "The Night Lich"
 	"quest.6E1A5C775EB148AF.quest_desc": [
 		"Get a Wizard Staff."
 		""
@@ -1933,6 +1981,12 @@
 	]
 	"quest.71222F68234D4EB9.quest_subtitle": "Tier 3 weapon"
 	"quest.71222F68234D4EB9.title": "Forged in Netherite"
+	"quest.7140D2F2C89AA174.quest_desc": [
+		"On the outer islands of the End a pillar of obsidian moves when no one watches: &5the Obsidilith&r."
+		"Optional. Everyone nearby at the kill earns a Obsidian Heartstone."
+	]
+	"quest.7140D2F2C89AA174.quest_subtitle": "Optional boss"
+	"quest.7140D2F2C89AA174.title": "The Black Pillar"
 	"quest.71ED147E96C3CDB4.quest_desc": [
 		"Defeat &cIgnis&r, the burning champion."
 		"Everyone nearby at the kill receives a &dVoid Shard&r. Eyes of Ender need it, and it is never used up."
@@ -2091,6 +2145,12 @@
 	]
 	"quest.7F3ACDC21971B67E.quest_subtitle": "Cooking (Farmer's Delight)"
 	"quest.7F3ACDC21971B67E.title": "A Feast for the Party"
+	"quest.7F6EFC9E1B2A25C6.quest_desc": [
+		"A tower burns on the plains and never falls. On top roosts &cAshlord, the Infernal Dragon&r."
+		"Optional. Everyone nearby at the kill earns a Cinder Scale."
+	]
+	"quest.7F6EFC9E1B2A25C6.quest_subtitle": "Optional boss"
+	"quest.7F6EFC9E1B2A25C6.title": "Embers on the Tower"
 	"quest.7F77AC6E99CF3DA3.quest_desc": [
 		"The &6Jeweler's Kit&r cuts the jeweler's gems (ruby, sapphire, jade, topaz, citrine, tanzanite) to fit into armor. Put a gem in and pick one of its four cuts: the cut decides the bonus."
 		"Shadowy Tanzanite adds soul spell power, Fierce Ruby critical damage, the sapphires health and armor. Hover over each cut to compare."
@@ -2139,6 +2199,7 @@
 	"task.114080C98DFEF359.title": "All four pieces of the Netherite Bowman Armor"
 	"task.1173D251F27FCBE4.title": "Have a Hellshelf"
 	"task.11B5C5B357764DF0.title": "Explore an End castle or lighthouse"
+	"task.11CC9CE71A198EFB.title": "Abyssal Ink"
 	"task.1284ABB32E41FD5A.title": "Ask for directions"
 	"task.12E97CCF0E286B3E.title": "All four pieces of the Northling Suit"
 	"task.12F778CE68AE5841.title": "Reach level 20 in a job"
@@ -2186,16 +2247,19 @@
 	"task.1ABC863AE9CC3E2D.title": "Find the stronghold"
 	"task.1B0ED37D7A3A62DA.title": "Have a Wind Wand or Staff"
 	"task.1B238D6515501D30.title": "Bind a spell"
+	"task.1B46F253522B8F66.title": "Hoarfrost Pelt"
 	"task.1B67A9D91BAEADF1.title": "All four pieces of the Wildling Suit"
 	"task.1B83E449DBEE5AF9.title": "All four pieces of the Netherite Aqua Robes"
 	"task.1B8AB9E29A00271C.title": "Open the stats screen"
 	"task.1BB39B0A8812A3E0.title": "All four pieces of the Priest Vestments"
+	"task.1C42EB60642B8613.title": "Gauntlet Core"
 	"task.1C6AAB1C5C2708B6.title": "Enchant at level 80"
 	"task.1D1820290DF01776.title": "All four pieces: Bounty Hunter Armor"
 	"task.1D228EC277645FB2.title": "Have a netherite Double Axe or Glaive"
 	"task.1D70722A7FF6C39A.title": "Enter the End"
 	"task.1D74890FB73DF582.title": "All four pieces: Justicar Armor or Lightbringer Armor"
 	"task.1DB21FEE613DAAA2.title": "Carry the Warrior tome"
+	"task.1E09E9B76E138B0E.title": "Void Petal"
 	"task.1E4D8A39B188BCC2.title": "Have a Terra Wand or Staff"
 	"task.1E4DA2BEB0890FE2.title": "Have a netherite Arcane Wand or Staff"
 	"task.1E4FE199F1043C91.title": "All four pieces of the Deadeye Armor"
@@ -2224,6 +2288,7 @@
 	"task.26B9786161EC5C08.title": "All four pieces of the Aqua Robes"
 	"task.2702AF2F432F40C7.title": "Have a netherite Dagger or Sickle"
 	"task.27DC3743B94D70AE.title": "Unlock a talent"
+	"task.28F77D44259AF114.title": "Dune Fang"
 	"task.29C18C0DB954D588.title": "Citadel Keystone"
 	"task.29DCB9A32254F5AB.title": "Have a Composite Longbow"
 	"task.2A2052876BC0F6A6.title": "Have a netherite Frost Wand or Staff"
@@ -2242,6 +2307,7 @@
 	"task.30E4CA0DF720077A.title": "All four pieces of the Tundra Armor"
 	"task.3192298D58C0B42A.title": "Have a Wizard Staff"
 	"task.31C8DF173A175089.title": "Do a combat roll"
+	"task.31D174446C67ED11.title": "Oathbreaker Seal"
 	"task.31D729E66FE32162.title": "Have a netherite Longbow or Shortbow"
 	"task.326FC1891067160B.title": "Have a Composite Longbow"
 	"task.3314EDE953266084.title": "All four pieces: Avatar Vestments or Absolution Vestments"
@@ -2263,6 +2329,7 @@
 	"task.40D2EFBCEA4F1121.title": "Rimefang Tusk"
 	"task.4143EDF04002BDC9.title": "All four pieces of the Terra Robes"
 	"task.42B71E3EB6C49F2A.title": "Join or form a party"
+	"task.4380C7E6919B9FF4.title": "Cinder Scale"
 	"task.44342FF9C2C2CA4B.title": "Carry the Berserker tome"
 	"task.44A6AADD805A409B.title": "Have a Aqua Wand or Staff"
 	"task.452853D983261048.title": "Have netherite Knuckles"
@@ -2314,6 +2381,7 @@
 	"task.5A17672205BBB06F.title": "Cast any spell"
 	"task.5A9E4EB6DE763568.title": "All four pieces of the Aken Suit"
 	"task.5D71108002945D0A.title": "Find an End city"
+	"task.5D8E9546FD610917.title": "Champion's Tarnished Crest"
 	"task.5DEA6926DB91341C.title": "A legendary claymore, hammer or mace"
 	"task.5E234E86D87CA2C7.title": "Have a diamond Double Axe or Glaive"
 	"task.5E5EA7FDE6112484.title": "Understood"
@@ -2381,6 +2449,7 @@
 	"task.79BF0BBCB30F374A.title": "Carry the Archer tome"
 	"task.79FA04000FE1E1C8.title": "Have a netherite Terra Wand or Staff"
 	"task.7A8161436F760911.title": "Craft a backpack"
+	"task.7AAB244DEF801266.title": "Phylactery Shard"
 	"task.7AE72E6F6E687E17.title": "Draw a Survey Map"
 	"task.7AE77857D97A67C2.title": "All four pieces of the Netherite Wind Robes"
 	"task.7B512AAA79226288.title": "Salvage a piece of gear"
@@ -2391,4 +2460,5 @@
 	"task.7D5F21A4880ACFC2.title": "Have a diamond Dagger or Sickle"
 	"task.7DD06313148AB4BC.title": "Kill 15 undead"
 	"task.7DD3D5D846ECF6E9.title": "Carry the Arcane Wizard tome"
+	"task.7E18B0C944467335.title": "Obsidian Heartstone"
 }

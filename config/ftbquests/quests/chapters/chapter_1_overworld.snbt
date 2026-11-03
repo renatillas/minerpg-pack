@@ -771,6 +771,231 @@
 			dependencies: [
 				"710AD64B960DC726"
 			]
+			id: "22C1C2A9DA342526"
+			optional: true
+			rewards: [
+				{
+					count: 6
+					id: "51B4FAA5E08A444C"
+					item: {
+						count: 1
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "234EABB2971D5967"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 3
+					id: "2AC8EACAB8E446EB"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "28F77D44259AF114"
+					item: {
+						count: 1
+						id: "minerpg:trophy_sandworm"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"710AD64B960DC726"
+			]
+			id: "31E9814687B5A8AE"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "24AFFFF501EE4D83"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					id: "5D074F5247878F1F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 3
+					id: "5C9C4F5C48A41EB3"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1B46F253522B8F66"
+					item: {
+						count: 1
+						id: "minerpg:trophy_yeti"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"710AD64B960DC726"
+			]
+			id: "3CC5C2E540AFC999"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "16D3FFDF76E065DF"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					id: "114B50A09D427602"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 5
+					id: "730C039F77797121"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "11CC9CE71A198EFB"
+					item: {
+						count: 1
+						id: "minerpg:trophy_kraken"
+					}
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"710AD64B960DC726"
+			]
+			id: "7F6EFC9E1B2A25C6"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "5476EF45B2D20157"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					id: "3F65C2AF5DCA5F40"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 5
+					id: "4513A3762678FFDA"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "4380C7E6919B9FF4"
+					item: {
+						count: 1
+						id: "minerpg:trophy_infernal_dragon"
+					}
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"710AD64B960DC726"
+			]
+			id: "68A6A185A12ED4E6"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "1AB07EA081C62102"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					id: "7DBADF51E34E8ECD"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 5
+					id: "2BDBF133D14C47CD"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "5D8E9546FD610917"
+					item: {
+						count: 1
+						id: "minerpg:trophy_corrupted_champion"
+					}
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"710AD64B960DC726"
+			]
 			id: "7ADADD9D86E83E50"
 			rewards: [
 				{

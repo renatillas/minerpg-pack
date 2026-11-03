@@ -1,0 +1,18 @@
+{
+  "name": "The Night Lich",
+  "icon": "minerpg:trophy_night_lich",
+  "category": "patchouli:field_guide",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A sorcerer of the frozen peaks who never died. Its tower answers those who have slain enough of the dead.$()$(br2)$(l)Counter:$() Its missiles slow you and its comets fall where you stand. Keep moving, and strike when it lands.$(br2)Kill undead near the tower to call it."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Phylactery Shard$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/night_lich"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/night_lich"
+}

@@ -2,7 +2,7 @@
   "name": "End Cities",
   "icon": "minecraft:purpur_block",
   "category": "patchouli:field_guide",
-  "sortnum": 22,
+  "sortnum": 32,
   "pages": [
     {
       "type": "patchouli:text",

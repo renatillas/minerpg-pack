@@ -1,0 +1,12 @@
+{
+  "name": "Relics",
+  "icon": "relics_rpgs:jewel_figurine_ruby",
+  "category": "patchouli:loot",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(item)Relics$() are trinkets worn in their own slot (accessories, G). They come in four grades: lesser, medium, greater and superior, each stronger than the last.$(br2)Bosses and dungeons give them out. A spare relic recycles into rarity materials at the Salvaging Table, more for a higher grade."
+    }
+  ]
+}

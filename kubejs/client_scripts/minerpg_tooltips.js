@@ -38,6 +38,16 @@ ItemEvents.modifyTooltips(event => {
     ferrous_wroughtnaut: ['the Ferrous Wroughtnaut', null],
     frostmaw: ['the Frostmaw', null],
     umvuthi: ['Umvuthi, the Sunbird', null],
+    sandworm: ['Sirok, the Sandworm', null],
+    yeti: ['Skor, the Yeti', null],
+    kraken: ['Nerakyss, the Kraken', null],
+    infernal_dragon: ['Ashlord, the Infernal Dragon', null],
+    underworld_knight: ['Helvar, the Underworld Knight', null],
+    corrupted_champion: ['the Corrupted Champion', null],
+    night_lich: ['the Night Lich', null],
+    gauntlet: ['the Gauntlet', null],
+    void_blossom: ['the Void Blossom', null],
+    obsidilith: ['the Obsidilith', null],
   }
   Object.keys(trophies).forEach(key => {
     const boss = trophies[key][0]

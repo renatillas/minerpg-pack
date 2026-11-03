@@ -2,7 +2,7 @@
   "name": "Nether Fortresses",
   "icon": "minecraft:nether_bricks",
   "category": "patchouli:field_guide",
-  "sortnum": 19,
+  "sortnum": 29,
   "pages": [
     {
       "type": "patchouli:text",

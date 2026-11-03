@@ -1,0 +1,18 @@
+{
+  "name": "The Corrupted Champion",
+  "icon": "minerpg:trophy_corrupted_champion",
+  "category": "patchouli:field_guide",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A fallen hero bound to an altar among the graves, waiting to be called back.$()$(br2)$(l)Counter:$() It fights in three moods and calls the dead to its side. Thin its servants before they surround you.$(br2)Its altar calls it. Come rested and ready."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Champion's Tarnished Crest$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/corrupted_champion"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/corrupted_champion"
+}

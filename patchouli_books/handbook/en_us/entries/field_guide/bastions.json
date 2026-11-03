@@ -2,7 +2,7 @@
   "name": "Bastions",
   "icon": "minecraft:gilded_blackstone",
   "category": "patchouli:field_guide",
-  "sortnum": 20,
+  "sortnum": 30,
   "pages": [
     {
       "type": "patchouli:text",

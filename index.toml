@@ -118,15 +118,15 @@ hash = "efd648a49846de145fb0c968d9548104eee18886ec1221455375df0d788511b3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_overworld.snbt"
-hash = "a373bc305c94a1a3e28a9cba6d79d0d009f037ff53602c69dd041f2bb628dc16"
+hash = "eb08af149fc0dd8abaf0315df1d84449a326fc2d174b9a792dc2aed38492ad2f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_nether.snbt"
-hash = "6f9bf66d178cf3c61a8ed245c5c58ab21ce0adee862ded71314a8041019df38b"
+hash = "ad064c64548f8e362d7fea22e727bdeb345d2f0beabbb5dae01e43ee8618f060"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_end.snbt"
-hash = "3aba392e68ccf4aca357b4995f0537cfb0989241afe9e690be640272b0686847"
+hash = "e51a0e5a16fb3dfc2e75102b88d0362913b8b73b256565db466d1ddc294e5510"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/forge_and_library.snbt"
@@ -146,7 +146,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "17f20b2ad0a8a34138783fd868cb1a0517326dec8190b190b5108c317f87b0ff"
+hash = "ec7e87f3bd2153668ab1739d0ca841631a39089aafdf0b90923b1ca6f9e7ff5d"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -1514,7 +1514,7 @@ hash = "fefbc6fe321971441a13e95c3b8e3598b2b3d039e16d8a0e557141914d640dc5"
 
 [[files]]
 file = "kubejs/assets/minerpg/lang/en_us.json"
-hash = "779179d09c7d6dfd2fdfaaab1ced66513c736298dc1681e6cb17dec2c555098e"
+hash = "07f93199a234bc4c87a801426a49054b5dea5625846a11fc08f917c2cc9af0f3"
 
 [[files]]
 file = "kubejs/assets/minerpg/textures/item/nether_sigil.png"
@@ -1527,6 +1527,10 @@ hash = "f88659671d96f194feb6a1138707ad902ae19cdbb67529ccc1ee0da9b5b69f2f"
 [[files]]
 file = "kubejs/assets/minerpg/textures/item/trophy_ancient_remnant.png"
 hash = "7381efacde57de1c6a7c845ca84977606b32e23829c06e24ec042c0b7fb60ad1"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_corrupted_champion.png"
+hash = "5530b6f9e5a8dcd12c8db9f8fb7ceead17510fe6367f7ffb4b7b7f08b16640e3"
 
 [[files]]
 file = "kubejs/assets/minerpg/textures/item/trophy_ender_dragon.png"
@@ -1545,6 +1549,18 @@ file = "kubejs/assets/minerpg/textures/item/trophy_frostmaw.png"
 hash = "7a2b0ee97a9c4f3f786bc6182842b25897afe229ba2f3c70a3a7c6eb96db6802"
 
 [[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_gauntlet.png"
+hash = "0b21037704b0aa3483085198ccd554c65c535a0f67558075404c93b2706c21c6"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_infernal_dragon.png"
+hash = "b6727557fba07c2ae94c72b7264ee0acac565aa8236be1fad67a9ccca1c323c3"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_kraken.png"
+hash = "d497cd38772978b199a8ef15bc7ad972b2a688289c7540ab87ba031c8d7e26cc"
+
+[[files]]
 file = "kubejs/assets/minerpg/textures/item/trophy_leviathan.png"
 hash = "a5499a15d454ba7087a6e88c86df37ad8369d7435a81908cb58a37a540d6b726"
 
@@ -1557,12 +1573,36 @@ file = "kubejs/assets/minerpg/textures/item/trophy_netherite_monstrosity.png"
 hash = "eb69a2d633656c9388dd445afaa8de6fbece13313f17be045edd73b5da59f7ce"
 
 [[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_night_lich.png"
+hash = "1c6becdebc304a7822713af35ff13c2404605353f7766db86304f31ee2c51f1c"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_obsidilith.png"
+hash = "ac1cf26d18f73ac4a2311bee1596bd342bea16a493b41649290fb72e24477390"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_sandworm.png"
+hash = "13bb4c5578090bd7daba382e6aba796efe8e6ec8975fc47aba9888f220aa43b5"
+
+[[files]]
 file = "kubejs/assets/minerpg/textures/item/trophy_umvuthi.png"
 hash = "76d59123b16bdac61665d22d2c599205279c19f7aabfbf704e9ce1744852d166"
 
 [[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_underworld_knight.png"
+hash = "3290327f02e76494af88102219b35942d0cfcbdfda8aed4333c913f9b880dbdc"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_void_blossom.png"
+hash = "c8a8db04a7e47ea17340f3ac7f8a9cc93ac81fcc6ce3a27a9ad4f88ed44f9049"
+
+[[files]]
 file = "kubejs/assets/minerpg/textures/item/trophy_wither.png"
 hash = "1abce378d3bfc24ca0020ebff5efda6eed01f32de9e14c840c9f72cb869ea782"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/item/trophy_yeti.png"
+hash = "5c98ae6d26551141a07e6563e522db7b161a6367834a0b94115fb055a00cf240"
 
 [[files]]
 file = "kubejs/assets/minerpg/textures/item/void_shard.png"
@@ -1698,7 +1738,7 @@ hash = "510062ff5ee85748ee5510666141ff4a7e163e49fa89bae6456df1bf98cf93de"
 
 [[files]]
 file = "kubejs/client_scripts/minerpg_tooltips.js"
-hash = "4b9e68df1837ca119c4fc70a14ab9218f257ce90d527bf1e82207310038cf3e0"
+hash = "bfc254543db0784a8d2dbd352315483a64cf74b54bd05f2e39694bdfbf765fa1"
 
 [[files]]
 file = "kubejs/data/additional_rpg_jewelry/recipe/gold_nugget_from_blasting_silver_sapphire_necklace.json"
@@ -1882,11 +1922,11 @@ hash = "d82b80f987c8f0ccc0c1053c42070985792aee531633c08552768893828dc683"
 
 [[files]]
 file = "kubejs/data/apotheosis/loot_modifiers/affix_conversion.json"
-hash = "97ff041a99040f4cc7eba2de097a99d930d47e571de922443b6621e637a6cf3b"
+hash = "8635be6201c33f5e1c12a58baf43aeca80133e18faed75d6ea39644a0324bc04"
 
 [[files]]
 file = "kubejs/data/apotheosis/loot_modifiers/affix_loot_injection.json"
-hash = "865c4e548b7ea20a7b809c93a24e67c36b4346d41a83d2a0990dc42c9abc5eb8"
+hash = "c07c582e680abb45d239466372b825a6a9066c01384094ced2c5c8c9e44b24c4"
 
 [[files]]
 file = "kubejs/data/apotheosis/rarities/common.json"
@@ -2853,6 +2893,10 @@ file = "kubejs/data/minerpg/advancement/field_guide/defeated/ancient_remnant.jso
 hash = "fa083f83d98366f5edaea8bad5773bedb04ca3ceeddbad638df62703155216f2"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/defeated/corrupted_champion.json"
+hash = "50d1516fff18d48cf51e7769778a550ddd56066ea38bcad6b1462a96e42c7120"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/defeated/ender_dragon.json"
 hash = "2fd6bec76966ede306a7fdd0cc2f672b33b084fdd6d5156ee347061cf495abb0"
 
@@ -2869,12 +2913,24 @@ file = "kubejs/data/minerpg/advancement/field_guide/defeated/frostmaw.json"
 hash = "e7cc9762187b838bd2c5dfd55c623367eb79c1e809ea6b184bbc89aac9aeeddb"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/defeated/gauntlet.json"
+hash = "8070a091b816a377f32290e771f6660ec29591f694fbc6a0991e06a2a5dccb6e"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/defeated/harbinger.json"
 hash = "fd217bce3b60e2d768dba4da077284c68226edd4bce279dd2b5c27a51de8bb56"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/defeated/ignis.json"
 hash = "dafdf5dffd7dfc318f85cec06bbdc5b9fe6cc7ccba2cbc48f540f2ea36a277a4"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/defeated/infernal_dragon.json"
+hash = "efc84c3988110a3fa8be97844372ce7c544723935a9ac53f6d028a756b3c4a90"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/defeated/kraken.json"
+hash = "fa302ac616e48d30e9ef0f10555dce81cbb0c59821d052fd7eaaa98d796dc2fc"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/defeated/leviathan.json"
@@ -2889,6 +2945,18 @@ file = "kubejs/data/minerpg/advancement/field_guide/defeated/netherite_monstrosi
 hash = "86253378929a818bdad83d84d27906805f613954ca5115d56eb7cdcd646e1e2f"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/defeated/night_lich.json"
+hash = "239747c7a26e4dd0cfff85626b4bde551356709e470b21d8d136bfbea27aeb7e"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/defeated/obsidilith.json"
+hash = "2a8d8eca35386503e143f808dd13491c63934ed392d19df57fc6d87cdc2454ba"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/defeated/sandworm.json"
+hash = "0ebd4bc4e9daab516f654fadab8670b743ed6cb7ae3982759196c81912a1ce38"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/defeated/scylla.json"
 hash = "745a5646516c0f53f3058aa820ccd19b1a3ef5ef4fef76d2129596947e722fc4"
 
@@ -2897,8 +2965,20 @@ file = "kubejs/data/minerpg/advancement/field_guide/defeated/umvuthi.json"
 hash = "6dd9f0c28871bb98be6839958f94d417f5517c060b82d49bcb239ec1f264bc69"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/defeated/underworld_knight.json"
+hash = "1c6284d74b31629075998ba7bbc963725fb31a36558ec15f811ae14c1f4d9619"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/defeated/void_blossom.json"
+hash = "8cbba43aff77c9589db4c4d8e7edd3c8a8f2dbbc8642ab5b2a82ec10da1a0520"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/defeated/wither.json"
 hash = "2631fc4fad5c4055d366b88c4540663f42e625585ac1d6361fa3975b32c2d392"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/defeated/yeti.json"
+hash = "c8b153fce2bf19b17332ca6c5350312ca8f817cc102e37f29544d567678f4d84"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/found/ancient_cities.json"
@@ -2949,6 +3029,10 @@ file = "kubejs/data/minerpg/advancement/field_guide/sighted/ancient_remnant.json
 hash = "ac760734b00d7701b4abe4f99facfe082ef420b0e57f7df763a77012cbd3987f"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/sighted/corrupted_champion.json"
+hash = "9107be42452ef37ae32341ca10d6f2d84a51d45c283611fd9003c3e3645f4404"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/sighted/ender_dragon.json"
 hash = "64d8a7e03a02362f0322701d3cd69b8dcf63902b88d144a3fe2b29d4e99fca48"
 
@@ -2965,12 +3049,24 @@ file = "kubejs/data/minerpg/advancement/field_guide/sighted/frostmaw.json"
 hash = "21d2d97d746365b2262fad7afd56796523cff89e3fc2afd90bda08281a789318"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/sighted/gauntlet.json"
+hash = "a971565eaf35b1a298ca98a97f33af931d4c4ca8f563efcbdf6257acb6bd2138"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/sighted/harbinger.json"
 hash = "a04fd57f08e830f452d624a81efb7561a48b8769c643b7e7302e6fb05630f147"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/sighted/ignis.json"
 hash = "1203d49872520bfaa7c555909817ef93aab346a200dca91b119c80feab02c452"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/sighted/infernal_dragon.json"
+hash = "a493dc579154fc440b3d5993dab61f69c485512b4c50e2a9bbb4d78da23c210b"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/sighted/kraken.json"
+hash = "97ff17f913ded5c41d79e57dbeac4a5c0ebab0bfe320402a6f365e8f70aeb76c"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/sighted/leviathan.json"
@@ -2985,6 +3081,18 @@ file = "kubejs/data/minerpg/advancement/field_guide/sighted/netherite_monstrosit
 hash = "59dd7e99bb623017c51f5d8990b35ea1e751b9abc044ac8d2ba38840bb81b0b2"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/sighted/night_lich.json"
+hash = "90c73ce7b974f8b1f9eaab691e088a1d2fc8d2d0435c9d7bef90e9e5b151928c"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/sighted/obsidilith.json"
+hash = "c618ea2f88285950786c0d36683a16a673c8057bd2ff30e7cf59d73c0a37f11c"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/sighted/sandworm.json"
+hash = "cecf9e8f90093844e4c9d72f1b565f8c39a92456b3f2c720b5c26b1ec3f4ea78"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/sighted/scylla.json"
 hash = "ebd55bda1299c119a420319dccb666319e8e22412121c8915e18628a418607ae"
 
@@ -2993,8 +3101,20 @@ file = "kubejs/data/minerpg/advancement/field_guide/sighted/umvuthi.json"
 hash = "9110219ac64b2e5291adb9a4a8d667f47f5c05406d557882e877b2106f7208d6"
 
 [[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/sighted/underworld_knight.json"
+hash = "f7ce41671ef4291f4a1648b3ccbf1f3f81da3be9ebe1eb8381c869943fff2992"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/sighted/void_blossom.json"
+hash = "d946a04af4a43687a144b9fa9690b0de9e345c62676630a59ecbb90e8f5dd6dc"
+
+[[files]]
 file = "kubejs/data/minerpg/advancement/field_guide/sighted/wither.json"
 hash = "3ea8099092e1b26ba0181ac85d04459976ec64ba475ef0c2bbfe7eb65105a302"
+
+[[files]]
+file = "kubejs/data/minerpg/advancement/field_guide/sighted/yeti.json"
+hash = "8350c3fe0cf97f9e8b71525e5a161e931dd2457b15d46f4bc08c09bd94fc1b67"
 
 [[files]]
 file = "kubejs/data/minerpg/advancement/guide/augmenting_table.json"
@@ -4518,11 +4638,11 @@ hash = "4a10037ef568203c26eb20898354bf95c6466a898a581668040673f94b274fb7"
 
 [[files]]
 file = "kubejs/data/minerpg/loot_modifiers/coins_dungeon_chests.json"
-hash = "601b0639417acfa97a1b54794fd0317862061a67c9e1591583ab1dcb3aa44df9"
+hash = "77ae746633b2f485d90a7974e9c5b99950a2bb02a359e35d473f96b28f9c16fd"
 
 [[files]]
 file = "kubejs/data/minerpg/loot_modifiers/coins_ordinary_chests.json"
-hash = "e4ed285af6fd53c9798786c50b84682e0344408a2fd3f60f27686637d91fc871"
+hash = "4bdcc726470d2c716bc3f362ca26e0ae7e16da7c1af9cbb66b3e3f896225819e"
 
 [[files]]
 file = "kubejs/data/minerpg/loot_table/coins/boss.json"
@@ -5493,6 +5613,206 @@ file = "kubejs/data/minerpg/recipe/salvaging/rpg/berserker_rpg__wildling_legs.js
 hash = "00aacfc054f0f575b0fd0601c4d1e35eaa233f69299cba609f1a853f95c791f0"
 
 [[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__dagger.json"
+hash = "0ef5b5f98df2832b5061e6e293c14be470c9f6a4655d83191a6a5bed69125668"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__dragon_bones_boots.json"
+hash = "2ccf99099cb27fbba3c21a9985ce70f97d877f05d14955da0f5550a8fd966565"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__dragon_bones_chestplate.json"
+hash = "05e62a4ae7c77dada4bca8cee21e0815d8e8b48851dbad72b9fb05a4f66c59f5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__dragon_bones_leggings.json"
+hash = "defa80e26e034d92dec00734d69b48b4a94dd281e46c561f98a1505daf909d3d"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__dragon_guard_shield.json"
+hash = "aa56b09266139644cda68b3398744141df4bc2ac93531440f5e371bcc2fef33c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__enhanced_shield.json"
+hash = "dbc310d190a0c2b0280bf2643505700e4754b0fe7b9ab3d2baa7e948e763bb25"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__ice_gauntlet.json"
+hash = "84b9c4af4fc7f2ac7765485d8be48d1ee072cdad38028e1216587eb0500e7c14"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__knight_boots.json"
+hash = "0af1cca268155d0a066f9435f1ab49ff34d8240d962aa8dc329fde4234be95fd"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__knight_chestplate.json"
+hash = "54f961e5708f0a5541f7c7fd365d0788bdb0a55ffd92d31f153d07bef3118bc2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__knight_helmet.json"
+hash = "b2d77c1bc5968fec664e13704967876176e240acb0932a4fd8c1609ae9ff4ee6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__knight_leggings.json"
+hash = "9ab1f4fee7811521b1a7cc8e81ab60f05327e72f65cde95bb021b33662fe6ff2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__knight_sword.json"
+hash = "e6ad5525be91d70fbae36874169ba76e740ad54747c6ccdf9ca3f77b4cfd6343"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__kraken_trident.json"
+hash = "d04a1596ece42ee64aefd3126440145e26cb23ceef9e0ba6ff2b3f420064a366"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__large_sword.json"
+hash = "c17aa24d9403d856666be742e5c2ce49c3a994284afc93d760c551c657d19718"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__pirate_saber.json"
+hash = "96f0fd949c429f0e151be6679aa8eaf10cc4b298a31f8c5219f894894712c8e6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__undying_tentacle.json"
+hash = "e9ae6cb55daa6d09af84f83ceb6b9da7c88920dc772a4bd64367bb5cf5f7071e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/block_factorys_bosses__warrior_sword.json"
+hash = "c37d15f251c0db8b7b291515a19c19631d8c2ec661760f033760f9f3cce14c97"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__ancient_spear.json"
+hash = "78b471395e7df61e097d6f7b618c9a955c9bec0624c71d154e27c478f9df83a5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__astrape.json"
+hash = "7120e64d71e0760fc09d4163954c000c60edfec0e3643b2ee544f2d883cf3359"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__athame.json"
+hash = "193945e854d3f731c47108e7a167a6a5a0b44bf4a86d82bf0b2794e0d4ff8ce5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__azure_sea_shield.json"
+hash = "d85bf77ce8ea10df524edb7d7ae258c583e4c3b3005d28527ad9f022d11c9d33"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__black_steel_axe.json"
+hash = "5d3fc5fdc8f73f198453e2bf9434f9dce49c19be3cbe658aadc9a2aef0cb6725"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__black_steel_pickaxe.json"
+hash = "e85de7444bbb533d112f2681eb6d6cf7c25995d1c98ede45999b4b8adb90d34f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__black_steel_shovel.json"
+hash = "3382e6370b0780135ca79d282af868083b4b6a766da0a0245ae46f50573b8aeb"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__black_steel_sword.json"
+hash = "3a2a598de3b0bb17f04337bbf994af4f9959b54356122bab419ea814d416b113"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__black_steel_targe.json"
+hash = "84a2340bf2bbe3d482981efce6175f52837e7391de7de2f89230cf3d7b687bc3"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__bloom_stone_pauldrons.json"
+hash = "25d1408608e45d2aad29077db4596c595095eb186acfb30a27b9e7fc239bd286"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__bone_reptile_chestplate.json"
+hash = "93e9b95312f5990a6ae453b26ee37aca2710d9246a24983c379e5f930a7352e1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__bone_reptile_helmet.json"
+hash = "5f998e91f01659c7a2af16e92ababd6d2e693671d3487e5042b75e5630202431"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__bulwark_of_the_flame.json"
+hash = "83a88ad063bd320e68fe4b2cae5532a26ffb422e977db4116cf223ea6f120729"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__ceraunus.json"
+hash = "67b9742f761127de61860446c5d1171161ef81ac515c3e5248c1cf5c980214e2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__coral_bardiche.json"
+hash = "398b3ebc57d9491365abe7441fa1e5b6118d9ca448803303378d7cb3d0d6e39f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__coral_spear.json"
+hash = "f098a35912c9375cf61da07aea8a5b6b2cbb3aff1d94121a522177effe95397c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__cursium_boots.json"
+hash = "5d91d55deae04d03d3218f6abda9e20ff30d092020f7371c500dde83d3d1ac98"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__cursium_chestplate.json"
+hash = "0dd2787c89434355f5ff3fb8949a91f89af77529d790ed23908526159ba5570c"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__cursium_helmet.json"
+hash = "3de0c906e2d40f94fdedeafa991992d2bbf662236f75350d9bedf5e17fad66e9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__cursium_leggings.json"
+hash = "b465e9af24ed0ec074a0cd6e8488344ee81884d14450e409974de5e05b0ffb4a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__gauntlet_of_guard.json"
+hash = "96de56419a0d94e75a91064dcc82967ee0221fb85d6cb27a03e36b36eac3ac90"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__ignitium_boots.json"
+hash = "6e8d503b7af46e77520ce944e4b7d426de0aac4a810f7a4916a3ee7c0d53a0a4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__ignitium_chestplate.json"
+hash = "0c03b22053d57df83fc4071d07e30fb6bd84a6317d7a7c37853591552b495be9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__ignitium_helmet.json"
+hash = "15f2ad5a7232e949f67ee537a7c1919b5008640ae7abfc58c213c94e25c3beda"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__ignitium_leggings.json"
+hash = "3575f0a44c4b1694ce9c7d2c28f4fa939f033463d7f90c5463dfc8ca2c1662a9"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__infernal_forge.json"
+hash = "06f9eda37add67ffb9255402866d47865770bec586be2679225d23b6346ae4fe"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__khopesh.json"
+hash = "440c8aa086c1e26d6d9d90111b444af8e25457ed94363e2fee5f46c5dccd8af5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__meat_shredder.json"
+hash = "f760e60f5db5094986ff3b0ce9a31c1e2cc3592ef710681cfde49310fb446195"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__monstrous_helm.json"
+hash = "4d889347b0a4d5ed3e7abe974c3a53eae6f84c85f4191a1736e6aa498f71dd31"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__soul_render.json"
+hash = "0cf000297cf26b78d19329e8f9db03757baacaad3845c73fe3cc2e7c41d33602"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__the_annihilator.json"
+hash = "67c95a17724cfaca2923a8a2be00ce9d4bf6cbdb4f8a42b87d21af0161fc323f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__the_incinerator.json"
+hash = "a2d8c58453c40b96554aeb8412014e6c94fd48990e392a157fefbc2e8f99de7a"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/cataclysm__tidal_claws.json"
+hash = "088b5b608eb2fea8860c88b32d468e1de6731ae7170aef23c2d54090d9c154b8"
+
+[[files]]
 file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__dripstone_chest.json"
 hash = "907e3974cf77b66e6cbb675ed566372a41e21d145410bf8da8b0b27af698a9c1"
 
@@ -5717,6 +6037,26 @@ file = "kubejs/data/minerpg/recipe/salvaging/rpg/elemental_wizards_rpg__wind_leg
 hash = "b380cae60b78a7eb8d2e6cccc34e21218063048005aaa682354fceb9d4fe05ae"
 
 [[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/farmersdelight__diamond_knife.json"
+hash = "17af02cef0e1f7ccb9c603d030be0bfa94c601c9293a11c0cb58f2d4cb92ef7f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/farmersdelight__flint_knife.json"
+hash = "dc6fe6878378276905a234a49b706f6b64c8da58838a702cccc1e9c1af70c27f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/farmersdelight__golden_knife.json"
+hash = "65de4d8008007817637caebe1742e31235703640ff7bf9f84b2fb62312b0f3be"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/farmersdelight__netherite_knife.json"
+hash = "4ce2732a9390f1f11bfd9287061e1251e294f15895cca0357222eaf763e6a4fa"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/farmersdelight__skillet.json"
+hash = "d5d1f03248fe0967b5513cfe351cd4b61738eeb4f30f281459a379541d2ca7a5"
+
+[[files]]
 file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__aken_chest.json"
 hash = "4c2a8ecbd0e009a6461eefd34e9abc257bc47b8c30106be81ffd9dda9092c26f"
 
@@ -5803,6 +6143,10 @@ hash = "9423e0dcc056a7d9c4766db7696c8f5437e69d2281ae97f1db71516787dfd7af"
 [[files]]
 file = "kubejs/data/minerpg/recipe/salvaging/rpg/forcemaster_rpg__wooden_knuckle.json"
 hash = "a44821490217b0b4a74700d0cb4329c8fd9ce1691d5305f1d467153138dd2c55"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/graveyard__bone_dagger.json"
+hash = "8618e96d5b5c24d60e01c919971d31a12d129a55532b9eb66b7c3e79596ecdb6"
 
 [[files]]
 file = "kubejs/data/minerpg/recipe/salvaging/rpg/jewelry__citrine_necklace.json"
@@ -6111,6 +6455,118 @@ hash = "2efb657142a6a873558a4f66a103c397a9d9bc14158fe5d742dff76c23a5c0d9"
 [[files]]
 file = "kubejs/data/minerpg/recipe/salvaging/rpg/more_relics__superior_zhonyas_hourglass.json"
 hash = "9ec11b3f9e8e40687bc20d2879f5d9333f58a12316323d1a6ecf181f58e49bc7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__blowgun.json"
+hash = "40d392cd994c0f116c5bb183d3af2272e9b95aa814fb1de62e4ff1f783e73fe7"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__earthrend_gauntlet.json"
+hash = "bcb2cb0c6819bfd99fe1c313ec835ddca1630a2efd08c2c07c6cca951ac7288e"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__geomancer_beads.json"
+hash = "26f0745c0ee5d5ef67cb8e4cfca3c994628356e9c682674d13ba252e243291d2"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__geomancer_belt.json"
+hash = "6df7d80850bd8c30560ef8f7559416a0a28af30fb6db22d3bd8f051a4dafd962"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__geomancer_robe.json"
+hash = "ced2cf837bccfee6bbf2c803c8c259623105b5f5407a86ca06c768f7546b2f6b"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__geomancer_sandals.json"
+hash = "917bd8647d7c756f7bd19628fd8b026e952e3f77d3144c890a5fee42bd3df321"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__naga_fang_dagger.json"
+hash = "adea4d5a065c75ed913bddc2568927ada76f775ff8eb8d4470c9b2f48f3f73e5"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__sculptor_staff.json"
+hash = "6fc13453fd1944a1a9fdb0548647c5d6ae0e7504b077ad7066d1b87c03266cb1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__sol_visage.json"
+hash = "a00afc6e55e730d0f482e6f936d4d4f4df59d3688d26dc77920d3d48dda50d92"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__spear.json"
+hash = "aeb9c2217bb933d88205f710f4673b6c523235e9e1ec507643257441de325dd0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__umvuthana_mask_bliss.json"
+hash = "00e9034dbc57969148fb5d2b9c5514fbce4d737752af6140c1b85cbb4976f7c8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__umvuthana_mask_faith.json"
+hash = "966e2bb27774255ab99f5186080915ddfdb6a43ad7fca423c50c6725129fd224"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__umvuthana_mask_fear.json"
+hash = "c00bb676fc10d7b0123d8d511a415fd190a05d6e62e74c6cb4c02040a8aaf098"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__umvuthana_mask_fury.json"
+hash = "439d323214bcac82d8a2483778bc24f092abf648a7e7be98740958d13e5dc4ed"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__umvuthana_mask_misery.json"
+hash = "0de70516e9705d035f45817fbfa50d3caefb0277516d688b011b327760e981e6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__umvuthana_mask_rage.json"
+hash = "d85fb9e2fd6ceea5002fe799f668d29c5371a7c93631cc2c0b719a746a3fd9c0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__wrought_axe.json"
+hash = "5ec49fef994d879f5fc9aba72047af756cff01d17d0c36676643f34d75045df8"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mowziesmobs__wrought_helmet.json"
+hash = "3f306cd467c933b12f95fd67cb3eae860db406c1e8f10361bb078f245836f863"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mushroomquest__aqua_mushroom_cap_redone_helmet.json"
+hash = "62face6cbcf3772ca099dfb8d0ec42a62ca436fadf41be5c687a33959e498616"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mushroomquest__blank_mushroom_cap_redone_helmet.json"
+hash = "89c9abd2481741cdc0330dec36c65c4b6b8b0e4951fe77f6dcadb58da1c0c4be"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mushroomquest__blue_mushroom_cap_redone_helmet.json"
+hash = "26b5a95428cf908f80d68b56260a6bd7924a9b101f223b7d926995c0d9c71cfe"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mushroomquest__brown_mushroom_cap_redone_helmet.json"
+hash = "d0d280370e597c8e501ada037f8c7e2f4b628f1eb4368b70d835d05681e65a9f"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mushroomquest__green_mushroom_cap_redone_helmet.json"
+hash = "750c48fb2a1cd1cdc4694750460d7d5d5216622131748c7277011ffb0412ac71"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mushroomquest__inky_mushroom_cap_helmet.json"
+hash = "56638d25fa1237290d184a4fe85c41384151c92d23c1935f80df25d5f05dbfd1"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mushroomquest__pink_mushroom_cap_redone_helmet.json"
+hash = "d73c94e1c3bb702c23ae1a93f2d45b448bb31c16f6592f4326de555b811f5bd0"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mushroomquest__purple_mushroom_cap_redone_helmet.json"
+hash = "752b86a2c26f8235076a4d9c504a3eb7c34f093ebd95a21c5d65aa8994b050f4"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mushroomquest__red_mushroom_cap_redone_helmet.json"
+hash = "907a7ea1a0bd4fa17c23bba7fc5c34938a7a7fe59000d62e3b6bd75e1a7ed9c6"
+
+[[files]]
+file = "kubejs/data/minerpg/recipe/salvaging/rpg/mushroomquest__yellow_mushroom_cap_redone_helmet.json"
+hash = "358860b0d67589ccb87e4b3f519eae860cdf33f0a0faacdcc8cc7eea3a740923"
 
 [[files]]
 file = "kubejs/data/minerpg/recipe/salvaging/rpg/paladins__acolyte_wand.json"
@@ -6966,7 +7422,7 @@ hash = "417807a1638ed6f11753b07effa45aeb6f1034e74a45721aca61c4e0cf933ce2"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/entity_type/tuned_boss.json"
-hash = "57d83fbe566d55ba79fe2a20a3ecfe829843f6ddcc888ded410909791cb55706"
+hash = "43457c8c7fedc6393d803d2dc200e70e37a59e65efb97cf6f655ef0a3925c206"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/biome/zone/frontier.json"
@@ -6990,11 +7446,11 @@ hash = "d0792c357353e2fdc0c261dd2fc494d633d3ca67849206afa3419c6f33a7c7dd"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_2.json"
-hash = "f7e4f719d995c96221d7ec7f38aa1a4a2e93a3aa9133839bcfb9ec625d620c98"
+hash = "da5bdf57a877f0c09b65dec444a064d21384bb43b12c53b0bbfbfab3f024c7c9"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_3.json"
-hash = "391f554d4851ce1623a0c2af659749c3c220799199ba668aefb44f5888f58373"
+hash = "ddc1bbf8dea621590afb8086416774be01221c40d2719649eb1221f8ce43f456"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/level_4.json"
@@ -7006,7 +7462,7 @@ hash = "a507ed22a39fa054f3f3676e9efe1c2fc1cd46c920ec6d81721b0cc6cfcc2b77"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/nether.json"
-hash = "e418d29e6203a4b0734c559a4f6c3d2db01f320eaae9bed3113763bedfc06f5e"
+hash = "6d40a287db3e7cfe7e0c7604eddbe482c2b81319bba4a771d18d759bf71bd54e"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/worldgen/structure/dungeon_tier/overworld.json"
@@ -7134,7 +7590,7 @@ hash = "1cb5a533f27c523568ca4bbb84a342d17a13ec8da35d4712fc7f3ef7cdee1f9c"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_boss_tuning.js"
-hash = "588a11254b70d0fc01a054677d06fbd410752bf261c69e93c9e5eabac6e7f391"
+hash = "bd292b5aa1596d7fb604700f1d39bc473b088b2bb1957e8abb214225bdffffeb"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_calling.js"
@@ -7158,7 +7614,7 @@ hash = "ea4be89cfb7b6b5570f23bc061950e5ea02dc5085cbaea7ff3d972a4746390b3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_field_guide.js"
-hash = "6fc0d36e854c7c5a14c20304136a3716ac79ba532e0fccc062b8d1d3a1ee5b23"
+hash = "4219cfc3386256f0564f29dfa6dc4066e2b3cec118432200ec314764dc649c18"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_first_join.js"
@@ -7166,7 +7622,7 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "5e8e148b70155ec7db5983d582d874fe0038fc7faa808f98c608e3d7016af1b8"
+hash = "53420b3cd993b586ab06312f464ef2320ec5ea72ee09e4e56d90f1a07d3a6a2c"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_market.js"
@@ -7190,7 +7646,7 @@ hash = "2556d275ab050ef1de0b13bc313b2cfb11c7d1280ce734a9933026150fbefc34"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_soft_locks.js"
-hash = "4294af65e087ec534600562d53733f745dbedd4047f71abb6cb11db106d85bfa"
+hash = "5f0f612da251d3dcc2d0bce25b49f2e6dc2747796bea283d09143297f3fad267"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_tier_client_sync.js"
@@ -7206,7 +7662,7 @@ hash = "c2e297967ecf1287dc2c246bb8aacaf76997bb4994d5a84649d6d1ddaaf0f683"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_items.js"
-hash = "e10028c74b38583ffd23c80bd0bceffd4d9d7f920b6079818d0d7ae32d8aa708"
+hash = "7abe5b7e308bc8143b8ea2a7a67c400e7c23f1330cdfa286b67cde96b2c585d2"
 
 [[files]]
 file = "mods/additional-rpg-jewelry.pw.toml"
@@ -7979,8 +8435,12 @@ file = "patchouli_books/handbook/en_us/categories/getting_started.json"
 hash = "9ba6d6597301542880d13a52691493334369155d4a21921715d55d9ebb75b051"
 
 [[files]]
+file = "patchouli_books/handbook/en_us/categories/home.json"
+hash = "9f2cd63d061d85be39c59757a30e88298c1d930fc63397126fa85e358b964604"
+
+[[files]]
 file = "patchouli_books/handbook/en_us/categories/keys.json"
-hash = "5c96e333659e7320dc92db47f765159e59639a15c31a2c5d18a31cdc4334064d"
+hash = "6bbabb4691e876b6458146781cb8198dbd8176b0325bc359107124ff37827426"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/categories/loot.json"
@@ -8052,7 +8512,7 @@ hash = "bd09f6347a119621c7edcc0becbdffda3d2162411d86b39d6ce60ad875aedbd3"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/ancient_cities.json"
-hash = "5b0d875d3a958bab1ceab9d1f10182449e2997bb77f1d1232ff7840abcc39e8a"
+hash = "71e26122124b1aca22bbea94d19c0b9bd256f00a158733b8d8dfa5fa8271b42c"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/ancient_remnant.json"
@@ -8060,15 +8520,19 @@ hash = "bef8bcb97aa03902109a1d7adc4a727913847feaa93371f9d94c74bb3d7cfddf"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/bastions.json"
-hash = "d44b8e7d51c8fd01eb0df646d3cf5246e2f34bb272742eb15167f53e9767c6a3"
+hash = "5297ccb11f23d9292493316a2a3a28be1ad540ca3cea340b5e8c848acfa39993"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/field_guide/corrupted_champion.json"
+hash = "e0bff1d24059d7bc0ae36c9c6f8ff65ce2cbd18535c756991a22f40898b0eb4f"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/end_castles.json"
-hash = "f000c0f806a8edcbc64f7507507d332b60e37f181c7f4169bb3af42eeab5f2af"
+hash = "f00c5b16f24fcb3968a26e3a02db0d6bbc0fa619cd0ada961c1e19081fe08087"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/end_cities.json"
-hash = "9bb7d16dab80ac275f9fc35764239e8ee536984385c77d00beb37ef67541a1c7"
+hash = "7847f6baf029933caa17124c32a6ee65cdca4950ab6a1f37a8c8efd1101a43b8"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/ender_dragon.json"
@@ -8087,8 +8551,12 @@ file = "patchouli_books/handbook/en_us/entries/field_guide/frostmaw.json"
 hash = "7df5b14521d647b256edd38b54862c8c4072a8fb581f9003465fcee993347346"
 
 [[files]]
+file = "patchouli_books/handbook/en_us/entries/field_guide/gauntlet.json"
+hash = "efbfe21a33bf58bd2e690b5adb5020537b97b04811eb09eac283c78aa23540cc"
+
+[[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/great_dungeons.json"
-hash = "f32b5ae868f535420d2a4e96834350b9e4bca8d559e9b78a5f9bccb924e1b73b"
+hash = "06e15c972c0e42ae20a23449eeab7c27719f2da9bc58fb5548dac7c31e72f7c2"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/harbinger.json"
@@ -8103,6 +8571,14 @@ file = "patchouli_books/handbook/en_us/entries/field_guide/ignis.json"
 hash = "867d2c88861ba3b36e97e98539569ab851c15123545300a7d5180813a1a37203"
 
 [[files]]
+file = "patchouli_books/handbook/en_us/entries/field_guide/infernal_dragon.json"
+hash = "209843615aa4673bb2322345d88c091bf8b784245ee54c1e0ae28eec9a5d8631"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/field_guide/kraken.json"
+hash = "d9a174774d44b5dc856d4793b24117199a8bfbe4af3940cb91c096fa2df6090c"
+
+[[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/leviathan.json"
 hash = "6dc2f6acaa6082302babebfd063e16659664afa94df55be8b8544a428a0b2bf0"
 
@@ -8112,15 +8588,27 @@ hash = "f902c803fd28b27af4934795218ff34834326a05e9204a4e955025eefd25e816"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/nether_fortresses.json"
-hash = "d381638909d5fa5baee1a098cf7ecbb00d48300feb40a8af1c3e6296e23cc213"
+hash = "a3fd29fafbffdf0cefd7e63a97e1fdc14e00d2820caff37af866b082affec2ed"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/nether_keeps.json"
-hash = "eaa83e1e8860fc458f57b1ab63b0b9b47e754542351a532e376fd4432ff32e80"
+hash = "f6b997b82e3f27b969d13af53d36e831b72608e00570592cbf1501d8ac52a0c5"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/netherite_monstrosity.json"
 hash = "54c99b3196832d07adee404ff87cae559e3db3c2edc8c1cd3388b2757c0a1c55"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/field_guide/night_lich.json"
+hash = "236f8604eb234b11ea9717f765d9e9c8f2d0763a57d1b77adfdf38c5f6626192"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/field_guide/obsidilith.json"
+hash = "5155483c094171d875138e3750b6f8183cec68c5ec64e6fc97db3a6e1fc3bf60"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/field_guide/sandworm.json"
+hash = "43eef842c159dc0bf3715ac1f86c6016038471979d74390a8eeca55b00e8eae3"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/scylla.json"
@@ -8128,19 +8616,31 @@ hash = "6fdc330197eaad6f75564c1da21ee267a338afce50ddc51fa165ede7b4437a1f"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/small_dungeons.json"
-hash = "6ce9ff893481fee62bfcfa5fecabbb3de70f76cad09cb1594d0f3b614d1b63a3"
+hash = "659da0a589231ed09964793533ffc5fe489630d8ac372a460975d89b6d50136f"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/strongholds.json"
-hash = "776e0ff874d9cd70674bbf812c26c23a4a823c6ffd723059a6a24d0a0e80cdcc"
+hash = "2a8b5364a563d0064b75d71a4d8d300763e8b032f4554b06d9ccd0cf2d6e7ea1"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/umvuthi.json"
 hash = "dbb5a44bbc7555e7e767247ba2f97cf7dad08628818c7f7c1b6b54f415cdaa7b"
 
 [[files]]
+file = "patchouli_books/handbook/en_us/entries/field_guide/underworld_knight.json"
+hash = "ce69d06f7170b9d53bb35a22e79c4dbbc7c24c46e99b1f4fbdae3c32bdb9b0bd"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/field_guide/void_blossom.json"
+hash = "7a04dc9682e766367e72a4c874104b96d4d4b4e9f80fb2b0260c5f215dbbf675"
+
+[[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/wither.json"
 hash = "cdc1d4b6f6a157519e4147b4acdb83a81b9800243015a0763d68924592b217dc"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/field_guide/yeti.json"
+hash = "94ff499839371453601a006f55ba2ee4deda211a51963ac0073b04d8040167f8"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/getting_started/first_hour.json"
@@ -8155,6 +8655,22 @@ file = "patchouli_books/handbook/en_us/entries/getting_started/welcome.json"
 hash = "eaf0db6bf61f0a663277aad22a19913a52aafb9dcae3f69517aec068ae80b626"
 
 [[files]]
+file = "patchouli_books/handbook/en_us/entries/home/chisel.json"
+hash = "e339d30cf2b57ffe2e04cfe6c690cd9b90a42d1da936da7a790368b7f8898a9f"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/home/furniture.json"
+hash = "1c310758c53ef5726460bb8125bd8720f8474dc9aff71d49cf9d38e3fab6077f"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/home/obelisk.json"
+hash = "b4ddcc43f988806a463cf1bf463968dfbc19b0f4fc241f0ebcbcca138988d400"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/home/storage.json"
+hash = "e62b2d35e8a3517acca23055f254e6e6c706521756183a324ec5cdd502d55908"
+
+[[files]]
 file = "patchouli_books/handbook/en_us/entries/keys/keys.json"
 hash = "524506047bb6ed1f3a770d66464914a2c7606d4a4ecac1330e045b7d2662e748"
 
@@ -8165,6 +8681,10 @@ hash = "8f3cf2df76c7caa86893e12f1a68b46b1040d028968169a6de55629f05a83284"
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/loot/reforging.json"
 hash = "ee87ed2932d5e0f981801aa9ff434af04d2bfa80eb8d9280eec5706646a9e2c6"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/loot/relics.json"
+hash = "2671023e95cfbae7d58221dcdf2ddb4684d40bb31cd0870c379ba32dd5308445"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/loot/sockets.json"
@@ -8187,8 +8707,16 @@ file = "patchouli_books/handbook/en_us/entries/professions/anyone.json"
 hash = "848895d7c90277acdc2ddbf3b96ebc722381b7383070a517cdebd8267103fdb2"
 
 [[files]]
+file = "patchouli_books/handbook/en_us/entries/professions/croptopia.json"
+hash = "08c3fa762876911125ee50ab216a218ed247d790a3619b7d322694434f350621"
+
+[[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/explorer.json"
 hash = "2c0fea88bedf1570cf604e31f23d17f71e9aac552cfedbd4c52350f982e3f3c3"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/professions/foraging.json"
+hash = "f79fc23f9c30583e844cf95c1d17d0172cc80be289fb929d183aa6059c91efe7"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/gates.json"
@@ -8203,12 +8731,16 @@ file = "patchouli_books/handbook/en_us/entries/professions/jobs.json"
 hash = "d5b5c91eb178f83fa3c2a1c40c2cf35610693d2a89f662c3409eb1b29c0d5352"
 
 [[files]]
+file = "patchouli_books/handbook/en_us/entries/professions/keg.json"
+hash = "b9a92d35a2507882b85512cb9178176fb9d726a5e830d7b8400b384120cea614"
+
+[[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/market.json"
 hash = "0dac52830680b8f794eaf9a9608b6e2b74de096876f9abc75cb625e79c8a69cb"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/xp.json"
-hash = "f42c08b9feb2e53b5c04bf2bb2af8ad7bebcc8c4d2a26783cd90e6674345eb2e"
+hash = "ebb10cf4976e9228759f1830d7f1f72f2ad7cc7e6e0349871ecfb99981244530"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/races/change.json"

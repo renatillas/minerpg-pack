@@ -2,7 +2,7 @@
   "name": "Great Dungeons",
   "icon": "minecraft:cracked_stone_bricks",
   "category": "patchouli:field_guide",
-  "sortnum": 16,
+  "sortnum": 26,
   "pages": [
     {
       "type": "patchouli:text",

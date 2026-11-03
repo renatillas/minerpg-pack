@@ -73,6 +73,7 @@ CATEGORIES = [
     ('field_guide', 'Field Guide', 'Foes and places, written in as you find them.', 'minecraft:writable_book'),
     ('loot', 'Loot', 'Rarity, affixes, sockets, gems and reforging.', 'minecraft:diamond_sword'),
     ('party', 'Party', 'Playing together: the Party HUD, shared talents, reviving.', 'minecraft:shield'),
+    ('home', 'Home & Hearth', 'Building a base: storage, furniture, the chisel and the Experience Obelisk.', 'handcrafted:oak_chair'),
     ('keys', 'Keys', 'Every key the pack uses, as you have it bound right now.', 'minecraft:tripwire_hook'),
 ]
 
@@ -305,6 +306,10 @@ E['professions'] = [
              'items.'
              '$(li)$(l)Farmer$(): harvesting (ripe fruit and crops picked by hand too), planting, breeding.'
              '$(li)Miners level from stone and ores.'),
+        text('Side stations pay too:'
+             '$(li)$(l)Smith$(): carving bone at the Ossuary, forging at the Mechanical Fusion Anvil.'
+             '$(li)$(l)Cook$(): cutting on a cutting board.'
+             '$(li)$(l)Hunter$(): catching butterflies, fireflies and the like with a capture net.'),
     ]),
 ]
 
@@ -485,6 +490,67 @@ E['keys'] = [
 ]
 
 
+# Pack 1.5.5 pages (mod audit: the newer mods weren't in the book).
+E['professions'] += [
+    ('croptopia', 'Cook: Croptopia Kitchen', 'croptopia:cooking_pot', [
+        text('Croptopia adds dozens of crops, fruit trees and dishes. Simple dishes (one to three ingredients) are '
+             'free for anyone and give a new Cook a little experience. Hearty dishes (four or five) need Cook 10, '
+             'grand dishes (six or more) Cook 20.$(br2)Every new dish a Cook makes pays a bonus the first time.'),
+        text('Its kitchen tools (the $(item)Stock Pot$(), frying pan, knife, food press) stay in the grid. Dishes '
+             'from the Farmer\'s Delight cooking pot are free for everyone.$(br2)Where Croptopia and Farmer\'s '
+             'Delight make the same thing (tomatoes, rice, hamburgers...), the pack keeps one: a stray Croptopia '
+             'copy turns into it at the crafting table.'),
+    ]),
+    ('keg', 'Cook: The Keg', 'brewinandchewin:keg', [
+        text('A $(item)Keg$() ferments drinks and ages cheese over time. Fill it, wait, and pour.$(br2)Each '
+             'drink or cheese a Cook takes from the keg gives Cook experience, and a new one pays the new-dish '
+             'bonus.'),
+    ]),
+    ('foraging', 'Foraging and Wild Things', 'mushroomquest:blue_glowshroom', [
+        text('Mushrooms grow on stumps and trunks in the woods: a Hunter levels from foraging them. Many cook '
+             'into meals, and some brew into potions.$(br2)Naturalist\'s wild animals drop hides, fur, fat, teeth '
+             'and antlers for Hunters. Some of them bite back.'),
+        text('A $(item)capture net$() catches butterflies, fireflies and other small creatures, and a Hunter '
+             'levels from each catch.$(br2)Farmers level from picking ripe Croptopia crops and fruit by hand.'),
+    ]),
+]
+
+E['loot'] += [
+    ('relics', 'Relics', 'relics_rpgs:jewel_figurine_ruby', [
+        text('$(item)Relics$() are trinkets worn in their own slot (accessories, G). They come in four grades: '
+             'lesser, medium, greater and superior, each stronger than the last.$(br2)Bosses and dungeons give '
+             'them out. A spare relic recycles into rarity materials at the Salvaging Table, more for a higher '
+             'grade.'),
+    ]),
+]
+
+E['home'] = [
+    ('storage', 'Storage', 'toms_storage:storage_terminal', [
+        text('An $(item)Inventory Connector$() links every chest touching it, and every chest touching those, up '
+             'to 16 blocks away. A $(item)Storage Terminal$() next to it shows everything in one window.$(br2)Use '
+             '$(l)one$() connector per storage room: two connectors touching the same chests count their items '
+             'twice in the terminal (the items are fine; the number is wrong).'),
+    ]),
+    ('furniture', 'Furniture', 'handcrafted:oak_chair', [
+        text('Chairs, tables, shelves, cupboards, beds and plates in every kind of wood: craft them at a '
+             'crafting table, no job needed.$(br2)Sit on a chair or bench by using it.'),
+    ]),
+    ('chisel', 'The Chisel', 'chisel:chisel', [
+        text('A $(item)Chisel$() carves stone, wood, glass and more into decorative versions of the same block. '
+             'Put blocks in its window (use it in the air) and take the version you want.'),
+    ]),
+    ('obelisk', 'The Experience Obelisk', 'cognition:experience_obelisk', [
+        text('An $(item)Experience Obelisk$() is the party\'s well of experience. Anyone can pour levels in and '
+             'draw them out, so the group can feed whoever needs levels to bind spells or enchant.$(br2)It stores '
+             'the experience itself, not levels: ten levels poured in at level 40 are worth far more than ten '
+             'at level 5.'),
+        text('$(l)Making one$()$(li)Cognitive Flux: lapis, an amethyst shard and paper (makes 4).$(li)Smelt it into '
+             'Amalgam.$(li)Amalgam with copper: Alloy. Amalgam with an emerald: Crystal.$(li)Alloy, Crystal and '
+             'redstone: an Astute Assembly.$(li)Then the obelisk.$(br2)Flux turns up in ruined portals and '
+             'Assemblies in desert pyramids.'),
+    ]),
+]
+
 # --------------------------------------------------------------------------------------
 # Field Guide: one locked entry per boss and per kind of great place. An entry opens when you
 # first see the place or its master ("sighted"); its last page opens when the master falls
@@ -611,6 +677,73 @@ GUIDE_BOSSES = [
      'through any armor.',
      'It also heals slowly by itself. Once you start, do not stop.',
      'Its $(item)Dragonscale$(), with the Citadel Keystone, raises your world tier to Pinnacle.'),
+    # Pack 1.5.5: Bosses'Rise, Bosses of Mass Destruction and The Graveyard. Optional side quests; their gear
+    # always drops with a rarity. Trophies: tools/gen_trophy_icons.py.
+    ('sandworm', 'block_factorys_bosses:sandworm', 'Sirok, the Sandworm', 'minerpg:trophy_sandworm',
+     {'lair': in_structure('block_factorys_bosses:sandworm_nest')}, 'minerpg:trophy_sandworm',
+     'A worm longer than a ship, nesting under the dunes. The sand ripples before it strikes.',
+     'It dives and bursts up under whoever stands still. Keep moving, and hit it hard each time it surfaces.',
+     'Its spit poisons. Bring milk or a cure.',
+     'Its $(item)Dune Fang$() counts for the quest book.'),
+    ('yeti', 'block_factorys_bosses:yeti', 'Skor, the Yeti', 'minerpg:trophy_yeti',
+     {'lair': in_structure('block_factorys_bosses:yeti_hideout')}, 'minerpg:trophy_yeti',
+     'A shaggy giant who has made a cave in the snowy plains his own, and does not share it.',
+     'It hurls ice and drives spikes up through the ground. Spread out so one volley never hits the whole party.',
+     'Its blows are slow but brutal. Roll them; do not trade hits.',
+     'Its $(item)Hoarfrost Pelt$() counts for the quest book.'),
+    ('kraken', 'block_factorys_bosses:kraken', 'Nerakyss, the Kraken', 'minerpg:trophy_kraken',
+     {'lair': in_structure('block_factorys_bosses:kraken_ship')}, 'minerpg:trophy_kraken',
+     'A wrecked ship rides the deep ocean, and something holds it in its arms. Its crew still fights for it.',
+     'Its tentacles rise around the deck one after another. Cut them down as they come up, and keep the '
+     'cannons off you.',
+     'Fight on the ship, not in the water.',
+     'Its $(item)Abyssal Ink$() counts for the quest book. Its teeth make the Kraken Trident.'),
+    ('infernal_dragon', 'block_factorys_bosses:infernal_dragon', 'Ashlord, the Infernal Dragon',
+     'minerpg:trophy_infernal_dragon', {'lair': in_structure('block_factorys_bosses:dragon_tower')},
+     'minerpg:trophy_infernal_dragon',
+     'A dragon of embers roosting atop a ruined tower, guarded by burning skeletons.',
+     'It sets the ground alight and rains fireballs. Clear its guards first, then fight on stone, never in '
+     'the flames.',
+     'Fire resistance turns this fight around.',
+     'Its $(item)Cinder Scale$() counts for the quest book. Its bones make the Dragon Bone armor.'),
+    ('corrupted_champion', 'graveyard:lich', 'The Corrupted Champion', 'minerpg:trophy_corrupted_champion',
+     {'lair': in_structure('graveyard:altar')}, 'minerpg:trophy_corrupted_champion',
+     'A fallen hero bound to an altar among the graves, waiting to be called back.',
+     'It fights in three moods and calls the dead to its side. Thin its servants before they surround you.',
+     'Its altar calls it. Come rested and ready.',
+     'Its $(item)Champion\'s Tarnished Crest$() counts for the quest book.'),
+    ('night_lich', 'bosses_of_mass_destruction:lich', 'The Night Lich', 'minerpg:trophy_night_lich',
+     {'lair': in_structure('bosses_of_mass_destruction:lich_tower')}, 'minerpg:trophy_night_lich',
+     'A sorcerer of the frozen peaks who never died. Its tower answers those who have slain enough of the dead.',
+     'Its missiles slow you and its comets fall where you stand. Keep moving, and strike when it lands.',
+     'Kill undead near the tower to call it.',
+     'Its $(item)Phylactery Shard$() counts for the quest book.'),
+    ('void_blossom', 'bosses_of_mass_destruction:void_blossom', 'The Void Blossom', 'minerpg:trophy_void_blossom',
+     {'lair': in_structure('bosses_of_mass_destruction:void_blossom')}, 'minerpg:trophy_void_blossom',
+     'A flower that grew from nothing, rooted deep below the surface.',
+     'Spikes break from the floor and its petals heal it. Watch the ground and keep the pressure on.',
+     'It cannot move. Use that.',
+     'Its $(item)Void Petal$() counts for the quest book.'),
+    ('underworld_knight', 'block_factorys_bosses:underworld_knight', 'Helvar, the Underworld Knight',
+     'minerpg:trophy_underworld_knight', {'lair': in_structure('block_factorys_bosses:underworld_arena')},
+     'minerpg:trophy_underworld_knight',
+     'An oathsworn knight who never left his arena in the Nether. Its gates open only to a key won inside.',
+     'He marks one of you and opens rifts. Whoever is marked should keep away while the rest strike.',
+     'Find the key before you look for him.',
+     'Its $(item)Oathbreaker Seal$() counts for the quest book.'),
+    ('gauntlet', 'bosses_of_mass_destruction:gauntlet', 'The Gauntlet', 'minerpg:trophy_gauntlet',
+     {'lair': in_structure('bosses_of_mass_destruction:gauntlet_arena')}, 'minerpg:trophy_gauntlet',
+     'A giant iron fist that guards an arena of black stone in the Nether.',
+     'Its punches explode where they land, and it fires a beam when it opens. Strike the eye while it is open.',
+     'Never stand where it is about to punch.',
+     'Its $(item)Gauntlet Core$() counts for the quest book.'),
+    ('obsidilith', 'bosses_of_mass_destruction:obsidilith', 'The Obsidilith', 'minerpg:trophy_obsidilith',
+     {'lair': in_structure('bosses_of_mass_destruction:obsidilith_arena')}, 'minerpg:trophy_obsidilith',
+     'A living pillar of obsidian on the outer islands of the End.',
+     'It drops anvils, raises pillars and sends waves across the floor. Jump the waves and stay off the '
+     'center when it rises.',
+     'It hits hardest of all the optional bosses. Bring the whole party.',
+     'Its $(item)Obsidian Heartstone$() counts for the quest book.'),
 ]
 
 # (key, name, icon, structure or #tag, lore, counter, advice)

@@ -456,6 +456,51 @@
 		}
 		{
 			dependencies: [
+				"2E75B2448D173567"
+			]
+			id: "7140D2F2C89AA174"
+			optional: true
+			rewards: [
+				{
+					count: 1
+					id: "1FE270D3B2243852"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "4DFC1B613C1C8811"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 8
+					id: "7E6D7257EC1952C4"
+					item: {
+						count: 1
+						id: "coins:gold_coin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "7E18B0C944467335"
+					item: {
+						count: 1
+						id: "minerpg:trophy_obsidilith"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
 				"7DC8CDF63FD9011E"
 			]
 			id: "3666625E717DFC13"

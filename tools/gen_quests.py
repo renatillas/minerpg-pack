@@ -774,6 +774,32 @@ CHAPTER_1 = [
         'Optional. Everyone nearby at the kill earns a Rimefang Tusk.'],
         [t_item('minerpg:trophy_frostmaw', title='Rimefang Tusk')], [r_item('minecraft:diamond', 3), r_xp(100)],
         deps=['c1_wild'], subtitle='Optional boss', shape='gear', optional=True),
+    # Pack 1.5.5 optional bosses of the Wildlands (Bosses'Rise, The Graveyard).
+    Q('c1_sandworm', 'Ripples in the Dunes', 6.5, 4.5, [
+        'Under one desert the sand moves on its own. &6Sirok, the Sandworm&r nests there, and it surfaces to feed.',
+        'Optional. Everyone nearby at the kill earns a Dune Fang.'],
+        [t_item('minerpg:trophy_sandworm', title='Dune Fang')], [r_item('minecraft:gold_ingot', 6), r_xp(100), r_coins(3)],
+        deps=['c1_wild'], subtitle='Optional boss', shape='gear', optional=True),
+    Q('c1_yeti', 'Tracks in the Snow', 8, 4.5, [
+        'Giant tracks lead to a cave in the snowy plains. &bSkor, the Yeti&r does not take kindly to visitors.',
+        'Optional. Everyone nearby at the kill earns a Hoarfrost Pelt.'],
+        [t_item('minerpg:trophy_yeti', title='Hoarfrost Pelt')], [r_item('minecraft:diamond', 2), r_xp(100), r_coins(3)],
+        deps=['c1_wild'], subtitle='Optional boss', shape='gear', optional=True),
+    Q('c1_kraken', 'The Drowned Deck', 9.5, 4.5, [
+        'Sailors swear a ship floats on the deep ocean with no wind in its sails. &9Nerakyss, the Kraken&r holds it, and its crew still guards the deck.',
+        'Optional. Everyone nearby at the kill earns a Abyssal Ink.'],
+        [t_item('minerpg:trophy_kraken', title='Abyssal Ink')], [r_item('minecraft:diamond', 4), r_xp(200), r_coins(5)],
+        deps=['c1_wild'], subtitle='Optional boss', shape='gear', optional=True),
+    Q('c1_infernal_dragon', 'Embers on the Tower', 11, 4.5, [
+        'A tower burns on the plains and never falls. On top roosts &cAshlord, the Infernal Dragon&r.',
+        'Optional. Everyone nearby at the kill earns a Cinder Scale.'],
+        [t_item('minerpg:trophy_infernal_dragon', title='Cinder Scale')], [r_item('minecraft:diamond', 4), r_xp(200), r_coins(5)],
+        deps=['c1_wild'], subtitle='Optional boss', shape='gear', optional=True),
+    Q('c1_corrupted_champion', 'The Fallen Hero', 12.5, 4.5, [
+        'Among the great graveyards stands an altar, and on it waits the &7Corrupted Champion&r, a hero who would not stay buried.',
+        "Optional. Everyone nearby at the kill earns a Champion's Tarnished Crest."],
+        [t_item('minerpg:trophy_corrupted_champion', title="Champion's Tarnished Crest")], [r_item('minecraft:diamond', 4), r_xp(200), r_coins(5)],
+        deps=['c1_wild'], subtitle='Optional boss', shape='gear', optional=True),
     Q('c1_diamonds', 'Glittering Hoard', 6.5, 2.5, [
         'Diamond gear is the next step. Bring back a handful.'],
         [t_item('minecraft:diamond', 8)], [r_item('runes:medium_rune_pouch'), r_xp(100)], deps=['c1_wild'], subtitle='Side task'),
@@ -848,6 +874,28 @@ CHAPTER_2 = [
     Q('c2_keep', 'Keep of Ash', 4.5, 3, [
         'Old keeps and piglin donjons dot the wastes. Explore one.'],
         [t_struct('#minerpg:nether_dungeons', 'Explore a Nether keep')], [r_item('minecraft:golden_apple', 2), r_xp(200)], deps=['c2_bastion'], subtitle='Side task'),
+    # Pack 1.5.5 optional bosses (Bosses'Rise, Bosses of Mass Destruction). The Lich and the Void Blossom live in
+    # the Overworld but hit like Chapter 2 bosses.
+    Q('c2_underworld_knight', 'The Oathsworn', 6, 3, [
+        'A sealed arena in the Nether keeps its gates shut. Inside waits &5Helvar, the Underworld Knight&r. Win the key in its halls first.',
+        'Optional. Everyone nearby at the kill earns a Oathbreaker Seal.'],
+        [t_item('minerpg:trophy_underworld_knight', title='Oathbreaker Seal')], [r_item('minecraft:netherite_scrap', 2), r_xp(300), r_coins(6)],
+        deps=['c2_keep'], subtitle='Optional boss', shape='gear', optional=True),
+    Q('c2_gauntlet', 'The Iron Fist', 7.5, 3, [
+        'In an arena of black stone a giant fist waits to be woken: &cthe Gauntlet&r.',
+        'Optional. Everyone nearby at the kill earns a Gauntlet Core.'],
+        [t_item('minerpg:trophy_gauntlet', title='Gauntlet Core')], [r_item('minecraft:netherite_scrap', 2), r_xp(300), r_coins(6)],
+        deps=['c2_keep'], subtitle='Optional boss', shape='gear', optional=True),
+    Q('c2_night_lich', 'The Night Lich', 3, 4.5, [
+        'Back in the Overworld, a tower on the frozen peaks belongs to &bthe Night Lich&r. Slay enough of the dead near it and it comes.',
+        'Optional. Everyone nearby at the kill earns a Phylactery Shard.'],
+        [t_item('minerpg:trophy_night_lich', title='Phylactery Shard')], [r_item('minecraft:netherite_scrap', 2), r_xp(300), r_coins(6)],
+        deps=['c2_arrive'], subtitle='Optional boss', shape='gear', optional=True),
+    Q('c2_void_blossom', 'Roots of Nothing', 4.5, 4.5, [
+        'Deep below the Overworld, something grows that should not: &5the Void Blossom&r.',
+        'Optional. Everyone nearby at the kill earns a Void Petal.'],
+        [t_item('minerpg:trophy_void_blossom', title='Void Petal')], [r_item('minecraft:netherite_scrap', 2), r_xp(300), r_coins(6)],
+        deps=['c2_arrive'], subtitle='Optional boss', shape='gear', optional=True),
     Q('c2_monstrous_eye', 'Eye of Fury', 6, -1, [
         'An Eye of Monstrous leads to the soul blacksmith\'s forge. Craft one.'],
         [t_item('cataclysm:monstrous_eye')], [r_xp(150)], deps=['c2_fortress', 'c2_bastion'], dependency_requirement='one_completed', subtitle='Side task'),
@@ -931,6 +979,12 @@ CHAPTER_3 = [
         'Optional raid. Bring three wither skeleton skulls and soul sand, and pick a place you do not mind losing.'],
         [t_item('minecraft:wither_skeleton_skull', 3), t_item('minecraft:soul_sand', 4)], [r_item('minecraft:golden_apple', 4)],
         deps=['c3_dragon'], subtitle='Optional raid', optional=True),
+    # Pack 1.5.5 optional boss (Bosses of Mass Destruction).
+    Q('c3_obsidilith', 'The Black Pillar', 6, 3, [
+        'On the outer islands of the End a pillar of obsidian moves when no one watches: &5the Obsidilith&r.',
+        'Optional. Everyone nearby at the kill earns a Obsidian Heartstone.'],
+        [t_item('minerpg:trophy_obsidilith', title='Obsidian Heartstone')], [r_item('minecraft:netherite_ingot', 1), r_xp(500), r_coins(8)],
+        deps=['c3_end'], subtitle='Optional boss', shape='gear', optional=True),
     Q('c3_wither', 'The Wither', 10.5, 3, [
         'Summon and destroy &8the Wither&r with your whole group. Everyone nearby earns an Ashen Skull Shard.'],
         [t_item('minerpg:trophy_wither', title='Ashen Skull Shard')], [r_item('minecraft:beacon'), r_xp(800)],

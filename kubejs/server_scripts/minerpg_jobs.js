@@ -12,7 +12,8 @@
 //     (Smith); Spell Binding Table binds and spell book creation (Enchanter); gem cutting at the
 //     Jeweler's Kit and the Apotheosis Gem Cutting Table, Apotheosis socketing and sigils, and
 //     Socket Mounts and cut gems set at the anvil (Jeweler); cooking pot meals, keg drinks, food put on a campfire or stove
-//     and the first time each dish is made (Cook); the first use of
+//     and the first time each dish is made (Cook); the Ossuary and the Mechanical Fusion Anvil (Smith), the cutting
+//     board (Cook) and the capture net (Hunter) (pack 1.5.5); the first use of
 //     each waystone, each new biome and structure entered, and each map filled in (Explorer);
 //   - Survey Maps (Explorer): used up into a map to the nearest place of their kind;
 //   - the "extra copy" power-ups: Second Helping (Cook), Mapmaker and Waywright (Explorer);
@@ -42,6 +43,10 @@ const $DataComponents = Java.loadClass('net.minecraft.core.component.DataCompone
 const JEWELRY_GEMS = $TagKey.create($Registries.ITEM, $ResourceLocation.parse('jewelry:gems'))
 const $CookingPotMenu = Java.loadClass('vectorwing.farmersdelight.common.block.entity.container.CookingPotMenu')
 const $KegMenu = Java.loadClass('umpaz.brewinandchewin.common.block.entity.container.KegMenu')
+// Pack 1.5.5 stations (mod audit: they paid no job XP). Ossuary carving is a stonecutter (input 0, result 1); weapon
+// fusion is an anvil-like combiner (inputs 0-1, result 2).
+const $OssuaryMenu = Java.loadClass('com.lion.graveyard.gui.OssuaryScreenHandler')
+const $WeaponFusionMenu = Java.loadClass('com.github.L_Ender.cataclysm.inventory.WeaponfusionMenu')
 // Note: loading CookingPotMenu on a dedicated server logs one harmless "invalid dist" error for
 // net/minecraft/client/RecipeBookCategories (it is a recipe-book menu). Any script that reads a
 // player's open menu makes Rhino inspect such a class (the player inventory is one too), so the
@@ -73,6 +78,10 @@ const MEAL_XP = 12 // Cook, per cooking pot meal (from the pot's window or serve
 const ATLAS_XP = [8, 12] // Explorer, per new atlas (not for adding maps to one)
 const KEG_XP = 6 // Cook, per drink or cheese taken from a Brewin' And Chewin' keg (pack 1.5.0)
 const KEG_OUTPUT_SLOT = 5 // KegBlockEntity.OUTPUT_SLOT
+const OSSUARY_XP = 2 // Smith, per bone block carved at the Graveyard's Ossuary
+const FUSION_XP = 30 // Smith, per weapon forged at Cataclysm's Mechanical Fusion Anvil
+const CUTTING_XP = 2 // Cook, per ingredient cut on a Farmer's Delight cutting board
+const NET_XP = 3 // Hunter, per creature caught in Naturalist's capture net
 // Cook (designer, 2026-11-02: the Cook levelled too slowly).
 const FIRST_DISH_XP = 25 // the first time a Cook makes each dish (pot meals and table food)
 const COOK_FIRE_XP = 2 // per raw food put on a campfire, stove or skillet (it cooks later, with nobody attached)
@@ -447,6 +456,8 @@ PlayerEvents.tick(event => {
   else if (menu instanceof $ApoGemCuttingMenu) kind = 'apo_gem'
   else if (menu instanceof $CookingPotMenu) kind = 'pot'
   else if (menu instanceof $KegMenu) kind = 'keg'
+  else if (menu instanceof $OssuaryMenu) kind = 'ossuary'
+  else if (menu instanceof $WeaponFusionMenu) kind = 'fusion'
   if (kind == null) {
     if (watch[key]) delete watch[key]
     return
@@ -462,6 +473,8 @@ PlayerEvents.tick(event => {
     else if (kind == 'salvage') salvageTick(player, menu, state)
     else if (kind == 'gem') craftedTick(player, menu, state, 1, 'jeweler', GEM_CUT_XP, 'gem(s) cut', 0)
     else if (kind == 'apo_gem') apoCutTick(player, menu, state)
+    else if (kind == 'ossuary') craftedTick(player, menu, state, 1, 'smith', OSSUARY_XP, 'carved', 0)
+    else if (kind == 'fusion') craftedTick(player, menu, state, 2, 'smith', FUSION_XP, 'weapon(s) fused', 0)
     else if (kind == 'keg') craftedTick(player, menu, state, KEG_OUTPUT_SLOT, 'cook', KEG_XP, 'drink(s) poured', 0,
       drink => firstDish(player, drink))
     else {
@@ -543,6 +556,38 @@ BlockEvents.rightClicked(event => {
       }
     } catch (e) {
       console.error(`[minerpg] cook click failed: ${e}`)
+    }
+  })
+})
+
+// Cook: a cutting board cut (pack 1.5.5). Clicking the board with a tool cuts what lies on it; read a tick later
+// whether it is gone (a click with nothing that cuts it, or an empty hand taking it back, pays nothing).
+BlockEvents.rightClicked(event => {
+  const player = event.player
+  if (player == null || String(event.hand) != 'MAIN_HAND' || String(event.block.id) != 'farmersdelight:cutting_board') return
+  if (jobOf(player, 'cook') == null || player.getMainHandItem().isEmpty()) return
+  const board = event.block.entity
+  if (board == null || board.getStoredItem().isEmpty()) return
+  player.server.scheduleInTicks(1, () => {
+    try {
+      if (board.getStoredItem().isEmpty()) giveJobXp(player, 'cook', CUTTING_XP, 'cut on the board')
+    } catch (e) {
+      console.error(`[minerpg] cutting board XP failed: ${e}`)
+    }
+  })
+})
+
+// Hunter: a creature caught in Naturalist's capture net (pack 1.5.5): the net turns it into an item, so it is gone a
+// tick later.
+ItemEvents.entityInteracted(event => {
+  const player = event.player
+  if (player == null || itemId(event.item) != 'naturalist:capture_net' || jobOf(player, 'hunter') == null) return
+  const target = event.target
+  player.server.scheduleInTicks(1, () => {
+    try {
+      if (target.isRemoved()) giveJobXp(player, 'hunter', NET_XP, 'caught in the net')
+    } catch (e) {
+      console.error(`[minerpg] bug net XP failed: ${e}`)
     }
   })
 })

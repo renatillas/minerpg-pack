@@ -2,7 +2,7 @@
   "name": "Nether Keeps",
   "icon": "minecraft:polished_blackstone_bricks",
   "category": "patchouli:field_guide",
-  "sortnum": 21,
+  "sortnum": 31,
   "pages": [
     {
       "type": "patchouli:text",

@@ -1,0 +1,18 @@
+{
+  "name": "Sirok, the Sandworm",
+  "icon": "minerpg:trophy_sandworm",
+  "category": "patchouli:field_guide",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A worm longer than a ship, nesting under the dunes. The sand ripples before it strikes.$()$(br2)$(l)Counter:$() It dives and bursts up under whoever stands still. Keep moving, and hit it hard each time it surfaces.$(br2)Its spit poisons. Bring milk or a cure."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Dune Fang$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/sandworm"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/sandworm"
+}

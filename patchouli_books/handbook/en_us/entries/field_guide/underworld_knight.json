@@ -1,0 +1,18 @@
+{
+  "name": "Helvar, the Underworld Knight",
+  "icon": "minerpg:trophy_underworld_knight",
+  "category": "patchouli:field_guide",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)An oathsworn knight who never left his arena in the Nether. Its gates open only to a key won inside.$()$(br2)$(l)Counter:$() He marks one of you and opens rifts. Whoever is marked should keep away while the rest strike.$(br2)Find the key before you look for him."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Oathbreaker Seal$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/underworld_knight"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/underworld_knight"
+}

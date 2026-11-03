@@ -1,0 +1,12 @@
+{
+  "name": "The Chisel",
+  "icon": "chisel:chisel",
+  "category": "patchouli:home",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A $(item)Chisel$() carves stone, wood, glass and more into decorative versions of the same block. Put blocks in its window (use it in the air) and take the version you want."
+    }
+  ]
+}

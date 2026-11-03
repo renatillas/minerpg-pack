@@ -39,6 +39,26 @@
     {
       "id": "bosses_of_mass_destruction:gauntlet_arena",
       "required": false
+    },
+    {
+      "id": "nova_structures:skeleton_camp_crimson",
+      "required": false
+    },
+    {
+      "id": "nova_structures:skeleton_camp_warped",
+      "required": false
+    },
+    {
+      "id": "nova_structures:skeleton_camp_soul",
+      "required": false
+    },
+    {
+      "id": "nova_structures:skeleton_camp_waste",
+      "required": false
+    },
+    {
+      "id": "nova_structures:piglin_camp",
+      "required": false
     }
   ]
 }

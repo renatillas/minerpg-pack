@@ -1,0 +1,16 @@
+{
+  "name": "Cook: Croptopia Kitchen",
+  "icon": "croptopia:cooking_pot",
+  "category": "patchouli:professions",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Croptopia adds dozens of crops, fruit trees and dishes. Simple dishes (one to three ingredients) are free for anyone and give a new Cook a little experience. Hearty dishes (four or five) need Cook 10, grand dishes (six or more) Cook 20.$(br2)Every new dish a Cook makes pays a bonus the first time."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Its kitchen tools (the $(item)Stock Pot$(), frying pan, knife, food press) stay in the grid. Dishes from the Farmer's Delight cooking pot are free for everyone.$(br2)Where Croptopia and Farmer's Delight make the same thing (tomatoes, rice, hamburgers...), the pack keeps one: a stray Croptopia copy turns into it at the crafting table."
+    }
+  ]
+}

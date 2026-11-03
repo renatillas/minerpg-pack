@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "cataclysm:bloom_stone_pauldrons"
+    }
+  ],
+  "type": "apotheosis:salvaging",
+  "input": [
+    {
+      "item": "cataclysm:bloom_stone_pauldrons"
+    }
+  ],
+  "outputs": [
+    {
+      "max_count": 3,
+      "min_count": 1,
+      "stack": {
+        "count": 1,
+        "id": "cataclysm:amethyst_crab_shell"
+      }
+    }
+  ]
+}

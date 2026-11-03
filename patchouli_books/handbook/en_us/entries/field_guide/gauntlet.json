@@ -1,0 +1,18 @@
+{
+  "name": "The Gauntlet",
+  "icon": "minerpg:trophy_gauntlet",
+  "category": "patchouli:field_guide",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)A giant iron fist that guards an arena of black stone in the Nether.$()$(br2)$(l)Counter:$() Its punches explode where they land, and it fires a beam when it opens. Strike the eye while it is open.$(br2)Never stand where it is about to punch."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Gauntlet Core$() counts for the quest book.",
+      "advancement": "minerpg:field_guide/defeated/gauntlet"
+    }
+  ],
+  "advancement": "minerpg:field_guide/sighted/gauntlet"
+}

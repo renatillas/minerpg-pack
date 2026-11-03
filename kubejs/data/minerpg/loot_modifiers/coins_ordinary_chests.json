@@ -34,6 +34,358 @@
         },
         {
           "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/archer/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/archer/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/archer/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/archer/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/archer/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/deadeye/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/deadeye/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/deadeye/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/deadeye/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/deadeye/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/general_0"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/general_1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/tundra_hunter/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/tundra_hunter/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/tundra_hunter/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/tundra_hunter/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/tundra_hunter/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/war_archer/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/war_archer/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/war_archer/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/war_archer/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_archers:chests/war_archer/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/general_0"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/general_1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/paladins/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/paladins/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/paladins/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/paladins/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/paladins/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/priests/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/priests/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/priests/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/priests/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/priests/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_paladins:chests/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/general_0"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/general_1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/rogue/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/rogue/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/rogue/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/rogue/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/rogue/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/warrior/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/warrior/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/warrior/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/warrior/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_rogues:chests/warrior/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/arcane/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/arcane/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/arcane/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/arcane/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/arcane/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/earth/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/earth/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/earth/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/earth/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/earth/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/fire/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/fire/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/fire/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/fire/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/fire/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/frost/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/frost/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/frost/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/frost/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/frost/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/general_0"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/general_1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/water/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/water/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/water/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/water/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/water/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/wind/tier1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/wind/tier2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/wind/tier3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/wind/tier4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "lne_wizards:chests/wind/tier5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
           "loot_table_id": "minecraft:chests/abandoned_mineshaft"
         },
         {

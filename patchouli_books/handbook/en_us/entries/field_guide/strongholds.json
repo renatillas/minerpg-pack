@@ -2,7 +2,7 @@
   "name": "The Stronghold",
   "icon": "minecraft:end_portal_frame",
   "category": "patchouli:field_guide",
-  "sortnum": 18,
+  "sortnum": 28,
   "pages": [
     {
       "type": "patchouli:text",

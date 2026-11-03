@@ -2,7 +2,7 @@
   "name": "Ancient Cities",
   "icon": "minecraft:sculk_shrieker",
   "category": "patchouli:field_guide",
-  "sortnum": 17,
+  "sortnum": 27,
   "pages": [
     {
       "type": "patchouli:text",

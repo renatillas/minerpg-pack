@@ -30,6 +30,30 @@ GEAR_NS = {'wizards', 'paladins', 'rogues', 'archers', 'archers_expansion', 'arm
            'bards_rpg', 'berserker_rpg', 'forcemaster_rpg', 'elemental_wizards_rpg'}
 JEWELRY_NS = {'jewelry', 'additional_rpg_jewelry'}
 RELIC_NS = {'relics_rpgs', 'more_relics'}
+# Pack 1.5.5 (mod audit): gear from the boss, structure and food mods. Crafted pieces give back their material like
+# class gear; only items matching EXTRA_GEAR_RE count (these mods' other recipes are blocks, food, materials).
+EXTRA_NS = {'cataclysm', 'mowziesmobs', 'block_factorys_bosses', 'mushroomquest', 'farmersdelight', 'graveyard'}
+EXTRA_GEAR_RE = re.compile(r'(sword|_axe|pickaxe|shovel|targe|shield|pauldrons|chestplate|helmet|_helm|boots|leggings|'
+                           r'gauntlet_of_|spear|knife|skillet|dagger|blowgun|trident|tentacle|astrape|brontes|ceraunus|'
+                           r'meat_shredder|soul_render|annihilator|immolator|incinerator|void_forge|bulwark_of_the_flame)')
+# Gear that only drops (boss, mob or chest loot): rarity material by how rare it is. An affixed copy also gives its
+# affix rarity material on top (Apotheosis adds up every matching recipe).
+DROP_ONLY = {
+    'epic': ['block_factorys_bosses:knight_sword', 'block_factorys_bosses:ice_gauntlet', 'mowziesmobs:wrought_axe',
+             'mowziesmobs:wrought_helmet', 'mowziesmobs:sol_visage', 'mowziesmobs:earthrend_gauntlet',
+             'mowziesmobs:sculptor_staff', 'cataclysm:infernal_forge', 'cataclysm:tidal_claws',
+             'cataclysm:gauntlet_of_guard'],
+    'uncommon': ['block_factorys_bosses:knight_helmet', 'block_factorys_bosses:knight_chestplate',
+                 'block_factorys_bosses:knight_leggings', 'block_factorys_bosses:knight_boots',
+                 'block_factorys_bosses:dragon_guard_shield', 'block_factorys_bosses:large_sword',
+                 'block_factorys_bosses:pirate_saber', 'cataclysm:athame', 'cataclysm:coral_bardiche',
+                 'cataclysm:coral_spear', 'cataclysm:khopesh', 'mowziesmobs:geomancer_beads',
+                 'mowziesmobs:geomancer_belt', 'mowziesmobs:geomancer_robe', 'mowziesmobs:geomancer_sandals']
+                + [f'mowziesmobs:umvuthana_mask_{m}' for m in ('bliss', 'faith', 'fear', 'fury', 'misery', 'rage')],
+    'common': ['block_factorys_bosses:dagger', 'block_factorys_bosses:warrior_sword',
+               'block_factorys_bosses:enhanced_shield', 'mushroomquest:blank_mushroom_cap_redone_helmet'],
+}
+RARITY_MATERIAL_ALL = {'common': 'apotheosis:mysterious_scrap_metal'}
 ALL_NS = GEAR_NS | JEWELRY_NS | RELIC_NS
 
 # Never recyclable, though they have recipes: blocks, progression items (spell books/scrolls, upgrade
@@ -62,7 +86,7 @@ NEVER_OUTPUT = {'minecraft:stick', 'minecraft:netherite_upgrade_smithing_templat
 VANILLA_TAGS = {'minecraft:wool': 'minecraft:white_wool', 'minecraft:planks': 'minecraft:oak_planks',
                 'minecraft:logs': 'minecraft:oak_log', 'minecraft:logs_that_burn': 'minecraft:oak_log',
                 'minecraft:stone_tool_materials': 'minecraft:cobblestone'}
-ARMOR = re.compile(r'_(head|chest|legs|feet)$')
+ARMOR = re.compile(r'(_(head|chest|legs|feet)|_helmet|_helm|chestplate|leggings|_boots|pauldrons)$')
 
 
 def read_jars(server):
@@ -135,7 +159,14 @@ def crafted_outputs(result, recipe, tags, by_result, seen=()):
         base = resolve(recipe.get('base', {}), tags)
         if base in by_result and base not in seen:
             return crafted_outputs(base, by_result[base], tags, by_result, seen + (result,))
+        # A boss material on netherite gear (Cataclysm's Ignitium, Cursium...): the netherite back as scrap and
+        # maybe the boss material.
+        if base and base.startswith('minecraft:netherite_') and addition and addition not in NEVER_OUTPUT:
+            return [output('minecraft:netherite_scrap', 0, 2), output(addition, 0, 1)]
         return []
+    if 'ingredients' in recipe and 'key' not in recipe:  # shapeless: one key per ingredient
+        recipe = dict(recipe, key={str(n): v for n, v in enumerate(recipe['ingredients'])},
+                      pattern=[''.join(str(n) for n in range(len(recipe['ingredients'])))] if len(recipe['ingredients']) < 10 else [])
     ingredients = [resolve(i, tags) for i in recipe.get('key', {}).values()]
     ingredients = [i for i in ingredients if i and i not in NEVER_OUTPUT and (i in GEMS or i.split(':')[0] not in ALL_NS)]
     if not ingredients:
@@ -180,12 +211,16 @@ def main():
             continue
         res = r.get('result', {})
         rid = res.get('id') or res.get('item')
-        if rid and rid.split(':')[0] in ALL_NS and rid not in by_result:
+        if rid and rid not in by_result and (rid.split(':')[0] in ALL_NS or (
+                rid.split(':')[0] in EXTRA_NS and EXTRA_GEAR_RE.search(rid.split(':')[1]))):
             by_result[rid] = r
 
     recipes_out = {}  # item id -> outputs
     skipped = []
-    for item in sorted(items | set(by_result)):
+    for grade, ids in DROP_ONLY.items():
+        for item in ids:
+            recipes_out[item] = [output(RARITY_MATERIAL.get(grade) or RARITY_MATERIAL_ALL[grade], 1, 2)]
+    for item in sorted((items | set(by_result)) - set(recipes_out)):
         path = item.split(':')[1]
         if EXCLUDE.search(path):
             continue

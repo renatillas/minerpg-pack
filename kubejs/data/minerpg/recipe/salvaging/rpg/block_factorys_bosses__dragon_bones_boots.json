@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "block_factorys_bosses:dragon_bones_boots"
+    }
+  ],
+  "type": "apotheosis:salvaging",
+  "input": [
+    {
+      "item": "block_factorys_bosses:dragon_bones_boots"
+    }
+  ],
+  "outputs": [
+    {
+      "max_count": 3,
+      "min_count": 1,
+      "stack": {
+        "count": 1,
+        "id": "block_factorys_bosses:dragon_bone"
+      }
+    }
+  ]
+}

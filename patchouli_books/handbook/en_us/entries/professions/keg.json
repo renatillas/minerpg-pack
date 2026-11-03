@@ -1,0 +1,12 @@
+{
+  "name": "Cook: The Keg",
+  "icon": "brewinandchewin:keg",
+  "category": "patchouli:professions",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A $(item)Keg$() ferments drinks and ages cheese over time. Fill it, wait, and pour.$(br2)Each drink or cheese a Cook takes from the keg gives Cook experience, and a new one pays the new-dish bonus."
+    }
+  ]
+}

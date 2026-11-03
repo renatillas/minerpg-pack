@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "mushroomquest:blank_mushroom_cap_redone_helmet"
+    }
+  ],
+  "type": "apotheosis:salvaging",
+  "input": [
+    {
+      "item": "mushroomquest:blank_mushroom_cap_redone_helmet"
+    }
+  ],
+  "outputs": [
+    {
+      "max_count": 2,
+      "min_count": 1,
+      "stack": {
+        "count": 1,
+        "id": "apotheosis:mysterious_scrap_metal"
+      }
+    }
+  ]
+}

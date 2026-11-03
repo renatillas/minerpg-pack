@@ -51,10 +51,13 @@ DUNGEON_MODS = {'cataclysm', 'mowziesmobs', 'apotheosis', 'betterstrongholds', '
                 'betterdeserttemples', 'betterjungletemples', 'betteroceanmonuments', 'dungeons_arise',
                 # pack 1.5.1 combat structures (It Takes a Pillage camps stay ordinary chests)
                 'graveyard', 'ati_structures', 'dungeons_arise_seven_seas', 'bosses_of_mass_destruction',
-                'block_factorys_bosses'}
-# Tables that are only pulled into other tables (class mods' injections, Farmer's Delight's additions) or are no
-# real chest: coins there would come twice or from nowhere.
-SKIP_MODS = {'lne_wizards', 'lne_archers', 'lne_paladins', 'lne_rogues', 'farmersdelight', 'lootr'}
+                'block_factorys_bosses',
+                # pack 1.5.5: YUNG's small dungeons were left out
+                'betterdungeons'}
+# Tables that are only pulled into other tables (Farmer's Delight's additions) or are no real chest: coins there
+# would come twice or from nowhere. (The class add-ons' lne_* tables are their outposts' own chests, read from the
+# structure files in pack 1.5.5, so they get ordinary-chest coins.)
+SKIP_MODS = {'farmersdelight', 'lootr'}
 SKIP_TABLES = {'minecraft:chests/spawn_bonus_chest', 'minecraft:chests/jungle_temple_dispenser'}
 
 
@@ -96,7 +99,8 @@ def chest_tables(mods):
         except zipfile.BadZipFile:
             continue
         for name in names:
-            m = re.match(r'data/([^/]+)/loot_table/(chests/.+)\.json$', name)
+            # YUNG's Better Dungeons nests them one deeper (skeleton_dungeon/chests/common).
+            m = re.match(r'data/([^/]+)/loot_table/((?:[^/]+/)?chests/.+)\.json$', name)
             if m:
                 ids.add(f'{m[1]}:{m[2]}')
     return sorted(i for i in ids if i.split(':')[0] not in SKIP_MODS and i not in SKIP_TABLES)

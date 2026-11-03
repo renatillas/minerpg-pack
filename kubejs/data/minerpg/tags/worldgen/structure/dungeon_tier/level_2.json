@@ -263,6 +263,178 @@
     {
       "id": "ati_structures:old_fort",
       "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_spruce",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_overgrown",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_oak",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_desert",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_red_desert",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_mesa",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_jungle",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_mushroom",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_lush",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_acacia",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_spruce_snowy",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_ice",
+      "required": false
+    },
+    {
+      "id": "bettermineshafts:mineshaft_dripstone",
+      "required": false
+    },
+    {
+      "id": "minecraft:mineshaft",
+      "required": false
+    },
+    {
+      "id": "minecraft:mineshaft_mesa",
+      "required": false
+    },
+    {
+      "id": "minecraft:jungle_pyramid",
+      "required": false
+    },
+    {
+      "id": "minecraft:swamp_hut",
+      "required": false
+    },
+    {
+      "id": "minecraft:ocean_ruin_cold",
+      "required": false
+    },
+    {
+      "id": "minecraft:ocean_ruin_warm",
+      "required": false
+    },
+    {
+      "id": "lne_archers:ranger_generic_treasure",
+      "required": false
+    },
+    {
+      "id": "lne_archers:ranger_oak_treasure",
+      "required": false
+    },
+    {
+      "id": "lne_archers:ranger_oak_outpost",
+      "required": false
+    },
+    {
+      "id": "lne_archers:ranger_small_camp",
+      "required": false
+    },
+    {
+      "id": "lne_archers:deadeye_treasure",
+      "required": false
+    },
+    {
+      "id": "lne_archers:tundra_hunter_outpost",
+      "required": false
+    },
+    {
+      "id": "lne_archers:tundra_hunter_hut",
+      "required": false
+    },
+    {
+      "id": "lne_rogues:rogue_badlands_treasure",
+      "required": false
+    },
+    {
+      "id": "lne_rogues:warrior_turret",
+      "required": false
+    },
+    {
+      "id": "lne_rogues:rogue_desert_treasure",
+      "required": false
+    },
+    {
+      "id": "lne_rogues:warrior_outpost",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:arcane_monolith",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:frost_monolith",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:fire_monolith",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:water_monolith",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:earth_monolith",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:wind_monolith",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:wizards_small_tower_1",
+      "required": false
+    },
+    {
+      "id": "lne_wizards:wizards_small_tower_2",
+      "required": false
+    },
+    {
+      "id": "nova_structures:deepslate_camp",
+      "required": false
+    },
+    {
+      "id": "nova_structures:remnant_graveyard",
+      "required": false
+    },
+    {
+      "id": "nova_structures:remnant_birch_graveyard",
+      "required": false
+    },
+    {
+      "id": "nova_structures:mangrove_witch_hut",
+      "required": false
+    },
+    {
+      "id": "nova_structures:remnant_ominous_shop",
+      "required": false
     }
   ]
 }
