@@ -73,4 +73,6 @@ RecipeViewerEvents.removeEntries('item', event => {
   JEI_HIDDEN_ITEMS.forEach(id => event.remove(id))
   // Croptopia's copies of Farmer's Delight / Brewin' And Chewin' items (minerpg_croptopia.js).
   Object.keys(CROPTOPIA_KEEP).forEach(id => event.remove(id))
+  // Cognition beyond the Experience Obelisk (minerpg_cognition.js).
+  COGNITION_REMOVED.forEach(id => event.remove(id))
 })

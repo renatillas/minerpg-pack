@@ -1,0 +1,13 @@
+name = "Cognition"
+filename = "Cognition-v2.4.13-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9GdSY2FZ/versions/cL9RvpFS/Cognition-v2.4.13-1.21.1.jar"
+hash-format = "sha512"
+hash = "789e09b0e7d4daa01ff45fbfee83541cf48a51c0c3ac63dac7549896e9bf15089a1eb4751141184db37b5b737810fa9874d7ff2d70d7ee3489ebaaed99f55cd0"
+
+[update]
+[update.modrinth]
+mod-id = "9GdSY2FZ"
+version = "cL9RvpFS"

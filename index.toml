@@ -2097,6 +2097,14 @@ file = "kubejs/data/cataclysm/tags/block/needs_monstrosity_tool.json"
 hash = "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31"
 
 [[files]]
+file = "kubejs/data/cognition/loot_modifiers/forgotten_dust_mineshaft.json"
+hash = "f473a0301d78a0dc1133e957b67b62c16fab626a500c95ac9af2c8e9bc3d16bd"
+
+[[files]]
+file = "kubejs/data/cognition/loot_modifiers/forgotten_dust_stronghold_library.json"
+hash = "07f015145f0bf3019466f1448dfcf36503a6ca868d85f1d10c0fdfe3cb89d1b0"
+
+[[files]]
 file = "kubejs/data/croptopia/neoforge/biome_modifier/add_cabbage_crop_to_biomes.json"
 hash = "d47a9327525c734da68f9c5659e4ae15157e8d2cb691c9b910b00e572825cb6e"
 
@@ -7129,6 +7137,10 @@ file = "kubejs/server_scripts/minerpg_calling.js"
 hash = "ec9c1733788c9869f82fae9a2db5675229b2a3bf49b53b03c7c24d2ba927c2be"
 
 [[files]]
+file = "kubejs/server_scripts/minerpg_cognition.js"
+hash = "0e88fa27ad401fcead644042b7ec68dd2e1fb186301c8f2c16698bc85c073cb8"
+
+[[files]]
 file = "kubejs/server_scripts/minerpg_coins.js"
 hash = "e22e441ae4f199ed4c056ebfe6be28b5c46bf03140e24c866066e02777a886ef"
 
@@ -7162,7 +7174,7 @@ hash = "029bda98de8ec5be1b3773d5d62015a67fbf28fa194ca86455504d3200859982"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
-hash = "4d52343d7934265b08d37c7b9601b684ccebe1f1a5433eefb266301d641cfba2"
+hash = "dd63b73937c7629708fdc641956deb7a8620e5a2fc31f5461acff6564f955801"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_salvage.js"
@@ -7329,6 +7341,11 @@ hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
 metafile = true
 
 [[files]]
+file = "mods/cognition.pw.toml"
+hash = "29be56c3cca7e92fd0f90e8accf27391c99c5f8719816887a1124b2fe6776657"
+metafile = true
+
+[[files]]
 file = "mods/collective.pw.toml"
 hash = "0e583a7964c9634f73ce4b28c014efce2da9259c9bf0dde8c978638a2fa34a44"
 metafile = true
@@ -7441,6 +7458,11 @@ metafile = true
 [[files]]
 file = "mods/grim-kingdoms-lost-structures-ruins-vanilla-edition.pw.toml"
 hash = "45214ae1279a5cac81fcb8396870e2b299e8245b68da829b12f85f26441da098"
+metafile = true
+
+[[files]]
+file = "mods/handcrafted.pw.toml"
+hash = "0004feab868f7b873c12db05aae0d0dac6c87b497490b48bb66480e7c8d0f340"
 metafile = true
 
 [[files]]
