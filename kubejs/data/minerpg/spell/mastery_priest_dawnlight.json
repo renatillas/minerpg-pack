@@ -1,0 +1,22 @@
+{
+  "school": "spell_power:healing",
+  "range": 0.0,
+  "tier": 1,
+  "type": "MODIFIER",
+  "modifiers": [
+    {
+      "spell_pattern": "minerpg:mastery_priest_aegis_of_dawn",
+      "mutate_impacts": "APPEND",
+      "impacts": [
+        {
+          "action": {
+            "type": "HEAL",
+            "heal": {
+              "spell_power_coefficient": 0.6
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

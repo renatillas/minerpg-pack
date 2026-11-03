@@ -183,7 +183,7 @@ def r_cmd(command, title=None):
     return r
 
 
-# +1 Class Skills talent point. Kills stop giving class points at 9 (level_limit in
+# +1 Class Skills talent point. Kills stop giving class points at 18 (level_limit in
 # kubejs/data/skill_tree_rpgs/puffish_skills/categories/class_skills/experience.json); the last
 # four come from the chapter bosses (Harbinger, Netherite Monstrosity, Ignis, Ender Guardian).
 def r_talent_point():
@@ -538,7 +538,7 @@ GETTING_STARTED = [
     Q('gs_talent', 'A Point to Spend', 4, 1.5, [
         'Every kill teaches you something. Press N and spend your first talent point.',
         'Friends within 200 blocks learn from your kills too.',
-        'Kills earn up to 9 points. The last 4 come from the great chapter bosses.'],
+        'Kills earn up to 18 points. 4 more come from the great chapter bosses.'],
         [t_adv('talent', 'Unlock a talent')], [r_xp(30)], deps=['gs_calling'], subtitle='Spend a talent point'),
     Q('gs_roll', 'Light on Your Feet', -2, 1.5, [
         'Never take a blow you can roll away from. R, unless you changed it.',

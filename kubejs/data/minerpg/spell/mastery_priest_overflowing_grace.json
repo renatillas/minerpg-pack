@@ -1,0 +1,67 @@
+{
+  "school": "spell_power:healing",
+  "range": 0.0,
+  "tier": 1,
+  "type": "PASSIVE",
+  "passive": {
+    "triggers": [
+      {
+        "type": "SPELL_IMPACT_SPECIFIC",
+        "chance": 0.25,
+        "spell": {
+          "type": "ACTIVE"
+        },
+        "impact": {
+          "impact_type": "HEAL"
+        }
+      }
+    ]
+  },
+  "target": {
+    "type": "FROM_TRIGGER"
+  },
+  "impacts": [
+    {
+      "action": {
+        "type": "HEAL",
+        "heal": {
+          "spell_power_coefficient": 0.3
+        }
+      }
+    }
+  ],
+  "cost": {
+    "durability": 0,
+    "cooldown": {
+      "duration": 2.0
+    }
+  },
+  "area_impact": {
+    "radius": 4.0,
+    "area": {
+      "distance_dropoff": "SQUARED"
+    },
+    "visuals": {
+      "particles": [
+        {
+          "id": "spell_engine:magic_heal",
+          "appearance": {
+            "color": 1728014079,
+            "motion": "ASCEND"
+          },
+          "batch": {
+            "count": 20.0,
+            "shape": "PILLAR",
+            "anchor": "ENTITY",
+            "min_speed": 0.02,
+            "max_speed": 0.15,
+            "vertical_origin": 0.1
+          }
+        }
+      ]
+    },
+    "sound": {
+      "id": "spell_engine:generic_healing_impact_2"
+    }
+  }
+}

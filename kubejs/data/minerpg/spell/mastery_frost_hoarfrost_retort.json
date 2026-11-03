@@ -1,0 +1,61 @@
+{
+  "school": "spell_power:frost",
+  "range": 0.0,
+  "tier": 1,
+  "type": "PASSIVE",
+  "passive": {
+    "triggers": [
+      {
+        "type": "DAMAGE_TAKEN",
+        "chance": 0.2
+      }
+    ]
+  },
+  "target": {
+    "type": "FROM_TRIGGER"
+  },
+  "impacts": [
+    {
+      "action": {
+        "type": "STATUS_EFFECT",
+        "status_effect": {
+          "effect_id": "wizards:frost_slowness",
+          "duration": 3.0,
+          "amplifier": 2
+        }
+      },
+      "visuals": {
+        "particles": [
+          {
+            "id": "spell_engine:frost_shard",
+            "appearance": {},
+            "batch": {
+              "count": 25.0,
+              "shape": "SPHERE",
+              "anchor": "ENTITY",
+              "min_speed": 0.3,
+              "max_speed": 0.7
+            }
+          },
+          {
+            "id": "spell_engine:snowflake",
+            "appearance": {},
+            "batch": {
+              "count": 25.0,
+              "shape": "SPHERE",
+              "anchor": "ENTITY",
+              "min_speed": 0.2,
+              "max_speed": 0.5
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "cost": {
+    "durability": 0,
+    "cooldown": {
+      "duration": 6.0
+    }
+  }
+}

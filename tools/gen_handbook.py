@@ -201,9 +201,12 @@ E['classes'] = [
     ]),
     ('talents', 'Talents', 'skill_tree_rpgs:orb_of_oblivion', [
         text(f'Press {k("key.puffish_skills.open")} for your talent trees. Kills earn talent experience, '
-             'shared with party members within 200 blocks.$(br2)Kills fill the class tree up to 9 points. '
-             'Four more come from the great bosses: The Harbinger, the Netherite Monstrosity, Ignis and the '
-             'Ender Guardian.'),
+             'shared with party members within 200 blocks.$(br2)Kills fill the class tree up to 18 points, '
+             'each one slower than the last. Four more come from the great bosses: The Harbinger, the '
+             'Netherite Monstrosity, Ignis and the Ender Guardian.'),
+        text('Beyond tier 4, some classes have a $(l)Mastery$() tier: a new spell with two upgrades, a '
+             'capstone, two passives and two stat skills. It opens from either tier-4 spell. The weapon tree '
+             'holds 10 points.'),
         text('Changed your mind? An $(item)Orb of Oblivion$() resets your talents so you can spend them '
              'again, or on another class tree.'),
     ]),

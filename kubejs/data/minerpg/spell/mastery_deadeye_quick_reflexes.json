@@ -1,0 +1,34 @@
+{
+  "school": "spell_power:physical_ranged",
+  "range": 0.0,
+  "tier": 1,
+  "type": "PASSIVE",
+  "passive": {
+    "triggers": [
+      {
+        "type": "ROLL"
+      }
+    ]
+  },
+  "target": {
+    "type": "FROM_TRIGGER"
+  },
+  "impacts": [
+    {
+      "action": {
+        "type": "STATUS_EFFECT",
+        "status_effect": {
+          "effect_id": "archers_expansion:fast_shot",
+          "duration": 4.0
+        },
+        "apply_to_caster": true
+      }
+    }
+  ],
+  "cost": {
+    "durability": 0,
+    "cooldown": {
+      "duration": 1.0
+    }
+  }
+}

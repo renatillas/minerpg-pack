@@ -1,0 +1,81 @@
+{
+  "school": "spell_power:physical_melee",
+  "range": 4.0,
+  "tier": 4,
+  "learn": {},
+  "active": {},
+  "release": {
+    "animation": {
+      "id": "spell_engine:dual_handed_ground_release"
+    },
+    "visuals": {
+      "particles": [
+        {
+          "id": "spell_engine:smoke_medium",
+          "appearance": {},
+          "batch": {
+            "count": 40.0,
+            "shape": "CIRCLE",
+            "anchor": "ENTITY",
+            "min_speed": 0.25,
+            "max_speed": 0.4,
+            "pre_travel": 4.0
+          }
+        },
+        {
+          "id": "spell_engine:magic_spark",
+          "appearance": {
+            "color": 4294967295,
+            "motion": "DECELERATE"
+          },
+          "batch": {
+            "count": 40.0,
+            "shape": "CIRCLE",
+            "anchor": "ENTITY",
+            "min_speed": 0.4,
+            "max_speed": 0.6
+          }
+        }
+      ]
+    },
+    "sound": {
+      "id": "rogues:shock_powder_release"
+    }
+  },
+  "target": {
+    "type": "AREA",
+    "area": {
+      "vertical_range_multiplier": 0.5
+    }
+  },
+  "impacts": [
+    {
+      "action": {
+        "type": "DAMAGE",
+        "damage": {
+          "spell_power_coefficient": 0.9,
+          "knockback": 0.5
+        }
+      },
+      "sound": {
+        "id": "rogues:shock_powder_impact"
+      }
+    },
+    {
+      "action": {
+        "type": "STATUS_EFFECT",
+        "status_effect": {
+          "effect_id": "rogues:shatter",
+          "duration": 6.0,
+          "amplifier": 1
+        }
+      }
+    }
+  ],
+  "cost": {
+    "exhaust": 0.3,
+    "cooldown": {
+      "duration": 12.0
+    }
+  }
+}
