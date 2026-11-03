@@ -7166,7 +7166,7 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "e069fd990804c55e4b78fafb7afcdc3013f5316ab31eb2f1b8f812b3982d2bf9"
+hash = "5e8e148b70155ec7db5983d582d874fe0038fc7faa808f98c608e3d7016af1b8"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_market.js"

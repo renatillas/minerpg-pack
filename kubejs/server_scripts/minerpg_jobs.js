@@ -484,7 +484,8 @@ NativeEvents.onEvent($AnvilRepairEvent, event => {
     var right = event.getRight()
     if (right.isEmpty()) return
     if (itemId(right) == 'jewelry:socket_mount') giveJobXp(event.getEntity(), 'jeweler', MOUNT_XP, 'socket mounted')
-    else if (right.is(JEWELRY_GEMS)) giveJobXp(event.getEntity(), 'jeweler', SET_GEM_XP, 'gem set')
+    // ItemStack.is is overloaded (Item, HolderSet, TagKey) and Rhino can't pick one for a TagKey: name the overload.
+    else if (right['is(net.minecraft.tags.TagKey)'](JEWELRY_GEMS)) giveJobXp(event.getEntity(), 'jeweler', SET_GEM_XP, 'gem set')
     else if (itemId(right) == 'minecraft:enchanted_book') {
       var stored = right.get($DataComponents.STORED_ENCHANTMENTS)
       var levels = 0
@@ -596,12 +597,13 @@ ItemEvents.rightClicked(event => {
   const id = itemId(stack)
   const table = SURVEY_MAPS[id]
   if (!table) return
-  event.cancel()
+  // event.cancel() ends this handler on the spot (KubeJS 7), so it comes last in each branch: called first, as it
+  // was until pack 1.5.4, nothing below it ever ran and the maps did nothing.
   const player = event.player
   if (player.level.isClientSide()) return
   if (String(player.level.dimension) != 'minecraft:overworld') {
     player.setStatusMessage(Text.of('Survey Maps only chart the Overworld.').red())
-    return
+    event.cancel()
   }
   const name = player.getGameProfile().getName()
   const blanks = countItem(player, 'minecraft:map')
@@ -614,6 +616,7 @@ ItemEvents.rightClicked(event => {
   } else {
     player.setStatusMessage(Text.of('The map fills in. Copy it at a cartography table to share it.').gold())
   }
+  event.cancel()
 })
 
 // ---------------------------------------------------------------------------------------
