@@ -590,31 +590,11 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/bunker_altar"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/conduit_ruin/conduit_ruin_big"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/conduit_ruin/conduit_ruin_main"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/conduit_ruin/conduit_ruin_small"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/creeping_crypt/crypt_grave"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/creeping_crypt/crypt_hallway"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/creeping_crypt/vault_creeping"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -630,83 +610,7 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/desert_ruins/desert_ruin_main_temple"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_1"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_2"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_3"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_4"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_5"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_6"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_7"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_castle/castle_bar"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_castle/castle_brewing"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_castle/greater_loot"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_castle/lesser_loot"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_castle/rocket_barrel"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_castle/supply"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_castle/treasure_lighthouse"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_castle/vault_brigattine"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_castle/vault_galleon"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_castle/vault_slope"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/end_lighthouse/supply_lighthouse"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_lighthouse/vault_lighthouse"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -738,14 +642,6 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/illager_hideout_heart_loot"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/illager_hideout_lesser_tresure"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/illager_hideout_library"
         },
         {
@@ -766,10 +662,6 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/illager_hideout_tresure"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/illager_hideout_utility"
         },
         {
@@ -778,59 +670,7 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/illager_hideout_weaponry"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/jungle_ruins/jungle_ruins_house"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/jungle_ruins/jungle_ruins_main_temple"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/jungle_ruins/jungle_ruins_main_temple_wild"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_banner"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_cold_barrel"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_dispenser"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_forge"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_forge_chest"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_grave"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_library"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_supply"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_vault"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_vault_boss"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -839,14 +679,6 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/mining_supply"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/nether_keep/vault_keep"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/nether_keep/vault_keep_generic"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -874,27 +706,11 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/piglin_donjon/donjon_generic"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/piglin_donjon/vault_piglin_donjon"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/piglin_outstation/outstation_generic"
         },
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/piglin_outstation/outstation_tower"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/piglin_outstation/outstation_treasure"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/piglin_outstation/vault_piglin_outstation"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -914,35 +730,11 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/shrine/combat_treasure_1"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/shrine/combat_treasure_2"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/shrine/combat_treasure_3"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/shrine/combat_treasure_4"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/shrine/combat_treasure_5"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/shrine/shrine_lesser_ominous"
         },
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/shrine/shrine_lesser_treasure"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/shrine/vault_shrine_ominous"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -954,47 +746,7 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/stray_fort_tresure"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/tavern_quest"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/toxic_lair/brewing"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/toxic_lair/generic"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/toxic_lair/kitchen"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/toxic_lair/toxic_boss_vault"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/toxic_lair/toxic_ominous_vault"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/toxic_lair/toxic_vault"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/trident_trial_monument/ttm_boss_vault_heart"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/trident_trial_monument/ttm_boss_vault_trident"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/trident_trial_monument/ttm_common_vault"
         },
         {
           "condition": "neoforge:loot_table_id",

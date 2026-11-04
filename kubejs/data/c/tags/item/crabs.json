@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "naturalist:crab_meat",
+      "required": false
+    }
+  ]
+}

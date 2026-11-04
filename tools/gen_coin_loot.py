@@ -6,7 +6,8 @@ this adds coins to loot on top, so over a career loot gives about as much as lev
 
   - ordinary chests (villages, ruins, outposts, camps...): mostly Copper, some Iron, rarely Gold;
   - dungeon chests (dungeon and stronghold mods, temples, bastions, ancient cities...): Iron and Gold;
-  - bosses (#minerpg:boss, killed by a player): Gold and Iron.
+  - bosses (#minerpg:boss, killed by a player): Gold and Iron;
+  - mini-bosses (#minerpg:mini_boss: Cataclysm's lesser bosses and elites, pack 1.5.7): Iron, some Gold.
 
 NeoForge's loot_table_id condition only matches exact ids, so the chest lists are read from the mod jars.
 
@@ -54,6 +55,16 @@ DUNGEON_MODS = {'cataclysm', 'mowziesmobs', 'apotheosis', 'betterstrongholds', '
                 'block_factorys_bosses',
                 # pack 1.5.5: YUNG's small dungeons were left out
                 'betterdungeons'}
+# Dungeons and Taverns (nova_structures) mixes villages and camps with real dungeons, so its dungeon chests are picked by
+# name (pack 1.5.7; before, all 119 of its tables paid ordinary coins, boss vaults included): its levelled dungeons'
+# vaults and treasure rooms (Lone Citadel, Toxic Lair, Trident Trial Monument, Combat Shrine, Creeping Crypt, the Nether
+# Keep, Piglin Donjon and Outstation, the End Castle and Lighthouse...). Everything else of it stays ordinary.
+NOVA_DUNGEON = re.compile(r'^chests/(creeping_crypt/|dungeon_\d|end_castle/|end_lighthouse/vault|'
+                          r'illager_hideout_(heart_loot|tresure|lesser_tresure|weaponry)|lone_citadel/|nether_keep/|'
+                          r'piglin_donjon/|piglin_outstation/(vault|outstation_treasure)|shrine/(combat_treasure|vault)|'
+                          r'stray_fort_tresure|toxic_lair/|trident_trial_monument/|bunker_altar|'
+                          r'conduit_ruin/conduit_ruin_main|desert_ruins/desert_ruin_main_temple|'
+                          r'jungle_ruins/jungle_ruins_main_temple)')
 # Tables that are only pulled into other tables (Farmer's Delight's additions) or are no real chest: coins there
 # would come twice or from nowhere. (The class add-ons' lne_* tables are their outposts' own chests, read from the
 # structure files in pack 1.5.5, so they get ordinary-chest coins.)
@@ -80,6 +91,8 @@ TABLES = {
     'dungeon_chest': [pool(0.5, coin('coins:copper_coin', 4, 10)), pool(0.7, coin('coins:iron_coin', 2, 5)),
                       pool(0.35, coin('coins:gold_coin', 1, 2))],
     'boss': [pool(1, coin('coins:gold_coin', 3, 6)), pool(1, coin('coins:iron_coin', 2, 6))],
+    # ~0.8 gold, like a dungeon chest.
+    'mini_boss': [pool(1, coin('coins:iron_coin', 3, 7)), pool(0.25, coin('coins:gold_coin', 1, 1))],
 }
 
 
@@ -110,6 +123,8 @@ def is_dungeon(table):
     ns, path = table.split(':')
     if ns in DUNGEON_MODS:
         return True
+    if ns == 'nova_structures':
+        return bool(NOVA_DUNGEON.match(path))
     return ns == 'minecraft' and bool(VANILLA_DUNGEON.match(path[len('chests/'):]))
 
 
@@ -126,7 +141,7 @@ def main():
     ordinary = [t for t in tables if not is_dungeon(t)]
     for name, pools in TABLES.items():
         write(os.path.join(DATA, 'minerpg', 'loot_table', 'coins', name + '.json'),
-              {'type': 'minecraft:chest' if name != 'boss' else 'minecraft:entity', 'pools': pools})
+              {'type': 'minecraft:entity' if 'boss' in name else 'minecraft:chest', 'pools': pools})
     mods = os.path.join(DATA, 'minerpg', 'loot_modifiers')
     write(os.path.join(mods, 'coins_ordinary_chests.json'),
           {'type': 'neoforge:add_table', 'conditions': any_table(ordinary), 'table': 'minerpg:coins/ordinary_chest'})
@@ -137,9 +152,16 @@ def main():
         'conditions': [{'condition': 'minecraft:entity_properties', 'entity': 'this', 'predicate': {'type': '#minerpg:boss'}},
                        {'condition': 'minecraft:killed_by_player'}],
         'table': 'minerpg:coins/boss'})
+    write(os.path.join(mods, 'coins_mini_bosses.json'), {
+        'type': 'neoforge:add_table',
+        'conditions': [{'condition': 'minecraft:entity_properties', 'entity': 'this',
+                        'predicate': {'type': '#minerpg:mini_boss'}},
+                       {'condition': 'minecraft:killed_by_player'}],
+        'table': 'minerpg:coins/mini_boss'})
     glm = os.path.join(DATA, 'neoforge', 'loot_modifiers', 'global_loot_modifiers.json')
     d = json.load(open(glm))
-    for e in ('minerpg:coins_ordinary_chests', 'minerpg:coins_dungeon_chests', 'minerpg:coins_bosses'):
+    for e in ('minerpg:coins_ordinary_chests', 'minerpg:coins_dungeon_chests', 'minerpg:coins_bosses',
+              'minerpg:coins_mini_bosses'):
         if e not in d['entries']:
             d['entries'].append(e)
     write(glm, d)

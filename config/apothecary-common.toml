@@ -1,5 +1,8 @@
 # minerpg (pack 1.5.0): Flight and Reach off (creative flight and reach are too strong), the mana potions off (they
 # need Iron's Spells, not in the pack), potion sickness off (class spells, affixes and food buffs go past 10 effects).
+# minerpg (pack 1.5.7): Magic Shield / Magic Power / Magic Drain off (they only touch vanilla magic damage, never class
+# spells); Purification no longer blocks boss and elite debuffs; Extension no longer stretches class, talent and relic
+# buffs. Lists: docs/superpowers/specs/2026-11-03-minerpg-mod-audit.md ("Integration audit fixes").
 [General]
 	#Global toggle to disable this entire mod, client config, stack size, and attributes will still work if this is disabled
 	Apothecary_Enabled = true
@@ -44,7 +47,7 @@
 
 	[Potions.Magic_Shield]
 		#Enable Magic Shield
-		Enable = true
+		Enable = false
 		#Main ingredient used to brew magic shield potions
 		Ingredient = "minecraft:lapis_block"
 		#Magic shielding points provided by magic shield potions
@@ -150,7 +153,7 @@
 
 	[Potions.Magic_Power]
 		#Enable Magic power
-		Enable = true
+		Enable = false
 		#Main ingredient used to brew magic power potions
 		Ingredient = "minecraft:lapis_lazuli"
 		#Damage increase provided by magic power potions in percentage
@@ -158,7 +161,7 @@
 
 	[Potions.Magic_Drain]
 		#Enable Magic drain
-		Enable = true
+		Enable = false
 		#Main ingredient used to brew magic drain potions
 		Ingredient = "minecraft:fermented_spider_eye"
 		#Damage decrease provided by magic drain potions in percentage
@@ -202,7 +205,7 @@
 		#Main ingredient used to brew purification potions
 		Ingredient = "minecraft:heart_of_the_sea"
 		#List of effects to blacklist being immune to from the purification effect (e.g., minecraft:poison, minecraft:slowness etc)
-		Purification_Blacklist_Effects = []
+		Purification_Blacklist_Effects = ["cataclysm:abyssal_burn", "cataclysm:abyssal_curse", "cataclysm:abyssal_fear", "cataclysm:blazing_brand", "cataclysm:bone_fracture", "cataclysm:curse_of_desert", "cataclysm:ghost_sickness", "cataclysm:stun", "cataclysm:wetness", "champions:paralysis", "champions:wound", "mowziesmobs:frozen", "minecraft:wither", "minecraft:darkness", "minecraft:mining_fatigue", "dungeon_difficulty:no_mining"]
 
 	[Potions.Corruption]
 		#Enable Corruption
@@ -252,7 +255,7 @@
 		#Main ingredient used to brew extension potions
 		Ingredient = "minecraft:pitcher_pod"
 		#List of effects to blacklist being extended from the extension effect (e.g., minecraft:jump_boost, minecraft:water_breathing etc)
-		Extension_Blacklist_Effects = []
+		Extension_Blacklist_Effects = ["archers:hunters_mark_stash", "archers_expansion:fast_shot", "archers_expansion:frozen_fusillade_haste", "archers_expansion:frozen_shot", "archers_expansion:infiltrators_speed", "archers_expansion:infiltrators_vanish", "archers_expansion:smoldering_arrows", "arsenal:absorption", "arsenal:focusing", "arsenal:guarding", "arsenal:rampaging", "arsenal:surging", "arsenal:unyielding", "bards_rpg:armys_motivation", "bards_rpg:armys_paeon", "bards_rpg:astral_shots", "bards_rpg:ballad", "bards_rpg:canticle_of_the_tides", "bards_rpg:eclipse_mantle", "bards_rpg:hymn_of_the_golden_light", "bards_rpg:natures_minne", "bards_rpg:song_of_celerity", "bards_rpg:song_of_the_turning_sky", "bards_rpg:tale_of_the_dragonslayer", "bards_rpg:troubadours_minuet", "bards_rpg:wanderers_minuet", "bards_rpg:wardens_paean_beneficial", "berserker_rpg:blood_reckoning", "berserker_rpg:blood_sacrifice", "berserker_rpg:outrage", "berserker_rpg:rage", "cataclysm:blessing_of_amethyst", "cataclysm:ghost_form", "cataclysm:monstrous", "elemental_wizards_rpg:bubble_foam", "elemental_wizards_rpg:cleansing_water", "elemental_wizards_rpg:stone_flesh", "forcemaster_rpg:arcane_overflow", "forcemaster_rpg:nen_focus", "forcemaster_rpg:stone_hand", "lne_archers:rangers_focus", "lne_paladins:holy_prevention", "lne_paladins:templars_retribution", "lne_rogues:second_wind", "lne_wizards:flame_rush", "lne_wizards:zephyrs_speed", "more_relics:greater_madreds_bloodrazor", "more_relics:greater_rage_power", "more_relics:greater_sunfire_cape", "more_relics:lesser_air_water", "more_relics:lesser_earth_nature", "more_relics:lesser_rage_power", "more_relics:medium_air_power", "more_relics:medium_earth_power", "more_relics:medium_lifesteal_power", "more_relics:medium_nature_power", "more_relics:medium_rage_power", "more_relics:medium_water_power", "more_relics:superior_guardian_angel", "more_relics:superior_mejais_soulstealer", "more_relics:superior_mikaels_blessing", "more_relics:superior_shurelyas_battlesong", "more_relics:superior_zhonyas_hourglass", "mowziesmobs:geomancy", "mowziesmobs:moons_curse", "mowziesmobs:poison_resist", "mowziesmobs:sunblock", "mowziesmobs:suns_blessing", "mrpg_lib:collected_soul", "mrpg_lib:dragonslayers_fury", "mrpg_lib:duelists_focus_owner", "mrpg_lib:sirens_tear", "mrpg_lib:zephyrs_speed", "mrpgc_skill_tree:air_bubble", "mrpgc_skill_tree:bard_barrier", "mrpgc_skill_tree:blind_with_rage", "mrpgc_skill_tree:bloodflow", "mrpgc_skill_tree:bubble_shield", "mrpgc_skill_tree:burst_of_aggression", "mrpgc_skill_tree:calming_flow", "mrpgc_skill_tree:camouflaged", "mrpgc_skill_tree:charge_from_the_flames", "mrpgc_skill_tree:charismatic_performance", "mrpgc_skill_tree:dancing_feet", "mrpgc_skill_tree:earth_bender", "mrpgc_skill_tree:earthen_blessing", "mrpgc_skill_tree:field_advantage", "mrpgc_skill_tree:flying_fists", "mrpgc_skill_tree:force_release", "mrpgc_skill_tree:hunting_fever", "mrpgc_skill_tree:hunting_instincts", "mrpgc_skill_tree:hydration", "mrpgc_skill_tree:hydro_boost", "mrpgc_skill_tree:impetus", "mrpgc_skill_tree:jolly_time", "mrpgc_skill_tree:last_stand", "mrpgc_skill_tree:leaping_swiftness", "mrpgc_skill_tree:melodic_protection", "mrpgc_skill_tree:norse_warmonger", "mrpgc_skill_tree:obsidian_skin", "mrpgc_skill_tree:pumped_up", "mrpgc_skill_tree:radiant_encore", "mrpgc_skill_tree:ragnarok", "mrpgc_skill_tree:reckless_rage", "mrpgc_skill_tree:repertoire", "mrpgc_skill_tree:seismic_entry", "mrpgc_skill_tree:shadows_refuge", "mrpgc_skill_tree:spinning_slash", "mrpgc_skill_tree:splashdown", "mrpgc_skill_tree:stone_heart", "mrpgc_skill_tree:strongwind", "mrpgc_skill_tree:surys_grace", "mrpgc_skill_tree:surys_tenacity", "mrpgc_skill_tree:sword_mark", "mrpgc_skill_tree:tailwind", "mrpgc_skill_tree:terrain_mastery", "mrpgc_skill_tree:torrent", "mrpgc_skill_tree:tower_protector", "mrpgc_skill_tree:undying_rage", "mrpgc_skill_tree:winters_cloak", "paladins:battle_banner", "paladins:blessed_strikes", "paladins:divine_protection", "paladins:levitate", "paladins:priest_absorption", "relics_rpgs:greater_defense_armor", "relics_rpgs:greater_evasion_attack", "relics_rpgs:greater_physical_trance", "relics_rpgs:greater_spell_trance", "relics_rpgs:lesser_arcane_fire", "relics_rpgs:lesser_attack_damage", "relics_rpgs:lesser_attack_speed", "relics_rpgs:lesser_frost_healing", "relics_rpgs:lesser_ranged_damage", "relics_rpgs:lesser_spell_crit_chance", "relics_rpgs:lesser_spell_crit_damage", "relics_rpgs:lesser_spell_haste", "relics_rpgs:lesser_spell_power", "relics_rpgs:medium_arcane_power", "relics_rpgs:medium_attack_damage", "relics_rpgs:medium_attack_speed", "relics_rpgs:medium_defense", "relics_rpgs:medium_evasion", "relics_rpgs:medium_fire_power", "relics_rpgs:medium_frost_power", "relics_rpgs:medium_healing_power", "relics_rpgs:medium_ranged_damage", "relics_rpgs:medium_spell_haste", "relics_rpgs:medium_spell_power", "relics_rpgs:superior_attack_damage", "relics_rpgs:superior_defense_health", "relics_rpgs:superior_healing_taken", "relics_rpgs:superior_spell_power", "rogues:charge", "rogues:last_stand", "rogues:shadow_step", "rogues:slice_and_dice", "rogues:stealth", "rogues:stealth_speed", "skill_tree_rpgs:ambush", "skill_tree_rpgs:arcane_speed", "skill_tree_rpgs:arcane_ward", "skill_tree_rpgs:arctic_reflex", "skill_tree_rpgs:ardent_defender", "skill_tree_rpgs:banner_protection", "skill_tree_rpgs:battle_shout", "skill_tree_rpgs:blazing_speed", "skill_tree_rpgs:celestial_orb", "skill_tree_rpgs:cheat_death", "skill_tree_rpgs:cloak_of_shadows", "skill_tree_rpgs:deflection", "skill_tree_rpgs:divine_favor", "skill_tree_rpgs:divine_strength", "skill_tree_rpgs:enrage", "skill_tree_rpgs:fire_ward", "skill_tree_rpgs:fleet_footed", "skill_tree_rpgs:flurry_trance", "skill_tree_rpgs:frost_shield_speed", "skill_tree_rpgs:frost_ward", "skill_tree_rpgs:healing_focus", "skill_tree_rpgs:hysteria", "skill_tree_rpgs:incanter_cadence", "skill_tree_rpgs:juggernaut", "skill_tree_rpgs:killing_spree", "skill_tree_rpgs:opportunist", "skill_tree_rpgs:pain_suppression", "skill_tree_rpgs:phase_shift", "skill_tree_rpgs:presence_of_mind", "skill_tree_rpgs:punishment", "skill_tree_rpgs:pursuit_of_justice", "skill_tree_rpgs:recklessness", "skill_tree_rpgs:redoubt", "skill_tree_rpgs:revenge", "skill_tree_rpgs:rhythm", "skill_tree_rpgs:serenity", "skill_tree_rpgs:side_step", "skill_tree_rpgs:smoke_screen", "skill_tree_rpgs:supercharge", "skill_tree_rpgs:tactical_maneuver", "skill_tree_rpgs:vengeance", "skill_tree_rpgs:vitality", "spell_engine:energy", "wizards:arcane_charge", "wizards:arcane_evocation", "wizards:frost_shield"]
 		#Max duration cap for the extension effect to increase in seconds
 		Extension_Cap = 600
 

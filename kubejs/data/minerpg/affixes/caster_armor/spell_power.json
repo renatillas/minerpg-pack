@@ -1,0 +1,44 @@
+{
+  "type": "apotheosis:attribute",
+  "attribute": "spell_power:generic",
+  "categories": [
+    "apotheosis:chestplate",
+    "apotheosis:leggings"
+  ],
+  "definition": {
+    "affix_type": "stat",
+    "exclusive_set": [],
+    "weights": {
+      "quality": 0.1,
+      "weight": 8
+    }
+  },
+  "operation": "add_multiplied_base",
+  "values": {
+    "apotheosis:common": {
+      "min": 0.015,
+      "max": 0.025,
+      "step": 0.005
+    },
+    "apotheosis:uncommon": {
+      "min": 0.02,
+      "max": 0.03,
+      "step": 0.005
+    },
+    "apotheosis:rare": {
+      "min": 0.025,
+      "max": 0.04,
+      "step": 0.005
+    },
+    "apotheosis:epic": {
+      "min": 0.04,
+      "max": 0.06,
+      "step": 0.005
+    },
+    "apotheosis:mythic": {
+      "min": 0.06,
+      "max": 0.08,
+      "step": 0.005
+    }
+  }
+}

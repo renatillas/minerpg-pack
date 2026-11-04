@@ -11,6 +11,10 @@
     {
       "type": "patchouli:text",
       "text": "$(l)Chapter 3, the End$(): the Ender Dragon and the $(l)Ender Guardian$(). The Wither is an optional group raid.$(br2)Optional Overworld bosses: the Ferrous Wroughtnaut, the Frostmaw and Umvuthi."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "More optional bosses, each with a quest in its chapter:$(li)$(l)Chapter 1$(): the Sandworm, the Yeti, the Kraken, the Infernal Dragon and the Corrupted Champion$(li)$(l)Chapter 2$(): the Underworld Knight, the Gauntlet, the Night Lich and the Void Blossom$(li)$(l)Chapter 3$(): the Obsidilith$(br2)The Field Guide has a page for each one."
     }
   ]
 }

@@ -260,7 +260,8 @@ E['professions'] = [
         text('Class gear by tier:$(li)Tier 1: anyone can craft it$(li)Diamond tier 2 at job level 10$(li)Netherite tier 3 '
              'at 20$(li)Armory sets at 25$(br2)$(l)Smith$(): plate armor and melee weapons. '
              '$(l)Hunter$(): leather armor, bows, crossbows, spears, quivers. $(l)Enchanter$(): robes, staves, '
-             'wands, instruments.'),
+             'wands, instruments.$(br2)Vanilla diamond and netherite swords and armor, and the boss-material '
+             'sets (Ignitium, Cursium, Dragon Bones...), count as Smith tier 2 and 3 too.'),
         text('$(l)Enchanter$() shelves: Hellshelf and Seashelf at 10, their upgrades at 20, deep and sculk '
              'shelves at 25, endshelves at 30.$(br)$(l)Alchemist$(): Strong and Long potions at 10, Splash '
              'at 15, Lingering at 20.$(br)$(l)Smith$() reforging: Rare at 10, Epic at 20, Mythic at 30.'
@@ -371,6 +372,10 @@ E['bosses'] = [
         text('$(l)Chapter 3, the End$(): the Ender Dragon and the $(l)Ender Guardian$(). The Wither is an '
              'optional group raid.$(br2)Optional Overworld bosses: the Ferrous Wroughtnaut, the Frostmaw and '
              'Umvuthi.'),
+        text('More optional bosses, each with a quest in its chapter:$(li)$(l)Chapter 1$(): the Sandworm, the '
+             'Yeti, the Kraken, the Infernal Dragon and the Corrupted Champion$(li)$(l)Chapter 2$(): the '
+             'Underworld Knight, the Gauntlet, the Night Lich and the Void Blossom$(li)$(l)Chapter 3$(): the '
+             'Obsidilith$(br2)The Field Guide has a page for each one.'),
     ]),
     ('sigil', 'The Nether Sigil', 'minerpg:nether_sigil', [
         spotlight('minerpg:nether_sigil',
@@ -385,7 +390,7 @@ E['bosses'] = [
                   'nearby.'),
     ]),
     ('trophies', 'Trophies', 'minerpg:trophy_amethyst_crab', [
-        text('Every boss gives each player nearby (64 blocks) their own $(item)trophy$() when it falls. Quests '
+        text('Almost every boss gives each player nearby (64 blocks) their own $(item)trophy$() when it falls. Quests '
              'check for trophies, so the whole group gets credit, not only whoever landed the last hit.'
              '$(br2)Keep them: some raise your world tier.'),
         text('$(li)Amethyst Crab: Geode Claw$(li)Ancient Remnant: Sun-Bleached Fang$(li)Maledictus: '
@@ -393,7 +398,10 @@ E['bosses'] = [
              '$(li)Ender Guardian: Citadel Keystone$(li)Ender Dragon: Dragonscale$(li)Wither: Ashen Skull '
              'Shard'),
         text('Optional Overworld bosses:$(li)Ferrous Wroughtnaut: Wrought Rivet$(li)Frostmaw: Rimefang Tusk'
-             '$(li)Umvuthi: Sunbird Plume'),
+             '$(li)Umvuthi: Sunbird Plume$(li)Sandworm: Dune Fang$(li)Yeti: Hoarfrost Pelt$(li)Kraken: Abyssal '
+             'Ink$(li)Infernal Dragon: Cinder Scale$(li)Corrupted Champion: Champion\'s Tarnished Crest'),
+        text('Optional Nether and End bosses:$(li)Underworld Knight: Oathbreaker Seal$(li)Gauntlet: Gauntlet Core'
+             '$(li)Night Lich: Phylactery Shard$(li)Void Blossom: Void Petal$(li)Obsidilith: Obsidian Heartstone'),
     ]),
     ('tips', 'Boss Tips', 'minecraft:totem_of_undying', [
         text('$(li)Bosses are built for a full party of four. Alone you will not win; bring your friends.'
@@ -447,7 +455,7 @@ E['party'] = [
     ]),
     ('graves', 'Graves', 'minecraft:skeleton_skull', [
         text('Die for real and a $(item)grave$() rises where you fell. It holds everything you carried: your '
-             'inventory, armor, accessories, backpack and experience. Nothing is lost.$(br2)Chat tells you where '
+             'inventory, armor, accessories, backpack and all your experience. Nothing is lost.$(br2)Chat tells you where '
              'it is, and you respawn with a compass that points to it. Right-click the grave to take it all back.'),
         text('Only you can open your grave at first. After 15 minutes a friend can collect it for you, and you are '
              'told who did.$(br2)Being $(item)downed$() makes no grave: a grave only comes with a real death.'),

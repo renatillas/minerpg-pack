@@ -12,6 +12,12 @@
 // are also off in config/critical_strike/server_config.json.
 // Spells keep their own spell crit: spell damage can't roll Apothic's crit
 // (kubejs/data/apothic_attributes/tags/damage_type/cannot_critically_strike.json).
+//
+// Pack 1.5.7 folds two more stats in the same way (no cancel needed: nothing else reads them for the same job):
+// - Cataclysm's "% Critical Damage" (The Annihilator, The Immolator, Ring of Grudged) is only read on vanilla jump
+//   crits, which are off, so it goes onto Apothic Crit Damage (75 = +75%).
+// - Apothic "Cooldown Reduction" (the Timekeeping affix) only shortened affix and gem cooldowns. Spell cooldowns use
+//   Spell Haste, so it also goes onto Spell Haste (0.05 = +5%). It still shortens the affix cooldowns too.
 
 const $CritRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
 const $CritResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
@@ -68,8 +74,30 @@ function critSetModifier(inst, id, amount, operation) {
   inst.addTransientModifier(new $CritModifier(id, amount, operation))
 }
 
+// [from, to, scale, modifier id, operation]: the from value (its base is 0) times scale is added to the to attribute.
+// Spell Haste has a base of 100, so +5% is a multiplied-base modifier; Crit Damage takes a plain add.
+var CRIT_FOLDS = null
+
+function critFolds() {
+  if (CRIT_FOLDS == null) {
+    CRIT_FOLDS = [
+      [critHolder('cataclysm:additional_critical_damage'), critHolder('apothic_attributes:crit_damage'), 0.01,
+        $CritResourceLocation.parse('minerpg:merged_cataclysm_crit'), $CritOperation.ADD_VALUE],
+      [critHolder('apothic_attributes:cooldown_reduction'), critHolder('spell_power:haste'), 1.0,
+        $CritResourceLocation.parse('minerpg:merged_cooldown_reduction'), $CritOperation.ADD_MULTIPLIED_BASE],
+    ]
+  }
+  return CRIT_FOLDS
+}
+
 function critSync(player) {
   var attributes = player.getAttributes()
+  critFolds().forEach(fold => {
+    var from = attributes.getInstance(fold[0])
+    var to = attributes.getInstance(fold[1])
+    if (from == null || to == null) return
+    critSetModifier(to, fold[3], from.getValue() * fold[2], fold[4])
+  })
   critPairs().forEach(pair => {
     var from = attributes.getInstance(pair.from)
     var to = attributes.getInstance(pair.to)

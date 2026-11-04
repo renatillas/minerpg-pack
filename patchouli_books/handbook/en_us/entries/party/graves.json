@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Die for real and a $(item)grave$() rises where you fell. It holds everything you carried: your inventory, armor, accessories, backpack and experience. Nothing is lost.$(br2)Chat tells you where it is, and you respawn with a compass that points to it. Right-click the grave to take it all back."
+      "text": "Die for real and a $(item)grave$() rises where you fell. It holds everything you carried: your inventory, armor, accessories, backpack and all your experience. Nothing is lost.$(br2)Chat tells you where it is, and you respawn with a compass that points to it. Right-click the grave to take it all back."
     },
     {
       "type": "patchouli:text",

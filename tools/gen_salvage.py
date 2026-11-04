@@ -155,10 +155,14 @@ def crafted_outputs(result, recipe, tags, by_result, seen=()):
         addition = resolve(recipe.get('addition', {}), tags)
         if addition == 'minecraft:netherite_ingot':
             return [output('minecraft:netherite_scrap', 0, 2)]
-        # Armory upgrades (an upgrade crystal on a class piece): the class piece's materials.
+        # Armory upgrades (an upgrade crystal on a class piece): the class piece's materials, plus (pack 1.5.7) an epic
+        # rarity material for the crystal, which only top-tier bosses drop and which can't be given back itself.
         base = resolve(recipe.get('base', {}), tags)
         if base in by_result and base not in seen:
-            return crafted_outputs(base, by_result[base], tags, by_result, seen + (result,))
+            out = crafted_outputs(base, by_result[base], tags, by_result, seen + (result,))
+            if addition and 'upgrade_crystal' in addition:
+                out = [o for o in out if o['stack']['id'] != RARITY_MATERIAL['epic']] + [output(RARITY_MATERIAL['epic'], 1, 2)]
+            return out
         # A boss material on netherite gear (Cataclysm's Ignitium, Cursium...): the netherite back as scrap and
         # maybe the boss material.
         if base and base.startswith('minecraft:netherite_') and addition and addition not in NEVER_OUTPUT:

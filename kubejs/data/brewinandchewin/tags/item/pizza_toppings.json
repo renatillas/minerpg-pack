@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#brewinandchewin:foods/pizza_topping",
+      "required": false
+    }
+  ]
+}

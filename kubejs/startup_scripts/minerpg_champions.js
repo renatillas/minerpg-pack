@@ -3,7 +3,8 @@
 // invaders...) and picks the elite tier with fixed weights, whatever the place.
 // This script, run for every champion before it is created:
 //   - lets only hostile mobs become champions (no animals, villagers, golems);
-//   - never lets a boss (#minerpg:boss) or an Apotheosis invader/elite become one;
+//   - never lets a boss (#minerpg:boss), a mini-boss (#minerpg:mini_boss, pack 1.5.7) or an Apotheosis
+//     invader/elite become one;
 //   - caps the champion tier by the Dungeon Difficulty zone level at the spawn position,
 //     so the strongest elites only appear in the dangerous zones.
 // Champions cannot change a tier, only cancel the champion (the mob then spawns as a
@@ -31,6 +32,7 @@ const $EventResult = Java.loadClass('dev.architectury.event.EventResult')
 const $EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
 
 const BOSS_TAG = $TagKey.create($Registries.ENTITY_TYPE, $ResourceLocation.parse('minerpg:boss'))
+const MINI_BOSS_TAG = $TagKey.create($Registries.ENTITY_TYPE, $ResourceLocation.parse('minerpg:mini_boss'))
 
 // Set to true to log every decision (testing only; it is chatty).
 const CHAMPION_DEBUG = false
@@ -72,7 +74,8 @@ function championCancelReason(entity, tier) {
   if (!(entity instanceof $Enemy)) return 'not hostile'
   const type = $EntityType.byString(entityId(entity))
   // (EntityType.is(...) is overloaded, which Rhino can't pick from; read the holder's tags.)
-  if (type.isPresent() && type.get().builtInRegistryHolder().tags().anyMatch(tag => tag.equals(BOSS_TAG))) return 'boss'
+  if (type.isPresent() && type.get().builtInRegistryHolder().tags()
+    .anyMatch(tag => tag.equals(BOSS_TAG) || tag.equals(MINI_BOSS_TAG))) return 'boss'
   // Apotheosis marks its invaders ("apoth.boss") and elites ("apoth.miniboss") in the
   // entity's persistent data when they spawn, before Champions sees them.
   const data = entity.getPersistentData()

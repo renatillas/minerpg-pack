@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     {
+      "id": "cataclysm:cursed_bow",
+      "required": false
+    },
+    {
       "id": "archers:netherite_heavy_crossbow",
       "required": false
     },

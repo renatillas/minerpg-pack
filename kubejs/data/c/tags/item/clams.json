@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "naturalist:clam_meat",
+      "required": false
+    }
+  ]
+}

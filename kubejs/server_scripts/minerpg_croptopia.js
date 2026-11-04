@@ -44,3 +44,20 @@ ServerEvents.recipes(event => {
     event.shapeless(kept, [id]).id('minerpg:croptopia/' + id.split(':')[1] + '_to_kept')
   })
 })
+
+// Seeds aren't the vegetable (pack 1.5.7). Croptopia lists each seed in its crop's tag (c:lettuce holds lettuce seeds),
+// so a cheap market seed went into salads, wraps and pizza in place of the crop. The tags below are every c:<crop> tag
+// that holds both the crop and its Croptopia seed (checked in the jars). Croptopia's seed-only tags (c:tomato, c:onion
+// and others, whose crop tag is the plural) and the seed, chicken food and season tags keep their seeds.
+const CROPTOPIA_CROP_TAGS = ['asparagus', 'barley', 'basil', 'broccoli', 'cabbage', 'cauliflower', 'celery',
+  'coffee_beans', 'corn', 'garlic', 'honeydew', 'hops', 'kale', 'leek', 'lettuce', 'mustard', 'oat', 'pepper',
+  'rhubarb', 'rice', 'spinach', 'tea_leaves', 'turmeric', 'vanilla', 'zucchini']
+
+ServerEvents.tags('item', event => {
+  CROPTOPIA_CROP_TAGS.forEach(crop => {
+    // Croptopia adds the seed both by id and through its seed tag (#c:seeds/<crop>, which also holds Farmer's
+    // Delight's cabbage seeds), so both go.
+    event.remove('c:' + crop, /^croptopia:.*_seeds?$/)
+    event.remove('c:' + crop, '#c:seeds/' + crop)
+  })
+})

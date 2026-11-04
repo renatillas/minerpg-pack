@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Every boss gives each player nearby (64 blocks) their own $(item)trophy$() when it falls. Quests check for trophies, so the whole group gets credit, not only whoever landed the last hit.$(br2)Keep them: some raise your world tier."
+      "text": "Almost every boss gives each player nearby (64 blocks) their own $(item)trophy$() when it falls. Quests check for trophies, so the whole group gets credit, not only whoever landed the last hit.$(br2)Keep them: some raise your world tier."
     },
     {
       "type": "patchouli:text",
@@ -14,7 +14,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Optional Overworld bosses:$(li)Ferrous Wroughtnaut: Wrought Rivet$(li)Frostmaw: Rimefang Tusk$(li)Umvuthi: Sunbird Plume"
+      "text": "Optional Overworld bosses:$(li)Ferrous Wroughtnaut: Wrought Rivet$(li)Frostmaw: Rimefang Tusk$(li)Umvuthi: Sunbird Plume$(li)Sandworm: Dune Fang$(li)Yeti: Hoarfrost Pelt$(li)Kraken: Abyssal Ink$(li)Infernal Dragon: Cinder Scale$(li)Corrupted Champion: Champion's Tarnished Crest"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Optional Nether and End bosses:$(li)Underworld Knight: Oathbreaker Seal$(li)Gauntlet: Gauntlet Core$(li)Night Lich: Phylactery Shard$(li)Void Blossom: Void Petal$(li)Obsidilith: Obsidian Heartstone"
     }
   ]
 }

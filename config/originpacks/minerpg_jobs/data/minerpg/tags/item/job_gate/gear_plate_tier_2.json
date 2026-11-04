@@ -2,6 +2,42 @@
   "replace": false,
   "values": [
     {
+      "id": "minecraft:diamond_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_chestplate",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_sword",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_targe",
+      "required": false
+    },
+    {
+      "id": "cataclysm:bone_reptile_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:bone_reptile_chestplate",
+      "required": false
+    },
+    {
       "id": "bards_rpg:diamond_rapier",
       "required": false
     },

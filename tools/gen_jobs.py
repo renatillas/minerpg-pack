@@ -64,6 +64,21 @@ GEAR_GROUP_OVERRIDES = [
 ]
 # Quivers are not RPG Series tiered gear; the small quiver stays free.
 EXTRA_GEAR = {('tier_1', 'leather'): ['archers:medium_quiver'], ('tier_2', 'leather'): ['archers:large_quiver']}
+# Gear from other mods at the same tiers (pack 1.5.7: before, only RPG Series and Armory gear was gated, so vanilla
+# diamond/netherite gear and the boss-material sets were free to craft). Tools (pickaxes, axes, shovels, hoes) stay free.
+# Drop-only items in this list are harmless: the gate is on crafting.
+VANILLA_TIER = lambda metal: [f'minecraft:{metal}_{p}' for p in ('sword', 'helmet', 'chestplate', 'leggings', 'boots')]
+EXTRA_GEAR[('tier_2', 'plate')] = VANILLA_TIER('diamond') + [
+    'cataclysm:black_steel_sword', 'cataclysm:black_steel_targe',
+    'cataclysm:bone_reptile_helmet', 'cataclysm:bone_reptile_chestplate']
+EXTRA_GEAR[('tier_3', 'plate')] = VANILLA_TIER('netherite') + [
+    'cataclysm:ignitium_helmet', 'cataclysm:ignitium_chestplate', 'cataclysm:ignitium_elytra_chestplate',
+    'cataclysm:ignitium_leggings', 'cataclysm:ignitium_boots',
+    'cataclysm:cursium_helmet', 'cataclysm:cursium_chestplate', 'cataclysm:cursium_leggings', 'cataclysm:cursium_boots',
+    'cataclysm:monstrous_helm',
+    'block_factorys_bosses:dragon_bones_chestplate', 'block_factorys_bosses:dragon_bones_leggings',
+    'block_factorys_bosses:dragon_bones_boots']
+EXTRA_GEAR[('tier_3', 'leather')] = ['cataclysm:cursed_bow']
 GEAR_TIERS = [
     # tier key, required level, title, icon per group
     ('tier_1', 0, 'tier 1', {'caster': 'wizards:staff_wizard', 'plate': 'paladins:iron_claymore', 'leather': 'archers:composite_longbow'}),

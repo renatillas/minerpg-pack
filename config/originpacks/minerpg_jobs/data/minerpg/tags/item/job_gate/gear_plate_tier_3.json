@@ -2,6 +2,78 @@
   "replace": false,
   "values": [
     {
+      "id": "minecraft:netherite_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_chestplate",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_elytra_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm:monstrous_helm",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dragon_bones_chestplate",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dragon_bones_leggings",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dragon_bones_boots",
+      "required": false
+    },
+    {
       "id": "bards_rpg:netherite_rapier",
       "required": false
     },

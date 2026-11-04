@@ -41,14 +41,6 @@
       "required": false
     },
     {
-      "id": "cataclysm:ender_golem",
-      "required": false
-    },
-    {
-      "id": "cataclysm:ignited_revenant",
-      "required": false
-    },
-    {
       "id": "mowziesmobs:ferrous_wroughtnaut",
       "required": false
     },

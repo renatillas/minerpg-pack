@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "naturalist:cooked_egg",
+      "required": false
+    },
+    {
+      "id": "croptopia:sunny_side_eggs",
+      "required": false
+    }
+  ]
+}

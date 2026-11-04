@@ -1,0 +1,13 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "mix_type": "potion",
+  "from": "apothic_attributes:levitation",
+  "ingredient": {
+    "item": "minecraft:popped_chorus_fruit"
+  },
+  "to": "apothic_attributes:flying"
+}
