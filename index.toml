@@ -9,6 +9,10 @@ file = "config/apotheosis/apotheosis.cfg"
 hash = "c2d5e69c55139b22133387ee60fc6f71ca5a4b457b0cc0645bec2cd294aeef9e"
 
 [[files]]
+file = "config/apotheosis/apothic_attributes.cfg"
+hash = "51689438a8203b89f9f35f170f0890887fc634d1863024ad4a38cd82b309a4c9"
+
+[[files]]
 file = "config/apotheosis/enchantments.cfg"
 hash = "10e290076f6e2fe108eb7a63b5b55e1acf8e2ba2ad669d3908b31990b044059a"
 
@@ -55,6 +59,10 @@ hash = "21069c1acb2333c10a043e9c52f81e65fb4e3f959868849b6b5b230af59f3adf"
 [[files]]
 file = "config/combat_roll/server.json5"
 hash = "756e0cac49364362b4751a33333d7ffd16348857d7a7fdb1680d03d918683497"
+
+[[files]]
+file = "config/critical_strike/server_config.json"
+hash = "079ab00b0f577fca912bd7116309364da7b9b563566b270b6535f9c9fac2650b"
 
 [[files]]
 file = "config/defaultoptions-common.toml"
@@ -1501,6 +1509,10 @@ file = "kubejs/assets/apotheosis/models/item/gems/caster/arcanist.json"
 hash = "01b0277b6eaac75d738b5c60e53317ed09311b2e29292423a9023d9b13fbc0b3"
 
 [[files]]
+file = "kubejs/assets/critical_strike/lang/en_us.json"
+hash = "27764a1df708e3dae9113ecfc2ba1934d1b04964e8c6531da506803934732e1f"
+
+[[files]]
 file = "kubejs/assets/croptopia/lang/en_us.json"
 hash = "c44691a3a076bcc6e9b256401d7bbae624628a12fef5fe88a44a03c0f1334c17"
 
@@ -1967,6 +1979,10 @@ hash = "4e5f327c389a0a437180fb732f47398a52bd8015e5d72d433ca42919df7c26db"
 [[files]]
 file = "kubejs/data/apotheosis/tier_augments/summit/armor_pierce.json"
 hash = "9b92dd9e70e61c0d30b9191595d14bb5ebceb1c8a3f0400fd9bfd57f6c7b0cb8"
+
+[[files]]
+file = "kubejs/data/apothic_attributes/tags/damage_type/cannot_critically_strike.json"
+hash = "2813ec9e2daa5645968025a8bc7f64141d42d4cfb9af2438cc645a26a15a53bd"
 
 [[files]]
 file = "kubejs/data/c/tags/item/apple_pies.json"
@@ -7603,6 +7619,10 @@ hash = "a25a6d0a889868759f389edf9191c1080a392eea39175516afdf80547a177346"
 [[files]]
 file = "kubejs/server_scripts/minerpg_coins.js"
 hash = "e22e441ae4f199ed4c056ebfe6be28b5c46bf03140e24c866066e02777a886ef"
+
+[[files]]
+file = "kubejs/server_scripts/minerpg_crit.js"
+hash = "2d0d44c97742543f4007e951e8cb66b5416d05ea98c07ac4ddaf6773dbfdf3c1"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_croptopia.js"
