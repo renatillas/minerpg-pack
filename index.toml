@@ -2353,6 +2353,14 @@ file = "kubejs/data/gazebo/lithostitched/worldgen_modifier/village/plains.json"
 hash = "74156b32d5e36c7fc0e3a27178320cf180a9eede87c6d3c8fabcca09e3d447cf"
 
 [[files]]
+file = "kubejs/data/jobsplus/arc/enchanter/powerup/exp_boost_i_blocks.json"
+hash = "e2ec39515690ec4c840f55dda1d3fd182cc56b04e69ef9e4ba85ea200196e455"
+
+[[files]]
+file = "kubejs/data/jobsplus/arc/enchanter/powerup/exp_boost_i_mobs.json"
+hash = "f4dd7b134680fa1720306560716c191e8f9df9c67e0f358be9755d49667d8fd6"
+
+[[files]]
 file = "kubejs/data/lne_wizards/recipe/elder_guardian_staff_aqua_smithing.json"
 hash = "57538cea461dbee6159c285456667714ed28d4a81ceff3220f8727e62763e3c1"
 
