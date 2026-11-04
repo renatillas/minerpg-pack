@@ -7,6 +7,8 @@
 # updates every client on its next start. The server does NOT update itself: rebuild and upload it in the same
 # sitting (pack/tools/build_server.sh, then docs/server-setup.md "Updating"), or players can't join.
 #
+# It also rebuilds and uploads the client zip for official-launcher players (pack/tools/build_client.sh).
+#
 # Before running: bump `version` in pack/pack.toml, `packwiz refresh`, commit on main.
 set -euo pipefail
 
@@ -35,4 +37,7 @@ VERSION="$(sed -n 's/^version = "\(.*\)"/\1/p' pack/pack.toml)"
 SPLIT="$(git subtree split --prefix pack HEAD 2>/dev/null)"
 "${GIT_PUSH[@]}" "$REPO_URL" "$SPLIT:refs/heads/main"
 "${GIT_PUSH[@]}" "$REPO_URL" "$SPLIT:refs/tags/v$VERSION"
-echo "Published minerpg $VERSION ($SPLIT). Now update the server: pack/tools/build_server.sh"
+echo "Published minerpg $VERSION ($SPLIT)."
+# The ready-made zip for players on the official Minecraft Launcher (Prism players update by themselves).
+pack/tools/build_client.sh --upload
+echo "Now update the server: pack/tools/build_server.sh"
