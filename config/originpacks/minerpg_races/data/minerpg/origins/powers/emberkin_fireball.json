@@ -1,0 +1,81 @@
+{
+  "type": "neoorigins:active_ability",
+  "name": {
+    "text": "Fireball"
+  },
+  "description": {
+    "text": "Hurl a ball of fire: creatures within 3 blocks of where it lands take 8 damage and burn for 4 s. It breaks no blocks. Cooldown 20 s."
+  },
+  "cooldown_ticks": 400,
+  "cooldown_icon": "minecraft:fire_charge",
+  "entity_action": {
+    "type": "neoorigins:and",
+    "actions": [
+      {
+        "type": "neoorigins:spawn_projectile",
+        "entity_type": "neoorigins:magic_orb",
+        "speed": 1.6,
+        "orb_color": "#FF7A1A",
+        "glow_color": "#FFD24A",
+        "trail_particle": "minecraft:flame",
+        "on_hit_action": {
+          "type": "neoorigins:and",
+          "actions": [
+            {
+              "type": "neoorigins:area_of_effect",
+              "radius": 3.0,
+              "include_source": false,
+              "entity_condition": {
+                "type": "neoorigins:not",
+                "condition": {
+                  "type": "neoorigins:entity_type",
+                  "entity_type": "minecraft:player"
+                }
+              },
+              "entity_action": {
+                "type": "neoorigins:and",
+                "actions": [
+                  {
+                    "type": "neoorigins:damage",
+                    "amount": 8.0,
+                    "source": {
+                      "name": "fire"
+                    }
+                  },
+                  {
+                    "type": "neoorigins:set_on_fire",
+                    "ticks": 80
+                  }
+                ]
+              }
+            },
+            {
+              "type": "neoorigins:spawn_particles",
+              "particle": "minecraft:lava",
+              "count": 12,
+              "speed": 0.05,
+              "offset_y": 0.2,
+              "spread": {
+                "x": 1.0,
+                "y": 0.5,
+                "z": 1.0
+              }
+            },
+            {
+              "type": "neoorigins:play_sound",
+              "sound": "minecraft:entity.generic.explode",
+              "volume": 1.0,
+              "pitch": 1.3
+            }
+          ]
+        }
+      },
+      {
+        "type": "neoorigins:play_sound",
+        "sound": "minecraft:entity.blaze.shoot",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  }
+}

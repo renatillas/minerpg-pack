@@ -1,0 +1,9 @@
+{
+  "type": "neoorigins:wall_climbing",
+  "name": {
+    "text": "Wall Climb"
+  },
+  "description": {
+    "text": "Climb any wall by walking into it."
+  }
+}

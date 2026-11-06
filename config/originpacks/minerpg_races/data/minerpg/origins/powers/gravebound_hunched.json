@@ -1,0 +1,11 @@
+{
+  "type": "neoorigins:size_scaling",
+  "name": {
+    "text": "Hunched"
+  },
+  "description": {
+    "text": "95% of normal height; reach is unchanged."
+  },
+  "scale": 0.95,
+  "modify_reach": false
+}

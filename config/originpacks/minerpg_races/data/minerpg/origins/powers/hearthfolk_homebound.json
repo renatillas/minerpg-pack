@@ -1,0 +1,18 @@
+{
+  "type": "neoorigins:modify_damage",
+  "name": {
+    "text": "Homebound"
+  },
+  "description": {
+    "text": "Deals 15% less damage in the Nether and the End."
+  },
+  "direction": "out",
+  "multiplier": 0.85,
+  "condition": {
+    "type": "neoorigins:not",
+    "condition": {
+      "type": "neoorigins:dimension",
+      "dimension": "minecraft:overworld"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "neoorigins:size_scaling",
+  "name": {
+    "text": "Broad"
+  },
+  "description": {
+    "text": "110% of normal height; still fits through doors."
+  },
+  "scale": 1.1,
+  "modify_reach": false
+}

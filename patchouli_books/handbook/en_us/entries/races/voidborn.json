@@ -1,12 +1,16 @@
 {
   "name": "Voidborn",
-  "icon": "minecraft:ender_pearl",
+  "icon": "minecraft:ender_eye",
   "category": "patchouli:races",
   "sortnum": 7,
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(o)Enderman-kin from the End.$()$(br2)$(l)Gifts$()$(li)Arcane spell power.$(li)Endermen do not mind your gaze.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Blink (1 min): teleport to the block you look at, up to 10 blocks away.$(br2)$(l)Drawback$()$(br)Water hurts you (rain does not)."
+      "text": "$(o)Tall, quiet folk from the End.$()$(br2)$(l)Gifts$()$(li)+20% Arcane spell power.$(li)Endermen do not mind your gaze.$(li)Void Pocket: 9 slots of your own, kept when you die."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Abilities$()$(li)$(k:key.neoorigins.skill_1): Blink (30 s): teleport up to 12 blocks to where you look.$(li)$(k:key.neoorigins.skill_2): Void Surge (20 s): a firework-like boost while gliding with an elytra.$(li)$(k:key.neoorigins.skill_3): Void Pocket: open your pocket.$(br2)$(l)Drawbacks$()$(li)Water hurts you (rain does not)."
     }
   ]
 }

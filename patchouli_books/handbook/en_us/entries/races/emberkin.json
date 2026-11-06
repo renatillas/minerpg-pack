@@ -6,7 +6,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(o)Blaze-touched and fire-proof.$()$(br2)$(l)Gifts$()$(li)Immune to fire and lava.$(li)Fire spell power.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Ember Burst (90 s): burns and pushes back creatures within 5 blocks.$(br2)$(l)Drawback$()$(br)Water and rain hurt you."
+      "text": "$(o)Blaze-touched and fire-proof.$()$(br2)$(l)Gifts$()$(li)Immune to fire and lava; swim through lava.$(li)Your hits set creatures alight.$(li)+20% Fire spell power.$(li)Phoenix: once every 20 minutes, a killing blow sets everything nearby alight and leaves you at 4 hearts."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Abilities$()$(li)$(k:key.neoorigins.skill_1): Fireball (20 s): a fire ball that burns creatures where it lands. It breaks no blocks.$(br2)$(l)Drawbacks$()$(li)Water hurts you every second, rain every two."
     }
   ]
 }

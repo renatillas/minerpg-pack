@@ -1,0 +1,9 @@
+{
+  "type": "neoorigins:simple",
+  "name": {
+    "text": "Vein Miner"
+  },
+  "description": {
+    "text": "Sneak while mining an ore to break the whole connected vein (up to 32 blocks). Uses your tool for every block."
+  }
+}

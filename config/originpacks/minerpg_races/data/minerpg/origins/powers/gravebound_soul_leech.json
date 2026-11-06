@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Soul Leech"
+  },
+  "description": {
+    "text": "10% of all damage you deal heals you."
+  },
+  "attribute": "mrpg_lib:lifesteal_modifier",
+  "amount": 0.1,
+  "operation": "add_multiplied_base"
+}

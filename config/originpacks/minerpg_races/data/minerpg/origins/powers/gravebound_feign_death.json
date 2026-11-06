@@ -1,42 +1,42 @@
 {
   "type": "neoorigins:active_ability",
   "name": {
-    "text": "Stoneskin"
+    "text": "Feign Death"
   },
   "description": {
-    "text": "Harden like rock: Resistance II for 10 s and cures poison. Cooldown 90 s."
+    "text": "Play dead: you turn invisible and every creature that was after you loses track of you. Cooldown 90 s."
   },
   "cooldown_ticks": 1800,
-  "cooldown_icon": "minecraft:deepslate",
+  "cooldown_icon": "minecraft:wither_rose",
   "entity_action": {
     "type": "neoorigins:and",
     "actions": [
       {
         "type": "neoorigins:apply_effect",
-        "effect": "minecraft:resistance",
-        "duration": 200,
-        "amplifier": 1
+        "effect": "minecraft:invisibility",
+        "duration": 100,
+        "amplifier": 0
       },
       {
-        "type": "neoorigins:clear_effect",
-        "effect": "minecraft:poison"
+        "type": "neoorigins:kubejs_callback",
+        "id": "minerpg:feign_death"
       },
       {
         "type": "neoorigins:play_sound",
-        "sound": "minecraft:block.deepslate.place",
+        "sound": "minecraft:entity.skeleton.death",
         "volume": 1.0,
-        "pitch": 0.7
+        "pitch": 0.8
       },
       {
         "type": "neoorigins:spawn_particles",
-        "particle": "minecraft:crit",
+        "particle": "minecraft:soul",
         "count": 20,
         "speed": 0.05,
         "offset_y": 1.0,
         "spread": {
-          "x": 1.5,
+          "x": 0.8,
           "y": 0.5,
-          "z": 1.5
+          "z": 0.8
         }
       }
     ]

@@ -4,11 +4,11 @@
     "text": "Haggler"
   },
   "description": {
-    "text": "Villager and wandering trader prices are about 15% lower."
+    "text": "Villager and wandering trader prices are about 25% lower."
   },
   "event": "mod_trade_price",
   "modifier": {
     "operation": "multiplication",
-    "value": 0.85
+    "value": 0.75
   }
 }

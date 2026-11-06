@@ -1,0 +1,7 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "attribute": "spell_power:earth",
+  "amount": -0.2,
+  "operation": "add_multiplied_total",
+  "hidden": true
+}

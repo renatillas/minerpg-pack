@@ -5,8 +5,8 @@ key_key.jobsplus.open_menu:key.keyboard.j
 key_key.partyhud.open_screen:key.keyboard.h
 key_keybinds.combat_roll.roll:key.keyboard.r
 key_key.neoorigins.skill_1:key.keyboard.v
-key_key.neoorigins.skill_2:key.keyboard.unknown
-key_key.neoorigins.skill_3:key.keyboard.unknown
+key_key.neoorigins.skill_2:key.keyboard.grave.accent
+key_key.neoorigins.skill_3:key.keyboard.i
 key_key.neoorigins.skill_4:key.keyboard.unknown
 key_key.neoorigins.skill_5:key.keyboard.unknown
 key_key.neoorigins.skill_6:key.keyboard.unknown

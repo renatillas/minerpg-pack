@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:modify_damage",
+  "name": {
+    "text": "Melting"
+  },
+  "description": {
+    "text": "Takes 25% more fire damage."
+  },
+  "direction": "in",
+  "damage_type": "#minecraft:is_fire",
+  "multiplier": 1.25
+}

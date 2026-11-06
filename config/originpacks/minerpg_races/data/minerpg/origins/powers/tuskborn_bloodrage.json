@@ -1,0 +1,20 @@
+{
+  "type": "neoorigins:low_hp_threshold",
+  "name": {
+    "text": "Bloodrage"
+  },
+  "description": {
+    "text": "Below 30% health: Strength II and Resistance I."
+  },
+  "threshold": 0.3,
+  "effects": [
+    {
+      "effect": "minecraft:strength",
+      "amplifier": 1
+    },
+    {
+      "effect": "minecraft:resistance",
+      "amplifier": 0
+    }
+  ]
+}

@@ -4,9 +4,9 @@
     "text": "Earthbound"
   },
   "description": {
-    "text": "+0.5 Earth Spell Power."
+    "text": "+20% Earth spell power."
   },
   "attribute": "spell_power:earth",
-  "amount": 0.5,
-  "operation": "add_value"
+  "amount": 0.2,
+  "operation": "add_multiplied_total"
 }

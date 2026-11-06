@@ -1,0 +1,80 @@
+{
+  "type": "neoorigins:active_ability",
+  "name": {
+    "text": "Earthshatter"
+  },
+  "description": {
+    "text": "Stamp the ground: creatures within 6 blocks take 8 damage and are thrown into the air. Cooldown 45 s."
+  },
+  "cooldown_ticks": 900,
+  "cooldown_icon": "minecraft:cracked_deepslate_bricks",
+  "entity_action": {
+    "type": "neoorigins:and",
+    "actions": [
+      {
+        "type": "neoorigins:area_of_effect",
+        "radius": 6.0,
+        "include_source": false,
+        "entity_condition": {
+          "type": "neoorigins:not",
+          "condition": {
+            "type": "neoorigins:entity_type",
+            "entity_type": "minecraft:player"
+          }
+        },
+        "entity_action": {
+          "type": "neoorigins:and",
+          "actions": [
+            {
+              "type": "neoorigins:damage",
+              "amount": 8.0,
+              "source": {
+                "name": "generic"
+              }
+            },
+            {
+              "type": "neoorigins:add_velocity",
+              "y": 0.9
+            }
+          ]
+        }
+      },
+      {
+        "type": "neoorigins:play_sound",
+        "sound": "minecraft:entity.generic.explode",
+        "volume": 1.0,
+        "pitch": 0.6
+      },
+      {
+        "type": "neoorigins:play_sound",
+        "sound": "minecraft:block.deepslate.break",
+        "volume": 1.0,
+        "pitch": 0.5
+      },
+      {
+        "type": "neoorigins:spawn_particles",
+        "particle": "minecraft:explosion",
+        "count": 6,
+        "speed": 0.05,
+        "offset_y": 0.2,
+        "spread": {
+          "x": 2.5,
+          "y": 0.5,
+          "z": 2.5
+        }
+      },
+      {
+        "type": "neoorigins:spawn_particles",
+        "particle": "minecraft:campfire_cosy_smoke",
+        "count": 20,
+        "speed": 0.02,
+        "offset_y": 0.1,
+        "spread": {
+          "x": 3.0,
+          "y": 0.5,
+          "z": 3.0
+        }
+      }
+    ]
+  }
+}

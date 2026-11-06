@@ -1,0 +1,9 @@
+{
+  "type": "neoorigins:simple",
+  "name": {
+    "text": "Chilling Strikes"
+  },
+  "description": {
+    "text": "Your hits slow creatures for 2 s."
+  }
+}

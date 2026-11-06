@@ -3,16 +3,20 @@
     "text": "Emberkin"
   },
   "description": {
-    "text": "Blaze-touched wanderers with cinders for blood. Flame and lava cannot hurt them and fire leaps to their call, but water and rain sting like acid."
+    "text": "Blaze-touched wanderers with cinders for blood. Flame and lava cannot hurt them, fire leaps from their hands and even death only rekindles them. Water burns them like acid, rain a little less."
   },
   "icon": "minecraft:blaze_powder",
   "impact": "high",
   "order": 5,
   "powers": [
+    "minerpg:emberkin_fireball",
+    "minerpg:emberkin_phoenix",
     "minerpg:emberkin_cinder_blood",
     "minerpg:emberkin_kindled",
-    "minerpg:emberkin_ember_burst",
-    "minerpg:emberkin_doused"
+    "minerpg:emberkin_searing_strikes",
+    "minerpg:emberkin_lava_swimmer",
+    "minerpg:emberkin_doused",
+    "minerpg:emberkin_doused_2"
   ],
   "upgrades": []
 }

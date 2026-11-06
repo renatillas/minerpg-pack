@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:extra_inventory",
+  "name": {
+    "text": "Void Pocket"
+  },
+  "description": {
+    "text": "9 extra inventory slots only you can open. They are kept when you die."
+  },
+  "size": 9,
+  "drop_on_death": false,
+  "title": "Void Pocket"
+}

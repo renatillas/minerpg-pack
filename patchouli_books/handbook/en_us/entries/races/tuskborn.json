@@ -1,12 +1,16 @@
 {
   "name": "Tuskborn",
-  "icon": "minecraft:gold_ingot",
+  "icon": "minecraft:gilded_blackstone",
   "category": "patchouli:races",
   "sortnum": 4,
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(o)Tusked folk of the bastions.$()$(br2)$(l)Gifts$()$(li)More critical damage.$(li)Harder to knock back.$(li)Piglins leave you alone (brutes do not).$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Battle Fury (2 min): swing and dig much faster for 15 seconds.$(br2)$(l)Drawback$()$(br)Villagers charge you more."
+      "text": "$(o)Broad, tusked folk of the bastions.$()$(br2)$(l)Gifts$()$(li)+20% crit damage, +5% crit chance.$(li)Below 30% health: Strength II and Resistance.$(li)Hard to knock back; piglins leave you alone (brutes do not)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Abilities$()$(li)$(k:key.neoorigins.skill_1): Charge (20 s): rush forward, hitting creatures in front for 6 damage.$(li)$(k:key.neoorigins.skill_2): Battle Fury (2 min): Haste II and Strength for 15 seconds.$(br2)$(l)Drawbacks$()$(li)20% less spell power.$(li)Villagers charge you about 25% more."
     }
   ]
 }

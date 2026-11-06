@@ -4,7 +4,7 @@
     "text": "Delver"
   },
   "description": {
-    "text": "Mines 15% faster."
+    "text": "Mines 25% faster."
   },
-  "multiplier": 1.15
+  "multiplier": 1.25
 }

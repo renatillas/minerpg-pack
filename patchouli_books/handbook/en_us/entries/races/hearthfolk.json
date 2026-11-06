@@ -1,12 +1,16 @@
 {
   "name": "Hearthfolk",
-  "icon": "minecraft:bread",
+  "icon": "minecraft:bell",
   "category": "patchouli:races",
   "sortnum": 1,
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(o)Village people, at home anywhere with a hearth.$()$(br2)$(l)Gifts$()$(li)One extra combat roll charge.$(li)Villagers give you better prices.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Rally (2 min): you and players within 8 blocks gain Speed and Resistance for 10 seconds.$(br2)$(l)Drawback$()$(br)None."
+      "text": "$(o)Village folk, at home anywhere with a hearth.$()$(br2)$(l)Gifts$()$(li)One extra combat roll charge.$(li)Villagers charge you about 25% less."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Abilities$()$(li)$(k:key.neoorigins.skill_1): Rally (90 s): you and players within 8 blocks gain Speed, Resistance and Regeneration for 10 seconds.$(li)$(k:key.neoorigins.skill_2): Hearthstone (30 min): return to your bed.$(br2)$(l)Drawbacks$()$(li)15% less damage in the Nether and the End."
     }
   ]
 }

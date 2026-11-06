@@ -4,19 +4,11 @@
     "text": "Doused"
   },
   "description": {
-    "text": "Takes 1 damage per second in water or rain."
+    "text": "Takes 1 damage per second in water, and every 2 s in rain."
   },
   "interval": 20,
   "condition": {
-    "type": "neoorigins:or",
-    "conditions": [
-      {
-        "type": "neoorigins:in_water"
-      },
-      {
-        "type": "neoorigins:in_rain"
-      }
-    ]
+    "type": "neoorigins:in_water"
   },
   "entity_action": {
     "type": "neoorigins:damage",

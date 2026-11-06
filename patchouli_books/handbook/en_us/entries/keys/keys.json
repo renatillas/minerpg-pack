@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(li)Quest book: $(k:key.ftbquests.quests)$(li)Talents: $(k:key.puffish_skills.open)$(li)Jobs: $(k:key.jobsplus.open_menu)$(li)Party: $(k:key.partyhud.open_screen)$(li)Racial power: $(k:key.neoorigins.skill_1)$(li)Your folk: $(k:key.neoorigins.view_info)$(li)Combat roll: $(k:keybinds.combat_roll.roll)$(li)Accessories: $(k:key.curios.open.desc)$(li)World tier: $(k:key.apotheosis.open_world_tier_select)$(li)Advancements: $(k:key.advancements)"
+      "text": "$(li)Quest book: $(k:key.ftbquests.quests)$(li)Talents: $(k:key.puffish_skills.open)$(li)Jobs: $(k:key.jobsplus.open_menu)$(li)Party: $(k:key.partyhud.open_screen)$(li)Folk ability 1: $(k:key.neoorigins.skill_1)$(li)Folk ability 2: $(k:key.neoorigins.skill_2)$(li)Folk ability 3: $(k:key.neoorigins.skill_3)$(li)Your folk: $(k:key.neoorigins.view_info)$(li)Combat roll: $(k:keybinds.combat_roll.roll)$(li)Accessories: $(k:key.curios.open.desc)$(li)World tier: $(k:key.apotheosis.open_world_tier_select)$(li)Advancements: $(k:key.advancements)"
     },
     {
       "type": "patchouli:text",

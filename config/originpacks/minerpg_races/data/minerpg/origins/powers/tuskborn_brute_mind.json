@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Brute Mind"
+  },
+  "description": {
+    "text": "-20% spell power in every school."
+  },
+  "attribute": "spell_power:arcane",
+  "amount": -0.2,
+  "operation": "add_multiplied_total"
+}

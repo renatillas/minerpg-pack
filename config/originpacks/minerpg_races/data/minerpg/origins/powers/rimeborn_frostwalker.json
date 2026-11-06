@@ -1,0 +1,16 @@
+{
+  "type": "neoorigins:walk_on_fluid",
+  "name": {
+    "text": "Frostwalker"
+  },
+  "description": {
+    "text": "Walk on water as if it were ice. Sneak to sink."
+  },
+  "fluid": "water",
+  "condition": {
+    "type": "neoorigins:not",
+    "condition": {
+      "type": "neoorigins:sneaking"
+    }
+  }
+}

@@ -4,11 +4,11 @@
     "text": "Hard Bargain"
   },
   "description": {
-    "text": "Villager and wandering trader prices are about 15% higher."
+    "text": "Villager and wandering trader prices are about 25% higher."
   },
   "event": "mod_trade_price",
   "modifier": {
     "operation": "multiplication",
-    "value": 1.15
+    "value": 1.25
   }
 }

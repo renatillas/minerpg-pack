@@ -4,9 +4,9 @@
     "text": "Planted"
   },
   "description": {
-    "text": "+30% knockback resistance."
+    "text": "+50% knockback resistance."
   },
-  "attribute": "minecraft:knockback_resistance",
-  "amount": 0.3,
+  "attribute": "minecraft:generic.knockback_resistance",
+  "amount": 0.5,
   "operation": "add_value"
 }

@@ -1,0 +1,7 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "attribute": "critical_strike:chance",
+  "amount": 0.05,
+  "operation": "add_multiplied_base",
+  "hidden": true
+}

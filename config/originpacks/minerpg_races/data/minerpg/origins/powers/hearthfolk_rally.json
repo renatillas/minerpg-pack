@@ -4,9 +4,9 @@
     "text": "Rally"
   },
   "description": {
-    "text": "Sound the call: you and players within 8 blocks gain Speed I and Resistance I for 10 s. Cooldown 120 s."
+    "text": "Sound the call: you and players within 8 blocks gain Speed I, Resistance I and Regeneration I for 10 s. Cooldown 90 s."
   },
-  "cooldown_ticks": 2400,
+  "cooldown_ticks": 1800,
   "cooldown_icon": "minecraft:bell",
   "entity_action": {
     "type": "neoorigins:and",
@@ -20,15 +20,23 @@
           "entity_type": "minecraft:player"
         },
         "entity_action": {
-          "type": "neoorigins:apply_effect",
-          "effects": [
+          "type": "neoorigins:and",
+          "actions": [
             {
+              "type": "neoorigins:apply_effect",
               "effect": "minecraft:speed",
               "duration": 200,
               "amplifier": 0
             },
             {
+              "type": "neoorigins:apply_effect",
               "effect": "minecraft:resistance",
+              "duration": 200,
+              "amplifier": 0
+            },
+            {
+              "type": "neoorigins:apply_effect",
+              "effect": "minecraft:regeneration",
               "duration": 200,
               "amplifier": 0
             }

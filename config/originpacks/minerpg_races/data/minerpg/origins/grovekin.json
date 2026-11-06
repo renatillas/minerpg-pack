@@ -3,18 +3,21 @@
     "text": "Grovekin"
   },
   "description": {
-    "text": "Slender wanderers of the lush woods, sharp of eye and kin to every root and leaf. They mend what grows and bind what threatens it, but their frames are light."
+    "text": "Slender wanderers of the lush woods, sharp of eye and kin to every root and leaf. They climb any wall, mend what grows and bind what threatens it, but their frames are light and dry wood burns."
   },
   "icon": "minecraft:flowering_azalea",
   "impact": "low",
   "order": 3,
   "powers": [
+    "minerpg:grovekin_entangle",
+    "minerpg:grovekin_wall_climb",
     "minerpg:grovekin_keen_eye",
-    "minerpg:grovekin_wildsong",
+    "minerpg:grovekin_windsong",
     "minerpg:grovekin_menders_touch",
     "minerpg:grovekin_forest_stride",
-    "minerpg:grovekin_entangle",
-    "minerpg:grovekin_slight_frame"
+    "minerpg:grovekin_slender",
+    "minerpg:grovekin_slight_frame",
+    "minerpg:grovekin_dry_wood"
   ],
   "upgrades": []
 }

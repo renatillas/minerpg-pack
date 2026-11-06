@@ -4,9 +4,9 @@
     "text": "Slight Frame"
   },
   "description": {
-    "text": "-1 heart max health."
+    "text": "-2 hearts max health."
   },
-  "attribute": "minecraft:max_health",
-  "amount": -2.0,
+  "attribute": "minecraft:generic.max_health",
+  "amount": -4.0,
   "operation": "add_value"
 }

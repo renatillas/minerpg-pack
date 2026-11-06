@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "You pick your folk the first time you join. Each folk has two or three small gifts, one racial power on $(k:key.neoorigins.skill_1) with a long cooldown, and one light drawback.$(br2)The gifts are small next to your class and gear, and every class works with every folk. Pick the one you like."
+      "text": "You pick your folk the first time you join. Each folk has a clear strength, one or two abilities on $(k:key.neoorigins.skill_1) and $(k:key.neoorigins.skill_2), a drawback you will feel, and its own size.$(br2)Abilities never hurt other players. Every class works with every folk, but each folk suits some classes best."
     },
     {
       "type": "patchouli:text",

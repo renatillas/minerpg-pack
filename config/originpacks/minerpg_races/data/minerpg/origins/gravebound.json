@@ -3,16 +3,18 @@
     "text": "Gravebound"
   },
   "description": {
-    "text": "Risen from the soul sand valleys, neither living nor quite dead. Soul and shadow bend to them and the hostile notice them late, but mortal remedies barely take."
+    "text": "Risen from the soul sand valleys, neither living nor quite dead. They feed on the blows they land, rage without tiring, raise the dead to fight for them and can play dead themselves. Mortal remedies barely take."
   },
   "icon": "minecraft:soul_lantern",
   "impact": "medium",
   "order": 8,
   "powers": [
-    "minerpg:gravebound_soulfire",
-    "minerpg:gravebound_umbral_touch",
+    "minerpg:gravebound_raise_dead",
+    "minerpg:gravebound_feign_death",
+    "minerpg:gravebound_soul_leech",
+    "minerpg:gravebound_deathless_fury",
     "minerpg:gravebound_grave_hush",
-    "minerpg:gravebound_soul_siphon",
+    "minerpg:gravebound_hunched",
     "minerpg:gravebound_withered_vigor"
   ],
   "upgrades": []

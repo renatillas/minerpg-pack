@@ -4,9 +4,9 @@
     "text": "Brutal Strikes"
   },
   "description": {
-    "text": "+10% critical hit damage."
+    "text": "+20% crit damage and +5% crit chance."
   },
   "attribute": "critical_strike:damage",
-  "amount": 0.1,
+  "amount": 0.2,
   "operation": "add_multiplied_base"
 }

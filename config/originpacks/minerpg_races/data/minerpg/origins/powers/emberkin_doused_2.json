@@ -1,0 +1,26 @@
+{
+  "type": "neoorigins:condition_passive",
+  "interval": 40,
+  "condition": {
+    "type": "neoorigins:and",
+    "conditions": [
+      {
+        "type": "neoorigins:in_rain"
+      },
+      {
+        "type": "neoorigins:not",
+        "condition": {
+          "type": "neoorigins:in_water"
+        }
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "neoorigins:damage",
+    "amount": 1.0,
+    "source": {
+      "name": "drown"
+    }
+  },
+  "hidden": true
+}

@@ -1,0 +1,11 @@
+{
+  "type": "neoorigins:active_recall",
+  "name": {
+    "text": "Hearthstone"
+  },
+  "description": {
+    "text": "Return home to your bed (or the world spawn). Cooldown 30 min."
+  },
+  "cooldown_ticks": 36000,
+  "cooldown_icon": "minecraft:campfire"
+}

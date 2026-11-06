@@ -4,9 +4,9 @@
     "text": "Mender's Touch"
   },
   "description": {
-    "text": "+0.5 Healing Power."
+    "text": "+15% Healing power."
   },
   "attribute": "spell_power:healing",
-  "amount": 0.5,
-  "operation": "add_value"
+  "amount": 0.15,
+  "operation": "add_multiplied_total"
 }

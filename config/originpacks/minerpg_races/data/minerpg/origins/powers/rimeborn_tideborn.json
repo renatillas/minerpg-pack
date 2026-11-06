@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Tideborn"
+  },
+  "description": {
+    "text": "Swims 30% faster and holds its breath twice as long."
+  },
+  "attribute": "neoforge:swim_speed",
+  "amount": 0.3,
+  "operation": "add_multiplied_base"
+}

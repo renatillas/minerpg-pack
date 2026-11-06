@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:elytra_boost",
+  "name": {
+    "text": "Void Surge"
+  },
+  "description": {
+    "text": "While gliding with an elytra, surge forward like a firework. Cooldown 20 s."
+  },
+  "strength": 1.5,
+  "cooldown_ticks": 400,
+  "cooldown_icon": "minecraft:elytra"
+}

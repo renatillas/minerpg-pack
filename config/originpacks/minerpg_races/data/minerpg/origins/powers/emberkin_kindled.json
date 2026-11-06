@@ -4,9 +4,9 @@
     "text": "Kindled"
   },
   "description": {
-    "text": "+1 Fire Spell Power."
+    "text": "+20% Fire spell power."
   },
   "attribute": "spell_power:fire",
-  "amount": 1.0,
-  "operation": "add_value"
+  "amount": 0.2,
+  "operation": "add_multiplied_total"
 }

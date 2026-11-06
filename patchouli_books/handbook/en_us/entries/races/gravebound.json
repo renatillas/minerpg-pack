@@ -1,12 +1,16 @@
 {
   "name": "Gravebound",
-  "icon": "minecraft:soul_sand",
+  "icon": "minecraft:soul_lantern",
   "category": "patchouli:races",
   "sortnum": 8,
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(o)Undead of the soul sand valleys.$()$(br2)$(l)Gifts$()$(li)Soul and Shadow spell power.$(li)Monsters notice you later.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Soul Siphon (90 s): drain 6 health from the creature in your sights.$(br2)$(l)Drawback$()$(br)All healing you receive is a little weaker."
+      "text": "$(o)Undead of the soul sand valleys.$()$(br2)$(l)Gifts$()$(li)10% of the damage you deal heals you.$(li)+20% Rage power.$(li)Monsters notice you later."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Abilities$()$(li)$(k:key.neoorigins.skill_1): Raise Dead (2 min): two skeleton warriors fight for you for 30 seconds.$(li)$(k:key.neoorigins.skill_2): Feign Death (90 s): turn invisible; every creature after you loses track of you.$(br2)$(l)Drawbacks$()$(li)All healing you receive is 30% weaker."
     }
   ]
 }

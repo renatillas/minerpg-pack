@@ -3,16 +3,27 @@
     "text": "Tuskborn"
   },
   "description": {
-    "text": "Broad, tusked folk of the blackstone bastions. They hit hard, stand their ground, and the bastion's own guards still count them as kin. Villagers count their coins twice."
+    "text": "Broad, tusked folk of the blackstone bastions. They charge first, hit hardest when bloodied and stand their ground, and the bastion guards still count them as kin. Magic sits poorly in them, and villagers count their coins twice."
   },
   "icon": "minecraft:gilded_blackstone",
   "impact": "medium",
   "order": 4,
   "powers": [
+    "minerpg:tuskborn_charge",
+    "minerpg:tuskborn_battle_fury",
+    "minerpg:tuskborn_bloodrage",
     "minerpg:tuskborn_brutal_strikes",
+    "minerpg:tuskborn_brutal_strikes_2",
     "minerpg:tuskborn_planted",
     "minerpg:tuskborn_bastion_kin",
-    "minerpg:tuskborn_battle_fury",
+    "minerpg:tuskborn_broad",
+    "minerpg:tuskborn_brute_mind",
+    "minerpg:tuskborn_brute_mind_2",
+    "minerpg:tuskborn_brute_mind_3",
+    "minerpg:tuskborn_brute_mind_4",
+    "minerpg:tuskborn_brute_mind_5",
+    "minerpg:tuskborn_brute_mind_6",
+    "minerpg:tuskborn_brute_mind_7",
     "minerpg:tuskborn_hard_bargain"
   ],
   "upgrades": []

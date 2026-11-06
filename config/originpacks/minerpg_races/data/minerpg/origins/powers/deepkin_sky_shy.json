@@ -1,0 +1,14 @@
+{
+  "type": "neoorigins:modify_damage",
+  "name": {
+    "text": "Sky-shy"
+  },
+  "description": {
+    "text": "Deals 10% less damage under the open sky."
+  },
+  "direction": "out",
+  "multiplier": 0.9,
+  "condition": {
+    "type": "neoorigins:exposed_to_sky"
+  }
+}

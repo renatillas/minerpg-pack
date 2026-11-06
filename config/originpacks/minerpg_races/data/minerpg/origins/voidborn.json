@@ -3,15 +3,18 @@
     "text": "Voidborn"
   },
   "description": {
-    "text": "Tall, quiet strangers from the far islands of the End. Raw arcane power hums in them, endermen meet their gaze as kin, and space folds when they step. Water burns them."
+    "text": "Tall, quiet strangers from the far islands of the End. Raw arcane power hums in them, space folds when they step, the void keeps a pocket for them and the wind of the End carries their wings. Water burns them."
   },
   "icon": "minecraft:ender_eye",
   "impact": "medium",
   "order": 7,
   "powers": [
+    "minerpg:voidborn_blink",
+    "minerpg:voidborn_void_surge",
+    "minerpg:voidborn_void_pocket",
     "minerpg:voidborn_void_hum",
     "minerpg:voidborn_kindred_gaze",
-    "minerpg:voidborn_blink",
+    "minerpg:voidborn_lanky",
     "minerpg:voidborn_water_bane"
   ],
   "upgrades": []

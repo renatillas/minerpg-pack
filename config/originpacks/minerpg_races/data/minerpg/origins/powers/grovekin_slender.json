@@ -1,0 +1,11 @@
+{
+  "type": "neoorigins:size_scaling",
+  "name": {
+    "text": "Slender"
+  },
+  "description": {
+    "text": "90% of normal height; reach is unchanged."
+  },
+  "scale": 0.9,
+  "modify_reach": false
+}

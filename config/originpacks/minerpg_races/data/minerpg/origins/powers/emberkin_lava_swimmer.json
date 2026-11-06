@@ -1,0 +1,11 @@
+{
+  "type": "neoorigins:modify_lava_speed",
+  "name": {
+    "text": "Lava Swimmer"
+  },
+  "description": {
+    "text": "Swims through lava as easily as through water."
+  },
+  "operation": "addition",
+  "value": 0.03
+}

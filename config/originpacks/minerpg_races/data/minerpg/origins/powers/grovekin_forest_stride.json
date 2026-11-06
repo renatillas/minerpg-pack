@@ -4,10 +4,10 @@
     "text": "Forest Stride"
   },
   "description": {
-    "text": "Moves 8% faster in forest biomes."
+    "text": "Moves 15% faster in forest biomes."
   },
-  "attribute": "minecraft:movement_speed",
-  "amount": 0.08,
+  "attribute": "minecraft:generic.movement_speed",
+  "amount": 0.15,
   "operation": "add_multiplied_base",
   "location_condition": {
     "biome_tag": "minecraft:is_forest"

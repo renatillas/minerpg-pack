@@ -1,0 +1,9 @@
+{
+  "type": "neoorigins:simple",
+  "name": {
+    "text": "Searing Strikes"
+  },
+  "description": {
+    "text": "Your hits set creatures alight for 3 s."
+  }
+}

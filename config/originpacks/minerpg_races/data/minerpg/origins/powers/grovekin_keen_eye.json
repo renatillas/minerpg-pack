@@ -4,9 +4,9 @@
     "text": "Keen Eye"
   },
   "description": {
-    "text": "+6% ranged damage."
+    "text": "+15% ranged damage."
   },
   "attribute": "ranged_weapon:damage",
-  "amount": 0.06,
-  "operation": "add_multiplied_base"
+  "amount": 0.15,
+  "operation": "add_multiplied_total"
 }

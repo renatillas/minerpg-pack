@@ -4,9 +4,9 @@
     "text": "Stone Hide"
   },
   "description": {
-    "text": "+2 armor."
+    "text": "+4 armor and +2 hearts."
   },
-  "attribute": "minecraft:armor",
-  "amount": 2.0,
+  "attribute": "minecraft:generic.armor",
+  "amount": 4.0,
   "operation": "add_value"
 }

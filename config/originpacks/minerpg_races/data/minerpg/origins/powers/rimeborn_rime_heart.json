@@ -4,9 +4,9 @@
     "text": "Rime Heart"
   },
   "description": {
-    "text": "+1 Frost Spell Power."
+    "text": "+20% Frost spell power and +15% Water spell power."
   },
   "attribute": "spell_power:frost",
-  "amount": 1.0,
-  "operation": "add_value"
+  "amount": 0.2,
+  "operation": "add_multiplied_total"
 }

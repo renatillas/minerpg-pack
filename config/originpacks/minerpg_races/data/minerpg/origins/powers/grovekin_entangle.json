@@ -4,7 +4,7 @@
     "text": "Entangle"
   },
   "description": {
-    "text": "Roots burst from the ground: non-player creatures within 6 blocks are held in place (Slowness VI) for 4 s. Cooldown 90 s."
+    "text": "Roots burst from the ground: creatures within 6 blocks are held in place for 5 s. Cooldown 90 s."
   },
   "cooldown_ticks": 1800,
   "cooldown_icon": "minecraft:hanging_roots",
@@ -28,7 +28,7 @@
             {
               "type": "neoorigins:apply_effect",
               "effect": "minecraft:slowness",
-              "duration": 80,
+              "duration": 100,
               "amplifier": 5
             },
             {

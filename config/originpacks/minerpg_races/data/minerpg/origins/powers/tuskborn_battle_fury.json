@@ -4,7 +4,7 @@
     "text": "Battle Fury"
   },
   "description": {
-    "text": "Blood up: Haste II for 15 s (faster swings and digging). Cooldown 120 s."
+    "text": "Blood up: Haste II and Strength I for 15 s. Cooldown 120 s."
   },
   "cooldown_ticks": 2400,
   "cooldown_icon": "minecraft:golden_axe",
@@ -16,6 +16,12 @@
         "effect": "minecraft:haste",
         "duration": 300,
         "amplifier": 1
+      },
+      {
+        "type": "neoorigins:apply_effect",
+        "effect": "minecraft:strength",
+        "duration": 300,
+        "amplifier": 0
       },
       {
         "type": "neoorigins:play_sound",

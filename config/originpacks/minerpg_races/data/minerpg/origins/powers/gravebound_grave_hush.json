@@ -4,7 +4,7 @@
     "text": "Grave Hush"
   },
   "description": {
-    "text": "Hostile creatures notice you from 30% closer than usual."
+    "text": "Hostile creatures notice you from 40% closer than usual."
   },
-  "detection_multiplier": 0.7
+  "detection_multiplier": 0.6
 }

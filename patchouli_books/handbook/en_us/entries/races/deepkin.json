@@ -6,7 +6,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(o)Stout folk of the deepslate.$()$(br2)$(l)Gifts$()$(li)+2 armor and faster mining.$(li)Night vision whenever the sky is out of sight.$(li)A little Earth spell power.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Stoneskin (90 s): strong Resistance for 10 seconds; cures poison.$(br2)$(l)Drawback$()$(br)A bit smaller, and slow swimmers."
+      "text": "$(o)Short, stout folk of the deepslate.$()$(br2)$(l)Gifts$()$(li)+4 armor and +2 hearts.$(li)Mine 25% faster; night vision out of the sky's sight.$(li)Vein Miner: sneak while mining an ore to break the whole vein.$(li)+20% Earth spell power."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Abilities$()$(li)$(k:key.neoorigins.skill_1): Earthshatter (45 s): creatures within 6 blocks take 8 damage and fly up.$(br2)$(l)Drawbacks$()$(li)Swim 40% slower.$(li)10% less damage under the open sky."
     }
   ]
 }

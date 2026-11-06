@@ -3,15 +3,17 @@
     "text": "Hearthfolk"
   },
   "description": {
-    "text": "Plain folk of the village lanes, quick on their feet and quicker with a deal. Where the Hearthfolk raise a shout, their friends stand a little taller."
+    "text": "Plain folk of the village lanes, quick on their feet and quicker with a deal. Where they raise a shout their friends stand taller, and the hearth always calls them home. Far from the Overworld they lose heart."
   },
   "icon": "minecraft:bell",
   "impact": "low",
   "order": 1,
   "powers": [
+    "minerpg:hearthfolk_rally",
+    "minerpg:hearthfolk_hearthstone",
     "minerpg:hearthfolk_light_step",
     "minerpg:hearthfolk_haggler",
-    "minerpg:hearthfolk_rally"
+    "minerpg:hearthfolk_homebound"
   ],
   "upgrades": []
 }

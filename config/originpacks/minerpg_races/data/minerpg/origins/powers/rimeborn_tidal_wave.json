@@ -1,0 +1,103 @@
+{
+  "type": "neoorigins:active_ability",
+  "name": {
+    "text": "Tidal Wave"
+  },
+  "description": {
+    "text": "A cone of icy water: creatures up to 8 blocks ahead take 5 damage, are thrown back and slowed for 4 s. Cooldown 30 s."
+  },
+  "cooldown_ticks": 600,
+  "cooldown_icon": "minecraft:heart_of_the_sea",
+  "entity_action": {
+    "type": "neoorigins:and",
+    "actions": [
+      {
+        "type": "neoorigins:area_of_effect",
+        "radius": 8.0,
+        "include_source": false,
+        "entity_condition": {
+          "type": "neoorigins:not",
+          "condition": {
+            "type": "neoorigins:entity_type",
+            "entity_type": "minecraft:player"
+          }
+        },
+        "entity_action": {
+          "type": "neoorigins:and",
+          "actions": [
+            {
+              "type": "neoorigins:damage",
+              "amount": 5.0,
+              "source": {
+                "name": "freeze"
+              }
+            },
+            {
+              "type": "neoorigins:apply_effect",
+              "effect": "minecraft:slowness",
+              "duration": 80,
+              "amplifier": 1
+            },
+            {
+              "type": "neoorigins:add_velocity",
+              "y": 0.4
+            },
+            {
+              "type": "neoorigins:spawn_particles",
+              "particle": "minecraft:splash",
+              "count": 12,
+              "speed": 0.05,
+              "offset_y": 0.5,
+              "spread": {
+                "x": 0.6,
+                "y": 0.5,
+                "z": 0.6
+              }
+            }
+          ]
+        },
+        "shape": {
+          "type": "cone",
+          "angle": 70
+        }
+      },
+      {
+        "type": "neoorigins:pull_entities",
+        "radius": 8.0,
+        "strength": -1.5,
+        "include_players": false,
+        "entity_condition": {
+          "type": "neoorigins:not",
+          "condition": {
+            "type": "neoorigins:entity_type",
+            "entity_type": "minecraft:player"
+          }
+        }
+      },
+      {
+        "type": "neoorigins:play_sound",
+        "sound": "minecraft:entity.player.splash.high_speed",
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "type": "neoorigins:play_sound",
+        "sound": "minecraft:block.glass.break",
+        "volume": 1.0,
+        "pitch": 1.4
+      },
+      {
+        "type": "neoorigins:spawn_particles",
+        "particle": "minecraft:bubble_pop",
+        "count": 30,
+        "speed": 0.05,
+        "offset_y": 1.0,
+        "spread": {
+          "x": 2.0,
+          "y": 0.5,
+          "z": 2.0
+        }
+      }
+    ]
+  }
+}

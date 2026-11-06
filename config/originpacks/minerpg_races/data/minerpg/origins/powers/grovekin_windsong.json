@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Windsong"
+  },
+  "description": {
+    "text": "+15% Air spell power."
+  },
+  "attribute": "spell_power:air",
+  "amount": 0.15,
+  "operation": "add_multiplied_total"
+}

@@ -4,12 +4,21 @@
     "text": "Heat Wilt"
   },
   "description": {
-    "text": "Weakness I while in the Nether."
+    "text": "Weakness I in the Nether and in hot biomes (desert, badlands, savanna, jungle)."
   },
   "toggleable": false,
   "condition": {
-    "type": "neoorigins:dimension",
-    "dimension": "minecraft:the_nether"
+    "type": "neoorigins:or",
+    "conditions": [
+      {
+        "type": "neoorigins:dimension",
+        "dimension": "minecraft:the_nether"
+      },
+      {
+        "type": "neoorigins:biome",
+        "tag": "c:is_hot/overworld"
+      }
+    ]
   },
   "effects": [
     {

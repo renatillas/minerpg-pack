@@ -117,55 +117,67 @@ E['getting_started'] = [
     ]),
 ]
 
+# Pack 1.6.0 origins redesign (tools/gen_origins.py is the source of the numbers). Abilities are listed in key order:
+# the first is on Skill 1, the second on Skill 2, the third on Skill 3.
 RACES = [
-    ('hearthfolk', 'Hearthfolk', 'minecraft:bread', 'Village people, at home anywhere with a hearth.',
-     ['One extra combat roll charge.', 'Villagers give you better prices.'],
-     'Rally (2 min): you and players within 8 blocks gain Speed and Resistance for 10 seconds.',
-     'None.'),
-    ('deepkin', 'Deepkin', 'minecraft:deepslate', 'Stout folk of the deepslate.',
-     ['+2 armor and faster mining.', 'Night vision whenever the sky is out of sight.', 'A little Earth spell power.'],
-     'Stoneskin (90 s): strong Resistance for 10 seconds; cures poison.',
-     'A bit smaller, and slow swimmers.'),
-    ('grovekin', 'Grovekin', 'minecraft:azalea', 'Elves of the lush forests.',
-     ['More ranged damage.', 'A little Nature and Healing power.', 'Faster in forests.'],
-     'Entangle (90 s): creatures within 6 blocks are rooted for 4 seconds.',
-     'One heart less.'),
-    ('tuskborn', 'Tuskborn', 'minecraft:gold_ingot', 'Tusked folk of the bastions.',
-     ['More critical damage.', 'Harder to knock back.', 'Piglins leave you alone (brutes do not).'],
-     'Battle Fury (2 min): swing and dig much faster for 15 seconds.',
-     'Villagers charge you more.'),
+    ('hearthfolk', 'Hearthfolk', 'minecraft:bell', 'Village folk, at home anywhere with a hearth.',
+     ['One extra combat roll charge.', 'Villagers charge you about 25% less.'],
+     ['Rally (90 s): you and players within 8 blocks gain Speed, Resistance and Regeneration for 10 seconds.',
+      'Hearthstone (30 min): return to your bed.'],
+     ['15% less damage in the Nether and the End.']),
+    ('deepkin', 'Deepkin', 'minecraft:deepslate', 'Short, stout folk of the deepslate.',
+     ['+4 armor and +2 hearts.', 'Mine 25% faster; night vision out of the sky\'s sight.',
+      'Vein Miner: sneak while mining an ore to break the whole vein.', '+20% Earth spell power.'],
+     ['Earthshatter (45 s): creatures within 6 blocks take 8 damage and fly up.'],
+     ['Swim 40% slower.', '10% less damage under the open sky.']),
+    ('grovekin', 'Grovekin', 'minecraft:flowering_azalea', 'Slender folk of the lush forests.',
+     ['Climb any wall.', '+15% ranged damage.', '+15% Air spell power and Healing power.', '15% faster in forests.'],
+     ['Entangle (90 s): creatures within 6 blocks are held in place for 5 seconds.'],
+     ['2 hearts less.', '25% more fire damage taken.']),
+    ('tuskborn', 'Tuskborn', 'minecraft:gilded_blackstone', 'Broad, tusked folk of the bastions.',
+     ['+20% crit damage, +5% crit chance.', 'Below 30% health: Strength II and Resistance.',
+      'Hard to knock back; piglins leave you alone (brutes do not).'],
+     ['Charge (20 s): rush forward, hitting creatures in front for 6 damage.',
+      'Battle Fury (2 min): Haste II and Strength for 15 seconds.'],
+     ['20% less spell power.', 'Villagers charge you about 25% more.']),
     ('emberkin', 'Emberkin', 'minecraft:blaze_powder', 'Blaze-touched and fire-proof.',
-     ['Immune to fire and lava.', 'Fire spell power.'],
-     'Ember Burst (90 s): burns and pushes back creatures within 5 blocks.',
-     'Water and rain hurt you.'),
-    ('rimeborn', 'Rimeborn', 'minecraft:packed_ice', 'Kin of the ice spikes.',
-     ['Immune to freezing; walk through powder snow at full speed.', 'Frost spell power.'],
-     'Frost Nova (90 s): slows every creature within 7 blocks for 6 seconds.',
-     'Weakened in the Nether.'),
-    ('voidborn', 'Voidborn', 'minecraft:ender_pearl', 'Enderman-kin from the End.',
-     ['Arcane spell power.', 'Endermen do not mind your gaze.'],
-     'Blink (1 min): teleport to the block you look at, up to 10 blocks away.',
-     'Water hurts you (rain does not).'),
-    ('gravebound', 'Gravebound', 'minecraft:soul_sand', 'Undead of the soul sand valleys.',
-     ['Soul and Shadow spell power.', 'Monsters notice you later.'],
-     'Soul Siphon (90 s): drain 6 health from the creature in your sights.',
-     'All healing you receive is a little weaker.'),
+     ['Immune to fire and lava; swim through lava.', 'Your hits set creatures alight.', '+20% Fire spell power.',
+      'Phoenix: once every 20 minutes, a killing blow sets everything nearby alight and leaves you at 4 hearts.'],
+     ['Fireball (20 s): a fire ball that burns creatures where it lands. It breaks no blocks.'],
+     ['Water hurts you every second, rain every two.']),
+    ('rimeborn', 'Rimeborn', 'minecraft:packed_ice', 'Kin of the ice spikes and the cold seas.',
+     ['Walk on water (sneak to sink); immune to freezing and powder snow.', 'Swim 30% faster, hold your breath twice as long.',
+      'Your hits slow creatures.', '+20% Frost and +15% Water spell power.'],
+     ['Tidal Wave (30 s): icy water hits and slows creatures ahead and throws back those around you.'],
+     ['Weakened in the Nether and hot biomes.', '25% more fire damage taken.']),
+    ('voidborn', 'Voidborn', 'minecraft:ender_eye', 'Tall, quiet folk from the End.',
+     ['+20% Arcane spell power.', 'Endermen do not mind your gaze.', 'Void Pocket: 9 slots of your own, kept when you die.'],
+     ['Blink (30 s): teleport up to 12 blocks to where you look.',
+      'Void Surge (20 s): a firework-like boost while gliding with an elytra.',
+      'Void Pocket: open your pocket.'],
+     ['Water hurts you (rain does not).']),
+    ('gravebound', 'Gravebound', 'minecraft:soul_lantern', 'Undead of the soul sand valleys.',
+     ['10% of the damage you deal heals you.', '+20% Rage power.', 'Monsters notice you later.'],
+     ['Raise Dead (2 min): two skeleton warriors fight for you for 30 seconds.',
+      'Feign Death (90 s): turn invisible; every creature after you loses track of you.'],
+     ['All healing you receive is 30% weaker.']),
 ]
+SKILL_KEYS = ['key.neoorigins.skill_1', 'key.neoorigins.skill_2', 'key.neoorigins.skill_3']
 
 
-def race_entry(rid, name, icon, blurb, perks, power, drawback):
-    t = (f'$(o){blurb}$()$(br2)$(l)Gifts$()' + ''.join(f'$(li){p}' for p in perks)
-         + f'$(br2)$(l)Power$() ({k("key.neoorigins.skill_1")})$(br){power}'
-         + f'$(br2)$(l)Drawback$()$(br){drawback}')
-    return (rid, name, icon, [text(t)])
+def race_entry(rid, name, icon, blurb, gifts, abilities, drawbacks):
+    first = f'$(o){blurb}$()$(br2)$(l)Gifts$()' + ''.join(f'$(li){g}' for g in gifts)
+    second = ('$(l)Abilities$()' + ''.join(f'$(li){k(SKILL_KEYS[n])}: {a}' for n, a in enumerate(abilities))
+              + '$(br2)$(l)Drawbacks$()' + ''.join(f'$(li){d}' for d in drawbacks))
+    return (rid, name, icon, [text(first), text(second)])
 
 
 E['races'] = [
     ('folk', 'Choosing a Folk', 'neoorigins:orb_of_origin', [
-        text('You pick your folk the first time you join. Each folk has two or three small gifts, one '
-             f'racial power on {k("key.neoorigins.skill_1")} with a long cooldown, and one light drawback.$(br2)'
-             'The gifts are small next to your class and gear, and every class works with every folk. '
-             'Pick the one you like.'),
+        text('You pick your folk the first time you join. Each folk has a clear strength, one or two abilities '
+             f'on {k("key.neoorigins.skill_1")} and {k("key.neoorigins.skill_2")}, a drawback you will feel, and its own '
+             'size.$(br2)Abilities never hurt other players. Every class works with every folk, but each folk suits '
+             'some classes best.'),
         text(f'Press {k("key.neoorigins.view_info")} to read your folk\'s powers in game.'),
     ]),
 ] + [race_entry(*r) for r in RACES] + [
@@ -467,7 +479,9 @@ KEYS = [
     ('key.puffish_skills.open', 'Talents'),
     ('key.jobsplus.open_menu', 'Jobs'),
     ('key.partyhud.open_screen', 'Party'),
-    ('key.neoorigins.skill_1', 'Racial power'),
+    ('key.neoorigins.skill_1', 'Folk ability 1'),
+    ('key.neoorigins.skill_2', 'Folk ability 2'),
+    ('key.neoorigins.skill_3', 'Folk ability 3'),
     ('key.neoorigins.view_info', 'Your folk'),
     ('keybinds.combat_roll.roll', 'Combat roll'),
     ('key.curios.open.desc', 'Accessories'),

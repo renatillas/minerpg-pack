@@ -1,0 +1,19 @@
+{
+  "type": "neoorigins:summon_minion",
+  "name": {
+    "text": "Raise Dead"
+  },
+  "description": {
+    "text": "Two skeleton warriors rise to fight for you for 30 s. Cooldown 2 min."
+  },
+  "mob_type": "minecraft:skeleton",
+  "quantity": 2,
+  "max_count": 2,
+  "cooldown_ticks": 2400,
+  "hunger_cost": 0,
+  "despawn_ticks": 600,
+  "death_damage": 0.0,
+  "head": "minecraft:iron_helmet",
+  "mainhand": "minecraft:iron_sword",
+  "cooldown_icon": "minecraft:skeleton_skull"
+}

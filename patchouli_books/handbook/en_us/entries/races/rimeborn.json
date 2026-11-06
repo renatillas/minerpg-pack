@@ -6,7 +6,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(o)Kin of the ice spikes.$()$(br2)$(l)Gifts$()$(li)Immune to freezing; walk through powder snow at full speed.$(li)Frost spell power.$(br2)$(l)Power$() ($(k:key.neoorigins.skill_1))$(br)Frost Nova (90 s): slows every creature within 7 blocks for 6 seconds.$(br2)$(l)Drawback$()$(br)Weakened in the Nether."
+      "text": "$(o)Kin of the ice spikes and the cold seas.$()$(br2)$(l)Gifts$()$(li)Walk on water (sneak to sink); immune to freezing and powder snow.$(li)Swim 30% faster, hold your breath twice as long.$(li)Your hits slow creatures.$(li)+20% Frost and +15% Water spell power."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Abilities$()$(li)$(k:key.neoorigins.skill_1): Tidal Wave (30 s): icy water hits and slows creatures ahead and throws back those around you.$(br2)$(l)Drawbacks$()$(li)Weakened in the Nether and hot biomes.$(li)25% more fire damage taken."
     }
   ]
 }

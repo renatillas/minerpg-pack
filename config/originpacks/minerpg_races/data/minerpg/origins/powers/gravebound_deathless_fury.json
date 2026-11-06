@@ -1,0 +1,12 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "name": {
+    "text": "Deathless Fury"
+  },
+  "description": {
+    "text": "+20% Rage power."
+  },
+  "attribute": "mrpg_lib:rage_modifier",
+  "amount": 0.2,
+  "operation": "add_multiplied_base"
+}

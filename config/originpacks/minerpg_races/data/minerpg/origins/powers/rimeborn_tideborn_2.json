@@ -1,0 +1,7 @@
+{
+  "type": "neoorigins:attribute_modifier",
+  "attribute": "minecraft:generic.oxygen_bonus",
+  "amount": 1.0,
+  "operation": "add_value",
+  "hidden": true
+}
