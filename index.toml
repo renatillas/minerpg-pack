@@ -4993,6 +4993,30 @@ file = "kubejs/data/minerpg/loot_table/map/tavern.json"
 hash = "607f9b4256465d927acdaf8b49509c05328847425af47e4ed05c49c0aad67233"
 
 [[files]]
+file = "kubejs/data/minerpg/puffish_skills/categories/side_skills/category.json"
+hash = "175df21ee512a8b2b8af4424692ad067abcde773e6882e111591ef8edc500062"
+
+[[files]]
+file = "kubejs/data/minerpg/puffish_skills/categories/side_skills/connections.json"
+hash = "fdce27b733cd69f1d1794d142c20bf443e8db44657481aa1904853214b7de1b6"
+
+[[files]]
+file = "kubejs/data/minerpg/puffish_skills/categories/side_skills/definitions.json"
+hash = "e7b74a0100dc21de7334956e654d439464f8657176faf4a6e7e021191099f280"
+
+[[files]]
+file = "kubejs/data/minerpg/puffish_skills/categories/side_skills/experience.json"
+hash = "8b3b3eea2085290e9d4a34712e85f5977870161403dd079bb3876f9f6d5b8182"
+
+[[files]]
+file = "kubejs/data/minerpg/puffish_skills/categories/side_skills/skills.json"
+hash = "6280244ddb106925e6443dddc8ea86171554fc09a102e991ad7a8c925f5758ad"
+
+[[files]]
+file = "kubejs/data/minerpg/puffish_skills/config.json"
+hash = "e14521843cd352c3f22647bfdf15f69bfd6d122d6fcbb7d55ba7687e1676403d"
+
+[[files]]
 file = "kubejs/data/minerpg/rarity_override/apotheosis/boots.json"
 hash = "fd4ee4368811efa168def98b5e0cb27824e6660de6a8571563f135826dc17b5d"
 
@@ -7941,12 +7965,20 @@ file = "kubejs/server_scripts/minerpg_server_rules.js"
 hash = "2556d275ab050ef1de0b13bc313b2cfb11c7d1280ce734a9933026150fbefc34"
 
 [[files]]
+file = "kubejs/server_scripts/minerpg_side_class.js"
+hash = "ff0f43652c7d07b75dcc6951b19b584277031bf5c623ff54ed52ecac431f5c63"
+
+[[files]]
 file = "kubejs/server_scripts/minerpg_soft_locks.js"
 hash = "5f0f612da251d3dcc2d0bce25b49f2e6dc2747796bea283d09143297f3fad267"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_tier_client_sync.js"
 hash = "eafe75a30a3f56417f9dc493e82a3c6b865b1dd53d68a2b6ec14580bbf939204"
+
+[[files]]
+file = "kubejs/side_class/rules.json"
+hash = "385e0f06c9f560328753fc5fb40505a77e3c22767af29573a2e518007cedb914"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_champions.js"
@@ -7959,6 +7991,10 @@ hash = "c2e297967ecf1287dc2c246bb8aacaf76997bb4994d5a84649d6d1ddaaf0f683"
 [[files]]
 file = "kubejs/startup_scripts/minerpg_items.js"
 hash = "7abe5b7e308bc8143b8ea2a7a67c400e7c23f1330cdfa286b67cde96b2c585d2"
+
+[[files]]
+file = "kubejs/startup_scripts/minerpg_side_class.js"
+hash = "77f38dced217febbda1201fb60c301cbf02c3e440a167a2da7349f2bd86d7767"
 
 [[files]]
 file = "mods/additional-rpg-jewelry.pw.toml"
@@ -8784,7 +8820,7 @@ hash = "c803ae6e3fa84608a68a1901c6fa785d98bf6f5c3c023044ac4692e499866515"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/callings.json"
-hash = "f8d7cdd92f1985f280fceb790b92313f71c4d8f980ebc9acfa6d7633d885b0e5"
+hash = "eae6fd548c1b15b7e1719c41840326a417f5ab2a572c3a60b56219c66ef09a43"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/casting.json"
@@ -8792,15 +8828,19 @@ hash = "b383c657898cc3bc97c74f240fdaf63afc011a871fc87f41b464e9e3492d8089"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/how.json"
-hash = "0db8edbf76df2d905ee5da404a50f6add8fb2f8120d6edfb533303bc417facf3"
+hash = "b938ed6ce86f6dbc65f33d5c9dad463da4659c44a5afb038555346da4f57e245"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/merchants.json"
-hash = "9809486974b2caa908fe822bf3d4397127cb078dba6fb01a22fc778905163187"
+hash = "c5665de0d77cbdfa4de2bee5b3da2133090a52686f7742e5f114c43154d16435"
+
+[[files]]
+file = "patchouli_books/handbook/en_us/entries/classes/side_class.json"
+hash = "4d7b2244a570153998533b0d9604e21b2c8779ad1d4bf577cacf5c11d96a2a6a"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/talents.json"
-hash = "20dc61ef08fcad2019f025daae53d9d4e8314477b95207b4a1dd428c8946c659"
+hash = "d1068e17f3e23ddc3d97ec283d3521a6024eb97f5f4d7365fc7986e99f2f85ec"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/amethyst_crab.json"

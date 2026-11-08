@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Your first kit comes from the quest $(item)Choose Your Calling$(): tome, starter weapon, one armor piece, and runes or arrows.$(br2)You can learn a second class later by making its tome at a Spell Binding Table. Talents follow one class tree at a time."
+      "text": "Your first kit comes from the quest $(item)Choose Your Calling$(): tome, starter weapon, one armor piece, and runes or arrows.$(br2)You can learn a second class later by making its tome at a Spell Binding Table. Your main talent tree follows one class; a $(l)Side Class$() adds a little of another."
     }
   ]
 }

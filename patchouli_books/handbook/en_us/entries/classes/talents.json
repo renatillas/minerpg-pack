@@ -14,7 +14,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Changed your mind? An $(item)Orb of Oblivion$() resets your talents so you can spend them again, or on another class tree."
+      "text": "Changed your mind? An $(item)Orb of Oblivion$() resets your talents so you can spend them again, or on another class tree. It resets the Side Class tab too."
     }
   ]
 }

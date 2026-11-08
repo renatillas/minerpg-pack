@@ -2,7 +2,7 @@
   "name": "The Callings",
   "icon": "minecraft:book",
   "category": "patchouli:classes",
-  "sortnum": 4,
+  "sortnum": 5,
   "pages": [
     {
       "type": "patchouli:text",

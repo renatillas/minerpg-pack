@@ -6,7 +6,8 @@
 // What the data can't express (this file):
 // - the side class is never the main class, both ways: a side root of the main class is refused, and so is a main
 //   root of the side class (someone who resets the main tree and picks their side class);
-// - at most 2 of a class's 4 side spells: a third is refused (locking it refunds the point and drops its spell).
+// - at most 2 of a class's 4 side spells: a third is refused (locking it refunds the point and drops its spell);
+// - the Orb of Oblivion resets the side tab too (it resets a public list of tabs, class and weapon by default).
 
 const $SCSkillsAPI = Java.loadClass('net.puffish.skillsmod.api.SkillsAPI')
 const $SCResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
@@ -87,3 +88,7 @@ function scOnUnlock(player, categoryId, skillId) {
 }
 
 $SCSkillsAPI.registerSkillUnlockEvent((player, categoryId, skillId) => scOnUnlock(player, categoryId, skillId))
+
+const $SCSkillHelper = Java.loadClass('net.skill_tree_rpgs.utils.SkillHelper')
+const SC_SIDE_LOCATION = $SCResourceLocation.parse(SC_SIDE_ID)
+if (!$SCSkillHelper.RESET_CATEGORIES.contains(SC_SIDE_LOCATION)) $SCSkillHelper.RESET_CATEGORIES.add(SC_SIDE_LOCATION)

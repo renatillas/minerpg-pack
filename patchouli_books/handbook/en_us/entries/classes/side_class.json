@@ -1,0 +1,16 @@
+{
+  "name": "Side Class",
+  "icon": "spell_engine:spell_book",
+  "category": "patchouli:classes",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Once your class tree has 9 points, a $(l)Side Class$() tab opens next to it. Pick any other class there and spend up to 8 points on it. The tab has its own experience bar, filled by the same kills as your class tree.$(br2)Your side class can never be your main class."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Each side class offers its root, its first four tome spells, two upgrades for each, and four early passives. You can learn $(l)two$() of the four spells; you cast them with any weapon.$(br2)Arrow spells still need a bow, and caster spells still use runes. Tier-4 spells, Mastery and weapon talents stay with your main class."
+    }
+  ]
+}

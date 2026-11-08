@@ -197,7 +197,8 @@ E['classes'] = [
              'the tome.'),
         text('Your first kit comes from the quest $(item)Choose Your Calling$(): tome, starter weapon, one '
              'armor piece, and runes or arrows.$(br2)You can learn a second class later by making its tome '
-             'at a Spell Binding Table. Talents follow one class tree at a time.'),
+             'at a Spell Binding Table. Your main talent tree follows one class; a $(l)Side Class$() adds a little of '
+             'another.'),
     ]),
     ('casting', 'Casting', 'runes:arcane_stone', [
         text('Right-click casts your weapon\'s first spell. While you hold a spell weapon, the hotbar keys '
@@ -221,7 +222,16 @@ E['classes'] = [
              'capstone, two passives and two stat skills. It opens from either tier-4 spell. The weapon tree '
              'holds 10 points.'),
         text('Changed your mind? An $(item)Orb of Oblivion$() resets your talents so you can spend them '
-             'again, or on another class tree.'),
+             'again, or on another class tree. It resets the Side Class tab too.'),
+    ]),
+    ('side_class', 'Side Class', 'spell_engine:spell_book', [
+        text('Once your class tree has 9 points, a $(l)Side Class$() tab opens next to it. Pick any other class '
+             'there and spend up to 8 points on it. The tab has its own experience bar, filled by the same kills '
+             'as your class tree.$(br2)Your side class can never be your main class.'),
+        text('Each side class offers its root, its first four tome spells, two upgrades for each, and four early '
+             'passives. You can learn $(l)two$() of the four spells; you cast them with any weapon.$(br2)Arrow '
+             'spells still need a bow, and caster spells still use runes. Tier-4 spells, Mastery and weapon '
+             'talents stay with your main class.'),
     ]),
     ('callings', 'The Callings', 'minecraft:book', [
         text('$(li)$(l)Wizards$(): Arcane, Fire, Frost.'
