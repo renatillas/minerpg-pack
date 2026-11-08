@@ -1,0 +1,43 @@
+{
+ "level_limit": 8,
+ "experience_per_level": {
+  "type": "expression",
+  "data": {
+   "expression": "3000 + level * 600"
+  }
+ },
+ "sources": [
+  {
+   "type": "puffish_skills:kill_entity",
+   "data": {
+    "variables": {
+     "dropped_xp": {
+      "operations": [
+       {
+        "type": "get_dropped_experience"
+       }
+      ]
+     },
+     "max_health": {
+      "operations": [
+       {
+        "type": "get_killed_living_entity"
+       },
+       {
+        "type": "get_max_health"
+       }
+      ]
+     }
+    },
+    "experience": "dropped_xp + max_health / 40",
+    "anti_farming": {
+     "limit_per_chunk": 15,
+     "reset_after_seconds": 300
+    }
+   },
+   "team_sharing": {
+    "distance_limit": 200
+   }
+  }
+ ]
+}

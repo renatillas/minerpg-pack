@@ -1,0 +1,1464 @@
+{
+ "side_air_root": {
+  "definition": "side_air_root",
+  "x": 40.26273418138075,
+  "y": -117.2813379708787,
+  "root": true
+ },
+ "side_air_spell_1": {
+  "definition": "side_air_spell_1",
+  "x": 71.12141521449298,
+  "y": -301.7312451468818
+ },
+ "side_air_spell_1_up_1": {
+  "definition": "side_air_spell_1_up_1",
+  "x": 71.23210067196678,
+  "y": -333.47711740666523
+ },
+ "side_air_spell_1_up_2": {
+  "definition": "side_air_spell_1_up_2",
+  "x": 101.22248892246462,
+  "y": -357.96369611504116
+ },
+ "side_air_spell_2": {
+  "definition": "side_air_spell_2",
+  "x": 129.20237675354002,
+  "y": -281.79202586524036
+ },
+ "side_air_spell_2_up_1": {
+  "definition": "side_air_spell_2_up_1",
+  "x": 148.61374869262764,
+  "y": -306.911964086649
+ },
+ "side_air_spell_2_up_2": {
+  "definition": "side_air_spell_2_up_2",
+  "x": 139.98708636459477,
+  "y": -344.65579300390624
+ },
+ "side_air_spell_3": {
+  "definition": "side_air_spell_3",
+  "x": 111.66457547859096,
+  "y": -451.3934232830448
+ },
+ "side_air_spell_3_up_1": {
+  "definition": "side_air_spell_3_up_1",
+  "x": 101.7868097290346,
+  "y": -485.4435552823678
+ },
+ "side_air_spell_3_up_2": {
+  "definition": "side_air_spell_3_up_2",
+  "x": 141.5267672275562,
+  "y": -475.38003129929336
+ },
+ "side_air_spell_4": {
+  "definition": "side_air_spell_4",
+  "x": 189.1325390302471,
+  "y": -424.7986378038094
+ },
+ "side_air_spell_4_up_1": {
+  "definition": "side_air_spell_4_up_1",
+  "x": 180.29995339965959,
+  "y": -462.0691796734344
+ },
+ "side_air_spell_4_up_2": {
+  "definition": "side_air_spell_4_up_2",
+  "x": 217.8415080682957,
+  "y": -445.6019270184215
+ },
+ "side_air_passive_1": {
+  "definition": "side_air_passive_1",
+  "x": 60.88040081091818,
+  "y": -240.41126595295393
+ },
+ "side_air_passive_2": {
+  "definition": "side_air_passive_2",
+  "x": 99.62046531393642,
+  "y": -227.11178501045424
+ },
+ "side_air_passive_3": {
+  "definition": "side_air_passive_3",
+  "x": 91.45973469781666,
+  "y": -392.4845435542717
+ },
+ "side_air_passive_4": {
+  "definition": "side_air_passive_4",
+  "x": 168.89441455654125,
+  "y": -365.9011843812523
+ },
+ "side_arcane_root": {
+  "definition": "side_arcane_root",
+  "x": -76.16237637351881,
+  "y": -97.8534231651528,
+  "root": true
+ },
+ "side_arcane_spell_1": {
+  "definition": "side_arcane_spell_1",
+  "x": -213.69955682675544,
+  "y": -224.57181348523758
+ },
+ "side_arcane_spell_1_up_1": {
+  "definition": "side_arcane_spell_1_up_1",
+  "x": -240.21559769875418,
+  "y": -242.02782200034417
+ },
+ "side_arcane_spell_1_up_2": {
+  "definition": "side_arcane_spell_1_up_2",
+  "x": -244.31175294575718,
+  "y": -280.5276588370054
+ },
+ "side_arcane_spell_2": {
+  "definition": "side_arcane_spell_2",
+  "x": -165.23983590567806,
+  "y": -262.28952825049
+ },
+ "side_arcane_spell_2_up_1": {
+  "definition": "side_arcane_spell_2_up_1",
+  "x": -175.65239199195364,
+  "y": -292.27938207732865
+ },
+ "side_arcane_spell_2_up_2": {
+  "definition": "side_arcane_spell_2_up_2",
+  "x": -211.96859739381898,
+  "y": -305.7013472637912
+ },
+ "side_arcane_spell_3": {
+  "definition": "side_arcane_spell_3",
+  "x": -316.8167085951955,
+  "y": -340.37064085333066
+ },
+ "side_arcane_spell_3_up_1": {
+  "definition": "side_arcane_spell_3_up_1",
+  "x": -350.72496346852756,
+  "y": -350.7249634685276
+ },
+ "side_arcane_spell_3_up_2": {
+  "definition": "side_arcane_spell_3_up_2",
+  "x": -320.5644219790267,
+  "y": -378.48969782710407
+ },
+ "side_arcane_spell_4": {
+  "definition": "side_arcane_spell_4",
+  "x": -252.1814857173229,
+  "y": -390.6782541445117
+ },
+ "side_arcane_spell_4_up_1": {
+  "definition": "side_arcane_spell_4_up_1",
+  "x": -288.21410043936135,
+  "y": -403.66896376601676
+ },
+ "side_arcane_spell_4_up_2": {
+  "definition": "side_arcane_spell_4_up_2",
+  "x": -253.89498434844208,
+  "y": -426.0907613674631
+ },
+ "side_arcane_passive_1": {
+  "definition": "side_arcane_passive_1",
+  "x": -167.9658297631838,
+  "y": -182.45952984693668
+ },
+ "side_arcane_passive_2": {
+  "definition": "side_arcane_passive_2",
+  "x": -135.64314321436186,
+  "y": -207.6172866091071
+ },
+ "side_arcane_passive_3": {
+  "definition": "side_arcane_passive_3",
+  "x": -278.55116966446894,
+  "y": -291.2357221883267
+ },
+ "side_arcane_passive_4": {
+  "definition": "side_arcane_passive_4",
+  "x": -213.9437169616753,
+  "y": -341.52172108465163
+ },
+ "side_archer_root": {
+  "definition": "side_archer_root",
+  "x": -103.80864330455354,
+  "y": -67.82157160718096,
+  "root": true
+ },
+ "side_archer_spell_1": {
+  "definition": "side_archer_spell_1",
+  "x": -275.0390740275197,
+  "y": -143.01576052339317
+ },
+ "side_archer_spell_1_up_1": {
+  "definition": "side_archer_spell_1_up_1",
+  "x": -305.78635936518236,
+  "y": -150.91620995170646
+ },
+ "side_archer_spell_1_up_2": {
+  "definition": "side_archer_spell_1_up_2",
+  "x": -322.1614502078112,
+  "y": -186.00000000000003
+ },
+ "side_archer_spell_2": {
+  "definition": "side_archer_spell_2",
+  "x": -241.45195641625486,
+  "y": -194.42467112679645
+ },
+ "side_archer_spell_2_up_1": {
+  "definition": "side_archer_spell_2_up_1",
+  "x": -261.0380211119297,
+  "y": -219.40864051802455
+ },
+ "side_archer_spell_2_up_2": {
+  "definition": "side_archer_spell_2_up_2",
+  "x": -299.7446193058839,
+  "y": -220.31151399137255
+ },
+ "side_archer_spell_3": {
+  "definition": "side_archer_spell_3",
+  "x": -410.1688718661159,
+  "y": -219.0582035717397
+ },
+ "side_archer_spell_3_up_1": {
+  "definition": "side_archer_spell_3_up_1",
+  "x": -445.6019270184215,
+  "y": -217.8415080682957
+ },
+ "side_archer_spell_3_up_2": {
+  "definition": "side_archer_spell_3_up_2",
+  "x": -426.0907613674631,
+  "y": -253.89498434844208
+ },
+ "side_archer_spell_4": {
+  "definition": "side_archer_spell_4",
+  "x": -365.37061897966174,
+  "y": -287.6270341717184
+ },
+ "side_archer_spell_4_up_1": {
+  "definition": "side_archer_spell_4_up_1",
+  "x": -403.6689637660167,
+  "y": -288.2141004393614
+ },
+ "side_archer_spell_4_up_2": {
+  "definition": "side_archer_spell_4_up_2",
+  "x": -378.489697827104,
+  "y": -320.5644219790267
+ },
+ "side_archer_passive_1": {
+  "definition": "side_archer_passive_1",
+  "x": -218.10949029920926,
+  "y": -118.03495347319426
+ },
+ "side_archer_passive_2": {
+  "definition": "side_archer_passive_2",
+  "x": -195.7068463303056,
+  "y": -152.32475274703762
+ },
+ "side_archer_passive_3": {
+  "definition": "side_archer_passive_3",
+  "x": -358.0225833725259,
+  "y": -185.01035050845869
+ },
+ "side_archer_passive_4": {
+  "definition": "side_archer_passive_4",
+  "x": -313.24357781392933,
+  "y": -253.5497208800057
+ },
+ "side_bard_root": {
+  "definition": "side_bard_root",
+  "x": 120.20563297647696,
+  "y": -30.440200405459105,
+  "root": true
+ },
+ "side_bard_spell_1": {
+  "definition": "side_bard_spell_1",
+  "x": 291.49901093600994,
+  "y": -105.49088407690947
+ },
+ "side_bard_spell_1_up_1": {
+  "definition": "side_bard_spell_1_up_1",
+  "x": 318.1361302222012,
+  "y": -122.7615682827596
+ },
+ "side_bard_spell_1_up_2": {
+  "definition": "side_bard_spell_1_up_2",
+  "x": 355.0386606991767,
+  "y": -111.04750969263044
+ },
+ "side_bard_spell_2": {
+  "definition": "side_bard_spell_2",
+  "x": 306.5738398864552,
+  "y": -45.96173079067111
+ },
+ "side_bard_spell_2_up_1": {
+  "definition": "side_bard_spell_2_up_1",
+  "x": 338.22042423015745,
+  "y": -43.450484848529584
+ },
+ "side_bard_spell_2_up_2": {
+  "definition": "side_bard_spell_2_up_2",
+  "x": 365.09995548989946,
+  "y": -71.31635507563081
+ },
+ "side_bard_spell_3": {
+  "definition": "side_bard_spell_3",
+  "x": 438.9661763662715,
+  "y": -153.40696205314617
+ },
+ "side_bard_spell_3_up_1": {
+  "definition": "side_bard_spell_3_up_1",
+  "x": 462.0691796734343,
+  "y": -180.29995339965976
+ },
+ "side_bard_spell_3_up_2": {
+  "definition": "side_bard_spell_3_up_2",
+  "x": 475.38003129929325,
+  "y": -141.52676722755638
+ },
+ "side_bard_spell_4": {
+  "definition": "side_bard_spell_4",
+  "x": 459.0728734445462,
+  "y": -74.00741089490742
+ },
+ "side_bard_spell_4_up_1": {
+  "definition": "side_bard_spell_4_up_1",
+  "x": 485.4435552823678,
+  "y": -101.78680972903473
+ },
+ "side_bard_spell_4_up_2": {
+  "definition": "side_bard_spell_4_up_2",
+  "x": 492.1910075495743,
+  "y": -61.35154510959654
+ },
+ "side_bard_passive_1": {
+  "definition": "side_bard_passive_1",
+  "x": 234.5626759417574,
+  "y": -80.52546836276153
+ },
+ "side_bard_passive_2": {
+  "definition": "side_bard_passive_2",
+  "x": 244.61760324387512,
+  "y": -40.81945838962203
+ },
+ "side_bard_passive_3": {
+  "definition": "side_bard_passive_3",
+  "x": 378.59863653514225,
+  "y": -138.10167418873405
+ },
+ "side_bard_passive_4": {
+  "definition": "side_bard_passive_4",
+  "x": 398.6966948794069,
+  "y": -58.73623661962935
+ },
+ "side_berserker_root": {
+  "definition": "side_berserker_root",
+  "x": -59.01747673659713,
+  "y": 109.05474514960463,
+  "root": true
+ },
+ "side_berserker_spell_1": {
+  "definition": "side_berserker_spell_1",
+  "x": -173.82166777901864,
+  "y": 256.6827376558861
+ },
+ "side_berserker_spell_1_up_1": {
+  "definition": "side_berserker_spell_1_up_1",
+  "x": -197.10289984512227,
+  "y": 278.26506585024947
+ },
+ "side_berserker_spell_1_up_2": {
+  "definition": "side_berserker_spell_1_up_2",
+  "x": -194.8063240034907,
+  "y": 316.9140200878576
+ },
+ "side_berserker_spell_2": {
+  "definition": "side_berserker_spell_2",
+  "x": -119.81474248066027,
+  "y": 285.9098240429892
+ },
+ "side_berserker_spell_2_up_1": {
+  "definition": "side_berserker_spell_2_up_1",
+  "x": -125.14911717046552,
+  "y": 317.2045057552825
+ },
+ "side_berserker_spell_2_up_2": {
+  "definition": "side_berserker_spell_2_up_2",
+  "x": -158.76083400466234,
+  "y": 336.42086377949875
+ },
+ "side_berserker_spell_3": {
+  "definition": "side_berserker_spell_3",
+  "x": -256.4725754548728,
+  "y": 387.87474529742786
+ },
+ "side_berserker_spell_3_up_1": {
+  "definition": "side_berserker_spell_3_up_1",
+  "x": -253.89498434844234,
+  "y": 426.0907613674629
+ },
+ "side_berserker_spell_3_up_2": {
+  "definition": "side_berserker_spell_3_up_2",
+  "x": -288.2141004393616,
+  "y": 403.66896376601653
+ },
+ "side_berserker_spell_4": {
+  "definition": "side_berserker_spell_4",
+  "x": -184.4385317736655,
+  "y": 426.85762028710997
+ },
+ "side_berserker_spell_4_up_1": {
+  "definition": "side_berserker_spell_4_up_1",
+  "x": -180.29995339965978,
+  "y": 462.06917967343423
+ },
+ "side_berserker_spell_4_up_2": {
+  "definition": "side_berserker_spell_4_up_2",
+  "x": -217.84150806829587,
+  "y": 445.6019270184214
+ },
+ "side_berserker_passive_1": {
+  "definition": "side_berserker_passive_1",
+  "x": -135.64314321436186,
+  "y": 207.61728660910708
+ },
+ "side_berserker_passive_2": {
+  "definition": "side_berserker_passive_2",
+  "x": -99.6204653139365,
+  "y": 227.1117850104542
+ },
+ "side_berserker_passive_3": {
+  "definition": "side_berserker_passive_3",
+  "x": -226.8162704058974,
+  "y": 333.11166217825337
+ },
+ "side_berserker_passive_4": {
+  "definition": "side_berserker_passive_4",
+  "x": -154.81317576324204,
+  "y": 372.0777883858421
+ },
+ "side_deadeye_root": {
+  "definition": "side_deadeye_root",
+  "x": -113.55589250522713,
+  "y": 49.81023265696819,
+  "root": true
+ },
+ "side_deadeye_spell_1": {
+  "definition": "side_deadeye_spell_1",
+  "x": -270.16011552445605,
+  "y": 152.03128618745745
+ },
+ "side_deadeye_spell_1_up_1": {
+  "definition": "side_deadeye_spell_1_up_1",
+  "x": -293.5912780317476,
+  "y": 173.45074650656622
+ },
+ "side_deadeye_spell_1_up_2": {
+  "definition": "side_deadeye_spell_1_up_2",
+  "x": -331.91857676604275,
+  "y": 167.97040929165064
+ },
+ "side_deadeye_spell_2": {
+  "definition": "side_deadeye_spell_2",
+  "x": -294.8275200514977,
+  "y": 95.79526825623357
+ },
+ "side_deadeye_spell_2_up_1": {
+  "definition": "side_deadeye_spell_2_up_1",
+  "x": -326.4558237299369,
+  "y": 98.5271290194144
+ },
+ "side_deadeye_spell_2_up_2": {
+  "definition": "side_deadeye_spell_2_up_2",
+  "x": -348.38218172530446,
+  "y": 130.43717053170445
+ },
+ "side_deadeye_spell_3": {
+  "definition": "side_deadeye_spell_3",
+  "x": -407.72929380499534,
+  "y": 223.56614898789974
+ },
+ "side_deadeye_spell_3_up_1": {
+  "definition": "side_deadeye_spell_3_up_1",
+  "x": -426.0907613674632,
+  "y": 253.89498434844188
+ },
+ "side_deadeye_spell_3_up_2": {
+  "definition": "side_deadeye_spell_3_up_2",
+  "x": -445.60192701842163,
+  "y": 217.84150806829547
+ },
+ "side_deadeye_spell_4": {
+  "definition": "side_deadeye_spell_4",
+  "x": -440.63049833361055,
+  "y": 148.5589577853657
+ },
+ "side_deadeye_spell_4_up_1": {
+  "definition": "side_deadeye_spell_4_up_1",
+  "x": -462.0691796734345,
+  "y": 180.29995339965936
+ },
+ "side_deadeye_spell_4_up_2": {
+  "definition": "side_deadeye_spell_4_up_2",
+  "x": -475.3800312992935,
+  "y": 141.52676722755595
+ },
+ "side_deadeye_passive_1": {
+  "definition": "side_deadeye_passive_1",
+  "x": -218.10949029920928,
+  "y": 118.03495347319425
+ },
+ "side_deadeye_passive_2": {
+  "definition": "side_deadeye_passive_2",
+  "x": -234.5626759417574,
+  "y": 80.5254683627615
+ },
+ "side_deadeye_passive_3": {
+  "definition": "side_deadeye_passive_3",
+  "x": -350.70425611911855,
+  "y": 198.5334348162438
+ },
+ "side_deadeye_passive_4": {
+  "definition": "side_deadeye_passive_4",
+  "x": -383.5913248225693,
+  "y": 123.55847004906678
+ },
+ "side_earth_root": {
+  "definition": "side_earth_root",
+  "x": 76.16237637351881,
+  "y": -97.8534231651528,
+  "root": true
+ },
+ "side_earth_spell_1": {
+  "definition": "side_earth_spell_1",
+  "x": 165.23983590567806,
+  "y": -262.28952825049
+ },
+ "side_earth_spell_1_up_1": {
+  "definition": "side_earth_spell_1_up_1",
+  "x": 175.65239199195372,
+  "y": -292.2793820773286
+ },
+ "side_earth_spell_1_up_2": {
+  "definition": "side_earth_spell_1_up_2",
+  "x": 211.96859739381912,
+  "y": -305.70134726379115
+ },
+ "side_earth_spell_2": {
+  "definition": "side_earth_spell_2",
+  "x": 213.69955682675544,
+  "y": -224.57181348523756
+ },
+ "side_earth_spell_2_up_1": {
+  "definition": "side_earth_spell_2_up_1",
+  "x": 240.21559769875424,
+  "y": -242.02782200034412
+ },
+ "side_earth_spell_2_up_2": {
+  "definition": "side_earth_spell_2_up_2",
+  "x": 244.31175294575723,
+  "y": -280.5276588370054
+ },
+ "side_earth_spell_3": {
+  "definition": "side_earth_spell_3",
+  "x": 252.18148571732294,
+  "y": -390.67825414451164
+ },
+ "side_earth_spell_3_up_1": {
+  "definition": "side_earth_spell_3_up_1",
+  "x": 253.89498434844216,
+  "y": -426.09076136746296
+ },
+ "side_earth_spell_3_up_2": {
+  "definition": "side_earth_spell_3_up_2",
+  "x": 288.21410043936146,
+  "y": -403.6689637660167
+ },
+ "side_earth_spell_4": {
+  "definition": "side_earth_spell_4",
+  "x": 316.8167085951955,
+  "y": -340.37064085333066
+ },
+ "side_earth_spell_4_up_1": {
+  "definition": "side_earth_spell_4_up_1",
+  "x": 320.5644219790268,
+  "y": -378.489697827104
+ },
+ "side_earth_spell_4_up_2": {
+  "definition": "side_earth_spell_4_up_2",
+  "x": 350.7249634685277,
+  "y": -350.7249634685275
+ },
+ "side_earth_passive_1": {
+  "definition": "side_earth_passive_1",
+  "x": 135.64314321436186,
+  "y": -207.6172866091071
+ },
+ "side_earth_passive_2": {
+  "definition": "side_earth_passive_2",
+  "x": 167.9658297631838,
+  "y": -182.45952984693668
+ },
+ "side_earth_passive_3": {
+  "definition": "side_earth_passive_3",
+  "x": 213.9437169616753,
+  "y": -341.52172108465163
+ },
+ "side_earth_passive_4": {
+  "definition": "side_earth_passive_4",
+  "x": 278.55116966446894,
+  "y": -291.2357221883267
+ },
+ "side_fire_root": {
+  "definition": "side_fire_root",
+  "x": -40.26273418138075,
+  "y": -117.2813379708787,
+  "root": true
+ },
+ "side_fire_spell_1": {
+  "definition": "side_fire_spell_1",
+  "x": -129.20237675354002,
+  "y": -281.79202586524036
+ },
+ "side_fire_spell_1_up_1": {
+  "definition": "side_fire_spell_1_up_1",
+  "x": -148.61374869262764,
+  "y": -306.911964086649
+ },
+ "side_fire_spell_1_up_2": {
+  "definition": "side_fire_spell_1_up_2",
+  "x": -139.98708636459477,
+  "y": -344.65579300390624
+ },
+ "side_fire_spell_2": {
+  "definition": "side_fire_spell_2",
+  "x": -71.12141521449298,
+  "y": -301.7312451468818
+ },
+ "side_fire_spell_2_up_1": {
+  "definition": "side_fire_spell_2_up_1",
+  "x": -71.23210067196678,
+  "y": -333.47711740666523
+ },
+ "side_fire_spell_2_up_2": {
+  "definition": "side_fire_spell_2_up_2",
+  "x": -101.22248892246462,
+  "y": -357.96369611504116
+ },
+ "side_fire_spell_3": {
+  "definition": "side_fire_spell_3",
+  "x": -189.1325390302471,
+  "y": -424.7986378038094
+ },
+ "side_fire_spell_3_up_1": {
+  "definition": "side_fire_spell_3_up_1",
+  "x": -217.8415080682957,
+  "y": -445.6019270184215
+ },
+ "side_fire_spell_3_up_2": {
+  "definition": "side_fire_spell_3_up_2",
+  "x": -180.29995339965959,
+  "y": -462.0691796734344
+ },
+ "side_fire_spell_4": {
+  "definition": "side_fire_spell_4",
+  "x": -111.66457547859096,
+  "y": -451.3934232830448
+ },
+ "side_fire_spell_4_up_1": {
+  "definition": "side_fire_spell_4_up_1",
+  "x": -141.5267672275562,
+  "y": -475.38003129929336
+ },
+ "side_fire_spell_4_up_2": {
+  "definition": "side_fire_spell_4_up_2",
+  "x": -101.7868097290346,
+  "y": -485.4435552823678
+ },
+ "side_fire_passive_1": {
+  "definition": "side_fire_passive_1",
+  "x": -99.62046531393642,
+  "y": -227.11178501045424
+ },
+ "side_fire_passive_2": {
+  "definition": "side_fire_passive_2",
+  "x": -60.88040081091818,
+  "y": -240.41126595295393
+ },
+ "side_fire_passive_3": {
+  "definition": "side_fire_passive_3",
+  "x": -168.89441455654125,
+  "y": -365.9011843812523
+ },
+ "side_fire_passive_4": {
+  "definition": "side_fire_passive_4",
+  "x": -91.45973469781666,
+  "y": -392.4845435542717
+ },
+ "side_forcemaster_root": {
+  "definition": "side_forcemaster_root",
+  "x": -20.40972919481102,
+  "y": 122.30880162193756,
+  "root": true
+ },
+ "side_forcemaster_spell_1": {
+  "definition": "side_forcemaster_spell_1",
+  "x": -20.488081140966926,
+  "y": 309.3222244378201
+ },
+ "side_forcemaster_spell_1_up_1": {
+  "definition": "side_forcemaster_spell_1_up_1",
+  "x": -15.372058155365025,
+  "y": 340.6533426051593
+ },
+ "side_forcemaster_spell_1_up_2": {
+  "definition": "side_forcemaster_spell_1_up_2",
+  "x": -40.92305820979769,
+  "y": 369.74221196227717
+ },
+ "side_forcemaster_spell_2": {
+  "definition": "side_forcemaster_spell_2",
+  "x": -81.05878169568426,
+  "y": 299.21476218597803
+ },
+ "side_forcemaster_spell_2_up_1": {
+  "definition": "side_forcemaster_spell_2_up_1",
+  "x": -96.0708018829277,
+  "y": 327.1871040025435
+ },
+ "side_forcemaster_spell_2_up_2": {
+  "definition": "side_forcemaster_spell_2_up_2",
+  "x": -81.34936592877195,
+  "y": 362.996254337406
+ },
+ "side_forcemaster_spell_3": {
+  "definition": "side_forcemaster_spell_3",
+  "x": -35.84470065228422,
+  "y": 463.6163903866516
+ },
+ "side_forcemaster_spell_3_up_1": {
+  "definition": "side_forcemaster_spell_3_up_1",
+  "x": -20.49718722741156,
+  "y": 495.57629616010126
+ },
+ "side_forcemaster_spell_3_up_2": {
+  "definition": "side_forcemaster_spell_3_up_2",
+  "x": -61.35154510959663,
+  "y": 492.19100754957435
+ },
+ "side_forcemaster_spell_4": {
+  "definition": "side_forcemaster_spell_4",
+  "x": -116.6334599726091,
+  "y": 450.1351308383048
+ },
+ "side_forcemaster_spell_4_up_1": {
+  "definition": "side_forcemaster_spell_4_up_1",
+  "x": -101.78680972903487,
+  "y": 485.44355528236775
+ },
+ "side_forcemaster_spell_4_up_2": {
+  "definition": "side_forcemaster_spell_4_up_2",
+  "x": -141.52676722755643,
+  "y": 475.38003129929325
+ },
+ "side_forcemaster_passive_1": {
+  "definition": "side_forcemaster_passive_1",
+  "x": -20.479677677138504,
+  "y": 247.15295426565413
+ },
+ "side_forcemaster_passive_2": {
+  "definition": "side_forcemaster_passive_2",
+  "x": -60.88040081091828,
+  "y": 240.41126595295393
+ },
+ "side_forcemaster_passive_3": {
+  "definition": "side_forcemaster_passive_3",
+  "x": -25.611510487569632,
+  "y": 402.18534350538573
+ },
+ "side_forcemaster_passive_4": {
+  "definition": "side_forcemaster_passive_4",
+  "x": -106.36555935296246,
+  "y": 388.70987610753014
+ },
+ "side_frost_root": {
+  "definition": "side_frost_root",
+  "x": 0,
+  "y": -124,
+  "root": true
+ },
+ "side_frost_spell_1": {
+  "definition": "side_frost_spell_1",
+  "x": -30.704114377643435,
+  "y": -308.47569978895353
+ },
+ "side_frost_spell_1_up_1": {
+  "definition": "side_frost_spell_1_up_1",
+  "x": -40.907294035750574,
+  "y": -338.537432634373
+ },
+ "side_frost_spell_1_up_2": {
+  "definition": "side_frost_spell_1_up_2",
+  "x": -20.492646852381945,
+  "y": -371.43512411319364
+ },
+ "side_frost_spell_2": {
+  "definition": "side_frost_spell_2",
+  "x": 30.704114377643435,
+  "y": -308.47569978895353
+ },
+ "side_frost_spell_2_up_1": {
+  "definition": "side_frost_spell_2_up_1",
+  "x": 40.907294035750574,
+  "y": -338.537432634373
+ },
+ "side_frost_spell_2_up_2": {
+  "definition": "side_frost_spell_2_up_2",
+  "x": 20.492646852381945,
+  "y": -371.43512411319364
+ },
+ "side_frost_spell_3": {
+  "definition": "side_frost_spell_3",
+  "x": -40.95292416765643,
+  "y": -463.1931109182413
+ },
+ "side_frost_spell_3_up_1": {
+  "definition": "side_frost_spell_3_up_1",
+  "x": -61.35154510959641,
+  "y": -492.19100754957435
+ },
+ "side_frost_spell_3_up_2": {
+  "definition": "side_frost_spell_3_up_2",
+  "x": -20.497187227411352,
+  "y": -495.5762961601013
+ },
+ "side_frost_spell_4": {
+  "definition": "side_frost_spell_4",
+  "x": 40.95292416765643,
+  "y": -463.1931109182413
+ },
+ "side_frost_spell_4_up_1": {
+  "definition": "side_frost_spell_4_up_1",
+  "x": 20.497187227411352,
+  "y": -495.5762961601013
+ },
+ "side_frost_spell_4_up_2": {
+  "definition": "side_frost_spell_4_up_2",
+  "x": 61.35154510959641,
+  "y": -492.19100754957435
+ },
+ "side_frost_passive_1": {
+  "definition": "side_frost_passive_1",
+  "x": -20.479677677138415,
+  "y": -247.15295426565413
+ },
+ "side_frost_passive_2": {
+  "definition": "side_frost_passive_2",
+  "x": 20.479677677138415,
+  "y": -247.15295426565413
+ },
+ "side_frost_passive_3": {
+  "definition": "side_frost_passive_3",
+  "x": -40.935328964553705,
+  "y": -400.9155757046161
+ },
+ "side_frost_passive_4": {
+  "definition": "side_frost_passive_4",
+  "x": 40.935328964553705,
+  "y": -400.9155757046161
+ },
+ "side_paladin_root": {
+  "definition": "side_paladin_root",
+  "x": 113.55589250522713,
+  "y": 49.81023265696819,
+  "root": true
+ },
+ "side_paladin_spell_1": {
+  "definition": "side_paladin_spell_1",
+  "x": 294.82752005149763,
+  "y": 95.7952682562336
+ },
+ "side_paladin_spell_1_up_1": {
+  "definition": "side_paladin_spell_1_up_1",
+  "x": 326.45582372993687,
+  "y": 98.52712901941459
+ },
+ "side_paladin_spell_1_up_2": {
+  "definition": "side_paladin_spell_1_up_2",
+  "x": 348.3821817253044,
+  "y": 130.4371705317046
+ },
+ "side_paladin_spell_2": {
+  "definition": "side_paladin_spell_2",
+  "x": 270.160115524456,
+  "y": 152.03128618745745
+ },
+ "side_paladin_spell_2_up_1": {
+  "definition": "side_paladin_spell_2_up_1",
+  "x": 293.59127803174744,
+  "y": 173.4507465065664
+ },
+ "side_paladin_spell_2_up_2": {
+  "definition": "side_paladin_spell_2_up_2",
+  "x": 331.9185767660426,
+  "y": 167.97040929165075
+ },
+ "side_paladin_spell_3": {
+  "definition": "side_paladin_spell_3",
+  "x": 440.63049833361043,
+  "y": 148.5589577853658
+ },
+ "side_paladin_spell_3_up_1": {
+  "definition": "side_paladin_spell_3_up_1",
+  "x": 475.38003129929336,
+  "y": 141.52676722755615
+ },
+ "side_paladin_spell_3_up_2": {
+  "definition": "side_paladin_spell_3_up_2",
+  "x": 462.0691796734344,
+  "y": 180.29995339965953
+ },
+ "side_paladin_spell_4": {
+  "definition": "side_paladin_spell_4",
+  "x": 407.7292938049953,
+  "y": 223.56614898789988
+ },
+ "side_paladin_spell_4_up_1": {
+  "definition": "side_paladin_spell_4_up_1",
+  "x": 445.6019270184216,
+  "y": 217.84150806829567
+ },
+ "side_paladin_spell_4_up_2": {
+  "definition": "side_paladin_spell_4_up_2",
+  "x": 426.0907613674631,
+  "y": 253.89498434844205
+ },
+ "side_paladin_passive_1": {
+  "definition": "side_paladin_passive_1",
+  "x": 234.5626759417574,
+  "y": 80.5254683627615
+ },
+ "side_paladin_passive_2": {
+  "definition": "side_paladin_passive_2",
+  "x": 218.10949029920928,
+  "y": 118.03495347319425
+ },
+ "side_paladin_passive_3": {
+  "definition": "side_paladin_passive_3",
+  "x": 383.5913248225692,
+  "y": 123.55847004906698
+ },
+ "side_paladin_passive_4": {
+  "definition": "side_paladin_passive_4",
+  "x": 350.7042561191184,
+  "y": 198.53343481624395
+ },
+ "side_priest_root": {
+  "definition": "side_priest_root",
+  "x": 123.57647713282707,
+  "y": 10.2398388385692,
+  "root": true
+ },
+ "side_priest_spell_1": {
+  "definition": "side_priest_spell_1",
+  "x": 309.9576245476654,
+  "y": -5.125522877571228
+ },
+ "side_priest_spell_1_up_1": {
+  "definition": "side_priest_spell_1_up_1",
+  "x": 340.75925323222276,
+  "y": -12.811375282062954
+ },
+ "side_priest_spell_1_up_2": {
+  "definition": "side_priest_spell_1_up_2",
+  "x": 371.85875421328194,
+  "y": 10.250215360956219
+ },
+ "side_priest_spell_2": {
+  "definition": "side_priest_spell_2",
+  "x": 304.88657321043854,
+  "y": 56.072965642954
+ },
+ "side_priest_spell_2_up_1": {
+  "definition": "side_priest_spell_2_up_1",
+  "x": 334.00305809918973,
+  "y": 68.72377449172357
+ },
+ "side_priest_spell_2_up_2": {
+  "definition": "side_priest_spell_2_up_2",
+  "x": 368.47421548515126,
+  "y": 51.09552350844777
+ },
+ "side_priest_spell_3": {
+  "definition": "side_priest_spell_3",
+  "x": 464.99293728158074,
+  "y": -2.562865241842786
+ },
+ "side_priest_spell_3_up_1": {
+  "definition": "side_priest_spell_3_up_1",
+  "x": 495.57629616010126,
+  "y": -20.497187227411445
+ },
+ "side_priest_spell_3_up_2": {
+  "definition": "side_priest_spell_3_up_2",
+  "x": 495.5762961601013,
+  "y": 20.497187227411246
+ },
+ "side_priest_spell_4": {
+  "definition": "side_priest_spell_4",
+  "x": 458.2292059356946,
+  "y": 79.06323309568617
+ },
+ "side_priest_spell_4_up_1": {
+  "definition": "side_priest_spell_4_up_1",
+  "x": 492.19100754957435,
+  "y": 61.351545109596344
+ },
+ "side_priest_spell_4_up_2": {
+  "definition": "side_priest_spell_4_up_2",
+  "x": 485.4435552823678,
+  "y": 101.78680972903456
+ },
+ "side_priest_passive_1": {
+  "definition": "side_priest_passive_1",
+  "x": 248,
+  "y": -1.518562030942718e-14
+ },
+ "side_priest_passive_2": {
+  "definition": "side_priest_passive_2",
+  "x": 244.61760324387515,
+  "y": 40.81945838962199
+ },
+ "side_priest_passive_3": {
+  "definition": "side_priest_passive_3",
+  "x": 402.9266584246494,
+  "y": -7.68816823085055
+ },
+ "side_priest_passive_4": {
+  "definition": "side_priest_passive_4",
+  "x": 396.16583307947457,
+  "y": 73.90285989355147
+ },
+ "side_rogue_root": {
+  "definition": "side_rogue_root",
+  "x": -91.22976492346834,
+  "y": 83.98291488159187,
+  "root": true
+ },
+ "side_rogue_spell_1": {
+  "definition": "side_rogue_spell_1",
+  "x": -206.15761735529284,
+  "y": 231.51465786508783
+ },
+ "side_rogue_spell_1_up_1": {
+  "definition": "side_rogue_spell_1_up_1",
+  "x": -221.36432745151325,
+  "y": 259.3816387717897
+ },
+ "side_rogue_spell_1_up_2": {
+  "definition": "side_rogue_spell_1_up_2",
+  "x": -259.3944100069662,
+  "y": 266.64309489866395
+ },
+ "side_rogue_spell_2": {
+  "definition": "side_rogue_spell_2",
+  "x": -247.7482790374266,
+  "y": 186.33515565773786
+ },
+ "side_rogue_spell_2_up_1": {
+  "definition": "side_rogue_spell_2_up_1",
+  "x": -276.77584024249217,
+  "y": 199.18869008571357
+ },
+ "side_rogue_spell_2_up_2": {
+  "definition": "side_rogue_spell_2_up_2",
+  "x": -287.1529941408712,
+  "y": 236.4892343341082
+ },
+ "side_rogue_spell_3": {
+  "definition": "side_rogue_spell_3",
+  "x": -313.0455861186818,
+  "y": 343.84220365105114
+ },
+ "side_rogue_spell_3_up_1": {
+  "definition": "side_rogue_spell_3_up_1",
+  "x": -320.5644219790265,
+  "y": 378.4896978271041
+ },
+ "side_rogue_spell_3_up_2": {
+  "definition": "side_rogue_spell_3_up_2",
+  "x": -350.72496346852745,
+  "y": 350.72496346852773
+ },
+ "side_rogue_spell_4": {
+  "definition": "side_rogue_spell_4",
+  "x": -368.5189078045621,
+  "y": 283.58211260679445
+ },
+ "side_rogue_spell_4_up_1": {
+  "definition": "side_rogue_spell_4_up_1",
+  "x": -378.4896978271039,
+  "y": 320.56442197902686
+ },
+ "side_rogue_spell_4_up_2": {
+  "definition": "side_rogue_spell_4_up_2",
+  "x": -403.66896376601665,
+  "y": 288.2141004393615
+ },
+ "side_rogue_passive_1": {
+  "definition": "side_rogue_passive_1",
+  "x": -167.9658297631838,
+  "y": 182.45952984693665
+ },
+ "side_rogue_passive_2": {
+  "definition": "side_rogue_passive_2",
+  "x": -195.7068463303056,
+  "y": 152.32475274703762
+ },
+ "side_rogue_passive_3": {
+  "definition": "side_rogue_passive_3",
+  "x": -267.2384312710404,
+  "y": 301.6498315129538
+ },
+ "side_rogue_passive_4": {
+  "definition": "side_rogue_passive_4",
+  "x": -322.6879191432997,
+  "y": 241.41563089196868
+ },
+ "side_tundra_hunter_root": {
+  "definition": "side_tundra_hunter_root",
+  "x": -120.20563297647696,
+  "y": -30.440200405459105,
+  "root": true
+ },
+ "side_tundra_hunter_spell_1": {
+  "definition": "side_tundra_hunter_spell_1",
+  "x": -306.57383988645523,
+  "y": -45.96173079067094
+ },
+ "side_tundra_hunter_spell_1_up_1": {
+  "definition": "side_tundra_hunter_spell_1_up_1",
+  "x": -338.22042423015745,
+  "y": -43.45048484852954
+ },
+ "side_tundra_hunter_spell_1_up_2": {
+  "definition": "side_tundra_hunter_spell_1_up_2",
+  "x": -365.09995548989946,
+  "y": -71.3163550756307
+ },
+ "side_tundra_hunter_spell_2": {
+  "definition": "side_tundra_hunter_spell_2",
+  "x": -291.49901093601,
+  "y": -105.49088407690931
+ },
+ "side_tundra_hunter_spell_2_up_1": {
+  "definition": "side_tundra_hunter_spell_2_up_1",
+  "x": -318.1361302222012,
+  "y": -122.76156828275954
+ },
+ "side_tundra_hunter_spell_2_up_2": {
+  "definition": "side_tundra_hunter_spell_2_up_2",
+  "x": -355.0386606991768,
+  "y": -111.04750969263036
+ },
+ "side_tundra_hunter_spell_3": {
+  "definition": "side_tundra_hunter_spell_3",
+  "x": -459.0728734445462,
+  "y": -74.00741089490728
+ },
+ "side_tundra_hunter_spell_3_up_1": {
+  "definition": "side_tundra_hunter_spell_3_up_1",
+  "x": -492.19100754957435,
+  "y": -61.35154510959637
+ },
+ "side_tundra_hunter_spell_3_up_2": {
+  "definition": "side_tundra_hunter_spell_3_up_2",
+  "x": -485.44355528236787,
+  "y": -101.78680972903456
+ },
+ "side_tundra_hunter_spell_4": {
+  "definition": "side_tundra_hunter_spell_4",
+  "x": -438.96617636627155,
+  "y": -153.406962053146
+ },
+ "side_tundra_hunter_spell_4_up_1": {
+  "definition": "side_tundra_hunter_spell_4_up_1",
+  "x": -475.38003129929336,
+  "y": -141.52676722755623
+ },
+ "side_tundra_hunter_spell_4_up_2": {
+  "definition": "side_tundra_hunter_spell_4_up_2",
+  "x": -462.06917967343435,
+  "y": -180.29995339965959
+ },
+ "side_tundra_hunter_passive_1": {
+  "definition": "side_tundra_hunter_passive_1",
+  "x": -244.61760324387512,
+  "y": -40.81945838962203
+ },
+ "side_tundra_hunter_passive_2": {
+  "definition": "side_tundra_hunter_passive_2",
+  "x": -234.5626759417574,
+  "y": -80.52546836276153
+ },
+ "side_tundra_hunter_passive_3": {
+  "definition": "side_tundra_hunter_passive_3",
+  "x": -398.6966948794069,
+  "y": -58.736236619629295
+ },
+ "side_tundra_hunter_passive_4": {
+  "definition": "side_tundra_hunter_passive_4",
+  "x": -378.5986365351423,
+  "y": -138.10167418873397
+ },
+ "side_war_archer_root": {
+  "definition": "side_war_archer_root",
+  "x": -123.57647713282707,
+  "y": 10.2398388385692,
+  "root": true
+ },
+ "side_war_archer_spell_1": {
+  "definition": "side_war_archer_spell_1",
+  "x": -304.8865732104385,
+  "y": 56.0729656429542
+ },
+ "side_war_archer_spell_1_up_1": {
+  "definition": "side_war_archer_spell_1_up_1",
+  "x": -334.00305809918973,
+  "y": 68.72377449172366
+ },
+ "side_war_archer_spell_1_up_2": {
+  "definition": "side_war_archer_spell_1_up_2",
+  "x": -368.4742154851512,
+  "y": 51.09552350844794
+ },
+ "side_war_archer_spell_2": {
+  "definition": "side_war_archer_spell_2",
+  "x": -309.9576245476653,
+  "y": -5.125522877571029
+ },
+ "side_war_archer_spell_2_up_1": {
+  "definition": "side_war_archer_spell_2_up_1",
+  "x": -340.75925323222276,
+  "y": -12.81137528206284
+ },
+ "side_war_archer_spell_2_up_2": {
+  "definition": "side_war_archer_spell_2_up_2",
+  "x": -371.8587542132819,
+  "y": 10.250215360956417
+ },
+ "side_war_archer_spell_3": {
+  "definition": "side_war_archer_spell_3",
+  "x": -458.2292059356945,
+  "y": 79.0632330956864
+ },
+ "side_war_archer_spell_3_up_1": {
+  "definition": "side_war_archer_spell_3_up_1",
+  "x": -485.4435552823678,
+  "y": 101.78680972903473
+ },
+ "side_war_archer_spell_3_up_2": {
+  "definition": "side_war_archer_spell_3_up_2",
+  "x": -492.19100754957435,
+  "y": 61.3515451095966
+ },
+ "side_war_archer_spell_4": {
+  "definition": "side_war_archer_spell_4",
+  "x": -464.9929372815808,
+  "y": -2.5628652418425304
+ },
+ "side_war_archer_spell_4_up_1": {
+  "definition": "side_war_archer_spell_4_up_1",
+  "x": -495.57629616010126,
+  "y": 20.4971872274115
+ },
+ "side_war_archer_spell_4_up_2": {
+  "definition": "side_war_archer_spell_4_up_2",
+  "x": -495.57629616010126,
+  "y": -20.497187227411217
+ },
+ "side_war_archer_passive_1": {
+  "definition": "side_war_archer_passive_1",
+  "x": -244.61760324387515,
+  "y": 40.81945838962199
+ },
+ "side_war_archer_passive_2": {
+  "definition": "side_war_archer_passive_2",
+  "x": -248,
+  "y": -1.518562030942718e-14
+ },
+ "side_war_archer_passive_3": {
+  "definition": "side_war_archer_passive_3",
+  "x": -396.1658330794745,
+  "y": 73.90285989355161
+ },
+ "side_war_archer_passive_4": {
+  "definition": "side_war_archer_passive_4",
+  "x": -402.9266584246494,
+  "y": -7.68816823085038
+ },
+ "side_warrior_root": {
+  "definition": "side_warrior_root",
+  "x": 91.22976492346834,
+  "y": 83.98291488159187,
+  "root": true
+ },
+ "side_warrior_spell_1": {
+  "definition": "side_warrior_spell_1",
+  "x": 247.74827903742673,
+  "y": 186.33515565773772
+ },
+ "side_warrior_spell_1_up_1": {
+  "definition": "side_warrior_spell_1_up_1",
+  "x": 276.7758402424922,
+  "y": 199.18869008571352
+ },
+ "side_warrior_spell_1_up_2": {
+  "definition": "side_warrior_spell_1_up_2",
+  "x": 287.1529941408714,
+  "y": 236.4892343341081
+ },
+ "side_warrior_spell_2": {
+  "definition": "side_warrior_spell_2",
+  "x": 206.157617355293,
+  "y": 231.51465786508766
+ },
+ "side_warrior_spell_2_up_1": {
+  "definition": "side_warrior_spell_2_up_1",
+  "x": 221.36432745151328,
+  "y": 259.38163877178965
+ },
+ "side_warrior_spell_2_up_2": {
+  "definition": "side_warrior_spell_2_up_2",
+  "x": 259.3944100069663,
+  "y": 266.64309489866383
+ },
+ "side_warrior_spell_3": {
+  "definition": "side_warrior_spell_3",
+  "x": 368.5189078045623,
+  "y": 283.5821126067942
+ },
+ "side_warrior_spell_3_up_1": {
+  "definition": "side_warrior_spell_3_up_1",
+  "x": 403.66896376601676,
+  "y": 288.21410043936135
+ },
+ "side_warrior_spell_3_up_2": {
+  "definition": "side_warrior_spell_3_up_2",
+  "x": 378.4896978271041,
+  "y": 320.56442197902663
+ },
+ "side_warrior_spell_4": {
+  "definition": "side_warrior_spell_4",
+  "x": 313.0455861186821,
+  "y": 343.8422036510511
+ },
+ "side_warrior_spell_4_up_1": {
+  "definition": "side_warrior_spell_4_up_1",
+  "x": 350.7249634685276,
+  "y": 350.72496346852756
+ },
+ "side_warrior_spell_4_up_2": {
+  "definition": "side_warrior_spell_4_up_2",
+  "x": 320.5644219790267,
+  "y": 378.489697827104
+ },
+ "side_warrior_passive_1": {
+  "definition": "side_warrior_passive_1",
+  "x": 195.7068463303056,
+  "y": 152.32475274703762
+ },
+ "side_warrior_passive_2": {
+  "definition": "side_warrior_passive_2",
+  "x": 167.9658297631838,
+  "y": 182.45952984693665
+ },
+ "side_warrior_passive_3": {
+  "definition": "side_warrior_passive_3",
+  "x": 322.6879191432998,
+  "y": 241.4156308919686
+ },
+ "side_warrior_passive_4": {
+  "definition": "side_warrior_passive_4",
+  "x": 267.2384312710405,
+  "y": 301.64983151295377
+ },
+ "side_water_root": {
+  "definition": "side_water_root",
+  "x": 103.80864330455354,
+  "y": -67.82157160718096,
+  "root": true
+ },
+ "side_water_spell_1": {
+  "definition": "side_water_spell_1",
+  "x": 241.45195641625477,
+  "y": -194.42467112679654
+ },
+ "side_water_spell_1_up_1": {
+  "definition": "side_water_spell_1_up_1",
+  "x": 261.0380211119297,
+  "y": -219.40864051802458
+ },
+ "side_water_spell_1_up_2": {
+  "definition": "side_water_spell_1_up_2",
+  "x": 299.7446193058838,
+  "y": -220.31151399137264
+ },
+ "side_water_spell_2": {
+  "definition": "side_water_spell_2",
+  "x": 275.03907402751963,
+  "y": -143.01576052339328
+ },
+ "side_water_spell_2_up_1": {
+  "definition": "side_water_spell_2_up_1",
+  "x": 305.7863593651823,
+  "y": -150.91620995170643
+ },
+ "side_water_spell_2_up_2": {
+  "definition": "side_water_spell_2_up_2",
+  "x": 322.1614502078111,
+  "y": -186.00000000000006
+ },
+ "side_water_spell_3": {
+  "definition": "side_water_spell_3",
+  "x": 365.3706189796617,
+  "y": -287.6270341717184
+ },
+ "side_water_spell_3_up_1": {
+  "definition": "side_water_spell_3_up_1",
+  "x": 378.48969782710395,
+  "y": -320.56442197902675
+ },
+ "side_water_spell_3_up_2": {
+  "definition": "side_water_spell_3_up_2",
+  "x": 403.66896376601665,
+  "y": -288.21410043936146
+ },
+ "side_water_spell_4": {
+  "definition": "side_water_spell_4",
+  "x": 410.16887186611586,
+  "y": -219.0582035717398
+ },
+ "side_water_spell_4_up_1": {
+  "definition": "side_water_spell_4_up_1",
+  "x": 426.09076136746296,
+  "y": -253.89498434844216
+ },
+ "side_water_spell_4_up_2": {
+  "definition": "side_water_spell_4_up_2",
+  "x": 445.6019270184215,
+  "y": -217.8415080682958
+ },
+ "side_water_passive_1": {
+  "definition": "side_water_passive_1",
+  "x": 195.7068463303056,
+  "y": -152.32475274703762
+ },
+ "side_water_passive_2": {
+  "definition": "side_water_passive_2",
+  "x": 218.10949029920926,
+  "y": -118.03495347319426
+ },
+ "side_water_passive_3": {
+  "definition": "side_water_passive_3",
+  "x": 313.2435778139293,
+  "y": -253.5497208800057
+ },
+ "side_water_passive_4": {
+  "definition": "side_water_passive_4",
+  "x": 358.0225833725259,
+  "y": -185.0103505084587
+ }
+}

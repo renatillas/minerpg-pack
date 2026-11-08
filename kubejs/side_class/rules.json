@@ -1,0 +1,144 @@
+{
+ "spells": {
+  "air": [
+   "side_air_spell_1",
+   "side_air_spell_2",
+   "side_air_spell_3",
+   "side_air_spell_4"
+  ],
+  "arcane": [
+   "side_arcane_spell_1",
+   "side_arcane_spell_2",
+   "side_arcane_spell_3",
+   "side_arcane_spell_4"
+  ],
+  "archer": [
+   "side_archer_spell_1",
+   "side_archer_spell_2",
+   "side_archer_spell_3",
+   "side_archer_spell_4"
+  ],
+  "bard": [
+   "side_bard_spell_1",
+   "side_bard_spell_2",
+   "side_bard_spell_3",
+   "side_bard_spell_4"
+  ],
+  "berserker": [
+   "side_berserker_spell_1",
+   "side_berserker_spell_2",
+   "side_berserker_spell_3",
+   "side_berserker_spell_4"
+  ],
+  "deadeye": [
+   "side_deadeye_spell_1",
+   "side_deadeye_spell_2",
+   "side_deadeye_spell_3",
+   "side_deadeye_spell_4"
+  ],
+  "earth": [
+   "side_earth_spell_1",
+   "side_earth_spell_2",
+   "side_earth_spell_3",
+   "side_earth_spell_4"
+  ],
+  "fire": [
+   "side_fire_spell_1",
+   "side_fire_spell_2",
+   "side_fire_spell_3",
+   "side_fire_spell_4"
+  ],
+  "forcemaster": [
+   "side_forcemaster_spell_1",
+   "side_forcemaster_spell_2",
+   "side_forcemaster_spell_3",
+   "side_forcemaster_spell_4"
+  ],
+  "frost": [
+   "side_frost_spell_1",
+   "side_frost_spell_2",
+   "side_frost_spell_3",
+   "side_frost_spell_4"
+  ],
+  "paladin": [
+   "side_paladin_spell_1",
+   "side_paladin_spell_2",
+   "side_paladin_spell_3",
+   "side_paladin_spell_4"
+  ],
+  "priest": [
+   "side_priest_spell_1",
+   "side_priest_spell_2",
+   "side_priest_spell_3",
+   "side_priest_spell_4"
+  ],
+  "rogue": [
+   "side_rogue_spell_1",
+   "side_rogue_spell_2",
+   "side_rogue_spell_3",
+   "side_rogue_spell_4"
+  ],
+  "tundra_hunter": [
+   "side_tundra_hunter_spell_1",
+   "side_tundra_hunter_spell_2",
+   "side_tundra_hunter_spell_3",
+   "side_tundra_hunter_spell_4"
+  ],
+  "war_archer": [
+   "side_war_archer_spell_1",
+   "side_war_archer_spell_2",
+   "side_war_archer_spell_3",
+   "side_war_archer_spell_4"
+  ],
+  "warrior": [
+   "side_warrior_spell_1",
+   "side_warrior_spell_2",
+   "side_warrior_spell_3",
+   "side_warrior_spell_4"
+  ],
+  "water": [
+   "side_water_spell_1",
+   "side_water_spell_2",
+   "side_water_spell_3",
+   "side_water_spell_4"
+  ]
+ },
+ "main_roots": {
+  "8aixa7er1htsbd9a": "air",
+  "rinftzrm9ta3baw4": "arcane",
+  "vlk9z73h53bx2if3": "archer",
+  "vlxhkx7zsfqwqx66": "bard",
+  "cqray6yfemf8au4q": "berserker",
+  "nbd4thedgpfpztaj": "deadeye",
+  "r7vtgvr1ujnnv2od": "earth",
+  "859rwa4j1tbw2qs7": "fire",
+  "5zb4m5r2slga9c7e": "forcemaster",
+  "apwqaumpk4dhakie": "frost",
+  "7fs13k83hcuhzjkk": "paladin",
+  "lk37egonho34cey2": "priest",
+  "5qc3hkud5vtm6xaw": "rogue",
+  "cmrh2mlkna5uqfog": "tundra_hunter",
+  "5ubm74e5m5vhz773": "war_archer",
+  "ysh5ghgnzszqbi39": "warrior",
+  "b7p70wd9hp5bh4ae": "water"
+ },
+ "side_roots": {
+  "side_air_root": "air",
+  "side_arcane_root": "arcane",
+  "side_archer_root": "archer",
+  "side_bard_root": "bard",
+  "side_berserker_root": "berserker",
+  "side_deadeye_root": "deadeye",
+  "side_earth_root": "earth",
+  "side_fire_root": "fire",
+  "side_forcemaster_root": "forcemaster",
+  "side_frost_root": "frost",
+  "side_paladin_root": "paladin",
+  "side_priest_root": "priest",
+  "side_rogue_root": "rogue",
+  "side_tundra_hunter_root": "tundra_hunter",
+  "side_war_archer_root": "war_archer",
+  "side_warrior_root": "warrior",
+  "side_water_root": "water"
+ }
+}
