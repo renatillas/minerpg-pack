@@ -1897,6 +1897,10 @@ file = "kubejs/client_scripts/minerpg_mastery_tooltips.js"
 hash = "510062ff5ee85748ee5510666141ff4a7e163e49fa89bae6456df1bf98cf93de"
 
 [[files]]
+file = "kubejs/client_scripts/minerpg_side_class_tooltips.js"
+hash = "5351a0e0d9605a5e75dea64b4230084fe96ae8899c8d221666892930e92bc938"
+
+[[files]]
 file = "kubejs/client_scripts/minerpg_tooltips.js"
 hash = "bfc254543db0784a8d2dbd352315483a64cf74b54bd05f2e39694bdfbf765fa1"
 
@@ -5002,7 +5006,7 @@ hash = "fdce27b733cd69f1d1794d142c20bf443e8db44657481aa1904853214b7de1b6"
 
 [[files]]
 file = "kubejs/data/minerpg/puffish_skills/categories/side_skills/definitions.json"
-hash = "e7b74a0100dc21de7334956e654d439464f8657176faf4a6e7e021191099f280"
+hash = "da77d7b593ec273594495d33c8c3aab36bea5e8e333f00319f9b486550d97a37"
 
 [[files]]
 file = "kubejs/data/minerpg/puffish_skills/categories/side_skills/experience.json"

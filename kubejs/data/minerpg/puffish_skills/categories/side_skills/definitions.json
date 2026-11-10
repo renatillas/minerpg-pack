@@ -34,7 +34,7 @@
    "translate": "spell.elemental_wizards_rpg.wind_aeroblast.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_air_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -143,7 +143,7 @@
    "translate": "spell.elemental_wizards_rpg.wind_twister.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_air_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -252,7 +252,7 @@
    "translate": "spell.elemental_wizards_rpg.wind_updraft.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_air_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -361,7 +361,7 @@
    "translate": "spell.elemental_wizards_rpg.wind_windfield.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_air_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -648,7 +648,7 @@
    "translate": "spell.wizards.arcane_missile.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_arcane_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -757,7 +757,7 @@
    "translate": "spell.wizards.arcane_explosion.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_arcane_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -866,7 +866,7 @@
    "translate": "spell.wizards.arcane_beam.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_arcane_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -975,7 +975,7 @@
    "translate": "spell.wizards.arcane_barrage.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_arcane_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -1262,7 +1262,7 @@
    "translate": "spell.archers.power_shot.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_archer_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -1371,7 +1371,7 @@
    "translate": "spell.archers.entangling_roots.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_archer_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -1480,7 +1480,7 @@
    "translate": "spell.archers.barrage.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_archer_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -1589,7 +1589,7 @@
    "translate": "spell.archers.spirit_wolf.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_archer_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -1876,7 +1876,7 @@
    "translate": "spell.bards_rpg.magical_ballad.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_bard_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -1985,7 +1985,7 @@
    "translate": "spell.bards_rpg.vicious_mockery.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_bard_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -2094,7 +2094,7 @@
    "translate": "spell.bards_rpg.encore.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_bard_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -2203,7 +2203,7 @@
    "translate": "spell.bards_rpg.wardens_paean.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_bard_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -2490,7 +2490,7 @@
    "translate": "spell.berserker_rpg.apprehend.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_berserker_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -2599,7 +2599,7 @@
    "translate": "spell.berserker_rpg.wild_rage.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_berserker_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -2708,7 +2708,7 @@
    "translate": "spell.berserker_rpg.outrage.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_berserker_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -2817,7 +2817,7 @@
    "translate": "spell.berserker_rpg.bloody_strike.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_berserker_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -3104,7 +3104,7 @@
    "translate": "spell.archers_expansion.fast_shot.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_deadeye_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -3213,7 +3213,7 @@
    "translate": "spell.archers_expansion.bouncing_arrow.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_deadeye_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -3322,7 +3322,7 @@
    "translate": "spell.archers_expansion.venom_cask.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_deadeye_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -3431,7 +3431,7 @@
    "translate": "spell.archers_expansion.disabling_shot.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_deadeye_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -3718,7 +3718,7 @@
    "translate": "spell.elemental_wizards_rpg.terra_stone_flesh.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_earth_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -3827,7 +3827,7 @@
    "translate": "spell.elemental_wizards_rpg.terra_impale.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_earth_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -3936,7 +3936,7 @@
    "translate": "spell.elemental_wizards_rpg.terra_shattering_stone.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_earth_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -4045,7 +4045,7 @@
    "translate": "spell.elemental_wizards_rpg.terra_drip_circle.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_earth_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -4332,7 +4332,7 @@
    "translate": "spell.wizards.fire_breath.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_fire_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -4441,7 +4441,7 @@
    "translate": "spell.wizards.fire_slash.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_fire_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -4550,7 +4550,7 @@
    "translate": "spell.wizards.fire_meteor.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_fire_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -4659,7 +4659,7 @@
    "translate": "spell.wizards.fire_storm.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_fire_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -4946,7 +4946,7 @@
    "translate": "spell.forcemaster_rpg.stonehand.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_forcemaster_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -5055,7 +5055,7 @@
    "translate": "spell.forcemaster_rpg.baraqijal_esna.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_forcemaster_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -5164,7 +5164,7 @@
    "translate": "spell.forcemaster_rpg.belial_smashing.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_forcemaster_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -5273,7 +5273,7 @@
    "translate": "spell.forcemaster_rpg.nen_sphere.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_forcemaster_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -5560,7 +5560,7 @@
    "translate": "spell.wizards.frost_nova.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_frost_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -5669,7 +5669,7 @@
    "translate": "spell.wizards.frost_spikes.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_frost_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -5778,7 +5778,7 @@
    "translate": "spell.wizards.frost_shield.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_frost_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -5887,7 +5887,7 @@
    "translate": "spell.wizards.frost_lance.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_frost_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -6174,7 +6174,7 @@
    "translate": "spell.paladins.flash_heal.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_paladin_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -6283,7 +6283,7 @@
    "translate": "spell.paladins.blessed_strikes.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_paladin_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -6392,7 +6392,7 @@
    "translate": "spell.paladins.divine_protection.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_paladin_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -6501,7 +6501,7 @@
    "translate": "spell.paladins.judgement.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_paladin_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -6788,7 +6788,7 @@
    "translate": "spell.paladins.holy_beam.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_priest_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -6897,7 +6897,7 @@
    "translate": "spell.paladins.levitate.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_priest_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -7006,7 +7006,7 @@
    "translate": "spell.paladins.circle_of_healing.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_priest_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -7115,7 +7115,7 @@
    "translate": "spell.paladins.penance.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_priest_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -7402,7 +7402,7 @@
    "translate": "spell.rogues.shock_powder.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_rogue_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -7522,7 +7522,7 @@
    "translate": "spell.rogues.slice_and_dice.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_rogue_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -7631,7 +7631,7 @@
    "translate": "spell.rogues.shadow_step.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_rogue_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -7740,7 +7740,7 @@
    "translate": "spell.rogues.bear_trap.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_rogue_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -8027,7 +8027,7 @@
    "translate": "spell.archers_expansion.frozen_pact.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_tundra_hunter_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -8136,7 +8136,7 @@
    "translate": "spell.archers_expansion.frozen_shot.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_tundra_hunter_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -8245,7 +8245,7 @@
    "translate": "spell.archers_expansion.arctic_volley.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_tundra_hunter_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -8354,7 +8354,7 @@
    "translate": "spell.archers_expansion.frozen_fusillade.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_tundra_hunter_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -8641,7 +8641,7 @@
    "translate": "spell.archers_expansion.smoldering_arrow.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_war_archer_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -8750,7 +8750,7 @@
    "translate": "spell.archers_expansion.dual_shot.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_war_archer_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -8859,7 +8859,7 @@
    "translate": "spell.archers_expansion.explosive_barrel.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_war_archer_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -8968,7 +8968,7 @@
    "translate": "spell.archers_expansion.point_blank_shot.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_war_archer_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -9255,7 +9255,7 @@
    "translate": "spell.rogues.throw.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_warrior_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -9364,7 +9364,7 @@
    "translate": "spell.rogues.throw_net.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_warrior_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -9473,7 +9473,7 @@
    "translate": "spell.rogues.charge.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_warrior_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -9582,7 +9582,7 @@
    "translate": "spell.rogues.shout.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_warrior_spell_4"
   },
   "icon": {
    "type": "texture",
@@ -9869,7 +9869,7 @@
    "translate": "spell.elemental_wizards_rpg.aqua_waterball.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_water_spell_1"
   },
   "icon": {
    "type": "texture",
@@ -9978,7 +9978,7 @@
    "translate": "spell.elemental_wizards_rpg.aqua_bubble_beam.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_water_spell_2"
   },
   "icon": {
    "type": "texture",
@@ -10087,7 +10087,7 @@
    "translate": "spell.elemental_wizards_rpg.aqua_hydro_beam.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_water_spell_3"
   },
   "icon": {
    "type": "texture",
@@ -10196,7 +10196,7 @@
    "translate": "spell.elemental_wizards_rpg.aqua_springwater.name"
   },
   "description": {
-   "text": "Side-class spell. You can learn 2 of this class's 4 side-class spells."
+   "skill_definition_id": "side_water_spell_4"
   },
   "icon": {
    "type": "texture",

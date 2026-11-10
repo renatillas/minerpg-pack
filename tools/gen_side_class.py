@@ -128,6 +128,9 @@ def build(mods):
         main_root_id = by_def[f'{cls}_root'][0]
         rules['main_roots'][main_root_id] = cls
 
+        def sid_for(cls_, suffix_):
+            return f'side_{cls_}_{suffix_}'
+
         def node(suffix, main_def, definition=None):
             sid = f'side_{cls}_{suffix}'
             pos = by_def[main_def][1]
@@ -148,7 +151,9 @@ def build(mods):
             ns, path = tome.split(':')
             spell = node(suffix, f'{cls}_{slot}_root', {
                 'title': {'translate': f'spell.{ns}.{path}.name'},
-                'description': {'text': 'Side-class spell. You can learn 2 of this class\'s 4 side-class spells.'},
+                # Filled in on the client by kubejs/client_scripts/minerpg_side_class_tooltips.js (the class tree's own
+                # tooltip list only knows its own skills): the tome spell's card, the bonus upgrade, the 2-of-4 rule.
+                'description': {'skill_definition_id': sid_for(cls, suffix)},
                 'icon': {'type': 'texture', 'data': {'texture': f'{ns}:textures/spell/{path}.png'}},
                 # The tome spell itself, plus the main tree's own upgrade on this node.
                 'rewards': [spell_reward([tome, modifier_id])],
