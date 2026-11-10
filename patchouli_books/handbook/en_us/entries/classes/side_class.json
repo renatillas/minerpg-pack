@@ -10,7 +10,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Each side class offers its root, its first four tome spells, two upgrades for each, and four early passives. You can learn $(l)two$() of the four spells; you cast them with any weapon.$(br2)Arrow spells still need a bow, and caster spells still use runes. Tier-4 spells, Mastery and weapon talents stay with your main class."
+      "text": "Each side class offers its root, its first four tome spells, two upgrades for each, and four early passives. You can learn $(l)two$() of the four spells, and cast them with any weapon. A third is refused and its point comes back.$(br2)Arrow spells still need a bow, and caster spells still use runes. Tier-4 spells, Mastery and weapon talents stay with your main class."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To change your side class or its spells, use an $(item)Orb of Oblivion$(): it resets all your talent tabs, the Side Class one included."
     }
   ]
 }

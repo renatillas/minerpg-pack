@@ -575,10 +575,10 @@ GETTING_STARTED = [
         'Your quest book stays your own. When a boss falls, everyone nearby gets their own trophy or key.'],
         [t_check('Join or form a party')], [r_xp(30)], deps=['gs_welcome'], subtitle='Party HUD (H)'),
     Q('gs_jobs', 'Pick Your Trades', -6, 0, [
-        'Press J and join two jobs. Each grows from its own work and pays a &6Gold Coin&r every level.',
-        'Two jobs is the most anyone can hold. To swap one, type &e/leavejob <job>&r: it costs 5 gold and deletes that job\'s level and power-ups for good. Buy power-ups in the same menu with the &6coins&r you carry. Coins also come from quests, chests and bosses.',
+        'Press J and join up to three jobs. Each grows from its own work and pays a &6Gold Coin&r every level.',
+        'Three jobs is the most anyone can hold. To swap one, type &e/leavejob <job>&r: it costs 5 gold and deletes that job\'s level and power-ups for good. Buy power-ups in the same menu with the &6coins&r you carry. Coins also come from quests, chests and bosses.',
         'The quests below show one way into each job.'],
-        [t_check('Join two jobs')], [r_xp(30), r_coins(3)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
+        [t_check('Join your jobs')], [r_xp(30), r_coins(3)], deps=['gs_welcome'], subtitle='Jobs menu (J)'),
     Q('gs_job_gates', 'Masters of a Trade', -13.5, 0, [
         'Some things only a trained hand can &omake&r:',
         'Class gear is made by three trades, by tier: anyone can make tier 1; diamond tier 2 needs level 10, netherite tier 3 20, Armory sets 25.',

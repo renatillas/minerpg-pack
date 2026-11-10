@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(li)Choose your folk.$(li)Open the quest book ($(k:key.ftbquests.quests)) and claim $(item)Choose Your Calling$(): your class kit.$(li)Tome in its slot, weapon in hand, cast.$(li)Join two jobs ($(k:key.jobsplus.open_menu)).$(li)Find your friends ($(k:key.partyhud.open_screen))."
+      "text": "$(li)Choose your folk.$(li)Open the quest book ($(k:key.ftbquests.quests)) and claim $(item)Choose Your Calling$(): your class kit.$(li)Tome in its slot, weapon in hand, cast.$(li)Join up to three jobs ($(k:key.jobsplus.open_menu)).$(li)Find your friends ($(k:key.partyhud.open_screen))."
     },
     {
       "type": "patchouli:text",

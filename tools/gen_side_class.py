@@ -12,8 +12,10 @@ definitions, rewards) and the tree's spell files in the mods (each "tier_N_spell
 whose spell_pattern names the tome spell it belongs to). No mod ships the minerpg namespace, so this is plain data
 (the main tree needs KubeJS' generateData('last'); this one doesn't).
 
-Rules data can't express (2 of the 4 spells, side class != main class, the 9-point gate) are in
-kubejs/server_scripts/minerpg_side_class.js, which reads pack/kubejs/side_class/rules.json written here.
+Rules data can't express: 2 of the 4 spells and side class != main class are in
+kubejs/startup_scripts/minerpg_side_class.js (reads pack/kubejs/side_class/rules.json, written here); the 9-point gate
+is in kubejs/server_scripts/minerpg_side_class.js. rules.json keys the main tree's roots by their skill ids, so rerun
+this whenever gen_mastery.py or a class-tree mod update changes the main tree.
 """
 
 import glob
@@ -95,9 +97,14 @@ def tome_spell(tree_spells, tomes, node_ids):
         if ref in tomes:
             return ref
     for ref in refs:
-        for tome in tomes:
-            if ':' in ref and tome.split(':')[0] == ref.split(':')[0] and tome.split(':')[1] in ref.split(':')[1]:
-                return tome
+        if ':' not in ref:
+            continue
+        found = sorted(t for t in tomes
+                       if t.split(':')[0] == ref.split(':')[0] and t.split(':')[1] in ref.split(':')[1])
+        if len(found) > 1:
+            raise SystemExit(f'{ref}: more than one tome spell matches ({", ".join(found)}); pick one by hand')
+        if found:
+            return found[0]
     return None
 
 

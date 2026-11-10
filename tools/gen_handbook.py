@@ -94,7 +94,7 @@ E['getting_started'] = [
         text('$(li)Choose your folk.'
              f'$(li)Open the quest book ({k("key.ftbquests.quests")}) and claim $(item)Choose Your Calling$(): your class kit.'
              '$(li)Tome in its slot, weapon in hand, cast.'
-             f'$(li)Join two jobs ({k("key.jobsplus.open_menu")}).'
+             f'$(li)Join up to three jobs ({k("key.jobsplus.open_menu")}).'
              f'$(li)Find your friends ({k("key.partyhud.open_screen")}).'),
         text('You wake in a plains village with a map to the nearest tavern. For your first three minutes the '
              'world goes easy on you: take the time to look around.$(br2)The $(item)gazebo$() holds a Spell '
@@ -197,8 +197,8 @@ E['classes'] = [
              'the tome.'),
         text('Your first kit comes from the quest $(item)Choose Your Calling$(): tome, starter weapon, one '
              'armor piece, and runes or arrows.$(br2)You can learn a second class later by making its tome '
-             'at a Spell Binding Table. Your main talent tree follows one class; a $(l)Side Class$() adds a little of '
-             'another.'),
+             'at a Spell Binding Table and swapping tomes. That is not the same as a $(l)Side Class$(): your talents '
+             'follow one main class, and the Side Class tab adds a little of another on top.'),
     ]),
     ('casting', 'Casting', 'runes:arcane_stone', [
         text('Right-click casts your weapon\'s first spell. While you hold a spell weapon, the hotbar keys '
@@ -229,9 +229,11 @@ E['classes'] = [
              'there and spend up to 8 points on it. The tab has its own experience bar, filled by the same kills '
              'as your class tree.$(br2)Your side class can never be your main class.'),
         text('Each side class offers its root, its first four tome spells, two upgrades for each, and four early '
-             'passives. You can learn $(l)two$() of the four spells; you cast them with any weapon.$(br2)Arrow '
-             'spells still need a bow, and caster spells still use runes. Tier-4 spells, Mastery and weapon '
-             'talents stay with your main class.'),
+             'passives. You can learn $(l)two$() of the four spells, and cast them with any weapon. A third is '
+             'refused and its point comes back.$(br2)Arrow spells still need a bow, and caster spells still use '
+             'runes. Tier-4 spells, Mastery and weapon talents stay with your main class.'),
+        text('To change your side class or its spells, use an $(item)Orb of Oblivion$(): it resets all your '
+             'talent tabs, the Side Class one included.'),
     ]),
     ('callings', 'The Callings', 'minecraft:book', [
         text('$(li)$(l)Wizards$(): Arcane, Fire, Frost.'
@@ -266,8 +268,8 @@ E['professions'] = [
              'link a shop to a bank account: there is no way to take coins out of one.'),
     ]),
     ('jobs', 'Jobs', 'minecraft:iron_pickaxe', [
-        text(f'Press {k("key.jobsplus.open_menu")} to open the Jobs menu and join two jobs. A job levels up '
-             'from its own work and pays one $(item)Gold Coin$() per level.$(br2)Two jobs is the most anyone can '
+        text(f'Press {k("key.jobsplus.open_menu")} to open the Jobs menu and join up to three jobs. A job levels up '
+             'from its own work and pays one $(item)Gold Coin$() per level.$(br2)Three jobs is the most anyone can '
              'hold. To swap one, type $(thing)/leavejob <job>$(): it costs 5 gold and deletes that job\'s level '
              'and power-ups for good.'),
         text('$(l)Coins$() are the money of the realm: 9 $(item)Copper$() make 1 $(item)Iron$(), 9 Iron make 1 '

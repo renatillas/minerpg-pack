@@ -9,7 +9,7 @@ ClientEvents.tick(event => {
   if (guardPlayer == null) return
   // var, not const: Rhino rejects const/let re-declared on every run inside a try block.
   try {
-    // Every tick: the list is at most two jobs, and a tooltip can be drawn in the same frame as an update.
+    // Every tick: the list is at most three jobs, and a tooltip can be drawn in the same frame as an update.
     var guardJobs = guardPlayer.jobsplus$getJobs().iterator()
     while (guardJobs.hasNext()) {
       var guardJob = guardJobs.next()

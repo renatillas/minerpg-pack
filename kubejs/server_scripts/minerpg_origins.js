@@ -8,7 +8,7 @@
 // - Searing Strikes (Emberkin) and Chilling Strikes (Rimeborn): a hit on a creature (melee or the player's own
 //   projectile) sets it alight for 3 s / slows it for 2 s. Never on players: PvP is on and friends get hit by accident.
 // - Feign Death (Gravebound): every mob within 32 blocks that was targeting the player forgets them.
-// - One free Orb of Origin per player who already had an origin before the redesign, so they can switch.
+// - One free Orb of Origin per player at their next login (2026-11-10 gift).
 
 const $OrResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 const $OrTagKey = Java.loadClass('net.minecraft.tags.TagKey')
@@ -16,7 +16,6 @@ const $OrRegistries = Java.loadClass('net.minecraft.core.registries.Registries')
 const $OrBlockPos = Java.loadClass('net.minecraft.core.BlockPos')
 const $OrNeoOriginsAPI = Java.loadClass('com.cyberday1.neoorigins.api.NeoOriginsAPI')
 const $OrMob = Java.loadClass('net.minecraft.world.entity.Mob')
-const $OrStats = Java.loadClass('net.minecraft.stats.Stats')
 const $OrComponent = Java.loadClass('net.minecraft.network.chat.Component')
 const $OrFormat = Java.loadClass('net.minecraft.ChatFormatting')
 const $OrCallbacks = Java.loadClass('com.cyberday1.neoorigins.compat.kubejs.KubeJSCallbacks')
@@ -32,9 +31,9 @@ const OR_VEIN_MAX = 32
 const OR_FEIGN_RADIUS = 32
 const OR_SEARING_POWER = 'minerpg:emberkin_searing_strikes'
 const OR_CHILLING_POWER = 'minerpg:rimeborn_chilling_strikes'
-const OR_ORB_FLAG = 'minerpg_origins_redesign_orb'
-// Players with less play time than this are new: they pick their origin on the join screen anyway.
-const OR_NEW_PLAYER_TICKS = 10 * 60 * 20
+// One free Orb of Origin per player, at their next login (designer, 2026-11-10). Replaces the 1.6.0 gift (flag
+// minerpg_origins_redesign_orb, existing players only): everyone gets exactly one from this flag.
+const OR_ORB_FLAG = 'minerpg_orb_gift_2026_11_10'
 
 function orHasPower(player, id) {
   var found = false
@@ -123,9 +122,8 @@ PlayerEvents.loggedIn(event => {
   var data = player.persistentData
   if (data.getBoolean(OR_ORB_FLAG)) return
   data.putBoolean(OR_ORB_FLAG, true)
-  var played = player.getStats().getValue($OrStats.CUSTOM.get($OrStats.PLAY_TIME))
-  if (played < OR_NEW_PLAYER_TICKS) return
   player.give('neoorigins:orb_of_origin')
-  player.tell($OrComponent.literal('The origins have changed: every folk is stronger, with a real drawback. '
-    + 'Here is a free Orb of Origin if you want to choose again (the handbook has the new folk).').withStyle($OrFormat.GOLD))
+  // withStyle is overloaded (formatting / style / operator); Rhino needs the one named.
+  player.tell($OrComponent.literal('A gift: one Orb of Origin, to choose your folk again if you like. '
+    + 'The handbook describes every folk.')['withStyle(net.minecraft.ChatFormatting)']($OrFormat.GOLD))
 })

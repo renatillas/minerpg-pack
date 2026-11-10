@@ -17,6 +17,23 @@ function scUpdateGate(player) {
   if (main.get().getPointsTotal(player) >= SC_GATE_POINTS) side.get().unlock(player)
 }
 
+// rules.json keys the main tree's roots by skill id. If a class-tree mod update (or a gen_mastery.py rerun) changes
+// those ids, the "main root of your side class" rule would silently stop working; say so in the log instead.
+ServerEvents.loaded(event => {
+  var main = $SCGateSkillsAPI.getCategory($SCGateResourceLocation.parse(SC_GATE_MAIN_ID))
+  var rules = JsonIO.read('kubejs/side_class/rules.json')
+  if (!main.isPresent() || rules == null) {
+    console.error('[minerpg] side class: class tree or kubejs/side_class/rules.json missing')
+    return
+  }
+  var missing = []
+  for (var id in rules.main_roots) if (!main.get().getSkill(String(id)).isPresent()) missing.push(String(rules.main_roots[id]))
+  if (missing.length > 0) {
+    console.error('[minerpg] side class: main tree roots not found for ' + missing.join(', ')
+      + '; rerun pack/tools/gen_side_class.py')
+  }
+})
+
 PlayerEvents.loggedIn(event => scUpdateGate(event.player))
 
 var scTicks = 0

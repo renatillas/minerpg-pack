@@ -154,7 +154,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "ec7e87f3bd2153668ab1739d0ca841631a39089aafdf0b90923b1ca6f9e7ff5d"
+hash = "b8516bf2ade33e1a30f3e5420348a5b4889b1a02a670792963b21571da591fc1"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -182,7 +182,7 @@ hash = "cfc19b7cc8077b199f0eb5ccde8e297dcd1a612300f58375a4efc0e45c5e6024"
 
 [[files]]
 file = "config/jobsplus-common.yaml"
-hash = "743f48e7beb9d52664104afc4e506a6bc0a3964b6a33c006338b8de4d03d5ed7"
+hash = "770b9d87e4e18358560ffd6f0088ca5072bcc226f405fd1d04c524553b5b8c54"
 
 [[files]]
 file = "config/lightmanscurrency-common.txt"
@@ -1890,7 +1890,7 @@ hash = "203447bd341355e8402d3d63baa4ba9d604c54f645444c63ab8e068f80388485"
 
 [[files]]
 file = "kubejs/client_scripts/minerpg_jobs_guard.js"
-hash = "ed6d16b2bedd7713288b6844ac8a6de273c4e5ba905d22928ad0c19790d29ebb"
+hash = "440940ad6ff1621963659ce60f19abb12460396fd10eb18f464d1e4cb4f9d6ca"
 
 [[files]]
 file = "kubejs/client_scripts/minerpg_mastery_tooltips.js"
@@ -7938,7 +7938,7 @@ hash = "050de67384573e2ac6d6f5120ad470a0d5634be090cb8311f23e0e0c963666a3"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_jobs.js"
-hash = "53420b3cd993b586ab06312f464ef2320ec5ea72ee09e4e56d90f1a07d3a6a2c"
+hash = "78e3dae14d0afce7af1583bb95295783842e0f169511056f8b577310c8558c5c"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_market.js"
@@ -7950,7 +7950,7 @@ hash = "029bda98de8ec5be1b3773d5d62015a67fbf28fa194ca86455504d3200859982"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_origins.js"
-hash = "f7cf6916c8e1eeb71d034f0d5367290a6fcd7a34d1b5d885f668a359c01e43ca"
+hash = "d7b54aaad8bac09419ac3390e52d920762e497e2e5a33972df7c906f70615f1f"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_recipe_viewer.js"
@@ -7966,7 +7966,7 @@ hash = "2556d275ab050ef1de0b13bc313b2cfb11c7d1280ce734a9933026150fbefc34"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_side_class.js"
-hash = "ff0f43652c7d07b75dcc6951b19b584277031bf5c623ff54ed52ecac431f5c63"
+hash = "fbef9ccda73d920cd076d18822c041a09348006669e3a6e75c895bdc62b68e27"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_soft_locks.js"
@@ -8828,7 +8828,7 @@ hash = "b383c657898cc3bc97c74f240fdaf63afc011a871fc87f41b464e9e3492d8089"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/how.json"
-hash = "b938ed6ce86f6dbc65f33d5c9dad463da4659c44a5afb038555346da4f57e245"
+hash = "a951dc2a3365bfdfd34950e769a743cbd6003068033e7b04a52183f4f2b9a41a"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/merchants.json"
@@ -8836,7 +8836,7 @@ hash = "c5665de0d77cbdfa4de2bee5b3da2133090a52686f7742e5f114c43154d16435"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/side_class.json"
-hash = "4d7b2244a570153998533b0d9604e21b2c8779ad1d4bf577cacf5c11d96a2a6a"
+hash = "7eaa12bf6bbbe9705669f57a8e1a2176baaefce11dc9fad4ae2a22d42ae8ec2c"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/talents.json"
@@ -8980,7 +8980,7 @@ hash = "94ff499839371453601a006f55ba2ee4deda211a51963ac0073b04d8040167f8"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/getting_started/first_hour.json"
-hash = "c9bd7e5a3ac09ba692b770a96883426b2f5cdc760d80824b2f69145ed586b8d1"
+hash = "8b42c65e17699d49dec53009743401979bcad34aa714ba55d082f904cecdd015"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/getting_started/house_rules.json"
@@ -9064,7 +9064,7 @@ hash = "d1d5f5176518f2a28ca12ff9a9b4ead30c6e3ee10c14bd07c5e330737145177e"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/jobs.json"
-hash = "d5b5c91eb178f83fa3c2a1c40c2cf35610693d2a89f662c3409eb1b29c0d5352"
+hash = "2afd0e2670b66af25036da79e396a7af4223d3cf46035369b2c84efa33f5582d"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/professions/keg.json"

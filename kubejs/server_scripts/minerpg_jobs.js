@@ -7,7 +7,7 @@
 // This script:
 //   - /minerpg_jobs command: give Gold Coins or add job XP (Jobs+'s own /job command can only *set*
 //     values), and silently grant an advancement (used by the generated Arc actions);
-//   - /leavejob: a player drops one of their (at most two) jobs for 5 gold;
+//   - /leavejob: a player drops one of their (at most three) jobs for 5 gold;
 //   - job XP for RPG activities that have no Arc action: Apotheosis reforging and salvaging
 //     (Smith); Spell Binding Table binds and spell book creation (Enchanter); gem cutting at the
 //     Jeweler's Kit and the Apotheosis Gem Cutting Table, Apotheosis socketing and sigils, and
@@ -263,7 +263,7 @@ ServerEvents.commandRegistry(event => {
 
   // /leavejob <job>: warns what the player loses; /leavejob <job> confirm (within a minute) takes LEAVE_JOB_PRICE
   // gold and drops the job, its level and its power-ups for good, freeing the slot for another (designer,
-  // 2026-10-31: two jobs at most; 2026-11-01: leaving costs gold).
+  // 2026-10-31: two jobs at most, three since 2026-11-10; 2026-11-01: leaving costs gold).
   let leave = Commands.literal('leavejob').requires(source => source.isPlayer())
   Object.keys(JOB_NAMES).forEach(key => {
     leave = leave.then(Commands.literal(key)
