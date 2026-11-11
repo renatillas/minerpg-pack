@@ -183,11 +183,12 @@ def r_cmd(command, title=None):
     return r
 
 
-# +1 Class Skills talent point. Kills stop giving class points at 18 (level_limit in
-# kubejs/data/skill_tree_rpgs/puffish_skills/categories/class_skills/experience.json); the last
-# four come from the chapter bosses (Harbinger, Netherite Monstrosity, Ignis, Ender Guardian).
-def r_talent_point():
-    return r_cmd('/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses', '+1 talent point')
+# +1 Ascension point (pack 1.8.0). Only bosses give them: the first Wildlands boss (c1_fate), The Harbinger, Netherite
+# Monstrosity, Ignis, Ender Guardian, Ender Dragon and the Wither. The class tree is levelled by kills alone (18 points,
+# kubejs/data/skill_tree_rpgs/puffish_skills/categories/class_skills/). Design:
+# docs/superpowers/specs/2026-11-11-minerpg-ascension-design.md.
+def r_ascension_point():
+    return r_cmd('/puffish_skills points add @s minerpg:ascension 1 minerpg:bosses', '+1 Ascension point')
 
 
 # Gold Coins (RPG Coins), the pack's money: the Jobs menu spends the coins a player carries
@@ -803,6 +804,14 @@ CHAPTER_1 = [
     Q('c1_diamonds', 'Glittering Hoard', 6.5, 2.5, [
         'Diamond gear is the next step. Bring back a handful.'],
         [t_item('minecraft:diamond', 8)], [r_item('runes:medium_rune_pouch'), r_xp(100)], deps=['c1_wild'], subtitle='Side task'),
+    Q('c1_fate', 'Awaken Your Fate', 12.75, -2, [
+        'You have beaten one of the great Wildlands bosses. Something in you answers.',
+        'Your reward is your first &dAscension point&r. Only bosses give them.',
+        'Open your talents (N) and the &dAscension&r tab: choose one of your class\'s two Fates. Each is a big gift with a real drawback, and the other one locks.',
+        'Rogue, Warrior, Priest and Paladin have Fates now; other classes keep their points until theirs arrive. The handbook has every Fate.'],
+        [t_check('Feel your Fate stir')], [r_ascension_point()],
+        deps=['c1_remnant', 'c1_maledictus', 'c1_leviathan'], subtitle='Ascension', dependency_requirement='one_completed',
+        shape='gear', icon={'id': 'minecraft:nether_star'}),
     # Frontier
     Q('c1_frontier', 'The Frontier', 13, 0, [
         'The &cFrontier&r is the extreme: frozen peaks, ice spikes, the deep dark and the deep ocean. The hardest lands of this world.',
@@ -823,9 +832,9 @@ CHAPTER_1 = [
     Q('c1_harbinger', 'The Harbinger', 16.5, 0, [
         'Defeat &4The Harbinger&r, the factory\'s iron herald.',
         'Everyone nearby at the kill receives a &6Nether Sigil&r: use it on an obsidian frame to open the way to the Nether.',
-        'The sigil raises your world tier to &eAscent&r. Your reward includes netherite upgrade templates for the next tier and a talent point.'],
+        'The sigil raises your world tier to &eAscent&r. Your reward includes netherite upgrade templates for the next tier and an &dAscension point&r: your first Transformation.'],
         [t_item('minerpg:nether_sigil', title='Nether Sigil')],
-        [r_item('minecraft:netherite_upgrade_smithing_template', 2), r_item('minecraft:diamond', 6), r_xp(500), r_talent_point(), r_coins(5)],
+        [r_item('minecraft:netherite_upgrade_smithing_template', 2), r_item('minecraft:diamond', 6), r_xp(500), r_ascension_point(), r_coins(5)],
         deps=['c1_factory'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
     # Jobs (optional).
     Q('c1_job_10', 'Journeyman', 0, 4.5, [
@@ -903,8 +912,8 @@ CHAPTER_2 = [
         'A forge built of blackstone and lava, guarded by its own creation.'],
         [t_struct('cataclysm:soul_black_smith', 'Find the Soul Blacksmith')], [r_xp(300)], deps=['c2_fortress', 'c2_bastion'], dependency_requirement='one_completed'),
     Q('c2_monstrosity', 'Forged in Fury', 9, 0, [
-        'Defeat the &6Netherite Monstrosity&r. Beating it earns you a talent point.'],
-        [t_item('minerpg:trophy_netherite_monstrosity', title='Molten Heart')], [r_item('minecraft:netherite_scrap', 4), r_xp(500), r_talent_point()],
+        'Defeat the &6Netherite Monstrosity&r. Beating it earns you an &dAscension point&r.'],
+        [t_item('minerpg:trophy_netherite_monstrosity', title='Molten Heart')], [r_item('minecraft:netherite_scrap', 4), r_xp(500), r_ascension_point()],
         deps=['c2_smith'], subtitle='Boss', shape='gear', size=Double(1.5)),
     Q('c2_flame_eye', 'Eye of Flame', 10.5, -1.5, [
         'An Eye of Flame shows the way to the burning arena. Craft one.'],
@@ -915,9 +924,9 @@ CHAPTER_2 = [
     Q('c2_ignis', 'Ignis', 12.5, 0, [
         'Defeat &cIgnis&r, the burning champion.',
         'Everyone nearby at the kill receives a &dVoid Shard&r. Eyes of Ender need it, and it is never used up.',
-        'The shard raises your world tier to &eSummit&r. Your reward includes a talent point and a book of &bSpell Infinity&r: put it on your weapon at an anvil and your spells stop using runes.'],
+        'The shard raises your world tier to &eSummit&r. Your reward includes an &dAscension point&r and a book of &bSpell Infinity&r: put it on your weapon at an anvil and your spells stop using runes.'],
         [t_item('minerpg:void_shard', title='Void Shard')],
-        [r_item('minecraft:diamond_block', 1), r_item('minecraft:netherite_ingot', 1), r_xp(700), r_talent_point(),
+        [r_item('minecraft:diamond_block', 1), r_item('minecraft:netherite_ingot', 1), r_xp(700), r_ascension_point(),
          r_item('minecraft:enchanted_book', 1, SPELL_INFINITY_BOOK), r_coins(5)],
         deps=['c2_arena'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
     Q('c2_job_20', 'Expert', 0, 3, [
@@ -943,8 +952,9 @@ CHAPTER_3 = [
         [t_dim('minecraft:the_end', 'Enter the End')], [r_item('minecraft:golden_apple', 3)], deps=['c3_stronghold']),
     Q('c3_dragon', 'The Last Dragon', 4.5, 0, [
         'Destroy the crystals and slay the &5Ender Dragon&r. Everyone nearby earns a Dragonscale.',
-        'With both the Dragonscale and the Citadel Keystone, your world tier rises to &ePinnacle&r.'],
-        [t_item('minerpg:trophy_ender_dragon', title='Dragonscale')], [r_item('minecraft:netherite_ingot', 2), r_xp(1500)],
+        'With both the Dragonscale and the Citadel Keystone, your world tier rises to &ePinnacle&r.',
+        'The dragon also earns you an &dAscension point&r, to empower your Ultimate.'],
+        [t_item('minerpg:trophy_ender_dragon', title='Dragonscale')], [r_item('minecraft:netherite_ingot', 2), r_xp(1500), r_ascension_point()],
         deps=['c3_end'], subtitle='Boss', shape='gear', size=Double(2.0)),
     Q('c3_city', 'Cities Among the Stars', 6, -1.5, [
         'Past the outer islands stand purple cities. Take a gateway and find one.'],
@@ -965,9 +975,9 @@ CHAPTER_3 = [
         'A broken fortress drifting at the edge of the void.'],
         [t_struct('cataclysm:ruined_citadel', 'Find the Ruined Citadel')], [r_xp(400)], deps=['c3_dragon']),
     Q('c3_guardian', 'Guardian of the Void', 10.5, 0, [
-        'Defeat the &5Ender Guardian&r, last warden of the citadel. Beating it earns you your last talent point.',
+        'Defeat the &5Ender Guardian&r, last warden of the citadel. Beating it earns you an &dAscension point&r: your Ultimate.',
         'With both the Citadel Keystone and the Dragonscale, your world tier rises to &ePinnacle&r.'],
-        [t_item('minerpg:trophy_ender_guardian', title='Citadel Keystone')], [r_item('minecraft:netherite_ingot', 2), r_item('minecraft:enchanted_golden_apple'), r_xp(1800), r_talent_point(), r_coins(5)],
+        [t_item('minerpg:trophy_ender_guardian', title='Citadel Keystone')], [r_item('minecraft:netherite_ingot', 2), r_item('minecraft:enchanted_golden_apple'), r_xp(1800), r_ascension_point(), r_coins(5)],
         deps=['c3_citadel'], subtitle='Chapter boss', shape='gear', size=Double(2.0)),
     Q('c3_job_30', 'Master', 0, 2, [
         'Reach &6level 30&r in any of your jobs.',
@@ -986,8 +996,8 @@ CHAPTER_3 = [
         [t_item('minerpg:trophy_obsidilith', title='Obsidian Heartstone')], [r_item('minecraft:netherite_ingot', 1), r_xp(500), r_coins(8)],
         deps=['c3_end'], subtitle='Optional boss', shape='gear', optional=True),
     Q('c3_wither', 'The Wither', 10.5, 3, [
-        'Summon and destroy &8the Wither&r with your whole group. Everyone nearby earns an Ashen Skull Shard.'],
-        [t_item('minerpg:trophy_wither', title='Ashen Skull Shard')], [r_item('minecraft:beacon'), r_xp(800)],
+        'Summon and destroy &8the Wither&r with your whole group. Everyone nearby earns an Ashen Skull Shard, and an &dAscension point&r to empower your Ultimate.'],
+        [t_item('minerpg:trophy_wither', title='Ashen Skull Shard')], [r_item('minecraft:beacon'), r_xp(800), r_ascension_point()],
         deps=['c3_wither_call'], subtitle='Optional raid', shape='gear', size=Double(1.5), optional=True),
 ]
 
@@ -1702,6 +1712,35 @@ def resolve_adv(task):
     return task
 
 
+# Ascension (pack 1.8.0): the seven boss points. Four replaced the class-tree "+1 talent point" in the same reward
+# slot, so players who claimed it don't claim again (reward ids are reward:<quest>:<index>); the migration in
+# kubejs/server_scripts/minerpg_ascension.js moves those points. Dragon and Wither got a new last reward instead.
+ASCENSION_MOVED = {'c1_harbinger': 3, 'c2_monstrosity': 2, 'c2_ignis': 3, 'c3_guardian': 3}
+ASCENSION_ADDED = ['c3_dragon', 'c3_wither', 'c1_fate']
+
+
+def check_ascension(chapters):
+    errors, found = [], {}
+    for _, _, _, _, quests in chapters:
+        for qd in quests:
+            for i, reward in enumerate(qd['rewards']):
+                command = reward.get('command', '')
+                if 'skill_tree_rpgs:class_skills' in command and 'minerpg:bosses' in command:
+                    errors.append(f'{qd["key"]}: still gives a class-tree boss point')
+                if 'minerpg:ascension' in command:
+                    found.setdefault(qd['key'], []).append((i, len(qd['rewards'])))
+    if sum(len(v) for v in found.values()) != 7:
+        errors.append(f'{sum(len(v) for v in found.values())} Ascension point rewards, expected 7: {sorted(found)}')
+    for key, index in ASCENSION_MOVED.items():
+        if [i for i, _ in found.get(key, [])] != [index]:
+            errors.append(f'{key}: the Ascension point must replace the talent point in reward slot {index}')
+    for key in ASCENSION_ADDED:
+        if [i for i, n in found.get(key, []) if i == n - 1] == []:
+            errors.append(f'{key}: the Ascension point must be its last reward')
+    if errors:
+        raise SystemExit('\n'.join(errors))
+
+
 def build(mods_dir=None):
     write_kit_functions()
     write_advancements()
@@ -1737,6 +1776,7 @@ def build(mods_dir=None):
     }))
 
     # Quest keys are global, so a quest can depend on one in another tab.
+    check_ascension(CHAPTERS)
     keys = {}
     for _, _, _, _, quests in CHAPTERS:
         for qd in quests:

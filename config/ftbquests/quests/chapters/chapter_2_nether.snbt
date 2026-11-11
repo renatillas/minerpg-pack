@@ -584,7 +584,7 @@
 					xp: 500
 				}
 				{
-					command: "/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses"
+					command: "/puffish_skills points add @s minerpg:ascension 1 minerpg:bosses"
 					id: "1A9543EB3DAAEE9A"
 					permission_level: 2
 					silent: true
@@ -686,7 +686,7 @@
 					xp: 700
 				}
 				{
-					command: "/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses"
+					command: "/puffish_skills points add @s minerpg:ascension 1 minerpg:bosses"
 					id: "121F3AC8B68AF412"
 					permission_level: 2
 					silent: true

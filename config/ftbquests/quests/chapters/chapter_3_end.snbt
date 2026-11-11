@@ -123,6 +123,13 @@
 					type: "xp"
 					xp: 1500
 				}
+				{
+					command: "/puffish_skills points add @s minerpg:ascension 1 minerpg:bosses"
+					id: "4C8617C58CACC7D8"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "gear"
 			size: 2.0d
@@ -342,7 +349,7 @@
 					xp: 1800
 				}
 				{
-					command: "/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses"
+					command: "/puffish_skills points add @s minerpg:ascension 1 minerpg:bosses"
 					id: "5EE93922FA92E40E"
 					permission_level: 2
 					silent: true
@@ -519,6 +526,13 @@
 					id: "52DC43F573CA60D1"
 					type: "xp"
 					xp: 800
+				}
+				{
+					command: "/puffish_skills points add @s minerpg:ascension 1 minerpg:bosses"
+					id: "791E0AE6F589BFF3"
+					permission_level: 2
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "gear"

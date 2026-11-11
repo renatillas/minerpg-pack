@@ -1014,7 +1014,7 @@
 	"quest.364D117B6870A5B2.quest_subtitle": "Endgame armor"
 	"quest.364D117B6870A5B2.title": "The Armory"
 	"quest.3666625E717DFC13.quest_desc": [
-		"Summon and destroy &8the Wither&r with your whole group. Everyone nearby earns an Ashen Skull Shard."
+		"Summon and destroy &8the Wither&r with your whole group. Everyone nearby earns an Ashen Skull Shard, and an &dAscension point&r to empower your Ultimate."
 	]
 	"quest.3666625E717DFC13.quest_subtitle": "Optional raid"
 	"quest.3666625E717DFC13.title": "The Wither"
@@ -1095,7 +1095,7 @@
 	"quest.3DFB025E3BBA5CDC.quest_desc": [
 		"Defeat &4The Harbinger&r, the factory's iron herald."
 		"Everyone nearby at the kill receives a &6Nether Sigil&r: use it on an obsidian frame to open the way to the Nether."
-		"The sigil raises your world tier to &eAscent&r. Your reward includes netherite upgrade templates for the next tier and a talent point."
+		"The sigil raises your world tier to &eAscent&r. Your reward includes netherite upgrade templates for the next tier and an &dAscension point&r: your first Transformation."
 	]
 	"quest.3DFB025E3BBA5CDC.quest_subtitle": "Chapter boss"
 	"quest.3DFB025E3BBA5CDC.title": "The Harbinger"
@@ -1269,6 +1269,7 @@
 	"quest.44A9402B363085DF.quest_desc": [
 		"Destroy the crystals and slay the &5Ender Dragon&r. Everyone nearby earns a Dragonscale."
 		"With both the Dragonscale and the Citadel Keystone, your world tier rises to &ePinnacle&r."
+		"The dragon also earns you an &dAscension point&r, to empower your Ultimate."
 	]
 	"quest.44A9402B363085DF.quest_subtitle": "Boss"
 	"quest.44A9402B363085DF.title": "The Last Dragon"
@@ -1535,7 +1536,7 @@
 	"quest.54854E6D0A86E2C6.quest_subtitle": "Frontier"
 	"quest.54854E6D0A86E2C6.title": "The Frontier"
 	"quest.551B4EC7917C7B74.quest_desc": [
-		"Defeat the &6Netherite Monstrosity&r. Beating it earns you a talent point."
+		"Defeat the &6Netherite Monstrosity&r. Beating it earns you an &dAscension point&r."
 	]
 	"quest.551B4EC7917C7B74.quest_subtitle": "Boss"
 	"quest.551B4EC7917C7B74.title": "Forged in Fury"
@@ -1911,7 +1912,7 @@
 	"quest.6AF27B410258165F.quest_subtitle": "Tier 1 armor"
 	"quest.6AF27B410258165F.title": "Elemental Apprentice Robes"
 	"quest.6B54BC29B3B37827.quest_desc": [
-		"Defeat the &5Ender Guardian&r, last warden of the citadel. Beating it earns you your last talent point."
+		"Defeat the &5Ender Guardian&r, last warden of the citadel. Beating it earns you an &dAscension point&r: your Ultimate."
 		"With both the Citadel Keystone and the Dragonscale, your world tier rises to &ePinnacle&r."
 	]
 	"quest.6B54BC29B3B37827.quest_subtitle": "Chapter boss"
@@ -1990,7 +1991,7 @@
 	"quest.71ED147E96C3CDB4.quest_desc": [
 		"Defeat &cIgnis&r, the burning champion."
 		"Everyone nearby at the kill receives a &dVoid Shard&r. Eyes of Ender need it, and it is never used up."
-		"The shard raises your world tier to &eSummit&r. Your reward includes a talent point and a book of &bSpell Infinity&r: put it on your weapon at an anvil and your spells stop using runes."
+		"The shard raises your world tier to &eSummit&r. Your reward includes an &dAscension point&r and a book of &bSpell Infinity&r: put it on your weapon at an anvil and your spells stop using runes."
 	]
 	"quest.71ED147E96C3CDB4.quest_subtitle": "Chapter boss"
 	"quest.71ED147E96C3CDB4.title": "Ignis"
@@ -2081,6 +2082,14 @@
 	]
 	"quest.7C301FD6C811E316.quest_subtitle": "Trinket slot"
 	"quest.7C301FD6C811E316.title": "Relics"
+	"quest.7D42ACC7E47654F3.quest_desc": [
+		"You have beaten one of the great Wildlands bosses. Something in you answers."
+		"Your reward is your first &dAscension point&r. Only bosses give them."
+		"Open your talents (N) and the &dAscension&r tab: choose one of your class's two Fates. Each is a big gift with a real drawback, and the other one locks."
+		"Rogue, Warrior, Priest and Paladin have Fates now; other classes keep their points until theirs arrive. The handbook has every Fate."
+	]
+	"quest.7D42ACC7E47654F3.quest_subtitle": "Ascension"
+	"quest.7D42ACC7E47654F3.title": "Awaken Your Fate"
 	"quest.7DC0800E7F0DC167.quest_desc": [
 		"Explorers draw Survey Maps that lead the party to settlements, crypts, dungeons and boss lairs, and build the waystone network. They earn experience by exploring: each new biome, each village, crypt or dungeon they walk into, each new waystone and each map they fill in. Draw a Survey Map from a map and an emerald."
 	]
@@ -2160,13 +2169,13 @@
 	"quest.7F77AC6E99CF3DA3.title": "Cut to Fit"
 	"reward.101C0F1F77A34A36.title": "Berserker"
 	"reward.113FC9A4C49E6433.title": "Map to a Small Dungeon"
-	"reward.121F3AC8B68AF412.title": "+1 talent point"
+	"reward.121F3AC8B68AF412.title": "+1 Ascension point"
 	"reward.1283E905E288BBDD.title": "Earth Mage"
 	"reward.1432181C873ED062.title": "Map to an Ancient City"
 	"reward.145975B3287423F6.title": "Rogue"
 	"reward.160FB3F4CEC75B27.title": "Map to the Sunken City"
 	"reward.19AC4242A24009D8.title": "Map to the Frosted Prison"
-	"reward.1A9543EB3DAAEE9A.title": "+1 talent point"
+	"reward.1A9543EB3DAAEE9A.title": "+1 Ascension point"
 	"reward.1B56AF9B35492A83.title": "Deadeye"
 	"reward.20F460CCC42134B7.title": "Map to a Great Dungeon"
 	"reward.24538A39D1C08953.title": "Bard"
@@ -2174,9 +2183,10 @@
 	"reward.31C569972EEB20B8.title": "Wind Mage"
 	"reward.32855D8B687FD180.title": "Map to the Ancient Factory"
 	"reward.32E8BE12F1C33A56.title": "Arcane Wizard"
-	"reward.35BE7033ECA14120.title": "+1 talent point"
+	"reward.35BE7033ECA14120.title": "+1 Ascension point"
 	"reward.3A213B34E654B328.title": "Frost Wizard"
 	"reward.47638B6BFE884E36.title": "Priest"
+	"reward.4C8617C58CACC7D8.title": "+1 Ascension point"
 	"reward.4D1BE821DDD5FA70.title": "War Archer"
 	"reward.4D34157362C8FDFC.title": "Map to an Ancient City"
 	"reward.4E79CFDAE25B9A8D.title": "Warrior"
@@ -2185,9 +2195,11 @@
 	"reward.564563EC1D693729.title": "Paladin"
 	"reward.5E06483D725045B2.title": "Map to an Ancient City"
 	"reward.5ECDDBA48C71A7D6.title": "Archer"
-	"reward.5EE93922FA92E40E.title": "+1 talent point"
+	"reward.5EE93922FA92E40E.title": "+1 Ascension point"
 	"reward.67A4AA648230E254.title": "Map to the Amethyst Nest"
+	"reward.6DF79632C1D4078B.title": "+1 Ascension point"
 	"reward.71EA04589D7BCA18.title": "Map to the Stronghold"
+	"reward.791E0AE6F589BFF3.title": "+1 Ascension point"
 	"reward.797292397D0CD70A.title": "Map to the Cursed Pyramid"
 	"reward.7ABB09364EF09AFD.title": "Water Mage"
 	"reward_table.1DF313CE425EA7B8.title": "Class starter kits"
@@ -2200,6 +2212,7 @@
 	"task.1173D251F27FCBE4.title": "Have a Hellshelf"
 	"task.11B5C5B357764DF0.title": "Explore an End castle or lighthouse"
 	"task.11CC9CE71A198EFB.title": "Abyssal Ink"
+	"task.1205123FC045AE8F.title": "Feel your Fate stir"
 	"task.1284ABB32E41FD5A.title": "Ask for directions"
 	"task.12E97CCF0E286B3E.title": "All four pieces of the Northling Suit"
 	"task.12F778CE68AE5841.title": "Reach level 20 in a job"

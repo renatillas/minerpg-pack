@@ -1035,6 +1035,36 @@
 			]
 			dependency_requirement: "one_completed"
 			icon: {
+				id: "minecraft:nether_star"
+			}
+			id: "7D42ACC7E47654F3"
+			rewards: [
+				{
+					command: "/puffish_skills points add @s minerpg:ascension 1 minerpg:bosses"
+					id: "6DF79632C1D4078B"
+					permission_level: 2
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1205123FC045AE8F"
+					type: "checkmark"
+				}
+			]
+			x: 12.75d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1EFEBF71C0647595"
+				"1957E4BC9E79A53A"
+				"14102C2355F637DA"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
 				id: "minecraft:sculk_shrieker"
 			}
 			id: "54854E6D0A86E2C6"
@@ -1172,7 +1202,7 @@
 					xp: 500
 				}
 				{
-					command: "/puffish_skills points add @s skill_tree_rpgs:class_skills 1 minerpg:bosses"
+					command: "/puffish_skills points add @s minerpg:ascension 1 minerpg:bosses"
 					id: "35BE7033ECA14120"
 					permission_level: 2
 					silent: true
