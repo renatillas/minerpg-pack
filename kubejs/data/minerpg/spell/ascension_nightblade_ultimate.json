@@ -1,0 +1,87 @@
+{
+ "school": "spell_power:physical_melee",
+ "range": 6.0,
+ "tier": 5,
+ "learn": {},
+ "active": {
+  "cast": {}
+ },
+ "release": {
+  "animation": {
+   "id": "spell_engine:dual_handed_weapon_cross"
+  },
+  "visuals": {
+   "particles": [
+    {
+     "id": "spell_engine:sweep",
+     "appearance": {
+      "motion": "FLOAT"
+     },
+     "batch": {
+      "count": 40.0,
+      "shape": "PIPE",
+      "anchor": "ENTITY",
+      "min_speed": 0.1,
+      "max_speed": 0.3,
+      "vertical_origin": 0.1,
+      "extent": 6.0
+     }
+    },
+    {
+     "id": "spell_engine:smoke_medium",
+     "appearance": {},
+     "batch": {
+      "count": 40.0,
+      "shape": "SPHERE",
+      "anchor": "ENTITY",
+      "min_speed": 0.2,
+      "max_speed": 0.4
+     }
+    }
+   ]
+  },
+  "sound": {
+   "id": "rogues:mortal_strike_impact"
+  }
+ },
+ "target": {
+  "type": "AREA",
+  "area": {
+   "vertical_range_multiplier": 0.6
+  }
+ },
+ "impacts": [
+  {
+   "action": {
+    "type": "DAMAGE",
+    "damage": {
+     "spell_power_coefficient": 2.4,
+     "knockback": 0.4
+    }
+   },
+   "target_modifiers": [
+    {
+     "conditions": [],
+     "execute": "PASS",
+     "modifier": {
+      "critical_chance_bonus": 1.0
+     }
+    },
+    {
+     "conditions": [
+      {
+       "entity_type": "minecraft:player"
+      }
+     ],
+     "execute": "DENY"
+    }
+   ]
+  }
+ ],
+ "cost": {
+  "exhaust": 0.3,
+  "cooldown": {
+   "duration": 60.0
+  }
+ }
+}

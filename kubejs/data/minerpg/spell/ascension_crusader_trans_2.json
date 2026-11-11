@@ -1,0 +1,33 @@
+{
+ "school": "spell_power:physical_melee",
+ "range": 0.0,
+ "tier": 1,
+ "type": "MODIFIER",
+ "modifiers": [
+  {
+   "spell_pattern": "paladins:judgement",
+   "effect_duration_add": 2.0,
+   "mutate_impacts": "APPEND",
+   "impacts": [
+    {
+     "action": {
+      "type": "FIRE",
+      "fire": {
+       "duration": 4.0
+      }
+     },
+     "target_modifiers": [
+      {
+       "conditions": [
+        {
+         "entity_type": "minecraft:player"
+        }
+       ],
+       "execute": "DENY"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

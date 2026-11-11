@@ -1,0 +1,43 @@
+{
+ "school": "spell_power:physical_melee",
+ "range": 0.0,
+ "tier": 1,
+ "type": "PASSIVE",
+ "passive": {
+  "triggers": [
+   {
+    "type": "MELEE_IMPACT",
+    "cap_per_tick": 1
+   }
+  ]
+ },
+ "target": {
+  "type": "FROM_TRIGGER"
+ },
+ "impacts": [
+  {
+   "action": {
+    "type": "STATUS_EFFECT",
+    "status_effect": {
+     "effect_id": "mrpg_lib:fatal_poison",
+     "duration": 6.0,
+     "apply_mode": "ADD",
+     "amplifier_cap": 4
+    }
+   },
+   "target_modifiers": [
+    {
+     "conditions": [
+      {
+       "entity_type": "minecraft:player"
+      }
+     ],
+     "execute": "DENY"
+    }
+   ]
+  }
+ ],
+ "cost": {
+  "durability": 0
+ }
+}

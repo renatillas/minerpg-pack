@@ -1,0 +1,54 @@
+{
+ "school": "spell_power:physical_melee",
+ "range": 0.0,
+ "tier": 5,
+ "learn": {},
+ "active": {
+  "cast": {}
+ },
+ "release": {
+  "animation": {
+   "id": "spell_engine:one_handed_shout_release"
+  },
+  "visuals": {
+   "particles": [
+    {
+     "id": "spell_engine:dripping_blood",
+     "appearance": {},
+     "batch": {
+      "count": 30.0,
+      "shape": "SPHERE",
+      "anchor": "ENTITY",
+      "min_speed": 0.2,
+      "max_speed": 0.4
+     }
+    }
+   ]
+  },
+  "sound": {
+   "id": "rogues:shout_release"
+  }
+ },
+ "target": {
+  "type": "CASTER"
+ },
+ "impacts": [
+  {
+   "action": {
+    "type": "STATUS_EFFECT",
+    "status_effect": {
+     "effect_id": "minecraft:speed",
+     "duration": 8.0,
+     "amplifier": 1
+    },
+    "apply_to_caster": true
+   }
+  }
+ ],
+ "cost": {
+  "exhaust": 0.3,
+  "cooldown": {
+   "duration": 90.0
+  }
+ }
+}

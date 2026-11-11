@@ -1,6 +1,6 @@
 // minerpg: tooltips for the Side Class tab's spell talents (pack 1.7.1). docs/superpowers/specs/2026-11-08-minerpg-side-class-design.md
 //
-// Same fix as minerpg_mastery_tooltips.js: a skill's description is {"skill_definition_id": <id>}, which the class tree
+// A skill's description is {"skill_definition_id": <id>}, which the class tree
 // mod looks up in a client-side list (TranslationUtil.resolvers) that it only fills for its own skills. The side tab's
 // passives and upgrades reuse the main tree's ids, so they already have tooltips; its 4 spell talents per class are new
 // (side_<class>_spell_<n>) and showed nothing but a name. Each gets: the tome spell's card (with the player's numbers),
@@ -42,7 +42,7 @@ function sideTipRegister() {
     var spellIds = defs[defId].rewards[0].data.containers[0].spell_ids
     var tome = $SideTipResourceLocation.parse(String(spellIds[0]))
     var upgrade = $SideTipResourceLocation.parse(String(spellIds[1]))
-    // Suppliers.compose: see minerpg_mastery_tooltips.js (a script function can't go into the map directly). It runs
+    // Suppliers.compose: a script function can't go into the map directly (raw Map.put), so it is wrapped. It runs
     // on every hover, so the numbers follow the player's current spell power.
     $SideTipTranslationUtil.resolvers.put(defId, $SideTipSuppliers.compose(lines => sideTipLines(tome, upgrade), () => null))
     count++

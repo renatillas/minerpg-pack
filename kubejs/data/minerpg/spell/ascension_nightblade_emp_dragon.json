@@ -1,0 +1,34 @@
+{
+ "school": "spell_power:physical_melee",
+ "range": 0.0,
+ "tier": 1,
+ "type": "MODIFIER",
+ "modifiers": [
+  {
+   "spell_pattern": "minerpg:ascension_nightblade_ultimate",
+   "mutate_impacts": "APPEND",
+   "impacts": [
+    {
+     "action": {
+      "type": "STATUS_EFFECT",
+      "status_effect": {
+       "effect_id": "spell_engine:bleed",
+       "duration": 6.0,
+       "amplifier": 1
+      }
+     },
+     "target_modifiers": [
+      {
+       "conditions": [
+        {
+         "entity_type": "minecraft:player"
+        }
+       ],
+       "execute": "DENY"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

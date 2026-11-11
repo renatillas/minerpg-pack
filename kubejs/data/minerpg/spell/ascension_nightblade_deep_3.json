@@ -1,0 +1,55 @@
+{
+ "school": "spell_power:physical_melee",
+ "range": 0.0,
+ "tier": 1,
+ "type": "PASSIVE",
+ "passive": {
+  "triggers": [
+   {
+    "type": "DAMAGE_TAKEN",
+    "target_override": "CASTER",
+    "caster_conditions": [
+     {
+      "health_percent_below": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ "target": {
+  "type": "FROM_TRIGGER"
+ },
+ "impacts": [
+  {
+   "action": {
+    "type": "STATUS_EFFECT",
+    "status_effect": {
+     "effect_id": "rogues:stealth",
+     "duration": 6.0
+    },
+    "apply_to_caster": true
+   },
+   "visuals": {
+    "particles": [
+     {
+      "id": "spell_engine:smoke_medium",
+      "appearance": {},
+      "batch": {
+       "count": 40.0,
+       "shape": "SPHERE",
+       "anchor": "ENTITY",
+       "min_speed": 0.15,
+       "max_speed": 0.3
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "cost": {
+  "durability": 0,
+  "cooldown": {
+   "duration": 60.0
+  }
+ }
+}

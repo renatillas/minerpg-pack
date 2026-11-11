@@ -1,0 +1,41 @@
+{
+ "school": "spell_power:physical_melee",
+ "range": 0.0,
+ "tier": 1,
+ "type": "PASSIVE",
+ "passive": {
+  "triggers": [
+   {
+    "type": "DAMAGE_TAKEN",
+    "target_override": "CASTER",
+    "caster_conditions": [
+     {
+      "health_percent_below": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ "target": {
+  "type": "FROM_TRIGGER"
+ },
+ "impacts": [
+  {
+   "action": {
+    "type": "STATUS_EFFECT",
+    "status_effect": {
+     "effect_id": "minecraft:regeneration",
+     "duration": 5.0,
+     "amplifier": 2
+    },
+    "apply_to_caster": true
+   }
+  }
+ ],
+ "cost": {
+  "durability": 0,
+  "cooldown": {
+   "duration": 60.0
+  }
+ }
+}

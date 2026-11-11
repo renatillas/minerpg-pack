@@ -1,0 +1,64 @@
+{
+ "school": "spell_power:physical_melee",
+ "range": 0.0,
+ "tier": 1,
+ "type": "MODIFIER",
+ "modifiers": [
+  {
+   "spell_pattern": "rogues:throw",
+   "mutate_impacts": "APPEND",
+   "impacts": [
+    {
+     "action": {
+      "type": "DAMAGE",
+      "damage": {
+       "spell_power_coefficient": 100.0,
+       "knockback": 0.5
+      }
+     },
+     "visuals": {
+      "particles": [
+       {
+        "id": "spell_engine:dripping_blood",
+        "appearance": {},
+        "batch": {
+         "count": 30.0,
+         "shape": "SPHERE",
+         "anchor": "ENTITY",
+         "min_speed": 0.2,
+         "max_speed": 0.4
+        }
+       }
+      ]
+     },
+     "target_modifiers": [
+      {
+       "conditions": [
+        {
+         "health_percent_below": 0.15
+        }
+       ],
+       "execute": "ALLOW"
+      },
+      {
+       "conditions": [
+        {
+         "entity_type": "#minerpg:boss"
+        }
+       ],
+       "execute": "DENY"
+      },
+      {
+       "conditions": [
+        {
+         "entity_type": "minecraft:player"
+        }
+       ],
+       "execute": "DENY"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
