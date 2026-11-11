@@ -94,3 +94,81 @@ $AscSpellEvents.HEAL.register(args => {
     })
   }
 })
+
+// ------------------------------------------------------------------------------------------------------------------
+// Unlock rules the talent data can't express, and the Orb of Oblivion.
+// - a Fate must belong to your main class (the Fates of all four wave classes share one tab);
+// - at most 2 of a Fate's 3 Deepenings (locking the third refunds its point).
+const $AscSkillsAPI = Java.loadClass('net.puffish.skillsmod.api.SkillsAPI')
+const $AscRL = Java.loadClass('net.minecraft.resources.ResourceLocation')
+const $AscComponent = Java.loadClass('net.minecraft.network.chat.Component')
+const $AscFormat = Java.loadClass('net.minecraft.ChatFormatting')
+
+const ASC_ID = 'minerpg:ascension'
+const ASC_MAIN_ID = 'skill_tree_rpgs:class_skills'
+const ASC_RULES = JsonIO.read('kubejs/ascension/rules.json')
+// Main-tree root skill id -> class, from the Side Class rules (pack/tools/gen_side_class.py).
+const ASC_SIDE_RULES = JsonIO.read('kubejs/side_class/rules.json')
+
+var ascFateClass = {}
+var ascDeepeningFate = {}
+var ascDeepenings = {}
+var ascMainRoots = {}
+if (ASC_RULES == null || ASC_SIDE_RULES == null) {
+  console.error('[minerpg] ascension: kubejs/ascension/rules.json or kubejs/side_class/rules.json is missing')
+} else {
+  for (var root in ASC_RULES.fate_roots) ascFateClass[String(root)] = String(ASC_RULES.fate_roots[root])
+  for (var fate in ASC_RULES.deepenings) {
+    ascDeepenings[String(fate)] = []
+    ASC_RULES.deepenings[fate].forEach(id => {
+      ascDeepenings[String(fate)].push(String(id))
+      ascDeepeningFate[String(id)] = String(fate)
+    })
+  }
+  for (var mainId in ASC_SIDE_RULES.main_roots) ascMainRoots[String(mainId)] = String(ASC_SIDE_RULES.main_roots[mainId])
+}
+
+function ascCategory(id) {
+  var category = $AscSkillsAPI.getCategory($AscRL.parse(id))
+  return category.isPresent() ? category.get() : null
+}
+
+function ascMainClass(player) {
+  var main = ascCategory(ASC_MAIN_ID)
+  if (main == null) return null
+  var found = null
+  main.streamUnlockedSkills(player).forEach(skill => {
+    var cls = ascMainRoots[String(skill.getId())]
+    if (cls) found = cls
+  })
+  return found
+}
+
+function ascRefuse(player, category, skillId, message) {
+  category.getSkill(skillId).get().lock(player)
+  // withStyle is overloaded (formatting / style / operator); Rhino needs the one named.
+  player.sendSystemMessage($AscComponent.literal(message)['withStyle(net.minecraft.ChatFormatting)']($AscFormat.GOLD))
+}
+
+$AscSkillsAPI.registerSkillUnlockEvent((player, categoryId, skillId) => {
+  if (String(categoryId) != ASC_ID) return
+  var asc = ascCategory(ASC_ID)
+  if (asc == null) return
+  var id = String(skillId)
+  if (ascFateClass[id]) {
+    if (ascFateClass[id] != ascMainClass(player)) ascRefuse(player, asc, id, 'Your Fate must belong to your main class.')
+  } else if (ascDeepeningFate[id]) {
+    var owned = 0
+    ascDeepenings[ascDeepeningFate[id]].forEach(d => {
+      if (String(asc.getSkill(d).get().getState(player)) == 'UNLOCKED') owned++
+    })
+    if (owned > ASC_RULES.max_deepenings) {
+      ascRefuse(player, asc, id, 'Two Deepenings is the limit. Use an Orb of Oblivion to choose again.')
+    }
+  }
+})
+
+// The Orb of Oblivion resets a public list of talent tabs (class and weapon by default; the Side Class adds its own).
+const $AscSkillHelper = Java.loadClass('net.skill_tree_rpgs.utils.SkillHelper')
+const ASC_LOCATION = $AscRL.parse(ASC_ID)
+if (!$AscSkillHelper.RESET_CATEGORIES.contains(ASC_LOCATION)) $AscSkillHelper.RESET_CATEGORIES.add(ASC_LOCATION)
