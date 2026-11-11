@@ -46,11 +46,11 @@ hash = "61b32def376de8e4a7a482f17c0d953b46ae34033f0860635853afe98ca79f24"
 
 [[files]]
 file = "config/bosses_of_mass_destruction.json5"
-hash = "0fa0df1f12d6e219d9038df8b9e522912b2997bd5b036cf0a47da25c5bfa8589"
+hash = "6d4999fbc8001d3c3ca2f6e18c1ad89cedaf8e4320a974f9828d433f66d69e47"
 
 [[files]]
 file = "config/cataclysm-common.toml"
-hash = "5bd979c7cbbd47287756e3a46ed87ae11cac32fded862ebacaa43f9917b6432a"
+hash = "31dc938bcb1455ad20589f3083ed03dc74b0df260d1fa61d451407c9ff97dce6"
 
 [[files]]
 file = "config/champions-server.toml"
@@ -126,15 +126,15 @@ hash = "efd648a49846de145fb0c968d9548104eee18886ec1221455375df0d788511b3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_1_overworld.snbt"
-hash = "eb08af149fc0dd8abaf0315df1d84449a326fc2d174b9a792dc2aed38492ad2f"
+hash = "f7e9c5e9c5d940bf5f07e0a801db0f71d2230d162ebf698c3a0cfa4ff72d5f38"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_nether.snbt"
-hash = "ad064c64548f8e362d7fea22e727bdeb345d2f0beabbb5dae01e43ee8618f060"
+hash = "d67a720a49eae048f0937b559eaa1deb1368341e321c3f437188de95b0f4a278"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3_end.snbt"
-hash = "e51a0e5a16fb3dfc2e75102b88d0362913b8b73b256565db466d1ddc294e5510"
+hash = "6d336ba4ac552e799a378f787f71ad93c76368b4fefd533d328edc823b53c496"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/forge_and_library.snbt"
@@ -154,7 +154,7 @@ hash = "eb601286aca8b343a76d454bd2b6e1bcf4776f5ef1f0fcef58dbbaf5c1945243"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b8516bf2ade33e1a30f3e5420348a5b4889b1a02a670792963b21571da591fc1"
+hash = "6a698c2607dac6bfae7a9819e5644aa8d4b66d067555152b962d6ead1e1c5dba"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/class_kits.snbt"
@@ -206,7 +206,7 @@ hash = "36fd87b87923de8ce0192d9667e5edd0c3d0151e7eef698268fe8dc3eb5ab545"
 
 [[files]]
 file = "config/mowziesmobs-common.toml"
-hash = "cdae19a55c0ad67c27750508dccf50d9883a43913caf61a364a6135a634f0e7f"
+hash = "55984be8a03604dd95446a84769854c5a42b064146db05dafa16c2ecba7a0971"
 
 [[files]]
 file = "config/neoorigins/content.toml"
@@ -1637,6 +1637,10 @@ file = "config/yigd.json"
 hash = "ff56a303f0a073d7054446ce5ae8daa43c1aacc03b87a7b655da48fd87504081"
 
 [[files]]
+file = "kubejs/ascension/rules.json"
+hash = "a291fd8e1ea7fd69b62d73dd3b40e0965bece5ef894ba21a80db4b789dacd6f5"
+
+[[files]]
 file = "kubejs/assets/apothecary/lang/en_us.json"
 hash = "624032da9ee3ccaf4eaba9c1cd314ae0a5b5658f8ab016508316c118df7f54ac"
 
@@ -1670,7 +1674,7 @@ hash = "fefbc6fe321971441a13e95c3b8e3598b2b3d039e16d8a0e557141914d640dc5"
 
 [[files]]
 file = "kubejs/assets/minerpg/lang/en_us.json"
-hash = "07f93199a234bc4c87a801426a49054b5dea5625846a11fc08f917c2cc9af0f3"
+hash = "7f78a6b1c071aa750bcdb26db477ec0919364c6056589e837baf36a711f45f2c"
 
 [[files]]
 file = "kubejs/assets/minerpg/textures/item/nether_sigil.png"
@@ -1765,124 +1769,292 @@ file = "kubejs/assets/minerpg/textures/item/void_shard.png"
 hash = "10ac2bb285ab7e4af7b01c502c2eb31e46d561d009a031e644f822a6b83a117a"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_deadeye_headhunter.png"
-hash = "de88bd315fa817aeb6c71d18f548ef90afb8a6c248e24db8f9350ef9bac66703"
+file = "kubejs/assets/minerpg/textures/spell/ascension_bulwark_deep_1.png"
+hash = "037ecd9863e5a2fb63dc193918312346438d38a8e00b26d10f07ba2c525072cd"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_deadeye_long_watch.png"
-hash = "61812425ec292610050ff71249d34861c8c0d08dd3102d3c73377676265872b8"
+file = "kubejs/assets/minerpg/textures/spell/ascension_bulwark_deep_2.png"
+hash = "20c0de49061b58d714a48e78f397c92909bdda7cddc3bae416fa8271f13e25fc"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_deadeye_pinned_quarry.png"
-hash = "db6617bb39ea186c6f9150fab2a932627cfbae13b212d642dfd699e8ee86a33c"
+file = "kubejs/assets/minerpg/textures/spell/ascension_bulwark_deep_3.png"
+hash = "c317897b1d28dc9a3af0068d227ccfac09ece489eff7764759307cf992f8922d"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_deadeye_quick_reflexes.png"
-hash = "4f84684ce8254c875180780ce95921ca036a28211b78f3914a34de4ba7a090fe"
+file = "kubejs/assets/minerpg/textures/spell/ascension_bulwark_emp_dragon.png"
+hash = "7addc4766a86a02c0095658f3bb6a4fe87d0cdf415cdbf0ec7da9ee0ec106337"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_deadeye_second_arrow.png"
-hash = "d6b086b2ff9f8eda3f744f86dfe16aafc0d2573d33a0625f100bf85c93a2eaec"
+file = "kubejs/assets/minerpg/textures/spell/ascension_bulwark_emp_wither.png"
+hash = "22f27e45d591c1a3d647ad36a75e6409be92293a0eeec9fd93a74bef5aa7cba1"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_deadeye_spotters_mark.png"
-hash = "cb4f72efe18b5afea899bea17aa059dd5424216af852702249408e9f3d5687aa"
+file = "kubejs/assets/minerpg/textures/spell/ascension_bulwark_fate.png"
+hash = "72aa25e43a9484272e94f09795ed25806913c540dc4b851b8eb2a3e709bd6189"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_frost_hoarfrost_retort.png"
-hash = "ccbc47d022c5525f8db1b934f68f25ba64467147191444a43f2a86ba97881208"
+file = "kubejs/assets/minerpg/textures/spell/ascension_bulwark_trans_1.png"
+hash = "991e9eeb595934b69a52313945cf740015e345ad84ba922894aa1bdc56ed8bdb"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_frost_lingering_winter.png"
-hash = "efa104d22c48aa29ba784a64984cce73b54e72ce2569ceb9030060418face949"
+file = "kubejs/assets/minerpg/textures/spell/ascension_bulwark_trans_2.png"
+hash = "565d46f8667d703aa19324bd1dade7964bd5439662efb257228d86ffc30c0bab"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_frost_rime_field.png"
-hash = "82ce7ee1e997423701915fb63364da9181006d4a3ed564a4105a1e114c35b9d3"
+file = "kubejs/assets/minerpg/textures/spell/ascension_bulwark_ultimate.png"
+hash = "991e9eeb595934b69a52313945cf740015e345ad84ba922894aa1bdc56ed8bdb"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_frost_splintering_cold.png"
-hash = "df5017e16e97fc32a4937a6347d364b35bb9acf95873f93de2dc5bbd34bc188d"
+file = "kubejs/assets/minerpg/textures/spell/ascension_crusader_deep_1.png"
+hash = "037ecd9863e5a2fb63dc193918312346438d38a8e00b26d10f07ba2c525072cd"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_frost_spreading_rime.png"
-hash = "e6cf979ea2697eaac943f444d5bf76a92fabb4cd6e4f698e14438eeb1fd254b2"
+file = "kubejs/assets/minerpg/textures/spell/ascension_crusader_deep_2.png"
+hash = "20c0de49061b58d714a48e78f397c92909bdda7cddc3bae416fa8271f13e25fc"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_frost_winters_grasp.png"
-hash = "f3e5f2031c22d4d5abc73aee17fa0d5c9018919e9ee9fc38c801e0c072958eb4"
+file = "kubejs/assets/minerpg/textures/spell/ascension_crusader_deep_3.png"
+hash = "c317897b1d28dc9a3af0068d227ccfac09ece489eff7764759307cf992f8922d"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_paladin_answering_light.png"
-hash = "a5c0dcb0f8ae8873cf54dcf5c6c23472cbb4917913f71081c6b265cd390c166a"
+file = "kubejs/assets/minerpg/textures/spell/ascension_crusader_emp_dragon.png"
+hash = "7addc4766a86a02c0095658f3bb6a4fe87d0cdf415cdbf0ec7da9ee0ec106337"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_paladin_mending_oath.png"
-hash = "014297bf3698ab1370b7c42ad181f0742d86cf4ea19f09699e71feca6c72dcb0"
+file = "kubejs/assets/minerpg/textures/spell/ascension_crusader_emp_wither.png"
+hash = "22f27e45d591c1a3d647ad36a75e6409be92293a0eeec9fd93a74bef5aa7cba1"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_paladin_mending_strikes.png"
-hash = "91a5b63c2357bb435480e1da52e2a92a13099c7d7b1304912dc3d5644410bf63"
+file = "kubejs/assets/minerpg/textures/spell/ascension_crusader_fate.png"
+hash = "72aa25e43a9484272e94f09795ed25806913c540dc4b851b8eb2a3e709bd6189"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_paladin_oathbound_aegis.png"
-hash = "e4a5871ed23ce58556833493d268993372c56b651d9e4a68168112b8fd1c6eef"
+file = "kubejs/assets/minerpg/textures/spell/ascension_crusader_trans_1.png"
+hash = "991e9eeb595934b69a52313945cf740015e345ad84ba922894aa1bdc56ed8bdb"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_paladin_steadfast.png"
-hash = "fae2316abb4d97f6b654e2be1a149144554150ffff56fd7e48a2c694a1b91af0"
+file = "kubejs/assets/minerpg/textures/spell/ascension_crusader_trans_2.png"
+hash = "565d46f8667d703aa19324bd1dade7964bd5439662efb257228d86ffc30c0bab"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_paladin_wide_oath.png"
-hash = "33b0225ce28f7250adeeb7d319128d2310eae1b8f8ab079b5a4673f06caebc57"
+file = "kubejs/assets/minerpg/textures/spell/ascension_crusader_ultimate.png"
+hash = "991e9eeb595934b69a52313945cf740015e345ad84ba922894aa1bdc56ed8bdb"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_priest_aegis_of_dawn.png"
-hash = "ec4878b034be4b9d43f9b1dd8ed7a2fcc216c8ba965d0b57b2f35a63cd998ba1"
+file = "kubejs/assets/minerpg/textures/spell/ascension_juggernaut_deep_1.png"
+hash = "4112776b060677c24fe69e574b78e07c591d0313aa126847b1161c334e4f0155"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_priest_dawnlight.png"
-hash = "db8011cf2f5905889563b2ab96ca46cb6394e094a8701a0ef1512575a875548b"
+file = "kubejs/assets/minerpg/textures/spell/ascension_juggernaut_deep_2.png"
+hash = "9d22dc0bc97a652cfd585995efcb58766ec2af50f89536eb67fce0e1cfc68190"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_priest_martyrs_resolve.png"
-hash = "6e39ea6cdee982b50a227d9f46f11bf8a9cadbb1d5f0329db764014106516ebe"
+file = "kubejs/assets/minerpg/textures/spell/ascension_juggernaut_deep_3.png"
+hash = "bf549bde59a4886e9fa66b99febb1a89c853e5c406cc43787c84539596a62b53"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_priest_overflowing_grace.png"
-hash = "81bcdeffa50381a7ed38e357c515140f0b8334b0ee3f7db0bf92288a075b4d70"
+file = "kubejs/assets/minerpg/textures/spell/ascension_juggernaut_emp_dragon.png"
+hash = "e3fc5f9be64bc10d23ed062d66450284e30f47e687bf6dfc1d6f4cf74b90e295"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_priest_radiant_rebuke.png"
-hash = "03301afefc7c4b454ceb0612f06ccca86e9b65ac5a6fe1e1cbd177e672462be1"
+file = "kubejs/assets/minerpg/textures/spell/ascension_juggernaut_emp_wither.png"
+hash = "0e9a4da63c4109b40144d433fac83ce2782ec8729fd058dcf383117cb7484cbf"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_priest_swift_aegis.png"
-hash = "b6e54d9f5fb1ffa5cb56eaaf82e0221824990518d8a6fb4c8f636c478021e891"
+file = "kubejs/assets/minerpg/textures/spell/ascension_juggernaut_fate.png"
+hash = "cd6963ab3de1638fded45cb6ca3f19109f50f252408a988650efecc0c1ef7ec9"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_rogue_exploit_weakness.png"
-hash = "e00aa9e8298fafd38777017054cebe0bbf50114cfc2d32b5fe91d4944ea1ea11"
+file = "kubejs/assets/minerpg/textures/spell/ascension_juggernaut_trans_1.png"
+hash = "da9f582f621d75ca61507991728520b42658244f49f5dd2506e7e875a6ba773b"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_rogue_footwork.png"
-hash = "7296866941d9e08e026eff7fb06b93f7224261eb02bf0d79453b0822a3955e15"
+file = "kubejs/assets/minerpg/textures/spell/ascension_juggernaut_trans_2.png"
+hash = "7a9defcaa9fc5ba64faaf9634accd60f45036c4137a2a6d42199893a33d61c2d"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_rogue_hamstring.png"
-hash = "4405c09c3db82a1817e85ce8f40d4e6b845b9ddd850882e1f295c8c5f2177efe"
+file = "kubejs/assets/minerpg/textures/spell/ascension_juggernaut_ultimate.png"
+hash = "da9f582f621d75ca61507991728520b42658244f49f5dd2506e7e875a6ba773b"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_rogue_open_veins.png"
-hash = "b58c267d892dbec67671306f28af2a47a17f493687c1c6ce6193ee1ee74e3eb8"
+file = "kubejs/assets/minerpg/textures/spell/ascension_lightbinder_deep_1.png"
+hash = "8c510b3dc237336ad23635aef9c5d358660c682cc8db8529d291f1c14e205b31"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_rogue_whirling_steel.png"
-hash = "0050c928ceb0c87d734f54e6dbbdb225e710e76d04c2b0ed47224af84ce31ac4"
+file = "kubejs/assets/minerpg/textures/spell/ascension_lightbinder_deep_2.png"
+hash = "1f1894e473795f61fb74cfe49ba5abb288185d020568feed9670814f2ecdcdef"
 
 [[files]]
-file = "kubejs/assets/minerpg/textures/spell/mastery_rogue_wider_arc.png"
-hash = "cf546882fd321fd9985789403bd8655a0a31f00e6f25c49a97c2336864a583e0"
+file = "kubejs/assets/minerpg/textures/spell/ascension_lightbinder_deep_3.png"
+hash = "d9e0abbecddb6f04aecf0802f15517384971efc4417a31fd46d403e0fcba0116"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_lightbinder_emp_dragon.png"
+hash = "b523dc2ea2542edcc1f1f11071071408c74688607aefa8be6120368d57128262"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_lightbinder_emp_wither.png"
+hash = "5290d06ead4a9e1ec6904f69d79046b66dc93c3b9e366303ffa211a023ce668f"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_lightbinder_fate.png"
+hash = "27825633e925360fbfb28a0cd49cad333eb0fd3c4c3a38afee478d2f91c9015c"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_lightbinder_trans_1.png"
+hash = "ce8e4379e1b47d8453d12c315d4b3d9c47326ec050bded4f169d768049411fc9"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_lightbinder_trans_2.png"
+hash = "1bff7288788fce5fc2a318d93c0178fb0d346788b66761baf02f71cd4fb1d04f"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_lightbinder_ultimate.png"
+hash = "ce8e4379e1b47d8453d12c315d4b3d9c47326ec050bded4f169d768049411fc9"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_nightblade_deep_1.png"
+hash = "6d245b9b400febd1f1173d643e0f19b5ad758120de109efe10bce5d9e8b79384"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_nightblade_deep_2.png"
+hash = "fd745bf20573b6fc1f6c2d2f4096f84ebf7e762127e138cf0b8616295db1b69c"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_nightblade_deep_3.png"
+hash = "614aa817384f92d8468e2c3e9be8e45c8ca5f435aece45ff498b3764a7a15583"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_nightblade_emp_dragon.png"
+hash = "1cc5a3720288ce281a322369580125083b100c4e88bff78081bb81e8e3e582d3"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_nightblade_emp_wither.png"
+hash = "f8126600e5bb36abc40c2678065a5b5581cbc1ceabab9977bd90c5e1caf6e6d0"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_nightblade_fate.png"
+hash = "258c800c8ee1eee8f9c38e73ee4efdb5be2cc2ce111d98c349c5339401b5f717"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_nightblade_trans_1.png"
+hash = "80dff05bb5d814f1cbdf79433d85736fdfe4d69e681d29032b664866c8edb493"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_nightblade_trans_2.png"
+hash = "17c4d1354b7c7e069b74c6340b1b4dad2f75ccce22c5de3b4ac60ab23607d54e"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_nightblade_ultimate.png"
+hash = "80dff05bb5d814f1cbdf79433d85736fdfe4d69e681d29032b664866c8edb493"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_plaguefang_deep_1.png"
+hash = "6d245b9b400febd1f1173d643e0f19b5ad758120de109efe10bce5d9e8b79384"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_plaguefang_deep_2.png"
+hash = "fd745bf20573b6fc1f6c2d2f4096f84ebf7e762127e138cf0b8616295db1b69c"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_plaguefang_deep_3.png"
+hash = "614aa817384f92d8468e2c3e9be8e45c8ca5f435aece45ff498b3764a7a15583"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_plaguefang_emp_dragon.png"
+hash = "1cc5a3720288ce281a322369580125083b100c4e88bff78081bb81e8e3e582d3"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_plaguefang_emp_wither.png"
+hash = "f8126600e5bb36abc40c2678065a5b5581cbc1ceabab9977bd90c5e1caf6e6d0"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_plaguefang_fate.png"
+hash = "258c800c8ee1eee8f9c38e73ee4efdb5be2cc2ce111d98c349c5339401b5f717"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_plaguefang_trans_1.png"
+hash = "80dff05bb5d814f1cbdf79433d85736fdfe4d69e681d29032b664866c8edb493"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_plaguefang_trans_2.png"
+hash = "17c4d1354b7c7e069b74c6340b1b4dad2f75ccce22c5de3b4ac60ab23607d54e"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_plaguefang_ultimate.png"
+hash = "80dff05bb5d814f1cbdf79433d85736fdfe4d69e681d29032b664866c8edb493"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_reaver_deep_1.png"
+hash = "4112776b060677c24fe69e574b78e07c591d0313aa126847b1161c334e4f0155"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_reaver_deep_2.png"
+hash = "9d22dc0bc97a652cfd585995efcb58766ec2af50f89536eb67fce0e1cfc68190"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_reaver_deep_3.png"
+hash = "bf549bde59a4886e9fa66b99febb1a89c853e5c406cc43787c84539596a62b53"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_reaver_emp_dragon.png"
+hash = "e3fc5f9be64bc10d23ed062d66450284e30f47e687bf6dfc1d6f4cf74b90e295"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_reaver_emp_wither.png"
+hash = "0e9a4da63c4109b40144d433fac83ce2782ec8729fd058dcf383117cb7484cbf"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_reaver_fate.png"
+hash = "cd6963ab3de1638fded45cb6ca3f19109f50f252408a988650efecc0c1ef7ec9"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_reaver_trans_1.png"
+hash = "da9f582f621d75ca61507991728520b42658244f49f5dd2506e7e875a6ba773b"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_reaver_trans_2.png"
+hash = "7a9defcaa9fc5ba64faaf9634accd60f45036c4137a2a6d42199893a33d61c2d"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_reaver_ultimate.png"
+hash = "da9f582f621d75ca61507991728520b42658244f49f5dd2506e7e875a6ba773b"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_zealot_deep_1.png"
+hash = "8c510b3dc237336ad23635aef9c5d358660c682cc8db8529d291f1c14e205b31"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_zealot_deep_2.png"
+hash = "1f1894e473795f61fb74cfe49ba5abb288185d020568feed9670814f2ecdcdef"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_zealot_deep_3.png"
+hash = "d9e0abbecddb6f04aecf0802f15517384971efc4417a31fd46d403e0fcba0116"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_zealot_emp_dragon.png"
+hash = "b523dc2ea2542edcc1f1f11071071408c74688607aefa8be6120368d57128262"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_zealot_emp_wither.png"
+hash = "5290d06ead4a9e1ec6904f69d79046b66dc93c3b9e366303ffa211a023ce668f"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_zealot_fate.png"
+hash = "27825633e925360fbfb28a0cd49cad333eb0fd3c4c3a38afee478d2f91c9015c"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_zealot_trans_1.png"
+hash = "ce8e4379e1b47d8453d12c315d4b3d9c47326ec050bded4f169d768049411fc9"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_zealot_trans_2.png"
+hash = "1bff7288788fce5fc2a318d93c0178fb0d346788b66761baf02f71cd4fb1d04f"
+
+[[files]]
+file = "kubejs/assets/minerpg/textures/spell/ascension_zealot_ultimate.png"
+hash = "ce8e4379e1b47d8453d12c315d4b3d9c47326ec050bded4f169d768049411fc9"
 
 [[files]]
 file = "kubejs/assets/mrpg_lib/lang/en_us.json"
@@ -1893,12 +2065,8 @@ file = "kubejs/client_scripts/minerpg_jobs_guard.js"
 hash = "440940ad6ff1621963659ce60f19abb12460396fd10eb18f464d1e4cb4f9d6ca"
 
 [[files]]
-file = "kubejs/client_scripts/minerpg_mastery_tooltips.js"
-hash = "510062ff5ee85748ee5510666141ff4a7e163e49fa89bae6456df1bf98cf93de"
-
-[[files]]
 file = "kubejs/client_scripts/minerpg_side_class_tooltips.js"
-hash = "5351a0e0d9605a5e75dea64b4230084fe96ae8899c8d221666892930e92bc938"
+hash = "ec28c1c8cb711751ad66694e5fa24c2e5463aa494ae80b49fc4ca9b13f58072f"
 
 [[files]]
 file = "kubejs/client_scripts/minerpg_tooltips.js"
@@ -4997,6 +5165,22 @@ file = "kubejs/data/minerpg/loot_table/map/tavern.json"
 hash = "607f9b4256465d927acdaf8b49509c05328847425af47e4ed05c49c0aad67233"
 
 [[files]]
+file = "kubejs/data/minerpg/puffish_skills/categories/ascension/category.json"
+hash = "145b9ed153c1d6325939198e0390e65b9efda1a02fa0641d46600583201d4e22"
+
+[[files]]
+file = "kubejs/data/minerpg/puffish_skills/categories/ascension/connections.json"
+hash = "d6aee94fb80b3c84a6fbe271e797e6bf4a7665e60d7f5eebaf0563e496e93982"
+
+[[files]]
+file = "kubejs/data/minerpg/puffish_skills/categories/ascension/definitions.json"
+hash = "f3d618dd8c70ba342ed485cd4ad96d480f14b33e10f18495e293886ecd5b849c"
+
+[[files]]
+file = "kubejs/data/minerpg/puffish_skills/categories/ascension/skills.json"
+hash = "8a6c54b30923706209042a8b5b7b71de7c25fa161d6b49f27f6080077596140c"
+
+[[files]]
 file = "kubejs/data/minerpg/puffish_skills/categories/side_skills/category.json"
 hash = "175df21ee512a8b2b8af4424692ad067abcde773e6882e111591ef8edc500062"
 
@@ -5018,7 +5202,7 @@ hash = "6280244ddb106925e6443dddc8ea86171554fc09a102e991ad7a8c925f5758ad"
 
 [[files]]
 file = "kubejs/data/minerpg/puffish_skills/config.json"
-hash = "e14521843cd352c3f22647bfdf15f69bfd6d122d6fcbb7d55ba7687e1676403d"
+hash = "dfa8ebc1b71cef79993d75a8369501732a9dc3001fbf50416bb386177fd57601"
 
 [[files]]
 file = "kubejs/data/minerpg/rarity_override/apotheosis/boots.json"
@@ -7605,124 +7789,116 @@ file = "kubejs/data/minerpg/recipe/salvaging/rpg/wizards__wizard_robe_legs.json"
 hash = "3df637a16ed3c513fa97b53cd5666466a8db17e8aa5b590163626886b8043943"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_deadeye_headhunter.json"
-hash = "0a8c6c0358cc64aac06fba621e74a72b2f017b30771f97feedde4d738b1d4797"
+file = "kubejs/data/minerpg/spell/ascension_bulwark_deep_1.json"
+hash = "62d3bbd69aaeccc5a5ec10752d909ea23be5b946bb7ac2802b640b90420fd10b"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_deadeye_long_watch.json"
-hash = "e43f459220400c4f4c36466ffee8e87c1b4dfb3b3a42418ef6bae1a4b32d739b"
+file = "kubejs/data/minerpg/spell/ascension_bulwark_deep_2.json"
+hash = "fa40782650beba3fb3e84d5938f1c828d256d403f82a714eaf445e60708b56dc"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_deadeye_pinned_quarry.json"
-hash = "1a96066a8039a7414e38058ff17f358e2ec20cbfe4b3801a5c3778ce8b0d8c24"
+file = "kubejs/data/minerpg/spell/ascension_bulwark_fate_heal.json"
+hash = "afc5038f60e9a30bc4218a06ff4da6af739e43357b20fd70587a7022af4048c9"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_deadeye_quick_reflexes.json"
-hash = "31c1d08aaa726a27c6332a1eb0468ef262b781c38d9ea43ea2bc2be2caee3785"
+file = "kubejs/data/minerpg/spell/ascension_bulwark_fate_taunt.json"
+hash = "0e8da8e2fd29912414aaf145aa9b1f7e7263271ed90650c52b661703b93a98a8"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_deadeye_second_arrow.json"
-hash = "9d683e8faf36e961ecb07c0a9caa424b7b67d8dd86cb7e003d4b56201247bfee"
+file = "kubejs/data/minerpg/spell/ascension_bulwark_trans_2.json"
+hash = "69afe0ac24fe241c9aac254b07a62f0193cbd24fa23abbcbd7bf5172be20ff16"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_deadeye_spotters_mark.json"
-hash = "d34a542079f62b4967f81d0cb3bd482950c2a78bc03206428c0c406a8c5d3597"
+file = "kubejs/data/minerpg/spell/ascension_bulwark_ultimate.json"
+hash = "e36d9de5f6ddc93d2d88894a1ca6d152634e9a719cdf000c750b01137d2085a0"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_frost_hoarfrost_retort.json"
-hash = "3ecdfd1d49647f6dc0e854428932dea82a56e89be2fe3d4f64cad3bb24236574"
+file = "kubejs/data/minerpg/spell/ascension_crusader_deep_2.json"
+hash = "d665131a583f89786f2e8fc0a7e436e5b06cc8df12672ca0ba5b1c896f1b3e4b"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_frost_lingering_winter.json"
-hash = "61488488784ba33723f5a2d5a38241d7627d3d3f65fd7fa248028b074871d4a2"
+file = "kubejs/data/minerpg/spell/ascension_crusader_trans_2.json"
+hash = "e7a2f630e61f58b7dc8aa3d521a3fafa3c6115bc114891e4ff3a57ada8708f24"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_frost_rime_field.json"
-hash = "798263c79f86ccf8841f804a9ff6870b23321693c3794fa8951b5984309818a5"
+file = "kubejs/data/minerpg/spell/ascension_crusader_ultimate.json"
+hash = "e0df91771bc086c67c6f32fb2482571ca2bddd5ef0c0430ece1a61de384f3cd0"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_frost_splintering_cold.json"
-hash = "81d717130db234efb5feec6eb2209544e161df3c1b2e70e0d61f78b97ed8680c"
+file = "kubejs/data/minerpg/spell/ascension_juggernaut_deep_2.json"
+hash = "7fdc82ff01b069cb4546bb0ec3374ff9979b39cde8ceb271aea079149a263008"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_frost_spreading_rime.json"
-hash = "5affc17a57fbc9abf0366210c8c1755e0794c781c3c8fc6b988f0a8feed05478"
+file = "kubejs/data/minerpg/spell/ascension_juggernaut_deep_3.json"
+hash = "12a7659bdd34c2b8ac41591afe9f77bb610cb78de5b8962c25fe52a202ce42fd"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_frost_winters_grasp.json"
-hash = "d0d6d391948e90483a3a1667df324f5ccb28b123ad85d917308c43a715d61f6f"
+file = "kubejs/data/minerpg/spell/ascension_juggernaut_ultimate.json"
+hash = "e3d0827cd140224e836eb3eadf380fe5cff28dd87bdc1ef2ede83b9b65457455"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_paladin_answering_light.json"
-hash = "337160da94dc3be6ea2f80b2778697b6ae612f77fed36781e2a0817996045ee8"
+file = "kubejs/data/minerpg/spell/ascension_lightbinder_ultimate.json"
+hash = "25b6f661ccab25f4813fd918e3c0486744ed46859be3719ba39646441d540fad"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_paladin_mending_oath.json"
-hash = "0621316b6a5228946295a6881c56cfeb6601162d37148c56507d4e6e968c15cc"
+file = "kubejs/data/minerpg/spell/ascension_nightblade_deep_3.json"
+hash = "cd229d84605cd2ee37056872b852182f3f63d1ee197c106426eaaf41c21d8c90"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_paladin_mending_strikes.json"
-hash = "636bada340b2c0f0a5032d3a9097ba5e914dab30e362cc7cf8367eb38e1867a4"
+file = "kubejs/data/minerpg/spell/ascension_nightblade_emp_dragon.json"
+hash = "74a39614b795788a9248781368cbb49793f5a11ac3c134c035d381ef8bcf14e4"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_paladin_oathbound_aegis.json"
-hash = "47171817a1a012646df765742af28a96b03845741a9e2c9a5a88fd47c8fb3fc0"
+file = "kubejs/data/minerpg/spell/ascension_nightblade_trans_1.json"
+hash = "0754fe7a77fcfc1e0b8b3f808e3f01b711bcdca51d40de8936140b742859e271"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_paladin_steadfast.json"
-hash = "4d4c9fce7e181bb1ea00dc628f210779ecbf5b21fc6ae7fb6131203e29d49a45"
+file = "kubejs/data/minerpg/spell/ascension_nightblade_ultimate.json"
+hash = "fb1aadba8016559a9fc1cfb9fa0216432b4fab88396a7ebcf0e8f9e4e02aaace"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_paladin_wide_oath.json"
-hash = "996a05dec0bb3f13b144a461903674f13b319b26d4f22b5ef57db434ca324a99"
+file = "kubejs/data/minerpg/spell/ascension_plaguefang_fate.json"
+hash = "a857abcd0a040bbe36691eed7c07f74a08d2a1eef91c9e2c796caabca56a3b5a"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_priest_aegis_of_dawn.json"
-hash = "f03ec6fcf9ff3f2431c438b2b1059a70a08a4fa6988bbf52d6bfbd54d469e8cf"
+file = "kubejs/data/minerpg/spell/ascension_plaguefang_trans_1.json"
+hash = "432cedd96819ab561aba2127cc86c4eb942a3985d19a79b029fd3fe8464afff8"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_priest_dawnlight.json"
-hash = "a8894e1bf470d6c73da1a202aa9e12c5c3618f9b344a6b59b969b8389a536fe0"
+file = "kubejs/data/minerpg/spell/ascension_plaguefang_trans_2.json"
+hash = "0416eb232885db81c8147b5caee57bb33d81439bbfd0f002fc9949327258b48f"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_priest_martyrs_resolve.json"
-hash = "d6b8dca4f1619bf7b863f0ad7e046fd07904df1c5e2aa6f36fee1269914807b7"
+file = "kubejs/data/minerpg/spell/ascension_plaguefang_ultimate.json"
+hash = "cd5dbaff520ed2964b147cc1d04f360e42282dd253b74490c7f63adc85174b45"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_priest_overflowing_grace.json"
-hash = "147957864ffaea166b27367372efc981374c18e0af18e32d5685aa4d46a9e5ff"
+file = "kubejs/data/minerpg/spell/ascension_reaver_fate.json"
+hash = "8ed26244ad02ece3139dcbfaa34a34cb95d121d3bf2df891c5e206670fb0ea8a"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_priest_radiant_rebuke.json"
-hash = "4f25663129059afd03c0a1bb6e70e5e769a6fbabc771fbeaf7d6bf4d15ad5a95"
+file = "kubejs/data/minerpg/spell/ascension_reaver_trans_1.json"
+hash = "0e61822277fbbc83d81d484d371ab8f0dca2c46d608fbb01d86a725995879c9f"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_priest_swift_aegis.json"
-hash = "bd82a27f8f3ca6b0dfbf6ca7b94024ddeac35e926717c52154cc40224ec4c06c"
+file = "kubejs/data/minerpg/spell/ascension_reaver_trans_2.json"
+hash = "8cff33f9a6c67579acb02d1531c610a8aa7823ca53c7307aae6f5934b7092990"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_rogue_exploit_weakness.json"
-hash = "826fe82a523adfbd66851460721212800e1c343d437baf3e3b38db238548ebcd"
+file = "kubejs/data/minerpg/spell/ascension_reaver_ultimate.json"
+hash = "795a08b3a714635dfdefd5f6a82ca4111a6861007bf1c71984d04cf93bc73752"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_rogue_footwork.json"
-hash = "1c74230f2ec5e585aad143fbb26c0caf0f9146c47c1c3e5a2caa63e064da0767"
+file = "kubejs/data/minerpg/spell/ascension_zealot_deep_2.json"
+hash = "1ef5c380680a40bbe616aff7a37dc8df475b6063bdde422ce7776f06c8b21f1b"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_rogue_hamstring.json"
-hash = "1743b5aff99c9330a4547deffd4c3a48812b8f1cc23ee9b2760d8f2ccf03f029"
+file = "kubejs/data/minerpg/spell/ascension_zealot_trans_1.json"
+hash = "a3f9080f48dfb872c6e2f36828c1b3be0c3c028cfbf9df0ef35230a5a64364c0"
 
 [[files]]
-file = "kubejs/data/minerpg/spell/mastery_rogue_open_veins.json"
-hash = "3f0c349e75459037e544533a7f0d636fee9cf7ad5b30f27fc7c415c1413ff514"
-
-[[files]]
-file = "kubejs/data/minerpg/spell/mastery_rogue_whirling_steel.json"
-hash = "dc3cf12d1d9e92ec2888ef4c5a83c6c96213770219c919bd454cf949aa6558e8"
-
-[[files]]
-file = "kubejs/data/minerpg/spell/mastery_rogue_wider_arc.json"
-hash = "f4b4f4d6cde4741f16063cbb10a3ec132c673cfbe44dd7da464505583d9f21bd"
+file = "kubejs/data/minerpg/spell/ascension_zealot_ultimate.json"
+hash = "be79281efec3ae15d07913f931a78891e535055d6b1a31a07db8ee08361e79bc"
 
 [[files]]
 file = "kubejs/data/minerpg/tags/entity_type/boss.json"
@@ -7878,7 +8054,7 @@ hash = "4d4a7e1937b85e5a968573ae1c80b9027f37d46eb7177ce8cc1b71fb9286ac94"
 
 [[files]]
 file = "kubejs/data/skill_tree_rpgs/puffish_skills/categories/class_skills/category.json"
-hash = "cbf6e91914b70bc45859a4b77666b0d673a766288245e6343133c54d5873208f"
+hash = "2ceafdec6fe9e63f0f2410b1768fd94a9852ccd344b21eacdeac1cc7716198f8"
 
 [[files]]
 file = "kubejs/data/skill_tree_rpgs/puffish_skills/categories/class_skills/experience.json"
@@ -7894,19 +8070,27 @@ hash = "15c57a36748157e593c4024d86b22a203f2ac777bd5927ff0602de76c3b85ffc"
 
 [[files]]
 file = "kubejs/mastery/class_skills/connections.json"
-hash = "c73c389473f79ffc3207db35b9cbb555f50ffe2863f425935785bea70ed2f1e9"
+hash = "ba22d726d25326c175ab100a94d6397ceef38b340477387b04037ddc761770ba"
 
 [[files]]
 file = "kubejs/mastery/class_skills/definitions.json"
-hash = "9cbc6a9af5db49076edd2ae098632586eaea00c2002b28105668bba1064dcc9d"
+hash = "83f3ce02e93da604dd1777f2cd9dc76731a70f9c330457e4478d305c0790f408"
 
 [[files]]
 file = "kubejs/mastery/class_skills/skills.json"
-hash = "1cb5a533f27c523568ca4bbb84a342d17a13ec8da35d4712fc7f3ef7cdee1f9c"
+hash = "e9841c4eae1e56ba5b8700f9f109a2f4cd995f23e02f11a533cbe7cf60ddf482"
+
+[[files]]
+file = "kubejs/server_scripts/minerpg_ascension.js"
+hash = "e733a4d2d6c2c24cb6d6941cce195099e3e41347d91ef5d007452ac0e9d4164a"
+
+[[files]]
+file = "kubejs/server_scripts/minerpg_ascension_effects.js"
+hash = "5ae4def7f96b01f98c45d844084db50f661dd0c94fb675f5a107fc96e5e108c5"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_boss_tuning.js"
-hash = "bd292b5aa1596d7fb604700f1d39bc473b088b2bb1957e8abb214225bdffffeb"
+hash = "9b3efd18b46f4c29f50acdb023ea451fc17bf509f26e5c384ac1a74dae1cc008"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_calling.js"
@@ -7949,10 +8133,6 @@ file = "kubejs/server_scripts/minerpg_market.js"
 hash = "a3d13fcf840c2861ecdd1fde12f209ea37b64e21feed4f7874803cf4bec32f2a"
 
 [[files]]
-file = "kubejs/server_scripts/minerpg_mastery.js"
-hash = "029bda98de8ec5be1b3773d5d62015a67fbf28fa194ca86455504d3200859982"
-
-[[files]]
 file = "kubejs/server_scripts/minerpg_origins.js"
 hash = "d7b54aaad8bac09419ac3390e52d920762e497e2e5a33972df7c906f70615f1f"
 
@@ -7983,6 +8163,10 @@ hash = "eafe75a30a3f56417f9dc493e82a3c6b865b1dd53d68a2b6ec14580bbf939204"
 [[files]]
 file = "kubejs/side_class/rules.json"
 hash = "385e0f06c9f560328753fc5fb40505a77e3c22767af29573a2e518007cedb914"
+
+[[files]]
+file = "kubejs/startup_scripts/minerpg_ascension.js"
+hash = "912c440422bb6a0d60dd7094f1d2184f4126d37b080359a6cb82e456e6672436"
 
 [[files]]
 file = "kubejs/startup_scripts/minerpg_champions.js"
@@ -8819,12 +9003,16 @@ file = "patchouli_books/handbook/en_us/entries/bosses/trophies.json"
 hash = "e092e5d35a83525cefbdc728c646989df9e8e1f2c9a48a9b2613d3b5ea02578d"
 
 [[files]]
+file = "patchouli_books/handbook/en_us/entries/classes/ascension.json"
+hash = "76ee65372b73035211da51a0231e0391ed0a4f732554e6b5a5dd2082457e2627"
+
+[[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/binding.json"
 hash = "c803ae6e3fa84608a68a1901c6fa785d98bf6f5c3c023044ac4692e499866515"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/callings.json"
-hash = "eae6fd548c1b15b7e1719c41840326a417f5ab2a572c3a60b56219c66ef09a43"
+hash = "729efe58d9de94c8d15aeafc3a13ac02ac3d1727f107e84e0bae3acfe20101c9"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/casting.json"
@@ -8836,15 +9024,15 @@ hash = "a951dc2a3365bfdfd34950e769a743cbd6003068033e7b04a52183f4f2b9a41a"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/merchants.json"
-hash = "c5665de0d77cbdfa4de2bee5b3da2133090a52686f7742e5f114c43154d16435"
+hash = "1997a884b6bb03da0fc5b8492e43ec0bfbbacfd018cfa1ec63f4bd32f27807f5"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/side_class.json"
-hash = "7eaa12bf6bbbe9705669f57a8e1a2176baaefce11dc9fad4ae2a22d42ae8ec2c"
+hash = "e62168e31fe9c7baadca196f8b4819bbecc8ac78b281b64d8f52b6428014f230"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/classes/talents.json"
-hash = "d1068e17f3e23ddc3d97ec283d3521a6024eb97f5f4d7365fc7986e99f2f85ec"
+hash = "046db5264aba4a42b504e7d74c2fd4dffe02f990af29df56c545a887bd4081b3"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/amethyst_crab.json"
@@ -8936,7 +9124,7 @@ hash = "f6b997b82e3f27b969d13af53d36e831b72608e00570592cbf1501d8ac52a0c5"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/netherite_monstrosity.json"
-hash = "54c99b3196832d07adee404ff87cae559e3db3c2edc8c1cd3388b2757c0a1c55"
+hash = "15d7f1ff31992e969cf8d40e66324694327036b50c4bd812517e6072351277de"
 
 [[files]]
 file = "patchouli_books/handbook/en_us/entries/field_guide/night_lich.json"
