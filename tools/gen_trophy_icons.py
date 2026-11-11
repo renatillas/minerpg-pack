@@ -12,7 +12,7 @@ Writes: pack/kubejs/assets/minerpg/textures/item/trophy_<key>.png (16x16, drawn 
 import json
 import os
 
-from gen_mastery import png
+from spell_lib import png
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # .../pack
 TEXTURES = os.path.join(ROOT, 'kubejs', 'assets', 'minerpg', 'textures', 'item')

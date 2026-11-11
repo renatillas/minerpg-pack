@@ -7,7 +7,7 @@ Design: docs/superpowers/specs/2026-11-08-minerpg-side-class-design.md. A second
 minerpg:side_skills, holds one small tree per class: its root, its first 4 tome spells (two tier-2, two tier-3)
 granted as spells, the main tree's 2 upgrades for each, and its 4 tier-1/2 passives. 8 points, own XP bar.
 
-Source: the merged main class tree that gen_mastery.py writes to pack/kubejs/mastery/class_skills/ (positions,
+Source: the class tree that gen_mastery.py extracts to pack/kubejs/mastery/class_skills/ (positions,
 definitions, rewards) and the tree's spell files in the mods (each "tier_N_spell_K_root" is a Spell Engine modifier
 whose spell_pattern names the tome spell it belongs to). No mod ships the minerpg namespace, so this is plain data
 (the main tree needs KubeJS' generateData('last'); this one doesn't).
@@ -210,7 +210,7 @@ def main():
     experience['level_limit'] = POINTS
     experience['experience_per_level'] = {'type': 'expression', 'data': {'expression': LEVEL_COST}}
     base = os.path.join(OUT, 'categories', 'side_skills')
-    write(os.path.join(OUT, 'config.json'), {'version': 3, 'categories': ['side_skills']})
+    # OUT/config.json lists the minerpg categories (side_skills, ascension); it is hand-maintained.
     write(os.path.join(base, 'category.json'), category)
     write(os.path.join(base, 'experience.json'), experience)
     write(os.path.join(base, 'definitions.json'), defs)
