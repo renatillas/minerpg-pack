@@ -42,7 +42,40 @@ function ascUpdateGate(player) {
   if (inWave) asc.unlock(player)
 }
 
-PlayerEvents.loggedIn(event => ascUpdateGate(event.player))
+// Pack 1.8.0, once per player: the class tree lost its Mastery tier and its four boss points (22 -> 18 points), and
+// those boss points became Ascension points. Players who already earned them get them in the new tab, and every class
+// tree is reset for free so nobody keeps more points spent than the tree now has.
+const AG_MIGRATED = 'minerpg_ascension_migrated_1_8'
+const $AGComponent = Java.loadClass('net.minecraft.network.chat.Component')
+const $AGFormat = Java.loadClass('net.minecraft.ChatFormatting')
+
+function ascMigrate(player) {
+  var data = player.getPersistentData()
+  if (data.getBoolean(AG_MIGRATED)) return
+  data.putBoolean(AG_MIGRATED, true)
+  var main = agCategory(AG_MAIN_ID)
+  var asc = agCategory(AG_ID)
+  if (main == null || asc == null) return
+  var bosses = $AGRL.parse('minerpg:bosses')
+  var moved = main.getPoints(player, bosses)
+  if (moved > 0) {
+    main.setPoints(player, bosses, 0)
+    asc.addPoints(player, bosses, moved)
+  }
+  var reset = main.getSpentPoints(player) > 0
+  if (reset) main.resetSkills(player)
+  if (moved == 0 && !reset) return
+  // withStyle is overloaded (formatting / style / operator); Rhino needs the one named.
+  player.tell($AGComponent.literal('Ascension has arrived: ' + (moved > 0 ? 'your ' + moved + ' boss talent point'
+    + (moved > 1 ? 's' : '') + ' moved to the new Ascension tab, and ' : '') + 'your class talents were reset for free '
+    + '(the class tree now has 18 points). See "Ascension and Fates" in the handbook.')
+    ['withStyle(net.minecraft.ChatFormatting)']($AGFormat.GOLD))
+}
+
+PlayerEvents.loggedIn(event => {
+  ascMigrate(event.player)
+  ascUpdateGate(event.player)
+})
 
 var agTicks = 0
 ServerEvents.tick(event => {
