@@ -249,11 +249,11 @@
 			#Scale mob health by this value
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			health_multiplier = 30.0
+			health_multiplier = 1.0
 			#Scale mob attack damage by this value
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			attack_multiplier = 1.2
+			attack_multiplier = 1.0
 
 	[mobs.umvuthi]
 		#Disable/enable Umvuthi's boss health bar
@@ -271,7 +271,7 @@
 		#Umvuthi will summon healers whenever he loses this much total health.
 		# Default: 45
 		# Range: > 0
-		spawn_healers_threshold = 1294
+		spawn_healers_threshold = 45
 
 		#Generation controls for Umvuthana Groves
 		[mobs.umvuthi.biome_config]
@@ -318,11 +318,11 @@
 			#Scale mob health by this value
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			health_multiplier = 28.75
+			health_multiplier = 1.0
 			#Scale mob attack damage by this value
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			attack_multiplier = 4.0
+			attack_multiplier = 1.0
 
 	[mobs.ferrous_wroughtnaut]
 		#Disable/enable Ferrous Wroughtnaut's boss health bar
@@ -376,11 +376,11 @@
 			#Scale mob health by this value
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			health_multiplier = 5.25
+			health_multiplier = 1.0
 			#Scale mob attack damage by this value
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			attack_multiplier = 0.85
+			attack_multiplier = 1.0
 
 	[mobs.sculptor]
 		#How tall (in blocks) the Sculptor's test will be
