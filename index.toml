@@ -5174,7 +5174,7 @@ hash = "d6aee94fb80b3c84a6fbe271e797e6bf4a7665e60d7f5eebaf0563e496e93982"
 
 [[files]]
 file = "kubejs/data/minerpg/puffish_skills/categories/ascension/definitions.json"
-hash = "f3d618dd8c70ba342ed485cd4ad96d480f14b33e10f18495e293886ecd5b849c"
+hash = "d8c9c7137114b678d662d7cbfcc1c546819d8704694a18647bc83176654a1990"
 
 [[files]]
 file = "kubejs/data/minerpg/puffish_skills/categories/ascension/skills.json"
@@ -8082,15 +8082,15 @@ hash = "e9841c4eae1e56ba5b8700f9f109a2f4cd995f23e02f11a533cbe7cf60ddf482"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_ascension.js"
-hash = "e733a4d2d6c2c24cb6d6941cce195099e3e41347d91ef5d007452ac0e9d4164a"
+hash = "8998b26b24d789892f370bb90a868ffc87cde898b53fe9d8619f44921c4ea027"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_ascension_effects.js"
-hash = "5ae4def7f96b01f98c45d844084db50f661dd0c94fb675f5a107fc96e5e108c5"
+hash = "24a2c7bc62b27c81400803a08baaa626915b371e3b359610a13587ccbe3fa991"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_boss_tuning.js"
-hash = "9b3efd18b46f4c29f50acdb023ea451fc17bf509f26e5c384ac1a74dae1cc008"
+hash = "3eed9b288baad85de17048d526551aa6acb36042571f538a202576d830a5ed07"
 
 [[files]]
 file = "kubejs/server_scripts/minerpg_calling.js"
