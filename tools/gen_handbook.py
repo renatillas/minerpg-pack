@@ -216,11 +216,9 @@ E['classes'] = [
     ('talents', 'Talents', 'skill_tree_rpgs:orb_of_oblivion', [
         text(f'Press {k("key.puffish_skills.open")} for your talent trees. Kills earn talent experience, '
              'shared with party members within 200 blocks.$(br2)Kills fill the class tree up to 18 points, '
-             'each one slower than the last. Four more come from the great bosses: The Harbinger, the '
-             'Netherite Monstrosity, Ignis and the Ender Guardian.'),
-        text('Beyond tier 4, some classes have a $(l)Mastery$() tier: a new spell with two upgrades, a '
-             'capstone, two passives and two stat skills. It opens from either tier-4 spell. The weapon tree '
-             'holds 10 points.'),
+             'each one slower than the last. The tree has more talents than that, so choose.'),
+        text('The weapon tree holds 10 points.$(br2)The great bosses give $(l)Ascension$() points instead, for a '
+             'tab of their own: see $(l)Ascension and Fates$().'),
         text('Changed your mind? An $(item)Orb of Oblivion$() resets your talents so you can spend them '
              'again, or on another class tree. It resets the Side Class tab too.'),
     ]),
@@ -231,9 +229,29 @@ E['classes'] = [
         text('Each side class offers its root, its first four tome spells, two upgrades for each, and four early '
              'passives. You can learn $(l)two$() of the four spells, and cast them with any weapon. A third is '
              'refused and its point comes back.$(br2)Arrow spells still need a bow, and caster spells still use '
-             'runes. Tier-4 spells, Mastery and weapon talents stay with your main class.'),
+             'runes. Tier-4 spells, Ascension and weapon talents stay with your main class.'),
         text('To change your side class or its spells, use an $(item)Orb of Oblivion$(): it resets all your '
              'talent tabs, the Side Class one included.'),
+    ]),
+    ('ascension', 'Ascension and Fates', 'minecraft:nether_star', [
+        text('$(l)Ascension$() is a talent tab only bosses can fill. No experience counts.$(br2)Your first great '
+             'Wildlands boss (Ancient Remnant, Maledictus or the Leviathan) opens it and gives your first point: '
+             'your $(l)Fate$().'),
+        text('$(li)Wildlands boss: a $(l)Fate$()$(li)The Harbinger: a $(l)Transformation$() of one spell'
+             '$(li)Monstrosity and Ignis: two $(l)Deepenings$()$(li)Ender Guardian: your $(l)Ultimate$()'
+             '$(li)Ender Dragon and the Wither: two $(l)Empowerments$() of it', 'The Ladder'),
+        text('Each class has two Fates. Taking one locks the other, and each has a $(l)drawback$(). You get one of '
+             'two Transformations and two of three Deepenings.$(br2)An $(item)Orb of Oblivion$() resets it all; '
+             'points are kept.$(br2)Rogue, Warrior, Priest and Paladin have Fates now. Other classes keep their '
+             'points until theirs arrive.', 'Choosing'),
+        text('Your first melee hit after Vanish or Shadow Step deals +150% damage.$(br2)Drawback: -20% max health.$(br2)Ultimate: Thousand Cuts: blades hit every enemy within 6 blocks, every hit critical.', 'Nightblade (Rogue)'),
+        text('Every melee hit adds a stack of Fatal Poison (up to 5).$(br2)Drawback: -20% melee damage.$(br2)Ultimate: Plague Bloom: a toxic cloud follows you for 8 seconds.', 'Plaguefang (Rogue)'),
+        text('+30% max health, +4 armor. Charge makes enemies attack you.$(br2)Drawback: -15% movement and attack speed.$(br2)Ultimate: Colossus: 10 seconds larger, unmovable, taking half damage.', 'Juggernaut (Warrior)'),
+        text('Mortal Strike deals double damage below 35% health; kills reset Charge.$(br2)Drawback: -30% healing received.$(br2)Ultimate: Rampage: for 8 seconds every kill resets your cooldowns.', 'Reaver (Warrior)'),
+        text('Overhealing becomes a barrier. +30% healing power.$(br2)Drawback: -50% holy damage.$(br2)Ultimate: Dawnfall: your heals land on every ally near you, and death holds off once.', 'Lightbinder (Priest)'),
+        text('40% of the holy damage you deal heals the most injured ally near you.$(br2)Drawback: -30% healing power on your heals.$(br2)Ultimate: Wrath of Dawn: pillars of light strike and heal.', 'Zealot (Priest)'),
+        text('+20% max health. Shield blocks heal you and pull aggro.$(br2)Drawback: -25% attack damage.$(br2)Ultimate: Bastion of Light: a dome where allies take 60% less damage.', 'Bulwark (Paladin)'),
+        text('Melee hits add holy damage from your healing power.$(br2)Drawback: -4 armor, -20% healing power.$(br2)Ultimate: Avatar of Light: wings, +30% attack damage, shockwaves.', 'Crusader (Paladin)'),
     ]),
     ('callings', 'The Callings', 'minecraft:book', [
         text('$(li)$(l)Wizards$(): Arcane, Fire, Frost.'
@@ -679,7 +697,7 @@ GUIDE_BOSSES = [
      'A forge-born giant of netherite and lava that guards the Soul Blacksmith\'s forge in the Nether.',
      'Its smash shakes the floor and leaves fire behind. Roll the smash, and never stand in its lava.',
      'Bring fire resistance. Everything here burns.',
-     'Its $(item)Molten Heart$() counts for the quest book, and the kill earns a talent point.'),
+     'Its $(item)Molten Heart$() counts for the quest book, and the kill earns an Ascension point.'),
     ('ignis', 'cataclysm:ignis', 'Ignis', 'minerpg:void_shard',
      {'lair': in_structure('cataclysm:burning_arena')}, 'minerpg:void_shard',
      'A fallen knight wrapped in fire, waiting in the $(l)Burning Arena$().',

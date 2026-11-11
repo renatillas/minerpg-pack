@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)Defeated.$()$(br2)Its $(item)Molten Heart$() counts for the quest book, and the kill earns a talent point.",
+      "text": "$(l)Defeated.$()$(br2)Its $(item)Molten Heart$() counts for the quest book, and the kill earns an Ascension point.",
       "advancement": "minerpg:field_guide/defeated/netherite_monstrosity"
     }
   ],

@@ -2,7 +2,7 @@
   "name": "Class Merchants",
   "icon": "minecraft:emerald",
   "category": "patchouli:classes",
-  "sortnum": 6,
+  "sortnum": 7,
   "pages": [
     {
       "type": "patchouli:text",

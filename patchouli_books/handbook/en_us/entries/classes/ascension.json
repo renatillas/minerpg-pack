@@ -1,0 +1,62 @@
+{
+  "name": "Ascension and Fates",
+  "icon": "minecraft:nether_star",
+  "category": "patchouli:classes",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Ascension$() is a talent tab only bosses can fill. No experience counts.$(br2)Your first great Wildlands boss (Ancient Remnant, Maledictus or the Leviathan) opens it and gives your first point: your $(l)Fate$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Wildlands boss: a $(l)Fate$()$(li)The Harbinger: a $(l)Transformation$() of one spell$(li)Monstrosity and Ignis: two $(l)Deepenings$()$(li)Ender Guardian: your $(l)Ultimate$()$(li)Ender Dragon and the Wither: two $(l)Empowerments$() of it",
+      "title": "The Ladder"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Each class has two Fates. Taking one locks the other, and each has a $(l)drawback$(). You get one of two Transformations and two of three Deepenings.$(br2)An $(item)Orb of Oblivion$() resets it all; points are kept.$(br2)Rogue, Warrior, Priest and Paladin have Fates now. Other classes keep their points until theirs arrive.",
+      "title": "Choosing"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Your first melee hit after Vanish or Shadow Step deals +150% damage.$(br2)Drawback: -20% max health.$(br2)Ultimate: Thousand Cuts: blades hit every enemy within 6 blocks, every hit critical.",
+      "title": "Nightblade (Rogue)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Every melee hit adds a stack of Fatal Poison (up to 5).$(br2)Drawback: -20% melee damage.$(br2)Ultimate: Plague Bloom: a toxic cloud follows you for 8 seconds.",
+      "title": "Plaguefang (Rogue)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "+30% max health, +4 armor. Charge makes enemies attack you.$(br2)Drawback: -15% movement and attack speed.$(br2)Ultimate: Colossus: 10 seconds larger, unmovable, taking half damage.",
+      "title": "Juggernaut (Warrior)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Mortal Strike deals double damage below 35% health; kills reset Charge.$(br2)Drawback: -30% healing received.$(br2)Ultimate: Rampage: for 8 seconds every kill resets your cooldowns.",
+      "title": "Reaver (Warrior)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Overhealing becomes a barrier. +30% healing power.$(br2)Drawback: -50% holy damage.$(br2)Ultimate: Dawnfall: your heals land on every ally near you, and death holds off once.",
+      "title": "Lightbinder (Priest)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "40% of the holy damage you deal heals the most injured ally near you.$(br2)Drawback: -30% healing power on your heals.$(br2)Ultimate: Wrath of Dawn: pillars of light strike and heal.",
+      "title": "Zealot (Priest)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "+20% max health. Shield blocks heal you and pull aggro.$(br2)Drawback: -25% attack damage.$(br2)Ultimate: Bastion of Light: a dome where allies take 60% less damage.",
+      "title": "Bulwark (Paladin)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Melee hits add holy damage from your healing power.$(br2)Drawback: -4 armor, -20% healing power.$(br2)Ultimate: Avatar of Light: wings, +30% attack damage, shockwaves.",
+      "title": "Crusader (Paladin)"
+    }
+  ]
+}
