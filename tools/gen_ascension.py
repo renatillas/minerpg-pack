@@ -275,7 +275,8 @@ def lightbinder():
     return {
         'fate': dict(title='Lightbinder', text='Overflow: healing beyond full health becomes a barrier (up to 6 '
                      'hearts). +30% healing power.', drawback='-50% holy damage.',
-                     attrs=[(HOLY, 'multiply_base', 0.3)]),
+                     # Absorption only fits under max_absorption (base 0), so Overflow brings its own room.
+                     attrs=[(HOLY, 'multiply_base', 0.3), ('minecraft:generic.max_absorption', 'addition', 12.0)]),
         'trans_1': dict(title='Living Barrier', text='Your Barrier heals allies standing near it every second.'),
         'trans_2': dict(title='Purifying Well', text='Each heal from your Lightwell also removes one harmful effect.'),
         'deep_1': dict(title='Guardian\'s Echo', text='When you heal an ally below 30% health, the heal lands twice.'),

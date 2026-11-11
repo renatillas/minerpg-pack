@@ -52,9 +52,9 @@ const $AGFormat = Java.loadClass('net.minecraft.ChatFormatting')
 function ascMigrate(player) {
   var data = player.getPersistentData()
   if (data.getBoolean(AG_MIGRATED)) return
-  data.putBoolean(AG_MIGRATED, true)
   var main = agCategory(AG_MAIN_ID)
   var asc = agCategory(AG_ID)
+  // Without the tabs (a data error), try again at the next login rather than marking the player done.
   if (main == null || asc == null) return
   var bosses = $AGRL.parse('minerpg:bosses')
   var moved = main.getPoints(player, bosses)
@@ -64,6 +64,7 @@ function ascMigrate(player) {
   }
   var reset = main.getSpentPoints(player) > 0
   if (reset) main.resetSkills(player)
+  data.putBoolean(AG_MIGRATED, true)
   if (moved == 0 && !reset) return
   // withStyle is overloaded (formatting / style / operator); Rhino needs the one named.
   player.tell($AGComponent.literal('Ascension has arrived: ' + (moved > 0 ? 'your ' + moved + ' boss talent point'

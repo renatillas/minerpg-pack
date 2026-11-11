@@ -184,9 +184,23 @@ function ascHolyMultiplier(player) {
   return m
 }
 
-// Damage that does not come from a spell or a weapon swing, so it doesn't feed the on-hit effects again.
+// Extra hits from Ascension effects (shockwaves, Cleave, Hallowed Ground, ...). They must not trigger on-hit effects
+// again: a shockwave from enemy A to enemy B would shock A back, forever (the event fires before damage immunity).
+var ascInternalHit = false
+
 function ascMagicHit(target, player, amount) {
-  target.attack(player.damageSources().indirectMagic(player, player), amount)
+  ascInternalHit = true
+  try {
+    target.attack(player.damageSources().indirectMagic(player, player), amount)
+  } finally {
+    ascInternalHit = false
+  }
+}
+
+// A weapon swing (not a spell, arrow or effect).
+function ascIsMelee(source) {
+  var key = source.typeHolder().unwrapKey()
+  return key.isPresent() && String(key.get().location()) == 'minecraft:player_attack'
 }
 
 function ascMostInjuredNear(player, radius) {
@@ -201,13 +215,15 @@ function ascMostInjuredNear(player, radius) {
 // ------------------------------------------------------------------------------------------------------------------
 // Damage dealt by players to enemies (multipliers, on-hit effects).
 function ascOutgoing(event, attacker, victim) {
+  if (ascInternalHit) return
   var source = event.getSource()
   var direct = source.getImmediate() == attacker
+  var melee = direct && ascIsMelee(source)
   var holy = ascIsHoly(source)
   var amount = event.getAmount()
 
   // Nightblade: Ambush (and Exposed Throat).
-  if (direct && ascHas(attacker, 'asc_nightblade_fate') &&
+  if (melee && ascHas(attacker, 'asc_nightblade_fate') &&
       (ascHasEffect(attacker, 'rogues:stealth') || ascHasEffect(attacker, 'rogues:shadow_step'))) {
     amount *= ASC_AMBUSH_MULTIPLIER
     ascBurst(victim, $AscParticles.CRIT, 20, 0.4)
@@ -218,15 +234,15 @@ function ascOutgoing(event, attacker, victim) {
     ascGive(victim, 'minecraft:slowness', 40, 1)
   }
   // Reaver: Scent of Blood.
-  if (direct && ascHas(attacker, 'asc_reaver_deep_3') && victim.getHealth() < victim.getMaxHealth() / 2) amount *= 1.15
+  if (melee && ascHas(attacker, 'asc_reaver_deep_3') && victim.getHealth() < victim.getMaxHealth() / 2) amount *= 1.15
   // Holy damage: Fate corrections, Smite the Wicked.
   if (holy) {
     amount *= ascHolyMultiplier(attacker)
     if (ascHas(attacker, 'asc_zealot_deep_3') && victim.isInvertedHealAndHarm()) amount *= 1.25
   }
   // Crusader: Blessed Arms (extra holy damage on melee hits), Avatar of Light (+30%).
-  if (direct && ascHas(attacker, 'asc_crusader_fate')) amount += 0.3 * ascHealingPower(attacker)
-  if (direct && ascTimerOn(attacker, 'avatar')) amount *= 1.3
+  if (melee && ascHas(attacker, 'asc_crusader_fate')) amount += 0.3 * ascHealingPower(attacker)
+  if (melee && ascTimerOn(attacker, 'avatar')) amount *= 1.3
   event.setAmount(amount)
 
   // After-hit effects.
@@ -252,8 +268,8 @@ function ascOutgoing(event, attacker, victim) {
   }
   if (ascTimerOn(attacker, 'rampage') && ascHas(attacker, 'asc_reaver_emp_dragon')) attacker.heal(amount * 0.15)
   // Crusader: Light's Reprisal, Avatar of Light's shockwave and Shared Radiance.
-  if (direct && ascHas(attacker, 'asc_crusader_deep_3')) attacker.heal(amount * 0.03)
-  if (direct && ascTimerOn(attacker, 'avatar')) {
+  if (melee && ascHas(attacker, 'asc_crusader_deep_3')) attacker.heal(amount * 0.03)
+  if (melee && ascTimerOn(attacker, 'avatar')) {
     ascEnemiesNear(victim, 3).forEach(e => {
       if (e != victim) ascMagicHit(e, attacker, amount * 0.3)
     })
@@ -433,7 +449,8 @@ function ascTickWarrior(player, now) {
     ascEnemiesNear(player, 8).forEach(e => { if (e.setTarget) e.setTarget(player) })
   }
   if (ascHas(player, 'asc_juggernaut_trans_2') && ascNewCast(player, 'shout')) {
-    ascPlayersNear(player, 8).forEach(p => p.setAbsorptionAmount(Math.max(p.getAbsorptionAmount(), 4)))
+    // Absorption I: a 4-point barrier for 8 seconds (absorption needs the effect's max-absorption room).
+    ascPlayersNear(player, 8).forEach(p => ascGive(p, 'minecraft:absorption', 160, 0))
   }
   // Juggernaut: Colossus (10 s), Earthshaker at the end.
   if (ascNewCast(player, ASC_COLOSSUS)) {
@@ -459,7 +476,8 @@ function ascTickPriest(player, now) {
   if (now % 20 == 0 && ascHas(player, 'asc_lightbinder_trans_1')) {
     var box = player.getBoundingBox().inflate(16)
     player.level.getEntities(player, box).forEach(e => {
-      if (String(e.getType().builtInRegistryHolder().key().location()) != 'paladins:barrier') return
+      // KubeJS hands the entity type to scripts as its id.
+      if (String(e.getType()) != 'paladins:barrier') return
       ascPlayersNear(e, 3).forEach(p => p.heal(1.0 + 0.1 * ascHealingPower(player)))
     })
   }
@@ -470,9 +488,12 @@ function ascTickPriest(player, now) {
     ascPlayersNear(player, 12).forEach(p => {
       ascTimerSet(p, 'ward', ticks)
       if (ascHas(player, 'asc_lightbinder_emp_dragon')) {
+        // Collect first: removing while walking the live effect map throws.
+        var harmful = []
         p.getActiveEffects().forEach(inst => {
-          if (!inst.getEffect().value().isBeneficial()) p.removeEffect(inst.getEffect())
+          if (!inst.getEffect().value().isBeneficial()) harmful.push(inst.getEffect())
         })
+        harmful.forEach(effect => p.removeEffect(effect))
       }
     })
   }

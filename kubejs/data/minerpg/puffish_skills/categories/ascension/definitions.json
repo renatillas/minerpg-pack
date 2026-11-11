@@ -1204,6 +1204,14 @@
      "operation": "multiply_base",
      "value": 0.3
     }
+   },
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "minecraft:generic.max_absorption",
+     "operation": "addition",
+     "value": 12.0
+    }
    }
   ]
  },

@@ -13,9 +13,13 @@
 // Pack 1.8.0: OFF (BT_ENABLED). The designer wants to playtest every boss at its mods' default strength, so the boss
 // configs are back to the mods' defaults too (cataclysm-common.toml, mowziesmobs-common.toml, the health values in
 // bosses_of_mass_destruction.json5; the tuned versions are in git history before 1.8.0). The tables stay for when
-// tuning comes back. While it is off, a boss saved with the old tuning (max health and attack damage are stored with
-// the entity, e.g. a Cataclysm boss waiting in its lair) is put back to its type's current default when it loads.
+// tuning comes back. While BT_RESET_SAVED is on, a boss saved with the old tuning (max health and attack damage are
+// stored with the entity, e.g. a Cataclysm boss waiting in its lair) is put back to its type's default once, the first
+// time it loads (marked in its persistent data). Turn BT_RESET_SAVED off when bosses are retuned again, in the mods'
+// configs or here, or new bosses would lose that tuning on their first load.
 const BT_ENABLED = false
+const BT_RESET_SAVED = true
+const BT_RESET_MARK = 'minerpg_boss_reset_1_8'
 
 const $BTAttributes = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attributes')
 const $BTModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
@@ -71,8 +75,8 @@ const $BTLiving = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 const BT_TUNED_TAG = $BTTagKey.create($BTRegistryKeys.ENTITY_TYPE, $BTResourceLocation.parse('minerpg:tuned_boss'))
 
 // Entity ids in #minerpg:tuned_boss, read once the tags are loaded (KubeJS hands entity types to scripts as ids).
-// var, not const: these run inside a try block on the caller's side, where Rhino rejects a const declared twice.
-let btTunedIds = null
+// var, not const or let: these run inside a try block on the caller's side, where Rhino rejects a redeclaration.
+var btTunedIds = null
 function btTuned(id) {
   if (btTunedIds == null) {
     var found = {}
@@ -88,9 +92,12 @@ function btTuned(id) {
 }
 
 function btUntune(entity) {
-  if (!(entity instanceof $BTLiving)) return
+  if (!BT_RESET_SAVED || !(entity instanceof $BTLiving)) return
   var id = btTypeId(entity)
   if (!btTuned(id)) return
+  var mark = entity.getPersistentData()
+  if (mark.getBoolean(BT_RESET_MARK)) return
+  mark.putBoolean(BT_RESET_MARK, true)
   var type = $BTRegistries.ENTITY_TYPE.get($BTResourceLocation.parse(id))
   if (!$BTDefaultAttributes.hasSupplier(type)) return
   var defaults = $BTDefaultAttributes.getSupplier(type)
