@@ -1,0 +1,74 @@
+{
+ "school": "spell_power:physical_ranged",
+ "range": 0.0,
+ "tier": 1,
+ "type": "PASSIVE",
+ "passive": {
+  "triggers": [
+   {
+    "type": "DAMAGE_TAKEN",
+    "target_override": "CASTER",
+    "caster_conditions": [
+     {
+      "health_percent_below": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ "target": {
+  "type": "FROM_TRIGGER"
+ },
+ "impacts": [
+  {
+   "action": {
+    "type": "STATUS_EFFECT",
+    "status_effect": {
+     "effect_id": "archers_expansion:infiltrators_vanish",
+     "duration": 4.0
+    },
+    "apply_to_caster": true
+   },
+   "visuals": {
+    "particles": [
+     {
+      "id": "spell_engine:smoke_large",
+      "appearance": {
+       "color": 4294967295
+      },
+      "batch": {
+       "count": 40.0,
+       "shape": "SPHERE",
+       "anchor": "ENTITY",
+       "min_speed": 0.5,
+       "max_speed": 0.8
+      }
+     }
+    ]
+   }
+  },
+  {
+   "action": {
+    "type": "SPAWN",
+    "spawns": [
+     {
+      "entity_type_id": "archers_expansion:alter_ego",
+      "time_to_live_seconds": 8,
+      "delay_ticks": 5,
+      "placement": {
+       "location_offset_by_look": 1.5,
+       "location_yaw_offset": 180.0,
+       "apply_yaw": true
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "cost": {
+  "durability": 0,
+  "cooldown": {
+   "duration": 60.0
+  }
+ }
+}

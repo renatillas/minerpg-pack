@@ -242,8 +242,8 @@ E['classes'] = [
              '$(li)Ender Dragon and the Wither: two $(l)Empowerments$() of it', 'The Ladder'),
         text('Each class has two Fates. Taking one locks the other, and each has a $(l)drawback$(). You get one of '
              'two Transformations and two of three Deepenings.$(br2)An $(item)Orb of Oblivion$() resets it all; '
-             'points are kept.$(br2)Rogue, Warrior, Priest and Paladin have Fates now. Other classes keep their '
-             'points until theirs arrive.', 'Choosing'),
+             'points are kept.$(br2)Rogue, Warrior, Priest, Paladin and Deadeye have Fates now. Other classes keep '
+             'their points until theirs arrive.', 'Choosing'),
         text('Your first melee hit after Vanish or Shadow Step deals +150% damage.$(br2)Drawback: -20% max health.$(br2)Ultimate: Thousand Cuts: blades hit every enemy within 6 blocks, every hit critical.', 'Nightblade (Rogue)'),
         text('Every melee hit adds a stack of Fatal Poison (up to 5).$(br2)Drawback: -20% melee damage.$(br2)Ultimate: Plague Bloom: a toxic cloud follows you for 8 seconds.', 'Plaguefang (Rogue)'),
         text('+30% max health, +4 armor. Charge makes enemies attack you.$(br2)Drawback: -15% movement and attack speed.$(br2)Ultimate: Colossus: 10 seconds larger, unmovable, taking half damage.', 'Juggernaut (Warrior)'),
@@ -252,6 +252,8 @@ E['classes'] = [
         text('40% of the holy damage you deal heals the most injured ally near you.$(br2)Drawback: -30% healing power on your heals.$(br2)Ultimate: Wrath of Dawn: pillars of light strike and heal.', 'Zealot (Priest)'),
         text('+20% max health. Shield blocks heal you and pull aggro.$(br2)Drawback: -25% attack damage.$(br2)Ultimate: Bastion of Light: a dome where allies take 60% less damage.', 'Bulwark (Paladin)'),
         text('Melee hits add holy damage from your healing power.$(br2)Drawback: -4 armor, -20% healing power.$(br2)Ultimate: Avatar of Light: wings, +30% attack damage, shockwaves.', 'Crusader (Paladin)'),
+        text('+35% ranged damage to enemies 16+ blocks away.$(br2)Drawback: -30% ranged damage within 6 blocks.$(br2)Ultimate: Killshot: a shot through every enemy in a line that finishes off the wounded.', 'Sharpshooter (Deadeye)'),
+        text('Taking damage leaves a decoy behind; Alter Ego comes back sooner.$(br2)Drawback: -20% max health.$(br2)Ultimate: Hall of Mirrors: six decoys, and your shots echo onto other enemies.', 'Phantom (Deadeye)'),
     ]),
     ('callings', 'The Callings', 'minecraft:book', [
         text('$(li)$(l)Wizards$(): Arcane, Fire, Frost.'

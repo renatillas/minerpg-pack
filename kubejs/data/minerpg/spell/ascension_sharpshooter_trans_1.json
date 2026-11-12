@@ -1,0 +1,15 @@
+{
+ "school": "spell_power:physical_ranged",
+ "range": 0.0,
+ "tier": 1,
+ "type": "MODIFIER",
+ "modifiers": [
+  {
+   "spell_pattern": "archers_expansion:fast_shot",
+   "arrow_perks": {
+    "pierce": 3,
+    "damage_multiplier": 1.25
+   }
+  }
+ ]
+}

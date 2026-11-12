@@ -1,0 +1,130 @@
+{
+ "school": "spell_power:physical_ranged",
+ "range": 64.0,
+ "tier": 5,
+ "learn": {},
+ "active": {
+  "cast": {
+   "duration": 1.0,
+   "animation": {
+    "id": "spell_engine:archery_pull"
+   },
+   "animates_ranged_weapon": true,
+   "sound": {
+    "id": "archers:bow_pull"
+   }
+  }
+ },
+ "release": {
+  "animation": {
+   "id": "spell_engine:archery_release"
+  }
+ },
+ "target": {
+  "type": "AIM",
+  "aim": {}
+ },
+ "impacts": [
+  {
+   "action": {
+    "type": "DAMAGE",
+    "damage": {
+     "spell_power_coefficient": 3.0,
+     "knockback": 1.0
+    }
+   },
+   "sound": {
+    "id": "archers:marker_shot"
+   },
+   "target_modifiers": [
+    {
+     "conditions": [
+      {
+       "entity_type": "minecraft:player"
+      }
+     ],
+     "execute": "DENY"
+    }
+   ]
+  },
+  {
+   "action": {
+    "type": "DAMAGE",
+    "damage": {
+     "spell_power_coefficient": 100.0,
+     "knockback": 0.5
+    }
+   },
+   "target_modifiers": [
+    {
+     "conditions": [
+      {
+       "health_percent_below": 0.3
+      }
+     ],
+     "execute": "ALLOW"
+    },
+    {
+     "conditions": [
+      {
+       "entity_type": "#minerpg:boss"
+      }
+     ],
+     "execute": "DENY"
+    },
+    {
+     "conditions": [
+      {
+       "entity_type": "minecraft:player"
+      }
+     ],
+     "execute": "DENY"
+    }
+   ]
+  }
+ ],
+ "cost": {
+  "exhaust": 0.3,
+  "cooldown": {
+   "duration": 90.0
+  }
+ },
+ "deliver": {
+  "type": "PROJECTILE",
+  "projectile": {
+   "launch_properties": {
+    "velocity": 3.0
+   },
+   "projectile": {
+    "perks": {
+     "pierce": 10
+    },
+    "client_data": {
+     "travel_particles": [
+      {
+       "id": "electric_spark",
+       "appearance": {},
+       "batch": {
+        "count": 30.0,
+        "shape": "LINE",
+        "anchor": "ENTITY",
+        "min_speed": 0.2,
+        "max_speed": 0.22,
+        "alignment": "LOOK"
+       }
+      }
+     ],
+     "composite_model": {
+      "models": [
+       {
+        "fx": {
+         "model_id": "archers_expansion:spell_projectile/fast_arrow"
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

@@ -21,6 +21,8 @@ const ASC_WATCHED_CASTS = {
   'minerpg:ascension_zealot_ultimate': true,
   'minerpg:ascension_bulwark_ultimate': true,
   'minerpg:ascension_crusader_ultimate': true,
+  'minerpg:ascension_sharpshooter_ultimate': true,
+  'minerpg:ascension_phantom_ultimate': true,
   // Class spells that Transformations change.
   'rogues:charge': true,
   'rogues:last_stand': true,

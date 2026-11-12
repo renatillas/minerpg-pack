@@ -1,0 +1,42 @@
+{
+ "school": "spell_power:physical_ranged",
+ "range": 0.0,
+ "tier": 1,
+ "type": "PASSIVE",
+ "passive": {
+  "triggers": [
+   {
+    "type": "DAMAGE_TAKEN",
+    "target_override": "CASTER"
+   }
+  ]
+ },
+ "target": {
+  "type": "FROM_TRIGGER"
+ },
+ "impacts": [
+  {
+   "action": {
+    "type": "SPAWN",
+    "spawns": [
+     {
+      "entity_type_id": "archers_expansion:alter_ego",
+      "time_to_live_seconds": 8,
+      "delay_ticks": 5,
+      "placement": {
+       "location_offset_by_look": 1.5,
+       "location_yaw_offset": 180.0,
+       "apply_yaw": true
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "cost": {
+  "durability": 0,
+  "cooldown": {
+   "duration": 15.0
+  }
+ }
+}

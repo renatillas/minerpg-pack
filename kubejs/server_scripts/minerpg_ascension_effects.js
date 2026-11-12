@@ -20,6 +20,10 @@ const $AscIncoming = Java.loadClass('net.neoforged.neoforge.event.entity.living.
 const $AscHeal = Java.loadClass('net.neoforged.neoforge.event.entity.living.LivingHealEvent')
 const $AscSpellRegistry = Java.loadClass('net.spell_engine.api.spell.registry.SpellRegistry')
 const $AscParticles = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
+const $AscProjectile = Java.loadClass('net.minecraft.world.entity.projectile.Projectile')
+const $AscAABB = Java.loadClass('net.minecraft.world.phys.AABB')
+const $AscSpellPower = Java.loadClass('net.spell_power.api.SpellPower')
+const $AscSpellSchools = Java.loadClass('net.spell_power.api.SpellSchools')
 
 const ASC_VENOM = 'mrpg_lib:fatal_poison'
 
@@ -213,6 +217,71 @@ function ascMostInjuredNear(player, radius) {
 }
 
 // ------------------------------------------------------------------------------------------------------------------
+// Deadeye: Sharpshooter, Phantom (pack 1.8.1).
+// ------------------------------------------------------------------------------------------------------------------
+const ASC_KILLSHOT = 'ascension_sharpshooter_ultimate'
+const ASC_MIRRORS = 'ascension_phantom_ultimate'
+const ASC_ALTER_EGO = 'archers_expansion:alter_ego'
+const ASC_VANISH = 'archers_expansion:infiltrators_vanish'
+
+// An arrow, a spell projectile, or a ranged spell's damage.
+function ascIsRanged(source) {
+  if (source.getImmediate() instanceof $AscProjectile) return true
+  var key = source.typeHolder().unwrapKey()
+  if (!key.isPresent()) return false
+  var id = String(key.get().location())
+  return id == 'spell_power:physical_ranged' || id == 'minecraft:arrow'
+}
+
+function ascRangedPower(player) {
+  return $AscSpellPower.getSpellPower($AscSpellSchools.getSchool('physical_ranged'), player).nonCriticalValue()
+}
+
+function ascEnemiesAt(level, x, y, z, radius) {
+  var box = new $AscAABB(x - radius, y - radius, z - radius, x + radius, y + radius, z + radius)
+  return level.getEntitiesOfClass($AscLiving, box).filter(e => ascIsEnemy(e) &&
+    e.distanceToSqr(x, y, z) <= radius * radius)
+}
+
+// Steady Aim: when each Sharpshooter last moved (player UUID -> [x, z, game time]). Not saved: a relog starts moving.
+var ascStill = {}
+
+function ascSteady(player) {
+  var still = ascStill[String(player.getId())]
+  return still != null && ascNow(player) - still[2] >= 20
+}
+
+// Volatile Decoys: each Phantom's decoys seen last tick (player UUID -> {entity id: [x, y, z]}). A decoy that is gone
+// has exploded (it explodes when it ends or dies), so its explosion is repeated here, stronger and blinding: the
+// mod's explosion uses its own spell file and ignores talents.
+var ascDecoys = {}
+
+function ascDecoyBlast(player, x, y, z) {
+  var amount = ascRangedPower(player) * 1.0
+  ascEnemiesAt(player.level, x, y + 1, z, 4).forEach(e => {
+    ascMagicHit(e, player, amount)
+    ascGive(e, 'minecraft:blindness', 40, 0)
+  })
+  player.level.sendParticles($AscParticles.EXPLOSION, x, y + 1, z, 3, 1.0, 0.5, 1.0, 0.0)
+}
+
+function ascTrackDecoys(player) {
+  var key = String(player.getId())
+  var before = ascDecoys[key] || {}
+  var now = {}
+  player.level.getEntitiesOfClass($AscLiving, player.getBoundingBox().inflate(48)).forEach(e => {
+    if (String(e.getType()) != ASC_ALTER_EGO || !e.isAlive() || e.getOwner() != player) return
+    now[String(e.getId())] = [e.getX(), e.getY(), e.getZ()]
+  })
+  for (var id in before) {
+    if (now[id]) continue
+    var at = before[id]
+    if (player.distanceToSqr(at[0], at[1], at[2]) < 40 * 40) ascDecoyBlast(player, at[0], at[1], at[2])
+  }
+  ascDecoys[key] = now
+}
+
+// ------------------------------------------------------------------------------------------------------------------
 // Damage dealt by players to enemies (multipliers, on-hit effects).
 function ascOutgoing(event, attacker, victim) {
   if (ascInternalHit) return
@@ -243,6 +312,23 @@ function ascOutgoing(event, attacker, victim) {
   // Crusader: Blessed Arms (extra holy damage on melee hits), Avatar of Light (+30%).
   if (melee && ascHas(attacker, 'asc_crusader_fate')) amount += 0.3 * ascHealingPower(attacker)
   if (melee && ascTimerOn(attacker, 'avatar')) amount *= 1.3
+  // Sharpshooter: Long Shot (and its drawback), Pinning Shot, Steady Aim, Headhunter. Phantom: Ambush Shot.
+  var ranged = ascIsRanged(source)
+  if (ranged) {
+    var distance = attacker.distanceTo(victim)
+    if (ascHas(attacker, 'asc_sharpshooter_fate')) {
+      if (distance >= 16) amount *= 1.35
+      else if (distance <= 6) amount *= 0.7
+    }
+    if (ascHas(attacker, 'asc_sharpshooter_trans_2') && ascHasEffect(victim, 'archers_expansion:disabling_shot')) amount *= 1.2
+    if (ascHas(attacker, 'asc_sharpshooter_deep_1') && ascSteady(attacker)) amount *= 1.15
+    if (ascHas(attacker, 'asc_sharpshooter_deep_2') && victim.getHealth() > victim.getMaxHealth() * 0.8) amount *= 1.25
+    if (ascHas(attacker, 'asc_phantom_trans_2') && ascHasEffect(attacker, ASC_VANISH)) {
+      amount *= 2
+      attacker.removeEffect(ascEffect(ASC_VANISH))
+      ascBurst(victim, $AscParticles.CRIT, 20, 0.4)
+    }
+  }
   event.setAmount(amount)
 
   // After-hit effects.
@@ -267,6 +353,15 @@ function ascOutgoing(event, attacker, victim) {
     }
   }
   if (ascTimerOn(attacker, 'rampage') && ascHas(attacker, 'asc_reaver_emp_dragon')) attacker.heal(amount * 0.15)
+  // Phantom: Hall of Mirrors repeats each ranged hit on another enemy for half.
+  if (ranged && ascTimerOn(attacker, 'mirrors')) {
+    var others = ascEnemiesNear(victim, 10).filter(e => e != victim)
+    if (others.length > 0) {
+      var echo = others[Math.floor(Math.random() * others.length)]
+      ascMagicHit(echo, attacker, amount * 0.5)
+      ascBurst(echo, $AscParticles.WITCH, 10, 0.4)
+    }
+  }
   // Crusader: Light's Reprisal, Avatar of Light's shockwave and Shared Radiance.
   if (melee && ascHas(attacker, 'asc_crusader_deep_3')) attacker.heal(amount * 0.03)
   if (melee && ascTimerOn(attacker, 'avatar')) {
@@ -285,6 +380,14 @@ function ascOutgoing(event, attacker, victim) {
 // Damage taken by players.
 function ascIncoming(event, victim) {
   var attacker = event.getSource().getActual()
+  // Phantom: Light Feet.
+  if (ascHas(victim, 'asc_phantom_deep_1')) {
+    var key = event.getSource().typeHolder().unwrapKey()
+    if (key.isPresent() && String(key.get().location()) == 'minecraft:fall') {
+      event.setCanceled(true)
+      return
+    }
+  }
   var amount = event.getAmount()
   // Juggernaut: Iron Hide, Colossus (-50% with its Resistance II counted: 0.6 * 0.8333 = 0.5).
   if (ascHas(victim, 'asc_juggernaut_deep_1') && victim.getHealth() > victim.getMaxHealth() / 2) amount *= 0.9
@@ -308,6 +411,13 @@ NativeEvents.onEvent($AscIncoming, event => {
     ascIncoming(event, victim)
   } else if (attacker instanceof $AscServerPlayer && !(victim instanceof $AscPlayer)) {
     ascOutgoing(event, attacker, victim)
+  } else if (String(victim.getType()) == ASC_ALTER_EGO && ascIsEnemy(attacker)) {
+    // Phantom: Misdirection (an enemy strikes one of your decoys).
+    var owner = victim.getOwner()
+    if (owner instanceof $AscServerPlayer && ascHas(owner, 'asc_phantom_deep_2')) {
+      ascGive(attacker, 'minecraft:slowness', 60, 1)
+      ascGive(attacker, 'minecraft:weakness', 60, 0)
+    }
   }
 })
 
@@ -361,6 +471,15 @@ EntityEvents.death(event => {
     }
     // Crusader: Zeal.
     if (ascHas(killer, 'asc_crusader_deep_1')) ascTimedModifier(killer, 'zeal', 'minecraft:generic.attack_speed', 0.2, 60)
+    // Sharpshooter: Clean Kill, Second Barrel (a ranged kill soon after Killshot). Phantom: Shatterpoint.
+    var rangedKill = ascIsRanged(event.getSource())
+    if (rangedKill && ascHas(killer, 'asc_sharpshooter_deep_3')) {
+      killer.getCooldownManager().spellsOnCooldown().forEach(id => ascShortenCooldown(killer, String(id), 60))
+    }
+    if (rangedKill && ascHas(killer, 'asc_sharpshooter_emp_wither') && ascCastWithin(killer, ASC_KILLSHOT, 60)) {
+      ascShortenCooldown(killer, 'minerpg:' + ASC_KILLSHOT, 600)
+    }
+    if (ascHas(killer, 'asc_phantom_emp_wither') && ascTimerOn(killer, 'mirrors')) ascResetCooldown(killer, ASC_ALTER_EGO)
   }
   // Plaguefang: Corpse Burst (any enemy dying inside a Wither-empowered Plague Bloom).
   if (victim instanceof $AscEnemy) {
@@ -603,6 +722,22 @@ function ascTickPaladin(player, now) {
   if (now % 10 == 0 && ascTimerOn(player, 'avatar')) ascBurst(player, $AscParticles.END_ROD, 6, 0.6)
 }
 
+function ascTickDeadeye(player, now) {
+  var key = String(player.getId())
+  if (ascHas(player, 'asc_sharpshooter_deep_1')) {
+    var still = ascStill[key]
+    if (still == null || Math.abs(still[0] - player.getX()) > 0.01 || Math.abs(still[1] - player.getZ()) > 0.01) {
+      ascStill[key] = [player.getX(), player.getZ(), now]
+    }
+  }
+  if (ascHas(player, 'asc_phantom_ultimate') && ascNewCast(player, ASC_MIRRORS)) {
+    ascTimerSet(player, 'mirrors', ascHas(player, 'asc_phantom_emp_dragon') ? 240 : 160)
+  }
+  if (now % 10 == 0 && ascTimerOn(player, 'mirrors')) ascBurst(player, $AscParticles.WITCH, 6, 0.6)
+  if (ascHas(player, 'asc_phantom_trans_1')) ascTrackDecoys(player)
+  else if (ascDecoys[key]) delete ascDecoys[key]
+}
+
 function ascTickPlayer(player) {
   var now = ascNow(player)
   ascExpireModifiers(player)
@@ -610,6 +745,7 @@ function ascTickPlayer(player) {
   ascTickWarrior(player, now)
   ascTickPriest(player, now)
   ascTickPaladin(player, now)
+  ascTickDeadeye(player, now)
 }
 
 ServerEvents.tick(event => {

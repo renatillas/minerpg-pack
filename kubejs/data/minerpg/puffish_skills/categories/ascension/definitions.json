@@ -2293,5 +2293,604 @@
     }
    }
   ]
+ },
+ "asc_sharpshooter_fate": {
+  "title": {
+   "translate": "skill.minerpg.asc_sharpshooter_fate.title"
+  },
+  "description": {
+   "text": "",
+   "extra": [
+    {
+     "translate": "skill.minerpg.asc_sharpshooter_fate.description"
+    },
+    {
+     "text": "\n"
+    },
+    {
+     "translate": "skill.minerpg.asc_sharpshooter_fate.drawback",
+     "color": "gold"
+    }
+   ]
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_sharpshooter_fate.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_sharpshooter_fate"
+    }
+   }
+  ]
+ },
+ "asc_sharpshooter_trans_1": {
+  "title": {
+   "translate": "skill.minerpg.asc_sharpshooter_trans_1.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_sharpshooter_trans_1.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_sharpshooter_trans_1.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_sharpshooter_trans_1"
+    }
+   },
+   {
+    "type": "skill_tree_rpgs:spell",
+    "data": {
+     "containers": [
+      {
+       "access": "NONE",
+       "access_param": "",
+       "extra_tier_binding": 0,
+       "max_spell_count": 0,
+       "pool": "",
+       "slot": "",
+       "spell_ids": [
+        "minerpg:ascension_sharpshooter_trans_1"
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "asc_sharpshooter_trans_2": {
+  "title": {
+   "translate": "skill.minerpg.asc_sharpshooter_trans_2.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_sharpshooter_trans_2.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_sharpshooter_trans_2.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_sharpshooter_trans_2"
+    }
+   },
+   {
+    "type": "skill_tree_rpgs:spell",
+    "data": {
+     "containers": [
+      {
+       "access": "NONE",
+       "access_param": "",
+       "extra_tier_binding": 0,
+       "max_spell_count": 0,
+       "pool": "",
+       "slot": "",
+       "spell_ids": [
+        "minerpg:ascension_sharpshooter_trans_2"
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "asc_sharpshooter_deep_1": {
+  "title": {
+   "translate": "skill.minerpg.asc_sharpshooter_deep_1.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_sharpshooter_deep_1.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_sharpshooter_deep_1.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_sharpshooter_deep_1"
+    }
+   }
+  ]
+ },
+ "asc_sharpshooter_deep_2": {
+  "title": {
+   "translate": "skill.minerpg.asc_sharpshooter_deep_2.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_sharpshooter_deep_2.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_sharpshooter_deep_2.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_sharpshooter_deep_2"
+    }
+   }
+  ]
+ },
+ "asc_sharpshooter_deep_3": {
+  "title": {
+   "translate": "skill.minerpg.asc_sharpshooter_deep_3.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_sharpshooter_deep_3.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_sharpshooter_deep_3.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_sharpshooter_deep_3"
+    }
+   }
+  ]
+ },
+ "asc_sharpshooter_ultimate": {
+  "title": {
+   "translate": "skill.minerpg.asc_sharpshooter_ultimate.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_sharpshooter_ultimate.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_sharpshooter_ultimate.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_sharpshooter_ultimate"
+    }
+   },
+   {
+    "type": "skill_tree_rpgs:spell",
+    "data": {
+     "containers": [
+      {
+       "access": "NONE",
+       "access_param": "",
+       "extra_tier_binding": 0,
+       "max_spell_count": 0,
+       "pool": "",
+       "slot": "",
+       "spell_ids": [
+        "minerpg:ascension_sharpshooter_ultimate"
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "asc_sharpshooter_emp_dragon": {
+  "title": {
+   "translate": "skill.minerpg.asc_sharpshooter_emp_dragon.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_sharpshooter_emp_dragon.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_sharpshooter_emp_dragon.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_sharpshooter_emp_dragon"
+    }
+   },
+   {
+    "type": "skill_tree_rpgs:spell",
+    "data": {
+     "containers": [
+      {
+       "access": "NONE",
+       "access_param": "",
+       "extra_tier_binding": 0,
+       "max_spell_count": 0,
+       "pool": "",
+       "slot": "",
+       "spell_ids": [
+        "minerpg:ascension_sharpshooter_emp_dragon"
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "asc_sharpshooter_emp_wither": {
+  "title": {
+   "translate": "skill.minerpg.asc_sharpshooter_emp_wither.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_sharpshooter_emp_wither.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_sharpshooter_emp_wither.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_sharpshooter_emp_wither"
+    }
+   }
+  ]
+ },
+ "asc_phantom_fate": {
+  "title": {
+   "translate": "skill.minerpg.asc_phantom_fate.title"
+  },
+  "description": {
+   "text": "",
+   "extra": [
+    {
+     "translate": "skill.minerpg.asc_phantom_fate.description"
+    },
+    {
+     "text": "\n"
+    },
+    {
+     "translate": "skill.minerpg.asc_phantom_fate.drawback",
+     "color": "gold"
+    }
+   ]
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_phantom_fate.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_phantom_fate"
+    }
+   },
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "minecraft:generic.max_health",
+     "operation": "multiply_base",
+     "value": -0.2
+    }
+   },
+   {
+    "type": "skill_tree_rpgs:spell",
+    "data": {
+     "containers": [
+      {
+       "access": "NONE",
+       "access_param": "",
+       "extra_tier_binding": 0,
+       "max_spell_count": 0,
+       "pool": "",
+       "slot": "",
+       "spell_ids": [
+        "minerpg:ascension_phantom_fate_decoy",
+        "minerpg:ascension_phantom_fate_ego"
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "asc_phantom_trans_1": {
+  "title": {
+   "translate": "skill.minerpg.asc_phantom_trans_1.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_phantom_trans_1.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_phantom_trans_1.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_phantom_trans_1"
+    }
+   }
+  ]
+ },
+ "asc_phantom_trans_2": {
+  "title": {
+   "translate": "skill.minerpg.asc_phantom_trans_2.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_phantom_trans_2.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_phantom_trans_2.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_phantom_trans_2"
+    }
+   },
+   {
+    "type": "skill_tree_rpgs:spell",
+    "data": {
+     "containers": [
+      {
+       "access": "NONE",
+       "access_param": "",
+       "extra_tier_binding": 0,
+       "max_spell_count": 0,
+       "pool": "",
+       "slot": "",
+       "spell_ids": [
+        "minerpg:ascension_phantom_trans_2"
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "asc_phantom_deep_1": {
+  "title": {
+   "translate": "skill.minerpg.asc_phantom_deep_1.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_phantom_deep_1.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_phantom_deep_1.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_phantom_deep_1"
+    }
+   },
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "minecraft:generic.movement_speed",
+     "operation": "multiply_base",
+     "value": 0.1
+    }
+   }
+  ]
+ },
+ "asc_phantom_deep_2": {
+  "title": {
+   "translate": "skill.minerpg.asc_phantom_deep_2.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_phantom_deep_2.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_phantom_deep_2.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_phantom_deep_2"
+    }
+   }
+  ]
+ },
+ "asc_phantom_deep_3": {
+  "title": {
+   "translate": "skill.minerpg.asc_phantom_deep_3.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_phantom_deep_3.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_phantom_deep_3.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_phantom_deep_3"
+    }
+   },
+   {
+    "type": "skill_tree_rpgs:spell",
+    "data": {
+     "containers": [
+      {
+       "access": "NONE",
+       "access_param": "",
+       "extra_tier_binding": 0,
+       "max_spell_count": 0,
+       "pool": "",
+       "slot": "",
+       "spell_ids": [
+        "minerpg:ascension_phantom_deep_3"
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "asc_phantom_ultimate": {
+  "title": {
+   "translate": "skill.minerpg.asc_phantom_ultimate.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_phantom_ultimate.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_phantom_ultimate.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_phantom_ultimate"
+    }
+   },
+   {
+    "type": "skill_tree_rpgs:spell",
+    "data": {
+     "containers": [
+      {
+       "access": "NONE",
+       "access_param": "",
+       "extra_tier_binding": 0,
+       "max_spell_count": 0,
+       "pool": "",
+       "slot": "",
+       "spell_ids": [
+        "minerpg:ascension_phantom_ultimate"
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "asc_phantom_emp_dragon": {
+  "title": {
+   "translate": "skill.minerpg.asc_phantom_emp_dragon.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_phantom_emp_dragon.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_phantom_emp_dragon.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_phantom_emp_dragon"
+    }
+   },
+   {
+    "type": "skill_tree_rpgs:spell",
+    "data": {
+     "containers": [
+      {
+       "access": "NONE",
+       "access_param": "",
+       "extra_tier_binding": 0,
+       "max_spell_count": 0,
+       "pool": "",
+       "slot": "",
+       "spell_ids": [
+        "minerpg:ascension_phantom_emp_dragon"
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "asc_phantom_emp_wither": {
+  "title": {
+   "translate": "skill.minerpg.asc_phantom_emp_wither.title"
+  },
+  "description": {
+   "translate": "skill.minerpg.asc_phantom_emp_wither.description"
+  },
+  "icon": {
+   "type": "texture",
+   "data": {
+    "texture": "minerpg:textures/spell/ascension_phantom_emp_wither.png"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:tag",
+    "data": {
+     "tag": "asc_phantom_emp_wither"
+    }
+   }
+  ]
  }
 }

@@ -1,370 +1,462 @@
 {
  "asc_nightblade_fate": {
   "definition": "asc_nightblade_fate",
-  "x": -455.0,
+  "x": -585.0,
   "y": 0,
   "root": true
  },
  "asc_nightblade_trans_1": {
   "definition": "asc_nightblade_trans_1",
-  "x": -483.0,
+  "x": -613.0,
   "y": 70
  },
  "asc_nightblade_trans_2": {
   "definition": "asc_nightblade_trans_2",
-  "x": -427.0,
+  "x": -557.0,
   "y": 70
  },
  "asc_nightblade_deep_1": {
   "definition": "asc_nightblade_deep_1",
-  "x": -495.0,
+  "x": -625.0,
   "y": 140
  },
  "asc_nightblade_deep_2": {
   "definition": "asc_nightblade_deep_2",
-  "x": -455.0,
+  "x": -585.0,
   "y": 140
  },
  "asc_nightblade_deep_3": {
   "definition": "asc_nightblade_deep_3",
-  "x": -415.0,
+  "x": -545.0,
   "y": 140
  },
  "asc_nightblade_ultimate": {
   "definition": "asc_nightblade_ultimate",
-  "x": -455.0,
+  "x": -585.0,
   "y": 210
  },
  "asc_nightblade_emp_dragon": {
   "definition": "asc_nightblade_emp_dragon",
-  "x": -483.0,
+  "x": -613.0,
   "y": 280
  },
  "asc_nightblade_emp_wither": {
   "definition": "asc_nightblade_emp_wither",
-  "x": -427.0,
+  "x": -557.0,
   "y": 280
  },
  "asc_plaguefang_fate": {
   "definition": "asc_plaguefang_fate",
-  "x": -325.0,
+  "x": -455.0,
   "y": 0,
   "root": true
  },
  "asc_plaguefang_trans_1": {
   "definition": "asc_plaguefang_trans_1",
-  "x": -353.0,
+  "x": -483.0,
   "y": 70
  },
  "asc_plaguefang_trans_2": {
   "definition": "asc_plaguefang_trans_2",
-  "x": -297.0,
+  "x": -427.0,
   "y": 70
  },
  "asc_plaguefang_deep_1": {
   "definition": "asc_plaguefang_deep_1",
-  "x": -365.0,
+  "x": -495.0,
   "y": 140
  },
  "asc_plaguefang_deep_2": {
   "definition": "asc_plaguefang_deep_2",
-  "x": -325.0,
+  "x": -455.0,
   "y": 140
  },
  "asc_plaguefang_deep_3": {
   "definition": "asc_plaguefang_deep_3",
-  "x": -285.0,
+  "x": -415.0,
   "y": 140
  },
  "asc_plaguefang_ultimate": {
   "definition": "asc_plaguefang_ultimate",
-  "x": -325.0,
+  "x": -455.0,
   "y": 210
  },
  "asc_plaguefang_emp_dragon": {
   "definition": "asc_plaguefang_emp_dragon",
-  "x": -353.0,
+  "x": -483.0,
   "y": 280
  },
  "asc_plaguefang_emp_wither": {
   "definition": "asc_plaguefang_emp_wither",
-  "x": -297.0,
+  "x": -427.0,
   "y": 280
  },
  "asc_juggernaut_fate": {
   "definition": "asc_juggernaut_fate",
-  "x": -195.0,
+  "x": -325.0,
   "y": 0,
   "root": true
  },
  "asc_juggernaut_trans_1": {
   "definition": "asc_juggernaut_trans_1",
-  "x": -223.0,
+  "x": -353.0,
   "y": 70
  },
  "asc_juggernaut_trans_2": {
   "definition": "asc_juggernaut_trans_2",
-  "x": -167.0,
+  "x": -297.0,
   "y": 70
  },
  "asc_juggernaut_deep_1": {
   "definition": "asc_juggernaut_deep_1",
-  "x": -235.0,
+  "x": -365.0,
   "y": 140
  },
  "asc_juggernaut_deep_2": {
   "definition": "asc_juggernaut_deep_2",
-  "x": -195.0,
+  "x": -325.0,
   "y": 140
  },
  "asc_juggernaut_deep_3": {
   "definition": "asc_juggernaut_deep_3",
-  "x": -155.0,
+  "x": -285.0,
   "y": 140
  },
  "asc_juggernaut_ultimate": {
   "definition": "asc_juggernaut_ultimate",
-  "x": -195.0,
+  "x": -325.0,
   "y": 210
  },
  "asc_juggernaut_emp_dragon": {
   "definition": "asc_juggernaut_emp_dragon",
-  "x": -223.0,
+  "x": -353.0,
   "y": 280
  },
  "asc_juggernaut_emp_wither": {
   "definition": "asc_juggernaut_emp_wither",
-  "x": -167.0,
+  "x": -297.0,
   "y": 280
  },
  "asc_reaver_fate": {
   "definition": "asc_reaver_fate",
-  "x": -65.0,
+  "x": -195.0,
   "y": 0,
   "root": true
  },
  "asc_reaver_trans_1": {
   "definition": "asc_reaver_trans_1",
-  "x": -93.0,
+  "x": -223.0,
   "y": 70
  },
  "asc_reaver_trans_2": {
   "definition": "asc_reaver_trans_2",
-  "x": -37.0,
+  "x": -167.0,
   "y": 70
  },
  "asc_reaver_deep_1": {
   "definition": "asc_reaver_deep_1",
-  "x": -105.0,
+  "x": -235.0,
   "y": 140
  },
  "asc_reaver_deep_2": {
   "definition": "asc_reaver_deep_2",
-  "x": -65.0,
+  "x": -195.0,
   "y": 140
  },
  "asc_reaver_deep_3": {
   "definition": "asc_reaver_deep_3",
-  "x": -25.0,
+  "x": -155.0,
   "y": 140
  },
  "asc_reaver_ultimate": {
   "definition": "asc_reaver_ultimate",
-  "x": -65.0,
+  "x": -195.0,
   "y": 210
  },
  "asc_reaver_emp_dragon": {
   "definition": "asc_reaver_emp_dragon",
-  "x": -93.0,
+  "x": -223.0,
   "y": 280
  },
  "asc_reaver_emp_wither": {
   "definition": "asc_reaver_emp_wither",
-  "x": -37.0,
+  "x": -167.0,
   "y": 280
  },
  "asc_lightbinder_fate": {
   "definition": "asc_lightbinder_fate",
-  "x": 65.0,
+  "x": -65.0,
   "y": 0,
   "root": true
  },
  "asc_lightbinder_trans_1": {
   "definition": "asc_lightbinder_trans_1",
-  "x": 37.0,
+  "x": -93.0,
   "y": 70
  },
  "asc_lightbinder_trans_2": {
   "definition": "asc_lightbinder_trans_2",
-  "x": 93.0,
+  "x": -37.0,
   "y": 70
  },
  "asc_lightbinder_deep_1": {
   "definition": "asc_lightbinder_deep_1",
-  "x": 25.0,
+  "x": -105.0,
   "y": 140
  },
  "asc_lightbinder_deep_2": {
   "definition": "asc_lightbinder_deep_2",
-  "x": 65.0,
+  "x": -65.0,
   "y": 140
  },
  "asc_lightbinder_deep_3": {
   "definition": "asc_lightbinder_deep_3",
-  "x": 105.0,
+  "x": -25.0,
   "y": 140
  },
  "asc_lightbinder_ultimate": {
   "definition": "asc_lightbinder_ultimate",
-  "x": 65.0,
+  "x": -65.0,
   "y": 210
  },
  "asc_lightbinder_emp_dragon": {
   "definition": "asc_lightbinder_emp_dragon",
-  "x": 37.0,
+  "x": -93.0,
   "y": 280
  },
  "asc_lightbinder_emp_wither": {
   "definition": "asc_lightbinder_emp_wither",
-  "x": 93.0,
+  "x": -37.0,
   "y": 280
  },
  "asc_zealot_fate": {
   "definition": "asc_zealot_fate",
-  "x": 195.0,
+  "x": 65.0,
   "y": 0,
   "root": true
  },
  "asc_zealot_trans_1": {
   "definition": "asc_zealot_trans_1",
-  "x": 167.0,
+  "x": 37.0,
   "y": 70
  },
  "asc_zealot_trans_2": {
   "definition": "asc_zealot_trans_2",
-  "x": 223.0,
+  "x": 93.0,
   "y": 70
  },
  "asc_zealot_deep_1": {
   "definition": "asc_zealot_deep_1",
-  "x": 155.0,
+  "x": 25.0,
   "y": 140
  },
  "asc_zealot_deep_2": {
   "definition": "asc_zealot_deep_2",
-  "x": 195.0,
+  "x": 65.0,
   "y": 140
  },
  "asc_zealot_deep_3": {
   "definition": "asc_zealot_deep_3",
-  "x": 235.0,
+  "x": 105.0,
   "y": 140
  },
  "asc_zealot_ultimate": {
   "definition": "asc_zealot_ultimate",
-  "x": 195.0,
+  "x": 65.0,
   "y": 210
  },
  "asc_zealot_emp_dragon": {
   "definition": "asc_zealot_emp_dragon",
-  "x": 167.0,
+  "x": 37.0,
   "y": 280
  },
  "asc_zealot_emp_wither": {
   "definition": "asc_zealot_emp_wither",
-  "x": 223.0,
+  "x": 93.0,
   "y": 280
  },
  "asc_bulwark_fate": {
   "definition": "asc_bulwark_fate",
-  "x": 325.0,
+  "x": 195.0,
   "y": 0,
   "root": true
  },
  "asc_bulwark_trans_1": {
   "definition": "asc_bulwark_trans_1",
-  "x": 297.0,
+  "x": 167.0,
   "y": 70
  },
  "asc_bulwark_trans_2": {
   "definition": "asc_bulwark_trans_2",
-  "x": 353.0,
+  "x": 223.0,
   "y": 70
  },
  "asc_bulwark_deep_1": {
   "definition": "asc_bulwark_deep_1",
-  "x": 285.0,
+  "x": 155.0,
   "y": 140
  },
  "asc_bulwark_deep_2": {
   "definition": "asc_bulwark_deep_2",
-  "x": 325.0,
+  "x": 195.0,
   "y": 140
  },
  "asc_bulwark_deep_3": {
   "definition": "asc_bulwark_deep_3",
-  "x": 365.0,
+  "x": 235.0,
   "y": 140
  },
  "asc_bulwark_ultimate": {
   "definition": "asc_bulwark_ultimate",
-  "x": 325.0,
+  "x": 195.0,
   "y": 210
  },
  "asc_bulwark_emp_dragon": {
   "definition": "asc_bulwark_emp_dragon",
-  "x": 297.0,
+  "x": 167.0,
   "y": 280
  },
  "asc_bulwark_emp_wither": {
   "definition": "asc_bulwark_emp_wither",
-  "x": 353.0,
+  "x": 223.0,
   "y": 280
  },
  "asc_crusader_fate": {
   "definition": "asc_crusader_fate",
-  "x": 455.0,
+  "x": 325.0,
   "y": 0,
   "root": true
  },
  "asc_crusader_trans_1": {
   "definition": "asc_crusader_trans_1",
-  "x": 427.0,
+  "x": 297.0,
   "y": 70
  },
  "asc_crusader_trans_2": {
   "definition": "asc_crusader_trans_2",
-  "x": 483.0,
+  "x": 353.0,
   "y": 70
  },
  "asc_crusader_deep_1": {
   "definition": "asc_crusader_deep_1",
-  "x": 415.0,
+  "x": 285.0,
   "y": 140
  },
  "asc_crusader_deep_2": {
   "definition": "asc_crusader_deep_2",
-  "x": 455.0,
+  "x": 325.0,
   "y": 140
  },
  "asc_crusader_deep_3": {
   "definition": "asc_crusader_deep_3",
-  "x": 495.0,
+  "x": 365.0,
   "y": 140
  },
  "asc_crusader_ultimate": {
   "definition": "asc_crusader_ultimate",
-  "x": 455.0,
+  "x": 325.0,
   "y": 210
  },
  "asc_crusader_emp_dragon": {
   "definition": "asc_crusader_emp_dragon",
-  "x": 427.0,
+  "x": 297.0,
   "y": 280
  },
  "asc_crusader_emp_wither": {
   "definition": "asc_crusader_emp_wither",
+  "x": 353.0,
+  "y": 280
+ },
+ "asc_sharpshooter_fate": {
+  "definition": "asc_sharpshooter_fate",
+  "x": 455.0,
+  "y": 0,
+  "root": true
+ },
+ "asc_sharpshooter_trans_1": {
+  "definition": "asc_sharpshooter_trans_1",
+  "x": 427.0,
+  "y": 70
+ },
+ "asc_sharpshooter_trans_2": {
+  "definition": "asc_sharpshooter_trans_2",
   "x": 483.0,
+  "y": 70
+ },
+ "asc_sharpshooter_deep_1": {
+  "definition": "asc_sharpshooter_deep_1",
+  "x": 415.0,
+  "y": 140
+ },
+ "asc_sharpshooter_deep_2": {
+  "definition": "asc_sharpshooter_deep_2",
+  "x": 455.0,
+  "y": 140
+ },
+ "asc_sharpshooter_deep_3": {
+  "definition": "asc_sharpshooter_deep_3",
+  "x": 495.0,
+  "y": 140
+ },
+ "asc_sharpshooter_ultimate": {
+  "definition": "asc_sharpshooter_ultimate",
+  "x": 455.0,
+  "y": 210
+ },
+ "asc_sharpshooter_emp_dragon": {
+  "definition": "asc_sharpshooter_emp_dragon",
+  "x": 427.0,
+  "y": 280
+ },
+ "asc_sharpshooter_emp_wither": {
+  "definition": "asc_sharpshooter_emp_wither",
+  "x": 483.0,
+  "y": 280
+ },
+ "asc_phantom_fate": {
+  "definition": "asc_phantom_fate",
+  "x": 585.0,
+  "y": 0,
+  "root": true
+ },
+ "asc_phantom_trans_1": {
+  "definition": "asc_phantom_trans_1",
+  "x": 557.0,
+  "y": 70
+ },
+ "asc_phantom_trans_2": {
+  "definition": "asc_phantom_trans_2",
+  "x": 613.0,
+  "y": 70
+ },
+ "asc_phantom_deep_1": {
+  "definition": "asc_phantom_deep_1",
+  "x": 545.0,
+  "y": 140
+ },
+ "asc_phantom_deep_2": {
+  "definition": "asc_phantom_deep_2",
+  "x": 585.0,
+  "y": 140
+ },
+ "asc_phantom_deep_3": {
+  "definition": "asc_phantom_deep_3",
+  "x": 625.0,
+  "y": 140
+ },
+ "asc_phantom_ultimate": {
+  "definition": "asc_phantom_ultimate",
+  "x": 585.0,
+  "y": 210
+ },
+ "asc_phantom_emp_dragon": {
+  "definition": "asc_phantom_emp_dragon",
+  "x": 557.0,
+  "y": 280
+ },
+ "asc_phantom_emp_wither": {
+  "definition": "asc_phantom_emp_wither",
+  "x": 613.0,
   "y": 280
  }
 }

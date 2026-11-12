@@ -34,9 +34,10 @@ ICONS = os.path.join(ROOT, 'kubejs', 'assets', 'minerpg', 'textures', 'spell')
 LANG = os.path.join(ROOT, 'kubejs', 'assets', 'minerpg', 'lang', 'en_us.json')
 RULES = os.path.join(ROOT, 'kubejs', 'ascension', 'rules.json')
 
-WAVE = ['rogue', 'warrior', 'priest', 'paladin']
+WAVE = ['rogue', 'warrior', 'priest', 'paladin', 'deadeye']
 FATE_CLASSES = {'nightblade': 'rogue', 'plaguefang': 'rogue', 'juggernaut': 'warrior', 'reaver': 'warrior',
-                'lightbinder': 'priest', 'zealot': 'priest', 'bulwark': 'paladin', 'crusader': 'paladin'}
+                'lightbinder': 'priest', 'zealot': 'priest', 'bulwark': 'paladin', 'crusader': 'paladin',
+                'sharpshooter': 'deadeye', 'phantom': 'deadeye'}
 NODES = ['fate', 'trans_1', 'trans_2', 'deep_1', 'deep_2', 'deep_3', 'ultimate', 'emp_dragon', 'emp_wither']
 POINTS = 7
 MAX_DEEPENINGS = 2
@@ -391,6 +392,99 @@ def crusader():
     }
 
 
+RANGED = 'spell_power:physical_ranged'
+ALTER_EGO = 'archers_expansion:alter_ego'
+VANISH = 'archers_expansion:infiltrators_vanish'
+
+
+def decoys(*yaws, ttl=12, offset=3.0):
+    """Spawn Deadeye's decoys (Alter Ego's entity: it provokes enemies and explodes when it ends) around the target."""
+    return {'action': {'type': 'SPAWN', 'spawns': [
+        {'entity_type_id': ALTER_EGO, 'time_to_live_seconds': ttl, 'delay_ticks': 5,
+         'placement': {'location_offset_by_look': offset, 'location_yaw_offset': float(y), 'apply_yaw': True}}
+        for y in yaws]}}
+
+
+@fate
+def sharpshooter():
+    trail = [sl.particles('electric_spark', 30, shape='LINE', lo=0.2, hi=0.22, alignment='LOOK')]
+    shot = harmful(sl.damage(3.0, 1.0, sound='archers:marker_shot'))
+    finish = harmful(dict(sl.damage(100.0, 0.5), target_modifiers=[
+        {'conditions': [below(0.3)], 'execute': 'ALLOW'},
+        {'conditions': [{'entity_type': '#minerpg:boss'}], 'execute': 'DENY'}]))
+    killshot = active(RANGED, [shot, finish], 90.0, target={'type': 'AIM', 'aim': {}}, range_=64.0,
+                      release_anim='spell_engine:archery_release',
+                      cast={'duration': 1.0, 'animation': {'id': 'spell_engine:archery_pull'},
+                            'animates_ranged_weapon': True, 'sound': {'id': 'archers:bow_pull'}})
+    killshot['deliver'] = {'type': 'PROJECTILE', 'projectile': {
+        'launch_properties': {'velocity': 3.0},
+        'projectile': {'perks': {'pierce': 10}, 'client_data': {
+            'travel_particles': trail,
+            'composite_model': {'models': [{'fx': {'model_id': 'archers_expansion:spell_projectile/fast_arrow'}}]}}}}}
+    return {
+        'fate': dict(title='Sharpshooter', text='Long Shot: your arrows and ranged spells deal +35% damage to enemies '
+                     '16 or more blocks away.', drawback='-30% ranged damage to enemies within 6 blocks.'),
+        'trans_1': dict(title='Piercing Round', text='Fast Shot\'s arrows go through up to 3 enemies and deal +25% '
+                        'damage.',
+                        spells={'': sl.modifier(RANGED, 'archers_expansion:fast_shot',
+                                                arrow_perks={'pierce': 3, 'damage_multiplier': 1.25})}),
+        'trans_2': dict(title='Pinning Shot', text='Disabling Shot lasts 2 seconds longer, and its target takes +20% '
+                        'damage from you while it lasts.',
+                        spells={'': sl.modifier(RANGED, 'archers_expansion:disabling_shot', effect_duration_add=2.0)}),
+        'deep_1': dict(title='Steady Aim', text='After standing still for 1 second, your ranged hits deal +15% damage.'),
+        'deep_2': dict(title='Headhunter', text='+25% ranged damage to enemies above 80% health.'),
+        'deep_3': dict(title='Clean Kill', text='A ranged kill takes 3 seconds off all your spell cooldowns.'),
+        'ultimate': dict(title='Killshot', text='Ultimate (Ender Guardian): a charged shot that goes through every '
+                         'enemy in a line for heavy damage and finishes off any enemy below 30% health (not bosses). '
+                         '90 s cooldown.', spells={'': killshot}),
+        'emp_dragon': dict(title='Marked for Death', text='Enemies hit by Killshot take more damage from every source '
+                           'for 8 seconds.',
+                           spells={'': sl.modifier(RANGED, 'minerpg:ascension_sharpshooter_ultimate', **sl.append_impacts(
+                               harmful(sl.effect('archers:hunters_mark', 8, 1))))}),
+        'emp_wither': dict(title='Second Barrel', text='Each kill by Killshot takes 30 seconds off its cooldown.'),
+    }
+
+
+@fate
+def phantom():
+    smoke = [sl.particles('spell_engine:smoke_large', 40, color=WHITE, shape='SPHERE', lo=0.5, hi=0.8)]
+    mirrors = active(RANGED, [dict(sl.effect(VANISH, 3, 0, caster=True), visuals={'particles': smoke}),
+                              decoys(0, 60, 120, 180, 240, 300, ttl=10)], 90.0,
+                     release_anim='spell_engine:one_handed_area_release', sound='archers_expansion:alter_ego_vanish')
+    return {
+        'fate': dict(title='Phantom', text='Afterimage: taking damage leaves a decoy behind (once every 15 seconds), '
+                     'and Alter Ego\'s cooldown is 15 seconds shorter.', drawback='-20% max health.',
+                     attrs=[('minecraft:generic.max_health', 'multiply_base', -0.2)],
+                     spells={'decoy': sl.passive(RANGED, [sl.chance('DAMAGE_TAKEN', 1, target_override='CASTER')],
+                                                 [decoys(180, ttl=8, offset=1.5)], cooldown=15.0),
+                             'ego': sl.modifier(RANGED, ALTER_EGO, cooldown_duration_deduct=15.0)},
+                     spell_names={'decoy': 'Afterimage', 'ego': 'Afterimage'}),
+        'trans_1': dict(title='Volatile Decoys', text='Your decoys\' explosions deal much more damage and blind enemies '
+                        'for 2 seconds.'),
+        'trans_2': dict(title='Ambush Shot', text='Alter Ego\'s vanish lasts 3 seconds longer, and your first ranged hit '
+                        'while vanished deals double damage.',
+                        spells={'': sl.modifier(RANGED, ALTER_EGO, effect_duration_add=3.0)}),
+        'deep_1': dict(title='Light Feet', text='+10% movement speed, and you take no fall damage.',
+                       attrs=[('minecraft:generic.movement_speed', 'multiply_base', 0.1)]),
+        'deep_2': dict(title='Misdirection', text='Enemies that hit one of your decoys are slowed and weakened for 3 '
+                       'seconds.'),
+        'deep_3': dict(title='Vanishing Act', text='Dropping below 30% health hides you for 4 seconds and leaves a '
+                       'decoy behind. Once per minute.',
+                       spells={'': sl.passive(RANGED, [caster_below(sl.chance('DAMAGE_TAKEN', 1, target_override='CASTER'),
+                                                                    0.3)],
+                                              [dict(sl.effect(VANISH, 4, 0, caster=True), visuals={'particles': smoke}),
+                                               decoys(180, ttl=8, offset=1.5)], cooldown=60.0)}),
+        'ultimate': dict(title='Hall of Mirrors', text='Ultimate (Ender Guardian): six decoys appear around you and you '
+                         'vanish. For 8 seconds each of your ranged hits also strikes another enemy within 10 blocks '
+                         'for half its damage. 90 s cooldown.', spells={'': mirrors}),
+        'emp_dragon': dict(title='Endless Reflections', text='Hall of Mirrors lasts 4 seconds longer and brings three '
+                           'more decoys.',
+                           spells={'': sl.modifier(RANGED, 'minerpg:ascension_phantom_ultimate', **sl.append_impacts(
+                               decoys(30, 150, 270, ttl=12, offset=5.0)))}),
+        'emp_wither': dict(title='Shatterpoint', text='Each kill during Hall of Mirrors resets Alter Ego\'s cooldown.'),
+    }
+
+
 # --------------------------------------------------------------------------------------
 def check(defs, skills, connections, rules, spells, wip=False):
     errors = []
@@ -441,7 +535,8 @@ def check(defs, skills, connections, rules, spells, wip=False):
 
 
 HARMFUL_EFFECTS = {'minecraft:poison', 'minecraft:slowness', 'minecraft:weakness', 'minecraft:blindness',
-                   'spell_engine:bleed', 'rogues:shatter', 'rogues:shock', 'minecraft:wither', VENOM}
+                   'spell_engine:bleed', 'rogues:shatter', 'rogues:shock', 'minecraft:wither', VENOM,
+                   'archers:hunters_mark'}
 
 
 def all_impacts(spell):
@@ -510,7 +605,8 @@ def build():
     return defs, skills, connections, rules, spells, lang
 
 
-CLASS_COLOR = {'rogue': (120, 110, 160), 'warrior': (190, 80, 60), 'priest': (240, 235, 200), 'paladin': (255, 200, 80)}
+CLASS_COLOR = {'rogue': (120, 110, 160), 'warrior': (190, 80, 60), 'priest': (240, 235, 200), 'paladin': (255, 200, 80),
+               'deadeye': (90, 170, 120)}
 
 
 def write(path, obj):

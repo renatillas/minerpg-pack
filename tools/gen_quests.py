@@ -808,7 +808,7 @@ CHAPTER_1 = [
         'You have beaten one of the great Wildlands bosses. Something in you answers.',
         'Your reward is your first &dAscension point&r. Only bosses give them.',
         'Open your talents (N) and the &dAscension&r tab: choose one of your class\'s two Fates. Each is a big gift with a real drawback, and the other one locks.',
-        'Rogue, Warrior, Priest and Paladin have Fates now; other classes keep their points until theirs arrive. The handbook has every Fate.'],
+        'Rogue, Warrior, Priest, Paladin and Deadeye have Fates now; other classes keep their points until theirs arrive. The handbook has every Fate.'],
         [t_check('Feel your Fate stir')], [r_ascension_point()],
         deps=['c1_remnant', 'c1_maledictus', 'c1_leviathan'], subtitle='Ascension', dependency_requirement='one_completed',
         shape='gear', icon={'id': 'minecraft:nether_star'}),

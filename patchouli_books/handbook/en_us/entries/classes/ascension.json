@@ -15,7 +15,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Each class has two Fates. Taking one locks the other, and each has a $(l)drawback$(). You get one of two Transformations and two of three Deepenings.$(br2)An $(item)Orb of Oblivion$() resets it all; points are kept.$(br2)Rogue, Warrior, Priest and Paladin have Fates now. Other classes keep their points until theirs arrive.",
+      "text": "Each class has two Fates. Taking one locks the other, and each has a $(l)drawback$(). You get one of two Transformations and two of three Deepenings.$(br2)An $(item)Orb of Oblivion$() resets it all; points are kept.$(br2)Rogue, Warrior, Priest, Paladin and Deadeye have Fates now. Other classes keep their points until theirs arrive.",
       "title": "Choosing"
     },
     {
@@ -57,6 +57,16 @@
       "type": "patchouli:text",
       "text": "Melee hits add holy damage from your healing power.$(br2)Drawback: -4 armor, -20% healing power.$(br2)Ultimate: Avatar of Light: wings, +30% attack damage, shockwaves.",
       "title": "Crusader (Paladin)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "+35% ranged damage to enemies 16+ blocks away.$(br2)Drawback: -30% ranged damage within 6 blocks.$(br2)Ultimate: Killshot: a shot through every enemy in a line that finishes off the wounded.",
+      "title": "Sharpshooter (Deadeye)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Taking damage leaves a decoy behind; Alter Ego comes back sooner.$(br2)Drawback: -20% max health.$(br2)Ultimate: Hall of Mirrors: six decoys, and your shots echo onto other enemies.",
+      "title": "Phantom (Deadeye)"
     }
   ]
 }
